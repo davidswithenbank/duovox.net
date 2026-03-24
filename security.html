@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security &amp; Privacy - DuoVox | David Arthur Software</title>
+    <meta name="description" content="How DuoVox protects your data. Zero-retention Private Mode, encrypted connections, and transparent data handling.">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <img src="icon.png" alt="DuoVox icon">
+            DuoVox
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="security.html" data-i18n="nav.security">Security</a></li>
+            <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+            <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero -->
+<main class="legal">
+    <h1 data-i18n="sec.title">Security &amp; Privacy at DuoVox</h1>
+    <p data-i18n="sec.intro">Your conversations deserve the highest level of protection. DuoVox is built with a privacy-first architecture that gives users control over their data.</p>
+
+    <!-- Zero-Retention Private Mode -->
+    <h2 data-i18n="sec.private.title">Zero-Retention Private Mode</h2>
+    <p data-i18n="sec.private.intro">When Private Mode is enabled:</p>
+    <ul>
+        <li data-i18n="sec.private.f1">Audio is processed in real time and immediately discarded</li>
+        <li data-i18n="sec.private.f2">No recordings or transcripts are stored by DuoVox on any server</li>
+        <li data-i18n="sec.private.f3">No data is logged or retained locally by DuoVox</li>
+        <li data-i18n="sec.private.f4">No information is used for analytics or model training</li>
+    </ul>
+    <p data-i18n="sec.private.note"><strong>Note:</strong> For paid tiers, audio is still streamed to our third-party AI provider for real-time transcription. The AI provider processes audio in real time and does not retain it under current API data policies. Private Mode controls what DuoVox itself stores and logs on your device. For Free tier users, all processing is on-device and no audio leaves the device.</p>
+    <p data-i18n="sec.private.ideal">This mode is ideal for interpreters, healthcare professionals, legal teams, and anyone handling sensitive information.</p>
+
+    <!-- Standard Mode -->
+    <h2 data-i18n="sec.standard.title">Standard Mode (Cloud Processing)</h2>
+    <p data-i18n="sec.standard.intro">When Private Mode is not enabled:</p>
+    <ul>
+        <li data-i18n="sec.standard.f1">Audio is streamed to third-party AI services for real-time transcription and is not stored by DuoVox</li>
+        <li data-i18n="sec.standard.f2">Transcriptions and translations exist only in your device&rsquo;s memory during the session</li>
+        <li data-i18n="sec.standard.f3">DuoVox does not sell your personal data. The Free tier displays ads via third-party ad SDKs which may collect standard device data for ad serving.</li>
+        <li data-i18n="sec.standard.f4">Third-party AI providers process data under their own privacy policies and do not use API data for model training under current policies</li>
+    </ul>
+
+    <!-- Data Handling Principles -->
+    <h2 data-i18n="sec.principles.title">Data Handling Principles</h2>
+    <p data-i18n="sec.principles.intro">DuoVox follows these core principles:</p>
+    <ul>
+        <li data-i18n="sec.principles.f1">Minimal data collection &mdash; we collect only what is needed to provide the service</li>
+        <li data-i18n="sec.principles.f2">No unnecessary retention &mdash; data is discarded as soon as it is no longer needed</li>
+        <li data-i18n="sec.principles.f3">No sale of user data &mdash; your information is never sold to third parties</li>
+        <li data-i18n="sec.principles.f4">No advertising-based profiling by DuoVox &mdash; we do not build profiles of our users. Third-party ad providers on the Free tier may collect standard device data for ad serving under their own policies.</li>
+        <li data-i18n="sec.principles.f5">Clear, transparent communication &mdash; we tell you exactly what happens with your data</li>
+    </ul>
+
+    <!-- Compliance Transparency -->
+    <h2 data-i18n="sec.compliance.title">Compliance Transparency</h2>
+    <p data-i18n="sec.compliance.intro">DuoVox is designed with strong privacy protections, but:</p>
+    <ul>
+        <li data-i18n="sec.compliance.f1">DuoVox does not claim certification under any regulatory framework (including HIPAA, FERPA, or CCPA)</li>
+        <li data-i18n="sec.compliance.f2">DuoVox does not sign Business Associate Agreements (BAAs)</li>
+        <li data-i18n="sec.compliance.f3">Organizations are responsible for determining whether DuoVox fits their compliance needs</li>
+    </ul>
+    <p data-i18n="sec.compliance.why">This ensures clarity and avoids misleading claims. For common questions about using DuoVox in regulated settings, see our <a href="hipaa-faq.html">Privacy FAQ</a>.</p>
+
+    <!-- Security Practices -->
+    <h2 data-i18n="sec.practices.title">Security Practices</h2>
+    <ul>
+        <li data-i18n="sec.practices.f1">Encrypted data transmission (HTTPS/TLS) for all communications</li>
+        <li data-i18n="sec.practices.f2">Secure infrastructure with industry-standard protections</li>
+        <li data-i18n="sec.practices.f3">No DuoVox servers store user audio, transcriptions, or personal data</li>
+        <li data-i18n="sec.practices.f4">Regular security reviews and updates</li>
+    </ul>
+
+    <!-- Your Control -->
+    <h2 data-i18n="sec.control.title">Your Control</h2>
+    <p data-i18n="sec.control.intro">You can:</p>
+    <ul>
+        <li data-i18n="sec.control.f1">Enable Private Mode at any time for zero-retention sessions</li>
+        <li data-i18n="sec.control.f2">Clear all session data instantly with the Clear button</li>
+        <li data-i18n="sec.control.f3">Use DuoVox offline where supported &mdash; no data leaves your device</li>
+        <li data-i18n="sec.control.f4">Uninstall the app to remove all locally stored data</li>
+    </ul>
+
+    <p style="margin-top:2rem;">For our full data handling policy, see the <a href="privacy.html">Privacy Policy</a>. For questions about regulated environments, see the <a href="hipaa-faq.html">Privacy FAQ</a>.</p>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-links">
+            <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+            <a href="security.html" data-i18n="nav.security">Security</a>
+            <a href="contact.html" data-i18n="footer.contact">Contact</a>
+        </div>
+        <p class="footer-company" data-i18n="footer.copyright">&copy; 2026 David Arthur Software (DAS). All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="i18n.js"></script>
+</body>
+</html>

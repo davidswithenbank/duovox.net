@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DuoVox | David Arthur Software</title>
+    <meta name="description" content="Get in touch with the DuoVox team. General enquiries, suggestions, and business support.">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <img src="icon.png" alt="DuoVox icon">
+            DuoVox
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="security.html" data-i18n="nav.security">Security</a></li>
+            <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+            <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contact Content -->
+<main class="legal">
+    <h1 data-i18n="contact.title">Contact Us</h1>
+    <p data-i18n="contact.intro">Have a question, suggestion, or need support? Use the form below or email us directly.</p>
+
+    <!-- Contact Form -->
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="ede60c74-60bd-4be9-aa34-2878a9c04fcb">
+        <input type="hidden" name="subject" value="New DuoVox Contact Form Submission">
+        <input type="hidden" name="from_name" value="DuoVox Contact Form">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+        <div class="form-group">
+            <label for="contact-name" data-i18n="contact.form.name">Your Name</label>
+            <input type="text" id="contact-name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="contact-email" data-i18n="contact.form.email">Your Email</label>
+            <input type="email" id="contact-email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="contact-category" data-i18n="contact.form.category">Category</label>
+            <select id="contact-category" name="category" required>
+                <option value="enquiry" data-i18n="contact.form.cat.enquiry">General Enquiry</option>
+                <option value="support" data-i18n="contact.form.cat.support">Technical Support</option>
+                <option value="suggestion" data-i18n="contact.form.cat.suggestion">Suggestion / Feature Request</option>
+                <option value="business" data-i18n="contact.form.cat.business">Business Enquiry</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="contact-message" data-i18n="contact.form.message">Message</label>
+            <textarea id="contact-message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="contact.form.submit">Send Message</button>
+    </form>
+
+    <!-- Email Addresses -->
+    <h2 data-i18n="contact.email.title">Prefer Email?</h2>
+    <p data-i18n="contact.email.intro">You can also reach us directly at the addresses below:</p>
+
+    <div class="contact-emails">
+        <div class="contact-email-card">
+            <div class="contact-email-icon">&#128172;</div>
+            <h3 data-i18n="contact.email.enquiries.title">General Enquiries</h3>
+            <a href="mailto:enquiries@duovox.net">enquiries@duovox.net</a>
+            <p data-i18n="contact.email.enquiries.desc">Pre-sales questions, partnership enquiries, and general information.</p>
+        </div>
+        <div class="contact-email-card">
+            <div class="contact-email-icon">&#128161;</div>
+            <h3 data-i18n="contact.email.suggestions.title">Suggestions</h3>
+            <a href="mailto:suggestions@duovox.net">suggestions@duovox.net</a>
+            <p data-i18n="contact.email.suggestions.desc">Feature requests, ideas, and feedback to help us improve.</p>
+        </div>
+        <div class="contact-email-card">
+            <div class="contact-email-icon">&#127970;</div>
+            <h3 data-i18n="contact.email.business.title">Business</h3>
+            <a href="mailto:business@duovox.net">business@duovox.net</a>
+            <p data-i18n="contact.email.business.desc">Business plan enquiries and priority support for Business subscribers.</p>
+        </div>
+        <div class="contact-email-card">
+            <div class="contact-email-icon">&#128233;</div>
+            <h3 data-i18n="contact.email.support.title">Support</h3>
+            <a href="mailto:support@duovox.net">support@duovox.net</a>
+            <p data-i18n="contact.email.support.desc">Technical issues, account help, and general support.</p>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-links">
+            <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+            <a href="security.html" data-i18n="nav.security">Security</a>
+            <a href="mailto:support@duovox.net" data-i18n="footer.contact">Contact Support</a>
+        </div>
+        <p class="footer-company" data-i18n="footer.copyright">&copy; 2026 David Arthur Software (DAS). All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="i18n.js"></script>
+</body>
+</html>
