@@ -944,6 +944,14 @@ a:focus-visible,
     margin: 0;
 }
 
+/* ── CTA Micro-copy ── */
+.cta-micro {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
 /* ── Hamburger Menu ── */
 .nav .nav-toggle {
     display: none;
