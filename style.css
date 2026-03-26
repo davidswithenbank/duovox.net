@@ -618,11 +618,292 @@ a:hover {
     line-height: 1.5;
 }
 
+/* ── Trust Badges ── */
+.trust-badges {
+    padding: 0 1.5rem 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.badge-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.trust-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.trust-icon {
+    font-size: 1rem;
+}
+
+/* ── How It Works Steps ── */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.step-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.step-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.step-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* ── Comparison Table ── */
+.comparison-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 0.75rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.comparison-table th {
+    font-weight: 600;
+    color: var(--text-primary);
+    padding-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+    text-align: left;
+    font-weight: 500;
+}
+
+.comparison-table .highlight-col {
+    background: rgba(76, 175, 80, 0.08);
+}
+
+.comparison-table th.highlight-col {
+    color: var(--accent-light);
+}
+
+.comparison-table .check {
+    color: var(--accent-light);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.comparison-table .cross {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* ── Best For labels ── */
+.best-for {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    background: rgba(76, 175, 80, 0.12);
+    color: var(--accent-light);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+/* ── Audience / Who It's For ── */
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.audience-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.audience-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.audience-icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.audience-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.audience-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.audience-plan {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    background: rgba(76, 175, 80, 0.12);
+    color: var(--accent-light);
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+/* ── FAQ Accordion ── */
+.faq-list {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.25rem 1.5rem;
+    text-align: left;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.faq-question:hover {
+    color: var(--accent-light);
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--text-muted);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.faq-item.open .faq-question::after {
+    content: '\2212';
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 300px;
+}
+
+.faq-answer p {
+    padding: 0 1.5rem 1.25rem;
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ── Hamburger Menu ── */
+.nav .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    flex-shrink: 0;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text-secondary);
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
 /* ── Responsive ── */
 @media (max-width: 1024px) {
     .pricing-grid.four-col {
         grid-template-columns: repeat(2, 1fr);
         max-width: 600px;
+    }
+
+    .audience-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -635,8 +916,51 @@ a:hover {
         font-size: 1.05rem;
     }
 
-    .nav-links {
-        gap: 1rem;
+    /* Mobile nav */
+    .nav-inner {
+        flex-wrap: wrap;
+        height: auto;
+        min-height: 64px;
+        padding: 0;
+    }
+
+    .nav .nav-toggle {
+        display: block;
+        order: 3;
+    }
+
+    .nav-brand {
+        font-size: 0.95rem;
+        order: 1;
+    }
+
+    .lang-wrap {
+        order: 2;
+        margin-left: auto;
+        margin-right: 0.5rem;
+    }
+
+    .nav .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        order: 4;
+        gap: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    .nav .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 0.75rem 0;
+        border-top: 1px solid var(--border);
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        display: block;
     }
 
     .section {
@@ -656,6 +980,10 @@ a:hover {
         grid-template-columns: 1fr;
         max-width: 400px;
     }
+
+    .steps-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -665,11 +993,6 @@ a:hover {
 
     .hero h1 {
         font-size: 1.8rem;
-    }
-
-    .nav-links {
-        gap: 0.75rem;
-        font-size: 0.8rem;
     }
 
     .btn-group {
@@ -684,6 +1007,14 @@ a:hover {
     .lang-select {
         font-size: 0.7rem;
         padding: 3px 4px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .audience-grid {
+        grid-template-columns: 1fr;
     }
 }
 

@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DuoVox - Real-Time Voice Translation | David Arthur Software</title>
     <meta name="description" content="DuoVox translates conversations in real-time. Dual-lane voice transcription and AI-powered translation across 50+ languages. By David Arthur Software.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="DuoVox - Real-Time Voice Translation">
+    <meta property="og:description" content="Translate conversations in real time across 50+ languages. Dual-lane transcription, offline mode, and privacy built in.">
+    <meta property="og:image" content="https://duovox.net/og-image.png">
+    <meta property="og:url" content="https://duovox.net/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="David Arthur Software">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DuoVox - Real-Time Voice Translation">
+    <meta name="twitter:description" content="Translate conversations in real time across 50+ languages.">
+    <meta name="twitter:image" content="https://duovox.net/og-image.png">
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,6 +28,7 @@
             <img src="icon.png" alt="DuoVox icon">
             DuoVox
         </a>
+        <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('open')"><span></span><span></span><span></span></button>
         <ul class="nav-links">
             <li><a href="#features" data-i18n="nav.features">Features</a></li>
             <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
@@ -45,6 +57,32 @@
     </div>
 </section>
 
+<!-- Trust Badges -->
+<section class="trust-badges">
+    <div class="badge-row">
+        <div class="trust-badge">
+            <span class="trust-icon">&#128274;</span>
+            <span>No account required</span>
+        </div>
+        <div class="trust-badge">
+            <span class="trust-icon">&#9889;</span>
+            <span>Works offline</span>
+        </div>
+        <div class="trust-badge">
+            <span class="trust-icon">&#127760;</span>
+            <span>51 languages</span>
+        </div>
+        <div class="trust-badge">
+            <span class="trust-icon">&#128737;</span>
+            <span>Private mode</span>
+        </div>
+        <div class="trust-badge">
+            <span class="trust-icon">&#128241;</span>
+            <span>Android &amp; Windows</span>
+        </div>
+    </div>
+</section>
+
 <!-- Features -->
 <section class="section" id="features">
     <h2 class="section-title" data-i18n="home.features.title">Why DuoVox?</h2>
@@ -62,7 +100,7 @@
         <div class="feature-card">
             <div class="feature-icon">&#9889;</div>
             <h3 data-i18n="home.feat.ai.title">Instant Translations</h3>
-            <p data-i18n="home.feat.ai.desc">Get fast, natural-sounding translations that follow the flow of real speech. DuoVox is designed to handle idioms, accents, and everyday language.</p>
+            <p data-i18n="home.feat.ai.desc">Get fast, natural-sounding translations that follow the flow of real speech. DuoVox is optimised to handle idioms, accents, and everyday language.</p>
         </div>
         <div class="feature-card">
             <div class="feature-icon">&#128274;</div>
@@ -86,7 +124,163 @@
 <section class="section reassurance-section">
     <div class="reassurance-box">
         <h3 data-i18n="home.reassurance.title">Designed for Real Conversations</h3>
-        <p data-i18n="home.reassurance.desc">DuoVox is designed to handle accents, background noise, fast speech, and everyday language. Whether you're ordering coffee abroad or following a business meeting, DuoVox keeps up with the conversation.</p>
+        <p data-i18n="home.reassurance.desc">DuoVox is optimised to handle accents, background noise, fast speech, and everyday language. Whether you're ordering coffee abroad or following a business meeting, DuoVox keeps up with the conversation.</p>
+    </div>
+</section>
+
+<!-- Mid-page CTA -->
+<section class="section" style="padding-top:0; padding-bottom:40px;">
+    <div style="text-align:center;">
+        <a href="#pricing" class="btn btn-primary" style="font-size:1.05rem; padding:16px 36px;">See Plans &amp; Pricing</a>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="section" id="how-it-works" style="padding-top:40px;">
+    <h2 class="section-title">How It Works</h2>
+    <div class="steps-grid">
+        <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Choose Your Languages</h3>
+            <p>Select a primary language and a target language. DuoVox supports 51 languages on paid tiers and 28 offline.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Start Talking</h3>
+            <p>Hit the start button and speak naturally. DuoVox listens through your microphone and begins transcribing instantly.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>See Both Languages</h3>
+            <p>Each language gets its own panel. You see your words on the left and the translation on the right &mdash; in real time.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">4</div>
+            <h3>Keep the Conversation</h3>
+            <p>DuoVox automatically detects who's speaking and routes text to the correct lane. Just talk naturally &mdash; it keeps up.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Comparison Table -->
+<section class="section" id="compare" style="padding-top:40px;">
+    <h2 class="section-title">How DuoVox Compares</h2>
+    <p class="section-subtitle" style="margin-top:-2rem; margin-bottom:2rem;">See how DuoVox stacks up against popular alternatives.</p>
+    <div class="comparison-table-wrap">
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th class="highlight-col">DuoVox</th>
+                    <th>Google Translate</th>
+                    <th>iTranslate</th>
+                    <th>Microsoft Translator</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Real-time dual-lane transcription</td>
+                    <td class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                </tr>
+                <tr>
+                    <td>Both speakers visible simultaneously</td>
+                    <td class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                </tr>
+                <tr>
+                    <td>Automatic language detection</td>
+                    <td class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td><span class="check">&#10003;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="check">&#10003;</span></td>
+                </tr>
+                <tr>
+                    <td>Works offline</td>
+                    <td class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td><span class="check">&#10003;</span></td>
+                    <td>Paid only</td>
+                    <td><span class="check">&#10003;</span></td>
+                </tr>
+                <tr>
+                    <td>Desktop app (Windows)</td>
+                    <td class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td>Web only</td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                </tr>
+                <tr>
+                    <td>Subtitle export (SRT/VTT)</td>
+                    <td class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                </tr>
+                <tr>
+                    <td>Translate files (audio, video, docs)</td>
+                    <td class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td>Text/docs only</td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                </tr>
+                <tr>
+                    <td>Translation glossary</td>
+                    <td class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                </tr>
+                <tr>
+                    <td>Private mode (zero data retention)</td>
+                    <td class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                    <td><span class="cross">&#10007;</span></td>
+                </tr>
+                <tr>
+                    <td>No account required</td>
+                    <td class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td>Google account</td>
+                    <td>Account required</td>
+                    <td>Optional</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Who It's For -->
+<section class="section" id="who-its-for" style="padding-bottom:40px;">
+    <h2 class="section-title">Who It's For</h2>
+    <div class="audience-grid">
+        <div class="audience-card">
+            <div class="audience-icon">&#9992;</div>
+            <h3>Travellers</h3>
+            <p>Navigate foreign cities, order food, ask for directions, and have real conversations with locals. Works offline when you don't have signal.</p>
+            <span class="audience-plan">Free or Essential</span>
+        </div>
+        <div class="audience-card">
+            <div class="audience-icon">&#128188;</div>
+            <h3>Professionals</h3>
+            <p>Follow international meetings, client calls, and negotiations in real time. Export subtitles and translate documents for your records.</p>
+            <span class="audience-plan">Premium</span>
+        </div>
+        <div class="audience-card">
+            <div class="audience-icon">&#127891;</div>
+            <h3>Students &amp; Educators</h3>
+            <p>Follow lectures in another language, support multilingual classrooms, or practise listening comprehension with real-time transcription.</p>
+            <span class="audience-plan">Essential or Premium</span>
+        </div>
+        <div class="audience-card">
+            <div class="audience-icon">&#127970;</div>
+            <h3>Teams &amp; Organisations</h3>
+            <p>High-volume translation for legal, medical, government, and corporate teams. Private mode for sensitive conversations. Dedicated support.</p>
+            <span class="audience-plan">Business</span>
+        </div>
     </div>
 </section>
 
@@ -99,7 +293,7 @@
             <h3 data-i18n="home.pricing.free.name">Free</h3>
             <div class="price-amount">$0</div>
             <div class="price-period" data-i18n="home.pricing.free.period">forever</div>
-            <p class="plan-tagline" data-i18n="home.pricing.free.tagline">Perfect for holidays and occasional conversations.</p>
+            <p class="best-for">Best for: holidays &amp; trying it out</p>
             <ul class="price-features">
                 <li data-i18n="home.pricing.free.f1">On-device transcription</li>
                 <li data-i18n="home.pricing.free.f2">28 offline languages</li>
@@ -111,7 +305,7 @@
             <h3 data-i18n="home.pricing.essential.name">Essential</h3>
             <div class="price-amount">$35</div>
             <div class="price-period" data-i18n-html="home.pricing.essential.period">per month <span class="price-annual">or $350/yr &mdash; save $70</span></div>
-            <p class="plan-tagline" data-i18n="home.pricing.essential.tagline">Great for travellers, students, and everyday use.</p>
+            <p class="best-for">Best for: travellers, students &amp; everyday use</p>
             <ul class="price-features">
                 <li data-i18n="home.pricing.essential.f1">AI transcription &amp; translation</li>
                 <li data-i18n="home.pricing.essential.f2">30 hours included per month</li>
@@ -124,7 +318,7 @@
             <h3 data-i18n="home.pricing.premium.name">Premium</h3>
             <div class="price-amount">$65</div>
             <div class="price-period" data-i18n-html="home.pricing.premium.period">per month <span class="price-annual">or $650/yr &mdash; save $130</span></div>
-            <p class="plan-tagline" data-i18n="home.pricing.premium.tagline">Ideal for professionals, interpreters, and content creators.</p>
+            <p class="best-for">Best for: professionals, interpreters &amp; creators</p>
             <ul class="price-features">
                 <li data-i18n="home.pricing.premium.f1">High Quality AI transcription</li>
                 <li data-i18n="home.pricing.premium.f2">High Quality AI translation</li>
@@ -140,7 +334,7 @@
             <h3 data-i18n="home.pricing.business.name">Business</h3>
             <div class="price-amount">$320</div>
             <div class="price-period" data-i18n-html="home.pricing.business.period">per month <span class="price-annual">or $3,200/yr &mdash; save $640</span></div>
-            <p class="plan-tagline" data-i18n="home.pricing.business.tagline">For teams who need high-volume, high-accuracy translation.</p>
+            <p class="best-for">Best for: teams &amp; high-volume use</p>
             <ul class="price-features">
                 <li data-i18n="home.pricing.business.f1">Everything in Premium</li>
                 <li data-i18n="home.pricing.business.f2">Unlimited usage*</li>
@@ -153,11 +347,59 @@
     <p class="pricing-footnote" data-i18n-html="home.pricing.business.footnote">*Subject to our <a href="terms.html">fair usage policy</a> (200 hrs/month). Additional hours available via pay-as-you-go.</p>
 </section>
 
+<!-- FAQ -->
+<section class="section" style="padding-bottom:40px;">
+    <h2 class="section-title">Common Questions</h2>
+    <div class="faq-list">
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Does it work with two people speaking different languages?</button>
+            <div class="faq-answer">
+                <p>Yes. DuoVox uses dual-lane transcription with automatic language detection. Each speaker's words appear in their own panel, and translations appear alongside in real time.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Is my audio stored or used for training?</button>
+            <div class="faq-answer">
+                <p>No. Audio is processed in real time and immediately discarded. It is not stored on our servers or used for AI model training. On the Free tier, all processing happens entirely on your device.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">What happens when I run out of hours?</button>
+            <div class="faq-answer">
+                <p>You'll be notified at 80% and 100% of your included hours. You can continue using AI features at the pay-as-you-go overage rate, or switch to offline mode at any time.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Does it work without internet?</button>
+            <div class="faq-answer">
+                <p>Yes. DuoVox includes built-in offline transcription with 28 languages on all tiers, including Free. Offline translation is also available. AI-powered features require an internet connection.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Do I need to create an account?</button>
+            <div class="faq-answer">
+                <p>No. DuoVox works without accounts or sign-ups. Download the app and start using it immediately. Subscriptions are managed through Google Play or the Microsoft Store.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Disclaimer -->
 <section class="section disclaimer-section">
     <div class="disclaimer-box">
         <h3 data-i18n="home.disclaimer.title">Accuracy Disclaimer</h3>
         <p data-i18n-html="home.disclaimer.text">DuoVox uses AI-powered speech recognition and machine translation to assist communication. Like all transcription and translation tools, <strong>results may contain errors</strong> and should not be treated as a verbatim or certified record. Accuracy can be affected by background noise, accents, microphone quality, overlapping speech and domain-specific terminology. DuoVox is a <strong>communication aid</strong> and should not be relied upon for legal, medical, safety-critical, financial or official purposes. Always verify important information independently.</p>
+    </div>
+</section>
+
+<!-- Bottom CTA -->
+<section class="section" style="padding-top: 0; padding-bottom: 20px;">
+    <div style="max-width:700px; margin:0 auto; text-align:center;">
+        <h2 class="section-title" style="font-size:1.6rem; margin-bottom:1rem;">Ready to break the language barrier?</h2>
+        <p style="color:var(--text-secondary); margin-bottom:2rem;">Start with the free tier &mdash; no account, no credit card, no commitment.</p>
+        <div class="btn-group">
+            <a href="#pricing" class="btn btn-primary" style="font-size:1.05rem; padding:16px 36px;">Get Started Free</a>
+        </div>
     </div>
 </section>
 
