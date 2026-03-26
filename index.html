@@ -42,6 +42,7 @@
     </script>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <!-- Navigation -->
 <nav class="nav">
@@ -62,7 +63,7 @@
 </nav>
 
 <!-- Hero -->
-<section class="hero">
+<section class="hero" id="main-content">
     <img src="icon.png" alt="DuoVox" class="hero-icon">
     <h1>DuoVox</h1>
     <p class="subtitle" data-i18n="home.subtitle">Speak freely across languages &mdash; anywhere, with anyone.</p>
@@ -192,12 +193,12 @@
         <table class="comparison-table">
             <thead>
                 <tr>
-                    <th>Feature</th>
-                    <th class="highlight-col">DuoVox</th>
-                    <th>Google Translate</th>
-                    <th>iTranslate</th>
-                    <th>SayHi</th>
-                    <th>DeepL</th>
+                    <th scope="col">Feature</th>
+                    <th scope="col" class="highlight-col">DuoVox</th>
+                    <th scope="col">Google Translate</th>
+                    <th scope="col">iTranslate</th>
+                    <th scope="col">SayHi</th>
+                    <th scope="col">DeepL</th>
                 </tr>
             </thead>
             <tbody>
@@ -416,31 +417,31 @@
     <h2 class="section-title">Common Questions</h2>
     <div class="faq-list">
         <div class="faq-item">
-            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Does it work with two people speaking different languages?</button>
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))">Does it work with two people speaking different languages?</button>
             <div class="faq-answer">
                 <p>Yes. DuoVox uses dual-lane transcription with automatic language detection. Each speaker's words appear in their own panel, and translations appear alongside in real time.</p>
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Is my audio stored or used for training?</button>
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))">Is my audio stored or used for training?</button>
             <div class="faq-answer">
                 <p>No. Audio is processed in real time and immediately discarded. It is not stored on our servers or used for AI model training. On the Free tier, all processing happens entirely on your device.</p>
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">What happens when I run out of hours?</button>
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))">What happens when I run out of hours?</button>
             <div class="faq-answer">
                 <p>You'll be notified at 80% and 100% of your included hours. You can continue using AI features at the pay-as-you-go overage rate, or switch to offline mode at any time.</p>
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Does it work without internet?</button>
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))">Does it work without internet?</button>
             <div class="faq-answer">
                 <p>Yes. DuoVox includes built-in offline transcription with 28 languages on all tiers, including Free. Offline translation is also available. AI-powered features require an internet connection.</p>
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Do I need to create an account?</button>
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))">Do I need to create an account?</button>
             <div class="faq-answer">
                 <p>No. DuoVox works without accounts or sign-ups. Download the app and start using it immediately. Subscriptions are managed through Google Play or the Microsoft Store.</p>
             </div>
