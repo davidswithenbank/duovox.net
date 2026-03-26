@@ -8,7 +8,7 @@
     --accent-light: #66BB6A;
     --text-primary: #e8eaed;
     --text-secondary: #9aa0a6;
-    --text-muted: #6b7280;
+    --text-muted: #8b919e;
     --border: #2d3040;
     --gradient-start: #4CAF50;
     --gradient-end: #00BCD4;
@@ -58,6 +58,22 @@ a:hover {
 
 .skip-link:focus {
     top: 0;
+}
+
+/* ── Focus Indicators ── */
+a:focus-visible,
+.btn:focus-visible,
+.faq-question:focus-visible,
+.nav-toggle:focus-visible {
+    outline: 2px solid var(--accent-light);
+    outline-offset: 2px;
+}
+
+.form-group input:focus-visible,
+.form-group select:focus-visible,
+.form-group textarea:focus-visible {
+    outline: 2px solid var(--accent-light);
+    outline-offset: 1px;
 }
 
 /* ── Navigation ── */
