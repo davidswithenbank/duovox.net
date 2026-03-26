@@ -746,6 +746,42 @@ a:hover {
     font-size: 1.1rem;
 }
 
+.comparison-table .check-muted {
+    color: var(--text-muted);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.comparison-table .category-row td {
+    background: rgba(76, 175, 80, 0.06);
+    border-bottom: 1px solid var(--border);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    color: var(--accent-light);
+}
+
+.comparison-table .best-for-row td {
+    font-size: 0.85rem;
+    vertical-align: top;
+    padding-top: 1rem;
+}
+
+.unique-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: rgba(76, 175, 80, 0.2);
+    color: var(--accent-light);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
 /* ── Best For labels ── */
 .best-for {
     display: inline-block;
