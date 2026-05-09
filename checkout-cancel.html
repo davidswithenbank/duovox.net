@@ -11,18 +11,19 @@
 <body>
 
 <!-- Navigation -->
-<nav class="nav">
+<nav class="nav" aria-label="Main navigation">
     <div class="nav-inner">
         <a href="index.html" class="nav-brand">
             <img src="icon.png" alt="DuoVox icon">
             DuoVox
         </a>
+        <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('open')"><span></span><span></span><span></span></button>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#pricing">Pricing</a></li>
-            <li><a href="security.html">Security</a></li>
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="terms.html">Terms</a></li>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="security.html" data-i18n="nav.security">Security</a></li>
+            <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+            <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
         </ul>
     </div>
 </nav>
@@ -48,6 +49,12 @@
 <!-- Footer -->
 <footer class="footer">
     <div class="footer-inner">
+        <div class="footer-links">
+            <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+            <a href="security.html" data-i18n="nav.security">Security</a>
+            <a href="contact.html" data-i18n="footer.contact">Contact</a>
+        </div>
         <p>&copy; 2025 David Arthur Software. All rights reserved.</p>
     </div>
 </footer>
