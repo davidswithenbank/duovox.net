@@ -28,36 +28,63 @@
   var KEY = 'duovox-lang';
   var cache = {};
 
-  // Currency: same prices, swap symbol by region
-  var CURR_MAP = { fr: '€', de: '€', it: '€', nl: '€', es: '€', pt: '€' };
-  var CURR_CODES = { '$': 'USD', '£': 'GBP', '€': 'EUR' };
+  // Currency: each price element carries data-price-{usd,gbp,eur} attributes (and the
+  // period text carries data-period-{usd,gbp,eur} attributes). The JS picks the right one
+  // based on visitor locale. Default is USD (the rest-of-world default).
+  //
+  // This is a region-based VALUE swap, not a symbol swap, because Microsoft Store and
+  // Google Play map a USD base price to specific GBP/EUR tier values that AREN'T 1:1
+  // conversions (e.g. $19.99 USD ↔ £15.99 GBP ↔ €19.99 EUR via the standard MS Store
+  // consumer tier). The website must show the same per-region values the store will
+  // charge, so we can't just swap symbols.
+  //
+  // Locale → currency mapping:
+  //   en-gb            → GBP
+  //   fr/de/it/nl/es/pt → EUR
+  //   everything else  → USD
+  var EUR_LANGS = { fr: 1, de: 1, it: 1, nl: 1, es: 1, pt: 1 };
 
-  function getCurr(lang) {
+  function getCurrCode(lang) {
     if (lang === 'en') {
       var nl = (navigator.language || '').toLowerCase();
-      if (nl === 'en-gb' || nl.indexOf('en-gb') === 0) return '£';
-      return '$';
+      if (nl === 'en-gb' || nl.indexOf('en-gb') === 0) return 'gbp';
+      return 'usd';
     }
-    return CURR_MAP[lang] || '$';
+    return EUR_LANGS[lang] ? 'eur' : 'usd';
   }
 
-  function applyCurr(sym) {
-    var code = CURR_CODES[sym] || 'USD';
-    // Price amounts (not managed by i18n)
+  // Apply the chosen currency to all marked price elements.
+  // `code` is 'usd' / 'gbp' / 'eur' (lower-case for attribute lookup).
+  // All assignments use textContent — no innerHTML, no XSS surface. The HTML is
+  // structured so each region-varying string lives in its own element with
+  // data-{price,annual,payg}-{usd,gbp,eur} attributes; static text like "per month"
+  // stays in the markup as-is.
+  function applyCurr(code) {
+    // Headline price amounts.
     var amounts = document.querySelectorAll('.price-amount, .price-highlight-amount');
     for (var i = 0; i < amounts.length; i++) {
       var el = amounts[i];
-      if (!el.getAttribute('data-orig-price'))
-        el.setAttribute('data-orig-price', el.textContent);
-      el.textContent = el.getAttribute('data-orig-price').replace(/\$/g, sym);
+      var val = el.getAttribute('data-price-' + code);
+      if (val) el.textContent = val;
     }
-    // Period text and labels (i18n sets fresh $ from JSON, then we swap)
-    var periods = document.querySelectorAll('.price-period, .price-highlight-label');
-    for (var j = 0; j < periods.length; j++)
-      periods[j].innerHTML = periods[j].innerHTML.replace(/\$/g, sym);
-    // Currency code in pricing subtitle
-    var sub = document.querySelector('[data-i18n-html="home.pricing.subtitle"]');
-    if (sub) sub.innerHTML = sub.innerHTML.replace(/USD|GBP|EUR/g, code);
+    // Annual-savings spans inside .price-period.
+    var annuals = document.querySelectorAll('.price-annual');
+    for (var j = 0; j < annuals.length; j++) {
+      var ael = annuals[j];
+      var aval = ael.getAttribute('data-annual-' + code);
+      if (aval) ael.textContent = aval;
+    }
+    // PAYG per-tier rate lines.
+    var payg = document.querySelectorAll('.payg-rate');
+    for (var k = 0; k < payg.length; k++) {
+      var pgel = payg[k];
+      var pgval = pgel.getAttribute('data-payg-' + code);
+      if (pgval) pgel.textContent = pgval;
+    }
+    // Note: we don't substitute the currency-code in the pricing subtitle anymore.
+    // The default subtitle text explains the per-region behaviour ("Default prices in
+    // USD. UK visitors see GBP and Eurozone visitors see EUR.") which is already
+    // region-aware in prose — no token replacement needed.
   }
 
   function buildSelector() {
@@ -113,12 +140,12 @@
     document.documentElement.lang = code;
     document.documentElement.dir = RTL[code] ? 'rtl' : 'ltr';
 
-    if (code === 'en') { restore(); applyCurr(getCurr(code)); return; }
-    if (cache[code]) { apply(cache[code]); applyCurr(getCurr(code)); return; }
+    if (code === 'en') { restore(); applyCurr(getCurrCode(code)); return; }
+    if (cache[code]) { apply(cache[code]); applyCurr(getCurrCode(code)); return; }
 
     fetch('lang/' + code + '.json')
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function (j) { cache[code] = j; apply(j); applyCurr(getCurr(code)); })
+      .then(function (j) { cache[code] = j; apply(j); applyCurr(getCurrCode(code)); })
       .catch(function (e) { console.warn('i18n: ' + code, e); });
   }
 
@@ -131,7 +158,7 @@
     sel.value = lang;
     sel.addEventListener('change', function () { setLang(this.value); });
     if (lang !== 'en') setLang(lang);
-    else applyCurr(getCurr('en'));
+    else applyCurr(getCurrCode('en'));
   }
 
   if (document.readyState === 'loading')

@@ -31,7 +31,7 @@
   "home.feat.privacy.desc": "Your audio is never stored or sent to our servers. Transcriptions exist only on your device and are cleared when your session ends. Enable Private Mode for zero data retention.",
 
   "home.pricing.title": "Simple Pricing",
-  "home.pricing.subtitle": "Choose the plan that fits how you use DuoVox. Annual billing saves 17%, or pay only for what you use with Pay-As-You-Go.<br><small style=\"opacity:0.6;\">Prices shown in GBP. App-store pricing is displayed in your local currency. All subscriptions can be cancelled at any time.</small>",
+  "home.pricing.subtitle": "Choose the plan that fits how you use DuoVox. Annual billing saves about 17%, or pay only for what you use with Pay-As-You-Go.<br><small style=\"opacity:0.6;\">Default prices in USD. UK visitors see GBP and Eurozone visitors see EUR. Microsoft Store and Google Play charge the equivalent in your local currency at checkout. All subscriptions can be cancelled at any time.</small>",
 
   "home.pricing.free.name": "Free",
   "home.pricing.free.period": "forever",

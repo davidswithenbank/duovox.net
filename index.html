@@ -28,11 +28,15 @@
       "url": "https://duovox.net",
       "description": "Real-time voice translation across 50+ languages. Dual-lane transcription, offline mode, and privacy built in.",
       "offers": [
-        { "@type": "Offer", "price": "0", "priceCurrency": "GBP", "name": "Free" },
-        { "@type": "Offer", "price": "15.99", "priceCurrency": "GBP", "name": "Standard", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "15.99", "priceCurrency": "GBP", "billingDuration": "P1M" } },
-        { "@type": "Offer", "price": "99.99", "priceCurrency": "GBP", "name": "Professional", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "99.99", "priceCurrency": "GBP", "billingDuration": "P1M" } },
-        { "@type": "Offer", "price": "1.99", "priceCurrency": "GBP", "name": "Pay-As-You-Go (Standard)", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "1.99", "priceCurrency": "GBP", "unitCode": "HUR" } },
-        { "@type": "Offer", "price": "4.99", "priceCurrency": "GBP", "name": "Pay-As-You-Go (Professional)", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "4.99", "priceCurrency": "GBP", "unitCode": "HUR" } }
+        { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free" },
+        { "@type": "Offer", "price": "19.99", "priceCurrency": "USD", "name": "Standard", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "19.99", "priceCurrency": "USD", "billingDuration": "P1M" } },
+        { "@type": "Offer", "price": "15.99", "priceCurrency": "GBP", "name": "Standard (UK)", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "15.99", "priceCurrency": "GBP", "billingDuration": "P1M" }, "eligibleRegion": { "@type": "Country", "name": "GB" } },
+        { "@type": "Offer", "price": "19.99", "priceCurrency": "EUR", "name": "Standard (EU)", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "19.99", "priceCurrency": "EUR", "billingDuration": "P1M" } },
+        { "@type": "Offer", "price": "129.99", "priceCurrency": "USD", "name": "Professional", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "129.99", "priceCurrency": "USD", "billingDuration": "P1M" } },
+        { "@type": "Offer", "price": "99.99", "priceCurrency": "GBP", "name": "Professional (UK)", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "99.99", "priceCurrency": "GBP", "billingDuration": "P1M" }, "eligibleRegion": { "@type": "Country", "name": "GB" } },
+        { "@type": "Offer", "price": "129.99", "priceCurrency": "EUR", "name": "Professional (EU)", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "129.99", "priceCurrency": "EUR", "billingDuration": "P1M" } },
+        { "@type": "Offer", "price": "2.49", "priceCurrency": "USD", "name": "Pay-As-You-Go (Standard)", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2.49", "priceCurrency": "USD", "unitCode": "HUR" } },
+        { "@type": "Offer", "price": "5.99", "priceCurrency": "USD", "name": "Pay-As-You-Go (Professional)", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "5.99", "priceCurrency": "USD", "unitCode": "HUR" } }
       ],
       "author": {
         "@type": "Organization",
@@ -354,13 +358,13 @@
 <!-- Pricing -->
 <section class="section" id="pricing">
     <h2 class="section-title" data-i18n="home.pricing.title">Simple Pricing</h2>
-    <p class="section-subtitle" data-i18n-html="home.pricing.subtitle">Choose the plan that fits how you use DuoVox. Annual billing saves 17%, or pay only for what you use with Pay-As-You-Go.<br><small style="opacity:0.6;">Prices shown in GBP. App-store pricing is displayed in your local currency. All subscriptions can be cancelled at any time.</small></p>
+    <p class="section-subtitle" data-i18n-html="home.pricing.subtitle">Choose the plan that fits how you use DuoVox. Annual billing saves about 17%, or pay only for what you use with Pay-As-You-Go.<br><small style="opacity:0.6;">Default prices in USD. UK visitors see GBP and Eurozone visitors see EUR. Microsoft Store and Google Play charge the equivalent in your local currency at checkout. All subscriptions can be cancelled at any time.</small></p>
     <div class="pricing-grid four-col">
 
         <!-- Free tier -->
         <div class="price-card">
             <h3 data-i18n="home.pricing.free.name">Free</h3>
-            <div class="price-amount">&pound;0</div>
+            <div class="price-amount" data-price-usd="$0" data-price-gbp="&pound;0" data-price-eur="&euro;0">$0</div>
             <div class="price-period" data-i18n="home.pricing.free.period">forever</div>
             <p class="best-for" data-i18n="home.pricing.free.bestfor">Best for: trying it out &amp; offline privacy</p>
             <ul class="price-features">
@@ -376,8 +380,11 @@
         <!-- Standard tier -->
         <div class="price-card">
             <h3 data-i18n="home.pricing.standard.name">Standard</h3>
-            <div class="price-amount">&pound;15.99</div>
-            <div class="price-period" data-i18n-html="home.pricing.standard.period">per month <span class="price-annual">or &pound;159.99/yr &mdash; save &pound;32</span></div>
+            <div class="price-amount" data-price-usd="$19.99" data-price-gbp="&pound;15.99" data-price-eur="&euro;19.99">$19.99</div>
+            <div class="price-period">per month <span class="price-annual"
+                 data-annual-usd="or $199.99/yr &mdash; save $39.89"
+                 data-annual-gbp="or &pound;159.99/yr &mdash; save &pound;31.89"
+                 data-annual-eur="or &euro;199.99/yr &mdash; save &euro;39.89">or $199.99/yr &mdash; save $39.89</span></div>
             <p class="best-for" data-i18n="home.pricing.standard.bestfor">Best for: travellers, students &amp; everyday bilingual chat</p>
             <ul class="price-features">
                 <li data-i18n="home.pricing.standard.f1">Live AI transcription &amp; translation</li>
@@ -394,8 +401,11 @@
         <div class="price-card featured">
             <div class="price-badge" data-i18n="home.pricing.professional.badge">Most Popular</div>
             <h3 data-i18n="home.pricing.professional.name">Professional</h3>
-            <div class="price-amount">&pound;99.99</div>
-            <div class="price-period" data-i18n-html="home.pricing.professional.period">per month <span class="price-annual">or &pound;999.99/yr &mdash; save &pound;199</span></div>
+            <div class="price-amount" data-price-usd="$129.99" data-price-gbp="&pound;99.99" data-price-eur="&euro;129.99">$129.99</div>
+            <div class="price-period">per month <span class="price-annual"
+                 data-annual-usd="or $1,299.99/yr &mdash; save $259.89"
+                 data-annual-gbp="or &pound;999.99/yr &mdash; save &pound;199.89"
+                 data-annual-eur="or &euro;1,299.99/yr &mdash; save &euro;259.89">or $1,299.99/yr &mdash; save $259.89</span></div>
             <p class="best-for" data-i18n="home.pricing.professional.bestfor">Best for: businesses and professional interpreters &mdash; including medical &amp; legal</p>
             <ul class="price-features">
                 <li data-i18n="home.pricing.professional.f1">Specialist-grade AI for medical &amp; legal vocabulary</li>
@@ -413,12 +423,18 @@
         <!-- Pay-As-You-Go -->
         <div class="price-card">
             <h3 data-i18n="home.pricing.payg.name">Pay-As-You-Go</h3>
-            <div class="price-amount">from &pound;1.99</div>
+            <div class="price-amount" data-price-usd="from $2.49" data-price-gbp="from &pound;1.99" data-price-eur="from &euro;2.49">from $2.49</div>
             <div class="price-period" data-i18n="home.pricing.payg.period">per hour</div>
             <p class="best-for" data-i18n="home.pricing.payg.bestfor">Best for: trial, occasional use or top-up</p>
             <ul class="price-features">
-                <li data-i18n="home.pricing.payg.f1">Standard quality: &pound;1.99/hour</li>
-                <li data-i18n="home.pricing.payg.f2">Professional quality: &pound;4.99/hour</li>
+                <li class="payg-rate"
+                    data-payg-usd="Standard quality: $2.49/hour"
+                    data-payg-gbp="Standard quality: &pound;1.99/hour"
+                    data-payg-eur="Standard quality: &euro;2.49/hour">Standard quality: $2.49/hour</li>
+                <li class="payg-rate"
+                    data-payg-usd="Professional quality: $5.99/hour"
+                    data-payg-gbp="Professional quality: &pound;4.99/hour"
+                    data-payg-eur="Professional quality: &euro;5.99/hour">Professional quality: $5.99/hour</li>
                 <li data-i18n="home.pricing.payg.f3">Buy credit packs (10h, 25h, 50h)</li>
                 <li data-i18n="home.pricing.payg.f4">No subscription, no commitment</li>
                 <li data-i18n="home.pricing.payg.f5">Credits never expire</li>
