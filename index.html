@@ -28,10 +28,11 @@
       "url": "https://duovox.net",
       "description": "Real-time voice translation across 50+ languages. Dual-lane transcription, offline mode, and privacy built in.",
       "offers": [
-        { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free" },
-        { "@type": "Offer", "price": "35", "priceCurrency": "USD", "name": "Essential" },
-        { "@type": "Offer", "price": "65", "priceCurrency": "USD", "name": "Premium" },
-        { "@type": "Offer", "price": "320", "priceCurrency": "USD", "name": "Business" }
+        { "@type": "Offer", "price": "0", "priceCurrency": "GBP", "name": "Free" },
+        { "@type": "Offer", "price": "15.99", "priceCurrency": "GBP", "name": "Standard", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "15.99", "priceCurrency": "GBP", "billingDuration": "P1M" } },
+        { "@type": "Offer", "price": "99.99", "priceCurrency": "GBP", "name": "Professional", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "99.99", "priceCurrency": "GBP", "billingDuration": "P1M" } },
+        { "@type": "Offer", "price": "1.99", "priceCurrency": "GBP", "name": "Pay-As-You-Go (Standard)", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "1.99", "priceCurrency": "GBP", "unitCode": "HUR" } },
+        { "@type": "Offer", "price": "4.99", "priceCurrency": "GBP", "name": "Pay-As-You-Go (Professional)", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "4.99", "priceCurrency": "GBP", "unitCode": "HUR" } }
       ],
       "author": {
         "@type": "Organization",
@@ -325,27 +326,27 @@
     <div class="audience-grid">
         <div class="audience-card">
             <div class="audience-icon">&#9992;</div>
-            <h3>Travellers</h3>
-            <p>Navigate foreign cities, order food, ask for directions, and have real conversations with locals. Works offline when you don't have signal.</p>
-            <span class="audience-plan">Free or Essential</span>
+            <h3>Travellers &amp; Students</h3>
+            <p>Navigate foreign cities, order food, ask for directions, follow lectures, and have real conversations with locals. Works offline when you don't have signal.</p>
+            <span class="audience-plan">Free or Standard</span>
         </div>
         <div class="audience-card">
             <div class="audience-icon">&#128188;</div>
-            <h3>Professionals</h3>
+            <h3>Business Professionals</h3>
             <p>Follow international meetings, client calls, and negotiations in real time. Export subtitles and translate documents for your records.</p>
-            <span class="audience-plan">Premium</span>
+            <span class="audience-plan">Standard or Professional</span>
         </div>
         <div class="audience-card">
-            <div class="audience-icon">&#127891;</div>
-            <h3>Students &amp; Educators</h3>
-            <p>Follow lectures in another language, support multilingual classrooms, or practise listening comprehension with real-time transcription.</p>
-            <span class="audience-plan">Essential or Premium</span>
+            <div class="audience-icon">&#127973;</div>
+            <h3>Medical &amp; Legal Interpreters</h3>
+            <p>Specialist-grade vocabulary recognition for medical consultations, legal proceedings, and immigration interviews. Private Mode for sensitive content.</p>
+            <span class="audience-plan">Professional</span>
         </div>
         <div class="audience-card">
-            <div class="audience-icon">&#127970;</div>
-            <h3>Teams &amp; Organisations</h3>
-            <p>High-volume translation for legal, medical, government, and corporate teams. Private mode for sensitive conversations. Dedicated support.</p>
-            <span class="audience-plan">Business</span>
+            <div class="audience-icon">&#128179;</div>
+            <h3>Occasional &amp; Trial Users</h3>
+            <p>Try DuoVox without signing up to a monthly plan. Buy credits as you need them &mdash; perfect for one-off translation, testing the service, or topping up beyond your subscription.</p>
+            <span class="audience-plan">Pay-As-You-Go</span>
         </div>
     </div>
 </section>
@@ -353,68 +354,80 @@
 <!-- Pricing -->
 <section class="section" id="pricing">
     <h2 class="section-title" data-i18n="home.pricing.title">Simple Pricing</h2>
-    <p class="section-subtitle" data-i18n-html="home.pricing.subtitle">Choose the plan that fits your needs. All paid plans include annual billing discounts.<br><small style="opacity:0.6;">Prices shown in USD. In-app pricing is displayed in your local currency via Google Play. All subscriptions can be cancelled at any time.</small></p>
+    <p class="section-subtitle" data-i18n-html="home.pricing.subtitle">Choose the plan that fits how you use DuoVox. Annual billing saves 17%, or pay only for what you use with Pay-As-You-Go.<br><small style="opacity:0.6;">Prices shown in GBP. App-store pricing is displayed in your local currency. All subscriptions can be cancelled at any time.</small></p>
     <div class="pricing-grid four-col">
+
+        <!-- Free tier -->
         <div class="price-card">
             <h3 data-i18n="home.pricing.free.name">Free</h3>
-            <div class="price-amount">$0</div>
+            <div class="price-amount">&pound;0</div>
             <div class="price-period" data-i18n="home.pricing.free.period">forever</div>
-            <p class="best-for">Best for: holidays &amp; trying it out</p>
+            <p class="best-for" data-i18n="home.pricing.free.bestfor">Best for: trying it out &amp; offline privacy</p>
             <ul class="price-features">
                 <li data-i18n="home.pricing.free.f1">On-device transcription</li>
                 <li data-i18n="home.pricing.free.f2">28 offline languages</li>
-                <li data-i18n="home.pricing.free.f3">Unlock offline translation free &mdash; just watch a short video</li>
+                <li data-i18n="home.pricing.free.f3">Works without internet</li>
+                <li data-i18n="home.pricing.free.f4">Light banner ads</li>
             </ul>
             <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="home.pricing.free.btn">Get Started</a>
-            <p class="cta-micro">No account needed. Free forever.</p>
+            <p class="cta-micro" data-i18n="home.pricing.free.micro">No account needed. Free forever.</p>
         </div>
+
+        <!-- Standard tier -->
         <div class="price-card">
-            <h3 data-i18n="home.pricing.essential.name">Essential</h3>
-            <div class="price-amount">$35</div>
-            <div class="price-period" data-i18n-html="home.pricing.essential.period">per month <span class="price-annual">or $350/yr &mdash; save $70</span></div>
-            <p class="best-for">Best for: travellers, students &amp; everyday use</p>
+            <h3 data-i18n="home.pricing.standard.name">Standard</h3>
+            <div class="price-amount">&pound;15.99</div>
+            <div class="price-period" data-i18n-html="home.pricing.standard.period">per month <span class="price-annual">or &pound;159.99/yr &mdash; save &pound;32</span></div>
+            <p class="best-for" data-i18n="home.pricing.standard.bestfor">Best for: travellers, students &amp; everyday bilingual chat</p>
             <ul class="price-features">
-                <li data-i18n="home.pricing.essential.f1">AI transcription &amp; translation</li>
-                <li data-i18n="home.pricing.essential.f2">30 hours included per month</li>
-                <li data-i18n="home.pricing.essential.f3">51 supported languages</li>
+                <li data-i18n="home.pricing.standard.f1">Live AI transcription &amp; translation</li>
+                <li data-i18n="home.pricing.standard.f2">15 hours included per month</li>
+                <li data-i18n="home.pricing.standard.f3">51 supported languages</li>
+                <li data-i18n="home.pricing.standard.f4">No ads</li>
+                <li data-i18n="home.pricing.standard.f5">Cancel anytime</li>
             </ul>
-            <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="home.pricing.essential.btn">Get Essential</a>
-            <p class="cta-micro">30 hours/month. Cancel anytime.</p>
+            <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="home.pricing.standard.btn">Get Standard</a>
+            <p class="cta-micro" data-i18n="home.pricing.standard.micro">Best if you use it 8+ hours per month.</p>
         </div>
+
+        <!-- Professional tier (Most Popular) -->
         <div class="price-card featured">
-            <div class="price-badge" data-i18n="home.pricing.premium.badge">Most Popular</div>
-            <h3 data-i18n="home.pricing.premium.name">Premium</h3>
-            <div class="price-amount">$65</div>
-            <div class="price-period" data-i18n-html="home.pricing.premium.period">per month <span class="price-annual">or $650/yr &mdash; save $130</span></div>
-            <p class="best-for">Best for: professionals, interpreters &amp; creators</p>
+            <div class="price-badge" data-i18n="home.pricing.professional.badge">Most Popular</div>
+            <h3 data-i18n="home.pricing.professional.name">Professional</h3>
+            <div class="price-amount">&pound;99.99</div>
+            <div class="price-period" data-i18n-html="home.pricing.professional.period">per month <span class="price-annual">or &pound;999.99/yr &mdash; save &pound;199</span></div>
+            <p class="best-for" data-i18n="home.pricing.professional.bestfor">Best for: medical &amp; legal interpreters and professional translators</p>
             <ul class="price-features">
-                <li data-i18n="home.pricing.premium.f1">High Quality AI transcription</li>
-                <li data-i18n="home.pricing.premium.f2">High Quality AI translation</li>
-                <li data-i18n="home.pricing.premium.f3">40 hours included per month</li>
-                <li data-i18n="home.pricing.premium.f4">Subtitle export (SRT &amp; VTT) (Desktop)</li>
-                <li data-i18n="home.pricing.premium.f5">Translate audio, video &amp; document files (Desktop)</li>
-                <li data-i18n="home.pricing.premium.f9">Translation Glossary (Desktop)</li>
-                <li data-i18n="home.pricing.premium.f8">Private Mode</li>
+                <li data-i18n="home.pricing.professional.f1">Specialist-grade AI for medical &amp; legal vocabulary</li>
+                <li data-i18n="home.pricing.professional.f2">Premium AI translation</li>
+                <li data-i18n="home.pricing.professional.f3">40 hours included per month</li>
+                <li data-i18n="home.pricing.professional.f4">Subtitle export &mdash; SRT &amp; VTT (Desktop)</li>
+                <li data-i18n="home.pricing.professional.f5">Translate audio, video &amp; document files (Desktop)</li>
+                <li data-i18n="home.pricing.professional.f6">Translation Glossary (Desktop)</li>
+                <li data-i18n="home.pricing.professional.f7">Private Mode</li>
             </ul>
-            <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="home.pricing.premium.btn">Get Premium</a>
-            <p class="cta-micro">40 hours/month. Cancel anytime.</p>
+            <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="home.pricing.professional.btn">Get Professional</a>
+            <p class="cta-micro" data-i18n="home.pricing.professional.micro">Best if you use it 20+ hours per month.</p>
         </div>
+
+        <!-- Pay-As-You-Go -->
         <div class="price-card">
-            <h3 data-i18n="home.pricing.business.name">Business</h3>
-            <div class="price-amount">$320</div>
-            <div class="price-period" data-i18n-html="home.pricing.business.period">per month <span class="price-annual">or $3,200/yr &mdash; save $640</span></div>
-            <p class="best-for">Best for: teams &amp; high-volume use</p>
+            <h3 data-i18n="home.pricing.payg.name">Pay-As-You-Go</h3>
+            <div class="price-amount">from &pound;1.99</div>
+            <div class="price-period" data-i18n="home.pricing.payg.period">per hour</div>
+            <p class="best-for" data-i18n="home.pricing.payg.bestfor">Best for: trial, occasional use or top-up</p>
             <ul class="price-features">
-                <li data-i18n="home.pricing.business.f1">Everything in Premium</li>
-                <li data-i18n="home.pricing.business.f2">Unlimited usage*</li>
-                <li data-i18n="home.pricing.business.f3">Dedicated support</li>
-                <li><a href="business.html" data-i18n="home.pricing.business.f4">See professional use cases &rarr;</a></li>
+                <li data-i18n="home.pricing.payg.f1">Standard quality: &pound;1.99/hour</li>
+                <li data-i18n="home.pricing.payg.f2">Professional quality: &pound;4.99/hour</li>
+                <li data-i18n="home.pricing.payg.f3">Buy credit packs (10h, 25h, 50h)</li>
+                <li data-i18n="home.pricing.payg.f4">No subscription, no commitment</li>
+                <li data-i18n="home.pricing.payg.f5">Credits never expire</li>
             </ul>
-            <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="home.pricing.business.btn">Get Business</a>
-            <p class="cta-micro">200 hours/month. Dedicated support.</p>
+            <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="home.pricing.payg.btn">Buy Credits</a>
+            <p class="cta-micro" data-i18n="home.pricing.payg.micro">Try either tier without subscribing.</p>
         </div>
     </div>
-    <p class="pricing-footnote" data-i18n-html="home.pricing.business.footnote">*Subject to our <a href="terms.html">fair usage policy</a> (200 hrs/month). Additional hours available via pay-as-you-go.</p>
+    <p class="pricing-footnote" data-i18n-html="home.pricing.footnote">All subscriptions can continue beyond your monthly hours via Pay-As-You-Go. When you reach your cap you'll be offered three choices: buy additional hours, continue in free offline mode (lower quality, no internet needed) for the rest of the session, or end the session &mdash; your choice. We never auto-charge beyond your subscription without explicit confirmation. See our <a href="terms.html">fair usage policy</a>.</p>
 </section>
 
 <!-- FAQ -->
@@ -436,7 +449,7 @@
         <div class="faq-item">
             <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))">What happens when I run out of hours?</button>
             <div class="faq-answer">
-                <p>You'll be notified at 80% and 100% of your included hours. You can continue using AI features at the pay-as-you-go overage rate, or switch to offline mode at any time.</p>
+                <p>You'll be notified at 80% and at 100% of your monthly hours. When you reach 100% you have three choices: buy Pay-As-You-Go credits to keep going at your current quality level, switch to free offline mode for the rest of the session (lower quality but works without internet), or end the session and wait for your next billing cycle. We never auto-charge you beyond your subscription without explicit confirmation.</p>
             </div>
         </div>
         <div class="faq-item">
