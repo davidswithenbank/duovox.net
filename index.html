@@ -75,15 +75,17 @@
     <p class="tagline" data-i18n="home.tagline">DuoVox translates conversations in real time. Whether you're travelling abroad or working with international clients, you'll understand every word instantly.</p>
     <div class="btn-group">
         <!-- SVG icons from Material Design Icons (Apache License 2.0) — https://materialdesignicons.com -->
-        <a href="#" class="btn btn-primary">
-            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
-            <span data-i18n="home.btn.android">Google Play (Coming Soon)</span>
-        </a>
-        <a href="#" class="btn btn-secondary">
+        <!-- TODO on MS Store approval: make this an <a href="https://apps.microsoft.com/detail/9MSN7866TJQH"> and switch text/key to "Get it on the Microsoft Store"/cta.ms_get -->
+        <span class="btn btn-primary">
             <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17,2H7A5,5,0,0,0,2,7V17a5,5,0,0,0,5,5H17a5,5,0,0,0,5-5V7A5,5,0,0,0,17,2ZM12,17.5A5.5,5.5,0,1,1,17.5,12,5.51,5.51,0,0,1,12,17.5Zm0-9A3.5,3.5,0,1,0,15.5,12,3.5,3.5,0,0,0,12,8.5Z"/></svg>
-            <span data-i18n="home.btn.windows">Windows Desktop</span>
-        </a>
+            <span data-i18n="cta.ms_soon">Coming soon to the Microsoft Store</span>
+        </span>
+        <span class="btn btn-secondary">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+            <span data-i18n="cta.play_soon">Coming soon to Google Play</span>
+        </span>
     </div>
+    <p class="cta-avail-note" data-i18n="cta.avail_note" style="margin-top:1rem; font-size:0.85rem; color:var(--text-secondary);">Available on Windows via the Microsoft Store (coming soon) &mdash; Android coming soon to Google Play.</p>
 </section>
 
 <!-- Trust Badges -->
@@ -128,13 +130,13 @@
         </div>
         <div class="feature-card">
             <div class="feature-icon">&#9889;</div>
-            <h3 data-i18n="home.feat.ai.title">Instant Translations</h3>
-            <p data-i18n="home.feat.ai.desc">Get fast, natural-sounding translations that follow the flow of real speech. DuoVox is optimised to handle idioms, accents, and everyday language.</p>
+            <h3 data-i18n="home.feat.ai.title">Real-time Translations</h3>
+            <p data-i18n="home.feat.ai.desc">Fast, natural-sounding translations that aim to follow real speech. DuoVox is designed to cope with everyday accents and background noise, though accuracy can vary in difficult audio &mdash; always verify important details.</p>
         </div>
         <div class="feature-card">
             <div class="feature-icon">&#128274;</div>
             <h3 data-i18n="home.feat.offline.title">Works Offline</h3>
-            <p data-i18n="home.feat.offline.desc">No signal? No problem. DuoVox includes built-in offline transcription that works without internet &mdash; available on all tiers. Perfect for holidays and travel.</p>
+            <p data-i18n="home.feat.offline.desc">No signal? No problem. DuoVox includes built-in offline transcription that works without internet &mdash; available on all tiers. Great for holidays and travel.</p>
         </div>
         <div class="feature-card">
             <div class="feature-icon">&#128241;</div>
@@ -144,7 +146,7 @@
         <div class="feature-card">
             <div class="feature-icon">&#128737;</div>
             <h3 data-i18n="home.feat.privacy.title">Privacy Built In</h3>
-            <p data-i18n="home.feat.privacy.desc">Audio is processed in real time and never stored. Transcriptions exist only on your device and are cleared when your session ends. Free tier works entirely on-device; paid tiers stream audio to our AI provider for processing only &mdash; it is not retained. Enable Private Mode for zero data retention.</p>
+            <p data-i18n="home.feat.privacy.desc">Audio is processed in real time and not stored by us; on paid tiers it is streamed to our AI provider for processing only and is not intentionally retained. Transcriptions exist only on your device and are cleared when your session ends. The Free tier works entirely on-device. Enable Private Mode for the strictest, no-local-log option.</p>
         </div>
     </div>
 </section>
@@ -153,7 +155,7 @@
 <section class="section reassurance-section">
     <div class="reassurance-box">
         <h3 data-i18n="home.reassurance.title">Designed for Real Conversations</h3>
-        <p data-i18n="home.reassurance.desc">DuoVox is optimised to handle accents, background noise, fast speech, and everyday language. Whether you're ordering coffee abroad or following a business meeting, DuoVox keeps up with the conversation.</p>
+        <p data-i18n="home.reassurance.desc">DuoVox is designed to cope with everyday accents and background noise, though accuracy can vary in difficult audio &mdash; always verify important details. Whether you're ordering coffee abroad or following a business meeting, it aims to follow real speech as it happens.</p>
     </div>
 </section>
 
@@ -220,7 +222,7 @@
                 </tr>
                 <tr>
                     <td>Dual-lane conversation view</td>
-                    <td class="highlight-col"><span class="check">&#10003;</span> <span class="unique-badge">Unique</span></td>
+                    <td class="highlight-col"><span class="check">&#10003;</span> <span class="unique-badge">Standout</span></td>
                     <td>&mdash;</td>
                     <td>&mdash;</td>
                     <td>&mdash;</td>
@@ -287,8 +289,8 @@
                 <!-- Privacy & Security -->
                 <tr class="category-row"><td colspan="6"><strong>Privacy &amp; Security</strong></td></tr>
                 <tr>
-                    <td>Zero-retention private mode</td>
-                    <td class="highlight-col"><span class="check">&#10003;</span> <span class="unique-badge">Unique</span></td>
+                    <td>Private Mode (no local logs)</td>
+                    <td class="highlight-col"><span class="check">&#10003;</span> <span class="unique-badge">Standout</span></td>
                     <td>&mdash;</td>
                     <td>&mdash;</td>
                     <td>&mdash;</td>
@@ -349,7 +351,7 @@
         <div class="audience-card">
             <div class="audience-icon">&#128179;</div>
             <h3>Occasional &amp; Trial Users</h3>
-            <p>Try DuoVox without signing up to a monthly plan. Buy credits as you need them &mdash; perfect for one-off translation, testing the service, or topping up beyond your subscription.</p>
+            <p>Try DuoVox without signing up to a monthly plan. Buy credits as you need them &mdash; great for one-off translation, testing the service, or topping up beyond your subscription.</p>
             <span class="audience-plan">Pay-As-You-Go</span>
         </div>
     </div>
@@ -373,7 +375,8 @@
                 <li data-i18n="home.pricing.free.f3">Works without internet</li>
                 <li data-i18n="home.pricing.free.f4">Light banner ads</li>
             </ul>
-            <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="home.pricing.free.btn">Get Started</a>
+            <!-- TODO on MS Store approval: make this an <a href="https://apps.microsoft.com/detail/9MSN7866TJQH"> and switch text/key to "Get it on the Microsoft Store"/cta.ms_get -->
+            <span class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="cta.ms_soon">Coming soon to the Microsoft Store</span>
             <p class="cta-micro" data-i18n="home.pricing.free.micro">No account needed. Free forever.</p>
         </div>
 
@@ -393,13 +396,14 @@
                 <li data-i18n="home.pricing.standard.f4">No ads</li>
                 <li data-i18n="home.pricing.standard.f5">Cancel anytime</li>
             </ul>
-            <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="home.pricing.standard.btn">Get Standard</a>
+            <!-- TODO on MS Store approval: make this an <a href="https://apps.microsoft.com/detail/9MSN7866TJQH"> and switch text/key to "Get it on the Microsoft Store"/cta.ms_get -->
+            <span class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="cta.ms_soon">Coming soon to the Microsoft Store</span>
             <p class="cta-micro" data-i18n="home.pricing.standard.micro">Best if you use it 8+ hours per month.</p>
         </div>
 
-        <!-- Professional tier (Most Popular) -->
+        <!-- Professional tier -->
         <div class="price-card featured">
-            <div class="price-badge" data-i18n="home.pricing.professional.badge">Most Popular</div>
+            <div class="price-badge" data-i18n="home.pricing.professional.badge">Best for professionals</div>
             <h3 data-i18n="home.pricing.professional.name">Professional</h3>
             <div class="price-amount" data-price-usd="$139.99" data-price-gbp="&pound;139.99" data-price-eur="&euro;139.99">$139.99</div>
             <div class="price-period">per month <span class="price-annual"
@@ -408,15 +412,16 @@
                  data-annual-eur="or &euro;1,539.99/yr &mdash; 1 month free">or $1,539.99/yr &mdash; 1 month free</span></div>
             <p class="best-for" data-i18n="home.pricing.professional.bestfor">Best for: businesses and professional interpreters</p>
             <ul class="price-features">
-                <li data-i18n="home.pricing.professional.f1">Enhanced terminology recognition for specialist contexts</li>
-                <li data-i18n="home.pricing.professional.f2">Premium AI translation</li>
+                <li data-i18n="home.pricing.professional.f1">Enhanced terminology recognition for specialist vocabulary</li>
+                <li data-i18n="home.pricing.professional.f2">Advanced AI translation</li>
                 <li data-i18n="home.pricing.professional.f3">40 hours included per month</li>
                 <li data-i18n="home.pricing.professional.f4">Subtitle export &mdash; SRT &amp; VTT (Desktop)</li>
                 <li data-i18n="home.pricing.professional.f5">Translate audio, video &amp; document files (Desktop)</li>
                 <li data-i18n="home.pricing.professional.f6">Translation Glossary (Desktop)</li>
                 <li data-i18n="home.pricing.professional.f7">Private Mode</li>
             </ul>
-            <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="home.pricing.professional.btn">Get Professional</a>
+            <!-- TODO on MS Store approval: make this an <a href="https://apps.microsoft.com/detail/9MSN7866TJQH"> and switch text/key to "Get it on the Microsoft Store"/cta.ms_get -->
+            <span class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="cta.ms_soon">Coming soon to the Microsoft Store</span>
             <p class="cta-micro" data-i18n="home.pricing.professional.micro">Best if you use it 20+ hours per month.</p>
         </div>
 
@@ -439,7 +444,9 @@
                 <li data-i18n="home.pricing.payg.f4">No subscription, no commitment</li>
                 <li data-i18n="home.pricing.payg.f5">Credits never expire</li>
             </ul>
-            <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="home.pricing.payg.btn">Buy Credits</a>
+            <!-- TODO on MS Store approval: make this an <a href="https://apps.microsoft.com/detail/9MSN7866TJQH"> and switch text/key to "Get it on the Microsoft Store"/cta.ms_get -->
+            <span class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="cta.ms_soon">Coming soon to the Microsoft Store</span>
+            <p class="cta-micro" data-i18n="cta.credits_note">Pay-as-you-go credits are purchased inside the app</p>
             <p class="cta-micro" data-i18n="home.pricing.payg.micro">Try either tier without subscribing.</p>
         </div>
     </div>
@@ -459,7 +466,7 @@
         <div class="faq-item">
             <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))">Is my audio stored or used for training?</button>
             <div class="faq-answer">
-                <p>No. Audio is processed in real time and immediately discarded. It is not stored on our servers or used for AI model training. On the Free tier, all processing happens entirely on your device.</p>
+                <p>Audio is processed in real time and is not stored by us; on paid tiers it is streamed to our AI provider for processing only and is not intentionally retained, and our AI provider does not use it for model training under their current data policies. On the Free tier, all processing happens entirely on your device.</p>
             </div>
         </div>
         <div class="faq-item">
@@ -497,7 +504,9 @@
         <h2 class="section-title" style="font-size:1.6rem; margin-bottom:1rem;">Ready to break the language barrier?</h2>
         <p style="color:var(--text-secondary); margin-bottom:2rem;">Start with the free tier &mdash; no account, no credit card, no commitment.</p>
         <div class="btn-group">
-            <a href="#pricing" class="btn btn-primary" style="font-size:1.05rem; padding:16px 36px;">Get Started Free</a>
+            <!-- TODO on MS Store approval: make this an <a href="https://apps.microsoft.com/detail/9MSN7866TJQH"> and switch text/key to "Get it on the Microsoft Store"/cta.ms_get -->
+            <span class="btn btn-primary" style="font-size:1.05rem; padding:16px 36px;" data-i18n="cta.ms_soon">Coming soon to the Microsoft Store</span>
+            <span class="btn btn-secondary" style="font-size:1.05rem; padding:16px 36px;" data-i18n="cta.play_soon">Coming soon to Google Play</span>
         </div>
     </div>
 </section>
