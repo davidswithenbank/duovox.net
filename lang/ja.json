@@ -24,7 +24,7 @@
   "home.feat.privacy.title": "プライバシー内蔵",
   "home.feat.privacy.desc": "音声はリアルタイムで処理され、当社が保存することはありません。有料プランでは処理のためにのみ当社の AI プロバイダーへストリーミングされ、意図的に保持されることはありません。文字起こしはお使いの端末上にのみ存在し、セッション終了時に消去されます。Free プランは完全に端末上で動作します。最も厳格なローカルログなしのオプションをご希望の場合は、プライベートモードを有効にしてください。",
   "home.pricing.title": "シンプルな料金体系",
-  "home.pricing.subtitle": "DuoVox の使い方に合ったプランをお選びください。年額請求なら 1 か月分が無料になります（11 か月分のお支払い）。または従量課金（Pay-As-You-Go）でご利用分だけお支払いいただけます。<br/><small style=\"opacity:0.6;\">標準価格は USD 表示です。英国からのご利用者には GBP、ユーロ圏からのご利用者には EUR で表示されます。Microsoft Store および Google Play では、チェックアウト時にお住まいの地域の通貨で同等額が請求されます。すべてのサブスクリプションはいつでも解約できます。</small>",
+  "home.pricing.subtitle": "DuoVox の使い方に合ったプランをお選びください。長期プランには約 1 か月分の無料利用が含まれます。または従量課金（Pay-As-You-Go）でご利用分だけお支払いいただけます。<br/><small style=\"opacity:0.6;\">標準価格は USD 表示です。英国からのご利用者には GBP、ユーロ圏からのご利用者には EUR で表示されます。Microsoft Store および Google Play では、チェックアウト時にお住まいの地域の通貨で同等額が請求されます。すべてのサブスクリプションはいつでも解約できます。</small>",
   "home.pricing.free.name": "Free",
   "home.pricing.free.period": "永久無料",
   "home.pricing.free.f1": "端末上での翻訳",

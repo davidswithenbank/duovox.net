@@ -24,7 +24,7 @@
   "home.feat.privacy.title": "Privacy integrata",
   "home.feat.privacy.desc": "L'audio viene elaborato in tempo reale e non viene conservato da noi; sui piani a pagamento viene trasmesso al nostro fornitore di IA solo per l'elaborazione e non viene intenzionalmente conservato. Le trascrizioni esistono solo sul tuo dispositivo e vengono cancellate al termine della sessione. Il piano Free funziona interamente sul dispositivo. Attiva la Modalità Privata per l'opzione più rigorosa, senza registri locali.",
   "home.pricing.title": "Prezzi semplici",
-  "home.pricing.subtitle": "Scegli il piano più adatto al modo in cui usi DuoVox. La fatturazione annuale ti regala un mese gratis (paghi per 11 mesi), oppure paghi solo per ciò che usi con il pagamento a consumo.<br/><small style=\"opacity:0.6;\">Prezzi predefiniti in USD. I visitatori dal Regno Unito vedono i prezzi in GBP e quelli dell'Eurozona in EUR. Microsoft Store e Google Play addebitano l'equivalente nella tua valuta locale al momento del pagamento. Tutti gli abbonamenti possono essere disdetti in qualsiasi momento.</small>",
+  "home.pricing.subtitle": "Scegli il piano più adatto al modo in cui usi DuoVox. I piani di durata più lunga includono circa un mese gratis, oppure paghi solo per ciò che usi con il pagamento a consumo.<br/><small style=\"opacity:0.6;\">Prezzi predefiniti in USD. I visitatori dal Regno Unito vedono i prezzi in GBP e quelli dell'Eurozona in EUR. Microsoft Store e Google Play addebitano l'equivalente nella tua valuta locale al momento del pagamento. Tutti gli abbonamenti possono essere disdetti in qualsiasi momento.</small>",
   "home.pricing.free.name": "Free",
   "home.pricing.free.period": "per sempre",
   "home.pricing.free.f1": "Traduzioni sul dispositivo",

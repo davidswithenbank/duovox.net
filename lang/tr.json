@@ -24,7 +24,7 @@
   "home.feat.privacy.title": "Yerleşik gizlilik",
   "home.feat.privacy.desc": "Ses gerçek zamanlı olarak işlenir ve tarafımızca saklanmaz; ücretli planlarda yalnızca işleme amacıyla yapay zekâ sağlayıcımıza aktarılır ve kasıtlı olarak tutulmaz. Transkripsiyonlar yalnızca cihazınızda bulunur ve oturumunuz sona erdiğinde silinir. Ücretsiz plan tamamen cihaz üzerinde çalışır. En sıkı, yerel günlük tutmayan seçenek için Gizli Mod'u etkinleştirin.",
   "home.pricing.title": "Basit Fiyatlandırma",
-  "home.pricing.subtitle": "DuoVox'u kullanma şeklinize uygun planı seçin. Yıllık faturalandırma size bir ay ücretsiz kazandırır (11 ay ödersiniz) ya da Kullandıkça Öde ile yalnızca kullandığınız kadar ödeyin.<br/><small style=\"opacity:0.6;\">Varsayılan fiyatlar USD cinsindendir. İngiltere'deki ziyaretçiler GBP, Euro Bölgesi ziyaretçileri EUR görür. Microsoft Store ve Google Play, ödeme sırasında yerel para biriminizdeki eşdeğer tutarı tahsil eder. Tüm abonelikler istenildiği zaman iptal edilebilir.</small>",
+  "home.pricing.subtitle": "DuoVox'u kullanma şeklinize uygun planı seçin. Daha uzun süreli planlar yaklaşık bir ay ücretsiz içerir ya da Kullandıkça Öde ile yalnızca kullandığınız kadar ödeyin.<br/><small style=\"opacity:0.6;\">Varsayılan fiyatlar USD cinsindendir. İngiltere'deki ziyaretçiler GBP, Euro Bölgesi ziyaretçileri EUR görür. Microsoft Store ve Google Play, ödeme sırasında yerel para biriminizdeki eşdeğer tutarı tahsil eder. Tüm abonelikler istenildiği zaman iptal edilebilir.</small>",
   "home.pricing.free.name": "Ücretsiz",
   "home.pricing.free.period": "süresiz",
   "home.pricing.free.f1": "Cihaz üzerinde çeviriler",

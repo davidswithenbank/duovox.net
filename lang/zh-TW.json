@@ -24,7 +24,7 @@
   "home.feat.privacy.title": "內建隱私保護",
   "home.feat.privacy.desc": "音訊以即時方式處理，我們不會予以儲存；在付費方案中，音訊會串流至我們的 AI 供應商僅供處理之用，並不會刻意保留。轉錄內容僅存在於您的裝置上，並會在工作階段結束時清除。免費方案完全在裝置上運作。可啟用私密模式以取得最嚴格、不留本機紀錄的選項。",
   "home.pricing.title": "簡單透明的定價",
-  "home.pricing.subtitle": "選擇最符合您使用 DuoVox 方式的方案。年繳可享一個月免費（只需支付 11 個月費用），或透過隨用隨付僅為您實際使用的部分付費。<br/><small style=\"opacity:0.6;\">預設價格以 USD 顯示。英國訪客將看到 GBP，歐元區訪客將看到 EUR。Microsoft Store 與 Google Play 會在結帳時以您當地貨幣收取等值金額。所有訂閱皆可隨時取消。</small>",
+  "home.pricing.subtitle": "選擇最符合您使用 DuoVox 方式的方案。長期方案可享約一個月免費，或透過隨用隨付僅為您實際使用的部分付費。<br/><small style=\"opacity:0.6;\">預設價格以 USD 顯示。英國訪客將看到 GBP，歐元區訪客將看到 EUR。Microsoft Store 與 Google Play 會在結帳時以您當地貨幣收取等值金額。所有訂閱皆可隨時取消。</small>",
   "home.pricing.free.name": "免費",
   "home.pricing.free.period": "永久",
   "home.pricing.free.f1": "裝置端翻譯",

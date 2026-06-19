@@ -25,7 +25,7 @@
   "home.feat.privacy.title": "Privacy Built In",
   "home.feat.privacy.desc": "Audio is processed in real time and not stored by us; on paid tiers it is streamed to our AI provider for processing only and is not intentionally retained. Transcriptions exist only on your device and are cleared when your session ends. The Free tier works entirely on-device. Enable Private Mode for the strictest, no-local-log option.",
   "home.pricing.title": "Simple Pricing",
-  "home.pricing.subtitle": "Choose the plan that fits how you use DuoVox. Annual billing gives you a month free (you pay for 11 months), or pay only for what you use with Pay-As-You-Go.<br/><small style=\"opacity:0.6;\">Default prices in USD. UK visitors see GBP and Eurozone visitors see EUR. Microsoft Store and Google Play charge the equivalent in your local currency at checkout. All subscriptions can be cancelled at any time.</small>",
+  "home.pricing.subtitle": "Choose the plan that fits how you use DuoVox. Longer-term plans include about a month free, or pay only for what you use with Pay-As-You-Go.<br/><small style=\"opacity:0.6;\">Default prices in USD. UK visitors see GBP and Eurozone visitors see EUR. Microsoft Store and Google Play charge the equivalent in your local currency at checkout. All subscriptions can be cancelled at any time.</small>",
   "home.pricing.free.name": "Free",
   "home.pricing.free.period": "forever",
   "home.pricing.free.bestfor": "Best for: trying it out & offline privacy",

@@ -24,7 +24,7 @@
   "home.feat.privacy.title": "Quyền riêng tư tích hợp",
   "home.feat.privacy.desc": "Âm thanh được xử lý theo thời gian thực và không được chúng tôi lưu trữ; ở các gói trả phí, âm thanh được truyền tới nhà cung cấp AI của chúng tôi chỉ để xử lý và không được cố ý giữ lại. Bản phiên âm chỉ tồn tại trên thiết bị của bạn và bị xóa khi phiên làm việc kết thúc. Gói Miễn phí hoạt động hoàn toàn trên thiết bị. Bật Chế độ Riêng tư để có lựa chọn nghiêm ngặt nhất, không lưu nhật ký cục bộ.",
   "home.pricing.title": "Bảng giá đơn giản",
-  "home.pricing.subtitle": "Chọn gói phù hợp với cách bạn dùng DuoVox. Thanh toán theo năm tặng bạn một tháng miễn phí (bạn chỉ trả cho 11 tháng), hoặc chỉ trả cho những gì bạn dùng với gói Trả theo mức dùng.<br/><small style=\"opacity:0.6;\">Giá mặc định tính bằng USD. Khách truy cập tại Anh sẽ thấy GBP và khách ở khu vực đồng Euro sẽ thấy EUR. Microsoft Store và Google Play sẽ thu mức tương đương bằng đơn vị tiền tệ địa phương của bạn khi thanh toán. Mọi gói thuê bao đều có thể hủy bất cứ lúc nào.</small>",
+  "home.pricing.subtitle": "Chọn gói phù hợp với cách bạn dùng DuoVox. Các gói dài hạn bao gồm khoảng một tháng miễn phí, hoặc chỉ trả cho những gì bạn dùng với gói Trả theo mức dùng.<br/><small style=\"opacity:0.6;\">Giá mặc định tính bằng USD. Khách truy cập tại Anh sẽ thấy GBP và khách ở khu vực đồng Euro sẽ thấy EUR. Microsoft Store và Google Play sẽ thu mức tương đương bằng đơn vị tiền tệ địa phương của bạn khi thanh toán. Mọi gói thuê bao đều có thể hủy bất cứ lúc nào.</small>",
   "home.pricing.free.name": "Miễn phí",
   "home.pricing.free.period": "mãi mãi",
   "home.pricing.free.f1": "Dịch trên thiết bị",
