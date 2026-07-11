@@ -31,7 +31,7 @@
 <!-- Privacy Policy Content -->
 <main class="legal">
     <h1 data-i18n="priv.title">Privacy Policy</h1>
-    <p class="last-updated">Last updated: 18 June 2026</p>
+    <p class="last-updated">Last updated: 11 July 2026</p>
 
     <p data-i18n="priv.intro">David Arthur Software ("DAS", "we", "our", "us") operates the DuoVox application (the "App"). This Privacy Policy explains what data the App collects, how it is used, how we protect it, and your rights. DAS is the data controller for all personal data processed in connection with the App.</p>
 
@@ -59,7 +59,7 @@
         <li><strong>Subscription information:</strong> Your subscription tier, purchase verification tokens (hashed), and billing cycle dates</li>
         <li><strong>Usage tracking:</strong> Minutes of AI usage consumed in the current billing cycle</li>
         <li><strong>Device verification:</strong> App integrity verification results to prevent unauthorised access</li>
-        <li><strong>Ad grant status:</strong> For Free tier users, a record of temporary translation grants earned through rewarded advertisements</li>
+        <li><strong>Session statistics:</strong> When a transcription session ends, the App sends a small technical summary to our infrastructure: app version, subscription tier, session length in minutes, whether on-device or online processing was used, and counts of any service errors. These summaries apply to all tiers, including the Free tier, and never include audio, transcriptions, translations, or any conversation content. We use them to monitor service health, plan capacity, and understand overall usage of the App.</li>
     </ul>
     <p>This data is stored on our cloud infrastructure provider's globally distributed network. It does <strong>not</strong> include any audio, transcription text, translation text, or conversation content. Device identifiers are randomly generated and are not linked to your personal identity by us.</p>
 
@@ -67,8 +67,8 @@
     <p>To deliver paid features, we use third-party processors disclosed below by category. We do not name individual providers in this policy because providers may change over time; a current list of the specific providers is available on request from <a href="mailto:info@duovox.net">info@duovox.net</a>.</p>
     <ul>
         <li><strong>Speech and translation processing providers:</strong> For paid tiers, audio is streamed to processing providers for transcription, and text may be sent for translation. These providers process data in real time under their own privacy policies and data-processing terms. Their policies may change without notice; we do not control and cannot guarantee provider behaviour, and we encourage you to review their policies.</li>
-        <li><strong>Cloud infrastructure provider:</strong> Our service infrastructure (subscription management, usage tracking, ad-grant verification) runs on a third-party cloud platform. This provider processes data on our behalf under a data-processing agreement and may keep limited operational logs under its own policies.</li>
-        <li><strong>Advertising providers (Free tier):</strong> On Android, banner and rewarded-video advertisements are provided by an advertising network that may collect device identifiers and usage data for ad personalisation; you can manage ad personalisation in your device's settings. On Windows, ads are displayed via embedded web content that may set cookies and collect standard browsing data for ad serving.</li>
+        <li><strong>Cloud infrastructure provider:</strong> Our service infrastructure (subscription management, usage tracking, session statistics) runs on a third-party cloud platform. This provider processes data on our behalf under a data-processing agreement and may keep limited operational logs under its own policies.</li>
+        <li><strong>Advertising (Free tier):</strong> On Windows, the Free tier currently shows only our own in-app promotional messages; no third-party advertising network is used and no advertising cookies are set. On Android, where advertising is offered, banner and rewarded-video advertisements may be provided by an advertising network that may collect device identifiers and usage data for ad personalisation; you can manage ad personalisation in your device's settings.</li>
         <li><strong>App-store billing:</strong> Subscription purchases are processed by the Microsoft Store (Windows) or Google Play (Android). Payment information is handled entirely by the relevant app store and is never accessed by DAS.</li>
         <li><strong>On-device processing:</strong> The offline transcription and translation features run entirely on your device using locally installed models. No audio or text data leaves your device when using these features.</li>
     </ul>
@@ -79,7 +79,7 @@
         <li>We do not collect personal information such as your name, email or phone number (unless you contact us for support)</li>
         <li>We do not track your location</li>
         <li>We do not sell your data to third parties or share it with third parties for marketing</li>
-        <li>We do not use analytics or tracking SDKs beyond what Free-tier advertising requires</li>
+        <li>We do not use third-party analytics or tracking SDKs in the App; the only usage data we collect is the first-party session statistics described in section 2 (and, on Android, what Free-tier advertising requires)</li>
     </ul>
 
     <h2>5. Data Storage and Security</h2>
@@ -89,6 +89,7 @@
     <p>We keep personal data only as long as necessary for the purposes set out in this policy:</p>
     <ul>
         <li><strong>Service infrastructure / operational data</strong> (anonymous device identifier, usage minutes, device-verification data) &mdash; retained for up to <strong>12 months</strong> after a subscription ends or is cancelled, to prevent fraud and resolve billing disputes.</li>
+        <li><strong>Session statistics</strong> (see section 2) &mdash; individual session summaries are kept on a rolling basis and automatically deleted, typically within <strong>30 days</strong> and in any event within <strong>12 months</strong>; after that only aggregate statistics (session counts and durations) that are not linked to any device are retained.</li>
         <li><strong>Support correspondence</strong> &mdash; retained for up to <strong>24 months</strong>.</li>
         <li><strong>Audio and transcripts</strong> &mdash; processed in real time and not stored by us (see section 1).</li>
         <li><strong>Settings and diagnostic logs</strong> &mdash; stored only on your device until you clear the App's data or uninstall; we hold none of it.</li>
@@ -98,7 +99,7 @@
     <p>If you are in the European Economic Area (EEA) or the United Kingdom, we process your data on the following legal bases:</p>
     <ul>
         <li><strong>Contract performance:</strong> Processing subscription data, usage tracking, and delivering the service you have subscribed to (Article 6(1)(b) GDPR)</li>
-        <li><strong>Legitimate interests:</strong> Preventing fraud and abuse, ensuring service integrity, and maintaining security (Article 6(1)(f) GDPR)</li>
+        <li><strong>Legitimate interests:</strong> Preventing fraud and abuse, ensuring service integrity, maintaining security, and monitoring service health and aggregate usage through anonymous session statistics (Article 6(1)(f) GDPR)</li>
         <li><strong>Consent:</strong> Displaying personalised advertisements on the Free tier (Article 6(1)(a) GDPR). You may withdraw consent at any time through your device's ad-personalisation settings.</li>
         <li><strong>Explicit consent:</strong> Where audio or text you choose to process may contain special-category information, we rely on your explicit consent (see section 8).</li>
     </ul>
