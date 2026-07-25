@@ -31,7 +31,7 @@
 <!-- Privacy Policy Content -->
 <main class="legal">
     <h1 data-i18n="priv.title">Privacy Policy</h1>
-    <p class="last-updated">Last updated: 11 July 2026</p>
+    <p class="last-updated">Last updated: 25 July 2026</p>
 
     <p data-i18n="priv.intro">David Arthur Software ("DAS", "we", "our", "us") operates the DuoVox application (the "App"). This Privacy Policy explains what data the App collects, how it is used, how we protect it, and your rights. DAS is the data controller for all personal data processed in connection with the App.</p>
 
@@ -46,22 +46,27 @@
 
     <p><strong>Audio Data (Free Tier):</strong> When using offline transcription, all audio processing occurs entirely on your device using locally installed speech-recognition models. No audio data leaves your device.</p>
 
-    <p><strong>Transcription and Translation Text:</strong> Transcribed and translated text is displayed in the App during your session. This data is held in device memory only and is cleared when you clear the session or close the App. For paid tiers, text may be sent to a processing provider for translation; it is processed in real time and is not stored by us.</p>
+    <p><strong>Transcription and Translation Text:</strong> Transcribed and translated text is displayed in the App during your session. It is held in device memory and is cleared when you clear the session or close the App &mdash; unless you save it yourself. If you use the export features (for example "Export this session", or exporting subtitles from a media file), the App writes the text to files in a folder on your device; those files remain until you delete them and are not removed by the Clear button. If you turn on diagnostics, a support bundle may likewise save session text to your device. These files stay on your device unless you choose to send them to us. For paid tiers, text is sent through our service infrastructure to a processing provider for translation; it is processed in real time and is not stored by us.</p>
 
-    <p><strong>Preferences and Settings:</strong> Your app settings (selected language, theme, audio source, subscription tier) are stored locally on your device. They are not transmitted to any server.</p>
+    <p><strong>Preferences and Settings:</strong> Your app settings (selected language, theme, audio source, subscription tier) are stored locally on your device. The settings themselves are not transmitted to any server, although your subscription tier does appear in the licensing checks and session statistics described in section 2.</p>
 
     <p><strong>Diagnostic Logs:</strong> If you enable diagnostics, log files are stored locally on your device. You may choose to share these with us for support purposes, but they are never collected automatically.</p>
 
+    <p><strong>Learned Vocabulary:</strong> To improve recognition accuracy over time, the App may automatically learn individual words (never whole sentences) from your own high-confidence transcriptions and store them in a per-language list on your device. This list is limited in size and rotated automatically, is held only on your device, is never transmitted to us, and is removed when you clear the App's data or uninstall.</p>
+
     <h2>2. Service Infrastructure Data</h2>
 
-    <p>To manage subscriptions, prevent abuse, and deliver the service, our cloud infrastructure stores the following data associated with an anonymous device identifier:</p>
+    <p>The App communicates with our own service infrastructure (the DuoVox API) automatically at several points during normal use: when the App starts, to register the device and check subscription status; at intervals during an active online session or file job, to refresh the short-lived credentials used for processing, report usage minutes, and confirm the subscription is still valid; and when a session or job ends, to send a small technical summary. The App may also contact our infrastructure in response to your actions or to app events &mdash; for example when you make or restore a purchase, submit a support report, or if the App encounters an unexpected error. On paid tiers, text sent for translation is also routed through our infrastructure in real time throughout the session, as described in section 1. None of these calls include audio or conversation content, and translation text is not stored by us. To manage subscriptions, prevent abuse, and deliver the service, this infrastructure stores the following data associated with an anonymous device identifier:</p>
     <ul>
+        <li><strong>Licensing and activation:</strong> When the App starts, it contacts our service infrastructure to register the device, check the subscription status linked to its anonymous device identifier, and restore any purchases, so that the correct tier and features can be enabled. This happens on all tiers, including the Free tier. These requests contain the device identifier and app and subscription details only &mdash; never audio or conversation content.</li>
         <li><strong>Subscription information:</strong> Your subscription tier, purchase verification tokens (hashed), and billing cycle dates</li>
         <li><strong>Usage tracking:</strong> Minutes of AI usage consumed in the current billing cycle</li>
         <li><strong>Device verification:</strong> App integrity verification results to prevent unauthorised access</li>
-        <li><strong>Session statistics:</strong> When a transcription session ends, the App sends a small technical summary to our infrastructure: app version, subscription tier, session length in minutes, whether on-device or online processing was used, and counts of any service errors. These summaries apply to all tiers, including the Free tier, and never include audio, transcriptions, translations, or any conversation content. We use them to monitor service health, plan capacity, and understand overall usage of the App.</li>
+        <li><strong>Session statistics:</strong> When a transcription session ends, the App sends a small technical summary to our infrastructure: app version, subscription tier, session length in minutes, whether on-device or online processing was used, and counts of service errors encountered while the App has been running. These summaries apply to all tiers, including the Free tier, and never include audio, transcriptions, translations, or any conversation content. We use them to monitor service health, plan capacity, understand overall usage of the App, and diagnose problems when you ask us for support.</li>
+        <li><strong>Error reports:</strong> If the App encounters an unexpected error, it sends a content-free report so that we can find and fix the defect. This can happen at any time while the App is running, and a report may also be sent on the next launch if it could not be delivered at the time. It contains only the app version, the type of error, and the location in our code where it occurred &mdash; never the error message text, your files, your settings, or any audio or conversation content. Error reports apply to all tiers, including the Free tier.</li>
     </ul>
     <p>This data is stored on our cloud infrastructure provider's globally distributed network. It does <strong>not</strong> include any audio, transcription text, translation text, or conversation content. Device identifiers are randomly generated and are not linked to your personal identity by us.</p>
+    <p>On the Free tier, captioning and translation themselves run entirely on your device (see section 1) &mdash; no audio, transcription or translation content is sent anywhere. The only data the Free tier sends to our infrastructure is the licensing checks, session statistics and error reports described above. Separately, the first time you use a language offline, the App downloads that language's model files directly from third-party model hosts (see section 3); this download requires an internet connection and sends no personal data, audio or text.</p>
 
     <h2>3. Third-Party Services and Sub-Processors</h2>
     <p>To deliver paid features, we use third-party processors disclosed below by category. We do not name individual providers in this policy because providers may change over time; a current list of the specific providers is available on request from <a href="mailto:info@duovox.net">info@duovox.net</a>.</p>
@@ -71,6 +76,7 @@
         <li><strong>Advertising (Free tier):</strong> On Windows, the Free tier currently shows only our own in-app promotional messages; no third-party advertising network is used and no advertising cookies are set. On Android, where advertising is offered, banner and rewarded-video advertisements may be provided by an advertising network that may collect device identifiers and usage data for ad personalisation; you can manage ad personalisation in your device's settings.</li>
         <li><strong>App-store billing:</strong> Subscription purchases are processed by the Microsoft Store (Windows) or Google Play (Android). Payment information is handled entirely by the relevant app store and is never accessed by DAS.</li>
         <li><strong>On-device processing:</strong> The offline transcription and translation features run entirely on your device using locally installed models. No audio or text data leaves your device when using these features.</li>
+        <li><strong>Model file hosts:</strong> The models used for on-device transcription, language detection and offline translation are downloaded to your device the first time you use a language &mdash; on all tiers, including the Free tier &mdash; directly from third-party model-hosting services. These downloads are ordinary file downloads: they contain no audio, transcription, translation or personal data, though the host will see your device's IP address as it would for any download. Once downloaded, the models work without an internet connection.</li>
     </ul>
 
     <h2>4. Data We Do NOT Collect</h2>
@@ -79,11 +85,11 @@
         <li>We do not collect personal information such as your name, email or phone number (unless you contact us for support)</li>
         <li>We do not track your location</li>
         <li>We do not sell your data to third parties or share it with third parties for marketing</li>
-        <li>We do not use third-party analytics or tracking SDKs in the App; the only usage data we collect is the first-party session statistics described in section 2 (and, on Android, what Free-tier advertising requires)</li>
+        <li>We do not use third-party analytics or tracking SDKs in the App; the only usage data we collect is the first-party session statistics and content-free error reports described in section 2 (and, on Android, what Free-tier advertising requires)</li>
     </ul>
 
     <h2>5. Data Storage and Security</h2>
-    <p>We use appropriate technical and organisational measures to protect personal data, including encryption in transit (TLS) for all online connections, encryption of sensitive app settings stored on your device, holding only the minimum data needed to run the service, and restricting access to it. Session content (audio, transcriptions, translations) is held only in device memory during your session and is not stored on our own servers. Service infrastructure data is protected by encryption in transit and at rest. No method of transmission or storage is completely secure, but we take reasonable steps to protect your information.</p>
+    <p>We use appropriate technical and organisational measures to protect personal data, including encryption in transit (TLS) for all online connections, encryption of sensitive app settings stored on your device, holding only the minimum data needed to run the service, and restricting access to it. Session content (audio, transcriptions, translations) is held in device memory during your session, is saved to your device only if you choose to export it or enable diagnostics, and is never stored on our own servers. Service infrastructure data is protected by encryption in transit and at rest. No method of transmission or storage is completely secure, but we take reasonable steps to protect your information.</p>
 
     <h2>6. Data Retention</h2>
     <p>We keep personal data only as long as necessary for the purposes set out in this policy:</p>
@@ -92,15 +98,16 @@
         <li><strong>Session statistics</strong> (see section 2) &mdash; individual session summaries are kept on a rolling basis and automatically deleted, typically within <strong>30 days</strong> and in any event within <strong>12 months</strong>; after that only aggregate statistics (session counts and durations) that are not linked to any device are retained.</li>
         <li><strong>Support correspondence</strong> &mdash; retained for up to <strong>24 months</strong>.</li>
         <li><strong>Audio and transcripts</strong> &mdash; processed in real time and not stored by us (see section 1).</li>
-        <li><strong>Settings and diagnostic logs</strong> &mdash; stored only on your device until you clear the App's data or uninstall; we hold none of it.</li>
+        <li><strong>Error reports</strong> (see section 2) &mdash; retained on the same rolling basis as session statistics, typically within <strong>30 days</strong> and in any event within <strong>12 months</strong>.</li>
+        <li><strong>Settings, learned vocabulary, exported files and diagnostic logs</strong> &mdash; stored only on your device until you delete them, clear the App's data or uninstall; we hold none of it.</li>
     </ul>
 
     <h2>7. Legal Basis for Processing (GDPR)</h2>
     <p>If you are in the European Economic Area (EEA) or the United Kingdom, we process your data on the following legal bases:</p>
     <ul>
         <li><strong>Contract performance:</strong> Processing subscription data, usage tracking, and delivering the service you have subscribed to (Article 6(1)(b) GDPR)</li>
-        <li><strong>Legitimate interests:</strong> Preventing fraud and abuse, ensuring service integrity, maintaining security, and monitoring service health and aggregate usage through anonymous session statistics (Article 6(1)(f) GDPR)</li>
-        <li><strong>Consent:</strong> Displaying personalised advertisements on the Free tier (Article 6(1)(a) GDPR). You may withdraw consent at any time through your device's ad-personalisation settings.</li>
+        <li><strong>Legitimate interests:</strong> Preventing fraud and abuse, ensuring service integrity, maintaining security, monitoring service health, diagnosing problems, and understanding aggregate usage through anonymous session statistics (Article 6(1)(f) GDPR)</li>
+        <li><strong>Consent:</strong> Displaying personalised advertisements on the Free tier where advertising is offered (currently Android only &mdash; see section 3) (Article 6(1)(a) GDPR). You may withdraw consent at any time through your device's ad-personalisation settings.</li>
         <li><strong>Explicit consent:</strong> Where audio or text you choose to process may contain special-category information, we rely on your explicit consent (see section 8).</li>
     </ul>
 
