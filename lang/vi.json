@@ -12,7 +12,7 @@
   "home.features.title": "Tại sao chọn DuoVox?",
   "home.feat.dual.title": "Hội thoại hai chiều rõ ràng",
   "home.feat.dual.desc": "Xem cả hai phía cuộc đối thoại riêng biệt — không bị lẫn lộn. Mỗi ngôn ngữ có bảng riêng với văn bản thời gian thực.",
-  "home.feat.langs.title": "Hơn 50 ngôn ngữ",
+  "home.feat.langs.title": "49 ngôn ngữ",
   "home.feat.langs.desc": "Từ tiếng Anh và tiếng Nga đến tiếng Nhật, tiếng Ả Rập, tiếng Hindi và nhiều hơn nữa. Toàn bộ giao diện được bản địa hóa sang mọi ngôn ngữ được hỗ trợ, không chỉ riêng phần phiên âm.",
   "home.feat.ai.title": "Dịch theo thời gian thực",
   "home.feat.ai.desc": "Bản dịch nhanh, tự nhiên, hướng tới việc bám sát lời nói thực tế. DuoVox được thiết kế để xử lý các giọng nói đời thường và tiếng ồn xung quanh, dù độ chính xác có thể thay đổi trong các tình huống âm thanh khó — luôn xác minh những thông tin quan trọng.",
@@ -27,7 +27,7 @@
   "home.pricing.free.name": "Miễn phí",
   "home.pricing.free.period": "mãi mãi",
   "home.pricing.free.f1": "Dịch trên thiết bị",
-  "home.pricing.free.f2": "28 ngôn ngữ ngoại tuyến",
+  "home.pricing.free.f2": "30 ngôn ngữ ngoại tuyến",
   "home.pricing.free.f3": "Hoạt động không cần internet",
   "home.reassurance.title": "Được thiết kế cho cuộc trò chuyện thực",
   "home.reassurance.desc": "DuoVox được thiết kế để xử lý các giọng nói đời thường và tiếng ồn xung quanh, dù độ chính xác có thể thay đổi trong các tình huống âm thanh khó — luôn xác minh những thông tin quan trọng. Dù bạn đang gọi cà phê ở nước ngoài hay theo dõi một cuộc họp công việc, ứng dụng đều hướng tới việc bám sát lời nói thực tế ngay khi nó diễn ra.",
@@ -104,7 +104,7 @@
   "home.pricing.standard.bestfor": "Phù hợp nhất cho: khách du lịch, sinh viên & trò chuyện song ngữ hằng ngày",
   "home.pricing.standard.f1": "Phiên âm & dịch bằng AI trực tiếp",
   "home.pricing.standard.f2": "Bao gồm 15 giờ mỗi tháng",
-  "home.pricing.standard.f3": "51 ngôn ngữ và biến thể được hỗ trợ",
+  "home.pricing.standard.f3": "33 ngôn ngữ được hỗ trợ",
   "home.pricing.standard.f4": "Không quảng cáo",
   "home.pricing.standard.f5": "Hủy bất cứ lúc nào",
   "home.pricing.standard.micro": "Tốt nhất nếu bạn dùng từ 8 giờ trở lên mỗi tháng.",
@@ -135,5 +135,6 @@
   "sec.private.ideal": "Hữu ích bất cứ khi nào bạn muốn DuoVox không lưu nhật ký cục bộ nào về phiên của bạn. DuoVox là một công cụ hỗ trợ và không được chứng nhận cho việc sử dụng trong y tế, pháp lý hay các tình huống quan trọng khác — luôn xác minh những thông tin quan trọng một cách độc lập.",
   "sec.standard.f4": "Các nhà cung cấp dịch vụ xử lý bên thứ ba xử lý dữ liệu theo chính sách quyền riêng tư của riêng họ và không sử dụng dữ liệu API để huấn luyện mô hình theo các chính sách dữ liệu hiện hành của họ",
   "sec.control.f1": "Bật Chế độ Riêng tư bất cứ lúc nào để DuoVox không lưu nhật ký cục bộ nào về phiên của bạn",
-  "home.pricing.standard.f6": "Dịch tài liệu (trên máy tính)"
+  "home.pricing.standard.f6": "Dịch tài liệu (trên máy tính)",
+  "home.pricing.professional.f8": "43 ngôn ngữ được hỗ trợ"
 }

@@ -12,7 +12,7 @@
   "home.features.title": "Por que DuoVox?",
   "home.feat.dual.title": "Conversas claras em dois idiomas",
   "home.feat.dual.desc": "Veja os dois lados do diálogo separadamente — nada se mistura. Cada idioma tem seu próprio painel com texto em tempo real.",
-  "home.feat.langs.title": "Mais de 50 Idiomas",
+  "home.feat.langs.title": "49 Idiomas",
   "home.feat.langs.desc": "Do inglês e russo ao japonês, árabe, hindi e muito mais. A interface completa é localizada em cada idioma suportado, não apenas a transcrição.",
   "home.feat.ai.title": "Traduções em tempo real",
   "home.feat.ai.desc": "Traduções rápidas e com sonoridade natural, concebidas para acompanhar a fala real. O DuoVox foi pensado para lidar com sotaques do dia a dia e ruído de fundo, embora a precisão possa variar em áudio difícil — verifique sempre os detalhes importantes.",
@@ -27,7 +27,7 @@
   "home.pricing.free.name": "Gratuito",
   "home.pricing.free.period": "para sempre",
   "home.pricing.free.f1": "Traduções no dispositivo",
-  "home.pricing.free.f2": "28 idiomas offline",
+  "home.pricing.free.f2": "30 idiomas offline",
   "home.pricing.free.f3": "Funciona sem internet",
   "home.reassurance.title": "Projetado para conversas reais",
   "home.reassurance.desc": "O DuoVox foi concebido para lidar com sotaques do dia a dia e ruído de fundo, embora a precisão possa variar em áudio difícil — verifique sempre os detalhes importantes. Quer esteja a pedir um café no estrangeiro ou a acompanhar uma reunião de negócios, procura seguir a fala real à medida que acontece.",
@@ -104,7 +104,7 @@
   "home.pricing.standard.bestfor": "Ideal para: viajantes, estudantes e conversas bilingues do dia a dia",
   "home.pricing.standard.f1": "Transcrição e tradução com IA em tempo real",
   "home.pricing.standard.f2": "15 horas incluídas por mês",
-  "home.pricing.standard.f3": "51 idiomas e variantes suportados",
+  "home.pricing.standard.f3": "33 idiomas suportados",
   "home.pricing.standard.f4": "Sem anúncios",
   "home.pricing.standard.f5": "Cancele quando quiser",
   "home.pricing.standard.micro": "Melhor opção se o utilizar mais de 8 horas por mês.",
@@ -135,5 +135,6 @@
   "sec.private.ideal": "Útil sempre que prefira que o DuoVox não mantenha qualquer registo local da sua sessão. O DuoVox é uma ajuda assistiva e não está certificado para uso médico, jurídico ou outras situações de elevada importância — verifique sempre de forma independente as informações importantes.",
   "sec.standard.f4": "Os fornecedores de processamento terceiros tratam os dados ao abrigo das suas próprias políticas de privacidade e não utilizam os dados da API para treino de modelos, de acordo com as suas políticas de dados atuais",
   "sec.control.f1": "Ative o Modo Privado a qualquer momento para que o DuoVox não mantenha qualquer registo local da sua sessão",
-  "home.pricing.standard.f6": "Tradução de documentos (Desktop)"
+  "home.pricing.standard.f6": "Tradução de documentos (Desktop)",
+  "home.pricing.professional.f8": "43 idiomas suportados"
 }

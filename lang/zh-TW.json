@@ -12,7 +12,7 @@
   "home.features.title": "為何選擇 DuoVox？",
   "home.feat.dual.title": "清晰的雙向對話",
   "home.feat.dual.desc": "對話雙方分別顯示，互不混淆。每種語言都有獨立的即時文字面板。",
-  "home.feat.langs.title": "支援 50+ 種語言",
+  "home.feat.langs.title": "支援 49 種語言",
   "home.feat.langs.desc": "從英語、俄語到日語、阿拉伯語、印地語等。整個介面均已本地化為每種支援的語言，而不僅限於轉錄內容。",
   "home.feat.ai.title": "即時翻譯",
   "home.feat.ai.desc": "快速、自然流暢的翻譯，力求貼合真實的口語。DuoVox 旨在因應日常口音與背景噪音，但在困難的音訊條件下準確度可能有所不同 — 請務必核對重要細節。",
@@ -27,7 +27,7 @@
   "home.pricing.free.name": "免費",
   "home.pricing.free.period": "永久",
   "home.pricing.free.f1": "裝置端翻譯",
-  "home.pricing.free.f2": "28 種離線語言",
+  "home.pricing.free.f2": "30 種離線語言",
   "home.pricing.free.f3": "無需網路即可使用",
   "home.reassurance.title": "為真實對話而設計",
   "home.reassurance.desc": "DuoVox 旨在因應日常口音與背景噪音，但在困難的音訊條件下準確度可能有所不同 — 請務必核對重要細節。無論您是在國外點咖啡，還是跟進一場商務會議，它都力求即時貼合真實的口語。",
@@ -104,7 +104,7 @@
   "home.pricing.standard.bestfor": "最適合：旅客、學生與日常雙語對話",
   "home.pricing.standard.f1": "即時 AI 轉錄與翻譯",
   "home.pricing.standard.f2": "每月含 15 小時",
-  "home.pricing.standard.f3": "支援 51 種語言及變體",
+  "home.pricing.standard.f3": "支援 33 種語言",
   "home.pricing.standard.f4": "無廣告",
   "home.pricing.standard.f5": "隨時可取消",
   "home.pricing.standard.micro": "若您每月使用 8 小時以上最為划算。",
@@ -135,5 +135,6 @@
   "sec.private.ideal": "在您希望 DuoVox 不留下工作階段本機紀錄時皆適用。DuoVox 為輔助工具，未經認證用於醫療、法律或其他高風險用途 — 請務必獨立核實重要資訊。",
   "sec.standard.f4": "第三方處理供應商依其自身的隱私政策處理資料，並依其現行資料政策不會將 API 資料用於模型訓練",
   "sec.control.f1": "可隨時啟用私密模式，讓 DuoVox 不留下您工作階段的本機紀錄",
-  "home.pricing.standard.f6": "文件翻譯（桌面版）"
+  "home.pricing.standard.f6": "文件翻譯（桌面版）",
+  "home.pricing.professional.f8": "支援 43 種語言"
 }

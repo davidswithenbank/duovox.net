@@ -12,7 +12,7 @@
   "home.features.title": "Pourquoi DuoVox ?",
   "home.feat.dual.title": "Conversations bilingues claires",
   "home.feat.dual.desc": "Voyez les deux côtés du dialogue séparément — rien ne se mélange. Chaque langue a son propre panneau avec du texte en temps réel.",
-  "home.feat.langs.title": "50+ Langues",
+  "home.feat.langs.title": "49 Langues",
   "home.feat.langs.desc": "De l'anglais et du russe au japonais, à l'arabe, à l'hindi et bien plus encore. L'interface complète est localisée dans chaque langue prise en charge, pas seulement la transcription.",
   "home.feat.ai.title": "Traductions en temps réel",
   "home.feat.ai.desc": "Des traductions rapides et au rendu naturel, conçues pour suivre la parole réelle. DuoVox est pensé pour s'adapter aux accents du quotidien et au bruit de fond, même si la précision peut varier dans les conditions audio difficiles — vérifiez toujours les informations importantes.",
@@ -27,7 +27,7 @@
   "home.pricing.free.name": "Gratuit",
   "home.pricing.free.period": "pour toujours",
   "home.pricing.free.f1": "Traductions sur l'appareil",
-  "home.pricing.free.f2": "28 langues hors ligne",
+  "home.pricing.free.f2": "30 langues hors ligne",
   "home.pricing.free.f3": "Fonctionne sans Internet",
   "home.reassurance.title": "Conçu pour les vraies conversations",
   "home.reassurance.desc": "DuoVox est pensé pour s'adapter aux accents du quotidien et au bruit de fond, même si la précision peut varier dans les conditions audio difficiles — vérifiez toujours les informations importantes. Que vous commandiez un café à l'étranger ou que vous suiviez une réunion d'affaires, il s'efforce de suivre la parole réelle à mesure qu'elle se produit.",
@@ -104,7 +104,7 @@
   "home.pricing.standard.bestfor": "Idéal pour : les voyageurs, les étudiants et les conversations bilingues du quotidien",
   "home.pricing.standard.f1": "Transcription et traduction IA en direct",
   "home.pricing.standard.f2": "15 heures incluses par mois",
-  "home.pricing.standard.f3": "51 langues et variantes prises en charge",
+  "home.pricing.standard.f3": "33 langues prises en charge",
   "home.pricing.standard.f4": "Sans publicité",
   "home.pricing.standard.f5": "Annulable à tout moment",
   "home.pricing.standard.micro": "Idéal si vous l'utilisez plus de 8 heures par mois.",
@@ -135,5 +135,6 @@
   "sec.private.ideal": "Utile chaque fois que vous préférez que DuoVox ne conserve aucun journal local de votre session. DuoVox est une aide d'assistance et n'est pas certifié pour un usage médical, juridique ou à enjeux élevés — vérifiez toujours les informations importantes de manière indépendante.",
   "sec.standard.f4": "Les prestataires de traitement tiers traitent les données conformément à leurs propres politiques de confidentialité et n'utilisent pas les données d'API pour l'entraînement de modèles selon leurs politiques de données actuelles",
   "sec.control.f1": "Activez le Mode privé à tout moment pour que DuoVox ne conserve aucun journal local de votre session",
-  "home.pricing.standard.f6": "Traduction de documents (ordinateur)"
+  "home.pricing.standard.f6": "Traduction de documents (ordinateur)",
+  "home.pricing.professional.f8": "43 langues prises en charge"
 }

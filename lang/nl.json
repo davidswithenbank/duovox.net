@@ -12,7 +12,7 @@
   "home.features.title": "Waarom DuoVox?",
   "home.feat.dual.title": "Duidelijke tweetalige gesprekken",
   "home.feat.dual.desc": "Bekijk beide zijden van het gesprek apart — niets raakt door elkaar. Elke taal heeft een eigen paneel met realtime tekst.",
-  "home.feat.langs.title": "50+ talen",
+  "home.feat.langs.title": "49 talen",
   "home.feat.langs.desc": "Van Engels en Russisch tot Japans, Arabisch, Hindi en meer. De volledige interface is gelokaliseerd in elke ondersteunde taal, niet alleen de transcriptie.",
   "home.feat.ai.title": "Realtime vertalingen",
   "home.feat.ai.desc": "Snelle, natuurlijk klinkende vertalingen die echte spraak proberen te volgen. DuoVox is ontworpen om om te gaan met alledaagse accenten en achtergrondgeluid, al kan de nauwkeurigheid bij lastige audio variëren — controleer belangrijke details altijd.",
@@ -27,7 +27,7 @@
   "home.pricing.free.name": "Free",
   "home.pricing.free.period": "voor altijd",
   "home.pricing.free.f1": "Vertalingen op het apparaat zelf",
-  "home.pricing.free.f2": "28 offline talen",
+  "home.pricing.free.f2": "30 offline talen",
   "home.pricing.free.f3": "Werkt zonder internet",
   "home.reassurance.title": "Ontworpen voor echte gesprekken",
   "home.reassurance.desc": "DuoVox is ontworpen om om te gaan met alledaagse accenten en achtergrondgeluid, al kan de nauwkeurigheid bij lastige audio variëren — controleer belangrijke details altijd. Of u nu in het buitenland een koffie bestelt of een zakelijke vergadering volgt, het probeert echte spraak te volgen terwijl die plaatsvindt.",
@@ -104,7 +104,7 @@
   "home.pricing.standard.bestfor": "Het beste voor: reizigers, studenten en dagelijkse tweetalige gesprekken",
   "home.pricing.standard.f1": "Live AI-transcriptie en -vertaling",
   "home.pricing.standard.f2": "15 uur inbegrepen per maand",
-  "home.pricing.standard.f3": "51 ondersteunde talen en varianten",
+  "home.pricing.standard.f3": "33 ondersteunde talen",
   "home.pricing.standard.f4": "Geen reclame",
   "home.pricing.standard.f5": "Altijd opzegbaar",
   "home.pricing.standard.micro": "Het beste als u het 8+ uur per maand gebruikt.",
@@ -135,5 +135,6 @@
   "sec.private.ideal": "Handig wanneer u liever heeft dat DuoVox geen lokaal logboek van uw sessie bijhoudt. DuoVox is een hulpmiddel en is niet gecertificeerd voor medisch, juridisch of ander gebruik met hoge belangen — controleer belangrijke informatie altijd zelfstandig.",
   "sec.standard.f4": "Externe verwerkingsaanbieders verwerken gegevens onder hun eigen privacybeleid en gebruiken onder hun huidige gegevensbeleid geen API-gegevens voor het trainen van modellen",
   "sec.control.f1": "Schakel de Privémodus op elk moment in zodat DuoVox geen lokaal logboek van uw sessie bijhoudt",
-  "home.pricing.standard.f6": "Documentvertaling (Desktop)"
+  "home.pricing.standard.f6": "Documentvertaling (Desktop)",
+  "home.pricing.professional.f8": "43 ondersteunde talen"
 }

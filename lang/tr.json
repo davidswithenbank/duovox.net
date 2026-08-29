@@ -12,7 +12,7 @@
   "home.features.title": "Neden DuoVox?",
   "home.feat.dual.title": "Net iki yönlü konuşmalar",
   "home.feat.dual.desc": "Diyaloğun her iki tarafını ayrı ayrı görün — karışıklık yok. Her dil, gerçek zamanlı metinle kendi özel paneline sahip.",
-  "home.feat.langs.title": "50+ Dil",
+  "home.feat.langs.title": "49 Dil",
   "home.feat.langs.desc": "İngilizce ve Rusçadan Japonca, Arapça, Hintçe ve daha fazlasına. Arayüzün tamamı desteklenen her dilde yerelleştirilmiştir; yalnızca transkripsiyon değil.",
   "home.feat.ai.title": "Gerçek Zamanlı Çeviriler",
   "home.feat.ai.desc": "Gerçek konuşmayı takip etmeyi amaçlayan, hızlı ve doğal seslenen çeviriler. DuoVox günlük aksanlar ve arka plan gürültüsüyle başa çıkmak üzere tasarlanmıştır; ancak zorlu ses koşullarında doğruluk değişebilir — önemli ayrıntıları her zaman doğrulayın.",
@@ -27,7 +27,7 @@
   "home.pricing.free.name": "Ücretsiz",
   "home.pricing.free.period": "süresiz",
   "home.pricing.free.f1": "Cihaz üzerinde çeviriler",
-  "home.pricing.free.f2": "28 çevrimdışı dil",
+  "home.pricing.free.f2": "30 çevrimdışı dil",
   "home.pricing.free.f3": "İnternet olmadan çalışır",
   "home.reassurance.title": "Gerçek konuşmalar için tasarlandı",
   "home.reassurance.desc": "DuoVox günlük aksanlar ve arka plan gürültüsüyle başa çıkmak üzere tasarlanmıştır; ancak zorlu ses koşullarında doğruluk değişebilir — önemli ayrıntıları her zaman doğrulayın. İster yurt dışında kahve sipariş ediyor olun ister bir iş toplantısını takip edin, gerçek konuşmayı olduğu anda takip etmeyi amaçlar.",
@@ -104,7 +104,7 @@
   "home.pricing.standard.bestfor": "Şunun için ideal: gezginler, öğrenciler ve günlük iki dilli sohbet",
   "home.pricing.standard.f1": "Canlı yapay zekâ transkripsiyonu ve çevirisi",
   "home.pricing.standard.f2": "Aylık 15 saat dahil",
-  "home.pricing.standard.f3": "51 desteklenen dil ve varyant",
+  "home.pricing.standard.f3": "33 desteklenen dil",
   "home.pricing.standard.f4": "Reklam yok",
   "home.pricing.standard.f5": "İstediğiniz zaman iptal edin",
   "home.pricing.standard.micro": "Ayda 8+ saat kullanıyorsanız en iyisi.",
@@ -135,5 +135,6 @@
   "sec.private.ideal": "DuoVox'un oturumunuzun yerel bir günlüğünü tutmamasını tercih ettiğiniz her durumda kullanışlıdır. DuoVox yardımcı bir araçtır ve tıbbi, hukuki veya diğer yüksek riskli kullanımlar için sertifikalı değildir — önemli bilgileri her zaman bağımsız olarak doğrulayın.",
   "sec.standard.f4": "Üçüncü taraf işleme sağlayıcıları verileri kendi gizlilik politikaları kapsamında işler ve mevcut veri politikaları uyarınca API verilerini model eğitimi için kullanmaz",
   "sec.control.f1": "Gizli Mod'u istediğiniz zaman etkinleştirin; böylece DuoVox oturumunuzun yerel bir günlüğünü tutmaz",
-  "home.pricing.standard.f6": "Belge çevirisi (Masaüstü)"
+  "home.pricing.standard.f6": "Belge çevirisi (Masaüstü)",
+  "home.pricing.professional.f8": "43 desteklenen dil"
 }

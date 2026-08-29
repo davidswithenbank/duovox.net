@@ -12,7 +12,7 @@
   "home.features.title": "DuoVox を選ぶ理由",
   "home.feat.dual.title": "明確な二言語対話",
   "home.feat.dual.desc": "対話の両側が別々に表示され、混同しません。各言語にリアルタイムテキスト付きの専用パネルがあります。",
-  "home.feat.langs.title": "50+の言語に対応",
+  "home.feat.langs.title": "49言語に対応",
   "home.feat.langs.desc": "英語やロシア語から日本語、アラビア語、ヒンディー語まで。インターフェース全体が各対応言語にローカライズされており、文字起こしだけにとどまりません。",
   "home.feat.ai.title": "リアルタイム翻訳",
   "home.feat.ai.desc": "実際の発話に追従することを目指した、高速で自然な翻訳。DuoVox は日常的なアクセントや背景ノイズにも対応できるよう設計されていますが、聞き取りにくい音声では精度が変動する場合があります — 重要な内容は必ずご確認ください。",
@@ -27,7 +27,7 @@
   "home.pricing.free.name": "Free",
   "home.pricing.free.period": "永久無料",
   "home.pricing.free.f1": "端末上での翻訳",
-  "home.pricing.free.f2": "28 のオフライン言語",
+  "home.pricing.free.f2": "30 のオフライン言語",
   "home.pricing.free.f3": "インターネットなしで動作",
   "home.reassurance.title": "リアルな会話のために設計",
   "home.reassurance.desc": "DuoVox は日常的なアクセントや背景ノイズにも対応できるよう設計されていますが、聞き取りにくい音声では精度が変動する場合があります — 重要な内容は必ずご確認ください。海外でコーヒーを注文するときも、ビジネス会議の内容を追うときも、実際の発話をその場で追従することを目指します。",
@@ -104,7 +104,7 @@
   "home.pricing.standard.bestfor": "おすすめ：旅行者、学生、日常のバイリンガル会話",
   "home.pricing.standard.f1": "ライブ AI 文字起こしと翻訳",
   "home.pricing.standard.f2": "月あたり 15 時間込み",
-  "home.pricing.standard.f3": "51の対応言語・変種",
+  "home.pricing.standard.f3": "33の対応言語",
   "home.pricing.standard.f4": "広告なし",
   "home.pricing.standard.f5": "いつでも解約可能",
   "home.pricing.standard.micro": "月に 8 時間以上ご利用の方に最適。",
@@ -135,5 +135,6 @@
   "sec.private.ideal": "DuoVox にセッションのローカルログを残させたくない場合に役立ちます。DuoVox は補助的な支援ツールであり、医療・法律その他の重大な用途向けに認証されたものではありません — 重要な情報は必ず独自にご確認ください。",
   "sec.standard.f4": "サードパーティの処理プロバイダーは、各社のプライバシーポリシーに基づいてデータを取り扱い、現行のデータポリシーのもとで API データをモデルの学習に使用しません",
   "sec.control.f1": "いつでもプライベートモードを有効にして、DuoVox にセッションのローカルログを残させないようにできます",
-  "home.pricing.standard.f6": "ドキュメント翻訳（デスクトップ）"
+  "home.pricing.standard.f6": "ドキュメント翻訳（デスクトップ）",
+  "home.pricing.professional.f8": "43の対応言語"
 }

@@ -13,7 +13,7 @@
   "home.features.title": "Why DuoVox?",
   "home.feat.dual.title": "Clear Two-Way Conversations",
   "home.feat.dual.desc": "See both sides of the dialogue separately, so nothing gets mixed up. Each language gets its own dedicated panel with real-time text.",
-  "home.feat.langs.title": "50+ Languages",
+  "home.feat.langs.title": "49 Languages",
   "home.feat.langs.desc": "From English and Russian to Japanese, Arabic, Hindi and many more. The full interface is available in every supported language, not just the transcription.",
   "home.feat.ai.title": "Real-time Translations",
   "home.feat.ai.desc": "Fast, natural-sounding translations that aim to follow real speech. DuoVox is designed to cope with everyday accents and background noise, though accuracy can vary in difficult audio — always verify important details.",
@@ -29,7 +29,7 @@
   "home.pricing.free.period": "forever",
   "home.pricing.free.bestfor": "Best for: trying it out & offline privacy",
   "home.pricing.free.f1": "On-device translations",
-  "home.pricing.free.f2": "28 offline languages",
+  "home.pricing.free.f2": "30 offline languages",
   "home.pricing.free.f3": "Works without internet",
   "home.pricing.free.f4": "In-app promotional messages",
   "home.pricing.free.micro": "No account needed. Free forever.",
@@ -37,7 +37,7 @@
   "home.pricing.standard.bestfor": "Best for: travellers, students & everyday bilingual chat",
   "home.pricing.standard.f1": "Live AI transcription & translation",
   "home.pricing.standard.f2": "15 hours included per month",
-  "home.pricing.standard.f3": "51 supported languages and variants",
+  "home.pricing.standard.f3": "33 supported languages",
   "home.pricing.standard.f4": "No ads",
   "home.pricing.standard.f5": "Cancel anytime",
   "home.pricing.standard.micro": "Best if you use it 8+ hours per month.",
@@ -168,5 +168,8 @@
   "cta.play_soon": "Coming soon to Google Play",
   "cta.avail_note": "Available on Windows via the Microsoft Store (coming soon) — Android coming soon to Google Play.",
   "cta.credits_note": "Pay-as-you-go credits are purchased inside the app",
-  "home.pricing.standard.f6": "Document translation (Desktop)"
+  "home.pricing.standard.f6": "Document translation (Desktop)",
+  "nav.languages": "Languages",
+  "home.how.s1.see": "See exactly what each plan covers.",
+  "home.pricing.professional.f8": "43 supported languages"
 }

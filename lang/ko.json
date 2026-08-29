@@ -12,7 +12,7 @@
   "home.features.title": "왜 DuoVox인가요?",
   "home.feat.dual.title": "명확한 양방향 대화",
   "home.feat.dual.desc": "대화 양측이 별도로 표시되어 혼동이 없습니다. 각 언어에 실시간 텍스트 전용 패널이 있습니다.",
-  "home.feat.langs.title": "50+개 언어 지원",
+  "home.feat.langs.title": "49개 언어 지원",
   "home.feat.langs.desc": "영어, 러시아어부터 일본어, 아랍어, 힌디어까지. 전체 인터페이스가 지원되는 모든 언어로 현지화되어 있으며, 전사 내용만이 아닙니다.",
   "home.feat.ai.title": "실시간 번역",
   "home.feat.ai.desc": "실제 대화를 따라가도록 설계된 빠르고 자연스러운 번역입니다. DuoVox는 일상적인 억양과 주변 소음에도 대응하도록 만들어졌지만, 까다로운 음성 환경에서는 정확도가 달라질 수 있으니 중요한 내용은 항상 직접 확인하세요.",
@@ -27,7 +27,7 @@
   "home.pricing.free.name": "무료",
   "home.pricing.free.period": "영구",
   "home.pricing.free.f1": "기기 내 번역",
-  "home.pricing.free.f2": "28개 오프라인 언어",
+  "home.pricing.free.f2": "30개 오프라인 언어",
   "home.pricing.free.f3": "인터넷 없이 작동",
   "home.reassurance.title": "실제 대화를 위해 설계됨",
   "home.reassurance.desc": "DuoVox는 일상적인 억양과 주변 소음에도 대응하도록 설계되었지만, 까다로운 음성 환경에서는 정확도가 달라질 수 있으니 중요한 내용은 항상 직접 확인하세요. 해외에서 커피를 주문하든 비즈니스 회의를 따라가든, 실시간으로 진행되는 실제 대화를 따라가는 것을 목표로 합니다.",
@@ -104,7 +104,7 @@
   "home.pricing.standard.bestfor": "추천 대상: 여행자, 학생 및 일상적인 이중 언어 대화",
   "home.pricing.standard.f1": "실시간 AI 음성 인식 및 번역",
   "home.pricing.standard.f2": "월 15시간 포함",
-  "home.pricing.standard.f3": "지원 언어 및 변형 51개",
+  "home.pricing.standard.f3": "지원 언어 33개",
   "home.pricing.standard.f4": "광고 없음",
   "home.pricing.standard.f5": "언제든지 해지 가능",
   "home.pricing.standard.micro": "월 8시간 이상 사용하신다면 가장 좋습니다.",
@@ -135,5 +135,6 @@
   "sec.private.ideal": "DuoVox가 세션에 대한 로컬 로그를 전혀 남기지 않기를 원하실 때 유용합니다. DuoVox는 보조 도구이며 의료, 법률 또는 기타 중대한 용도로 인증되지 않았습니다 — 중요한 정보는 항상 별도로 확인하세요.",
   "sec.standard.f4": "제3자 처리 제공업체는 자체 개인정보 처리방침에 따라 데이터를 처리하며, 현행 데이터 정책에 따라 API 데이터를 모델 학습에 사용하지 않습니다",
   "sec.control.f1": "언제든지 Private Mode를 활성화하여 DuoVox가 세션에 대한 로컬 로그를 전혀 남기지 않도록 하세요",
-  "home.pricing.standard.f6": "문서 번역 (데스크톱)"
+  "home.pricing.standard.f6": "문서 번역 (데스크톱)",
+  "home.pricing.professional.f8": "지원 언어 43개"
 }

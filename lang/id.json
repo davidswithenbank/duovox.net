@@ -12,7 +12,7 @@
   "home.features.title": "Mengapa DuoVox?",
   "home.feat.dual.title": "Percakapan dua arah yang jelas",
   "home.feat.dual.desc": "Lihat kedua sisi dialog secara terpisah — tidak ada yang tercampur. Setiap bahasa memiliki panel khusus dengan teks real-time.",
-  "home.feat.langs.title": "50+ Bahasa",
+  "home.feat.langs.title": "49 Bahasa",
   "home.feat.langs.desc": "Dari bahasa Inggris dan Rusia hingga Jepang, Arab, Hindi, dan banyak lagi. Seluruh antarmuka telah dilokalisasi dalam setiap bahasa yang didukung, bukan hanya transkripsinya.",
   "home.feat.ai.title": "Terjemahan Waktu Nyata",
   "home.feat.ai.desc": "Terjemahan yang cepat dan terdengar alami, dirancang untuk mengikuti percakapan nyata. DuoVox dirancang untuk mengatasi aksen sehari-hari dan kebisingan latar, meskipun akurasi dapat bervariasi pada audio yang sulit — selalu verifikasi detail penting.",
@@ -27,7 +27,7 @@
   "home.pricing.free.name": "Gratis",
   "home.pricing.free.period": "selamanya",
   "home.pricing.free.f1": "Terjemahan di perangkat",
-  "home.pricing.free.f2": "28 bahasa offline",
+  "home.pricing.free.f2": "30 bahasa offline",
   "home.pricing.free.f3": "Berfungsi tanpa internet",
   "home.reassurance.title": "Dirancang untuk percakapan nyata",
   "home.reassurance.desc": "DuoVox dirancang untuk mengatasi aksen sehari-hari dan kebisingan latar, meskipun akurasi dapat bervariasi pada audio yang sulit — selalu verifikasi detail penting. Baik saat Anda memesan kopi di luar negeri maupun mengikuti rapat bisnis, DuoVox dirancang untuk mengikuti percakapan nyata seiring terjadinya.",
@@ -104,7 +104,7 @@
   "home.pricing.standard.bestfor": "Paling cocok untuk: pelancong, pelajar & percakapan dwibahasa sehari-hari",
   "home.pricing.standard.f1": "Transkripsi & terjemahan AI langsung",
   "home.pricing.standard.f2": "15 jam termasuk per bulan",
-  "home.pricing.standard.f3": "51 bahasa dan varian yang didukung",
+  "home.pricing.standard.f3": "33 bahasa yang didukung",
   "home.pricing.standard.f4": "Tanpa iklan",
   "home.pricing.standard.f5": "Batalkan kapan saja",
   "home.pricing.standard.micro": "Paling hemat jika Anda menggunakannya 8+ jam per bulan.",
@@ -135,5 +135,6 @@
   "sec.private.ideal": "Berguna kapan pun Anda lebih memilih agar DuoVox tidak menyimpan log lokal sesi Anda. DuoVox adalah alat bantu dan tidak bersertifikasi untuk penggunaan medis, hukum, atau penggunaan berisiko tinggi lainnya — selalu verifikasi informasi penting secara independen.",
   "sec.standard.f4": "Penyedia pemrosesan pihak ketiga menangani data berdasarkan kebijakan privasi mereka sendiri dan tidak menggunakan data API untuk pelatihan model berdasarkan kebijakan data mereka saat ini",
   "sec.control.f1": "Aktifkan Mode Privat kapan saja agar DuoVox tidak menyimpan log lokal sesi Anda",
-  "home.pricing.standard.f6": "Terjemahan dokumen (Desktop)"
+  "home.pricing.standard.f6": "Terjemahan dokumen (Desktop)",
+  "home.pricing.professional.f8": "43 bahasa yang didukung"
 }
