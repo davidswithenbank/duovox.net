@@ -301,8 +301,28 @@ cols = "\n".join([
         n_pro, rows_pro, "professional"),
 ])
 
-io.open(OUT, "w", encoding="utf-8", newline="\n").write(
-    HTML.replace("__COLS__", cols).replace("{N_TOTAL}", str(N_TOTAL)))
+# ⛔⛔⛔ 2026-09-02 — __STAMP__ SHIPPED TO THE LIVE SITE UNSUBSTITUTED and sat there visible to every
+# visitor, directly under a sentence telling them "the date below shows when it was last generated".
+# `import datetime` was present from the first version and never used. Nothing failed: the file was
+# written, the page rendered, and every check asked "is languages.html served?" rather than "does it
+# read correctly?". ⭐⭐⭐ A TEMPLATE MISS IS SILENT BY CONSTRUCTION — the only thing that catches it
+# is a guard that runs AFTER substitution and looks for leftovers. Hence the assertion below.
+STAMP = datetime.date.today().strftime("%-d %B %Y" if os.name != "nt" else "%#d %B %Y")
+
+html = (HTML.replace("__COLS__", cols)
+            .replace("{N_TOTAL}", str(N_TOTAL))
+            .replace("__STAMP__", STAMP))
+
+# Non-vacuity control: prove the detector can actually fire before trusting it to say "clean".
+_PLACEHOLDER = re.compile(r"__[A-Z][A-Z0-9_]*__|\{[A-Z][A-Z0-9_]*\}")
+assert _PLACEHOLDER.search("x __STAMP__ y") and _PLACEHOLDER.search("x {N_TOTAL} y"), \
+    "placeholder detector is vacuous — it cannot match the very tokens this file uses"
+_left = sorted(set(_PLACEHOLDER.findall(html)))
+if _left:
+    sys.exit("REFUSING TO WRITE: %d unsubstituted placeholder(s) would ship to the live site: %s"
+             % (len(_left), ", ".join(_left)))
+
+io.open(OUT, "w", encoding="utf-8", newline="\n").write(html)
 
 print("wrote %s" % OUT)
 print("  rows (from the app picker): %d" % N_TOTAL)
