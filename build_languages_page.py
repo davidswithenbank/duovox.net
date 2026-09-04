@@ -165,19 +165,35 @@ ICON = {"yes": "\u2713", "part": "\u2022", "no": "\u2013"}
 
 
 def col(title, sub, count, rows, key):
+    """One plan's card, listing ONLY what that plan supports.
+
+    ⭐ 2026-09-04, David: "Instead of advertising what we don't support, wouldn't it be better to
+    just show what we do support (it's a psychological selling thing)?" So the "no" rows are gone.
+    Each column is now a true list of what that plan DOES, and a reader comparing columns still
+    learns where a missing language lives — Bengali is absent from Free and present under
+    Professional, which answers the question without a column of dashes to read past.
+
+    ⛔ THE HONESTY THIS MUST NOT COST. Two of the 49, Latvian and Lithuanian, are captioned on NO
+    plan (they are translation targets only). Dropping the "no" rows makes them vanish from the page
+    entirely, so the page would advertise 49 while 47 are actually obtainable. The footer names them
+    explicitly — removing the negatives is a presentation change, not a licence to imply coverage
+    that does not exist.
+    """
+    shown = [r for r in rows if r[3] != "no"]
     li = []
-    for code, eng, native, st, note in rows:
+    for code, eng, native, st, note in shown:
         li.append(
             '        <li class="lc-%s"><span class="lc-i" aria-hidden="true">%s</span>'
             '<span class="lc-n"><b>%s</b><i>%s</i></span>'
             '<span class="lc-note">%s</span></li>' % (st, ICON[st], eng, native, note))
+    # The headline number is what the reader can USE on this plan, so it counts what is listed.
     return (
         '    <div class="lc-col">\n'
         '      <h2 data-i18n="lang.%s.title">%s</h2>\n'
         '      <p class="lc-sub" data-i18n="lang.%s.sub">%s</p>\n'
-        '      <p class="lc-count"><strong>%d</strong> of %d languages</p>\n'
+        '      <p class="lc-count"><strong>%d</strong> languages</p>\n'
         '      <ul class="lc-list">\n%s\n      </ul>\n'
-        '    </div>' % (key, title, key, sub, count, N_TOTAL, "\n".join(li)))
+        '    </div>' % (key, title, key, sub, len(shown), "\n".join(li)))
 
 
 HTML = """<!DOCTYPE html>
@@ -190,7 +206,11 @@ HTML = """<!DOCTYPE html>
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
     <style>
-      .lc-wrap{max-width:1180px;margin:0 auto;padding:0 20px 64px}
+      /* 120px TOP, NOT 0. The nav is position:fixed, top:0, height:64px, so a wrapper with no top
+         padding slides its h1 and intro underneath it - which is exactly what this page did.
+         120px is not a guess: it is what .legal already uses in style.css for the same problem, so
+         the pages agree rather than each carrying its own magic number. */
+      .lc-wrap{max-width:1180px;margin:0 auto;padding:120px 20px 64px}
       .lc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
       .lc-col{border:1px solid rgba(128,128,128,.28);border-radius:10px;padding:20px 18px}
       .lc-col h2{margin:0 0 4px;font-size:1.25rem}
@@ -210,7 +230,11 @@ HTML = """<!DOCTYPE html>
       .lc-no .lc-i{color:#8d8d8d}
       .lc-no .lc-n b,.lc-no .lc-n i{opacity:.55}
       .lc-key{display:flex;flex-wrap:wrap;gap:18px;margin:22px 0 6px;font-size:.9rem;opacity:.8}
-      .lc-foot{margin-top:26px;font-size:.92rem;opacity:.8;max-width:74ch}
+      /* Full container width, NOT max-width:74ch. 74ch is the classic readable-measure rule and it
+         is right for a page of running prose - but here the paragraphs sit directly beneath a
+         1180px three-column grid, so a half-width block reads as broken rather than considered.
+         Matching the grid edge is what looks deliberate in this layout. */
+      .lc-foot{margin-top:26px;font-size:.92rem;opacity:.8}
       @media(max-width:900px){.lc-grid{grid-template-columns:1fr}.lc-sub{min-height:0}}
     </style>
 </head>
@@ -237,14 +261,14 @@ HTML = """<!DOCTYPE html>
 
 <div class="lc-wrap">
     <h1 data-i18n="lang.title">Language coverage by plan</h1>
-    <p data-i18n="lang.intro">DuoVox offers {N_TOTAL} languages, but not every language works on every
-    plan. The Free plan runs entirely on your device, so it can only support languages we can ship a
-    voice model for. Check your language here before you choose a plan.</p>
+    <p data-i18n="lang.intro">Each plan below lists the languages it supports. The Free plan runs
+    entirely on your device, so it covers the languages we can ship a voice model for; the online
+    plans reach considerably further. Find your language, and you can see at a glance which plan
+    you need.</p>
 
     <div class="lc-key">
-      <span data-i18n="lang.key.yes">&#10003; Fully supported</span>
-      <span data-i18n="lang.key.part">&bull; Partly supported</span>
-      <span data-i18n="lang.key.no">&ndash; Not available on this plan</span>
+      <span data-i18n="lang.key.yes">&#10003; Captions and translation</span>
+      <span data-i18n="lang.key.part">&bull; Captions on your device, translation needs an online plan</span>
     </div>
 
   <div class="lc-grid">
@@ -254,6 +278,7 @@ __COLS__
   <p class="lc-foot" data-i18n="lang.foot.pair">Both sides of a conversation need to be supported by
   the plan you choose. If either language is unavailable on a plan, that speaker will not be
   captioned.</p>
+  <p class="lc-foot" data-i18n="lang.foot.translateonly">{TRANSLATE_ONLY_SENTENCE}</p>
   <p class="lc-foot" data-i18n="lang.foot.offline">Free runs entirely on your device and never sends
   audio anywhere. Standard and Professional use online services for higher accuracy, and fall back
   to on-device processing if the connection drops.</p>
@@ -309,7 +334,36 @@ cols = "\n".join([
 # is a guard that runs AFTER substitution and looks for leftovers. Hence the assertion below.
 STAMP = datetime.date.today().strftime("%-d %B %Y" if os.name != "nt" else "%#d %B %Y")
 
+# ⭐ DERIVED, NEVER TYPED. The columns now list only what each plan supports, so a language served
+# by no plan at all disappears from the page completely. Naming those languages is what keeps the
+# page honest — and hand-typing "Latvian and Lithuanian" would silently become a lie the day a
+# model ships for either. This sentence is built from the same maps the columns are.
+_translate_only = [eng for (code, eng, native, st, note) in rows_free
+                   if st == "no"
+                   and code not in DG and code not in AZ
+                   and base(code) in MT]
+_never = [eng for (code, eng, native, st, note) in rows_free
+          if st == "no" and code not in DG and code not in AZ and base(code) not in MT]
+
+if _translate_only:
+    _names = (" and ".join(_translate_only) if len(_translate_only) < 3
+              else ", ".join(_translate_only[:-1]) + " and " + _translate_only[-1])
+    _word = "One exception" if len(_translate_only) == 1 else "Two exceptions" if len(_translate_only) == 2 \
+            else "%d exceptions" % len(_translate_only)
+    _plural = "" if len(_translate_only) == 1 else "s"
+    _sentence = ("%s worth naming: <b>%s</b> can be translated <i>into</i>, so you can read %s, but "
+                 "DuoVox cannot yet caption speech in %s &mdash; on any plan."
+                 % (_word, "</b> and <b>".join(_translate_only), _names,
+                    "it" if len(_translate_only) == 1 else "either" if len(_translate_only) == 2 else "them"))
+else:
+    _sentence = ("Every language listed above can be both captioned and translated on at least one "
+                 "plan.")
+if _never:
+    _sentence += (" <b>%s</b> %s offered in the app but cannot currently be captioned or translated."
+                  % (", ".join(_never), "is" if len(_never) == 1 else "are"))
+
 html = (HTML.replace("__COLS__", cols)
+            .replace("{TRANSLATE_ONLY_SENTENCE}", _sentence)
             .replace("{N_TOTAL}", str(N_TOTAL))
             .replace("__STAMP__", STAMP))
 

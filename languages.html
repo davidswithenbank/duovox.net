@@ -8,7 +8,11 @@
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
     <style>
-      .lc-wrap{max-width:1180px;margin:0 auto;padding:0 20px 64px}
+      /* 120px TOP, NOT 0. The nav is position:fixed, top:0, height:64px, so a wrapper with no top
+         padding slides its h1 and intro underneath it - which is exactly what this page did.
+         120px is not a guess: it is what .legal already uses in style.css for the same problem, so
+         the pages agree rather than each carrying its own magic number. */
+      .lc-wrap{max-width:1180px;margin:0 auto;padding:120px 20px 64px}
       .lc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
       .lc-col{border:1px solid rgba(128,128,128,.28);border-radius:10px;padding:20px 18px}
       .lc-col h2{margin:0 0 4px;font-size:1.25rem}
@@ -28,7 +32,11 @@
       .lc-no .lc-i{color:#8d8d8d}
       .lc-no .lc-n b,.lc-no .lc-n i{opacity:.55}
       .lc-key{display:flex;flex-wrap:wrap;gap:18px;margin:22px 0 6px;font-size:.9rem;opacity:.8}
-      .lc-foot{margin-top:26px;font-size:.92rem;opacity:.8;max-width:74ch}
+      /* Full container width, NOT max-width:74ch. 74ch is the classic readable-measure rule and it
+         is right for a page of running prose - but here the paragraphs sit directly beneath a
+         1180px three-column grid, so a half-width block reads as broken rather than considered.
+         Matching the grid edge is what looks deliberate in this layout. */
+      .lc-foot{margin-top:26px;font-size:.92rem;opacity:.8}
       @media(max-width:900px){.lc-grid{grid-template-columns:1fr}.lc-sub{min-height:0}}
     </style>
 </head>
@@ -55,69 +63,50 @@
 
 <div class="lc-wrap">
     <h1 data-i18n="lang.title">Language coverage by plan</h1>
-    <p data-i18n="lang.intro">DuoVox offers 49 languages, but not every language works on every
-    plan. The Free plan runs entirely on your device, so it can only support languages we can ship a
-    voice model for. Check your language here before you choose a plan.</p>
+    <p data-i18n="lang.intro">Each plan below lists the languages it supports. The Free plan runs
+    entirely on your device, so it covers the languages we can ship a voice model for; the online
+    plans reach considerably further. Find your language, and you can see at a glance which plan
+    you need.</p>
 
     <div class="lc-key">
-      <span data-i18n="lang.key.yes">&#10003; Fully supported</span>
-      <span data-i18n="lang.key.part">&bull; Partly supported</span>
-      <span data-i18n="lang.key.no">&ndash; Not available on this plan</span>
+      <span data-i18n="lang.key.yes">&#10003; Captions and translation</span>
+      <span data-i18n="lang.key.part">&bull; Captions on your device, translation needs an online plan</span>
     </div>
 
   <div class="lc-grid">
     <div class="lc-col">
       <h2 data-i18n="lang.free.title">Free</h2>
       <p class="lc-sub" data-i18n="lang.free.sub">Runs entirely on your device. No internet needed, no audio ever leaves your computer.</p>
-      <p class="lc-count"><strong>22</strong> of 49 languages</p>
+      <p class="lc-count"><strong>30</strong> languages</p>
       <ul class="lc-list">
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>English</b><i>English</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Russian</b><i>Русский</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Ukrainian</b><i>Українська</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Arabic</b><i>العربية</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Bengali</b><i>বাংলা</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Bulgarian</b><i>Български</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Chinese (Simplified)</b><i>中文(简体)</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Chinese (Traditional)</b><i>中文(繁體)</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Catalan</b><i>Català</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Croatian</b><i>Hrvatski</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Czech</b><i>Čeština</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Danish</b><i>Dansk</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Dutch</b><i>Nederlands</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-part"><span class="lc-i" aria-hidden="true">•</span><span class="lc-n"><b>Esperanto</b><i>Esperanto</i></span><span class="lc-note">Captions on your device — translation needs an online plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Estonian</b><i>Eesti</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Farsi</b><i>فارسی</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Finnish</b><i>Suomi</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>French</b><i>Français</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>German</b><i>Deutsch</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Greek</b><i>Ελληνικά</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-part"><span class="lc-i" aria-hidden="true">•</span><span class="lc-n"><b>Gujarati</b><i>ગુજરાતી</i></span><span class="lc-note">Captions on your device — translation needs an online plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Hebrew</b><i>עברית</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
         <li class="lc-part"><span class="lc-i" aria-hidden="true">•</span><span class="lc-n"><b>Hindi</b><i>हिन्दी</i></span><span class="lc-note">Captions on your device — translation needs an online plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Hungarian</b><i>Magyar</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Indonesian</b><i>Bahasa Indonesia</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Italian</b><i>Italiano</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Japanese</b><i>日本語</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-part"><span class="lc-i" aria-hidden="true">•</span><span class="lc-n"><b>Kazakh</b><i>Қазақша</i></span><span class="lc-note">Captions on your device — translation needs an online plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Korean</b><i>한국어</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-part"><span class="lc-i" aria-hidden="true">•</span><span class="lc-n"><b>Kyrgyz</b><i>Кыргызча</i></span><span class="lc-note">Captions on your device — translation needs an online plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Latvian</b><i>Latviešu</i></span><span class="lc-note">Can be translated INTO, but speech in this language is not captioned</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Lithuanian</b><i>Lietuvių</i></span><span class="lc-note">Can be translated INTO, but speech in this language is not captioned</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Norwegian</b><i>Norsk</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Polish</b><i>Polski</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Portuguese</b><i>Português</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Romanian</b><i>Română</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Serbian</b><i>Српски</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Slovak</b><i>Slovenčina</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Slovenian</b><i>Slovenščina</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Spanish</b><i>Español</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Swedish</b><i>Svenska</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
         <li class="lc-part"><span class="lc-i" aria-hidden="true">•</span><span class="lc-n"><b>Tajik</b><i>Тоҷикӣ</i></span><span class="lc-note">Captions on your device — translation needs an online plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Tamil</b><i>தமிழ்</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
         <li class="lc-part"><span class="lc-i" aria-hidden="true">•</span><span class="lc-n"><b>Telugu</b><i>తెలుగు</i></span><span class="lc-note">Captions on your device — translation needs an online plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Thai</b><i>ไทย</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Turkish</b><i>Türkçe</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Urdu</b><i>اردو</i></span><span class="lc-note">Not available offline — needs an online plan</span></li>
         <li class="lc-part"><span class="lc-i" aria-hidden="true">•</span><span class="lc-n"><b>Uzbek</b><i>Oʻzbek</i></span><span class="lc-note">Captions on your device — translation needs an online plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Vietnamese</b><i>Tiếng Việt</i></span><span class="lc-note">Captions and translation, fully on your device</span></li>
       </ul>
@@ -125,63 +114,47 @@
     <div class="lc-col">
       <h2 data-i18n="lang.standard.title">Standard</h2>
       <p class="lc-sub" data-i18n="lang.standard.sub">Online accuracy for everyday interpreting, with on-device fallback.</p>
-      <p class="lc-count"><strong>33</strong> of 49 languages</p>
+      <p class="lc-count"><strong>33</strong> languages</p>
       <ul class="lc-list">
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>English</b><i>English</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Russian</b><i>Русский</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Ukrainian</b><i>Українська</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Arabic</b><i>العربية</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Bengali</b><i>বাংলা</i></span><span class="lc-note">Not available on Standard — available on Professional</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Bulgarian</b><i>Български</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Chinese (Simplified)</b><i>中文(简体)</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Chinese (Traditional)</b><i>中文(繁體)</i></span><span class="lc-note">Not available on Standard — available on Professional</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Catalan</b><i>Català</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Croatian</b><i>Hrvatski</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Czech</b><i>Čeština</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Danish</b><i>Dansk</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Dutch</b><i>Nederlands</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Esperanto</b><i>Esperanto</i></span><span class="lc-note">Not captioned on any plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Estonian</b><i>Eesti</i></span><span class="lc-note">Not available on Standard — available on Professional</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Farsi</b><i>فارسی</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Finnish</b><i>Suomi</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>French</b><i>Français</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>German</b><i>Deutsch</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Greek</b><i>Ελληνικά</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Gujarati</b><i>ગુજરાતી</i></span><span class="lc-note">Not available on Standard — available on Professional</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Hebrew</b><i>עברית</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Hindi</b><i>हिन्दी</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Hungarian</b><i>Magyar</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Indonesian</b><i>Bahasa Indonesia</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Italian</b><i>Italiano</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Japanese</b><i>日本語</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Kazakh</b><i>Қазақша</i></span><span class="lc-note">Not available on Standard — available on Professional</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Korean</b><i>한국어</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Kyrgyz</b><i>Кыргызча</i></span><span class="lc-note">Not captioned on any plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Latvian</b><i>Latviešu</i></span><span class="lc-note">Not captioned on any plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Lithuanian</b><i>Lietuvių</i></span><span class="lc-note">Not captioned on any plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Norwegian</b><i>Norsk</i></span><span class="lc-note">Not available on Standard — available on Professional</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Polish</b><i>Polski</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Portuguese</b><i>Português</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Romanian</b><i>Română</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Serbian</b><i>Српски</i></span><span class="lc-note">Not available on Standard — available on Professional</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Slovak</b><i>Slovenčina</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Slovenian</b><i>Slovenščina</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Spanish</b><i>Español</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Swedish</b><i>Svenska</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Tajik</b><i>Тоҷикӣ</i></span><span class="lc-note">Not captioned on any plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Tamil</b><i>தமிழ்</i></span><span class="lc-note">Not available on Standard — available on Professional</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Telugu</b><i>తెలుగు</i></span><span class="lc-note">Not available on Standard — available on Professional</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Thai</b><i>ไทย</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Turkish</b><i>Türkçe</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Urdu</b><i>اردو</i></span><span class="lc-note">Not available on Standard — available on Professional</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Uzbek</b><i>Oʻzbek</i></span><span class="lc-note">Not captioned on any plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Vietnamese</b><i>Tiếng Việt</i></span><span class="lc-note">Included</span></li>
       </ul>
     </div>
     <div class="lc-col">
       <h2 data-i18n="lang.professional.title">Professional</h2>
       <p class="lc-sub" data-i18n="lang.professional.sub">Our most accurate engine, for high-stakes and specialist work.</p>
-      <p class="lc-count"><strong>43</strong> of 49 languages</p>
+      <p class="lc-count"><strong>43</strong> languages</p>
       <ul class="lc-list">
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>English</b><i>English</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Russian</b><i>Русский</i></span><span class="lc-note">Included</span></li>
@@ -196,7 +169,6 @@
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Czech</b><i>Čeština</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Danish</b><i>Dansk</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Dutch</b><i>Nederlands</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Esperanto</b><i>Esperanto</i></span><span class="lc-note">Not captioned on any plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Estonian</b><i>Eesti</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Farsi</b><i>فارسی</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Finnish</b><i>Suomi</i></span><span class="lc-note">Included</span></li>
@@ -212,9 +184,6 @@
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Japanese</b><i>日本語</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Kazakh</b><i>Қазақша</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Korean</b><i>한국어</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Kyrgyz</b><i>Кыргызча</i></span><span class="lc-note">Not captioned on any plan</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Latvian</b><i>Latviešu</i></span><span class="lc-note">Can be translated INTO, but speech in this language is not captioned</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Lithuanian</b><i>Lietuvių</i></span><span class="lc-note">Can be translated INTO, but speech in this language is not captioned</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Norwegian</b><i>Norsk</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Polish</b><i>Polski</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Portuguese</b><i>Português</i></span><span class="lc-note">Included</span></li>
@@ -224,13 +193,11 @@
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Slovenian</b><i>Slovenščina</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Spanish</b><i>Español</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Swedish</b><i>Svenska</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Tajik</b><i>Тоҷикӣ</i></span><span class="lc-note">Not captioned on any plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Tamil</b><i>தமிழ்</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Telugu</b><i>తెలుగు</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Thai</b><i>ไทย</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Turkish</b><i>Türkçe</i></span><span class="lc-note">Included</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Urdu</b><i>اردو</i></span><span class="lc-note">Included</span></li>
-        <li class="lc-no"><span class="lc-i" aria-hidden="true">–</span><span class="lc-n"><b>Uzbek</b><i>Oʻzbek</i></span><span class="lc-note">Not captioned on any plan</span></li>
         <li class="lc-yes"><span class="lc-i" aria-hidden="true">✓</span><span class="lc-n"><b>Vietnamese</b><i>Tiếng Việt</i></span><span class="lc-note">Included</span></li>
       </ul>
     </div>
@@ -239,6 +206,7 @@
   <p class="lc-foot" data-i18n="lang.foot.pair">Both sides of a conversation need to be supported by
   the plan you choose. If either language is unavailable on a plan, that speaker will not be
   captioned.</p>
+  <p class="lc-foot" data-i18n="lang.foot.translateonly">Two exceptions worth naming: <b>Latvian</b> and <b>Lithuanian</b> can be translated <i>into</i>, so you can read Latvian and Lithuanian, but DuoVox cannot yet caption speech in either &mdash; on any plan.</p>
   <p class="lc-foot" data-i18n="lang.foot.offline">Free runs entirely on your device and never sends
   audio anywhere. Standard and Professional use online services for higher accuracy, and fall back
   to on-device processing if the connection drops.</p>
@@ -256,7 +224,7 @@
   Chinese and British English) are selected separately in the app and are not listed individually
   here.</p>
   <p class="lc-foot"><a href="index.html#pricing" data-i18n="lang.foot.cta">See plans and pricing</a></p>
-  <p class="lc-foot lc-stamp">Last updated 2 September 2026</p>
+  <p class="lc-foot lc-stamp">Last updated 4 September 2026</p>
 </div>
 
 <footer class="footer">
