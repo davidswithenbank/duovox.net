@@ -73,15 +73,23 @@ if min(len(AZ), len(DG), len(VOSK), len(MT)) < 5:
 # ── the row set, read from the app (NOT typed here) ──────────────────────────
 mv = read(r"CaptionOverlay\ViewModels\MainViewModel.cs")
 
-_m = re.search(r"LanguagesEnglish\s*=\s*\{(.*?)\};", mv, re.S)
+# ⛔ STRIP C# COMMENTS FIRST. This regex hunts for a code pattern, and on 2026-09-04 a COMMENT in
+# MainViewModel.cs that documented this very coupling — it quoted "LanguagesEnglish = { ... };" to
+# warn future editors not to fence the array — matched ahead of the real declaration. group(1) was
+# then " ... ", the picker parsed to ZERO entries, and the build refused. The guard did its job, but
+# the cause was a gate reading PROSE as CODE. Documenting a coupling must not break it.
+_mv_code = re.sub(r"//[^\n]*", "", mv)
+
+_m = re.search(r"LanguagesEnglish\s*=\s*\{(.*?)\};", _mv_code, re.S)
 if not _m:
     sys.exit("could not find LanguagesEnglish — refusing to guess the language list")
 PICKER = re.findall(r'"([^"]+)"', _m.group(1))
 
-_i = mv.find('"Romanian" => "ro"')
+# Same reason as above: read CODE, not comments.
+_i = _mv_code.find('"Romanian" => "ro"')
 if _i < 0:
     sys.exit("could not find LanguageNameToCode — refusing to re-implement it")
-_blk = mv[mv.rfind("switch", 0, _i):mv.find("};", _i)]
+_blk = _mv_code[_mv_code.rfind("switch", 0, _i):_mv_code.find("};", _i)]
 NAME2CODE = {k: v.lower() for k, v in re.findall(r'"([^"]+)"\s*=>\s*"([a-z-]{2,7})"', _blk)}
 
 # ⛔ NON-VACUITY: both lists must be substantial AND every picker entry must resolve.
