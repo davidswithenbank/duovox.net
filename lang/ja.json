@@ -120,7 +120,7 @@
   "home.pricing.payg.name": "従量課金（Pay-As-You-Go）",
   "home.pricing.payg.period": "1 時間あたり",
   "home.pricing.payg.bestfor": "おすすめ：お試し、たまの利用、追加チャージ",
-  "home.pricing.payg.f3": "クレジットパックを購入（10時間、25時間）",
+  "home.pricing.payg.f3": "クレジットパックを購入（1時間、10時間、25時間）",
   "home.pricing.payg.f4": "サブスクリプション不要、契約縛りなし",
   "home.pricing.payg.f5": "クレジットは無期限",
   "cta.credits_note": "従量課金（Pay-As-You-Go）のクレジットはアプリ内で購入します",
