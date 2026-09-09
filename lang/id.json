@@ -202,5 +202,15 @@
   "terms.v31.s15.p1": "Jika Anda memiliki pertanyaan mengenai Ketentuan ini, silakan hubungi kami di:",
   "terms.v31.s15.p2": "David Arthur Software",
   "terms.v31.s15.p3": "Kirkbymoorside, York, YO62 6LJ, Britania Raya",
-  "terms.v31.s15.p4": "Email: info@duovox.net"
+  "terms.v31.s15.p4": "Email: info@duovox.net",
+  "sec.v20260909.tech.title": "Rincian teknis",
+  "sec.v20260909.tech.transit": "Saat dikirim: setiap koneksi yang membawa data Anda menggunakan TLS 1.2 atau lebih tinggi — antara aplikasi dan layanan kami, serta antara layanan kami dan penyedia pemrosesan.",
+  "sec.v20260909.tech.rest": "Saat disimpan: data layanan terbatas yang kami simpan berada di platform Cloudflare dan dienkripsi saat disimpan. Di perangkat Anda sendiri, setiap kolom pengaturan yang memuat kredensial dienkripsi dengan AES-256-GCM menggunakan kunci yang diturunkan dari rahasia khusus tiap pemasangan, dan dilindungi pemeriksaan integritas HMAC-SHA256; versi Microsoft Store sama sekali tidak memuat kredensial penyedia.",
+  "sec.v20260909.tech.creds": "Kredensial: kunci API penyedia kami tidak pernah meninggalkan server kami. Sebagai gantinya, aplikasi diberi token berumur pendek dengan cakupan sempit, diterbitkan per sesi dan diperbarui otomatis, sehingga token yang tersadap kedaluwarsa dalam hitungan menit alih-alih memberi akses permanen.",
+  "sec.v20260909.tech.access": "Kendali akses: dasbor administrasi berada di balik gerbang identitas dan kunci administrasi terpisah yang dibandingkan dalam waktu tetap. Setiap permintaan yang dapat memengaruhi hak berbayar membawa tanda tangan HMAC-SHA256 khusus perangkat dengan masa berlaku 60 detik, sehingga permintaan yang tersadap tidak dapat diputar ulang.",
+  "sec.v20260909.tech.logging": "Pencatatan dan penyimpanan: perubahan administratif atas suatu hak ditulis ke jejak audit. Peristiwa diagnostik per perangkat dipangkas otomatis — biasanya dalam 30 hari dan dalam hal apa pun dalam 12 bulan. Masa simpan setiap kategori data diatur dalam Kebijakan Privasi.",
+  "sec.v20260909.tech.isolation": "Pemisahan: kunci yang menandatangani permintaan sebuah perangkat dan kunci yang mengenkripsi pengaturan lokalnya diturunkan secara terpisah, sehingga tidak satu pun dapat menggantikan yang lain.",
+  "sec.v20260909.report.title": "Melaporkan masalah keamanan",
+  "sec.v20260909.report.body": "Jika Anda yakin menemukan kerentanan keamanan di DuoVox, kirim surel ke info@duovox.net dengan rincian yang cukup untuk mereproduksinya. Kami akan mengonfirmasi laporan Anda, memberi kabar selama penyelidikan, dan tidak akan menuntut siapa pun yang melaporkan masalah nyata dengan itikad baik serta tidak mengakses atau mengubah data orang lain saat melakukannya. Mohon beri kami kesempatan yang wajar untuk memperbaiki masalah sebelum mempublikasikannya.",
+  "sec.v20260909.report.breach": "Jika terjadi pelanggaran data pribadi yang kemungkinan menimbulkan risiko terhadap hak dan kebebasan orang, kami akan melaporkannya kepada Information Commissioner's Office (otoritas perlindungan data Britania Raya) dalam 72 jam sejak kami mengetahuinya, dan memberi tahu pengguna yang terdampak tanpa penundaan yang tidak semestinya bila risikonya tinggi."
 }

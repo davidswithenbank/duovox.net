@@ -202,5 +202,15 @@
   "terms.v31.s15.p1": "Nếu bạn có câu hỏi về các Điều khoản này, vui lòng liên hệ với chúng tôi tại:",
   "terms.v31.s15.p2": "David Arthur Software",
   "terms.v31.s15.p3": "Kirkbymoorside, York, YO62 6LJ, Vương quốc Anh",
-  "terms.v31.s15.p4": "Email: info@duovox.net"
+  "terms.v31.s15.p4": "Email: info@duovox.net",
+  "sec.v20260909.tech.title": "Chi tiết kỹ thuật",
+  "sec.v20260909.tech.transit": "Khi truyền: mọi kết nối mang dữ liệu của bạn đều dùng TLS 1.2 trở lên — giữa ứng dụng và dịch vụ của chúng tôi, cũng như giữa dịch vụ của chúng tôi và các nhà cung cấp xử lý.",
+  "sec.v20260909.tech.rest": "Khi lưu trữ: lượng dữ liệu dịch vụ hạn chế mà chúng tôi giữ được lưu trên nền tảng của Cloudflare và được mã hóa khi lưu trữ. Trên thiết bị của bạn, mọi trường cài đặt chứa thông tin xác thực đều được mã hóa bằng AES-256-GCM với khóa dẫn xuất từ một bí mật riêng cho từng lần cài đặt, và được bảo vệ bằng kiểm tra toàn vẹn HMAC-SHA256; bản Microsoft Store hoàn toàn không chứa thông tin xác thực của nhà cung cấp.",
+  "sec.v20260909.tech.creds": "Thông tin xác thực: khóa API của các nhà cung cấp không bao giờ rời khỏi máy chủ của chúng tôi. Thay vào đó, ứng dụng được cấp các token ngắn hạn, phạm vi hẹp, phát hành theo từng phiên và tự động làm mới, nên một token bị chặn bắt sẽ hết hạn trong vài phút thay vì cấp quyền truy cập lâu dài.",
+  "sec.v20260909.tech.access": "Kiểm soát truy cập: bảng điều khiển quản trị nằm sau một cổng danh tính và một khóa quản trị riêng, được so sánh trong thời gian không đổi. Mọi yêu cầu có thể ảnh hưởng đến quyền lợi trả phí đều mang chữ ký HMAC-SHA256 riêng của thiết bị, có hiệu lực 60 giây, nên một yêu cầu bị chặn bắt không thể phát lại.",
+  "sec.v20260909.tech.logging": "Ghi nhật ký và lưu giữ: các thay đổi quản trị đối với một quyền lợi được ghi vào nhật ký kiểm toán. Sự kiện chẩn đoán theo thiết bị được dọn tự động — thường trong vòng 30 ngày và trong mọi trường hợp là trong vòng 12 tháng. Thời hạn lưu giữ cho từng loại dữ liệu được nêu trong Chính sách quyền riêng tư.",
+  "sec.v20260909.tech.isolation": "Tách biệt: khóa ký các yêu cầu của thiết bị và khóa mã hóa cài đặt cục bộ của nó được dẫn xuất riêng biệt, nên không khóa nào có thể dùng thay cho khóa kia.",
+  "sec.v20260909.report.title": "Báo cáo vấn đề bảo mật",
+  "sec.v20260909.report.body": "Nếu bạn tin rằng mình đã phát hiện một lỗ hổng bảo mật trong DuoVox, vui lòng gửi email tới info@duovox.net kèm đủ chi tiết để tái hiện. Chúng tôi sẽ xác nhận báo cáo của bạn, thông báo tiến độ trong quá trình điều tra, và sẽ không truy cứu bất kỳ ai báo cáo một vấn đề có thật với thiện chí mà không truy cập hay thay đổi dữ liệu của người khác. Xin hãy cho chúng tôi cơ hội hợp lý để khắc phục trước khi công bố.",
+  "sec.v20260909.report.breach": "Nếu xảy ra vi phạm dữ liệu cá nhân có khả năng gây rủi ro cho quyền và tự do của con người, chúng tôi sẽ báo cáo tới Information Commissioner's Office (cơ quan bảo vệ dữ liệu của Vương quốc Anh) trong vòng 72 giờ kể từ khi biết được, và thông báo cho người dùng bị ảnh hưởng không chậm trễ quá mức khi rủi ro với họ là cao."
 }

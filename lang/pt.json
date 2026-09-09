@@ -202,5 +202,15 @@
   "terms.v31.s15.p1": "Se tiver questões sobre estes Termos, contacte-nos através de:",
   "terms.v31.s15.p2": "David Arthur Software",
   "terms.v31.s15.p3": "Kirkbymoorside, York, YO62 6LJ, Reino Unido",
-  "terms.v31.s15.p4": "E-mail: info@duovox.net"
+  "terms.v31.s15.p4": "E-mail: info@duovox.net",
+  "sec.v20260909.tech.title": "Detalhes técnicos",
+  "sec.v20260909.tech.transit": "Em trânsito: todas as ligações que transportam os seus dados utilizam TLS 1.2 ou superior — entre a aplicação e o nosso serviço, e entre o nosso serviço e os fornecedores de processamento.",
+  "sec.v20260909.tech.rest": "Em repouso: os poucos dados de serviço que guardamos ficam armazenados na plataforma da Cloudflare e são cifrados em repouso. No seu próprio dispositivo, qualquer campo de definições que contenha uma credencial é cifrado com AES-256-GCM através de uma chave derivada de um segredo próprio de cada instalação e protegido por uma verificação de integridade HMAC-SHA256; a versão da Microsoft Store não contém quaisquer credenciais de fornecedores.",
+  "sec.v20260909.tech.creds": "Credenciais: as chaves de API dos nossos fornecedores nunca saem dos nossos servidores. Em vez disso, a aplicação recebe tokens de curta duração e âmbito restrito, emitidos por sessão e renovados automaticamente, pelo que um token intercetado expira em minutos em vez de conceder acesso permanente.",
+  "sec.v20260909.tech.access": "Controlo de acessos: o painel de administração está protegido por um gateway de identidade e por uma chave administrativa separada, comparada em tempo constante. Todos os pedidos que possam afetar um direito pago levam uma assinatura HMAC-SHA256 própria do dispositivo, válida durante 60 segundos, para que um pedido intercetado não possa ser reutilizado.",
+  "sec.v20260909.tech.logging": "Registo e conservação: as alterações administrativas a um direito são escritas num registo de auditoria. Os eventos de diagnóstico por dispositivo são eliminados automaticamente — normalmente no prazo de 30 dias e, em qualquer caso, dentro de 12 meses. Os prazos de conservação de cada categoria de dados constam da Política de Privacidade.",
+  "sec.v20260909.tech.isolation": "Separação: a chave que assina os pedidos de um dispositivo e a chave que cifra as suas definições locais são derivadas separadamente, pelo que nenhuma pode substituir a outra.",
+  "sec.v20260909.report.title": "Comunicar um problema de segurança",
+  "sec.v20260909.report.body": "Se julga ter encontrado uma vulnerabilidade de segurança no DuoVox, escreva para info@duovox.net com detalhes suficientes para a reproduzir. Confirmaremos a receção do seu relato, mantê-lo-emos informado durante a investigação e não agiremos contra quem comunique de boa-fé um problema genuíno sem aceder a dados de terceiros nem os alterar. Agradecemos que nos dê uma oportunidade razoável de corrigir o problema antes de o divulgar publicamente.",
+  "sec.v20260909.report.breach": "Caso ocorra uma violação de dados pessoais suscetível de implicar um risco para os direitos e liberdades das pessoas, comunicá-la-emos ao Information Commissioner's Office (a autoridade britânica de proteção de dados) no prazo de 72 horas após dela tomarmos conhecimento, e informaremos os utilizadores afetados sem demora injustificada sempre que o risco para eles seja elevado."
 }

@@ -202,5 +202,15 @@
   "terms.v31.s15.p1": "Als u vragen hebt over deze Voorwaarden, neem dan contact met ons op via:",
   "terms.v31.s15.p2": "David Arthur Software",
   "terms.v31.s15.p3": "Kirkbymoorside, York, YO62 6LJ, Verenigd Koninkrijk",
-  "terms.v31.s15.p4": "E-mail: info@duovox.net"
+  "terms.v31.s15.p4": "E-mail: info@duovox.net",
+  "sec.v20260909.tech.title": "Technische details",
+  "sec.v20260909.tech.transit": "Tijdens verzending: elke verbinding die uw gegevens vervoert gebruikt TLS 1.2 of hoger — tussen de app en onze dienst, en tussen onze dienst en de verwerkende aanbieders.",
+  "sec.v20260909.tech.rest": "In rust: de beperkte dienstgegevens die wij bewaren staan op het platform van Cloudflare en zijn versleuteld in rust. Op uw eigen apparaat wordt elk instellingsveld met een inloggegeven versleuteld met AES-256-GCM onder een sleutel die is afgeleid van een geheim per installatie, en beschermd door een integriteitscontrole met HMAC-SHA256; de Microsoft Store-versie bevat in het geheel geen aanbiedersgegevens.",
+  "sec.v20260909.tech.creds": "Inloggegevens: de API-sleutels van onze aanbieders verlaten onze servers nooit. De app krijgt in plaats daarvan kortlevende, eng afgebakende tokens, per sessie uitgegeven en automatisch vernieuwd, zodat een onderschept token binnen enkele minuten verloopt in plaats van blijvende toegang te geven.",
+  "sec.v20260909.tech.access": "Toegangsbeheer: het beheerdersdashboard zit achter een identiteitsgateway en een aparte beheerderssleutel, die in constante tijd wordt vergeleken. Elk verzoek dat een betaald recht kan raken draagt een apparaatgebonden HMAC-SHA256-handtekening die 60 seconden geldig is, zodat een onderschept verzoek niet opnieuw kan worden afgespeeld.",
+  "sec.v20260909.tech.logging": "Logging en bewaring: administratieve wijzigingen aan een recht worden vastgelegd in een auditspoor. Diagnostische gebeurtenissen per apparaat worden automatisch opgeschoond — doorgaans binnen 30 dagen en in elk geval binnen 12 maanden. De bewaartermijn voor elke gegevenscategorie staat in het Privacybeleid.",
+  "sec.v20260909.tech.isolation": "Scheiding: de sleutel die de verzoeken van een apparaat ondertekent en de sleutel die de lokale instellingen versleutelt worden afzonderlijk afgeleid, zodat geen van beide de plaats van de andere kan innemen.",
+  "sec.v20260909.report.title": "Een beveiligingsprobleem melden",
+  "sec.v20260909.report.body": "Denkt u een beveiligingslek in DuoVox te hebben gevonden, mail dan naar info@duovox.net met voldoende details om het te reproduceren. Wij bevestigen uw melding, houden u op de hoogte tijdens ons onderzoek en ondernemen geen stappen tegen wie te goeder trouw een echt probleem meldt en daarbij geen gegevens van anderen inziet of wijzigt. Geef ons alstublieft een redelijke gelegenheid het probleem op te lossen voordat u het openbaar maakt.",
+  "sec.v20260909.report.breach": "Doet zich een inbreuk op persoonsgegevens voor die waarschijnlijk een risico oplevert voor de rechten en vrijheden van personen, dan melden wij die binnen 72 uur nadat wij ervan kennis hebben gekregen bij het Information Commissioner's Office (de Britse toezichthouder voor gegevensbescherming), en informeren wij getroffen gebruikers zonder onnodige vertraging wanneer het risico voor hen hoog is."
 }

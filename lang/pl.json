@@ -202,5 +202,15 @@
   "terms.v31.s15.p1": "Jeśli masz pytania dotyczące niniejszych Warunków, skontaktuj się z nami:",
   "terms.v31.s15.p2": "David Arthur Software",
   "terms.v31.s15.p3": "Kirkbymoorside, York, YO62 6LJ, Zjednoczone Królestwo",
-  "terms.v31.s15.p4": "E-mail: info@duovox.net"
+  "terms.v31.s15.p4": "E-mail: info@duovox.net",
+  "sec.v20260909.tech.title": "Szczegóły techniczne",
+  "sec.v20260909.tech.transit": "W trakcie przesyłania: każde połączenie przenoszące Twoje dane korzysta z TLS 1.2 lub nowszego — zarówno między aplikacją a naszą usługą, jak i między naszą usługą a dostawcami przetwarzania.",
+  "sec.v20260909.tech.rest": "W spoczynku: ograniczone dane usługowe, które przechowujemy, znajdują się na platformie Cloudflare i są szyfrowane w spoczynku. Na Twoim urządzeniu każde pole ustawień zawierające poświadczenie jest szyfrowane algorytmem AES-256-GCM kluczem wyprowadzonym z sekretu właściwego dla danej instalacji i chronione kontrolą integralności HMAC-SHA256; wersja ze sklepu Microsoft Store nie zawiera żadnych poświadczeń dostawców.",
+  "sec.v20260909.tech.creds": "Poświadczenia: klucze API naszych dostawców nigdy nie opuszczają naszych serwerów. Aplikacja otrzymuje zamiast nich krótkotrwałe tokeny o wąskim zakresie, wydawane na każdą sesję i odnawiane automatycznie, dzięki czemu przechwycony token wygasa w ciągu minut, zamiast dawać stały dostęp.",
+  "sec.v20260909.tech.access": "Kontrola dostępu: panel administracyjny znajduje się za bramą tożsamości i osobnym kluczem administracyjnym, porównywanym w stałym czasie. Każde żądanie mogące wpłynąć na płatne uprawnienie zawiera podpis HMAC-SHA256 właściwy dla urządzenia, ważny przez 60 sekund, więc przechwyconego żądania nie da się odtworzyć ponownie.",
+  "sec.v20260909.tech.logging": "Rejestrowanie i przechowywanie: zmiany administracyjne dotyczące uprawnienia są zapisywane w dzienniku audytu. Zdarzenia diagnostyczne dla poszczególnych urządzeń są usuwane automatycznie — zwykle w ciągu 30 dni, a w każdym razie w ciągu 12 miesięcy. Okresy przechowywania każdej kategorii danych określa Polityka prywatności.",
+  "sec.v20260909.tech.isolation": "Rozdzielenie: klucz podpisujący żądania urządzenia i klucz szyfrujący jego lokalne ustawienia są wyprowadzane oddzielnie, więc żaden nie może zastąpić drugiego.",
+  "sec.v20260909.report.title": "Zgłaszanie problemu bezpieczeństwa",
+  "sec.v20260909.report.body": "Jeśli sądzisz, że znalazłeś lukę bezpieczeństwa w DuoVox, napisz na info@duovox.net, podając dość szczegółów, aby ją odtworzyć. Potwierdzimy otrzymanie zgłoszenia, będziemy informować Cię w trakcie analizy i nie będziemy podejmować kroków wobec osób, które w dobrej wierze zgłaszają rzeczywisty problem i przy tym nie uzyskują dostępu do danych innych osób ani ich nie zmieniają. Prosimy o pozostawienie nam rozsądnej możliwości naprawienia problemu przed jego upublicznieniem.",
+  "sec.v20260909.report.breach": "Jeżeli dojdzie do naruszenia ochrony danych osobowych, które może powodować ryzyko naruszenia praw i wolności osób, zgłosimy je do Information Commissioner's Office (brytyjskiego organu ochrony danych) w ciągu 72 godzin od stwierdzenia naruszenia oraz bez zbędnej zwłoki poinformujemy użytkowników, których ono dotyczy, gdy ryzyko dla nich jest wysokie."
 }

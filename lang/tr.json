@@ -202,5 +202,15 @@
   "terms.v31.s15.p1": "Bu Koşullar hakkında sorularınız varsa, lütfen aşağıdaki adresten bizimle iletişime geçin:",
   "terms.v31.s15.p2": "David Arthur Software",
   "terms.v31.s15.p3": "Kirkbymoorside, York, YO62 6LJ, Birleşik Krallık",
-  "terms.v31.s15.p4": "E-posta: info@duovox.net"
+  "terms.v31.s15.p4": "E-posta: info@duovox.net",
+  "sec.v20260909.tech.title": "Teknik ayrıntılar",
+  "sec.v20260909.tech.transit": "Aktarım sırasında: verilerinizi taşıyan her bağlantı TLS 1.2 veya üstünü kullanır — uygulama ile hizmetimiz arasında ve hizmetimiz ile işleme sağlayıcıları arasında.",
+  "sec.v20260909.tech.rest": "Beklemede: sakladığımız sınırlı hizmet verileri Cloudflare'in platformunda tutulur ve beklemede şifrelenir. Kendi cihazınızda, kimlik bilgisi içeren her ayar alanı, kuruluma özgü bir sırdan türetilen bir anahtarla AES-256-GCM ile şifrelenir ve HMAC-SHA256 bütünlük denetimiyle korunur; Microsoft Store sürümü hiçbir sağlayıcı kimlik bilgisi içermez.",
+  "sec.v20260909.tech.creds": "Kimlik bilgileri: sağlayıcılarımızın API anahtarları sunucularımızdan asla çıkmaz. Uygulamaya bunun yerine, her oturum için üretilen ve otomatik olarak yenilenen, kısa ömürlü ve dar kapsamlı belirteçler verilir; böylece ele geçirilen bir belirteç kalıcı erişim sağlamak yerine dakikalar içinde geçerliliğini yitirir.",
+  "sec.v20260909.tech.access": "Erişim denetimi: yönetim panosu bir kimlik ağ geçidinin ve sabit sürede karşılaştırılan ayrı bir yönetim anahtarının arkasındadır. Ücretli bir hakkı etkileyebilecek her istek, 60 saniye geçerli, cihaza özgü bir HMAC-SHA256 imzası taşır; böylece yakalanan bir istek yeniden oynatılamaz.",
+  "sec.v20260909.tech.logging": "Günlükleme ve saklama: bir hak üzerindeki yönetimsel değişiklikler bir denetim izine yazılır. Cihaz başına tanılama olayları otomatik olarak temizlenir — genellikle 30 gün içinde ve her hâlükârda 12 ay içinde. Her veri kategorisi için saklama süresi Gizlilik Politikası'nda belirtilmiştir.",
+  "sec.v20260909.tech.isolation": "Ayrım: bir cihazın isteklerini imzalayan anahtar ile yerel ayarlarını şifreleyen anahtar ayrı ayrı türetilir; böylece hiçbiri diğerinin yerine kullanılamaz.",
+  "sec.v20260909.report.title": "Güvenlik sorunu bildirme",
+  "sec.v20260909.report.body": "DuoVox'ta bir güvenlik açığı bulduğunuzu düşünüyorsanız, yeniden üretmeye yetecek ayrıntıyla info@duovox.net adresine e-posta gönderin. Bildiriminizi teyit eder, inceleme sürecinde sizi bilgilendirir ve gerçek bir sorunu iyi niyetle bildiren, bunu yaparken başkalarının verilerine erişmeyen veya bunları değiştirmeyen hiç kimseye karşı işlem başlatmayız. Sorunu yayımlamadan önce düzeltmemiz için bize makul bir fırsat tanımanızı rica ederiz.",
+  "sec.v20260909.report.breach": "Kişilerin hak ve özgürlükleri açısından risk doğurması muhtemel bir kişisel veri ihlali meydana gelirse, bunu öğrendiğimizden itibaren 72 saat içinde Information Commissioner's Office'a (Birleşik Krallık veri koruma otoritesi) bildirir ve risk yüksek olduğunda etkilenen kullanıcıları gereksiz gecikme olmaksızın bilgilendiririz."
 }
