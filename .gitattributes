@@ -1,0 +1,19 @@
+# core.autocrlf is true on this machine and there was no .gitattributes, so git treated a
+# committed PDF as text and warned it would rewrite its line endings on the next checkout.
+# The stored blob was clean, but a fresh clone on Windows would have produced a CORRUPT PDF
+# that looks like a normal file. Binary types are marked so that cannot happen.
+* text=auto
+
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.zip   binary
+*.exe   binary
+*.msix  binary
