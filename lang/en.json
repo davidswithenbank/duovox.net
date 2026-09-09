@@ -181,5 +181,6 @@
   "sec.v20260909.tech.isolation": "Separation: the key that signs a device's requests and the key that encrypts its local settings are derived separately, so neither can be used in place of the other.",
   "sec.v20260909.report.title": "Reporting a security issue",
   "sec.v20260909.report.body": "If you believe you have found a security vulnerability in DuoVox, please email info@duovox.net with enough detail to reproduce it. We will acknowledge your report, keep you informed while we investigate, and will not pursue anyone who reports a genuine issue in good faith and does not access or alter other people's data while doing so. Please give us a reasonable opportunity to fix the problem before publishing it.",
-  "sec.v20260909.report.breach": "If a personal-data breach occurs and is likely to result in a risk to people's rights and freedoms, we will report it to the Information Commissioner's Office within 72 hours of becoming aware of it, and tell affected users without undue delay where the risk to them is high."
+  "sec.v20260909.report.breach": "If a personal-data breach occurs and is likely to result in a risk to people's rights and freedoms, we will report it to the Information Commissioner's Office within 72 hours of becoming aware of it, and tell affected users without undue delay where the risk to them is high.",
+  "cta.ms_get": "Get it from the Microsoft Store"
 }

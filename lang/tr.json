@@ -212,5 +212,6 @@
   "sec.v20260909.tech.isolation": "Ayrım: bir cihazın isteklerini imzalayan anahtar ile yerel ayarlarını şifreleyen anahtar ayrı ayrı türetilir; böylece hiçbiri diğerinin yerine kullanılamaz.",
   "sec.v20260909.report.title": "Güvenlik sorunu bildirme",
   "sec.v20260909.report.body": "DuoVox'ta bir güvenlik açığı bulduğunuzu düşünüyorsanız, yeniden üretmeye yetecek ayrıntıyla info@duovox.net adresine e-posta gönderin. Bildiriminizi teyit eder, inceleme sürecinde sizi bilgilendirir ve gerçek bir sorunu iyi niyetle bildiren, bunu yaparken başkalarının verilerine erişmeyen veya bunları değiştirmeyen hiç kimseye karşı işlem başlatmayız. Sorunu yayımlamadan önce düzeltmemiz için bize makul bir fırsat tanımanızı rica ederiz.",
-  "sec.v20260909.report.breach": "Kişilerin hak ve özgürlükleri açısından risk doğurması muhtemel bir kişisel veri ihlali meydana gelirse, bunu öğrendiğimizden itibaren 72 saat içinde Information Commissioner's Office'a (Birleşik Krallık veri koruma otoritesi) bildirir ve risk yüksek olduğunda etkilenen kullanıcıları gereksiz gecikme olmaksızın bilgilendiririz."
+  "sec.v20260909.report.breach": "Kişilerin hak ve özgürlükleri açısından risk doğurması muhtemel bir kişisel veri ihlali meydana gelirse, bunu öğrendiğimizden itibaren 72 saat içinde Information Commissioner's Office'a (Birleşik Krallık veri koruma otoritesi) bildirir ve risk yüksek olduğunda etkilenen kullanıcıları gereksiz gecikme olmaksızın bilgilendiririz.",
+  "cta.ms_get": "Microsoft Store'dan edinin"
 }

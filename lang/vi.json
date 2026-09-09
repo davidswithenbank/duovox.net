@@ -212,5 +212,6 @@
   "sec.v20260909.tech.isolation": "Tách biệt: khóa ký các yêu cầu của thiết bị và khóa mã hóa cài đặt cục bộ của nó được dẫn xuất riêng biệt, nên không khóa nào có thể dùng thay cho khóa kia.",
   "sec.v20260909.report.title": "Báo cáo vấn đề bảo mật",
   "sec.v20260909.report.body": "Nếu bạn tin rằng mình đã phát hiện một lỗ hổng bảo mật trong DuoVox, vui lòng gửi email tới info@duovox.net kèm đủ chi tiết để tái hiện. Chúng tôi sẽ xác nhận báo cáo của bạn, thông báo tiến độ trong quá trình điều tra, và sẽ không truy cứu bất kỳ ai báo cáo một vấn đề có thật với thiện chí mà không truy cập hay thay đổi dữ liệu của người khác. Xin hãy cho chúng tôi cơ hội hợp lý để khắc phục trước khi công bố.",
-  "sec.v20260909.report.breach": "Nếu xảy ra vi phạm dữ liệu cá nhân có khả năng gây rủi ro cho quyền và tự do của con người, chúng tôi sẽ báo cáo tới Information Commissioner's Office (cơ quan bảo vệ dữ liệu của Vương quốc Anh) trong vòng 72 giờ kể từ khi biết được, và thông báo cho người dùng bị ảnh hưởng không chậm trễ quá mức khi rủi ro với họ là cao."
+  "sec.v20260909.report.breach": "Nếu xảy ra vi phạm dữ liệu cá nhân có khả năng gây rủi ro cho quyền và tự do của con người, chúng tôi sẽ báo cáo tới Information Commissioner's Office (cơ quan bảo vệ dữ liệu của Vương quốc Anh) trong vòng 72 giờ kể từ khi biết được, và thông báo cho người dùng bị ảnh hưởng không chậm trễ quá mức khi rủi ro với họ là cao.",
+  "cta.ms_get": "Tải trên Microsoft Store"
 }
