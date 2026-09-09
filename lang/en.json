@@ -171,5 +171,15 @@
   "home.pricing.standard.f6": "Document translation (Desktop)",
   "nav.languages": "Languages",
   "home.how.s1.see": "See exactly what each plan covers.",
-  "home.pricing.professional.f8": "43 supported languages"
+  "home.pricing.professional.f8": "43 supported languages",
+  "sec.v20260909.tech.title": "Technical detail",
+  "sec.v20260909.tech.transit": "In transit: every connection that carries your data uses TLS 1.2 or higher — between the app and our service, and between our service and the processing providers.",
+  "sec.v20260909.tech.rest": "At rest: the limited service data we hold is stored on Cloudflare's platform and encrypted at rest. On your own device, any settings field holding a credential is encrypted with AES-256-GCM under a key derived from a per-installation secret, and protected by an HMAC-SHA256 integrity check; the Microsoft Store build holds no provider credentials at all.",
+  "sec.v20260909.tech.creds": "Credentials: our providers' API keys never leave our servers. The app is issued short-lived, narrowly scoped tokens instead, minted per session and refreshed automatically, so an intercepted token expires in minutes rather than granting standing access.",
+  "sec.v20260909.tech.access": "Access control: the administrative dashboard sits behind an identity gateway and a separate administrative key, compared in constant time. Every request that can affect a paid entitlement carries a per-device HMAC-SHA256 signature with a 60-second validity window, so a captured request cannot be replayed.",
+  "sec.v20260909.tech.logging": "Logging and retention: administrative changes to an entitlement are written to an audit trail. Per-device diagnostic events are pruned automatically — typically within 30 days and in any event within 12 months. Retention for every category of data is set out in the Privacy Policy.",
+  "sec.v20260909.tech.isolation": "Separation: the key that signs a device's requests and the key that encrypts its local settings are derived separately, so neither can be used in place of the other.",
+  "sec.v20260909.report.title": "Reporting a security issue",
+  "sec.v20260909.report.body": "If you believe you have found a security vulnerability in DuoVox, please email info@duovox.net with enough detail to reproduce it. We will acknowledge your report, keep you informed while we investigate, and will not pursue anyone who reports a genuine issue in good faith and does not access or alter other people's data while doing so. Please give us a reasonable opportunity to fix the problem before publishing it.",
+  "sec.v20260909.report.breach": "If a personal-data breach occurs and is likely to result in a risk to people's rights and freedoms, we will report it to the Information Commissioner's Office within 72 hours of becoming aware of it, and tell affected users without undue delay where the risk to them is high."
 }

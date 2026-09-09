@@ -32,7 +32,7 @@
 <!-- Privacy Policy Content -->
 <main class="legal">
     <h1 data-i18n="priv.v20260908.title">Privacy Policy</h1>
-    <p class="last-updated">Last updated: 8 September 2026</p>
+    <p class="last-updated">Last updated: 9 September 2026</p>
 
     <p data-i18n="priv.v20260908.intro">David Arthur Software ("DAS", "we", "our", "us") operates the DuoVox application (the "App"). This Privacy Policy explains what data the App collects, how it is used, how we protect it, and your rights. DAS is the data controller for all personal data processed in connection with the App.</p>
 
@@ -77,6 +77,7 @@
         <li><strong>Advertising (Free tier):</strong> On Windows, the Free tier currently shows only our own in-app promotional messages; no third-party advertising network is used and no advertising cookies are set. On Android, where advertising is offered, banner and rewarded-video advertisements may be provided by an advertising network that may collect device identifiers and usage data for ad personalisation; you can manage ad personalisation in your device's settings.</li>
         <li><strong>App-store billing:</strong> Subscription purchases are processed by the Microsoft Store (Windows) or Google Play (Android). Payment information is handled entirely by the relevant app store and is never accessed by DAS.</li>
         <li><strong>On-device processing:</strong> The offline transcription and translation features run entirely on your device using locally installed models. No audio or text data leaves your device when using these features.</li>
+        <li><strong>Model training:</strong> We do not use your audio, transcripts or translations to train any model. DuoVox builds no models of its own, and the processing providers we use handle data submitted through their APIs under terms that do not permit it to be used for training their models. If that ever changes for a provider we use, we will update this policy before the change takes effect.</li>
         <li><strong>Model file hosts:</strong> The models used for on-device transcription, language detection and offline translation are downloaded to your device the first time you use a language &mdash; on all tiers, including the Free tier &mdash; directly from third-party model-hosting services. These downloads are ordinary file downloads: they contain no audio, transcription, translation or personal data, though the host will see your device's IP address as it would for any download. Once downloaded, the models work without an internet connection.</li>
     </ul>
 
@@ -91,6 +92,11 @@
 
     <h2>5. Data Storage and Security</h2>
     <p>We use appropriate technical and organisational measures to protect personal data, including encryption in transit (TLS) for all online connections, encryption of sensitive app settings stored on your device, holding only the minimum data needed to run the service, and restricting access to it. Session content (audio, transcriptions, translations) is held in device memory during your session, is saved to your device only if you choose to export it or enable diagnostics, and is never stored on our own servers. Service infrastructure data is protected by encryption in transit and at rest. No method of transmission or storage is completely secure, but we take reasonable steps to protect your information.</p>
+
+    <h2>5a. Diagnostic Logs on Your Device</h2>
+    <p>The App keeps a diagnostic log on your own device to help us investigate faults. It records what the App did &mdash; engine choices, timings, errors &mdash; and, so that caption quality can be diagnosed at all, it also records the caption text as the speech engine produced it.</p>
+    <p><strong>One consequence is worth stating plainly:</strong> that log records the caption text <em>before</em> the optional profanity mask is applied. If you have switched masking on, the masked wording is what appears on screen, in the translation beside it and in every file you export &mdash; but the diagnostic log on your device may still contain the original word.</p>
+    <p>These logs stay on your machine. They reach us only if you choose to send a problem report or a support bundle, and they are not sent automatically. You can prevent a log being written at all by turning on Private Mode, which also stops any session data being kept locally.</p>
 
     <h2>6. Data Retention</h2>
     <p>We keep personal data only as long as necessary for the purposes set out in this policy:</p>
