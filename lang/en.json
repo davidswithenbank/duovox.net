@@ -59,7 +59,7 @@
   "home.pricing.payg.f4": "No subscription, no commitment",
   "home.pricing.payg.f5": "Credits never expire",
   "home.pricing.payg.micro": "Try either tier without subscribing.",
-  "home.pricing.footnote": "All subscriptions can continue beyond your monthly hours via Pay-As-You-Go. When you reach your cap you'll be offered three choices: buy additional hours, continue in free offline mode (lower quality, no internet needed) for the rest of the session, or end the session — your choice. We never auto-charge beyond your subscription without explicit confirmation. See our <a href=\"terms.html\">fair usage policy</a>.",
+  "home.pricing.footnote": "On a subscription, Pay-As-You-Go hours you already hold take over automatically when your monthly hours run out — even mid-session, so a long call carries on without a break. If you hold none, you'll be offered three choices: buy hours (they're ready for your next session), continue in free offline mode for the rest of the session (lower quality, no internet needed), or end the session. We never auto-charge beyond your subscription without explicit confirmation. See our <a href=\"terms.html\">fair usage policy</a>.",
   "home.reassurance.title": "Designed for Real Conversations",
   "home.reassurance.desc": "DuoVox is designed to cope with everyday accents and background noise, though accuracy can vary in difficult audio — always verify important details. Whether you're ordering coffee abroad or following a business meeting, it aims to follow real speech as it happens.",
   "home.disclaimer.title": "Accuracy Disclaimer",

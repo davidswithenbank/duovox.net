@@ -125,7 +125,7 @@
   "home.pricing.payg.f5": "Os créditos nunca expiram",
   "cta.credits_note": "Os créditos de pagamento por utilização são adquiridos dentro da aplicação",
   "home.pricing.payg.micro": "Experimente qualquer um dos planos sem subscrever.",
-  "home.pricing.footnote": "Todas as subscrições podem continuar para além das suas horas mensais através do Pagamento por utilização. Quando atingir o seu limite, ser-lhe-ão oferecidas três opções: comprar horas adicionais, continuar no modo offline gratuito (qualidade inferior, sem necessidade de internet) durante o resto da sessão, ou terminar a sessão — a escolha é sua. Nunca cobramos automaticamente para além da sua subscrição sem confirmação explícita. Consulte a nossa <a href=\"terms.html\">política de utilização justa</a>.",
+  "home.pricing.footnote": "Com uma subscrição, as horas Pay-As-You-Go que já tem assumem automaticamente quando as horas mensais acabam — mesmo a meio de uma sessão, para que uma chamada longa continue sem interrupção. Se não tiver nenhuma, terá três opções: comprar horas (ficam prontas para a próxima sessão), continuar no modo offline gratuito durante o resto da sessão (qualidade inferior, sem necessidade de internet) ou terminar a sessão. Nunca cobramos automaticamente para além da sua subscrição sem confirmação explícita. Consulte a nossa <a href=\"terms.html\">política de utilização justa</a>.",
   "sec.private.title": "Modo Privado: sem retenção pelo DuoVox",
   "sec.private.f1": "O áudio é processado em tempo real; o DuoVox não o conserva depois de a sua sessão terminar",
   "sec.private.f2": "Os próprios servidores do DuoVox não armazenam o seu áudio, transcrições ou conteúdo de conversas",

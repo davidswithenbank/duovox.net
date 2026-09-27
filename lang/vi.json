@@ -125,7 +125,7 @@
   "home.pricing.payg.f5": "Tín dụng không bao giờ hết hạn",
   "cta.credits_note": "Tín dụng trả theo mức dùng được mua ngay trong ứng dụng",
   "home.pricing.payg.micro": "Dùng thử cả hai gói mà không cần đăng ký thuê bao.",
-  "home.pricing.footnote": "Mọi gói thuê bao đều có thể tiếp tục vượt số giờ hằng tháng của bạn thông qua gói Trả theo mức dùng. Khi đạt đến giới hạn, bạn sẽ được đưa ra ba lựa chọn: mua thêm giờ, tiếp tục ở chế độ ngoại tuyến miễn phí (chất lượng thấp hơn, không cần internet) cho phần còn lại của phiên, hoặc kết thúc phiên — tùy bạn quyết định. Chúng tôi không bao giờ tự động tính phí vượt mức thuê bao của bạn nếu không có xác nhận rõ ràng. Xem <a href=\"terms.html\">chính sách sử dụng hợp lý</a> của chúng tôi.",
+  "home.pricing.footnote": "Khi dùng gói đăng ký, số giờ Pay-As-You-Go bạn đang có sẽ tự động tiếp quản khi giờ hằng tháng hết — kể cả giữa phiên, nên cuộc gọi dài vẫn tiếp tục không gián đoạn. Nếu bạn không có giờ nào, bạn sẽ được đưa ra ba lựa chọn: mua giờ (sẵn sàng cho phiên tiếp theo), tiếp tục ở chế độ ngoại tuyến miễn phí trong phần còn lại của phiên (chất lượng thấp hơn, không cần internet) hoặc kết thúc phiên. Chúng tôi không bao giờ tự động tính phí vượt quá gói đăng ký của bạn khi chưa có xác nhận rõ ràng. Xem <a href=\"terms.html\">chính sách sử dụng hợp lý</a> của chúng tôi.",
   "sec.private.title": "Chế độ Riêng tư: DuoVox không lưu giữ dữ liệu",
   "sec.private.f1": "Âm thanh được xử lý theo thời gian thực; DuoVox không giữ lại âm thanh sau khi phiên của bạn kết thúc",
   "sec.private.f2": "Máy chủ của riêng DuoVox không lưu trữ âm thanh, bản phiên âm hay nội dung cuộc trò chuyện của bạn",

@@ -125,7 +125,7 @@
   "home.pricing.payg.f5": "Kredit tidak pernah kedaluwarsa",
   "cta.credits_note": "Kredit bayar sesuai pemakaian dibeli di dalam aplikasi",
   "home.pricing.payg.micro": "Coba salah satu paket tanpa berlangganan.",
-  "home.pricing.footnote": "Semua langganan dapat dilanjutkan melampaui jam bulanan Anda melalui Bayar Sesuai Pemakaian. Saat Anda mencapai batas, Anda akan ditawari tiga pilihan: beli jam tambahan, lanjutkan dalam mode offline gratis (kualitas lebih rendah, tidak perlu internet) untuk sisa sesi, atau akhiri sesi — pilihan ada di tangan Anda. Kami tidak pernah mengenakan biaya otomatis melampaui langganan Anda tanpa konfirmasi tegas. Lihat <a href=\"terms.html\">kebijakan penggunaan wajar</a> kami.",
+  "home.pricing.footnote": "Dengan langganan, jam Pay-As-You-Go yang sudah Anda miliki otomatis mengambil alih saat jam bulanan Anda habis — bahkan di tengah sesi, sehingga panggilan panjang tetap berjalan tanpa jeda. Jika Anda tidak memilikinya, Anda akan ditawari tiga pilihan: membeli jam (siap untuk sesi berikutnya), melanjutkan dalam mode offline gratis selama sisa sesi (kualitas lebih rendah, tanpa internet), atau mengakhiri sesi. Kami tidak pernah menagih otomatis melebihi langganan Anda tanpa konfirmasi eksplisit. Lihat <a href=\"terms.html\">kebijakan penggunaan wajar</a> kami.",
   "sec.private.title": "Mode Privat: Tanpa Penyimpanan oleh DuoVox",
   "sec.private.f1": "Audio diproses secara waktu nyata; DuoVox tidak menyimpannya setelah sesi Anda berakhir",
   "sec.private.f2": "Server milik DuoVox sendiri tidak menyimpan audio, transkrip, atau isi percakapan Anda",

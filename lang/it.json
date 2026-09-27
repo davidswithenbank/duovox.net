@@ -125,7 +125,7 @@
   "home.pricing.payg.f5": "I crediti non scadono mai",
   "cta.credits_note": "I crediti a consumo si acquistano all'interno dell'app",
   "home.pricing.payg.micro": "Prova entrambi i piani senza abbonarti.",
-  "home.pricing.footnote": "Tutti gli abbonamenti possono proseguire oltre le ore mensili tramite il pagamento a consumo. Quando raggiungi il limite ti verranno offerte tre scelte: acquistare ore aggiuntive, continuare in modalità offline gratuita (qualità inferiore, senza bisogno di internet) per il resto della sessione, oppure terminare la sessione — la scelta è tua. Non addebitiamo mai automaticamente oltre il tuo abbonamento senza una conferma esplicita. Consulta la nostra <a href=\"terms.html\">politica di uso corretto</a>.",
+  "home.pricing.footnote": "Con un abbonamento, le ore Pay-As-You-Go che hai già subentrano automaticamente quando finiscono le ore mensili — anche durante una sessione, così una chiamata lunga continua senza interruzioni. Se non ne hai, ti verranno proposte tre scelte: acquistare ore (pronte per la sessione successiva), continuare in modalità offline gratuita per il resto della sessione (qualità inferiore, nessuna connessione Internet necessaria) o terminare la sessione. Non addebitiamo mai automaticamente oltre il tuo abbonamento senza una conferma esplicita. Consulta la nostra <a href=\"terms.html\">politica di uso corretto</a>.",
   "sec.private.title": "Modalità Privata: nessuna conservazione da parte di DuoVox",
   "sec.private.f1": "L'audio viene elaborato in tempo reale; DuoVox non lo conserva al termine della sessione",
   "sec.private.f2": "I server di DuoVox non memorizzano il tuo audio, le trascrizioni o il contenuto delle conversazioni",

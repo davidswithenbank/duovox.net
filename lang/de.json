@@ -125,7 +125,7 @@
   "home.pricing.payg.f5": "Guthaben verfällt nie",
   "cta.credits_note": "Pay-as-you-go-Guthaben wird in der App gekauft",
   "home.pricing.payg.micro": "Beide Tarife ohne Abo ausprobieren.",
-  "home.pricing.footnote": "Alle Abonnements können über Pay-As-You-Go über Ihre monatlichen Stunden hinaus fortgesetzt werden. Wenn Sie Ihr Limit erreichen, werden Ihnen drei Optionen angeboten: zusätzliche Stunden kaufen, für den Rest der Sitzung im kostenlosen Offline-Modus (geringere Qualität, kein Internet erforderlich) fortfahren oder die Sitzung beenden — ganz nach Ihrer Wahl. Wir berechnen niemals automatisch über Ihr Abonnement hinaus ohne ausdrückliche Bestätigung. Siehe unsere <a href=\"terms.html\">Fair-Use-Richtlinie</a>.",
+  "home.pricing.footnote": "Mit einem Abo übernehmen Pay-As-You-Go-Stunden, die Sie bereits haben, automatisch, wenn Ihre monatlichen Stunden aufgebraucht sind — auch mitten in einer Sitzung, sodass ein langes Gespräch ohne Unterbrechung weiterläuft. Haben Sie keine, werden Ihnen drei Optionen angeboten: Stunden kaufen (sie stehen für Ihre nächste Sitzung bereit), für den Rest der Sitzung im kostenlosen Offline-Modus fortfahren (geringere Qualität, kein Internet erforderlich) oder die Sitzung beenden. Wir berechnen niemals automatisch über Ihr Abonnement hinaus ohne ausdrückliche Bestätigung. Siehe unsere <a href=\"terms.html\">Fair-Use-Richtlinie</a>.",
   "sec.private.title": "Privater Modus: Keine Aufbewahrung durch DuoVox",
   "sec.private.f1": "Audio wird in Echtzeit verarbeitet; DuoVox behält es nicht, sobald Ihre Sitzung endet",
   "sec.private.f2": "Die eigenen Server von DuoVox speichern Ihr Audio, Ihre Transkripte oder Gesprächsinhalte nicht",
