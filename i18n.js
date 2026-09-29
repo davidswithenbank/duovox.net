@@ -43,6 +43,7 @@
   //   fr/de/it/nl/es/pt → EUR
   //   everything else  → USD
   var EUR_LANGS = { fr: 1, de: 1, it: 1, nl: 1, es: 1, pt: 1 };
+  var EUR_ENABLED = false;
 
   function getCurrCode(lang) {
     if (lang === 'en') {
@@ -50,7 +51,9 @@
       if (nl === 'en-gb' || nl.indexOf('en-gb') === 0) return 'gbp';
       return 'usd';
     }
-    return EUR_LANGS[lang] ? 'eur' : 'usd';
+    // 29 Sep 2026: DuoVox is not yet available in the EU/EEA (no Art.27 representative yet), so euro prices
+    // are not shown. The data-*-eur attributes stay in the markup; set EUR_ENABLED = true at the EU launch.
+    return (EUR_ENABLED && EUR_LANGS[lang]) ? 'eur' : 'usd';
   }
 
   // Apply the chosen currency to all marked price elements.
@@ -83,7 +86,7 @@
     }
     // Note: we don't substitute the currency-code in the pricing subtitle anymore.
     // The default subtitle text explains the per-region behaviour ("Default prices in
-    // USD. UK visitors see GBP and Eurozone visitors see EUR.") which is already
+    // USD. UK visitors see GBP. DuoVox is not yet available in the EU or EEA.") which is already
     // region-aware in prose — no token replacement needed.
   }
 
