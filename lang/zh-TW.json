@@ -398,5 +398,8 @@
   "sec.standard.f3": "DuoVox 不出售您的個人資料。在 Windows 上，Free tier 只顯示我們自己的宣傳訊息——沒有第三方廣告 SDK。在 Android 上，若提供廣告，廣告供應商可能會為了投放廣告而蒐集標準裝置資料。",
   "sec.standard.intro": "未啟用 Private Mode 時：",
   "sec.standard.title": "Standard Mode（雲端處理）",
-  "sec.title": "DuoVox 的安全性與隱私"
+  "sec.title": "DuoVox 的安全性與隱私",
+  "home.video.title": "觀看 DuoVox 實際示範",
+  "home.video.note": "影片透過 YouTube 播放。在您按下播放之前，不會從 YouTube 載入任何內容。",
+  "home.video.link": "在 YouTube 上觀看"
 }

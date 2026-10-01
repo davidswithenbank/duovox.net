@@ -202,5 +202,8 @@
   "lang.standard.title": "Standard",
   "lang.title": "Language coverage by plan",
   "sec.compliance.why": "This ensures clarity and avoids misleading claims. For common questions about using DuoVox in regulated settings, see our Privacy Policy.",
-  "sec.intro": "Your conversations deserve strong protection. DuoVox is built with a privacy-first architecture that gives users control over their data."
+  "sec.intro": "Your conversations deserve strong protection. DuoVox is built with a privacy-first architecture that gives users control over their data.",
+  "home.video.title": "See DuoVox in action",
+  "home.video.note": "The video plays from YouTube. Nothing is loaded from YouTube until you press play.",
+  "home.video.link": "Watch on YouTube"
 }

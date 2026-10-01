@@ -398,5 +398,8 @@
   "sec.standard.f3": "DuoVox no vende sus datos personales. En Windows, el nivel Free muestra solo nuestros propios mensajes promocionales, sin SDK publicitarios de terceros. En Android, donde se ofrece publicidad, los proveedores de anuncios pueden recopilar datos estándar del dispositivo para la publicación de anuncios.",
   "sec.standard.intro": "Cuando el Modo privado no está activado:",
   "sec.standard.title": "Modo estándar (procesamiento en la nube)",
-  "sec.title": "Seguridad y privacidad en DuoVox"
+  "sec.title": "Seguridad y privacidad en DuoVox",
+  "home.video.title": "Mira DuoVox en acción",
+  "home.video.note": "El vídeo se reproduce desde YouTube. No se carga nada de YouTube hasta que pulses reproducir.",
+  "home.video.link": "Ver en YouTube"
 }

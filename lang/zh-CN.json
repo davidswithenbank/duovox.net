@@ -398,5 +398,8 @@
   "sec.standard.f3": "DuoVox 不出售您的个人数据。在 Windows 上，Free 层级仅显示我们自己的推广信息——不包含第三方广告 SDK。在 Android 上，如提供广告，广告提供商可能会为广告投放收集标准设备数据。",
   "sec.standard.intro": "未启用 Private Mode 时：",
   "sec.standard.title": "Standard Mode（云处理）",
-  "sec.title": "DuoVox 的安全与隐私"
+  "sec.title": "DuoVox 的安全与隐私",
+  "home.video.title": "观看 DuoVox 实际演示",
+  "home.video.note": "视频通过 YouTube 播放。在您点击播放之前，不会从 YouTube 加载任何内容。",
+  "home.video.link": "在 YouTube 上观看"
 }

@@ -398,5 +398,8 @@
   "sec.standard.f3": "DuoVox ไม่ขายข้อมูลส่วนบุคคลของคุณ บน Windows ระดับ Free จะแสดงเฉพาะข้อความโปรโมตของเราเอง — ไม่มี third-party ad SDKs บน Android ในกรณีที่มีการโฆษณา ผู้ให้บริการโฆษณาอาจเก็บข้อมูลอุปกรณ์มาตรฐานเพื่อการแสดงโฆษณา",
   "sec.standard.intro": "เมื่อไม่ได้เปิดใช้งาน Private Mode:",
   "sec.standard.title": "Standard Mode (การประมวลผลบน Cloud)",
-  "sec.title": "ความปลอดภัยและความเป็นส่วนตัวที่ DuoVox"
+  "sec.title": "ความปลอดภัยและความเป็นส่วนตัวที่ DuoVox",
+  "home.video.title": "ชม DuoVox ขณะใช้งานจริง",
+  "home.video.note": "วิดีโอนี้เล่นจาก YouTube จะไม่มีการโหลดข้อมูลใด ๆ จาก YouTube จนกว่าคุณจะกดเล่น",
+  "home.video.link": "ดูบน YouTube"
 }

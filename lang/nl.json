@@ -398,5 +398,8 @@
   "sec.standard.f3": "DuoVox verkoopt uw persoonsgegevens niet. Op Windows toont de Free tier alleen onze eigen promotionele berichten — geen advertentie-SDK's van derden. Op Android, waar advertenties worden aangeboden, kunnen advertentieaanbieders standaard apparaatgegevens verzamelen voor advertentieweergave.",
   "sec.standard.intro": "Wanneer Privémodus niet is ingeschakeld:",
   "sec.standard.title": "Standaardmodus (Cloudverwerking)",
-  "sec.title": "Beveiliging & privacy bij DuoVox"
+  "sec.title": "Beveiliging & privacy bij DuoVox",
+  "home.video.title": "Bekijk DuoVox in actie",
+  "home.video.note": "De video wordt afgespeeld via YouTube. Er wordt niets van YouTube geladen totdat je op afspelen drukt.",
+  "home.video.link": "Bekijk op YouTube"
 }

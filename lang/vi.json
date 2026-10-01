@@ -398,5 +398,8 @@
   "sec.standard.f3": "DuoVox không bán dữ liệu cá nhân của bạn. Trên Windows, gói Free chỉ hiển thị các thông điệp quảng bá của riêng chúng tôi — không có SDK quảng cáo của bên thứ ba. Trên Android, nơi có cung cấp quảng cáo, nhà cung cấp quảng cáo có thể thu thập dữ liệu thiết bị tiêu chuẩn để phân phối quảng cáo.",
   "sec.standard.intro": "Khi Private Mode không được bật:",
   "sec.standard.title": "Standard Mode (Xử lý trên đám mây)",
-  "sec.title": "Bảo mật & Quyền riêng tư tại DuoVox"
+  "sec.title": "Bảo mật & Quyền riêng tư tại DuoVox",
+  "home.video.title": "Xem DuoVox hoạt động",
+  "home.video.note": "Video được phát từ YouTube. Không có gì được tải từ YouTube cho đến khi bạn nhấn phát.",
+  "home.video.link": "Xem trên YouTube"
 }

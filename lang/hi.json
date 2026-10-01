@@ -398,5 +398,8 @@
   "sec.standard.f3": "DuoVox आपका personal data नहीं बेचता। Windows पर, Free tier केवल हमारे अपने promotional messages दिखाता है — कोई third-party ad SDKs नहीं। Android पर, जहाँ advertising दी जाती है, ad providers ad serving के लिए standard device data collect कर सकते हैं।",
   "sec.standard.intro": "जब Private Mode enabled नहीं होता:",
   "sec.standard.title": "Standard Mode (Cloud Processing)",
-  "sec.title": "DuoVox में Security & Privacy"
+  "sec.title": "DuoVox में Security & Privacy",
+  "home.video.title": "DuoVox को काम करते हुए देखें",
+  "home.video.note": "वीडियो YouTube से चलता है। जब तक आप प्ले नहीं दबाते, YouTube से कुछ भी लोड नहीं होता।",
+  "home.video.link": "YouTube पर देखें"
 }

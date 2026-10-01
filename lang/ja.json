@@ -398,5 +398,8 @@
   "sec.standard.f3": "DuoVox はお客様の個人データを販売しません。Windows では、Free tier に表示されるのは当社自身の案内メッセージのみであり、サードパーティの ad SDK は含まれません。Android では、広告が提供される場合、広告提供者が広告配信のために標準的なデバイスデータを収集することがあります。",
   "sec.standard.intro": "Private Mode が有効でない場合:",
   "sec.standard.title": "Standard Mode（クラウド処理）",
-  "sec.title": "DuoVox のセキュリティとプライバシー"
+  "sec.title": "DuoVox のセキュリティとプライバシー",
+  "home.video.title": "DuoVox の動作をご覧ください",
+  "home.video.note": "動画は YouTube から再生されます。再生ボタンを押すまで、YouTube からは何も読み込まれません。",
+  "home.video.link": "YouTube で見る"
 }

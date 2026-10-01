@@ -398,5 +398,8 @@
   "sec.standard.f3": "DuoVox tidak menjual data pribadi Anda. Di Windows, tier Free hanya menampilkan pesan promosi kami sendiri — tanpa SDK iklan pihak ketiga. Di Android, jika iklan ditawarkan, penyedia iklan dapat mengumpulkan data perangkat standar untuk penayangan iklan.",
   "sec.standard.intro": "Saat Private Mode tidak diaktifkan:",
   "sec.standard.title": "Mode Standar (Pemrosesan Cloud)",
-  "sec.title": "Keamanan & Privasi di DuoVox"
+  "sec.title": "Keamanan & Privasi di DuoVox",
+  "home.video.title": "Lihat DuoVox beraksi",
+  "home.video.note": "Video diputar dari YouTube. Tidak ada yang dimuat dari YouTube sampai Anda menekan putar.",
+  "home.video.link": "Tonton di YouTube"
 }

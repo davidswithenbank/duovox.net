@@ -398,5 +398,8 @@
   "sec.standard.f3": "DuoVox kişisel verilerinizi satmaz. Windows'ta Free katmanı yalnızca kendi tanıtım mesajlarımızı gösterir — üçüncü taraf reklam SDK'ları yoktur. Android'de, reklam sunulan yerlerde, reklam sağlayıcıları reklam sunumu için standart cihaz verilerini toplayabilir.",
   "sec.standard.intro": "Private Mode etkin değilken:",
   "sec.standard.title": "Standard Mode (Bulut İşleme)",
-  "sec.title": "DuoVox'ta Güvenlik ve Gizlilik"
+  "sec.title": "DuoVox'ta Güvenlik ve Gizlilik",
+  "home.video.title": "DuoVox'u iş başında görün",
+  "home.video.note": "Video YouTube üzerinden oynatılır. Oynat düğmesine basana kadar YouTube'dan hiçbir şey yüklenmez.",
+  "home.video.link": "YouTube'da izle"
 }
