@@ -296,18 +296,18 @@ __COLS__
   <p class="lc-foot" data-i18n="lang.foot.pair">Both sides of a conversation need to be supported by
   the plan you choose. If either language is unavailable on a plan, that speaker will not be
   captioned.</p>
-  <p class="lc-foot" data-i18n="lang.foot.translateonly">{TRANSLATE_ONLY_SENTENCE}</p>
+  <p class="lc-foot" data-i18n-html="lang.foot.translateonly">{TRANSLATE_ONLY_SENTENCE}</p>
   <p class="lc-foot" data-i18n="lang.foot.offline">Free runs entirely on your device and never sends
   audio anywhere. Standard and Professional use online services for higher accuracy, and fall back
   to on-device processing if the connection drops.</p>
-  <p class="lc-foot" data-i18n="lang.foot.accuracy"><strong>Supported does not mean identical
+  <p class="lc-foot" data-i18n-html="lang.foot.accuracy"><strong>Supported does not mean identical
   accuracy.</strong> Accuracy varies by language, accent, microphone and background noise, and some
   languages perform noticeably better than others on the same plan. Treat this page as a list of
   what is available, not a guarantee of how well it will perform for you.</p>
-  <p class="lc-foot" data-i18n="lang.foot.change">Language availability depends on third-party
+  <p class="lc-foot" data-i18n-html="lang.foot.change">Language availability depends on third-party
   services and on-device models and <strong>may change without notice</strong>. We update this page
   when it does; the date below shows when it was last generated.</p>
-  <p class="lc-foot" data-i18n="lang.foot.aid">DuoVox is an assistive aid, not a substitute for a
+  <p class="lc-foot" data-i18n-html="lang.foot.aid">DuoVox is an assistive aid, not a substitute for a
   qualified human interpreter, and is not certified for regulated medical or legal use. See our
   <a href="terms.html">Terms of Use</a>.</p>
   <p class="lc-foot" data-i18n="lang.foot.variants">Regional variants (for example Traditional
