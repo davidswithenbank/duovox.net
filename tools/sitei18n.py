@@ -31,6 +31,9 @@ PRICE_TEMPLATES = {
     "price.annual_6mo": "or {p}/6mo",
     "price.payg_standard": "Standard quality: {p}/hour",
     "price.payg_professional": "Professional quality: {p}/hour",
+    # languages.html: built from these too, so the counts and the generation date never need translating
+    "lang.count": "{n} languages",
+    "lang.updated": "Last updated {d}",
 }
 
 
@@ -116,6 +119,64 @@ def english_source():
 def load_lang(code):
     p = os.path.join(LANG_DIR, code + ".json")
     return json.loads(read(p)) if os.path.exists(p) else {}
+
+
+def load_language_names():
+    """{code: {English language name: name in that language}} for the languages.html table (app's own table)."""
+    p = os.path.join(LANG_DIR, "_language_names.json")
+    return json.loads(read(p)) if os.path.exists(p) else {}
+
+
+# Visible text that is deliberately NOT translated: product and competitor names, contact addresses, marks.
+UNTRANSLATED_OK = re.compile(
+    r"^(DuoVox|Windows|Google Translate|iTranslate|SayHi|DeepL|David Arthur Software|"
+    r"[\w.+-]+@[\w.-]+|[–—✓•\-]|\d+)$")
+
+
+# Elements whose wording the build fills from PRICE_TEMPLATES / the names file, not from data-i18n.
+BUILD_FILLED = {"lc-n", "lc-count", "lc-foot", "price-period", "price-annual", "payg-rate", "price-amount",
+                "price-highlight-amount"}
+
+
+def unkeyed_text(s):
+    """Visible text pieces outside any data-i18n element (they would stay English on every language page).
+    Language names in the languages.html table are exempt: the build translates them from _language_names.json,
+    and the native-name column is meant to stay in each language's own script."""
+    from html.parser import HTMLParser
+
+    class P(HTMLParser):
+        VOID = {"br", "img", "meta", "link", "input", "hr", "source", "wbr"}
+        SKIP = {"script", "style", "select", "option", "title", "head", "svg"}
+
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.stack, self.out = [], []
+
+        def handle_starttag(self, tag, attrs):
+            if tag in self.VOID:
+                return
+            a = dict(attrs)
+            exempt = ("data-i18n" in a or "data-i18n-html" in a
+                      or a.get("class", "").split(" ")[0] in BUILD_FILLED)
+            self.stack.append((tag, exempt))
+
+        def handle_endtag(self, tag):
+            for i in range(len(self.stack) - 1, -1, -1):
+                if self.stack[i][0] == tag:
+                    del self.stack[i:]
+                    break
+
+        def handle_data(self, d):
+            t = re.sub(r"\s+", " ", d).strip()
+            if not t or not re.search(r"[^\W\d_]", t) or UNTRANSLATED_OK.match(t):
+                return
+            if any(ex for _, ex in self.stack) or any(tag in self.SKIP for tag, _ in self.stack):
+                return
+            self.out.append(t)
+
+    p = P()
+    p.feed(s)
+    return p.out
 
 
 def load_provenance():

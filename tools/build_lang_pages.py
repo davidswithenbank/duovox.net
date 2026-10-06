@@ -16,6 +16,7 @@ Per language copy:
   - relative links: same-folder for the localised pages, '../' for everything else.
 """
 import argparse
+import datetime
 import html
 import io
 import json
@@ -141,7 +142,31 @@ def localise(s, page, code, lang, ok, rtl, langs, cur):
     s = set_canonical(s, url_for(code, page))
     s = inject_head(s, alternates(langs, page))
     s = re.sub(r'<html lang="[^"]*"', '<html lang="%s"%s data-static-lang="%s"' % (code, ' dir="rtl"' if code in rtl else "", code), s, count=1)
-    # 3. prices, 4. links
+    # 3. language names in the coverage table (the app's own translated names)
+    if page == "languages.html":
+        names = S.load_language_names().get(code, {})
+
+        def name(m):
+            n = names.get(m.group(2))
+            if n is None:
+                report.append(("language name: " + m.group(2), "missing"))
+                n = m.group(2)
+            return m.group(1) + html.escape(n, quote=False) + m.group(3)
+        s = re.sub(r'(<span class="lc-n"><b>)([^<]+)(</b>)', name, s)
+        cnt = lang.get("lang.count") if ok.get("lang.count") == "ok" else None
+        if cnt:
+            s = re.sub(r'(<p class="lc-count">)(<strong>\d+</strong>) languages(</p>)',
+                       lambda m: m.group(1) + html.escape(cnt, quote=False).replace("{n}", m.group(2)) + m.group(3), s)
+        upd = lang.get("lang.updated") if ok.get("lang.updated") == "ok" else None
+        if upd:
+            def stamp(m):
+                try:
+                    d = datetime.datetime.strptime(m.group(2), "%d %B %Y").date().isoformat()
+                except ValueError:
+                    return m.group(0)
+                return m.group(1) + html.escape(upd, quote=False).replace("{d}", d) + m.group(3)
+            s = re.sub(r'(<p class="lc-foot lc-stamp">)Last updated ([^<]+)(</p>)', stamp, s)
+    # 4. prices, 5. links
     s = localise_prices(s, {k: v for k, v in lang.items() if ok.get(k) == "ok"}, cur)
     s = rewrite_links(s)
     return s, report

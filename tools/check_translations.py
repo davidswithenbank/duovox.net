@@ -56,8 +56,9 @@ def problems(key, en_text, is_html, tr):
     for n in set(en_nums):
         if tr_nums.count(n) < en_nums.count(n):
             out.append(("NUMBERS", "'%s' missing" % n))
-    if "{p}" in en_text and tr.count("{p}") != 1:
-        out.append(("PLACEHOLDER", "{p} appears %d times" % tr.count("{p}")))
+    for ph in ("{p}", "{n}", "{d}"):
+        if ph in en_text and tr.count(ph) != 1:
+            out.append(("PLACEHOLDER", "%s appears %d times" % (ph, tr.count(ph))))
     squash = lambda x: re.sub(r"[-\s ]+", " ", html.unescape(x))  # noqa: E731  ("Microsoft-Store-Version")
     en_plain, tr_plain = squash(en_text), squash(tr)
     for name in NAMES:
@@ -113,6 +114,18 @@ def main():
 
     errors = warnings = 0
     stale_keys = set()
+    # Text with no translation key at all stays English on EVERY language page (this hid ~1,000 words of the
+    # home page from 26 Mar to 6 Oct 2026, because every check above only looks at keyed text).
+    for page in S.PAGES:
+        for t in S.unkeyed_text(S.read(os.path.join(S.ROOT, page))):
+            print("  UNKEYED  %s: %s" % (page, t[:90]))
+            errors += 1
+    names = S.load_language_names()
+    table = set(re.findall(r'<span class="lc-n"><b>([^<]+)</b>', S.read(os.path.join(S.ROOT, "languages.html"))))
+    for code, _ in others:
+        for n in sorted(table - set(names.get(code, {}))):
+            print("  MISSING  %s language name: %s" % (code, n))
+            errors += 1
     for code, name in others:
         lang = S.load_lang(code)
         st = S.status(code, src, lang, prov)
