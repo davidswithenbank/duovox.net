@@ -423,5 +423,21 @@
   "calls.good.f2": "医療、法律、安全に関わる用途、その他重大な判断を伴う用途は想定していません。",
   "calls.good.f3": "特に法律や所属組織で求められる場合は、ライブ字幕を使用していることを通話の参加者に伝えてください。",
   "calls.good.f4": "DuoVox は Windows 10 と Windows 11 でご利用いただけます。EU および EEA ではまだご利用いただけません。",
-  "calls.more": "各プランの対応言語は？<a href=\"languages.html\">言語一覧を見る</a>。"
+  "calls.more": "各プランの対応言語は？<a href=\"languages.html\">言語一覧を見る</a>。",
+  "meta.index.title": "DuoVox - リアルタイム音声翻訳 | David Arthur Software",
+  "meta.index.desc": "DuoVox は会話をリアルタイムで翻訳します。49 言語に対応した 2 レーン音声文字起こしと AI 翻訳。David Arthur Software 提供。",
+  "meta.calls.title": "Windows のビデオ通話向けライブ字幕と翻訳 - DuoVox",
+  "meta.calls.desc": "Windows PC での Teams、Zoom、Google Meet などあらゆるビデオ通話にライブ字幕と翻訳を。30 言語の無料オフラインモード、クラウド AI なら最大 43 言語。",
+  "meta.languages.title": "プラン別の対応言語 - DuoVox | David Arthur Software",
+  "meta.languages.desc": "Free・Standard・Professional の各プランで DuoVox が対応する言語の一覧。完全オフラインで使える言語と、オンラインプランが必要な言語も記載しています。",
+  "meta.security.title": "セキュリティとプライバシー - DuoVox | David Arthur Software",
+  "meta.security.desc": "DuoVox がデータを守る仕組み。DuoVox がデータを保持しないプライベートモード、暗号化された通信、透明性のあるデータ処理。",
+  "meta.contact.title": "お問い合わせ - DuoVox | David Arthur Software",
+  "meta.contact.desc": "DuoVox チームへのお問い合わせ。一般的なご質問、ご提案、法人向けサポート。",
+  "price.from": "{p}〜",
+  "price.per_month": "/月",
+  "price.annual_year": "または {p}/年（1 か月分無料）",
+  "price.annual_6mo": "または {p}/6 か月",
+  "price.payg_standard": "Standard 品質：{p}/時間",
+  "price.payg_professional": "Professional 品質：{p}/時間"
 }

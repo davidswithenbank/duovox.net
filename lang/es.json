@@ -423,5 +423,21 @@
   "calls.good.f2": "No está pensado para usos médicos, legales, críticos para la seguridad ni otros usos de alto riesgo.",
   "calls.good.f3": "Avisa a las personas de la llamada de que usas subtítulos en directo, sobre todo cuando lo exija la ley o tu organización.",
   "calls.good.f4": "DuoVox está disponible para Windows 10 y Windows 11. Todavía no está disponible en la UE ni en el EEE.",
-  "calls.more": "¿Qué idiomas incluye cada plan? <a href=\"languages.html\">Consulta la lista de idiomas</a>."
+  "calls.more": "¿Qué idiomas incluye cada plan? <a href=\"languages.html\">Consulta la lista de idiomas</a>.",
+  "meta.index.title": "DuoVox - Traducción de voz en tiempo real | David Arthur Software",
+  "meta.index.desc": "DuoVox traduce conversaciones en tiempo real. Transcripción de voz en dos carriles y traducción con IA en 49 idiomas. De David Arthur Software.",
+  "meta.calls.title": "Subtítulos y traducción en directo para videollamadas en Windows - DuoVox",
+  "meta.calls.desc": "Subtítulos y traducción en directo para Teams, Zoom, Google Meet y cualquier videollamada en tu PC con Windows. Modo sin conexión gratuito en 30 idiomas; hasta 43 idiomas con IA en la nube.",
+  "meta.languages.title": "Idiomas por plan - DuoVox | David Arthur Software",
+  "meta.languages.desc": "Qué idiomas admite DuoVox exactamente en los planes Free, Standard y Professional, incluidos los que funcionan sin conexión y los que necesitan un plan en línea.",
+  "meta.security.title": "Seguridad y privacidad - DuoVox | David Arthur Software",
+  "meta.security.desc": "Cómo protege DuoVox tus datos. Modo privado sin retención por parte de DuoVox, conexiones cifradas y un tratamiento de datos transparente.",
+  "meta.contact.title": "Contacto - DuoVox | David Arthur Software",
+  "meta.contact.desc": "Ponte en contacto con el equipo de DuoVox. Consultas generales, sugerencias y soporte para empresas.",
+  "price.from": "desde {p}",
+  "price.per_month": "al mes",
+  "price.annual_year": "o {p}/año — 1 mes gratis",
+  "price.annual_6mo": "o {p}/6 meses",
+  "price.payg_standard": "Calidad Standard: {p}/hora",
+  "price.payg_professional": "Calidad Professional: {p}/hora"
 }

@@ -423,5 +423,21 @@
   "calls.good.f2": "Він не призначений для медичних, юридичних, критично важливих для безпеки та інших завдань із високими ставками.",
   "calls.good.f3": "Повідомте учасників дзвінка, що використовуєте субтитри наживо, особливо якщо цього вимагає закон або ваша організація.",
   "calls.good.f4": "DuoVox доступний для Windows 10 і Windows 11. У ЄС і ЄЕЗ він поки що недоступний.",
-  "calls.more": "Які мови входять до кожного тарифу? <a href=\"languages.html\">Список мов</a>."
+  "calls.more": "Які мови входять до кожного тарифу? <a href=\"languages.html\">Список мов</a>.",
+  "meta.index.title": "DuoVox - Переклад мовлення в реальному часі | David Arthur Software",
+  "meta.index.desc": "DuoVox перекладає розмови в реальному часі. Двоканальне розпізнавання мовлення й переклад за допомогою ШІ 49 мовами. Від David Arthur Software.",
+  "meta.calls.title": "Субтитри й переклад наживо для відеодзвінків у Windows - DuoVox",
+  "meta.calls.desc": "Субтитри й переклад наживо для Teams, Zoom, Google Meet і будь-якого відеодзвінка на комп’ютері з Windows. Безкоштовний офлайн-режим 30 мовами; до 43 мов із хмарним ШІ.",
+  "meta.languages.title": "Мови за тарифами - DuoVox | David Arthur Software",
+  "meta.languages.desc": "Які саме мови підтримує DuoVox у тарифах Free, Standard і Professional, зокрема які працюють повністю офлайн, а яким потрібен онлайн-тариф.",
+  "meta.security.title": "Безпека й конфіденційність - DuoVox | David Arthur Software",
+  "meta.security.desc": "Як DuoVox захищає ваші дані. Приватний режим без зберігання даних DuoVox, зашифровані з’єднання та прозора обробка даних.",
+  "meta.contact.title": "Контакти - DuoVox | David Arthur Software",
+  "meta.contact.desc": "Зв’яжіться з командою DuoVox. Загальні запитання, пропозиції та підтримка для бізнесу.",
+  "price.from": "від {p}",
+  "price.per_month": "на місяць",
+  "price.annual_year": "або {p}/рік — 1 місяць безкоштовно",
+  "price.annual_6mo": "або {p}/6 міс.",
+  "price.payg_standard": "Якість Standard: {p}/год",
+  "price.payg_professional": "Якість Professional: {p}/год"
 }

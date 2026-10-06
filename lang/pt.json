@@ -423,5 +423,21 @@
   "calls.good.f2": "Não se destina a uso médico, jurídico, crítico para a segurança ou a outros usos de alto risco.",
   "calls.good.f3": "Avise as pessoas da chamada de que está a usar legendas em direto, sobretudo quando a lei ou a sua organização o exigir.",
   "calls.good.f4": "O DuoVox está disponível para Windows 10 e Windows 11. Ainda não está disponível na UE nem no EEE.",
-  "calls.more": "Que idiomas inclui cada plano? <a href=\"languages.html\">Ver a lista de idiomas</a>."
+  "calls.more": "Que idiomas inclui cada plano? <a href=\"languages.html\">Ver a lista de idiomas</a>.",
+  "meta.index.title": "DuoVox - Tradução de voz em tempo real | David Arthur Software",
+  "meta.index.desc": "O DuoVox traduz conversas em tempo real. Transcrição de voz em duas faixas e tradução com IA em 49 idiomas. Da David Arthur Software.",
+  "meta.calls.title": "Legendas e tradução em direto para videochamadas no Windows - DuoVox",
+  "meta.calls.desc": "Legendas e tradução em direto para Teams, Zoom, Google Meet e qualquer videochamada no seu PC com Windows. Modo offline gratuito em 30 idiomas; até 43 idiomas com IA na nuvem.",
+  "meta.languages.title": "Idiomas por plano - DuoVox | David Arthur Software",
+  "meta.languages.desc": "Exatamente que idiomas o DuoVox suporta nos planos Free, Standard e Professional, incluindo os que funcionam totalmente offline e os que precisam de um plano online.",
+  "meta.security.title": "Segurança e privacidade - DuoVox | David Arthur Software",
+  "meta.security.desc": "Como o DuoVox protege os seus dados. Modo privado sem retenção pelo DuoVox, ligações encriptadas e tratamento transparente dos dados.",
+  "meta.contact.title": "Contacto - DuoVox | David Arthur Software",
+  "meta.contact.desc": "Contacte a equipa DuoVox. Pedidos gerais, sugestões e apoio a empresas.",
+  "price.from": "a partir de {p}",
+  "price.per_month": "por mês",
+  "price.annual_year": "ou {p}/ano — 1 mês grátis",
+  "price.annual_6mo": "ou {p}/6 meses",
+  "price.payg_standard": "Qualidade Standard: {p}/hora",
+  "price.payg_professional": "Qualidade Professional: {p}/hora"
 }

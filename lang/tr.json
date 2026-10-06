@@ -423,5 +423,21 @@
   "calls.good.f2": "Tıbbi, hukuki, güvenlik açısından kritik ya da diğer yüksek riskli kullanımlar için tasarlanmamıştır.",
   "calls.good.f3": "Özellikle yasa ya da kuruluşunuz gerektiriyorsa, görüşmedeki kişilere canlı altyazı kullandığınızı söyleyin.",
   "calls.good.f4": "DuoVox, Windows 10 ve Windows 11 için kullanılabilir. AB ve AEA’da henüz kullanılamıyor.",
-  "calls.more": "Hangi plan hangi dilleri kapsıyor? <a href=\"languages.html\">Dil listesine bakın</a>."
+  "calls.more": "Hangi plan hangi dilleri kapsıyor? <a href=\"languages.html\">Dil listesine bakın</a>.",
+  "meta.index.title": "DuoVox - Gerçek zamanlı ses çevirisi | David Arthur Software",
+  "meta.index.desc": "DuoVox konuşmaları gerçek zamanlı olarak çevirir. 49 dilde çift kanallı ses dökümü ve yapay zekâ destekli çeviri. David Arthur Software’den.",
+  "meta.calls.title": "Windows’ta görüntülü görüşmeler için canlı altyazı ve çeviri - DuoVox",
+  "meta.calls.desc": "Windows bilgisayarınızda Teams, Zoom, Google Meet ve her görüntülü görüşme için canlı altyazı ve çeviri. 30 dilde ücretsiz çevrimdışı mod; bulut yapay zekâ ile 43 dile kadar.",
+  "meta.languages.title": "Plana göre diller - DuoVox | David Arthur Software",
+  "meta.languages.desc": "DuoVox’un Free, Standard ve Professional planlarında tam olarak hangi dilleri desteklediği; hangilerinin tamamen çevrimdışı çalıştığı ve hangilerinin çevrimiçi plan gerektirdiği dahil.",
+  "meta.security.title": "Güvenlik ve gizlilik - DuoVox | David Arthur Software",
+  "meta.security.desc": "DuoVox verilerinizi nasıl korur. DuoVox tarafından saklama yapılmayan Gizli Mod, şifreli bağlantılar ve şeffaf veri işleme.",
+  "meta.contact.title": "İletişim - DuoVox | David Arthur Software",
+  "meta.contact.desc": "DuoVox ekibiyle iletişime geçin. Genel sorular, öneriler ve işletme desteği.",
+  "price.from": "başlangıç: {p}",
+  "price.per_month": "aylık",
+  "price.annual_year": "veya {p}/yıl — 1 ay ücretsiz",
+  "price.annual_6mo": "veya {p}/6 ay",
+  "price.payg_standard": "Standard kalite: {p}/saat",
+  "price.payg_professional": "Professional kalite: {p}/saat"
 }

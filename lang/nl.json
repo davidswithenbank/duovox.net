@@ -423,5 +423,21 @@
   "calls.good.f2": "Het is niet bedoeld voor medisch, juridisch, veiligheidskritisch of ander gebruik met grote gevolgen.",
   "calls.good.f3": "Laat de deelnemers weten dat je live ondertiteling gebruikt, vooral als de wet of je organisatie dat vereist.",
   "calls.good.f4": "DuoVox is beschikbaar voor Windows 10 en Windows 11. Het is nog niet beschikbaar in de EU of de EER.",
-  "calls.more": "Welke talen vallen onder elk abonnement? <a href=\"languages.html\">Bekijk de talenlijst</a>."
+  "calls.more": "Welke talen vallen onder elk abonnement? <a href=\"languages.html\">Bekijk de talenlijst</a>.",
+  "meta.index.title": "DuoVox - Realtime spraakvertaling | David Arthur Software",
+  "meta.index.desc": "DuoVox vertaalt gesprekken in realtime. Spraaktranscriptie in twee sporen en AI-vertaling in 49 talen. Van David Arthur Software.",
+  "meta.calls.title": "Live ondertiteling en vertaling voor videogesprekken op Windows - DuoVox",
+  "meta.calls.desc": "Live ondertiteling en vertaling voor Teams, Zoom, Google Meet en elk videogesprek op je Windows-pc. Gratis offline modus in 30 talen; tot 43 talen met AI in de cloud.",
+  "meta.languages.title": "Talen per abonnement - DuoVox | David Arthur Software",
+  "meta.languages.desc": "Precies welke talen DuoVox ondersteunt in de abonnementen Free, Standard en Professional, inclusief welke volledig offline werken en welke een online abonnement nodig hebben.",
+  "meta.security.title": "Beveiliging en privacy - DuoVox | David Arthur Software",
+  "meta.security.desc": "Hoe DuoVox je gegevens beschermt. Privémodus zonder opslag door DuoVox, versleutelde verbindingen en transparante gegevensverwerking.",
+  "meta.contact.title": "Contact - DuoVox | David Arthur Software",
+  "meta.contact.desc": "Neem contact op met het DuoVox-team. Algemene vragen, suggesties en ondersteuning voor bedrijven.",
+  "price.from": "vanaf {p}",
+  "price.per_month": "per maand",
+  "price.annual_year": "of {p}/jaar — 1 maand gratis",
+  "price.annual_6mo": "of {p}/6 maanden",
+  "price.payg_standard": "Standard-kwaliteit: {p}/uur",
+  "price.payg_professional": "Professional-kwaliteit: {p}/uur"
 }

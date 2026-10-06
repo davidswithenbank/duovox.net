@@ -423,5 +423,21 @@
   "calls.good.f2": "Es ist nicht für medizinische, rechtliche, sicherheitskritische oder andere Einsätze mit hohem Risiko gedacht.",
   "calls.good.f3": "Sagen Sie den Teilnehmern, dass Sie Live-Untertitel verwenden, besonders wenn das Gesetz oder Ihre Organisation es verlangt.",
   "calls.good.f4": "DuoVox ist für Windows 10 und Windows 11 erhältlich. In der EU und im EWR ist es noch nicht verfügbar.",
-  "calls.more": "Welche Sprachen deckt welcher Tarif ab? <a href=\"languages.html\">Zur Sprachliste</a>."
+  "calls.more": "Welche Sprachen deckt welcher Tarif ab? <a href=\"languages.html\">Zur Sprachliste</a>.",
+  "meta.index.title": "DuoVox - Sprachübersetzung in Echtzeit | David Arthur Software",
+  "meta.index.desc": "DuoVox übersetzt Gespräche in Echtzeit. Zweispurige Sprachtranskription und KI-gestützte Übersetzung in 49 Sprachen. Von David Arthur Software.",
+  "meta.calls.title": "Live-Untertitel und Übersetzung für Videoanrufe unter Windows - DuoVox",
+  "meta.calls.desc": "Live-Untertitel und Übersetzung für Teams, Zoom, Google Meet und jeden Videoanruf auf Ihrem Windows-PC. Kostenloser Offline-Modus in 30 Sprachen; bis zu 43 Sprachen mit Cloud-KI.",
+  "meta.languages.title": "Sprachen nach Tarif - DuoVox | David Arthur Software",
+  "meta.languages.desc": "Welche Sprachen DuoVox in den Tarifen Free, Standard und Professional genau unterstützt – auch, welche komplett offline funktionieren und welche einen Online-Tarif brauchen.",
+  "meta.security.title": "Sicherheit und Datenschutz - DuoVox | David Arthur Software",
+  "meta.security.desc": "Wie DuoVox Ihre Daten schützt. Privater Modus ohne Speicherung durch DuoVox, verschlüsselte Verbindungen und transparenter Umgang mit Daten.",
+  "meta.contact.title": "Kontakt - DuoVox | David Arthur Software",
+  "meta.contact.desc": "Nehmen Sie Kontakt mit dem DuoVox-Team auf. Allgemeine Anfragen, Vorschläge und Unterstützung für Unternehmen.",
+  "price.from": "ab {p}",
+  "price.per_month": "pro Monat",
+  "price.annual_year": "oder {p}/Jahr – 1 Monat gratis",
+  "price.annual_6mo": "oder {p}/6 Monate",
+  "price.payg_standard": "Standard-Qualität: {p}/Stunde",
+  "price.payg_professional": "Professional-Qualität: {p}/Stunde"
 }

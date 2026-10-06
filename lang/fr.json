@@ -423,5 +423,21 @@
   "calls.good.f2": "Il n’est pas destiné à un usage médical, juridique, critique pour la sécurité ou à tout autre usage à fort enjeu.",
   "calls.good.f3": "Prévenez les participants que vous utilisez des sous-titres en direct, surtout lorsque la loi ou votre organisation l’exige.",
   "calls.good.f4": "DuoVox est disponible pour Windows 10 et Windows 11. Il n’est pas encore disponible dans l’UE ni dans l’EEE.",
-  "calls.more": "Quelles langues chaque offre couvre-t-elle ? <a href=\"languages.html\">Voir la liste des langues</a>."
+  "calls.more": "Quelles langues chaque offre couvre-t-elle ? <a href=\"languages.html\">Voir la liste des langues</a>.",
+  "meta.index.title": "DuoVox - Traduction vocale en temps réel | David Arthur Software",
+  "meta.index.desc": "DuoVox traduit les conversations en temps réel. Transcription vocale à deux voies et traduction par IA dans 49 langues. Par David Arthur Software.",
+  "meta.calls.title": "Sous-titres et traduction en direct pour les appels vidéo sous Windows - DuoVox",
+  "meta.calls.desc": "Sous-titres et traduction en direct pour Teams, Zoom, Google Meet et tout appel vidéo sur votre PC Windows. Mode hors ligne gratuit dans 30 langues ; jusqu’à 43 langues avec l’IA dans le cloud.",
+  "meta.languages.title": "Langues par offre - DuoVox | David Arthur Software",
+  "meta.languages.desc": "Les langues exactes prises en charge par DuoVox avec les offres Free, Standard et Professional, y compris celles qui fonctionnent entièrement hors ligne et celles qui nécessitent une offre en ligne.",
+  "meta.security.title": "Sécurité et confidentialité - DuoVox | David Arthur Software",
+  "meta.security.desc": "Comment DuoVox protège vos données. Mode privé sans conservation par DuoVox, connexions chiffrées et traitement transparent des données.",
+  "meta.contact.title": "Nous contacter - DuoVox | David Arthur Software",
+  "meta.contact.desc": "Contactez l’équipe DuoVox. Questions générales, suggestions et assistance aux entreprises.",
+  "price.from": "à partir de {p}",
+  "price.per_month": "par mois",
+  "price.annual_year": "ou {p}/an — 1 mois offert",
+  "price.annual_6mo": "ou {p}/6 mois",
+  "price.payg_standard": "Qualité Standard : {p}/heure",
+  "price.payg_professional": "Qualité Professional : {p}/heure"
 }

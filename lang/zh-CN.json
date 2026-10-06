@@ -423,5 +423,21 @@
   "calls.good.f2": "它不适用于医疗、法律、安全攸关或其他高风险用途。",
   "calls.good.f3": "请告知通话中的其他人您正在使用实时字幕，尤其是在法律或您的机构有此要求时。",
   "calls.good.f4": "DuoVox 支持 Windows 10 和 Windows 11。目前尚未在欧盟或欧洲经济区上架。",
-  "calls.more": "每个方案包含哪些语言？<a href=\"languages.html\">查看语言列表</a>。"
+  "calls.more": "每个方案包含哪些语言？<a href=\"languages.html\">查看语言列表</a>。",
+  "meta.index.title": "DuoVox - 实时语音翻译 | David Arthur Software",
+  "meta.index.desc": "DuoVox 实时翻译对话。双通道语音转写和 AI 翻译，支持 49 种语言。由 David Arthur Software 出品。",
+  "meta.calls.title": "Windows 视频通话的实时字幕和翻译 - DuoVox",
+  "meta.calls.desc": "为您 Windows 电脑上的 Teams、Zoom、Google Meet 及任何视频通话提供实时字幕和翻译。免费离线模式支持 30 种语言；使用云端 AI 最多支持 43 种语言。",
+  "meta.languages.title": "各方案支持的语言 - DuoVox | David Arthur Software",
+  "meta.languages.desc": "DuoVox 在 Free、Standard 和 Professional 方案中具体支持哪些语言，包括哪些可完全离线使用、哪些需要在线方案。",
+  "meta.security.title": "安全与隐私 - DuoVox | David Arthur Software",
+  "meta.security.desc": "DuoVox 如何保护您的数据。DuoVox 不保留数据的隐私模式、加密连接以及透明的数据处理。",
+  "meta.contact.title": "联系我们 - DuoVox | David Arthur Software",
+  "meta.contact.desc": "联系 DuoVox 团队。一般咨询、建议和企业支持。",
+  "price.from": "{p} 起",
+  "price.per_month": "每月",
+  "price.annual_year": "或 {p}/年——免 1 个月",
+  "price.annual_6mo": "或 {p}/6 个月",
+  "price.payg_standard": "Standard 质量：{p}/小时",
+  "price.payg_professional": "Professional 质量：{p}/小时"
 }

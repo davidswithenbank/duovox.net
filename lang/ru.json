@@ -423,5 +423,21 @@
   "calls.good.f2": "Он не предназначен для медицинских, юридических, критически важных для безопасности и других задач с высокими ставками.",
   "calls.good.f3": "Сообщите участникам звонка, что вы используете субтитры в реальном времени, особенно если этого требует закон или ваша организация.",
   "calls.good.f4": "DuoVox доступен для Windows 10 и Windows 11. В ЕС и ЕЭЗ он пока недоступен.",
-  "calls.more": "Какие языки входят в каждый тариф? <a href=\"languages.html\">Список языков</a>."
+  "calls.more": "Какие языки входят в каждый тариф? <a href=\"languages.html\">Список языков</a>.",
+  "meta.index.title": "DuoVox - Перевод речи в реальном времени | David Arthur Software",
+  "meta.index.desc": "DuoVox переводит разговоры в реальном времени. Двухканальная расшифровка речи и перевод с помощью ИИ на 49 языках. От David Arthur Software.",
+  "meta.calls.title": "Субтитры и перевод в реальном времени для видеозвонков в Windows - DuoVox",
+  "meta.calls.desc": "Субтитры и перевод в реальном времени для Teams, Zoom, Google Meet и любого видеозвонка на компьютере с Windows. Бесплатный офлайн-режим на 30 языках; до 43 языков с облачным ИИ.",
+  "meta.languages.title": "Языки по тарифам - DuoVox | David Arthur Software",
+  "meta.languages.desc": "Какие именно языки поддерживает DuoVox в тарифах Free, Standard и Professional, в том числе какие работают полностью офлайн, а каким нужен онлайн-тариф.",
+  "meta.security.title": "Безопасность и конфиденциальность - DuoVox | David Arthur Software",
+  "meta.security.desc": "Как DuoVox защищает ваши данные. Приватный режим без хранения данных DuoVox, зашифрованные соединения и прозрачная обработка данных.",
+  "meta.contact.title": "Контакты - DuoVox | David Arthur Software",
+  "meta.contact.desc": "Свяжитесь с командой DuoVox. Общие вопросы, предложения и поддержка для бизнеса.",
+  "price.from": "от {p}",
+  "price.per_month": "в месяц",
+  "price.annual_year": "или {p}/год — 1 месяц бесплатно",
+  "price.annual_6mo": "или {p}/6 мес.",
+  "price.payg_standard": "Качество Standard: {p}/час",
+  "price.payg_professional": "Качество Professional: {p}/час"
 }

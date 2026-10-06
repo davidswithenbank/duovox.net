@@ -423,5 +423,21 @@
   "calls.good.f2": "Ứng dụng không dành cho mục đích y tế, pháp lý, liên quan đến an toàn hoặc các mục đích rủi ro cao khác.",
   "calls.good.f3": "Hãy cho những người trong cuộc gọi biết bạn đang dùng phụ đề trực tiếp, nhất là khi luật pháp hoặc tổ chức của bạn yêu cầu.",
   "calls.good.f4": "DuoVox có cho Windows 10 và Windows 11. Ứng dụng chưa có tại EU hoặc EEA.",
-  "calls.more": "Mỗi gói hỗ trợ những ngôn ngữ nào? <a href=\"languages.html\">Xem danh sách ngôn ngữ</a>."
+  "calls.more": "Mỗi gói hỗ trợ những ngôn ngữ nào? <a href=\"languages.html\">Xem danh sách ngôn ngữ</a>.",
+  "meta.index.title": "DuoVox - Dịch giọng nói theo thời gian thực | David Arthur Software",
+  "meta.index.desc": "DuoVox dịch các cuộc trò chuyện theo thời gian thực. Chép lời giọng nói hai luồng và dịch bằng AI trên 49 ngôn ngữ. Của David Arthur Software.",
+  "meta.calls.title": "Phụ đề và bản dịch trực tiếp cho cuộc gọi video trên Windows - DuoVox",
+  "meta.calls.desc": "Phụ đề và bản dịch trực tiếp cho Teams, Zoom, Google Meet và mọi cuộc gọi video trên máy tính Windows. Chế độ ngoại tuyến miễn phí với 30 ngôn ngữ; tối đa 43 ngôn ngữ với AI đám mây.",
+  "meta.languages.title": "Ngôn ngữ theo gói - DuoVox | David Arthur Software",
+  "meta.languages.desc": "Chính xác những ngôn ngữ DuoVox hỗ trợ trong các gói Free, Standard và Professional, gồm cả ngôn ngữ chạy hoàn toàn ngoại tuyến và ngôn ngữ cần gói trực tuyến.",
+  "meta.security.title": "Bảo mật và quyền riêng tư - DuoVox | David Arthur Software",
+  "meta.security.desc": "Cách DuoVox bảo vệ dữ liệu của bạn. Chế độ riêng tư không lưu giữ dữ liệu tại DuoVox, kết nối được mã hóa và xử lý dữ liệu minh bạch.",
+  "meta.contact.title": "Liên hệ - DuoVox | David Arthur Software",
+  "meta.contact.desc": "Liên hệ với đội ngũ DuoVox. Câu hỏi chung, góp ý và hỗ trợ doanh nghiệp.",
+  "price.from": "từ {p}",
+  "price.per_month": "mỗi tháng",
+  "price.annual_year": "hoặc {p}/năm — miễn phí 1 tháng",
+  "price.annual_6mo": "hoặc {p}/6 tháng",
+  "price.payg_standard": "Chất lượng Standard: {p}/giờ",
+  "price.payg_professional": "Chất lượng Professional: {p}/giờ"
 }

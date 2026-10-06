@@ -423,5 +423,21 @@
   "calls.good.f2": "यह चिकित्सा, कानूनी, सुरक्षा-महत्वपूर्ण या अन्य उच्च-जोखिम वाले उपयोग के लिए नहीं है।",
   "calls.good.f3": "कॉल में शामिल लोगों को बताएँ कि आप लाइव कैप्शन इस्तेमाल कर रहे हैं, ख़ासकर जहाँ कानून या आपका संगठन इसकी माँग करे।",
   "calls.good.f4": "DuoVox, Windows 10 और Windows 11 के लिए उपलब्ध है। यह अभी EU या EEA में उपलब्ध नहीं है।",
-  "calls.more": "हर प्लान में कौन-सी भाषाएँ शामिल हैं? <a href=\"languages.html\">भाषाओं की सूची देखें</a>।"
+  "calls.more": "हर प्लान में कौन-सी भाषाएँ शामिल हैं? <a href=\"languages.html\">भाषाओं की सूची देखें</a>।",
+  "meta.index.title": "DuoVox - रीयल-टाइम आवाज़ अनुवाद | David Arthur Software",
+  "meta.index.desc": "DuoVox बातचीत का रीयल टाइम में अनुवाद करता है। 49 भाषाओं में दो-लेन वॉइस ट्रांसक्रिप्शन और AI अनुवाद। David Arthur Software की ओर से।",
+  "meta.calls.title": "Windows पर वीडियो कॉल के लिए लाइव कैप्शन और अनुवाद - DuoVox",
+  "meta.calls.desc": "आपके Windows पीसी पर Teams, Zoom, Google Meet और किसी भी वीडियो कॉल के लिए लाइव कैप्शन और अनुवाद। 30 भाषाओं में मुफ़्त ऑफ़लाइन मोड; क्लाउड AI के साथ 43 भाषाओं तक।",
+  "meta.languages.title": "प्लान के अनुसार भाषाएँ - DuoVox | David Arthur Software",
+  "meta.languages.desc": "Free, Standard और Professional प्लान में DuoVox ठीक-ठीक किन भाषाओं को सपोर्ट करता है — कौन-सी पूरी तरह ऑफ़लाइन चलती हैं और किनके लिए ऑनलाइन प्लान चाहिए।",
+  "meta.security.title": "सुरक्षा और गोपनीयता - DuoVox | David Arthur Software",
+  "meta.security.desc": "DuoVox आपके डेटा की सुरक्षा कैसे करता है। DuoVox द्वारा बिना संग्रहण वाला प्राइवेट मोड, एन्क्रिप्टेड कनेक्शन और पारदर्शी डेटा प्रबंधन।",
+  "meta.contact.title": "संपर्क करें - DuoVox | David Arthur Software",
+  "meta.contact.desc": "DuoVox टीम से संपर्क करें। सामान्य पूछताछ, सुझाव और व्यवसाय सहायता।",
+  "price.from": "{p} से शुरू",
+  "price.per_month": "प्रति माह",
+  "price.annual_year": "या {p}/वर्ष — 1 महीना मुफ़्त",
+  "price.annual_6mo": "या {p}/6 महीने",
+  "price.payg_standard": "Standard गुणवत्ता: {p}/घंटा",
+  "price.payg_professional": "Professional गुणवत्ता: {p}/घंटा"
 }

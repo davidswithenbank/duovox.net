@@ -423,5 +423,21 @@
   "calls.good.f2": "ไม่ได้มีไว้สำหรับการใช้งานทางการแพทย์ กฎหมาย งานที่สำคัญต่อความปลอดภัย หรือการใช้งานอื่นที่มีความเสี่ยงสูง",
   "calls.good.f3": "แจ้งผู้ร่วมสายว่าคุณกำลังใช้คำบรรยายสด โดยเฉพาะเมื่อกฎหมายหรือองค์กรของคุณกำหนด",
   "calls.good.f4": "DuoVox ใช้งานได้บน Windows 10 และ Windows 11 ยังไม่เปิดให้บริการในสหภาพยุโรปหรือเขตเศรษฐกิจยุโรป",
-  "calls.more": "แต่ละแผนรองรับภาษาใดบ้าง <a href=\"languages.html\">ดูรายการภาษา</a>"
+  "calls.more": "แต่ละแผนรองรับภาษาใดบ้าง <a href=\"languages.html\">ดูรายการภาษา</a>",
+  "meta.index.title": "DuoVox - แปลเสียงพูดแบบเรียลไทม์ | David Arthur Software",
+  "meta.index.desc": "DuoVox แปลบทสนทนาแบบเรียลไทม์ ถอดเสียงแบบสองช่องทางและแปลด้วย AI ใน 49 ภาษา โดย David Arthur Software",
+  "meta.calls.title": "คำบรรยายและคำแปลสดสำหรับวิดีโอคอลบน Windows - DuoVox",
+  "meta.calls.desc": "คำบรรยายและคำแปลสดสำหรับ Teams, Zoom, Google Meet และวิดีโอคอลทุกแบบบนพีซี Windows ของคุณ โหมดออฟไลน์ฟรีใน 30 ภาษา และสูงสุด 43 ภาษาด้วย AI บนคลาวด์",
+  "meta.languages.title": "ภาษาตามแผน - DuoVox | David Arthur Software",
+  "meta.languages.desc": "ภาษาที่ DuoVox รองรับในแผน Free, Standard และ Professional อย่างละเอียด รวมถึงภาษาที่ใช้งานออฟไลน์ได้ทั้งหมดและภาษาที่ต้องใช้แผนออนไลน์",
+  "meta.security.title": "ความปลอดภัยและความเป็นส่วนตัว - DuoVox | David Arthur Software",
+  "meta.security.desc": "วิธีที่ DuoVox ปกป้องข้อมูลของคุณ โหมดส่วนตัวที่ DuoVox ไม่เก็บข้อมูล การเชื่อมต่อที่เข้ารหัส และการจัดการข้อมูลที่โปร่งใส",
+  "meta.contact.title": "ติดต่อเรา - DuoVox | David Arthur Software",
+  "meta.contact.desc": "ติดต่อทีม DuoVox สอบถามทั่วไป ข้อเสนอแนะ และการสนับสนุนสำหรับธุรกิจ",
+  "price.from": "เริ่มต้น {p}",
+  "price.per_month": "ต่อเดือน",
+  "price.annual_year": "หรือ {p}/ปี — ฟรี 1 เดือน",
+  "price.annual_6mo": "หรือ {p}/6 เดือน",
+  "price.payg_standard": "คุณภาพ Standard: {p}/ชั่วโมง",
+  "price.payg_professional": "คุณภาพ Professional: {p}/ชั่วโมง"
 }

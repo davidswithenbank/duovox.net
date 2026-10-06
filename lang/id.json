@@ -423,5 +423,21 @@
   "calls.good.f2": "Tidak ditujukan untuk penggunaan medis, hukum, kritis bagi keselamatan, atau penggunaan berisiko tinggi lainnya.",
   "calls.good.f3": "Beri tahu peserta panggilan bahwa Anda memakai teks langsung, terutama jika diwajibkan oleh hukum atau organisasi Anda.",
   "calls.good.f4": "DuoVox tersedia untuk Windows 10 dan Windows 11. Belum tersedia di UE atau EEA.",
-  "calls.more": "Bahasa apa saja yang dicakup setiap paket? <a href=\"languages.html\">Lihat daftar bahasa</a>."
+  "calls.more": "Bahasa apa saja yang dicakup setiap paket? <a href=\"languages.html\">Lihat daftar bahasa</a>.",
+  "meta.index.title": "DuoVox - Terjemahan suara real-time | David Arthur Software",
+  "meta.index.desc": "DuoVox menerjemahkan percakapan secara real-time. Transkripsi suara dua jalur dan terjemahan AI dalam 49 bahasa. Dari David Arthur Software.",
+  "meta.calls.title": "Teks dan terjemahan langsung untuk panggilan video di Windows - DuoVox",
+  "meta.calls.desc": "Teks dan terjemahan langsung untuk Teams, Zoom, Google Meet, dan panggilan video apa pun di PC Windows Anda. Mode offline gratis dalam 30 bahasa; hingga 43 bahasa dengan AI cloud.",
+  "meta.languages.title": "Bahasa per paket - DuoVox | David Arthur Software",
+  "meta.languages.desc": "Bahasa apa saja yang didukung DuoVox di paket Free, Standard, dan Professional, termasuk yang berfungsi sepenuhnya offline dan yang memerlukan paket online.",
+  "meta.security.title": "Keamanan dan privasi - DuoVox | David Arthur Software",
+  "meta.security.desc": "Cara DuoVox melindungi data Anda. Mode Privat tanpa penyimpanan oleh DuoVox, koneksi terenkripsi, dan penanganan data yang transparan.",
+  "meta.contact.title": "Hubungi kami - DuoVox | David Arthur Software",
+  "meta.contact.desc": "Hubungi tim DuoVox. Pertanyaan umum, saran, dan dukungan bisnis.",
+  "price.from": "mulai {p}",
+  "price.per_month": "per bulan",
+  "price.annual_year": "atau {p}/tahun — gratis 1 bulan",
+  "price.annual_6mo": "atau {p}/6 bulan",
+  "price.payg_standard": "Kualitas Standard: {p}/jam",
+  "price.payg_professional": "Kualitas Professional: {p}/jam"
 }

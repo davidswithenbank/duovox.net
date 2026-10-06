@@ -423,5 +423,21 @@
   "calls.good.f2": "ليس مخصصًا للاستخدام الطبي أو القانوني أو الحرج للسلامة أو غيره من الاستخدامات عالية المخاطر.",
   "calls.good.f3": "أخبر المشاركين في المكالمة أنك تستخدم تسميات توضيحية مباشرة، خاصةً عندما يتطلب القانون أو مؤسستك ذلك.",
   "calls.good.f4": "يتوفر DuoVox لنظامي Windows 10 وWindows 11. ولا يتوفر بعد في الاتحاد الأوروبي أو المنطقة الاقتصادية الأوروبية.",
-  "calls.more": "ما اللغات التي تغطيها كل خطة؟ <a href=\"languages.html\">اطّلع على قائمة اللغات</a>."
+  "calls.more": "ما اللغات التي تغطيها كل خطة؟ <a href=\"languages.html\">اطّلع على قائمة اللغات</a>.",
+  "meta.index.title": "DuoVox - ترجمة صوتية فورية | David Arthur Software",
+  "meta.index.desc": "يترجم DuoVox المحادثات في الوقت الفعلي. نسخ صوتي ثنائي المسار وترجمة بالذكاء الاصطناعي في 49 لغة. من David Arthur Software.",
+  "meta.calls.title": "تسميات توضيحية وترجمة مباشرة لمكالمات الفيديو على Windows - DuoVox",
+  "meta.calls.desc": "تسميات توضيحية وترجمة مباشرة لـ Teams وZoom وGoogle Meet وأي مكالمة فيديو على جهاز Windows. وضع مجاني دون اتصال في 30 لغة؛ وحتى 43 لغة مع الذكاء الاصطناعي السحابي.",
+  "meta.languages.title": "اللغات حسب الخطة - DuoVox | David Arthur Software",
+  "meta.languages.desc": "اللغات التي يدعمها DuoVox بالضبط في خطط Free وStandard وProfessional، بما في ذلك اللغات التي تعمل دون اتصال بالكامل وتلك التي تحتاج إلى خطة متصلة.",
+  "meta.security.title": "الأمان والخصوصية - DuoVox | David Arthur Software",
+  "meta.security.desc": "كيف يحمي DuoVox بياناتك. وضع خاص دون احتفاظ DuoVox بالبيانات، واتصالات مشفرة، ومعالجة شفافة للبيانات.",
+  "meta.contact.title": "اتصل بنا - DuoVox | David Arthur Software",
+  "meta.contact.desc": "تواصل مع فريق DuoVox. استفسارات عامة واقتراحات ودعم للشركات.",
+  "price.from": "ابتداءً من {p}",
+  "price.per_month": "شهريًا",
+  "price.annual_year": "أو {p}/سنة — 1 شهر مجانًا",
+  "price.annual_6mo": "أو {p}/6 أشهر",
+  "price.payg_standard": "جودة Standard: {p}/ساعة",
+  "price.payg_professional": "جودة Professional: {p}/ساعة"
 }
