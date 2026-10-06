@@ -129,7 +129,7 @@ def load_language_names():
 
 # Visible text that is deliberately NOT translated: product and competitor names, contact addresses, marks.
 UNTRANSLATED_OK = re.compile(
-    r"^(DuoVox|Windows|Google Translate|iTranslate|SayHi|DeepL|David Arthur Software|"
+    r"^(DuoVox|Windows|Google Translate|iTranslate|Microsoft Translator|DeepL|David Arthur Software|"
     r"[\w.+-]+@[\w.-]+|[–—✓•\-]|\d+)$")
 
 

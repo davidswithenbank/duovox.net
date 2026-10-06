@@ -30,6 +30,10 @@ import sitei18n as S  # noqa: E402
 
 DIGITS = str.maketrans("٠١٢٣٤٥٦٧٨٩۰۱۲۳۴۵۶۷۸۹०१२३४५६७८९๐๑๒๓๔๕๖๗๘๙", "0123456789" * 4)
 NAMES = ["DuoVox", "Microsoft Store", "Windows", "Google Play"]
+# Keys where an English plan word is NOT the plan ("Standard Mode" = the non-private mode on security.html).
+NOT_PLAN = {"sec.standard.title": {"Standard"},
+            "home.who.8": {"Professional"},     # "Professional Interpreters" (people, not the plan)
+            "home.cmp.29": {"Professional"}}    # "Professional Tools" (table section heading)
 
 
 def tags(s):
@@ -42,8 +46,18 @@ def numbers(s):
     return [n.replace(",", ".") for n in re.findall(r"\d+(?:[.,]\d+)?", t)]
 
 
-def problems(key, en_text, is_html, tr):
+def problems(key, en_text, is_html, tr, plans=None):
     out = []
+    # Plan names must be the app's own name in this language (lang/_plan_names.json, taken from the app's
+    # UiStrings TierFree/TierStandard/TierProfessional). Pay-As-You-Go stays English in the app, so here too.
+    for en_name, local in (plans or {}).items():
+        if en_name in NOT_PLAN.get(key, ()) or not re.search(r"\b%s\b" % en_name, html.unescape(en_text)):
+            continue
+        if local == en_name and not re.search(r"\b%s\b" % en_name, html.unescape(tr)):
+            # the app keeps the English name in this language, so the page must too
+            out.append(("PLANNAME", "the app keeps '%s' in English here; the translation dropped it" % en_name))
+        elif local != en_name and re.search(r"\b%s\b" % en_name, html.unescape(tr)):
+            out.append(("PLANNAME", "uses English '%s'; the app says '%s'" % (en_name, local)))
     if not is_html and "<" in en_text:
         # A data-i18n (plain-text) element whose English carries a link or bold: every translation is set as
         # text, so the formatting/link is lost in other languages. Known since 6 Oct 2026; fix by making the
@@ -120,6 +134,7 @@ def main():
         for t in S.unkeyed_text(S.read(os.path.join(S.ROOT, page))):
             print("  UNKEYED  %s: %s" % (page, t[:90]))
             errors += 1
+    plan_names = json.loads(S.read(os.path.join(S.LANG_DIR, "_plan_names.json")))
     names = S.load_language_names()
     table = set(re.findall(r'<span class="lc-n"><b>([^<]+)</b>', S.read(os.path.join(S.ROOT, "languages.html"))))
     for code, _ in others:
@@ -136,7 +151,7 @@ def main():
                 stale_keys.add(key)
                 errors += 1
                 continue
-            for kind, msg in problems(key, src[key][0], src[key][1], lang[key]):
+            for kind, msg in problems(key, src[key][0], src[key][1], lang[key], plan_names.get(code)):
                 lines.append("  %-8s %s: %s" % (kind, key, msg))
                 if kind in ("NAMES", "PLAINTEXT"):
                     warnings += 1
