@@ -32,7 +32,7 @@ jobs:
           python-version: "3.12"
       - name: Build site with language pages
         run: python tools/build_lang_pages.py --out _site
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
