@@ -138,15 +138,36 @@
     });
   }
 
+  // localStorage can be unavailable (private windows, blocked site data); the page must work without it.
+  function savedLang() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function saveLang(code) { try { localStorage.setItem(KEY, code); } catch (e) { /* not remembered */ } }
+
+  // Pages that have a built copy per language (tools/build_lang_pages.py) carry
+  // <link rel="alternate" hreflang="xx">. Switching language on those pages goes to that copy, so the
+  // address, the page title and what search engines index all match the language shown. Pages without
+  // copies (privacy, terms) keep swapping the text in place as before.
+  function altPath(code) {
+    var l = document.querySelector('link[rel="alternate"][hreflang="' + code + '"]');
+    if (!l) return null;
+    try { return new URL(l.getAttribute('href'), location.href).pathname; } catch (e) { return null; }
+  }
+  function goTo(code) {
+    var p = altPath(code);
+    if (!p) return false;
+    saveLang(code);
+    location.href = p + location.hash;
+    return true;
+  }
+
   function setLang(code) {
-    localStorage.setItem(KEY, code);
+    saveLang(code);
     document.documentElement.lang = code;
     document.documentElement.dir = RTL[code] ? 'rtl' : 'ltr';
 
     if (code === 'en') { restore(); applyCurr(getCurrCode(code)); return; }
     if (cache[code]) { apply(cache[code]); applyCurr(getCurrCode(code)); return; }
 
-    fetch('lang/' + code + '.json')
+    fetch('/lang/' + code + '.json')
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (j) { cache[code] = j; apply(j); applyCurr(getCurrCode(code)); })
       .catch(function (e) { console.warn('i18n: ' + code, e); });
@@ -156,11 +177,25 @@
     var sel = buildSelector();
     if (!sel) return;
 
-    var saved = localStorage.getItem(KEY);
+    // A built language copy: its text and prices are already in place.
+    var staticLang = document.documentElement.getAttribute('data-static-lang');
+    if (staticLang) {
+      sel.value = staticLang;
+      sel.addEventListener('change', function () { if (!goTo(this.value)) setLang(this.value); });
+      return;
+    }
+
+    var saved = savedLang();
     var lang = (saved && LANGS.some(function (l) { return l[0] === saved; })) ? saved : 'en';
     sel.value = lang;
-    sel.addEventListener('change', function () { setLang(this.value); });
-    if (lang !== 'en') setLang(lang);
+    sel.addEventListener('change', function () {
+      if (this.value === 'en' || !goTo(this.value)) setLang(this.value);
+    });
+    if (lang !== 'en') {
+      var p = altPath(lang);
+      if (p) { location.replace(p + location.hash); return; }
+      setLang(lang);
+    }
     else applyCurr(getCurrCode('en'));
   }
 

@@ -172,6 +172,15 @@ n_pro = sum(1 for r in rows_pro if r[3] == "yes")
 ICON = {"yes": "\u2713", "part": "\u2022", "no": "\u2013"}
 
 
+# Translation keys for the per-row notes (6 Oct 2026; tools/build_lang_pages.py translates them per language).
+NOTE_KEYS = {'Included': 'lang.note.included', 'Captions and translation, fully on your device': 'lang.note.full', 'Captions on your device — translation needs an online plan': 'lang.note.captions_only'}
+
+
+def NOTE_KEY_ATTR(note):
+    k = NOTE_KEYS.get(note)
+    return ' data-i18n="%s"' % k if k else ''
+
+
 def col(title, sub, count, rows, key):
     """One plan's card, listing ONLY what that plan supports.
 
@@ -193,7 +202,7 @@ def col(title, sub, count, rows, key):
         li.append(
             '        <li class="lc-%s"><span class="lc-i" aria-hidden="true">%s</span>'
             '<span class="lc-n"><b>%s</b><i>%s</i></span>'
-            '<span class="lc-note">%s</span></li>' % (st, ICON[st], eng, native, note))
+            '<span class="lc-note"%s>%s</span></li>' % (st, ICON[st], eng, native, NOTE_KEY_ATTR(note), note))
     # The headline number is what the reader can USE on this plan, so it counts what is listed.
     return (
         '    <div class="lc-col">\n'
@@ -210,6 +219,7 @@ HTML = """<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Language coverage by plan - DuoVox | David Arthur Software</title>
+    <link rel="canonical" href="https://duovox.net/languages.html">
     <meta name="description" content="Exactly which languages DuoVox supports on the Free, Standard and Professional plans - including which work fully offline and which need an online plan.">
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">

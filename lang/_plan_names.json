@@ -1,0 +1,97 @@
+{
+ "ar": {
+  "Free": "مجاني",
+  "Professional": "الباقة الاحترافية",
+  "Standard": "الباقة القياسية"
+ },
+ "de": {
+  "Free": "Kostenlos",
+  "Professional": "Professional",
+  "Standard": "Standard"
+ },
+ "es": {
+  "Free": "Gratis",
+  "Professional": "Profesional",
+  "Standard": "Estándar"
+ },
+ "fr": {
+  "Free": "Gratuit",
+  "Professional": "Professionnel",
+  "Standard": "Standard"
+ },
+ "hi": {
+  "Free": "मुफ़्त",
+  "Professional": "प्रोफ़ेशनल",
+  "Standard": "स्टैंडर्ड"
+ },
+ "id": {
+  "Free": "Free",
+  "Professional": "Professional",
+  "Standard": "Standard"
+ },
+ "it": {
+  "Free": "Gratuito",
+  "Professional": "Professional",
+  "Standard": "Standard"
+ },
+ "ja": {
+  "Free": "無料",
+  "Professional": "プロフェッショナル",
+  "Standard": "スタンダード"
+ },
+ "ko": {
+  "Free": "무료",
+  "Professional": "프로페셔널",
+  "Standard": "스탠다드"
+ },
+ "nl": {
+  "Free": "Gratis",
+  "Professional": "Professional",
+  "Standard": "Standard"
+ },
+ "pl": {
+  "Free": "Bezpłatny",
+  "Professional": "Profesjonalny",
+  "Standard": "Standardowy"
+ },
+ "pt": {
+  "Free": "Grátis",
+  "Professional": "Profissional",
+  "Standard": "Standard"
+ },
+ "ru": {
+  "Free": "Бесплатный",
+  "Professional": "Профессиональный",
+  "Standard": "Стандартный"
+ },
+ "th": {
+  "Free": "Free",
+  "Professional": "Professional",
+  "Standard": "Standard"
+ },
+ "tr": {
+  "Free": "Ücretsiz",
+  "Professional": "Profesyonel",
+  "Standard": "Standart"
+ },
+ "uk": {
+  "Free": "Безкоштовний",
+  "Professional": "Професійний",
+  "Standard": "Стандарт"
+ },
+ "vi": {
+  "Free": "Free",
+  "Professional": "Professional",
+  "Standard": "Standard"
+ },
+ "zh-CN": {
+  "Free": "免费",
+  "Professional": "专业版",
+  "Standard": "标准版"
+ },
+ "zh-TW": {
+  "Free": "Free",
+  "Professional": "Professional",
+  "Standard": "Standard"
+ }
+}
