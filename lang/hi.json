@@ -589,5 +589,7 @@
   "home.cmpx.private": "प्राइवेट मोड",
   "home.cmpx.private.sub": "रोकने पर कैप्शन साफ़ कर दिए जाते हैं, बिना किसी लोकल लॉग, कॉपी या एक्सपोर्ट के",
   "home.cmpx.best.dv": "<strong>आपके PC पर लाइव दो-तरफ़ा बातचीत, कॉल और वीडियो</strong>",
-  "home.cmpx.cta": "Windows पर DuoVox मुफ़्त आज़माएँ"
+  "home.cmpx.cta": "Windows पर DuoVox मुफ़्त आज़माएँ",
+  "suggest.text": "यह पेज आपकी भाषा में भी उपलब्ध है।",
+  "suggest.no": "नहीं, धन्यवाद"
 }

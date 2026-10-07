@@ -589,5 +589,7 @@
   "home.cmpx.private.sub": "Phụ đề sẽ được xóa khi bạn dừng lại, không có nhật ký cục bộ, sao chép hoặc xuất",
   "home.cmpx.best.dv": "<strong>Trò chuyện trực tiếp hai chiều, cuộc gọi và video trên PC của bạn</strong>",
   "home.cmpx.cta": "Dùng thử DuoVox miễn phí trên Windows",
-  "home.cmpx.offline": "Chế độ ngoại tuyến Free"
+  "home.cmpx.offline": "Chế độ ngoại tuyến Free",
+  "suggest.text": "Trang này cũng có sẵn bằng ngôn ngữ của bạn.",
+  "suggest.no": "Không, cảm ơn"
 }

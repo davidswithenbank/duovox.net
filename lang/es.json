@@ -589,5 +589,7 @@
   "home.cmpx.private": "Modo privado",
   "home.cmpx.private.sub": "Los subtítulos se borran al detenerte, sin registro local, copia ni exportación",
   "home.cmpx.best.dv": "<strong>Conversaciones bidireccionales en vivo, llamadas y vídeos en tu PC</strong>",
-  "home.cmpx.cta": "Prueba DuoVox gratis en Windows"
+  "home.cmpx.cta": "Prueba DuoVox gratis en Windows",
+  "suggest.text": "Esta página también está disponible en tu idioma.",
+  "suggest.no": "No, gracias"
 }

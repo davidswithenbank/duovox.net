@@ -589,5 +589,7 @@
   "home.cmpx.private": "Tryb prywatny",
   "home.cmpx.private.sub": "Napisy są usuwane po zatrzymaniu, bez lokalnego dziennika, kopiowania ani eksportu",
   "home.cmpx.best.dv": "<strong>Dwustronne rozmowy na żywo, połączenia i filmy na Twoim PC</strong>",
-  "home.cmpx.cta": "Wypróbuj DuoVox za darmo na Windows"
+  "home.cmpx.cta": "Wypróbuj DuoVox za darmo na Windows",
+  "suggest.text": "Ta strona jest również dostępna w Twoim języku.",
+  "suggest.no": "Nie, dziękuję"
 }

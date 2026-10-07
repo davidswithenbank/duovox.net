@@ -589,5 +589,7 @@
   "home.cmpx.private": "Privémodus",
   "home.cmpx.private.sub": "Ondertiteling wordt gewist zodra je stopt, zonder lokaal logboek, kopiëren of exporteren",
   "home.cmpx.best.dv": "<strong>Live tweerichtingsgesprekken, gesprekken en video's op je pc</strong>",
-  "home.cmpx.cta": "Probeer DuoVox gratis op Windows"
+  "home.cmpx.cta": "Probeer DuoVox gratis op Windows",
+  "suggest.text": "Deze pagina is ook beschikbaar in jouw taal.",
+  "suggest.no": "Nee, bedankt"
 }

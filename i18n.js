@@ -173,6 +173,62 @@
       .catch(function (e) { console.warn('i18n: ' + code, e); });
   }
 
+  // The visitor's preferred site language from the browser, or null. Only the FIRST browser language
+  // that the site has counts, and an English preference ahead of it wins: someone who lists English
+  // first chose English. zh-TW/HK/MO/Hant map to Traditional, any other zh to Simplified.
+  function browserLang() {
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+    for (var i = 0; i < list.length; i++) {
+      var t = String(list[i] || '').toLowerCase();
+      if (!t) continue;
+      if (t.indexOf('en') === 0) return null;
+      if (t.indexOf('zh') === 0) return /^zh-(tw|hk|mo|hant)/.test(t) ? 'zh-TW' : 'zh-CN';
+      var p = t.split('-')[0];
+      for (var j = 0; j < LANGS.length; j++) if (LANGS[j][0] === p) return p;
+    }
+    return null;
+  }
+
+  // ⛔ A SUGGESTION, NEVER A REDIRECT. Search engines crawl in English and are told by hreflang where each
+  // language copy lives; redirecting on the browser language can hide the English page from them and traps
+  // people who want English. So: a small bar, in the visitor's own language, offering the copy of THIS page.
+  // "No thanks" saves English as their choice, so it is asked once. Only on the English pages, only when
+  // no language has been chosen yet, and only where this page has a copy in that language.
+  function suggestLang() {
+    var code = browserLang();
+    if (!code || !altPath(code)) return;
+    fetch('/lang/' + code + '.json')
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (t) {
+        if (!t['suggest.text'] || !t['suggest.no']) return;
+        var name = '';
+        for (var i = 0; i < LANGS.length; i++) if (LANGS[i][0] === code) name = LANGS[i][1];
+        var bar = document.createElement('div');
+        bar.className = 'lang-suggest';
+        bar.setAttribute('role', 'region');
+        bar.setAttribute('aria-label', 'Language');
+        bar.lang = code;
+        if (RTL[code]) bar.dir = 'rtl';
+        var msg = document.createElement('span');
+        msg.textContent = t['suggest.text'];
+        var yes = document.createElement('button');
+        yes.type = 'button';
+        yes.className = 'lang-suggest-yes';
+        yes.textContent = name;
+        yes.addEventListener('click', function () { goTo(code); });
+        var no = document.createElement('button');
+        no.type = 'button';
+        no.className = 'lang-suggest-no';
+        no.textContent = t['suggest.no'];
+        no.addEventListener('click', function () { saveLang('en'); bar.parentNode.removeChild(bar); });
+        bar.appendChild(msg);
+        bar.appendChild(yes);
+        bar.appendChild(no);
+        document.body.appendChild(bar);
+      })
+      .catch(function () { /* no suggestion; the page is unaffected */ });
+  }
+
   function init() {
     var sel = buildSelector();
     if (!sel) return;
@@ -187,6 +243,7 @@
 
     var saved = savedLang();
     var lang = (saved && LANGS.some(function (l) { return l[0] === saved; })) ? saved : 'en';
+    if (!saved) suggestLang();
     sel.value = lang;
     sel.addEventListener('change', function () {
       if (this.value === 'en' || !goTo(this.value)) setLang(this.value);

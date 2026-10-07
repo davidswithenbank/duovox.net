@@ -589,5 +589,7 @@
   "home.cmpx.private": "Modo Privado",
   "home.cmpx.private.sub": "As legendas são apagadas quando para, sem registo local, cópia ou exportação",
   "home.cmpx.best.dv": "<strong>Conversas em direto nos dois sentidos, chamadas e vídeos no seu PC</strong>",
-  "home.cmpx.cta": "Experimente o DuoVox grátis no Windows"
+  "home.cmpx.cta": "Experimente o DuoVox grátis no Windows",
+  "suggest.text": "Esta página também está disponível no seu idioma.",
+  "suggest.no": "Não, obrigado"
 }

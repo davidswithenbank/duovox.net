@@ -589,5 +589,7 @@
   "home.cmpx.private.sub": "停止後字幕會清除，不會在本機保留記錄，也不能複製或匯出",
   "home.cmpx.best.dv": "<strong>在你的 PC 上進行即時雙向對話、通話與影片翻譯</strong>",
   "home.cmpx.cta": "在 Windows 上免費試用 DuoVox",
-  "home.cmpx.offline": "Free 離線模式"
+  "home.cmpx.offline": "Free 離線模式",
+  "suggest.text": "此頁面也提供您的語言版本。",
+  "suggest.no": "不用，謝謝"
 }

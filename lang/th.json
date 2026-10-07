@@ -589,5 +589,7 @@
   "home.cmpx.private.sub": "คำบรรยายจะถูกล้างเมื่อคุณหยุด โดยไม่มีบันทึกในเครื่อง การคัดลอก หรือการส่งออก",
   "home.cmpx.best.dv": "<strong>การสนทนาสดแบบสองทาง สายโทร และวิดีโอบน PC ของคุณ</strong>",
   "home.cmpx.cta": "ลองใช้ DuoVox ฟรีบน Windows",
-  "home.cmpx.offline": "โหมดออฟไลน์ Free"
+  "home.cmpx.offline": "โหมดออฟไลน์ Free",
+  "suggest.text": "หน้านี้มีให้ใช้งานเป็นภาษาของคุณด้วย",
+  "suggest.no": "ไม่เป็นไร ขอบคุณ"
 }

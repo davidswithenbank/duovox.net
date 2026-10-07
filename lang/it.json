@@ -589,5 +589,7 @@
   "home.cmpx.private": "Modalità privata",
   "home.cmpx.private.sub": "I sottotitoli vengono cancellati quando ti fermi, senza registro locale, copia o esportazione",
   "home.cmpx.best.dv": "<strong>Conversazioni bidirezionali dal vivo, chiamate e video sul tuo PC</strong>",
-  "home.cmpx.cta": "Prova DuoVox gratis su Windows"
+  "home.cmpx.cta": "Prova DuoVox gratis su Windows",
+  "suggest.text": "Questa pagina è disponibile anche nella tua lingua.",
+  "suggest.no": "No, grazie"
 }

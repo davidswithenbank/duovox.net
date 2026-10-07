@@ -1165,6 +1165,49 @@ a:focus-visible,
     color: var(--text-primary);
 }
 
+/* ── Language suggestion bar (i18n.js suggestLang) ── */
+.lang-suggest {
+    position: fixed;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    z-index: 200;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: calc(100% - 32px);
+    padding: 10px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+.lang-suggest button {
+    font-family: inherit;
+    font-size: 0.85rem;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.lang-suggest-yes {
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    color: #fff;
+    font-weight: 600;
+}
+
+.lang-suggest-no {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+}
+
 /* ── RTL Support ── */
 [dir="rtl"] { text-align: right; }
 [dir="rtl"] .nav-inner { flex-direction: row-reverse; }

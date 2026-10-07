@@ -589,5 +589,7 @@
   "home.cmpx.private.sub": "Teks akan dihapus saat Anda berhenti, tanpa log lokal, salin, atau ekspor",
   "home.cmpx.best.dv": "<strong>Percakapan dua arah langsung, panggilan, dan video di PC Anda</strong>",
   "home.cmpx.cta": "Coba DuoVox gratis di Windows",
-  "home.cmpx.offline": "Mode offline Free"
+  "home.cmpx.offline": "Mode offline Free",
+  "suggest.text": "Halaman ini juga tersedia dalam bahasa Anda.",
+  "suggest.no": "Tidak, terima kasih"
 }

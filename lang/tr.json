@@ -589,5 +589,7 @@
   "home.cmpx.private": "Özel Mod",
   "home.cmpx.private.sub": "Durdurduğunuzda altyazılar temizlenir; yerel günlük, kopyalama veya dışa aktarma yoktur",
   "home.cmpx.best.dv": "<strong>PC’nizde canlı iki yönlü konuşmalar, aramalar ve videolar</strong>",
-  "home.cmpx.cta": "DuoVox’u Windows’ta ücretsiz deneyin"
+  "home.cmpx.cta": "DuoVox’u Windows’ta ücretsiz deneyin",
+  "suggest.text": "Bu sayfa dilinizde de mevcut.",
+  "suggest.no": "Hayır, teşekkürler"
 }

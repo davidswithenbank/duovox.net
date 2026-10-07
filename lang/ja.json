@@ -589,5 +589,7 @@
   "home.cmpx.private": "プライベートモード",
   "home.cmpx.private.sub": "停止すると字幕は消去され、ローカルのログ保存、コピー、エクスポートは行われません",
   "home.cmpx.best.dv": "<strong>PCでのライブ双方向会話、通話、動画に</strong>",
-  "home.cmpx.cta": "WindowsでDuoVoxを無料で試す"
+  "home.cmpx.cta": "WindowsでDuoVoxを無料で試す",
+  "suggest.text": "このページはお客様の言語でもご利用いただけます。",
+  "suggest.no": "結構です"
 }
