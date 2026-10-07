@@ -815,6 +815,39 @@ a:focus-visible,
     margin-left: 4px;
 }
 
+.comparison-table td.highlight-col {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.comparison-table .cmp-feat {
+    display: block;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.comparison-table .cmp-sub {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-muted);
+}
+
+.comparison-table .cmp-note {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.comparison-table .cmp-none {
+    color: var(--text-muted);
+}
+
+.cmp-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 /* ── Best For labels ── */
 .best-for {
     display: inline-block;
