@@ -1,0 +1,28 @@
+DuoVox - fact sheet
+===================
+
+In one line
+Live captions and translation for any conversation on your Windows PC.
+
+Short description
+DuoVox shows both sides of a conversation live: what each person says and its translation, side by side, in four boxes. It captions anything playing on your PC, from Teams, Zoom and Google Meet calls to WhatsApp and YouTube, or the people in the room through your microphone. The Free plan works offline in 30 languages, with no account needed.
+
+Key facts
+- Developer: David Arthur Software (davidarthur.app)
+- Released: 30 September 2026 in the Microsoft Store
+- Platform: Windows 10 (version 1903 or later) and Windows 11, 64-bit. Android is in development; no date announced.
+- Get it: https://apps.microsoft.com/detail/9MSN7866TJQH
+  Not yet available in the EU and EEA, Turkey, Saudi Arabia or Nigeria.
+- Languages: translation across 49 languages; speech recognised in 43 languages on Professional, 33 on Standard and 30 offline on Free; app interface in 23 languages.
+- Plans: Free, Standard, Professional, and Pay-As-You-Go hours that never expire.
+  Current prices: https://duovox.net/press.html (prices change; please check there rather than this file).
+- Privacy: Free runs fully on the device. On every plan, audio, transcripts and translations are never stored on DuoVox's own servers.
+- Website: https://duovox.net
+- Video: https://www.youtube.com/watch?v=yXY5IpzYFUU
+- Press contact: enquiries@duovox.net
+
+Please note
+DuoVox is an assistive communication aid, not a certified or human interpreter. Automated transcription and translation can contain errors; it is not intended for medical, legal or other high-stakes use.
+
+Using these materials
+The text, screenshots and images in this kit may be used in editorial coverage, reviews, articles and app directory listings about DuoVox. Please don't alter the icon.
