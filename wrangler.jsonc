@@ -1,0 +1,15 @@
+// Cloudflare hosting for duovox.net (9 Oct 2026). Built and deployed by Cloudflare Workers Builds on every
+// push to master: build command `python tools/build_lang_pages.py --out _site`, deploy command
+// `npx wrangler deploy`. See tools/site_worker.js for why the routing is done by a script.
+{
+	"name": "duovox-site",
+	"main": "tools/site_worker.js",
+	"compatibility_date": "2026-10-01",
+	"assets": {
+		"directory": "./_site",
+		"binding": "ASSETS",
+		"html_handling": "none",
+		"not_found_handling": "none"
+	},
+	"workers_dev": true
+}

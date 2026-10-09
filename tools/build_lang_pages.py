@@ -28,8 +28,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sitei18n as S  # noqa: E402
 
-EXCLUDE_DIRS = {".git", ".github", "tools", "_site", "node_modules"}
-EXCLUDE_FILES = {"server.js", "lang/_translated_from.json"}
+EXCLUDE_DIRS = {".git", ".github", "tools", "_site", "node_modules", ".wrangler"}
+EXCLUDE_FILES = {"server.js", "lang/_translated_from.json", "wrangler.jsonc"}
 EXCLUDE_EXT = {".py", ".md"}
 
 
