@@ -25,6 +25,9 @@ import re
 import sys
 import urllib.request
 
+if hasattr(sys.stdout, "reconfigure"):   # a Windows console is cp1252: non-Latin findings crashed the report
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sitei18n as S  # noqa: E402
 
@@ -66,6 +69,12 @@ def problems(key, en_text, is_html, tr, plans=None):
     elif is_html:
         if tags(en_text) != tags(tr):
             out.append(("MARKUP", "tags/links %s vs %s" % (tags(en_text), tags(tr))))
+    if is_html:
+        # A double-escaped entity ("&amp;rarr;") shows on the page as the literal text "&rarr;" (10 Oct 2026:
+        # five Help translations carried one; the MARKUP check compares tags only, so it could not see it).
+        for ent in sorted(set(re.findall(r"&amp;(#?\w+);", tr))):
+            if ("&amp;%s;" % ent) not in en_text:
+                out.append(("ENTITY", "'&amp;%s;' would show as the text '&%s;'" % (ent, ent)))
     en_nums, tr_nums = numbers(en_text), numbers(tr)
     for n in set(en_nums):
         if tr_nums.count(n) < en_nums.count(n):
