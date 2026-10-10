@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help &amp; Support - DuoVox | David Arthur Software</title>
+    <link rel="canonical" href="https://duovox.net/help.html">
+    <meta name="description" content="Get started with DuoVox: a two-minute video, the full user guide online and as a PDF, answers to common problems, and how to contact support.">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+<style>
+    /* Help page (10 Oct 2026, David: "a support or help section on the site ... the PDF manual ... more
+       technical FAQ's"). The video is click-to-load like the home page's: our own poster, nothing requested
+       from YouTube until the visitor presses play. */
+    .help-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 1.5rem 0 0.5rem; }
+    .help-card { display: block; padding: 1.1rem 1.25rem; border: 1px solid var(--border); border-radius: 14px;
+                 background: var(--bg-card, rgba(255, 255, 255, 0.03)); text-decoration: none; color: inherit; }
+    .help-card:hover, .help-card:focus-visible { border-color: var(--accent); }
+    .help-card strong { display: block; color: var(--text-primary, #fff); margin-bottom: 0.3rem; }
+    .help-card span { color: var(--text-secondary); font-size: 0.92rem; }
+    .video-frame { position: relative; max-width: 880px; margin: 1.25rem auto 0; aspect-ratio: 16 / 9; border-radius: 16px;
+                   overflow: hidden; border: 1px solid var(--border); background: #000;
+                   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45); }
+    .video-frame img, .video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                   border: 0; display: block; object-fit: cover; }
+    .video-play { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 0; border: 0;
+                   background: none; cursor: pointer; }
+    .video-play-icon { position: absolute; left: 50%; top: 50%; width: 84px; height: 84px; margin: -42px 0 0 -42px;
+                   border-radius: 50%; background: rgba(15, 17, 23, 0.78); border: 2px solid #fff;
+                   transition: background 0.15s; }
+    .video-play-icon::after { content: ""; position: absolute; left: 33px; top: 25px; border-style: solid;
+                   border-width: 17px 0 17px 26px; border-color: transparent transparent transparent #fff; }
+    .video-play:hover .video-play-icon, .video-play:focus-visible .video-play-icon { background: var(--accent); }
+    .video-play:focus-visible { outline: 3px solid var(--accent-light); outline-offset: -3px; }
+    .video-note { text-align: center; margin-top: 0.9rem; font-size: 0.85rem; color: var(--text-secondary); }
+    .video-note a { color: var(--accent-light); }
+    .guide-row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 1rem 0; }
+    .guide-row select { padding: 0.55rem 0.7rem; border-radius: 10px; border: 1px solid var(--border);
+                        background: var(--bg-card, #151826); color: inherit; font: inherit; max-width: 100%; }
+    .btn-help { display: inline-block; padding: 0.6rem 1.1rem; border-radius: 10px; background: var(--accent);
+                color: #fff; text-decoration: none; font-weight: 600; }
+    .btn-help.secondary { background: transparent; border: 1px solid var(--border); color: inherit; }
+    .legal .faq-list { margin-top: 1rem; }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <img src="icon.png" alt="DuoVox icon">
+            DuoVox
+        </a>
+        <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('open')"><span></span><span></span><span></span></button>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="languages.html" data-i18n="nav.languages">Languages</a></li>
+            <li><a href="help.html" data-i18n="nav.help">Help</a></li>
+            <li><a href="security.html" data-i18n="nav.security">Security</a></li>
+            <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+            <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="legal">
+    <h1 data-i18n="help.title">Help &amp; Support</h1>
+    <p data-i18n-html="help.intro">Everything you need to get started with DuoVox, and answers to the most common problems. Can&rsquo;t find what you need? Email <a href="mailto:support@duovox.net">support@duovox.net</a>.</p>
+
+    <div class="help-cards">
+        <a class="help-card" href="#start"><strong data-i18n="help.card.start">Getting started</strong><span data-i18n="help.card.start.sub">A two-minute video tour</span></a>
+        <a class="help-card" href="#guide"><strong data-i18n="help.card.guide">User guide</strong><span data-i18n="help.card.guide.sub">Every feature, online or as a PDF</span></a>
+        <a class="help-card" href="#troubleshooting"><strong data-i18n="help.card.trouble">Troubleshooting</strong><span data-i18n="help.card.trouble.sub">Fixes for common problems</span></a>
+        <a class="help-card" href="#contact"><strong data-i18n="help.card.contact">Contact support</strong><span data-i18n="help.card.contact.sub">Report a problem or send an idea</span></a>
+    </div>
+
+    <!-- Getting started -->
+    <h2 id="start" data-i18n="help.start.title">Getting started</h2>
+    <p data-i18n="help.start.intro">This short video shows how to choose your two languages, choose what DuoVox listens to, start captioning, change the layout and find everything else in the menu.</p>
+    <div class="video-frame" data-video="HkShFc4QTUs">
+        <button class="video-play" type="button" aria-labelledby="start">
+            <img src="help-video-poster.jpg" alt="" width="1280" height="720">
+            <span class="video-play-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    <p class="video-note"><span data-i18n="home.video.note">The video plays from YouTube. Nothing is loaded from YouTube until you press play.</span> <a href="https://youtu.be/HkShFc4QTUs" data-i18n="home.video.link">Watch on YouTube</a></p>
+
+    <!-- User guide -->
+    <h2 id="guide" data-i18n="help.guide.title">User guide</h2>
+    <p data-i18n="help.guide.intro">The DuoVox user guide explains every feature, with screenshots. It is also built into the app: open the menu and choose User guide.</p>
+    <div class="guide-row">
+        <label for="guide-lang" data-i18n="help.guide.lang">Language of the guide:</label>
+        <select id="guide-lang">
+            <option value="ar">العربية</option>
+            <option value="bg">Български</option>
+            <option value="cs">Čeština</option>
+            <option value="de">Deutsch</option>
+            <option value="el">Ελληνικά</option>
+            <option value="en" selected>English</option>
+            <option value="es">Español</option>
+            <option value="fa">فارسی</option>
+            <option value="fr">Français</option>
+            <option value="he">עברית</option>
+            <option value="hi">हिन्दी</option>
+            <option value="it">Italiano</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="nl">Nederlands</option>
+            <option value="pl">Polski</option>
+            <option value="pt">Português</option>
+            <option value="ru">Русский</option>
+            <option value="sr">Српски</option>
+            <option value="sv">Svenska</option>
+            <option value="tr">Türkçe</option>
+            <option value="uk">Українська</option>
+            <option value="zh">中文</option>
+        </select>
+        <a class="btn-help" id="guide-online" href="guide/user-guide-en.html" data-i18n="help.guide.read">Read the guide online</a>
+        <a class="btn-help secondary" href="guide/DuoVox-User-Guide.pdf" download data-i18n="help.guide.pdf">Download the PDF (English, 3.7 MB)</a>
+    </div>
+
+    <!-- Troubleshooting -->
+    <h2 id="troubleshooting" data-i18n="help.trouble.title">Troubleshooting and technical questions</h2>
+    <div class="faq-list">
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="help.q.nocaptions">No captions appear when I press Start</button>
+            <div class="faq-answer">
+                <p data-i18n-html="help.a.nocaptions">Check that the <strong>Listening To</strong> button matches where the sound is coming from: <strong>System Audio</strong> for a call, meeting or video playing on your PC; <strong>PC / Desk Mic</strong> for people speaking in the room; <strong>Headset Mic</strong> for your own voice through a headset. Click the button to switch between them. The thin green bar under it moves while sound is coming in.</p>
+                <p data-i18n-html="help.a.nocaptions2">To choose which device DuoVox records from, open the menu and go to <strong>Audio &rarr; Audio input device</strong>. On System Audio it lists your playback devices (speakers and headphones); on PC / Desk Mic or Headset Mic it lists your microphones. Leave it on the default entry to follow the device Windows is set to use.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="help.q.language">A language I chose isn&rsquo;t being captioned</button>
+            <div class="faq-answer">
+                <p data-i18n-html="help.a.language">Not every language works on every plan. When you pick a language your plan cannot caption, DuoVox shows a short notice naming the language and what it needs. Some languages can be translated into even when speech in that language cannot be captioned. The full list, with what each language does on each plan, is on the <a href="languages.html">supported languages page</a>.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="help.q.offline">How do I use DuoVox without the internet?</button>
+            <div class="faq-answer">
+                <p data-i18n-html="help.a.offline">On the Free plan DuoVox runs entirely on your PC. Download the language packs you need first: open the menu, then <strong>Settings &amp; advanced &rarr; Download Languages</strong>. On a paid plan the same packs are used automatically if your internet connection drops, and DuoVox returns to your plan&rsquo;s AI by itself as soon as the connection is back.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="help.q.hours">What happens when my hours run out?</button>
+            <div class="faq-answer">
+                <p data-i18n="help.a.hours">If you hold Pay-As-You-Go hours, they take over automatically and your session carries on. Otherwise DuoVox lets you choose: buy more hours, continue in free offline mode, or end the session. Hours you buy then apply from your next session. Nothing is ever bought without you confirming it in the Microsoft Store.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="help.q.uilang">The app&rsquo;s menus are in the wrong language</button>
+            <div class="faq-answer">
+                <p data-i18n="help.a.uilang">Click the globe icon in the toolbar to change the language of DuoVox&rsquo;s own menus and buttons. The two language selectors on the right of the toolbar are separate: they set the languages of the conversation.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="help.q.crash">DuoVox closed unexpectedly</button>
+            <div class="faq-answer">
+                <p data-i18n="help.a.crash">DuoVox makes a note of what happened. The next time you start it, it offers to send that as a report, with the error details attached. Nothing is sent unless you choose to send it, and you are only asked once per incident.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="help.q.shortcuts">Are there keyboard shortcuts?</button>
+            <div class="faq-answer">
+                <p data-i18n-html="help.a.shortcuts">Yes. <strong>Ctrl+Alt+S</strong> starts and stops captioning, and <strong>Ctrl+Alt+R</strong> switches between 2 and 4 boxes. The full list is in the menu under <strong>Keyboard shortcuts</strong>.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="help.q.version">Where do I find my app version and device ID?</button>
+            <div class="faq-answer">
+                <p data-i18n-html="help.a.version">Open the menu and choose <strong>About</strong>. It shows your installed version and your device ID, which is useful to include if you contact support or write to us about your data.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="help.q.windows">Which versions of Windows are supported?</button>
+            <div class="faq-answer">
+                <p data-i18n="help.a.windows">DuoVox runs on Windows 10 and Windows 11, and is installed from the Microsoft Store, which keeps it up to date automatically.</p>
+            </div>
+        </div>
+    </div>
+    <p data-i18n-html="help.more">More answers about plans, privacy and features are in the <a href="index.html#faq">common questions</a> on the home page and on the <a href="security.html">Security</a> page.</p>
+
+    <!-- Contact -->
+    <h2 id="contact" data-i18n="help.contact.title">Contact support</h2>
+    <ul>
+        <li data-i18n-html="help.contact.report"><strong>Report a problem from the app:</strong> open the menu and choose <strong>Report a problem</strong>. It sends a technical log with all conversation text removed, and you can view exactly what will be sent before you send it.</li>
+        <li data-i18n-html="help.contact.email"><strong>Email:</strong> <a href="mailto:support@duovox.net">support@duovox.net</a>. Please include your app version and device ID (menu &rarr; About).</li>
+        <li data-i18n-html="help.contact.idea"><strong>Ideas and feature requests:</strong> open the menu and choose <strong>Send a suggestion</strong>. Every one is read.</li>
+    </ul>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-links">
+            <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+            <a href="security.html" data-i18n="nav.security">Security</a>
+            <a href="help.html" data-i18n="nav.help">Help</a>
+            <a href="calls.html" data-i18n="footer.calls">Video calls</a>
+            <a href="press.html" data-i18n="footer.press">Press kit</a>
+            <a href="contact.html" data-i18n="footer.contact">Contact</a>
+        </div>
+        <p class="footer-company" data-i18n="footer.copyright">&copy; 2026 David Arthur Software (DAS). All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+(function () {
+    // Click-to-load video: nothing is requested from YouTube until the visitor presses play.
+    var frame = document.querySelector('.video-frame');
+    if (frame) {
+        frame.querySelector('.video-play').addEventListener('click', function () {
+            var player = document.createElement('iframe');
+            player.src = 'https://www.youtube-nocookie.com/embed/' + frame.getAttribute('data-video') + '?autoplay=1&rel=0';
+            player.title = document.getElementById('start').textContent;
+            player.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+            player.allowFullscreen = true;
+            while (frame.firstChild) frame.removeChild(frame.firstChild);
+            frame.appendChild(player);
+            player.focus();
+        });
+    }
+    // User guide: offer the guide in the page's language when there is one (language pages live in /xx/).
+    var sel = document.getElementById('guide-lang'), link = document.getElementById('guide-online');
+    if (!sel || !link) return;
+    var base = /\/[a-z]{2}(-[A-Z]{2})?\//.test(location.pathname) ? '../guide/' : 'guide/';
+    function apply() { link.href = base + 'user-guide-' + sel.value + '.html'; }
+    var lang = (document.documentElement.lang || 'en').toLowerCase().split('-')[0];
+    for (var i = 0; i < sel.options.length; i++) if (sel.options[i].value === lang) sel.selectedIndex = i;
+    document.querySelector('.btn-help.secondary').href = base + 'DuoVox-User-Guide.pdf';
+    sel.addEventListener('change', apply);
+    apply();
+})();
+</script>
+<script src="i18n.js"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6da9362d8d7f49fc913578849ffbc7bb"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

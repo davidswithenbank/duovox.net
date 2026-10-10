@@ -19,7 +19,7 @@ PROVENANCE = os.path.join(LANG_DIR, "_translated_from.json")
 
 # The pages that get a copy per language. Privacy and Terms stay English-only (generated documents, see
 # DuoVox Desktop App/_claude_tools/terms_sync.py); checkout pages are not for search.
-PAGES = ["index.html", "calls.html", "languages.html", "security.html", "contact.html"]
+PAGES = ["index.html", "calls.html", "languages.html", "security.html", "contact.html", "help.html"]
 SITE = "https://duovox.net"
 
 # Translatable wording around prices. The NUMBERS are never translated: they are read at build time from the

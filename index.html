@@ -84,6 +84,7 @@
             <li><a href="index.html" data-i18n="nav.home">Home</a></li>
             <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
             <li><a href="languages.html" data-i18n="nav.languages">Languages</a></li>
+            <li><a href="help.html" data-i18n="nav.help">Help</a></li>
             <li><a href="security.html" data-i18n="nav.security">Security</a></li>
             <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
             <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
@@ -486,9 +487,15 @@
 </section>
 
 <!-- FAQ -->
-<section class="section" style="padding-bottom:40px;">
+<section class="section" id="faq" style="padding-bottom:40px;">
     <h2 class="section-title" data-i18n="home.faq.1">Common Questions</h2>
     <div class="faq-list">
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="home.faq.22">How do I get started?</button>
+            <div class="faq-answer">
+                <p data-i18n-html="home.faq.23">Watch our two-minute <a href="https://youtu.be/HkShFc4QTUs">getting-started video</a>. It shows how to choose your two languages, choose what DuoVox listens to, start captioning, change the layout and find everything else in the menu. The menu in the app also has a full User guide and Help.</p>
+            </div>
+        </div>
         <div class="faq-item">
             <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="home.faq.2">Does it work with two people speaking different languages?</button>
             <div class="faq-answer">
@@ -580,6 +587,7 @@
             <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
             <a href="security.html" data-i18n="nav.security">Security</a>
             <a href="calls.html" data-i18n="footer.calls">Video calls</a>
+            <a href="help.html" data-i18n="nav.help">Help</a>
             <a href="press.html" data-i18n="footer.press">Press kit</a>
             <a href="contact.html" data-i18n="footer.contact">Contact</a>
         </div>
