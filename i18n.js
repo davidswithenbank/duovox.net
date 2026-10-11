@@ -164,12 +164,12 @@
     document.documentElement.lang = code;
     document.documentElement.dir = RTL[code] ? 'rtl' : 'ltr';
 
-    if (code === 'en') { restore(); applyCurr(getCurrCode(code)); return; }
-    if (cache[code]) { apply(cache[code]); applyCurr(getCurrCode(code)); return; }
+    if (code === 'en') { restore(); applyCurr(getCurrCode(code)); fitNav(); return; }
+    if (cache[code]) { apply(cache[code]); applyCurr(getCurrCode(code)); fitNav(); return; }
 
     fetch('/lang/' + code + '.json')
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function (j) { cache[code] = j; apply(j); applyCurr(getCurrCode(code)); })
+      .then(function (j) { cache[code] = j; apply(j); applyCurr(getCurrCode(code)); fitNav(); })
       .catch(function (e) { console.warn('i18n: ' + code, e); });
   }
 
@@ -255,6 +255,16 @@
     }
     else applyCurr(getCurrCode('en'));
   }
+
+  // Switch the top menu to the hamburger whenever its links do not fit on one line (depends on the language).
+  function fitNav() {
+    var nav = document.querySelector('.nav'), inner = document.querySelector('.nav-inner');
+    if (!nav || !inner || window.innerWidth <= 768) { if (nav) nav.classList.remove('nav-compact'); return; }
+    nav.classList.remove('nav-compact');
+    if (inner.scrollWidth > inner.clientWidth + 1) nav.classList.add('nav-compact');
+  }
+  window.addEventListener('resize', fitNav);
+  window.addEventListener('load', fitNav);
 
   if (document.readyState === 'loading')
     document.addEventListener('DOMContentLoaded', init);

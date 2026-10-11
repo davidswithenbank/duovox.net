@@ -101,6 +101,7 @@ a:focus-visible,
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-right: 1.25rem;
     font-weight: 700;
     font-size: 1.15rem;
     color: var(--text-primary);
@@ -120,7 +121,7 @@ a:focus-visible,
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: clamp(0.8rem, 1.7vw, 2rem);
     list-style: none;
 }
 
@@ -128,7 +129,12 @@ a:focus-visible,
     color: var(--text-secondary);
     font-size: 0.9rem;
     font-weight: 500;
+    white-space: nowrap;          /* 11 Oct 2026: long labels (Für Dolmetscher, ...) must not wrap */
     transition: color 0.2s;
+}
+
+@media (min-width: 769px) and (max-width: 1240px) {
+    .nav-links a { font-size: 0.82rem; }
 }
 
 .nav-links a:hover {
@@ -984,6 +990,17 @@ a:focus-visible,
     margin-top: 0.5rem;
     text-align: center;
 }
+
+/* Compact nav (11 Oct 2026): i18n.js adds .nav-compact when the links do not fit on one line in the
+   current language (long Russian/German labels on laptops) - the same hamburger menu as phones. */
+.nav.nav-compact .nav-inner { flex-wrap: wrap; height: auto; min-height: 64px; }
+.nav.nav-compact .nav-toggle { display: block; order: 3; }
+.nav.nav-compact .nav-brand { order: 1; }
+.nav.nav-compact .lang-wrap { order: 2; margin-left: auto; margin-right: 0.5rem; }
+.nav.nav-compact .nav-links { display: none; flex-direction: column; width: 100%; order: 4; gap: 0; padding-bottom: 0.5rem; }
+.nav.nav-compact .nav-links.open { display: flex; }
+.nav.nav-compact .nav-links li { padding: 0.75rem 0; border-top: 1px solid var(--border); }
+.nav.nav-compact .nav-links a { font-size: 1rem; display: block; }
 
 /* ── Hamburger Menu ── */
 .nav .nav-toggle {
