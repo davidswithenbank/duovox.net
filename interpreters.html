@@ -14,6 +14,24 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
+    <style>
+    .video-frame { position: relative; max-width: 880px; margin: 1.25rem auto 0; aspect-ratio: 16 / 9; border-radius: 16px;
+                   overflow: hidden; border: 1px solid var(--border); background: #000;
+                   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45); }
+    .video-frame img, .video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                   border: 0; display: block; object-fit: cover; }
+    .video-play { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 0; border: 0;
+                   background: none; cursor: pointer; }
+    .video-play-icon { position: absolute; left: 50%; top: 50%; width: 84px; height: 84px; margin: -42px 0 0 -42px;
+                   border-radius: 50%; background: rgba(15, 17, 23, 0.78); border: 2px solid #fff;
+                   transition: background 0.15s; }
+    .video-play-icon::after { content: ""; position: absolute; left: 33px; top: 25px; border-style: solid;
+                   border-width: 17px 0 17px 26px; border-color: transparent transparent transparent #fff; }
+    .video-play:hover .video-play-icon, .video-play:focus-visible .video-play-icon { background: var(--accent); }
+    .video-play:focus-visible { outline: 3px solid var(--accent-light); outline-offset: -3px; }
+    .video-note { text-align: center; margin-top: 0.9rem; font-size: 0.85rem; color: var(--text-secondary); }
+    .video-note a { color: var(--accent-light); }
+    </style>
 </head>
 <body>
 
@@ -38,7 +56,7 @@
 </nav>
 
 <main class="legal">
-    <h1 data-i18n="interp.title">Your second pair of ears on every assignment</h1>
+    <h1 id="interp-title" data-i18n="interp.title">Your second pair of ears on every assignment</h1>
     <p data-i18n="interp.lead">Missed a name, a dose or a date of birth? DuoVox writes down both sides of the conversation as it happens, in both languages, right on your screen. One glance gives you the detail you need, without asking the speaker to repeat it. Built for professional interpreters, in the room or remote.</p>
 
     <div class="btn-group" style="margin:1.5rem 0;">
@@ -46,10 +64,13 @@
         <a href="index.html#pricing" class="btn btn-secondary" data-i18n="home.cta.plans">See Plans &amp; Pricing</a>
     </div>
 
-    <figure style="margin:0 0 2rem;">
-        <img src="presskit/duovox-screenshot-2-both-sides.png" width="1584" height="884" loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid rgba(255,255,255,.08);" alt="DuoVox showing both sides of a conversation: what each person said and its translation, in four panels">
-        <figcaption style="font-size:.9rem;opacity:.75;margin-top:.5rem;" data-i18n="interp.shot">Both sides of the conversation, each with its translation, as it happens.</figcaption>
-    </figure>
+    <div class="video-frame" data-video="JrTgGcbDwOA">
+        <button class="video-play" type="button" aria-labelledby="interp-title">
+            <img src="interp-video-poster.jpg" alt="" width="1280" height="720">
+            <span class="video-play-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    <p class="video-note"><span data-i18n="home.video.note">The video plays from YouTube. Nothing is loaded from YouTube until you press play.</span> <a href="https://youtu.be/JrTgGcbDwOA" data-i18n="home.video.link">Watch on YouTube</a></p>
 
     <h2 data-i18n="interp.why.title">Why DuoVox works for interpreters</h2>
     <ul>
@@ -108,6 +129,23 @@
     </div>
 </footer>
 
+<script>
+(function () {
+    // Click-to-load video: nothing is requested from YouTube until the visitor presses play.
+    var frame = document.querySelector('.video-frame');
+    if (!frame) return;
+    frame.querySelector('.video-play').addEventListener('click', function () {
+        var player = document.createElement('iframe');
+        player.src = 'https://www.youtube-nocookie.com/embed/' + frame.getAttribute('data-video') + '?autoplay=1&rel=0';
+        player.title = document.getElementById('interp-title').textContent;
+        player.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+        player.allowFullscreen = true;
+        while (frame.firstChild) frame.removeChild(frame.firstChild);
+        frame.appendChild(player);
+        player.focus();
+    });
+})();
+</script>
 <script src="i18n.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6da9362d8d7f49fc913578849ffbc7bb"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
