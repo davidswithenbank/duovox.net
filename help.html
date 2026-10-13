@@ -13,6 +13,14 @@
        technical FAQ's"). The video is click-to-load like the home page's: our own poster, nothing requested
        from YouTube until the visitor presses play. */
     .help-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 1.5rem 0 0.5rem; }
+    /* 13 Oct 2026 (David: "4 boxes and one below looks untidy. Let's have 5 boxes in a row"). The shared .legal column
+       (800px) only fits four; this page is wider and the five cards share one row. minmax(0, 1fr) keeps the columns
+       EQUAL - plain 1fr let a long word (ru "Видеоруководства") widen its column at ~900px. Five in a row from 1080px
+       (every language fits), three-then-two on tablets, one column on phones. */
+    main.legal.help-page { max-width: 1100px; }
+    .help-card strong, .help-card span { overflow-wrap: break-word; hyphens: auto; }
+    @media (min-width: 640px) { .help-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (min-width: 1080px) { .help-cards { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
     .help-card { display: block; padding: 1.1rem 1.25rem; border: 1px solid var(--border); border-radius: 14px;
                  background: var(--bg-card, rgba(255, 255, 255, 0.03)); text-decoration: none; color: inherit; }
     .help-card:hover, .help-card:focus-visible { border-color: var(--accent); }
@@ -68,7 +76,7 @@
     </div>
 </nav>
 
-<main class="legal">
+<main class="legal help-page">
     <h1 data-i18n="help.title">Help &amp; Support</h1>
     <p data-i18n-html="help.intro">Everything you need to get started with DuoVox, and answers to the most common problems. Can&rsquo;t find what you need? Email <a href="mailto:support@duovox.net">support@duovox.net</a>.</p>
 
