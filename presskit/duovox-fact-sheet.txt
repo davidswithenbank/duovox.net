@@ -19,6 +19,7 @@ Key facts
 - Privacy: Free runs fully on the device. On every plan, audio, transcripts and translations are never stored on DuoVox's own servers.
 - Website: https://duovox.net
 - Video: https://www.youtube.com/watch?v=yXY5IpzYFUU
+- Video tutorials: https://www.youtube.com/playlist?list=PLBsH7wbVquRE
 - Press contact: enquiries@duovox.net
 
 Please note

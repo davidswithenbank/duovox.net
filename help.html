@@ -34,6 +34,8 @@
     .video-play:focus-visible { outline: 3px solid var(--accent-light); outline-offset: -3px; }
     .video-note { text-align: center; margin-top: 0.9rem; font-size: 0.85rem; color: var(--text-secondary); }
     .video-note a { color: var(--accent-light); }
+    .tut-list { margin: 0.75rem 0 0 1.25rem; padding: 0; line-height: 1.9; }
+    .tut-list a { color: var(--accent-light); }
     .guide-row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 1rem 0; }
     .guide-row select { padding: 0.55rem 0.7rem; border-radius: 10px; border: 1px solid var(--border);
                         background: var(--bg-card, #151826); color: inherit; font: inherit; max-width: 100%; }
@@ -71,7 +73,8 @@
     <p data-i18n-html="help.intro">Everything you need to get started with DuoVox, and answers to the most common problems. Can&rsquo;t find what you need? Email <a href="mailto:support@duovox.net">support@duovox.net</a>.</p>
 
     <div class="help-cards">
-        <a class="help-card" href="#start"><strong data-i18n="help.card.start">Getting started</strong><span data-i18n="help.card.start.sub">A two-minute video tour</span></a>
+        <a class="help-card" href="#start"><strong data-i18n="help.card.start">Getting started</strong><span data-i18n="help.card.start.sub">A short video tour</span></a>
+        <a class="help-card" href="#tutorials"><strong data-i18n="help.card.tut">Video tutorials</strong><span data-i18n="help.card.tut.sub">A short video for every feature</span></a>
         <a class="help-card" href="#guide"><strong data-i18n="help.card.guide">User guide</strong><span data-i18n="help.card.guide.sub">Every feature, online or as a PDF</span></a>
         <a class="help-card" href="#troubleshooting"><strong data-i18n="help.card.trouble">Troubleshooting</strong><span data-i18n="help.card.trouble.sub">Fixes for common problems</span></a>
         <a class="help-card" href="#contact"><strong data-i18n="help.card.contact">Contact support</strong><span data-i18n="help.card.contact.sub">Report a problem or send an idea</span></a>
@@ -80,13 +83,30 @@
     <!-- Getting started -->
     <h2 id="start" data-i18n="help.start.title">Getting started</h2>
     <p data-i18n="help.start.intro">This short video shows how to choose your two languages, choose what DuoVox listens to, start captioning, change the layout and find everything else in the menu.</p>
-    <div class="video-frame" data-video="HkShFc4QTUs">
+    <div class="video-frame" data-video="9iUqWWRRXXA">
         <button class="video-play" type="button" aria-labelledby="start">
             <img src="help-video-poster.jpg" alt="" width="1280" height="720">
             <span class="video-play-icon" aria-hidden="true"></span>
         </button>
     </div>
-    <p class="video-note"><span data-i18n="home.video.note">The video plays from YouTube. Nothing is loaded from YouTube until you press play.</span> <a href="https://youtu.be/HkShFc4QTUs" data-i18n="home.video.link">Watch on YouTube</a></p>
+    <p class="video-note"><span data-i18n="home.video.note">The video plays from YouTube. Nothing is loaded from YouTube until you press play.</span> <a href="https://youtu.be/9iUqWWRRXXA" data-i18n="home.video.link">Watch on YouTube</a></p>
+
+    <!-- Video tutorials -->
+    <h2 id="tutorials" data-i18n="help.tut.title">Video tutorials</h2>
+    <p data-i18n-html="help.tut.intro">Short videos, one for each part of DuoVox. Watch them all in order in the <a href="https://www.youtube.com/playlist?list=PLBsH7wbVquRE">DuoVox video tutorials playlist</a> on YouTube, or choose one below.</p>
+    <ol class="tut-list">
+        <li><a href="https://youtu.be/9iUqWWRRXXA" data-i18n="help.tut.v1">Getting started</a></li>
+        <li><a href="https://youtu.be/ub6NkZFz_4A" data-i18n="help.tut.v2">Listening to calls, meetings and people in the room</a></li>
+        <li><a href="https://youtu.be/FuEZzmpKfUs" data-i18n="help.tut.v3">Languages, topics and dialects</a></li>
+        <li><a href="https://youtu.be/HncZFpYIFeA" data-i18n="help.tut.v4">Layout and appearance</a></li>
+        <li><a href="https://youtu.be/vZj7ggt73Ok" data-i18n="help.tut.v5">Glossary and Boost keywords</a></li>
+        <li><a href="https://youtu.be/jDOtDk39kQI" data-i18n="help.tut.v6">DuoVox for interpreters</a></li>
+        <li><a href="https://youtu.be/N0FPTcMXpaI" data-i18n="help.tut.v7">Subtitle a video or audio file</a></li>
+        <li><a href="https://youtu.be/dunZg9_j6Mw" data-i18n="help.tut.v8">Translate a document</a></li>
+        <li><a href="https://youtu.be/9PZHF7lQG_I" data-i18n="help.tut.v9">Saving and privacy</a></li>
+        <li><a href="https://youtu.be/oZPyJoiFwOg" data-i18n="help.tut.v11">Keyboard shortcuts</a></li>
+        <li><a href="https://youtu.be/4jHC01HSyq8" data-i18n="help.tut.v12">Getting help</a></li>
+    </ol>
 
     <!-- User guide -->
     <h2 id="guide" data-i18n="help.guide.title">User guide</h2>
