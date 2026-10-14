@@ -23,7 +23,7 @@ Key facts
 - Press contact: enquiries@duovox.net
 
 Please note
-DuoVox is an assistive communication aid, not a certified or human interpreter. Automated transcription and translation can contain errors; it is not intended for medical, legal or other high-stakes use.
+DuoVox is an assistive tool, not a certified or human interpreter: it supports, and doesn't replace, a qualified interpreter or translator. Automated transcription and translation can contain errors, so anything important should be checked, and DuoVox should not be relied on as the only source of meaning in medical, legal or other high-stakes situations.
 
 Using these materials
 The text, screenshots and images in this kit may be used in editorial coverage, reviews, articles and app directory listings about DuoVox. Please don't alter the icon.
