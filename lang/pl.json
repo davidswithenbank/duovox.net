@@ -424,8 +424,8 @@
   "calls.good.f3": "Poinformuj uczestników rozmowy, że korzystasz z napisów na żywo, zwłaszcza gdy wymaga tego prawo lub Twoja organizacja.",
   "calls.good.f4": "DuoVox jest dostępny dla Windows 10 i Windows 11. Nie jest jeszcze dostępny w UE ani w EOG.",
   "calls.more": "Jakie języki obejmuje każdy plan? <a href=\"languages.html\">Zobacz listę języków</a>.",
-  "meta.index.title": "DuoVox - Tłumaczenie mowy w czasie rzeczywistym | David Arthur Software",
-  "meta.index.desc": "DuoVox tłumaczy rozmowy w czasie rzeczywistym. Dwutorowa transkrypcja mowy i tłumaczenie z AI w 49 językach. Od David Arthur Software.",
+  "meta.index.title": "DuoVox: napisy na żywo i tłumaczenie dla tłumaczy ustnych oraz połączeń w Windows",
+  "meta.index.desc": "Transkrypcja i tłumaczenie na żywo w dwóch językach na Twoim komputerze z Windows, stworzone dla zawodowych tłumaczy ustnych. Działa z Teams, Zoom i każdym dźwiękiem odtwarzanym przez Twój komputer albo z osobami w pomieszczeniu. Bezpłatny plan offline.",
   "meta.calls.title": "Napisy i tłumaczenie na żywo podczas rozmów wideo w Windows - DuoVox",
   "meta.calls.desc": "Napisy i tłumaczenie na żywo dla Teams, Zoom, Google Meet i każdej rozmowy wideo na komputerze z Windows. Bezpłatny tryb offline w 30 językach; do 43 języków z AI w chmurze.",
   "meta.languages.title": "Języki w poszczególnych planach - DuoVox | David Arthur Software",
@@ -687,5 +687,12 @@
   "help.tut.v9": "Zapisywanie i prywatność",
   "help.tut.v11": "Skróty klawiaturowe",
   "help.tut.v12": "Uzyskiwanie pomocy",
-  "help.tut.v10": "Plany, godziny i doładowania"
+  "help.tut.v10": "Plany, godziny i doładowania",
+  "nav.calls": "Połączenia wideo",
+  "home.subtitle2": "Napisy na żywo i tłumaczenie dla obu stron rozmowy na Twoim komputerze z Windows.",
+  "home.tagline2": "Stworzone dla zawodowych tłumaczy ustnych oraz dla każdego, kto bierze udział w rozmowie mimo bariery językowej. DuoVox zapisuje to, co mówi każda osoba, i tłumaczy to na żywo, obok siebie, z połączenia w Teams lub Zoom, z czegokolwiek innego odtwarzanego na Twoim komputerze albo od osób w pomieszczeniu. Plan Bezpłatny działa offline i bez limitu czasu.",
+  "cta.avail_win": "Dla Windows 10 i 11, w Microsoft Store.",
+  "home.feat.pcaudio.title": "Działa ze wszystkim, co odtwarza Twój komputer",
+  "home.feat.pcaudio.desc": "Połączenia w Teams, Zoom, Google Meet i WhatsApp, YouTube i filmy, bez dołączania czegokolwiek do spotkania. Albo przełącz się na mikrofon dla osób w pomieszczeniu. <a href=\"calls.html\">Połączenia wideo &rarr;</a>",
+  "home.how.4b": "Naciśnij Start. DuoVox nasłuchuje tego, co odtwarza Twój komputer, na przykład połączenia lub filmu, albo osób w pomieszczeniu przez Twój mikrofon, i od razu zaczyna to zapisywać."
 }

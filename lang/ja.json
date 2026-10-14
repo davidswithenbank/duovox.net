@@ -424,8 +424,8 @@
   "calls.good.f3": "特に法律や所属組織で求められる場合は、ライブ字幕を使用していることを通話の参加者に伝えてください。",
   "calls.good.f4": "DuoVox は Windows 10 と Windows 11 でご利用いただけます。EU および EEA ではまだご利用いただけません。",
   "calls.more": "各プランの対応言語は？<a href=\"languages.html\">言語一覧を見る</a>。",
-  "meta.index.title": "DuoVox - リアルタイム音声翻訳 | David Arthur Software",
-  "meta.index.desc": "DuoVox は会話をリアルタイムで翻訳します。49 言語に対応した 2 レーン音声文字起こしと AI 翻訳。David Arthur Software 提供。",
+  "meta.index.title": "DuoVox: Windows 向け、通訳者と通話のためのライブ字幕と翻訳",
+  "meta.index.desc": "Windows PC上で使える、2言語のライブ文字起こしと翻訳。プロの通訳者向けに作られています。Teams、Zoom、PCで再生されるあらゆる音声、またはその場にいる人々の声に対応。無料のオフラインプラン。",
   "meta.calls.title": "Windows のビデオ通話向けライブ字幕と翻訳 - DuoVox",
   "meta.calls.desc": "Windows PC での Teams、Zoom、Google Meet などあらゆるビデオ通話にライブ字幕と翻訳を。30 言語の無料オフラインモード、クラウド AI なら最大 43 言語。",
   "meta.languages.title": "プラン別の対応言語 - DuoVox | David Arthur Software",
@@ -687,5 +687,12 @@
   "help.tut.v9": "保存とプライバシー",
   "help.tut.v11": "キーボードショートカット",
   "help.tut.v12": "困ったときは",
-  "help.tut.v10": "プラン、時間、追加購入"
+  "help.tut.v10": "プラン、時間、追加購入",
+  "nav.calls": "ビデオ通話",
+  "home.subtitle2": "会話の両側に対応するライブ字幕と翻訳を、Windows PCで。",
+  "home.tagline2": "プロの通訳者のために、そして言葉の壁を越えて通話するあらゆる人のために作られています。DuoVox は、Teams や Zoom の通話、PCで再生されるその他あらゆる音声、またはその場にいる人々の話した内容を文字起こしし、ライブで並べて翻訳します。無料プランはオフラインで、時間制限なく利用できます。",
+  "cta.avail_win": "Windows 10 と 11 向け。Microsoft Store から入手できます。",
+  "home.feat.pcaudio.title": "PCで再生されるあらゆる音声に対応",
+  "home.feat.pcaudio.desc": "Teams、Zoom、Google Meet、WhatsApp の通話、YouTube や映画にも対応し、会議に何も参加させる必要はありません。あるいはマイクに切り替えて、その場にいる人々の声を扱えます。<a href=\"calls.html\">ビデオ通話 &rarr;</a>",
+  "home.how.4b": "Start を押します。DuoVox は、通話や動画などPCで再生されている音声、またはマイクを通したその場にいる人々の声を聞き取り、すぐに文字起こしを始めます。"
 }

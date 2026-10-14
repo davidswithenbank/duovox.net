@@ -424,8 +424,8 @@
   "calls.good.f3": "請告知通話中的其他人您正在使用即時字幕，尤其是在法律或您的組織有此要求時。",
   "calls.good.f4": "DuoVox 支援 Windows 10 與 Windows 11。目前尚未在歐盟或歐洲經濟區推出。",
   "calls.more": "每個方案包含哪些語言？<a href=\"languages.html\">查看語言清單</a>。",
-  "meta.index.title": "DuoVox - 即時語音翻譯 | David Arthur Software",
-  "meta.index.desc": "DuoVox 即時翻譯對話。雙通道語音轉寫與 AI 翻譯，支援 49 種語言。由 David Arthur Software 推出。",
+  "meta.index.title": "DuoVox：為口譯員與 Windows 通話提供的即時字幕與翻譯",
+  "meta.index.desc": "在您的 Windows PC 上提供即時雙語逐字稿與翻譯，專為專業口譯員打造。可搭配 Teams、Zoom 以及您的 PC 播放的任何音訊，或房間裡的人聲使用。Free 離線方案。",
   "meta.calls.title": "Windows 視訊通話的即時字幕與翻譯 - DuoVox",
   "meta.calls.desc": "適用於 Teams、Zoom、Google Meet 及您 Windows PC 上任何視訊通話的即時字幕與翻譯。提供 30 種語言的 Free 離線模式；使用雲端 AI 最多支援 43 種語言。",
   "meta.languages.title": "各方案支援的語言 - DuoVox | David Arthur Software",
@@ -687,5 +687,12 @@
   "help.tut.v9": "儲存與隱私",
   "help.tut.v11": "鍵盤快速鍵",
   "help.tut.v12": "取得協助",
-  "help.tut.v10": "方案、時數與加值"
+  "help.tut.v10": "方案、時數與加值",
+  "nav.calls": "視訊通話",
+  "home.subtitle2": "在您的 Windows PC 上，為對話雙方提供即時字幕與翻譯。",
+  "home.tagline2": "專為專業口譯員打造，也適合任何跨語言通話的人。DuoVox 會即時記錄每個人說的話並加以翻譯，並排顯示，來源可為 Teams 或 Zoom 通話、您 PC 播放的任何其他音訊，或房間裡的人聲。Free 方案可離線使用，且沒有時間限制。",
+  "cta.avail_win": "適用於 Windows 10 和 11，可從 Microsoft Store 取得。",
+  "home.feat.pcaudio.title": "可搭配您的 PC 播放的任何內容使用",
+  "home.feat.pcaudio.desc": "Teams、Zoom、Google Meet 和 WhatsApp 通話，YouTube 和電影，都不會有任何機器人或程式加入會議。或者切換到麥克風，收錄房間裡的人聲。<a href=\"calls.html\">視訊通話 &rarr;</a>",
+  "home.how.4b": "按下開始。DuoVox 會聆聽您的 PC 正在播放的內容，例如通話或影片，或透過您的麥克風收錄房間裡的人聲，並立即開始將其記錄下來。"
 }

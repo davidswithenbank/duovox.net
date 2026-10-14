@@ -424,8 +424,8 @@
   "calls.good.f3": "특히 법이나 소속 기관에서 요구하는 경우, 통화 참여자에게 실시간 자막을 사용 중이라고 알려 주세요.",
   "calls.good.f4": "DuoVox는 Windows 10과 Windows 11에서 사용할 수 있습니다. EU 및 EEA에서는 아직 사용할 수 없습니다.",
   "calls.more": "요금제별로 어떤 언어를 지원하나요? <a href=\"languages.html\">언어 목록 보기</a>.",
-  "meta.index.title": "DuoVox - 실시간 음성 번역 | David Arthur Software",
-  "meta.index.desc": "DuoVox는 대화를 실시간으로 번역합니다. 49개 언어의 2채널 음성 전사와 AI 번역. David Arthur Software 제공.",
+  "meta.index.title": "DuoVox: Windows용 통역사와 통화를 위한 실시간 자막 및 번역",
+  "meta.index.desc": "전문 통역사를 위해 만들어진, Windows PC용 실시간 2개 언어 전사 및 번역입니다. Teams, Zoom 및 PC에서 재생되는 모든 오디오, 또는 같은 공간에 있는 사람들의 말에도 작동합니다. 무료 오프라인 플랜.",
   "meta.calls.title": "Windows 화상 통화를 위한 실시간 자막과 번역 - DuoVox",
   "meta.calls.desc": "Windows PC에서 Teams, Zoom, Google Meet 등 모든 화상 통화에 실시간 자막과 번역을 제공합니다. 30개 언어 무료 오프라인 모드, 클라우드 AI로 최대 43개 언어.",
   "meta.languages.title": "요금제별 지원 언어 - DuoVox | David Arthur Software",
@@ -687,5 +687,12 @@
   "help.tut.v9": "저장 및 개인정보 보호",
   "help.tut.v11": "키보드 단축키",
   "help.tut.v12": "도움 받기",
-  "help.tut.v10": "요금제, 시간 및 추가 충전"
+  "help.tut.v10": "요금제, 시간 및 추가 충전",
+  "nav.calls": "영상 통화",
+  "home.subtitle2": "Windows PC에서 대화 양쪽의 실시간 자막과 번역을 제공합니다.",
+  "home.tagline2": "전문 통역사를 위해, 그리고 언어 장벽을 넘어 통화하는 모든 사람을 위해 만들어졌습니다. DuoVox는 각 사람이 말한 내용을 받아 적고 실시간으로 나란히 번역해 줍니다. Teams나 Zoom 통화, PC에서 재생되는 다른 어떤 오디오든, 또는 같은 공간에 있는 사람들의 말까지 지원합니다. 무료 플랜은 오프라인에서 시간 제한 없이 실행됩니다.",
+  "cta.avail_win": "Windows 10 및 11용, Microsoft Store에서 다운로드할 수 있습니다.",
+  "home.feat.pcaudio.title": "PC에서 재생되는 어떤 오디오와도 작동",
+  "home.feat.pcaudio.desc": "Teams, Zoom, Google Meet 및 WhatsApp 통화는 물론 YouTube와 영화까지, 회의에 아무것도 참여시키지 않고 사용할 수 있습니다. 또는 마이크로 전환해 같은 공간에 있는 사람들의 말도 들을 수 있습니다. <a href=\"calls.html\">영상 통화 &rarr;</a>",
+  "home.how.4b": "Start를 누르세요. DuoVox는 통화나 동영상처럼 PC에서 재생되는 오디오를 듣거나, 마이크를 통해 같은 공간에 있는 사람들의 말을 듣고, 즉시 받아쓰기를 시작합니다."
 }

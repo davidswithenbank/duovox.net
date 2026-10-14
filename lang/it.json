@@ -424,8 +424,8 @@
   "calls.good.f3": "Avvisa i partecipanti che stai usando i sottotitoli in diretta, soprattutto quando la legge o la tua organizzazione lo richiedono.",
   "calls.good.f4": "DuoVox è disponibile per Windows 10 e Windows 11. Non è ancora disponibile nell’UE né nel SEE.",
   "calls.more": "Quali lingue copre ogni piano? <a href=\"languages.html\">Vedi l’elenco delle lingue</a>.",
-  "meta.index.title": "DuoVox - Traduzione vocale in tempo reale | David Arthur Software",
-  "meta.index.desc": "DuoVox traduce le conversazioni in tempo reale. Trascrizione vocale a doppio canale e traduzione con IA in 49 lingue. Di David Arthur Software.",
+  "meta.index.title": "DuoVox: sottotitoli in tempo reale e traduzione per interpreti e chiamate su Windows",
+  "meta.index.desc": "Una trascrizione e traduzione bilingue in tempo reale sul tuo PC Windows, creata per interpreti professionisti. Funziona con Teams, Zoom e qualsiasi audio riprodotto dal tuo PC, oppure con le persone nella stanza. Piano Gratuito offline.",
   "meta.calls.title": "Sottotitoli e traduzione in diretta per le videochiamate su Windows - DuoVox",
   "meta.calls.desc": "Sottotitoli e traduzione in diretta per Teams, Zoom, Google Meet e qualsiasi videochiamata sul tuo PC Windows. Modalità offline gratuita in 30 lingue; fino a 43 lingue con l’IA nel cloud.",
   "meta.languages.title": "Lingue per piano - DuoVox | David Arthur Software",
@@ -687,5 +687,12 @@
   "help.tut.v9": "Salvataggio e privacy",
   "help.tut.v11": "Scorciatoie da tastiera",
   "help.tut.v12": "Ottenere aiuto",
-  "help.tut.v10": "Piani, ore e ricariche"
+  "help.tut.v10": "Piani, ore e ricariche",
+  "nav.calls": "Videochiamate",
+  "home.subtitle2": "Sottotitoli in tempo reale e traduzione per entrambi i lati di una conversazione, sul tuo PC Windows.",
+  "home.tagline2": "Creato per interpreti professionisti e per chiunque partecipi a una chiamata con una barriera linguistica. DuoVox trascrive ciò che dice ciascuna persona e lo traduce, in tempo reale e affiancato, da una chiamata Teams o Zoom, da qualsiasi altra cosa riprodotta dal tuo PC o dalle persone nella stanza. Il piano Gratuito funziona offline senza limiti di tempo.",
+  "cta.avail_win": "Per Windows 10 e 11, dal Microsoft Store.",
+  "home.feat.pcaudio.title": "Funziona con qualsiasi audio riprodotto dal tuo PC",
+  "home.feat.pcaudio.desc": "Chiamate su Teams, Zoom, Google Meet e WhatsApp, YouTube e film, senza che nulla si unisca alla riunione. Oppure passa al microfono per le persone nella stanza. <a href=\"calls.html\">Videochiamate &rarr;</a>",
+  "home.how.4b": "Premi Start. DuoVox ascolta ciò che il tuo PC sta riproducendo, come una chiamata o un video, oppure le persone nella stanza tramite il microfono, e inizia subito a trascriverlo."
 }

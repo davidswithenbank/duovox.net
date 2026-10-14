@@ -424,8 +424,8 @@
   "calls.good.f3": "Sagen Sie den Teilnehmern, dass Sie Live-Untertitel verwenden, besonders wenn das Gesetz oder Ihre Organisation es verlangt.",
   "calls.good.f4": "DuoVox ist für Windows 10 und Windows 11 erhältlich. In der EU und im EWR ist es noch nicht verfügbar.",
   "calls.more": "Welche Sprachen deckt welcher Tarif ab? <a href=\"languages.html\">Zur Sprachliste</a>.",
-  "meta.index.title": "DuoVox - Sprachübersetzung in Echtzeit | David Arthur Software",
-  "meta.index.desc": "DuoVox übersetzt Gespräche in Echtzeit. Zweispurige Sprachtranskription und KI-gestützte Übersetzung in 49 Sprachen. Von David Arthur Software.",
+  "meta.index.title": "DuoVox: Live-Untertitel und Übersetzung für Dolmetscher und Anrufe unter Windows",
+  "meta.index.desc": "Ein Live-Transkript und eine Live-Übersetzung in zwei Sprachen auf Ihrem Windows-PC, entwickelt für professionelle Dolmetscher. Funktioniert mit Teams, Zoom und jedem Audio, das Ihr PC abspielt, oder mit Menschen im Raum. Kostenloser Offline-Tarif.",
   "meta.calls.title": "Live-Untertitel und Übersetzung für Videoanrufe unter Windows - DuoVox",
   "meta.calls.desc": "Live-Untertitel und Übersetzung für Teams, Zoom, Google Meet und jeden Videoanruf auf Ihrem Windows-PC. Kostenloser Offline-Modus in 30 Sprachen; bis zu 43 Sprachen mit Cloud-KI.",
   "meta.languages.title": "Sprachen nach Tarif - DuoVox | David Arthur Software",
@@ -687,5 +687,12 @@
   "help.tut.v9": "Speichern und Datenschutz",
   "help.tut.v11": "Tastenkombinationen",
   "help.tut.v12": "Hilfe erhalten",
-  "help.tut.v10": "Tarife, Stunden und Aufladungen"
+  "help.tut.v10": "Tarife, Stunden und Aufladungen",
+  "nav.calls": "Videoanrufe",
+  "home.subtitle2": "Live-Untertitel und Übersetzung für beide Seiten eines Gesprächs auf Ihrem Windows-PC.",
+  "home.tagline2": "Entwickelt für professionelle Dolmetscher und für alle, die in einem Anruf über eine Sprachbarriere hinweg sprechen. DuoVox schreibt auf, was jede Person sagt, und übersetzt es live und nebeneinander – aus einem Teams- oder Zoom-Anruf, allem anderen, was Ihr PC abspielt, oder von den Menschen im Raum. Der kostenlose Tarif läuft offline ohne Zeitbegrenzung.",
+  "cta.avail_win": "Für Windows 10 und 11, im Microsoft Store erhältlich.",
+  "home.feat.pcaudio.title": "Funktioniert mit allem, was Ihr PC abspielt",
+  "home.feat.pcaudio.desc": "Anrufe über Teams, Zoom, Google Meet und WhatsApp, YouTube und Filme – ohne dass irgendetwas dem Meeting beitritt. Oder wechseln Sie zum Mikrofon für die Menschen im Raum. <a href=\"calls.html\">Videoanrufe &rarr;</a>",
+  "home.how.4b": "Drücken Sie auf Start. DuoVox hört zu, was Ihr PC abspielt, zum Beispiel einen Anruf oder ein Video, oder über Ihr Mikrofon den Menschen im Raum, und beginnt sofort, es aufzuschreiben."
 }

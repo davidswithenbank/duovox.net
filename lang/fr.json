@@ -424,8 +424,8 @@
   "calls.good.f3": "Prévenez les participants que vous utilisez des sous-titres en direct, surtout lorsque la loi ou votre organisation l’exige.",
   "calls.good.f4": "DuoVox est disponible pour Windows 10 et Windows 11. Il n’est pas encore disponible dans l’UE ni dans l’EEE.",
   "calls.more": "Quelles langues chaque offre couvre-t-elle ? <a href=\"languages.html\">Voir la liste des langues</a>.",
-  "meta.index.title": "DuoVox - Traduction vocale en temps réel | David Arthur Software",
-  "meta.index.desc": "DuoVox traduit les conversations en temps réel. Transcription vocale à deux voies et traduction par IA dans 49 langues. Par David Arthur Software.",
+  "meta.index.title": "DuoVox : sous-titres en direct et traduction pour les interprètes et les appels sur Windows",
+  "meta.index.desc": "Une transcription et traduction en direct en deux langues sur votre PC Windows, conçue pour les interprètes professionnels. Fonctionne avec Teams, Zoom et tout audio lu par votre PC, ou avec les personnes dans la pièce. Forfait Gratuit hors ligne.",
   "meta.calls.title": "Sous-titres et traduction en direct pour les appels vidéo sous Windows - DuoVox",
   "meta.calls.desc": "Sous-titres et traduction en direct pour Teams, Zoom, Google Meet et tout appel vidéo sur votre PC Windows. Mode hors ligne gratuit dans 30 langues ; jusqu’à 43 langues avec l’IA dans le cloud.",
   "meta.languages.title": "Langues par offre - DuoVox | David Arthur Software",
@@ -687,5 +687,12 @@
   "help.tut.v9": "Enregistrement et confidentialité",
   "help.tut.v11": "Raccourcis clavier",
   "help.tut.v12": "Obtenir de l’aide",
-  "help.tut.v10": "Forfaits, heures et recharges"
+  "help.tut.v10": "Forfaits, heures et recharges",
+  "nav.calls": "Appels vidéo",
+  "home.subtitle2": "Sous-titres en direct et traduction pour les deux côtés d’une conversation, sur votre PC Windows.",
+  "home.tagline2": "Conçu pour les interprètes professionnels, et pour toute personne en appel malgré une barrière de langue. DuoVox transcrit ce que dit chaque personne et le traduit, en direct et côte à côte, à partir d’un appel Teams ou Zoom, de tout autre son lu par votre PC, ou des personnes dans la pièce. Le forfait Gratuit fonctionne hors ligne, sans limite de temps.",
+  "cta.avail_win": "Pour Windows 10 et 11, sur le Microsoft Store.",
+  "home.feat.pcaudio.title": "Fonctionne avec tout ce que votre PC lit",
+  "home.feat.pcaudio.desc": "Appels Teams, Zoom, Google Meet et WhatsApp, YouTube et films, sans que rien ne rejoigne la réunion. Ou passez au microphone pour les personnes dans la pièce. <a href=\"calls.html\">Appels vidéo &rarr;</a>",
+  "home.how.4b": "Appuyez sur Démarrer. DuoVox écoute ce que votre PC lit, comme un appel ou une vidéo, ou les personnes dans la pièce via votre microphone, et commence à le transcrire immédiatement."
 }

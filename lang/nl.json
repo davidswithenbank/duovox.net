@@ -424,8 +424,8 @@
   "calls.good.f3": "Laat de deelnemers weten dat je live ondertiteling gebruikt, vooral als de wet of je organisatie dat vereist.",
   "calls.good.f4": "DuoVox is beschikbaar voor Windows 10 en Windows 11. Het is nog niet beschikbaar in de EU of de EER.",
   "calls.more": "Welke talen vallen onder elk abonnement? <a href=\"languages.html\">Bekijk de talenlijst</a>.",
-  "meta.index.title": "DuoVox - Realtime spraakvertaling | David Arthur Software",
-  "meta.index.desc": "DuoVox vertaalt gesprekken in realtime. Spraaktranscriptie in twee sporen en AI-vertaling in 49 talen. Van David Arthur Software.",
+  "meta.index.title": "DuoVox: live ondertiteling en vertaling voor tolken en gesprekken op Windows",
+  "meta.index.desc": "Een live transcript en vertaling in twee talen op je Windows-pc, gebouwd voor professionele tolken. Werkt met Teams, Zoom en alle audio die je pc afspeelt, of met mensen in de kamer. Gratis offline-abonnement.",
   "meta.calls.title": "Live ondertiteling en vertaling voor videogesprekken op Windows - DuoVox",
   "meta.calls.desc": "Live ondertiteling en vertaling voor Teams, Zoom, Google Meet en elk videogesprek op je Windows-pc. Gratis offline modus in 30 talen; tot 43 talen met AI in de cloud.",
   "meta.languages.title": "Talen per abonnement - DuoVox | David Arthur Software",
@@ -687,5 +687,12 @@
   "help.tut.v9": "Opslaan en privacy",
   "help.tut.v11": "Sneltoetsen",
   "help.tut.v12": "Hulp krijgen",
-  "help.tut.v10": "Abonnementen, uren en opwaarderingen"
+  "help.tut.v10": "Abonnementen, uren en opwaarderingen",
+  "nav.calls": "Videogesprekken",
+  "home.subtitle2": "Live ondertiteling en vertaling voor beide kanten van een gesprek, op je Windows-pc.",
+  "home.tagline2": "Gebouwd voor professionele tolken, en voor iedereen die belt over een taalbarrière heen. DuoVox schrijft op wat elke persoon zegt en vertaalt het, live en naast elkaar, vanuit een Teams- of Zoom-gesprek, alles wat je pc verder afspeelt, of de mensen in de kamer. Het Gratis-abonnement werkt offline zonder tijdslimiet.",
+  "cta.avail_win": "Voor Windows 10 en 11, in de Microsoft Store.",
+  "home.feat.pcaudio.title": "Werkt met alles wat je pc afspeelt",
+  "home.feat.pcaudio.desc": "Teams-, Zoom-, Google Meet- en WhatsApp-gesprekken, YouTube en films, zonder dat er iets aan de vergadering deelneemt. Of schakel over naar de microfoon voor de mensen in de kamer. <a href=\"calls.html\">Videogesprekken &rarr;</a>",
+  "home.how.4b": "Druk op Start. DuoVox luistert naar wat je pc afspeelt, zoals een gesprek of een video, of naar de mensen in de kamer via je microfoon, en begint het meteen op te schrijven."
 }

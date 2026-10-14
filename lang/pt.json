@@ -424,8 +424,8 @@
   "calls.good.f3": "Avise as pessoas da chamada de que está a usar legendas em direto, sobretudo quando a lei ou a sua organização o exigir.",
   "calls.good.f4": "O DuoVox está disponível para Windows 10 e Windows 11. Ainda não está disponível na UE nem no EEE.",
   "calls.more": "Que idiomas inclui cada plano? <a href=\"languages.html\">Ver a lista de idiomas</a>.",
-  "meta.index.title": "DuoVox - Tradução de voz em tempo real | David Arthur Software",
-  "meta.index.desc": "O DuoVox traduz conversas em tempo real. Transcrição de voz em duas faixas e tradução com IA em 49 idiomas. Da David Arthur Software.",
+  "meta.index.title": "DuoVox: legendas ao vivo e tradução para intérpretes e chamadas no Windows",
+  "meta.index.desc": "Uma transcrição e tradução ao vivo em duas línguas no seu PC Windows, criada para intérpretes profissionais. Funciona com Teams, Zoom e qualquer áudio reproduzido pelo seu PC, ou com pessoas na sala. Plano offline gratuito.",
   "meta.calls.title": "Legendas e tradução em direto para videochamadas no Windows - DuoVox",
   "meta.calls.desc": "Legendas e tradução em direto para Teams, Zoom, Google Meet e qualquer videochamada no seu PC com Windows. Modo offline gratuito em 30 idiomas; até 43 idiomas com IA na nuvem.",
   "meta.languages.title": "Idiomas por plano - DuoVox | David Arthur Software",
@@ -687,5 +687,12 @@
   "help.tut.v9": "Guardar e privacidade",
   "help.tut.v11": "Atalhos de teclado",
   "help.tut.v12": "Obter ajuda",
-  "help.tut.v10": "Planos, horas e recargas"
+  "help.tut.v10": "Planos, horas e recargas",
+  "nav.calls": "Chamadas de vídeo",
+  "home.subtitle2": "Legendas ao vivo e tradução para ambos os lados de uma conversa, no seu PC Windows.",
+  "home.tagline2": "Criado para intérpretes profissionais e para qualquer pessoa numa chamada com uma barreira linguística. O DuoVox transcreve o que cada pessoa diz e traduz, ao vivo e lado a lado, a partir de uma chamada no Teams ou Zoom, de qualquer outra coisa reproduzida pelo seu PC, ou das pessoas na sala. O plano gratuito funciona offline sem limite de tempo.",
+  "cta.avail_win": "Para Windows 10 e 11, na Microsoft Store.",
+  "home.feat.pcaudio.title": "Funciona com Tudo o que o seu PC Reproduz",
+  "home.feat.pcaudio.desc": "Chamadas no Teams, Zoom, Google Meet e WhatsApp, YouTube e filmes, sem que nada entre na reunião. Ou mude para o microfone para captar as pessoas na sala. <a href=\"calls.html\">Chamadas de vídeo &rarr;</a>",
+  "home.how.4b": "Prima Iniciar. O DuoVox ouve o que o seu PC está a reproduzir, como uma chamada ou um vídeo, ou as pessoas na sala através do seu microfone, e começa a transcrever imediatamente."
 }

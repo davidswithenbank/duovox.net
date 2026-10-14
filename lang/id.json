@@ -424,8 +424,8 @@
   "calls.good.f3": "Beri tahu peserta panggilan bahwa Anda memakai teks langsung, terutama jika diwajibkan oleh hukum atau organisasi Anda.",
   "calls.good.f4": "DuoVox tersedia untuk Windows 10 dan Windows 11. Belum tersedia di UE atau EEA.",
   "calls.more": "Bahasa apa saja yang dicakup setiap paket? <a href=\"languages.html\">Lihat daftar bahasa</a>.",
-  "meta.index.title": "DuoVox - Terjemahan suara real-time | David Arthur Software",
-  "meta.index.desc": "DuoVox menerjemahkan percakapan secara real-time. Transkripsi suara dua jalur dan terjemahan AI dalam 49 bahasa. Dari David Arthur Software.",
+  "meta.index.title": "DuoVox: subtitle dan terjemahan langsung untuk interpreter dan panggilan di Windows",
+  "meta.index.desc": "Transkrip dan terjemahan langsung dua bahasa di PC Windows Anda, dibuat untuk interpreter profesional. Berfungsi dengan Teams, Zoom, dan audio apa pun yang diputar PC Anda, atau orang-orang di ruangan. Paket offline Free.",
   "meta.calls.title": "Teks dan terjemahan langsung untuk panggilan video di Windows - DuoVox",
   "meta.calls.desc": "Caption langsung dan terjemahan untuk Teams, Zoom, Google Meet, dan panggilan video apa pun di PC Windows Anda. Mode offline Free dalam 30 bahasa; hingga 43 bahasa dengan AI cloud.",
   "meta.languages.title": "Bahasa per paket - DuoVox | David Arthur Software",
@@ -687,5 +687,12 @@
   "help.tut.v9": "Penyimpanan dan privasi",
   "help.tut.v11": "Shortcut keyboard",
   "help.tut.v12": "Mendapatkan bantuan",
-  "help.tut.v10": "Paket, jam, dan top-up"
+  "help.tut.v10": "Paket, jam, dan top-up",
+  "nav.calls": "Panggilan video",
+  "home.subtitle2": "Subtitle dan terjemahan langsung untuk kedua sisi percakapan, di PC Windows Anda.",
+  "home.tagline2": "Dibuat untuk interpreter profesional, dan untuk siapa saja yang sedang menelepon melintasi perbedaan bahasa. DuoVox menuliskan apa yang dikatakan setiap orang dan menerjemahkannya, secara langsung dan berdampingan, dari panggilan Teams atau Zoom, apa pun yang diputar PC Anda, atau orang-orang di ruangan. Paket Free berjalan secara offline tanpa batas waktu.",
+  "cta.avail_win": "Untuk Windows 10 dan 11, dari Microsoft Store.",
+  "home.feat.pcaudio.title": "Berfungsi Dengan Apa Pun yang Diputar PC Anda",
+  "home.feat.pcaudio.desc": "Panggilan Teams, Zoom, Google Meet, dan WhatsApp, YouTube dan film, tanpa ada apa pun yang bergabung ke rapat. Atau beralih ke mikrofon untuk orang-orang di ruangan. <a href=\"calls.html\">Panggilan video &rarr;</a>",
+  "home.how.4b": "Tekan Start. DuoVox mendengarkan apa yang sedang diputar PC Anda, seperti panggilan atau video, atau orang-orang di ruangan melalui mikrofon Anda, dan langsung mulai menuliskannya."
 }

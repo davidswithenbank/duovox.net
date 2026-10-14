@@ -424,8 +424,8 @@
   "calls.good.f3": "Hãy cho những người trong cuộc gọi biết bạn đang dùng phụ đề trực tiếp, nhất là khi luật pháp hoặc tổ chức của bạn yêu cầu.",
   "calls.good.f4": "DuoVox có cho Windows 10 và Windows 11. Ứng dụng chưa có tại EU hoặc EEA.",
   "calls.more": "Mỗi gói hỗ trợ những ngôn ngữ nào? <a href=\"languages.html\">Xem danh sách ngôn ngữ</a>.",
-  "meta.index.title": "DuoVox - Dịch giọng nói theo thời gian thực | David Arthur Software",
-  "meta.index.desc": "DuoVox dịch các cuộc trò chuyện theo thời gian thực. Chép lời giọng nói hai luồng và dịch bằng AI trên 49 ngôn ngữ. Của David Arthur Software.",
+  "meta.index.title": "DuoVox: phụ đề trực tiếp và bản dịch cho phiên dịch viên và cuộc gọi trên Windows",
+  "meta.index.desc": "Bản ghi và bản dịch trực tiếp bằng hai ngôn ngữ trên PC Windows của bạn, được xây dựng cho phiên dịch viên chuyên nghiệp. Hoạt động với Teams, Zoom và mọi âm thanh mà PC của bạn phát, hoặc với những người trong phòng. Gói Free ngoại tuyến.",
   "meta.calls.title": "Phụ đề và bản dịch trực tiếp cho cuộc gọi video trên Windows - DuoVox",
   "meta.calls.desc": "Phụ đề trực tiếp và bản dịch cho Teams, Zoom, Google Meet và mọi cuộc gọi video trên PC Windows của bạn. Chế độ ngoại tuyến Free với 30 ngôn ngữ; lên đến 43 ngôn ngữ với AI đám mây.",
   "meta.languages.title": "Ngôn ngữ theo gói - DuoVox | David Arthur Software",
@@ -687,5 +687,12 @@
   "help.tut.v9": "Lưu và quyền riêng tư",
   "help.tut.v11": "Phím tắt",
   "help.tut.v12": "Nhận trợ giúp",
-  "help.tut.v10": "Gói, số giờ và nạp thêm"
+  "help.tut.v10": "Gói, số giờ và nạp thêm",
+  "nav.calls": "Cuộc gọi video",
+  "home.subtitle2": "Phụ đề trực tiếp và bản dịch cho cả hai phía của cuộc trò chuyện, trên PC Windows của bạn.",
+  "home.tagline2": "Được xây dựng cho phiên dịch viên chuyên nghiệp, và cho bất kỳ ai đang trong một cuộc gọi có rào cản ngôn ngữ. DuoVox ghi lại lời nói của từng người và dịch chúng, trực tiếp và song song, từ cuộc gọi Teams hoặc Zoom, bất cứ nội dung nào khác mà PC của bạn phát, hoặc những người trong phòng. Gói Free chạy ngoại tuyến không giới hạn thời gian.",
+  "cta.avail_win": "Dành cho Windows 10 và 11, từ Microsoft Store.",
+  "home.feat.pcaudio.title": "Hoạt động với mọi thứ mà PC của bạn phát",
+  "home.feat.pcaudio.desc": "Cuộc gọi Teams, Zoom, Google Meet và WhatsApp, YouTube và phim, mà không cần bất cứ thứ gì tham gia cuộc họp. Hoặc chuyển sang micrô cho những người trong phòng. <a href=\"calls.html\">Cuộc gọi video &rarr;</a>",
+  "home.how.4b": "Nhấn Bắt đầu. DuoVox sẽ nghe những gì PC của bạn đang phát, chẳng hạn như một cuộc gọi hoặc video, hoặc nghe những người trong phòng qua micrô của bạn, và bắt đầu ghi lại ngay lập tức."
 }
