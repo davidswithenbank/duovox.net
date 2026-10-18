@@ -10,7 +10,9 @@ built on. Re-run this script whenever the maps change; it reads:
   Standard        speech      = DASTranscribe.Core\Services\DeepgramSpeechClient.cs
   Professional    speech      = CaptionOverlay\Services\AzureSpeechClient.cs
 
-⛔ THE PARTIAL STATES ARE THE WHOLE POINT. Hindi has offline speech but NO offline translation;
+⛔ THE PARTIAL STATES ARE THE WHOLE POINT. (Until 12.3.111, 18 Oct 2026, Hindi had offline speech but NO offline translation.)
+⛔⛔ 18 Oct 2026: this script's page TEMPLATE is older than the site's nav - a full regenerate DROPPED the nav links For
+interpreters / Video calls / Help / Press kit. Until the template is brought up to date, apply only the changed rows.
 Hebrew, Bulgarian and Serbian have no offline model at all; Serbian is Professional-only. A page
 that showed a flat "20 languages" per tier would be the very misconception it exists to prevent.
 
