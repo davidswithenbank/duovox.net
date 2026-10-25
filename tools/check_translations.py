@@ -104,9 +104,25 @@ def meaning(items, lang_name, key):
               "(meaning changed, claim strengthened or weakened, something omitted or added, wrong product term). "
               "Ignore style preferences. Items:\n" % lang_name)
     prompt += json.dumps([{"id": i, "en": e, "tr": t} for i, e, t in items], ensure_ascii=False)
+    prompt += "\nThe keys of your JSON reply must be exactly these ids: %s" % json.dumps([i for i, _, _ in items])
     out = post({"model": "gpt-5.4", "messages": [{"role": "user", "content": prompt}],
                 "response_format": {"type": "json_object"}}, key)
     return json.loads(out)
+
+
+def verdict_problems(verdicts, targets):
+    """-> [(key, problem)]. The model sometimes answers "faithful" instead of "" (25 Oct: counted as a problem), and
+    sometimes uses other keys than the ids it was given; a target with no verdict was not checked, so it is reported."""
+    found = []
+    for k in targets:
+        v = verdicts.get(k) if isinstance(verdicts, dict) else None
+        if v is None:
+            found.append((k, "no verdict returned (not checked)"))
+        elif not isinstance(v, str):
+            found.append((k, "unreadable verdict: %r" % (v,)))
+        elif v.strip().strip(".!").strip().lower() not in ("", "faithful", "ok"):
+            found.append((k, v))
+    return found
 
 
 def main():
@@ -183,10 +199,9 @@ def main():
             if not items:
                 continue
             verdicts = meaning(items, name, key)
-            for k, v in verdicts.items():
-                if v:
-                    print("  MEANING  %s %s: %s" % (code, k, v))
-                    errors += 1
+            for k, v in verdict_problems(verdicts, [i for i, _, _ in items]):
+                print("  MEANING  %s %s: %s" % (code, k, v))
+                errors += 1
 
     print("translations: %d problem(s), %d warning(s) across %d languages x %d strings"
           % (errors, warnings, len(others), len(src)))
