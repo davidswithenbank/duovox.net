@@ -747,5 +747,6 @@
   "discord.why.title": "Mengapa DuoVox untuk Discord",
   "discord.why.f1": "<strong>Tanpa bot, tanpa izin server.</strong> Saluran suara, panggilan, dan stream di server mana pun yang Anda ikuti.",
   "meta.discord-translation.title": "Terjemahkan obrolan suara Discord secara langsung di PC Anda - DuoVox",
-  "meta.discord-translation.desc": "DuoVox membuat teks dan menerjemahkan saluran suara, panggilan, dan stream Discord secara langsung di PC Windows Anda, tanpa bot yang perlu ditambahkan ke server."
+  "meta.discord-translation.desc": "DuoVox membuat teks dan menerjemahkan saluran suara, panggilan, dan stream Discord secara langsung di PC Windows Anda, tanpa bot yang perlu ditambahkan ke server.",
+  "footer.about": "Tentang kami"
 }

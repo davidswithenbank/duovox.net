@@ -747,5 +747,6 @@
   "discord.why.title": "Dlaczego DuoVox do Discord",
   "discord.why.f1": "<strong>Bez bota, bez uprawnień serwera.</strong> Kanały głosowe, połączenia i transmisje na dowolnym serwerze, na którym jesteś.",
   "meta.discord-translation.title": "Tłumacz czat głosowy Discord na żywo na swoim komputerze - DuoVox",
-  "meta.discord-translation.desc": "DuoVox tworzy napisy i tłumaczy na żywo kanały głosowe, połączenia i transmisje Discord na Twoim komputerze z Windows, bez bota do dodawania na serwer."
+  "meta.discord-translation.desc": "DuoVox tworzy napisy i tłumaczy na żywo kanały głosowe, połączenia i transmisje Discord na Twoim komputerze z Windows, bez bota do dodawania na serwer.",
+  "footer.about": "O nas"
 }

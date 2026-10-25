@@ -747,5 +747,6 @@
   "discord.why.title": "Warum DuoVox für Discord",
   "discord.why.f1": "<strong>Kein Bot, keine Serverberechtigungen.</strong> Sprachkanäle, Anrufe und Streams auf jedem Server, auf dem du bist.",
   "meta.discord-translation.title": "Übersetze Discord-Sprachchat live auf deinem PC - DuoVox",
-  "meta.discord-translation.desc": "DuoVox erstellt live auf deinem Windows-PC Untertitel und Übersetzungen für Discord-Sprachkanäle, Anrufe und Streams – ohne einen Bot, der dem Server hinzugefügt werden muss."
+  "meta.discord-translation.desc": "DuoVox erstellt live auf deinem Windows-PC Untertitel und Übersetzungen für Discord-Sprachkanäle, Anrufe und Streams – ohne einen Bot, der dem Server hinzugefügt werden muss.",
+  "footer.about": "Über uns"
 }

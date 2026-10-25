@@ -747,5 +747,6 @@
   "discord.why.title": "Discord için neden DuoVox",
   "discord.why.f1": "<strong>Bot yok, sunucu izinleri yok.</strong> İçinde bulunduğunuz herhangi bir sunucudaki ses kanalları, aramalar ve yayınlar.",
   "meta.discord-translation.title": "Discord sesli sohbetini PC'nizde canlı çevirin - DuoVox",
-  "meta.discord-translation.desc": "DuoVox, sunucuya eklenecek bir bot olmadan, Windows PC'nizde Discord ses kanallarını, aramaları ve yayınları canlı olarak altyazıya döker ve çevirir."
+  "meta.discord-translation.desc": "DuoVox, sunucuya eklenecek bir bot olmadan, Windows PC'nizde Discord ses kanallarını, aramaları ve yayınları canlı olarak altyazıya döker ve çevirir.",
+  "footer.about": "Hakkımızda"
 }

@@ -747,5 +747,6 @@
   "discord.why.title": "Discord に DuoVox を使う理由",
   "discord.why.f1": "<strong>ボット不要、サーバー権限も不要。</strong> 参加しているあらゆるサーバーのボイスチャンネル、通話、配信に対応します。",
   "meta.discord-translation.title": "PC で Discord のボイスチャットをライブ翻訳 - DuoVox",
-  "meta.discord-translation.desc": "DuoVox は、サーバーにボットを追加することなく、ご自身の Windows PC 上で Discord のボイスチャンネル、通話、配信をライブで字幕表示・翻訳します。"
+  "meta.discord-translation.desc": "DuoVox は、サーバーにボットを追加することなく、ご自身の Windows PC 上で Discord のボイスチャンネル、通話、配信をライブで字幕表示・翻訳します。",
+  "footer.about": "私たちについて"
 }

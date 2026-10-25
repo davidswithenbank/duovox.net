@@ -747,5 +747,6 @@
   "discord.why.title": "ทำไมต้อง DuoVox สำหรับ Discord",
   "discord.why.f1": "<strong>ไม่มีบอต ไม่ต้องมีสิทธิ์บนเซิร์ฟเวอร์.</strong> ช่องเสียง การโทร และสตรีมบนเซิร์ฟเวอร์ใด ๆ ที่คุณอยู่",
   "meta.discord-translation.title": "แปลแชตเสียง Discord แบบสดบน PC ของคุณ - DuoVox",
-  "meta.discord-translation.desc": "DuoVox ทำคำบรรยายและแปลช่องเสียง การโทร และสตรีมบน Discord แบบสดบน Windows PC ของคุณ โดยไม่ต้องเพิ่มบอตเข้าเซิร์ฟเวอร์"
+  "meta.discord-translation.desc": "DuoVox ทำคำบรรยายและแปลช่องเสียง การโทร และสตรีมบน Discord แบบสดบน Windows PC ของคุณ โดยไม่ต้องเพิ่มบอตเข้าเซิร์ฟเวอร์",
+  "footer.about": "เกี่ยวกับเรา"
 }

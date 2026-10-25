@@ -747,5 +747,6 @@
   "discord.why.title": "Чому DuoVox для Discord",
   "discord.why.f1": "<strong>Без бота, без дозволів на сервері.</strong> Голосові канали, дзвінки та трансляції на будь-якому сервері, де ви є.",
   "meta.discord-translation.title": "Перекладайте голосовий чат Discord наживо на своєму ПК - DuoVox",
-  "meta.discord-translation.desc": "DuoVox створює субтитри й перекладає голосові канали, дзвінки та трансляції Discord наживо на вашому ПК Windows, без бота, якого потрібно додавати на сервер."
+  "meta.discord-translation.desc": "DuoVox створює субтитри й перекладає голосові канали, дзвінки та трансляції Discord наживо на вашому ПК Windows, без бота, якого потрібно додавати на сервер.",
+  "footer.about": "Про нас"
 }

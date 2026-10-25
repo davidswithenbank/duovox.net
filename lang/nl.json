@@ -747,5 +747,6 @@
   "discord.why.title": "Waarom DuoVox voor Discord",
   "discord.why.f1": "<strong>Geen bot, geen servermachtigingen.</strong> Spraakkanalen, gesprekken en streams op elke server waar je in zit.",
   "meta.discord-translation.title": "Vertaal Discord-spraakchat live op je pc - DuoVox",
-  "meta.discord-translation.desc": "DuoVox ondertitelt en vertaalt Discord-spraakkanalen, gesprekken en streams live op je Windows-pc, zonder bot die je aan de server hoeft toe te voegen."
+  "meta.discord-translation.desc": "DuoVox ondertitelt en vertaalt Discord-spraakkanalen, gesprekken en streams live op je Windows-pc, zonder bot die je aan de server hoeft toe te voegen.",
+  "footer.about": "Over ons"
 }

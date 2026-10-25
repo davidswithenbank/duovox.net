@@ -747,5 +747,6 @@
   "discord.why.title": "Pourquoi choisir DuoVox pour Discord",
   "discord.why.f1": "<strong>Sans bot, sans autorisations sur le serveur.</strong> Salons vocaux, appels et streams sur tous les serveurs dont vous faites partie.",
   "meta.discord-translation.title": "Traduisez le chat vocal Discord en direct sur votre PC - DuoVox",
-  "meta.discord-translation.desc": "DuoVox sous-titre et traduit en direct les salons vocaux, appels et streams Discord sur votre PC Windows, sans bot à ajouter au serveur."
+  "meta.discord-translation.desc": "DuoVox sous-titre et traduit en direct les salons vocaux, appels et streams Discord sur votre PC Windows, sans bot à ajouter au serveur.",
+  "footer.about": "À propos de nous"
 }

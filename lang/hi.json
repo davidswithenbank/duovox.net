@@ -747,5 +747,6 @@
   "discord.why.title": "Discord के लिए DuoVox क्यों",
   "discord.why.f1": "<strong>न कोई बॉट, न सर्वर परमिशन।</strong> किसी भी ऐसे सर्वर पर वॉइस चैनल, कॉल्स और स्ट्रीम्स जिसमें आप हैं।",
   "meta.discord-translation.title": "अपने PC पर Discord वॉइस चैट का लाइव अनुवाद करें - DuoVox",
-  "meta.discord-translation.desc": "DuoVox आपके Windows PC पर Discord वॉइस चैनल्स, कॉल्स और स्ट्रीम्स का लाइव कैप्शन और अनुवाद करता है, सर्वर में जोड़ने के लिए किसी बॉट के बिना।"
+  "meta.discord-translation.desc": "DuoVox आपके Windows PC पर Discord वॉइस चैनल्स, कॉल्स और स्ट्रीम्स का लाइव कैप्शन और अनुवाद करता है, सर्वर में जोड़ने के लिए किसी बॉट के बिना।",
+  "footer.about": "हमारे बारे में"
 }

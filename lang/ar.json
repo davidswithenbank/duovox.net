@@ -747,5 +747,6 @@
   "discord.why.title": "لماذا DuoVox مع Discord",
   "discord.why.f1": "<strong>من دون bot، ومن دون أذونات للخادم.</strong> القنوات الصوتية والمكالمات والبثوث على أي خادم أنت موجود فيه.",
   "meta.discord-translation.title": "ترجم الدردشة الصوتية على Discord مباشرةً على جهاز الكمبيوتر لديك - DuoVox",
-  "meta.discord-translation.desc": "يعرض DuoVox تسميات توضيحية للقنوات الصوتية والمكالمات والبثوث على Discord ويترجمها مباشرةً على جهاز Windows PC الخاص بك، من دون أي bot لإضافته إلى الخادم."
+  "meta.discord-translation.desc": "يعرض DuoVox تسميات توضيحية للقنوات الصوتية والمكالمات والبثوث على Discord ويترجمها مباشرةً على جهاز Windows PC الخاص بك، من دون أي bot لإضافته إلى الخادم.",
+  "footer.about": "معلومات عنا"
 }

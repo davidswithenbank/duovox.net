@@ -747,5 +747,6 @@
   "discord.why.title": "Por qué DuoVox para Discord",
   "discord.why.f1": "<strong>Sin bot, sin permisos del servidor.</strong> Canales de voz, llamadas y transmisiones en cualquier servidor en el que estés.",
   "meta.discord-translation.title": "Traduce el chat de voz de Discord en directo en tu PC - DuoVox",
-  "meta.discord-translation.desc": "DuoVox subtitula y traduce canales de voz, llamadas y transmisiones de Discord en directo en tu PC con Windows, sin ningún bot que añadir al servidor."
+  "meta.discord-translation.desc": "DuoVox subtitula y traduce canales de voz, llamadas y transmisiones de Discord en directo en tu PC con Windows, sin ningún bot que añadir al servidor.",
+  "footer.about": "Sobre nosotros"
 }

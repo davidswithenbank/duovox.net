@@ -747,5 +747,6 @@
   "discord.why.title": "Vì sao chọn DuoVox cho Discord",
   "discord.why.f1": "<strong>Không cần bot, không cần quyền trên máy chủ.</strong> Kênh thoại, cuộc gọi và luồng phát trên bất kỳ máy chủ nào bạn tham gia.",
   "meta.discord-translation.title": "Dịch trực tiếp trò chuyện thoại Discord trên PC của bạn - DuoVox",
-  "meta.discord-translation.desc": "DuoVox tạo phụ đề và dịch trực tiếp các kênh thoại, cuộc gọi và luồng phát Discord trên PC Windows của bạn, không cần thêm bot vào máy chủ."
+  "meta.discord-translation.desc": "DuoVox tạo phụ đề và dịch trực tiếp các kênh thoại, cuộc gọi và luồng phát Discord trên PC Windows của bạn, không cần thêm bot vào máy chủ.",
+  "footer.about": "Về chúng tôi"
 }

@@ -747,5 +747,6 @@
   "discord.why.title": "為什麼 Discord 要用 DuoVox",
   "discord.why.f1": "<strong>不需機器人，不需伺服器權限。</strong>你所在任何伺服器上的語音頻道、通話和直播。",
   "meta.discord-translation.title": "在你的 PC 上即時翻譯 Discord 語音聊天 - DuoVox",
-  "meta.discord-translation.desc": "DuoVox 可在你的 Windows PC 上即時為 Discord 語音頻道、通話和直播加上字幕並翻譯，且不需要把機器人加入伺服器。"
+  "meta.discord-translation.desc": "DuoVox 可在你的 Windows PC 上即時為 Discord 語音頻道、通話和直播加上字幕並翻譯，且不需要把機器人加入伺服器。",
+  "footer.about": "關於我們"
 }

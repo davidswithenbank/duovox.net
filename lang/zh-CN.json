@@ -747,5 +747,6 @@
   "discord.why.title": "为什么在 Discord 上选择 DuoVox",
   "discord.why.f1": "<strong>无需机器人，无需服务器权限。</strong>适用于你所在任何服务器中的语音频道、通话和直播。",
   "meta.discord-translation.title": "在你的 PC 上实时翻译 Discord 语音聊天 - DuoVox",
-  "meta.discord-translation.desc": "DuoVox 可在你的 Windows PC 上实时为 Discord 语音频道、通话和直播生成字幕并翻译，无需向服务器添加机器人。"
+  "meta.discord-translation.desc": "DuoVox 可在你的 Windows PC 上实时为 Discord 语音频道、通话和直播生成字幕并翻译，无需向服务器添加机器人。",
+  "footer.about": "关于我们"
 }
