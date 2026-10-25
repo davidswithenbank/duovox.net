@@ -63,6 +63,10 @@
                    border-width: 17px 0 17px 26px; border-color: transparent transparent transparent #fff; }
     .video-play:hover .video-play-icon, .video-play:focus-visible .video-play-icon { background: var(--accent); }
     .video-play:focus-visible { outline: 3px solid var(--accent-light); outline-offset: -3px; }
+    /* Two videos side by side on wide screens (avatar advert 25 Oct + promo 1 Oct), stacked on phones. */
+    .video-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 1180px; margin: 0 auto; }
+    .video-pair .video-frame { max-width: none; width: 100%; margin: 0; }
+    @media (max-width: 820px) { .video-pair { grid-template-columns: 1fr; } }
     .video-note { text-align: center; margin-top: 0.9rem; font-size: 0.85rem; color: var(--text-secondary); }
     .video-note a { color: var(--accent-light); }
 </style>
@@ -113,17 +117,24 @@
      YouTube until the visitor presses play; the player then loads from youtube-nocookie.com. -->
 <section class="section" id="demo" style="padding-top:0; padding-bottom:40px;">
     <h2 class="section-title" id="demo-title" data-i18n="home.video.title" style="margin-bottom:1.5rem;">See DuoVox in action</h2>
-    <div class="video-frame" data-video="NwxHrfJecY0">
-        <button class="video-play" type="button" aria-labelledby="demo-title">
-            <img src="video-poster.jpg" alt="" width="1280" height="720">
-            <span class="video-play-icon" aria-hidden="true"></span>
-        </button>
+    <div class="video-pair">
+        <div class="video-frame" data-video="VZ_IQDdW804">
+            <button class="video-play" type="button" aria-labelledby="demo-title">
+                <img src="avatar-ad-poster.jpg" alt="" width="1280" height="720" loading="lazy">
+                <span class="video-play-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="video-frame" data-video="NwxHrfJecY0">
+            <button class="video-play" type="button" aria-labelledby="demo-title">
+                <img src="video-poster.jpg" alt="" width="1280" height="720" loading="lazy">
+                <span class="video-play-icon" aria-hidden="true"></span>
+            </button>
+        </div>
     </div>
-    <p class="video-note"><span data-i18n="home.video.note">The video plays from YouTube. Nothing is loaded from YouTube until you press play.</span> <a href="https://youtu.be/NwxHrfJecY0" data-i18n="home.video.link">Watch on YouTube</a></p>
+    <p class="video-note"><span data-i18n="home.video.note">The video plays from YouTube. Nothing is loaded from YouTube until you press play.</span> <a href="https://youtu.be/VZ_IQDdW804" data-i18n="home.video.link">Watch on YouTube</a></p>
     <script>
     (function () {
-        var frame = document.querySelector('.video-frame');
-        if (!frame) return;
+        document.querySelectorAll('.video-frame').forEach(function (frame) {
         frame.querySelector('.video-play').addEventListener('click', function () {
             var player = document.createElement('iframe');
             player.src = 'https://www.youtube-nocookie.com/embed/' + frame.getAttribute('data-video') + '?autoplay=1&rel=0';
@@ -132,6 +143,7 @@
             player.allowFullscreen = true;
             while (frame.firstChild) frame.removeChild(frame.firstChild);
             frame.appendChild(player);
+        });
         });
     })();
     </script>
