@@ -748,5 +748,12 @@
   "discord.why.f1": "<strong>不需機器人，不需伺服器權限。</strong>你所在任何伺服器上的語音頻道、通話和直播。",
   "meta.discord-translation.title": "在你的 PC 上即時翻譯 Discord 語音聊天 - DuoVox",
   "meta.discord-translation.desc": "DuoVox 可在你的 Windows PC 上即時為 Discord 語音頻道、通話和直播加上字幕並翻譯，且不需要把機器人加入伺服器。",
-  "footer.about": "關於我們"
+  "footer.about": "關於我們",
+  "home.video.tag1": "在你的 PC 上即時顯示字幕與翻譯，不到一分鐘即可開始",
+  "home.video.tag2": "兩種語言，一場對話：雙方內容，皆可即時呈現",
+  "home.video.tag3": "給語言學習者：開口說、看結果、自己檢查",
+  "home.video.tag4": "給專業口譯員：身旁即有即時雙語逐字稿",
+  "home.learn.title": "在學語言嗎？用 DuoVox 練習口說",
+  "home.learn.desc": "用你的母語說一句話，DuoVox 會在你說話的同時顯示翻譯。接著試著用你正在學的語言說出來：DuoVox 會完整寫下它聽到的內容，並將其翻譯回來，讓你立刻看出自己是否有被理解。你也可以和朋友或老師練習真實對話，各自說自己的語言，雙方都能同步閱讀內容。",
+  "home.learn.note": "在 Free 方案中也可使用，並支援 30 種可在你的 PC 上離線執行的語言。"
 }

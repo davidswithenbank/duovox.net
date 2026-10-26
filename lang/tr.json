@@ -748,5 +748,12 @@
   "discord.why.f1": "<strong>Bot yok, sunucu izinleri yok.</strong> İçinde bulunduğunuz herhangi bir sunucudaki ses kanalları, aramalar ve yayınlar.",
   "meta.discord-translation.title": "Discord sesli sohbetini PC'nizde canlı çevirin - DuoVox",
   "meta.discord-translation.desc": "DuoVox, sunucuya eklenecek bir bot olmadan, Windows PC'nizde Discord ses kanallarını, aramaları ve yayınları canlı olarak altyazıya döker ve çevirir.",
-  "footer.about": "Hakkımızda"
+  "footer.about": "Hakkımızda",
+  "home.video.tag1": "Bilgisayarınızda canlı altyazı ve çeviri, bir dakikadan kısa sürede",
+  "home.video.tag2": "İki dil, tek konuşma: her iki taraf da canlı",
+  "home.video.tag3": "Dil öğrenenler için: konuşun, görün, kendinizi kontrol edin",
+  "home.video.tag4": "Profesyonel tercümanlar için: yanınızda canlı iki dilli bir transkript",
+  "home.learn.title": "Dil mi öğreniyorsunuz? DuoVox ile konuşma pratiği yapın",
+  "home.learn.desc": "Kendi dilinizde bir cümle söyleyin, DuoVox siz konuşurken çevirisini göstersin. Ardından öğrendiğiniz dilde söylemeyi deneyin: DuoVox duyduğunu tam olarak yazar ve tekrar kendi dilinize çevirir; böylece anlaşılıp anlaşılmadığınızı hemen görebilirsiniz. Bir arkadaşınızla veya öğretmeninizle gerçek konuşmalar pratiği yapın; herkes kendi dilini konuşurken ikiniz de metni takip edin.",
+  "home.learn.note": "Bilgisayarınızda çevrimdışı çalışan 30 dille, Ücretsiz planda da çalışır."
 }

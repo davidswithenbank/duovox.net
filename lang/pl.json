@@ -748,5 +748,12 @@
   "discord.why.f1": "<strong>Bez bota, bez uprawnień serwera.</strong> Kanały głosowe, połączenia i transmisje na dowolnym serwerze, na którym jesteś.",
   "meta.discord-translation.title": "Tłumacz czat głosowy Discord na żywo na swoim komputerze - DuoVox",
   "meta.discord-translation.desc": "DuoVox tworzy napisy i tłumaczy na żywo kanały głosowe, połączenia i transmisje Discord na Twoim komputerze z Windows, bez bota do dodawania na serwer.",
-  "footer.about": "O nas"
+  "footer.about": "O nas",
+  "home.video.tag1": "Napisy na żywo i tłumaczenie na Twoim PC w mniej niż minutę",
+  "home.video.tag2": "Dwa języki, jedna rozmowa: obie strony, na żywo",
+  "home.video.tag3": "Dla osób uczących się języków: mów, zobacz to, sprawdź się",
+  "home.video.tag4": "Dla zawodowych tłumaczy ustnych: transkrypcja na żywo w dwóch językach obok Ciebie",
+  "home.learn.title": "Uczysz się języka? Ćwicz mówienie z DuoVox",
+  "home.learn.desc": "Powiedz zdanie w swoim języku, a DuoVox pokaże tłumaczenie, gdy mówisz. Potem spróbuj powiedzieć je w języku, którego się uczysz: DuoVox zapisze dokładnie to, co usłyszał, i przetłumaczy to z powrotem, dzięki czemu od razu zobaczysz, czy zostałeś zrozumiany. Ćwicz prawdziwe rozmowy z przyjacielem lub nauczycielem, gdzie każde z Was mówi we własnym języku, a obie osoby śledzą tekst na bieżąco.",
+  "home.learn.note": "Działa także w ramach planu Bezpłatny, z 30 językami działającymi offline na Twoim PC."
 }

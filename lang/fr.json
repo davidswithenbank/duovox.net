@@ -748,5 +748,12 @@
   "discord.why.f1": "<strong>Sans bot, sans autorisations sur le serveur.</strong> Salons vocaux, appels et streams sur tous les serveurs dont vous faites partie.",
   "meta.discord-translation.title": "Traduisez le chat vocal Discord en direct sur votre PC - DuoVox",
   "meta.discord-translation.desc": "DuoVox sous-titre et traduit en direct les salons vocaux, appels et streams Discord sur votre PC Windows, sans bot à ajouter au serveur.",
-  "footer.about": "À propos de nous"
+  "footer.about": "À propos de nous",
+  "home.video.tag1": "Sous-titres en direct et traduction sur votre PC, en moins d'une minute",
+  "home.video.tag2": "Deux langues, une conversation : les deux côtés, en direct",
+  "home.video.tag3": "Pour les apprenants en langues : parlez, voyez le résultat, vérifiez-vous",
+  "home.video.tag4": "Pour les interprètes professionnels : une transcription en direct en deux langues à vos côtés",
+  "home.learn.title": "Vous apprenez une langue ? Entraînez-vous à parler avec DuoVox",
+  "home.learn.desc": "Dites une phrase dans votre propre langue et DuoVox vous montre la traduction pendant que vous parlez. Ensuite, essayez de la dire dans la langue que vous apprenez : DuoVox écrit exactement ce qu'il a entendu et le retraduit dans votre langue, pour que vous puissiez voir tout de suite si l'on vous a compris. Entraînez-vous à de vraies conversations avec un ami ou un professeur, chacun parlant sa propre langue, pendant que vous lisez tous les deux.",
+  "home.learn.note": "Fonctionne aussi avec le forfait Gratuit, avec 30 langues qui fonctionnent hors ligne sur votre PC."
 }

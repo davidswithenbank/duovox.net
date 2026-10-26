@@ -748,5 +748,12 @@
   "discord.why.f1": "<strong>Nessun bot, nessun permesso sul server.</strong> Canali vocali, chiamate e stream su qualsiasi server di cui fai parte.",
   "meta.discord-translation.title": "Traduci la chat vocale di Discord in tempo reale sul tuo PC - DuoVox",
   "meta.discord-translation.desc": "DuoVox sottotitola e traduce in tempo reale canali vocali, chiamate e stream di Discord sul tuo PC Windows, senza bot da aggiungere al server.",
-  "footer.about": "Chi siamo"
+  "footer.about": "Chi siamo",
+  "home.video.tag1": "Sottotitoli e traduzione in tempo reale sul tuo PC, in meno di un minuto",
+  "home.video.tag2": "Due lingue, una conversazione: entrambe le parti, in diretta",
+  "home.video.tag3": "Per chi studia una lingua: parla, vedi, controlla da solo",
+  "home.video.tag4": "Per interpreti professionisti: una trascrizione bilingue in diretta accanto a te",
+  "home.learn.title": "Stai imparando una lingua? Esercitati a parlare con DuoVox",
+  "home.learn.desc": "Pronuncia una frase nella tua lingua e DuoVox ti mostra la traduzione mentre parli. Poi prova a dirla nella lingua che stai imparando: DuoVox trascrive esattamente ciò che ha sentito e lo ritraduce, così puoi vedere subito se sei stato capito. Esercitati in conversazioni reali con un amico o un insegnante, ognuno parlando la propria lingua, e tutti e due seguendo il testo.",
+  "home.learn.note": "Funziona anche con il piano Gratuito, con 30 lingue che funzionano offline sul tuo PC."
 }

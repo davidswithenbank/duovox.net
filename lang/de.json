@@ -748,5 +748,12 @@
   "discord.why.f1": "<strong>Kein Bot, keine Serverberechtigungen.</strong> Sprachkanäle, Anrufe und Streams auf jedem Server, auf dem du bist.",
   "meta.discord-translation.title": "Übersetze Discord-Sprachchat live auf deinem PC - DuoVox",
   "meta.discord-translation.desc": "DuoVox erstellt live auf deinem Windows-PC Untertitel und Übersetzungen für Discord-Sprachkanäle, Anrufe und Streams – ohne einen Bot, der dem Server hinzugefügt werden muss.",
-  "footer.about": "Über uns"
+  "footer.about": "Über uns",
+  "home.video.tag1": "Live-Untertitel und Übersetzung auf deinem PC, in unter einer Minute",
+  "home.video.tag2": "Zwei Sprachen, ein Gespräch: beide Seiten, live",
+  "home.video.tag3": "Für Sprachenlernende: sprechen, sehen, selbst überprüfen",
+  "home.video.tag4": "Für professionelle Dolmetscher:innen: ein live zweisprachiges Transkript direkt neben dir",
+  "home.learn.title": "Lernst du eine Sprache? Übe das Sprechen mit DuoVox",
+  "home.learn.desc": "Sprich einen Satz in deiner eigenen Sprache, und DuoVox zeigt dir die Übersetzung, während du sprichst. Versuche dann, ihn in der Sprache zu sagen, die du lernst: DuoVox schreibt genau auf, was es gehört hat, und übersetzt es zurück, sodass du sofort sehen kannst, ob du verstanden wurdest. Übe echte Gespräche mit einem Freund oder einer Lehrkraft, wobei jede Person ihre eigene Sprache spricht und beide mitlesen.",
+  "home.learn.note": "Funktioniert auch im Kostenlos-Plan, mit 30 Sprachen, die offline auf deinem PC laufen."
 }
