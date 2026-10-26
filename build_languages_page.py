@@ -343,7 +343,7 @@ cols = "\n".join([
         n_free, rows_free, "free"),
     col("Standard", "Online accuracy for everyday interpreting, with on-device fallback.",
         n_std, rows_std, "standard"),
-    col("Professional", "Our most accurate engine, for high-stakes and specialist work.",
+    col("Professional", "Our most accurate engine, for specialist and professional work.",
         n_pro, rows_pro, "professional"),
 ])
 
