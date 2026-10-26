@@ -67,16 +67,16 @@
     .video-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 1180px; margin: 0 auto; }
     .video-pair .video-frame { max-width: none; width: 100%; margin: 0; }
     @media (max-width: 820px) { .video-pair { grid-template-columns: 1fr; } }
-    /* Four videos, each with a one-line tagline (26 Oct), and the language-learning tile under them. */
+    /* Four videos, each with a one-line tagline (26 Oct). */
     .video-item { margin: 0; }
     .video-tagline { text-align: center; margin-top: 0.7rem; font-weight: 600; font-size: 1rem; color: var(--text-primary); }
-    .learn-tile { display: flex; gap: 1.25rem; align-items: flex-start; max-width: 1180px; margin: 2rem auto 0;
-        padding: 1.5rem 1.75rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; }
-    .learn-icon { font-size: 2.4rem; line-height: 1; }
-    .learn-tile h3 { margin: 0 0 0.5rem; font-size: 1.25rem; }
-    .learn-tile p { margin: 0; color: var(--text-secondary); line-height: 1.6; }
-    .learn-tile .learn-note { margin-top: 0.6rem; font-size: 0.9rem; }
-    @media (max-width: 600px) { .learn-tile { flex-direction: column; gap: 0.75rem; } }
+    /* Who It's For has five cards (26 Oct: + language learners): 3 + 2 centred on wide screens, the last card full width on 2 columns. */
+    @media (min-width: 1025px) {
+        #who-its-for .audience-grid { grid-template-columns: repeat(6, 1fr); }
+        #who-its-for .audience-card { grid-column: span 2; }
+        #who-its-for .audience-card:nth-child(4) { grid-column: 2 / span 2; }
+    }
+    @media (min-width: 769px) and (max-width: 1024px) { #who-its-for .audience-card:last-child { grid-column: 1 / -1; } }
     .video-note { text-align: center; margin-top: 0.9rem; font-size: 0.85rem; color: var(--text-secondary); }
     .video-note a { color: var(--accent-light); }
 </style>
@@ -158,14 +158,6 @@
         </figure>
     </div>
     <p class="video-note"><span data-i18n="home.video.note">Plays from YouTube.</span> <a href="https://youtu.be/VZ_IQDdW804" data-i18n="home.video.link">Watch on YouTube</a></p>
-    <!-- The language-learning use case (26 Oct): its own tile under the videos. -->
-    <div class="learn-tile">
-        <div class="learn-icon" aria-hidden="true">&#127891;</div>
-        <div>
-            <h3 data-i18n="home.learn.title">Learning a language? Practise speaking with DuoVox</h3>
-            <p data-i18n="home.learn.desc">Say a sentence in your own language and DuoVox shows you the translation as you speak. Then try saying it in the language you are learning: DuoVox writes down exactly what it heard and translates it back, so you can see straight away whether you were understood. Practise real conversations with a friend or a teacher, each speaking your own language, both reading along.</p>
-            <p class="learn-note" data-i18n="home.learn.note">Works on the Free plan too, with 30 languages that run offline on your PC.</p>
-        </div>
     </div>
     <div class="video-cta" style="text-align:center; margin-top:1.75rem;">
         <div class="btn-group">
@@ -426,6 +418,13 @@
             <p data-i18n="home.who.9">Enhanced terminology recognition for specialist professional settings, with Private Mode for sensitive content. As an assistive aid, DuoVox supports &mdash; but does not replace &mdash; a qualified human interpreter.</p>
             <p data-i18n-html="home.who.interp"><a href="interpreters.html">How DuoVox helps interpreters &rarr;</a></p>
             <span class="audience-plan" data-i18n="home.who.10">Professional</span>
+        </div>
+        <div class="audience-card">
+            <div class="audience-icon">&#127891;</div>
+            <h3 data-i18n="home.who.learn">Language Learners</h3>
+            <p data-i18n="home.learn.desc">Say a sentence in your own language and DuoVox shows you the translation as you speak. Then try saying it in the language you are learning: DuoVox writes down exactly what it heard and translates it back, so you can see straight away whether you were understood. Practise real conversations with a friend or a teacher, each speaking your own language, both reading along.</p>
+            <p data-i18n-html="home.who.learnvid"><a href="https://youtu.be/_J8kYKG_Pqw">Watch the language-learning video &rarr;</a></p>
+            <span class="audience-plan" data-i18n="home.who.4">Free or Standard</span>
         </div>
         <div class="audience-card">
             <div class="audience-icon">&#9992;</div>

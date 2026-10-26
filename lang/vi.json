@@ -755,5 +755,7 @@
   "home.video.tag4": "Dành cho phiên dịch viên chuyên nghiệp: bản chép lời trực tiếp song ngữ ngay bên cạnh bạn",
   "home.learn.title": "Đang học một ngôn ngữ? Hãy luyện nói với DuoVox",
   "home.learn.desc": "Hãy nói một câu bằng ngôn ngữ của bạn và DuoVox sẽ hiển thị bản dịch khi bạn đang nói. Sau đó, hãy thử nói câu đó bằng ngôn ngữ bạn đang học: DuoVox sẽ ghi lại chính xác những gì nó nghe được và dịch ngược lại, để bạn có thể thấy ngay liệu người khác có hiểu bạn hay không. Hãy luyện các cuộc trò chuyện thực tế với bạn bè hoặc giáo viên, mỗi người nói ngôn ngữ của mình, và cả hai cùng đọc theo.",
-  "home.learn.note": "Tính năng này cũng hoạt động với gói Free, với 30 ngôn ngữ chạy ngoại tuyến trên PC của bạn."
+  "home.learn.note": "Tính năng này cũng hoạt động với gói Free, với 30 ngôn ngữ chạy ngoại tuyến trên PC của bạn.",
+  "home.who.learn": "Người học ngôn ngữ",
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Xem video học ngôn ngữ &rarr;</a>"
 }

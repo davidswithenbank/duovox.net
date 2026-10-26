@@ -755,5 +755,7 @@
   "home.video.tag4": "适合专业口译员：身边就有一份双语实时文字记录",
   "home.learn.title": "在学语言？用 DuoVox 练习口语",
   "home.learn.desc": "用你自己的语言说一句话，DuoVox 会在你说话的同时显示译文。然后试着用你正在学习的语言再说一遍：DuoVox 会准确写下它听到的内容，并将其翻译回来，这样你就能立刻看出自己是否被理解了。和朋友或老师练习真实对话，你们各自说自己的语言，同时都可以跟着文字阅读。",
-  "home.learn.note": "免费版也可用，支持 30 种可在你的 PC 上离线运行的语言。"
+  "home.learn.note": "免费版也可用，支持 30 种可在你的 PC 上离线运行的语言。",
+  "home.who.learn": "语言学习者",
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">观看语言学习视频 &rarr;</a>"
 }

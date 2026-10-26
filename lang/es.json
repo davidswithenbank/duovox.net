@@ -755,5 +755,7 @@
   "home.video.tag4": "Para intérpretes profesionales: una transcripción bilingüe en directo a tu lado",
   "home.learn.title": "¿Estás aprendiendo un idioma? Practica a hablar con DuoVox",
   "home.learn.desc": "Di una frase en tu propio idioma y DuoVox te muestra la traducción mientras hablas. Luego intenta decirla en el idioma que estás aprendiendo: DuoVox escribe exactamente lo que ha oído y lo traduce de vuelta, para que puedas ver enseguida si se te entendió. Practica conversaciones reales con un amigo o un profesor, cada uno hablando su propio idioma, y ambos siguiendo el texto.",
-  "home.learn.note": "También funciona con el plan Gratis, con 30 idiomas que funcionan sin conexión en tu PC."
+  "home.learn.note": "También funciona con el plan Gratis, con 30 idiomas que funcionan sin conexión en tu PC.",
+  "home.who.learn": "Estudiantes de idiomas",
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Ver el video de aprendizaje de idiomas &rarr;</a>"
 }

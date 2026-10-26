@@ -755,5 +755,7 @@
   "home.video.tag4": "Pour les interprètes professionnels : une transcription en direct en deux langues à vos côtés",
   "home.learn.title": "Vous apprenez une langue ? Entraînez-vous à parler avec DuoVox",
   "home.learn.desc": "Dites une phrase dans votre propre langue et DuoVox vous montre la traduction pendant que vous parlez. Ensuite, essayez de la dire dans la langue que vous apprenez : DuoVox écrit exactement ce qu'il a entendu et le retraduit dans votre langue, pour que vous puissiez voir tout de suite si l'on vous a compris. Entraînez-vous à de vraies conversations avec un ami ou un professeur, chacun parlant sa propre langue, pendant que vous lisez tous les deux.",
-  "home.learn.note": "Fonctionne aussi avec le forfait Gratuit, avec 30 langues qui fonctionnent hors ligne sur votre PC."
+  "home.learn.note": "Fonctionne aussi avec le forfait Gratuit, avec 30 langues qui fonctionnent hors ligne sur votre PC.",
+  "home.who.learn": "Apprenants en langues",
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Regarder la vidéo d’apprentissage des langues &rarr;</a>"
 }

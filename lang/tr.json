@@ -755,5 +755,7 @@
   "home.video.tag4": "Profesyonel tercümanlar için: yanınızda canlı iki dilli bir transkript",
   "home.learn.title": "Dil mi öğreniyorsunuz? DuoVox ile konuşma pratiği yapın",
   "home.learn.desc": "Kendi dilinizde bir cümle söyleyin, DuoVox siz konuşurken çevirisini göstersin. Ardından öğrendiğiniz dilde söylemeyi deneyin: DuoVox duyduğunu tam olarak yazar ve tekrar kendi dilinize çevirir; böylece anlaşılıp anlaşılmadığınızı hemen görebilirsiniz. Bir arkadaşınızla veya öğretmeninizle gerçek konuşmalar pratiği yapın; herkes kendi dilini konuşurken ikiniz de metni takip edin.",
-  "home.learn.note": "Bilgisayarınızda çevrimdışı çalışan 30 dille, Ücretsiz planda da çalışır."
+  "home.learn.note": "Bilgisayarınızda çevrimdışı çalışan 30 dille, Ücretsiz planda da çalışır.",
+  "home.who.learn": "Dil Öğrenenler",
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Dil öğrenme videosunu izleyin &rarr;</a>"
 }

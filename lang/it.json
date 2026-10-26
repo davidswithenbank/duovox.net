@@ -755,5 +755,7 @@
   "home.video.tag4": "Per interpreti professionisti: una trascrizione bilingue in diretta accanto a te",
   "home.learn.title": "Stai imparando una lingua? Esercitati a parlare con DuoVox",
   "home.learn.desc": "Pronuncia una frase nella tua lingua e DuoVox ti mostra la traduzione mentre parli. Poi prova a dirla nella lingua che stai imparando: DuoVox trascrive esattamente ciò che ha sentito e lo ritraduce, così puoi vedere subito se sei stato capito. Esercitati in conversazioni reali con un amico o un insegnante, ognuno parlando la propria lingua, e tutti e due seguendo il testo.",
-  "home.learn.note": "Funziona anche con il piano Gratuito, con 30 lingue che funzionano offline sul tuo PC."
+  "home.learn.note": "Funziona anche con il piano Gratuito, con 30 lingue che funzionano offline sul tuo PC.",
+  "home.who.learn": "Chi impara le lingue",
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Guarda il video per imparare le lingue &rarr;</a>"
 }

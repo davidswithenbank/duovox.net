@@ -755,5 +755,7 @@
   "home.video.tag4": "Für professionelle Dolmetscher:innen: ein live zweisprachiges Transkript direkt neben dir",
   "home.learn.title": "Lernst du eine Sprache? Übe das Sprechen mit DuoVox",
   "home.learn.desc": "Sprich einen Satz in deiner eigenen Sprache, und DuoVox zeigt dir die Übersetzung, während du sprichst. Versuche dann, ihn in der Sprache zu sagen, die du lernst: DuoVox schreibt genau auf, was es gehört hat, und übersetzt es zurück, sodass du sofort sehen kannst, ob du verstanden wurdest. Übe echte Gespräche mit einem Freund oder einer Lehrkraft, wobei jede Person ihre eigene Sprache spricht und beide mitlesen.",
-  "home.learn.note": "Funktioniert auch im Kostenlos-Plan, mit 30 Sprachen, die offline auf deinem PC laufen."
+  "home.learn.note": "Funktioniert auch im Kostenlos-Plan, mit 30 Sprachen, die offline auf deinem PC laufen.",
+  "home.who.learn": "Sprachlernende",
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Das Sprachlern-Video ansehen &rarr;</a>"
 }

@@ -755,5 +755,7 @@
   "home.video.tag4": "給專業口譯員：身旁即有即時雙語逐字稿",
   "home.learn.title": "在學語言嗎？用 DuoVox 練習口說",
   "home.learn.desc": "用你的母語說一句話，DuoVox 會在你說話的同時顯示翻譯。接著試著用你正在學的語言說出來：DuoVox 會完整寫下它聽到的內容，並將其翻譯回來，讓你立刻看出自己是否有被理解。你也可以和朋友或老師練習真實對話，各自說自己的語言，雙方都能同步閱讀內容。",
-  "home.learn.note": "在 Free 方案中也可使用，並支援 30 種可在你的 PC 上離線執行的語言。"
+  "home.learn.note": "在 Free 方案中也可使用，並支援 30 種可在你的 PC 上離線執行的語言。",
+  "home.who.learn": "語言學習者",
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">觀看語言學習影片 &rarr;</a>"
 }
