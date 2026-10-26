@@ -28,6 +28,11 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sitei18n as S  # noqa: E402
 
+# Videos that exist in a visitor's own language (26 Oct 2026: the language-learning advert in Spanish,
+# https://youtu.be/_dUFcSJ9fMk). Each pair is a plain text swap on that language's pages.
+VIDEO_SWAP = {
+    "es": {"_J8kYKG_Pqw": "_dUFcSJ9fMk", "ll-video-poster.jpg": "ll-video-poster-es.jpg"},
+}
 EXCLUDE_DIRS = {".git", ".github", "tools", "_site", "node_modules", ".wrangler"}
 EXCLUDE_FILES = {"server.js", "lang/_translated_from.json", "wrangler.jsonc"}
 EXCLUDE_EXT = {".py", ".md"}
@@ -142,6 +147,9 @@ def localise(s, page, code, lang, ok, rtl, langs, cur):
     s = set_canonical(s, url_for(code, page))
     s = inject_head(s, alternates(langs, page))
     s = re.sub(r'<html lang="[^"]*"', '<html lang="%s"%s data-static-lang="%s"' % (code, ' dir="rtl"' if code in rtl else "", code), s, count=1)
+    # 2b. a video made in this language replaces the English one (player id, poster and every link to it)
+    for old, new in VIDEO_SWAP.get(code, {}).items():
+        s = s.replace(old, new)
     # 3. language names in the coverage table (the app's own translated names)
     if page == "languages.html":
         names = S.load_language_names().get(code, {})
