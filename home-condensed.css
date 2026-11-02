@@ -112,3 +112,8 @@
 .home-c .layout-card p { color: var(--text-secondary); font-size: .9rem; line-height: 1.5; }
 .home-c .hero-c-shot figcaption { font-size: .82rem; }
 @media (max-width: 700px) { .home-c .layouts-grid { grid-template-columns: 1fr; } }
+/* David, 2 Nov: hero text sits higher (top-aligned with the picture); the two layout cards are the same height */
+.home-c .hero-c { align-items: start; }
+.home-c .hero-c-text { padding-top: .4rem; }
+.home-c .layouts-grid { align-items: stretch; }
+.home-c .layout-card img { aspect-ratio: 1164 / 1040; object-fit: cover; object-position: top; }
