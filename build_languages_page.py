@@ -138,6 +138,10 @@ def free_state(c, online):
     if v and t:
         return "yes", "Captions and translation, fully on your device"
     if v and not t:
+        # 2 Nov 2026 (David: Esperanto, Tajik and Kyrgyz said "translation needs an online plan" but are on neither online
+        # list): only promise a plan when a plan's engine actually captions the language.
+        if not online:
+            return "part", "Captions on your device \u2014 translation is not available for this language yet"
         return "part", "Captions on your device \u2014 translation needs an online plan"
     if online:
         return "no", "Not available offline \u2014 needs an online plan"
@@ -175,7 +179,7 @@ ICON = {"yes": "\u2713", "part": "\u2022", "no": "\u2013"}
 
 
 # Translation keys for the per-row notes (6 Oct 2026; tools/build_lang_pages.py translates them per language).
-NOTE_KEYS = {'Included': 'lang.note.included', 'Captions and translation, fully on your device': 'lang.note.full', 'Captions on your device — translation needs an online plan': 'lang.note.captions_only'}
+NOTE_KEYS = {'Included': 'lang.note.included', 'Captions and translation, fully on your device': 'lang.note.full', 'Captions on your device — translation needs an online plan': 'lang.note.captions_only', 'Captions on your device — translation is not available for this language yet': 'lang.note.captions_device_only'}
 
 
 def NOTE_KEY_ATTR(note):
@@ -288,7 +292,7 @@ HTML = """<!DOCTYPE html>
 
     <div class="lc-key">
       <span data-i18n="lang.key.yes">&#10003; Captions and translation</span>
-      <span data-i18n="lang.key.part">&bull; Captions on your device, translation needs an online plan</span>
+      <span data-i18n="lang.key.part">&bull; Captions on your device; translation as noted for each language</span>
     </div>
 
   <div class="lc-grid">

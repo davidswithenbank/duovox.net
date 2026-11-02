@@ -281,7 +281,7 @@
   "terms.v32.s15.p3": "Kirkbymoorside, York, YO62 6LJ, Zjednoczone Królestwo",
   "terms.v32.s15.p4": "E-mail: info@duovox.net",
   "terms.v33.title": "DuoVox — Warunki korzystania",
-  "terms.v33.updated": "Version 3.3 — last updated 25 września 2026 r.",
+  "terms.v33.updated": "Version 3.3 — last updated 2 listopada 2026 r.",
   "terms.v33.intro": "Niniejsze Warunki korzystania („Warunki”) regulują korzystanie przez Ciebie z aplikacji DuoVox („Aplikacja”) dostarczanej przez David Arthur Software („DAS”, „my”, „nas”, „nasz”). Prosimy o zapoznanie się z nimi przed rozpoczęciem korzystania z DuoVox. W Aplikacji akceptujesz je, zaznaczając pole wyboru i wybierając „Akceptuję i kontynuuję”; jeśli nie wyrażasz zgody, wybierz „Odrzucam i zamykam”, a Aplikacja zostanie zamknięta. Instalując Aplikację lub korzystając z niej, wyrażasz zgodę na niniejsze Warunki.",
   "terms.v33.s1.title": "1. Czym jest DuoVox",
   "terms.v33.s1.p1": "DuoVox to aplikacja do transkrypcji mowy i tłumaczenia w czasie rzeczywistym. Przechwytuje dźwięk, zamienia mowę na tekst i zapewnia tłumaczenie oparte na AI między obsługiwanymi językami. Aplikacja jest aplikacją desktopową dla systemu Windows, dystrybuowaną za pośrednictwem Microsoft Store.",
@@ -289,7 +289,7 @@
   "terms.v33.s2.title": "2. Plany i Pay-As-You-Go",
   "terms.v33.s2.intro": "Aplikacja oferuje następujące plany. Cena obowiązująca w Twoim kraju jest pokazywana w Microsoft Store przed zakupem, w Twojej własnej walucie, i jest to cena, którą płacisz. Aktualne ceny są publikowane również na duovox.net. Opisujemy tutaj, co obejmuje każdy plan, zamiast powtarzać ceny, aby niniejszy dokument nie mógł rozejść się z tym, co sklep faktycznie nalicza.",
   "terms.v33.s2.f1": "Free: Transkrypcja na urządzeniu z wykorzystaniem lokalnego rozpoznawania mowy. Działa całkowicie offline, bez konieczności połączenia z internetem. W Aplikacji mogą być wyświetlane komunikaty promocyjne lub niewielkie reklamy banerowe.",
-  "terms.v33.s2.f2": "Standard (miesięczny lub roczny): Transkrypcja i tłumaczenie na żywo oparte na AI w 33 obsługiwanych językach (Professional obejmuje 43; tłumaczenie jest dostępne dla większej liczby języków, niż można transkrybować — aktualna lista dla poszczególnych planów jest publikowana na duovox.net/languages). Obejmuje 15 godzin użytkowania AI miesięcznie oraz tłumaczenie dokumentów. Bez reklam. Dodatkowe użytkowanie ponad godziny zawarte w planie jest dostępne w ramach Pay-As-You-Go.",
+  "terms.v33.s2.f2": "Standard (miesięczny lub roczny): Transkrypcja i tłumaczenie na żywo oparte na AI w 53 obsługiwanych językach (Professional obejmuje 57; tłumaczenie jest dostępne dla większej liczby języków, niż można transkrybować — aktualna lista dla poszczególnych planów jest publikowana na duovox.net/languages). Obejmuje 15 godzin użytkowania AI miesięcznie oraz tłumaczenie dokumentów. Bez reklam. Dodatkowe użytkowanie ponad godziny zawarte w planie jest dostępne w ramach Pay-As-You-Go.",
   "terms.v33.s2.f3": "Professional (miesięczny lub półroczny): Rozszerzone rozpoznawanie terminologii dla słownictwa specjalistycznego, zaawansowane tłumaczenie AI oraz 40 godzin użytkowania AI miesięcznie. Obejmuje eksport napisów (SRT i VTT), transkrypcję i tłumaczenie plików (audio i wideo), Glosariusz tłumaczenia oraz Tryb Prywatny.",
   "terms.v33.s2.f4": "Pay-As-You-Go: Bez konieczności wykupienia subskrypcji. Kup środki według stawki godzinowej w jakości Standard lub Professional, w pakietach 1, 10 i 25 godzin; większe pakiety kosztują mniej za godzinę. Środki nigdy nie tracą ważności. Dostępne zarówno jako opcja samodzielna (bez subskrypcji), jak i jako doładowanie dla subskrybentów, którzy przekroczą swoje miesięczne godziny.",
   "terms.v33.s2.p1": "Sposób, w jaki środki i godziny zawarte w planie są wykorzystywane łącznie, zależy od jakości sesji. Jeśli nie masz aktywnej subskrypcji, całe użytkowanie jest rozliczane z Twoich środków. Jeśli masz subskrypcję, a sesja przebiega w jakości objętej Twoją subskrypcją, najpierw wykorzystywane są godziny zawarte w planie, a po ich wyczerpaniu automatycznie pobierane są środki z Twojego salda, bez żadnych działań z Twojej strony. Jeśli saldo środków Professional pozwala Ci pracować w wyższej jakości niż ta objęta Twoją subskrypcją — na przykład gdy subskrybent planu Standard korzysta z godzin Professional — taka sesja jest w całości finansowana z Twojego salda środków, a godziny zawarte w planie nie są wykorzystywane, dopóki środki nie zostaną wyczerpane. Funkcje AI przestają działać dopiero wtedy, gdy wyczerpią się zarówno godziny zawarte w planie, jak i Twoje środki.",
@@ -359,7 +359,7 @@
   "lang.free.sub": "Działa całkowicie na Twoim urządzeniu. Nie wymaga internetu, żaden dźwięk nigdy nie opuszcza Twojego komputera.",
   "lang.free.title": "Bezpłatny",
   "lang.intro": "Każdy plan poniżej zawiera listę obsługiwanych języków. Plan Bezpłatny działa całkowicie na Twoim urządzeniu, więc obejmuje języki, dla których możemy dostarczyć model głosowy; plany online sięgają znacznie dalej. Znajdź swój język, a od razu zobaczysz, którego planu potrzebujesz.",
-  "lang.key.part": "• Napisy na Twoim urządzeniu, tłumaczenie wymaga planu online",
+  "lang.key.part": "• Napisy na Twoim urządzeniu; tłumaczenie zgodnie z informacją podaną dla każdego języka",
   "lang.key.yes": "✓ Napisy i tłumaczenie",
   "lang.professional.sub": "Nasz najdokładniejszy silnik do pracy specjalistycznej i profesjonalnej.",
   "lang.professional.title": "Profesjonalny",
@@ -757,5 +757,8 @@
   "home.learn.desc": "Powiedz zdanie w swoim języku, a DuoVox pokaże tłumaczenie, gdy mówisz. Potem spróbuj powiedzieć je w języku, którego się uczysz: DuoVox zapisze dokładnie to, co usłyszał, i przetłumaczy to z powrotem, dzięki czemu od razu zobaczysz, czy zostałeś zrozumiany. Ćwicz prawdziwe rozmowy z przyjacielem lub nauczycielem, gdzie każde z Was mówi we własnym języku, a obie osoby śledzą tekst na bieżąco.",
   "home.learn.note": "Działa także w ramach planu Bezpłatny, z 30 językami działającymi offline na Twoim PC.",
   "home.who.learn": "Osoby uczące się języków",
-  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Obejrzyj film o nauce języków &rarr;</a>"
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Obejrzyj film o nauce języków &rarr;</a>",
+  "home.chat.title": "Nowość: widok Czatu",
+  "home.chat.desc": "Zobacz całą rozmowę w formie dymków: każda osoba po swojej stronie, a tłumaczenie w każdym dymku.",
+  "lang.note.captions_device_only": "Napisy na Twoim urządzeniu — tłumaczenie nie jest jeszcze dostępne dla tego języka"
 }

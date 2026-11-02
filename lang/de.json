@@ -281,7 +281,7 @@
   "terms.v32.s15.p3": "Kirkbymoorside, York, YO62 6LJ, Vereinigtes Königreich",
   "terms.v32.s15.p4": "E-Mail: info@duovox.net",
   "terms.v33.title": "DuoVox — Nutzungsbedingungen",
-  "terms.v33.updated": "Version 3.3 — last updated 25. September 2026",
+  "terms.v33.updated": "Version 3.3 — last updated 2. November 2026",
   "terms.v33.intro": "Diese Nutzungsbedingungen („Bedingungen“) regeln Ihre Nutzung der DuoVox-Anwendung („App“), bereitgestellt von David Arthur Software („DAS“, „wir“, „uns“, „unser“). Bitte lesen Sie sie, bevor Sie DuoVox verwenden. In der App akzeptieren Sie sie, indem Sie das Kästchen ankreuzen und „Zustimmen & Fortfahren“ wählen; wenn Sie nicht zustimmen, wählen Sie „Ablehnen & Beenden“ und die App wird geschlossen. Mit der Installation oder Nutzung der App stimmen Sie diesen Bedingungen zu.",
   "terms.v33.s1.title": "1. Was DuoVox ist",
   "terms.v33.s1.p1": "DuoVox ist eine Anwendung für Sprachtranskription und Übersetzung in Echtzeit. Sie erfasst Audio, wandelt Sprache in Text um und bietet KI-gestützte Übersetzung zwischen den unterstützten Sprachen. Die App ist eine Windows-Desktopanwendung, die über den Microsoft Store vertrieben wird.",
@@ -289,7 +289,7 @@
   "terms.v33.s2.title": "2. Tarife und Pay-As-You-Go",
   "terms.v33.s2.intro": "Die App bietet die folgenden Tarife. Der Preis für Ihr Land wird Ihnen vor dem Kauf im Microsoft Store in Ihrer eigenen Währung angezeigt, und das ist der Preis, den Sie zahlen. Die aktuellen Preise werden außerdem auf duovox.net veröffentlicht. Wir beschreiben hier, was jeder Tarif enthält, statt Preise zu wiederholen, damit dieses Dokument nicht von dem abweichen kann, was der Store tatsächlich berechnet.",
   "terms.v33.s2.f1": "Free: Transkription auf dem Gerät mit lokaler Spracherkennung. Funktioniert vollständig offline ohne Internetverbindung. In der App können Werbehinweise oder dezente Bannerwerbung angezeigt werden.",
-  "terms.v33.s2.f2": "Standard (monatlich oder jährlich): KI-gestützte Live-Transkription und -Übersetzung in 33 unterstützten Sprachen (Professional umfasst 43; Übersetzung ist für mehr Sprachen verfügbar, als transkribiert werden können — die aktuelle Liste je Tarif wird auf duovox.net/languages veröffentlicht). Enthält 15 Stunden KI-Nutzung pro Monat sowie Dokumentübersetzung. Keine Werbung. Zusätzliche Nutzung über die enthaltenen Stunden hinaus ist über Pay-As-You-Go verfügbar.",
+  "terms.v33.s2.f2": "Standard (monatlich oder jährlich): KI-gestützte Live-Transkription und -Übersetzung in 53 unterstützten Sprachen (Professional umfasst 57; Übersetzung ist für mehr Sprachen verfügbar, als transkribiert werden können — die aktuelle Liste je Tarif wird auf duovox.net/languages veröffentlicht). Enthält 15 Stunden KI-Nutzung pro Monat sowie Dokumentübersetzung. Keine Werbung. Zusätzliche Nutzung über die enthaltenen Stunden hinaus ist über Pay-As-You-Go verfügbar.",
   "terms.v33.s2.f3": "Professional (monatlich oder halbjährlich): Verbesserte Terminologieerkennung für Fachvokabular, fortgeschrittene KI-Übersetzung und 40 Stunden KI-Nutzung pro Monat. Enthält Untertitelexport (SRT und VTT), Datei-Transkription und -Übersetzung (Audio und Video), Übersetzungsglossar und Privatmodus.",
   "terms.v33.s2.f4": "Pay-As-You-Go: Kein Abonnement erforderlich. Kaufen Sie Guthaben zu einem Stundentarif in Standard- oder Professional-Qualität, in Paketen von 1, 10 und 25 Stunden; die größeren Pakete kosten pro Stunde weniger. Guthaben verfällt nie. Verfügbar sowohl als eigenständige Option (ohne Abonnement) als auch als Aufladung für Abonnentinnen, die ihre Monatsstunden überschreiten.",
   "terms.v33.s2.p1": "Wie Guthaben und enthaltene Stunden zusammenwirken, hängt von der Qualität der Sitzung ab. Wenn Sie kein aktives Abonnement haben, wird die gesamte Nutzung von Ihrem Guthaben abgezogen. Wenn Sie ein Abonnement haben und die Sitzung in der von Ihrem Abonnement enthaltenen Qualität läuft, werden zuerst Ihre enthaltenen Stunden verbraucht; danach wird automatisch Ihr Guthaben herangezogen, ohne dass Sie etwas tun müssen. Wenn ein Professional-Guthaben Ihnen eine höhere Qualität ermöglicht, als Ihr Abonnement enthält — zum Beispiel bei einer Standard-Abonnentin, die Professional-Stunden nutzt —, wird diese Sitzung vollständig aus Ihrem Guthaben bezahlt, und Ihre enthaltenen Stunden werden erst verbraucht, wenn das Guthaben aufgebraucht ist. KI-Funktionen werden erst beendet, wenn sowohl Ihre enthaltenen Stunden als auch Ihr Guthaben aufgebraucht sind.",
@@ -359,7 +359,7 @@
   "lang.free.sub": "Läuft vollständig auf Ihrem Gerät. Kein Internet erforderlich, und Audio verlässt niemals Ihren Computer.",
   "lang.free.title": "Kostenlos",
   "lang.intro": "Jeder der untenstehenden Tarife führt die unterstützten Sprachen auf. Der Kostenlos-Tarif läuft vollständig auf Ihrem Gerät und deckt daher die Sprachen ab, für die wir ein Sprachmodell bereitstellen können; die Online-Tarife reichen deutlich weiter. Finden Sie Ihre Sprache, und Sie sehen auf einen Blick, welchen Tarif Sie benötigen.",
-  "lang.key.part": "• Untertitel auf Ihrem Gerät, Übersetzung erfordert einen Online-Plan",
+  "lang.key.part": "• Untertitel auf deinem Gerät; Übersetzung wie bei jeder Sprache angegeben",
   "lang.key.yes": "✓ Untertitel und Übersetzung",
   "lang.professional.sub": "Unsere präziseste Engine, für spezialisierte und professionelle Arbeit.",
   "lang.professional.title": "Professional",
@@ -757,5 +757,8 @@
   "home.learn.desc": "Sprich einen Satz in deiner eigenen Sprache, und DuoVox zeigt dir die Übersetzung, während du sprichst. Versuche dann, ihn in der Sprache zu sagen, die du lernst: DuoVox schreibt genau auf, was es gehört hat, und übersetzt es zurück, sodass du sofort sehen kannst, ob du verstanden wurdest. Übe echte Gespräche mit einem Freund oder einer Lehrkraft, wobei jede Person ihre eigene Sprache spricht und beide mitlesen.",
   "home.learn.note": "Funktioniert auch im Kostenlos-Plan, mit 30 Sprachen, die offline auf deinem PC laufen.",
   "home.who.learn": "Sprachlernende",
-  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Das Sprachlern-Video ansehen &rarr;</a>"
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Das Sprachlern-Video ansehen &rarr;</a>",
+  "home.chat.title": "Neu: die Chat-Ansicht",
+  "home.chat.desc": "Sehen Sie die ganze Unterhaltung als Sprechblasen: jede Person auf ihrer eigenen Seite des Bildschirms, mit der Übersetzung in jeder Sprechblase.",
+  "lang.note.captions_device_only": "Untertitel auf deinem Gerät — Übersetzung ist für diese Sprache noch nicht verfügbar"
 }

@@ -281,7 +281,7 @@
   "terms.v32.s15.p3": "Kirkbymoorside, York, YO62 6LJ, 英國",
   "terms.v32.s15.p4": "電子郵件：info@duovox.net",
   "terms.v33.title": "DuoVox — 使用條款",
-  "terms.v33.updated": "Version 3.3 — last updated 2026年9月25日",
+  "terms.v33.updated": "Version 3.3 — last updated 2026年11月2日",
   "terms.v33.intro": "本使用條款（以下稱「本條款」）規範您對 David Arthur Software（以下稱「DAS」或「我們」）所提供之 DuoVox 應用程式（以下稱「本應用程式」）的使用。請於使用 DuoVox 前詳閱本條款。在本應用程式中，您勾選核取方塊並選擇「同意並繼續」即表示接受本條款；若您不同意，請選擇「拒絕並結束」，本應用程式將會關閉。安裝或使用本應用程式，即表示您同意本條款。",
   "terms.v33.s1.title": "1. DuoVox 是什麼",
   "terms.v33.s1.p1": "DuoVox 是一款即時語音轉錄與翻譯應用程式。它擷取音訊、將語音轉換為文字，並在支援的語言之間提供人工智慧翻譯。本應用程式是透過 Microsoft Store 發行的 Windows 桌面應用程式。",
@@ -289,7 +289,7 @@
   "terms.v33.s2.title": "2. 方案與 Pay-As-You-Go",
   "terms.v33.s2.intro": "本應用程式提供下列方案。您所在國家或地區的價格會在您購買前於 Microsoft Store 以您當地的貨幣顯示，該價格即為您實際支付的價格。目前價格亦公布於 duovox.net。我們在此說明各方案所包含的內容，而不重複列出價格，以避免本文件與商店實際收取的金額產生落差。",
   "terms.v33.s2.f1": "Free：使用本機語音辨識在裝置上進行轉錄。完全離線運作，無須網路連線。應用程式內可能顯示推廣訊息或輕量的橫幅廣告。",
-  "terms.v33.s2.f2": "Standard（月繳或年繳）：於 33 種支援的語言之間提供人工智慧即時轉錄與翻譯（Professional 涵蓋 43 種；可翻譯的語言多於可轉錄的語言——各方案的最新語言清單公布於 duovox.net/languages）。包含每月 15 小時的人工智慧使用時數以及文件翻譯。無廣告。超出所含時數的額外使用可透過 Pay-As-You-Go 取得。",
+  "terms.v33.s2.f2": "Standard（月繳或年繳）：於 53 種支援的語言之間提供人工智慧即時轉錄與翻譯（Professional 涵蓋 57 種；可翻譯的語言多於可轉錄的語言——各方案的最新語言清單公布於 duovox.net/languages）。包含每月 15 小時的人工智慧使用時數以及文件翻譯。無廣告。超出所含時數的額外使用可透過 Pay-As-You-Go 取得。",
   "terms.v33.s2.f3": "Professional（月繳或半年繳）：針對專業詞彙的強化術語辨識、進階人工智慧翻譯，以及每月 40 小時的人工智慧使用時數。包含字幕匯出（SRT 與 VTT）、檔案轉錄與翻譯（音訊及影片）、翻譯詞彙庫與私密模式。",
   "terms.v33.s2.f4": "Pay-As-You-Go：無須訂閱。以每小時計費的方式購買 Standard 或 Professional 品質的點數，提供 1、10 與 25 小時的組合包；組合包越大，每小時的單價越低。點數永不失效。可作為獨立選項（不訂閱）使用，亦可作為訂閱者超出每月時數後的加購。",
   "terms.v33.s2.p1": "點數與所含時數如何搭配使用，取決於該次工作階段的品質。若您沒有有效的訂閱，所有使用量均自您的點數扣除。若您有訂閱，且該次工作階段以您訂閱所包含的品質執行，則會優先使用所含時數，用盡後將自動改由您的點數餘額支應，您無須進行任何操作。若 Professional 點數餘額使您得以在高於訂閱所含的品質下執行——例如 Standard 訂閱者使用 Professional 時數——該次工作階段將完全由您的點數餘額支應，且在點數用盡之前不會消耗您的所含時數。唯有在您的所含時數與點數皆已用盡時，人工智慧功能才會停止。",
@@ -359,7 +359,7 @@
   "lang.free.sub": "完全在您的裝置上執行。不需要網際網路，也不會有任何音訊離開您的電腦。",
   "lang.free.title": "Free",
   "lang.intro": "下方每個方案都列出其支援的語言。Free 方案完全在您的裝置上執行，因此涵蓋的是我們能隨產品提供語音模型的語言；線上方案的涵蓋範圍則大得多。找到您的語言後，您就能一眼看出需要哪個方案。",
-  "lang.key.part": "• 字幕在您的裝置上處理，翻譯需要線上方案",
+  "lang.key.part": "• 你的裝置上顯示字幕；翻譯功能依各語言標示而定",
   "lang.key.yes": "✓ 字幕與翻譯",
   "lang.professional.sub": "我們最準確的引擎，適用於專門與專業工作。",
   "lang.professional.title": "Professional",
@@ -757,5 +757,8 @@
   "home.learn.desc": "用你的母語說一句話，DuoVox 會在你說話的同時顯示翻譯。接著試著用你正在學的語言說出來：DuoVox 會完整寫下它聽到的內容，並將其翻譯回來，讓你立刻看出自己是否有被理解。你也可以和朋友或老師練習真實對話，各自說自己的語言，雙方都能同步閱讀內容。",
   "home.learn.note": "在 Free 方案中也可使用，並支援 30 種可在你的 PC 上離線執行的語言。",
   "home.who.learn": "語言學習者",
-  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">觀看語言學習影片 &rarr;</a>"
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">觀看語言學習影片 &rarr;</a>",
+  "home.chat.title": "全新：聊天檢視",
+  "home.chat.desc": "以對話氣泡查看完整對話：每個人各自在一側，每個氣泡中都顯示翻譯。",
+  "lang.note.captions_device_only": "你的裝置上顯示字幕 — 此語言尚未提供翻譯功能"
 }

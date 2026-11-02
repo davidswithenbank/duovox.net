@@ -281,7 +281,7 @@
   "terms.v32.s15.p3": "Kirkbymoorside, York, YO62 6LJ, Britania Raya",
   "terms.v32.s15.p4": "Email: info@duovox.net",
   "terms.v33.title": "DuoVox — Ketentuan Penggunaan",
-  "terms.v33.updated": "Version 3.3 — last updated 25 September 2026",
+  "terms.v33.updated": "Version 3.3 — last updated 2 November 2026",
   "terms.v33.intro": "Ketentuan Penggunaan ini (“Ketentuan”) mengatur penggunaan aplikasi DuoVox (“Aplikasi”) oleh Anda, yang disediakan oleh David Arthur Software (“DAS”, “kami”). Harap baca Ketentuan ini sebelum menggunakan DuoVox. Di dalam Aplikasi, Anda menerimanya dengan mencentang kotak dan memilih “Setuju & Lanjutkan”; jika Anda tidak setuju, pilih “Tolak & Keluar” dan Aplikasi akan ditutup. Dengan memasang atau menggunakan Aplikasi, Anda menyetujui Ketentuan ini.",
   "terms.v33.s1.title": "1. Apa itu DuoVox",
   "terms.v33.s1.p1": "DuoVox adalah aplikasi transkripsi suara dan penerjemahan secara waktu nyata. Aplikasi ini menangkap audio, mengubah ucapan menjadi teks, dan menyediakan penerjemahan bertenaga AI antarbahasa yang didukung. Aplikasi ini merupakan aplikasi desktop Windows yang didistribusikan melalui Microsoft Store.",
@@ -289,7 +289,7 @@
   "terms.v33.s2.title": "2. Paket dan Pay-As-You-Go",
   "terms.v33.s2.intro": "Aplikasi menawarkan paket-paket berikut. Harga untuk negara Anda ditampilkan di Microsoft Store sebelum Anda membeli, dalam mata uang Anda sendiri, dan itulah harga yang Anda bayar. Harga terkini juga dipublikasikan di duovox.net. Di sini kami menjelaskan apa yang tercakup dalam setiap paket alih-alih mengulang harga, agar dokumen ini tidak dapat menyimpang dari apa yang sebenarnya ditagihkan oleh toko.",
   "terms.v33.s2.f1": "Free: Transkripsi di perangkat menggunakan pengenalan ucapan lokal. Berfungsi sepenuhnya luring tanpa memerlukan koneksi internet. Pesan promosi di dalam aplikasi atau iklan spanduk ringan dapat ditampilkan.",
-  "terms.v33.s2.f2": "Standard (bulanan atau tahunan): Transkripsi dan penerjemahan langsung bertenaga AI dalam 33 bahasa yang didukung (Professional mencakup 43; penerjemahan tersedia untuk lebih banyak bahasa daripada yang dapat ditranskripsikan — daftar terkini untuk setiap paket dipublikasikan di duovox.net/languages). Termasuk 15 jam penggunaan AI per bulan dan penerjemahan dokumen. Tanpa iklan. Penggunaan tambahan di luar jam yang termasuk tersedia melalui Pay-As-You-Go.",
+  "terms.v33.s2.f2": "Standard (bulanan atau tahunan): Transkripsi dan penerjemahan langsung bertenaga AI dalam 53 bahasa yang didukung (Professional mencakup 57; penerjemahan tersedia untuk lebih banyak bahasa daripada yang dapat ditranskripsikan — daftar terkini untuk setiap paket dipublikasikan di duovox.net/languages). Termasuk 15 jam penggunaan AI per bulan dan penerjemahan dokumen. Tanpa iklan. Penggunaan tambahan di luar jam yang termasuk tersedia melalui Pay-As-You-Go.",
   "terms.v33.s2.f3": "Professional (bulanan atau enam bulanan): Pengenalan terminologi yang ditingkatkan untuk kosakata khusus, penerjemahan AI tingkat lanjut, dan 40 jam penggunaan AI per bulan. Termasuk ekspor takarir (SRT dan VTT), transkripsi dan penerjemahan berkas (audio dan video), Glosarium Terjemahan, serta Mode Privat.",
   "terms.v33.s2.f4": "Pay-As-You-Go: Tidak memerlukan langganan. Beli kredit dengan tarif per jam dalam kualitas Standard atau Professional, dalam paket 1, 10, dan 25 jam; paket yang lebih besar berbiaya lebih murah per jam. Kredit tidak pernah kedaluwarsa. Tersedia baik sebagai pilihan mandiri (tanpa langganan) maupun sebagai isi ulang bagi pelanggan yang melampaui jam bulanan mereka.",
   "terms.v33.s2.p1": "Cara kredit dan jam yang termasuk digunakan bersama-sama bergantung pada kualitas sesi. Jika Anda tidak memiliki langganan aktif, seluruh penggunaan diambil dari kredit Anda. Jika Anda memiliki langganan dan sesi berjalan pada kualitas yang tercakup dalam langganan Anda, jam yang termasuk digunakan lebih dahulu, kemudian saldo kredit Anda otomatis dipakai setelah jam tersebut habis, tanpa perlu tindakan apa pun dari Anda. Jika saldo kredit Professional memungkinkan Anda berjalan pada kualitas yang lebih tinggi daripada yang tercakup dalam langganan Anda — misalnya pelanggan Standard yang menggunakan jam Professional — sesi tersebut sepenuhnya dibiayai dari saldo kredit Anda, dan jam yang termasuk tidak terpakai sampai kredit habis. Fitur AI baru berhenti setelah jam yang termasuk dan kredit Anda sama-sama habis.",
@@ -359,7 +359,7 @@
   "lang.free.sub": "Berjalan sepenuhnya di perangkat Anda. Tidak perlu internet, tidak ada audio yang pernah meninggalkan komputer Anda.",
   "lang.free.title": "Free",
   "lang.intro": "Setiap paket di bawah ini mencantumkan bahasa yang didukungnya. Paket Free berjalan sepenuhnya di perangkat Anda, jadi mencakup bahasa yang dapat kami kirimkan model suaranya; paket online menjangkau jauh lebih luas. Temukan bahasa Anda, dan Anda dapat langsung melihat paket mana yang Anda perlukan.",
-  "lang.key.part": "• Caption di perangkat Anda, terjemahan memerlukan paket online",
+  "lang.key.part": "• Teks pada perangkat Anda; terjemahan sesuai keterangan untuk setiap bahasa",
   "lang.key.yes": "✓ Caption dan terjemahan",
   "lang.professional.sub": "Mesin kami yang paling akurat, untuk pekerjaan spesialis dan profesional.",
   "lang.professional.title": "Professional",
@@ -757,5 +757,8 @@
   "home.learn.desc": "Ucapkan sebuah kalimat dalam bahasa Anda sendiri dan DuoVox menampilkan terjemahannya saat Anda berbicara. Lalu coba ucapkan dalam bahasa yang sedang Anda pelajari: DuoVox menuliskan persis apa yang didengarnya dan menerjemahkannya kembali, sehingga Anda bisa langsung melihat apakah Anda dipahami. Latih percakapan nyata dengan teman atau guru, masing-masing berbicara dalam bahasanya sendiri, sambil sama-sama mengikuti teksnya.",
   "home.learn.note": "Juga berfungsi pada paket Free, dengan 30 bahasa yang berjalan secara offline di PC Anda.",
   "home.who.learn": "Pembelajar Bahasa",
-  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Tonton video pembelajaran bahasa &rarr;</a>"
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Tonton video pembelajaran bahasa &rarr;</a>",
+  "home.chat.title": "Baru: tampilan Chat",
+  "home.chat.desc": "Lihat seluruh percakapan sebagai gelembung percakapan: setiap orang di sisinya masing-masing, dengan terjemahan di setiap gelembung.",
+  "lang.note.captions_device_only": "Teks pada perangkat Anda — terjemahan belum tersedia untuk bahasa ini"
 }

@@ -281,7 +281,7 @@
   "terms.v32.s15.p3": "Kirkbymoorside, York, YO62 6LJ, United Kingdom",
   "terms.v32.s15.p4": "电子邮件：info@duovox.net",
   "terms.v33.title": "DuoVox — 使用条款",
-  "terms.v33.updated": "Version 3.3 — last updated 2026年9月25日",
+  "terms.v33.updated": "Version 3.3 — last updated 2026年11月2日",
   "terms.v33.intro": "本使用条款（“条款”）规范您对 David Arthur Software（“DAS”“我们”）提供的 DuoVox 应用程序（“本应用”）的使用。请在使用 DuoVox 之前阅读本条款。在本应用中，您通过勾选复选框并选择“同意并继续”来接受本条款；若您不同意，请选择“拒绝并退出”，本应用将会关闭。安装或使用本应用即表示您同意本条款。",
   "terms.v33.s1.title": "1. DuoVox 是什么",
   "terms.v33.s1.p1": "DuoVox 是一款实时语音转写与翻译应用程序。它采集音频、将语音转换为文字，并在支持的语言之间提供由人工智能驱动的翻译。本应用是通过 Microsoft Store 分发的 Windows 桌面应用程序。",
@@ -289,7 +289,7 @@
   "terms.v33.s2.title": "2. 方案与 Pay-As-You-Go",
   "terms.v33.s2.intro": "本应用提供以下方案。适用于您所在国家/地区的价格会在购买前于 Microsoft Store 中以您本地的货币显示，您支付的就是该价格。当前价格亦发布于 duovox.net。我们在此说明各方案所包含的内容，而不重复列出价格，以免本文件与商店实际收取的金额出现偏差。",
   "terms.v33.s2.f1": "Free：使用本地语音识别在设备上转写。完全离线运行，无需互联网连接。应用内可能显示推广信息或轻量横幅广告。",
-  "terms.v33.s2.f2": "Standard（按月或按年）：在 33 种支持的语言之间提供由人工智能驱动的实时转写与翻译（Professional 涵盖 43 种；可翻译的语言多于可转写的语言——各方案的当前列表发布于 duovox.net/languages）。包含每月 15 小时的人工智能使用时长以及文档翻译。无广告。超出包含时长的额外使用可通过 Pay-As-You-Go 获得。",
+  "terms.v33.s2.f2": "Standard（按月或按年）：在 53 种支持的语言之间提供由人工智能驱动的实时转写与翻译（Professional 涵盖 57 种；可翻译的语言多于可转写的语言——各方案的当前列表发布于 duovox.net/languages）。包含每月 15 小时的人工智能使用时长以及文档翻译。无广告。超出包含时长的额外使用可通过 Pay-As-You-Go 获得。",
   "terms.v33.s2.f3": "Professional（按月或按六个月）：针对专业词汇的增强术语识别、进阶人工智能翻译，以及每月 40 小时的人工智能使用时长。包含字幕导出（SRT 与 VTT）、文件转写与翻译（音频与视频）、翻译词汇表以及隐私模式。",
   "terms.v33.s2.f4": "Pay-As-You-Go：无需订阅。以小时费率购买 Standard 或 Professional 质量的额度，提供 1 小时、10 小时和 25 小时的套餐；套餐越大，每小时单价越低。额度永不过期。既可作为独立选项（无需订阅）使用，也可作为订阅用户超出每月时长后的充值方式。",
   "terms.v33.s2.p1": "额度与包含时长如何共同使用，取决于该次会话的质量等级。若您没有有效订阅，所有使用量均从额度中扣除。若您有订阅且会话以订阅所含的质量运行，则先使用包含时长，用完后自动动用您的额度余额，您无需进行任何操作。若 Professional 额度余额使您能够以高于订阅所含的质量运行——例如 Standard 订阅用户使用 Professional 时长——该次会话将完全由您的额度余额支付，在额度用尽之前不会消耗您的包含时长。只有当包含时长与额度均已用尽时，人工智能功能才会停止。",
@@ -359,7 +359,7 @@
   "lang.free.sub": "完全在您的设备上运行。无需互联网，音频绝不会离开您的电脑。",
   "lang.free.title": "免费",
   "lang.intro": "下方每个套餐都列出了其支持的语言。免费版完全在您的设备上运行，因此仅涵盖我们能够随应用提供语音模型的语言；在线套餐的覆盖范围则要广得多。找到您的语言，您就能一目了然地看到自己需要哪个套餐。",
-  "lang.key.part": "• 字幕在您的设备上生成，翻译需要在线方案",
+  "lang.key.part": "• 设备端字幕；翻译情况以各语言所示为准",
   "lang.key.yes": "✓ 字幕和翻译",
   "lang.professional.sub": "我们最准确的引擎，适用于专业和专家级工作。",
   "lang.professional.title": "专业版",
@@ -757,5 +757,8 @@
   "home.learn.desc": "用你自己的语言说一句话，DuoVox 会在你说话的同时显示译文。然后试着用你正在学习的语言再说一遍：DuoVox 会准确写下它听到的内容，并将其翻译回来，这样你就能立刻看出自己是否被理解了。和朋友或老师练习真实对话，你们各自说自己的语言，同时都可以跟着文字阅读。",
   "home.learn.note": "免费版也可用，支持 30 种可在你的 PC 上离线运行的语言。",
   "home.who.learn": "语言学习者",
-  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">观看语言学习视频 &rarr;</a>"
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">观看语言学习视频 &rarr;</a>",
+  "home.chat.title": "新功能：聊天视图",
+  "home.chat.desc": "以对话气泡形式查看整个对话：每个人各在一侧，并且每个气泡中都显示翻译。",
+  "lang.note.captions_device_only": "设备端字幕——该语言暂不支持翻译"
 }

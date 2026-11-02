@@ -281,7 +281,7 @@
   "terms.v32.s15.p3": "Kirkbymoorside, York, YO62 6LJ, Royaume-Uni",
   "terms.v32.s15.p4": "E-mail : info@duovox.net",
   "terms.v33.title": "DuoVox — Conditions d'utilisation",
-  "terms.v33.updated": "Version 3.3 — last updated 25 septembre 2026",
+  "terms.v33.updated": "Version 3.3 — last updated 2 novembre 2026",
   "terms.v33.intro": "Les présentes conditions d'utilisation (« Conditions ») régissent votre utilisation de l'application DuoVox (« Application ») fournie par David Arthur Software (« DAS », « nous », « notre »). Veuillez les lire avant d'utiliser DuoVox. Dans l'Application, vous les acceptez en cochant la case et en choisissant « Accepter et continuer » ; si vous n'êtes pas d'accord, choisissez « Refuser et quitter » et l'Application se fermera. En installant ou en utilisant l'Application, vous acceptez les présentes Conditions.",
   "terms.v33.s1.title": "1. Ce qu'est DuoVox",
   "terms.v33.s1.p1": "DuoVox est une application de transcription vocale et de traduction en temps réel. Elle capte l'audio, transcrit la parole en texte et fournit une traduction assistée par IA entre les langues prises en charge. L'Application est une application de bureau Windows distribuée via le Microsoft Store.",
@@ -289,7 +289,7 @@
   "terms.v33.s2.title": "2. Formules et Pay-As-You-Go",
   "terms.v33.s2.intro": "L'Application propose les formules suivantes. Le prix applicable à votre pays vous est indiqué dans le Microsoft Store avant l'achat, dans votre propre devise, et c'est ce prix que vous payez. Les prix actuels sont également publiés sur duovox.net. Nous décrivons ici ce que chaque formule comprend plutôt que de répéter des prix, afin que ce document ne puisse pas s'écarter de ce que la boutique facture réellement.",
   "terms.v33.s2.f1": "Free : Transcription sur l'appareil au moyen de la reconnaissance vocale locale. Fonctionne entièrement hors ligne, sans connexion Internet. Des messages promotionnels ou de discrètes bannières publicitaires peuvent être affichés dans l'Application.",
-  "terms.v33.s2.f2": "Standard (mensuel ou annuel) : Transcription et traduction en direct assistées par IA dans 33 langues prises en charge (Professional en couvre 43 ; la traduction est disponible pour davantage de langues qu'il n'est possible d'en transcrire — la liste actuelle par formule est publiée sur duovox.net/languages). Comprend 15 heures d'utilisation de l'IA par mois et la traduction de documents. Sans publicité. Toute utilisation au-delà des heures incluses est disponible via le Pay-As-You-Go.",
+  "terms.v33.s2.f2": "Standard (mensuel ou annuel) : Transcription et traduction en direct assistées par IA dans 53 langues prises en charge (Professional en couvre 57 ; la traduction est disponible pour davantage de langues qu'il n'est possible d'en transcrire — la liste actuelle par formule est publiée sur duovox.net/languages). Comprend 15 heures d'utilisation de l'IA par mois et la traduction de documents. Sans publicité. Toute utilisation au-delà des heures incluses est disponible via le Pay-As-You-Go.",
   "terms.v33.s2.f3": "Professional (mensuel ou semestriel) : Reconnaissance terminologique améliorée pour le vocabulaire spécialisé, traduction IA avancée et 40 heures d'utilisation de l'IA par mois. Comprend l'export de sous-titres (SRT et VTT), la transcription et la traduction de fichiers (audio et vidéo), le Glossaire de traduction et le Mode privé.",
   "terms.v33.s2.f4": "Pay-As-You-Go : Aucun abonnement requis. Achetez du crédit à un tarif horaire, en qualité Standard ou Professional, par lots de 1, 10 et 25 heures ; les lots les plus importants coûtent moins cher à l'heure. Les crédits n'expirent jamais. Disponible aussi bien comme option autonome (sans abonnement) que comme recharge pour les abonnés qui dépassent leurs heures mensuelles.",
   "terms.v33.s2.p1": "La façon dont les crédits et les heures incluses s'utilisent ensemble dépend de la qualité de la session. Si vous n'avez pas d'abonnement actif, toute l'utilisation est prélevée sur vos crédits. Si vous avez un abonnement et que la session se déroule à la qualité comprise dans votre abonnement, vos heures incluses sont utilisées en premier, puis votre solde de crédits est mobilisé automatiquement une fois celles-ci épuisées, sans aucune démarche de votre part. Si un solde de crédits Professional vous permet de travailler à une qualité supérieure à celle comprise dans votre abonnement — par exemple un abonné Standard utilisant des heures Professional —, cette session est financée entièrement par votre solde de crédits, et vos heures incluses ne sont pas consommées tant que les crédits ne sont pas épuisés. Les fonctions d'IA ne s'arrêtent qu'une fois vos heures incluses et vos crédits tous deux épuisés.",
@@ -359,7 +359,7 @@
   "lang.free.sub": "Fonctionne entièrement sur votre appareil. Aucun internet nécessaire, aucun audio ne quitte jamais votre ordinateur.",
   "lang.free.title": "Gratuit",
   "lang.intro": "Chaque formule ci-dessous indique les langues qu’elle prend en charge. La formule Gratuit fonctionne entièrement sur votre appareil ; elle couvre donc les langues pour lesquelles nous pouvons fournir un modèle vocal. Les formules en ligne vont beaucoup plus loin. Trouvez votre langue, et vous verrez en un coup d’œil quelle formule il vous faut.",
-  "lang.key.part": "• Sous-titres sur votre appareil, la traduction nécessite une offre en ligne",
+  "lang.key.part": "• Sous-titres sur votre appareil ; traduction comme indiqué pour chaque langue",
   "lang.key.yes": "✓ Sous-titres et traduction",
   "lang.professional.sub": "Notre moteur le plus précis, pour les travaux spécialisés et professionnels.",
   "lang.professional.title": "Professionnel",
@@ -757,5 +757,8 @@
   "home.learn.desc": "Dites une phrase dans votre propre langue et DuoVox vous montre la traduction pendant que vous parlez. Ensuite, essayez de la dire dans la langue que vous apprenez : DuoVox écrit exactement ce qu'il a entendu et le retraduit dans votre langue, pour que vous puissiez voir tout de suite si l'on vous a compris. Entraînez-vous à de vraies conversations avec un ami ou un professeur, chacun parlant sa propre langue, pendant que vous lisez tous les deux.",
   "home.learn.note": "Fonctionne aussi avec le forfait Gratuit, avec 30 langues qui fonctionnent hors ligne sur votre PC.",
   "home.who.learn": "Apprenants en langues",
-  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Regarder la vidéo d’apprentissage des langues &rarr;</a>"
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Regarder la vidéo d’apprentissage des langues &rarr;</a>",
+  "home.chat.title": "Nouveau : la vue Chat",
+  "home.chat.desc": "Affichez toute la conversation sous forme de bulles de dialogue : chaque personne de son côté, avec la traduction dans chaque bulle.",
+  "lang.note.captions_device_only": "Sous-titres sur votre appareil — la traduction n’est pas encore disponible pour cette langue"
 }

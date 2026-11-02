@@ -281,7 +281,7 @@
   "terms.v32.s15.p3": "Kirkbymoorside, York, YO62 6LJ, Reino Unido",
   "terms.v32.s15.p4": "Correo electrónico: info@duovox.net",
   "terms.v33.title": "DuoVox — Condiciones de uso",
-  "terms.v33.updated": "Version 3.3 — last updated 25 de septiembre de 2026",
+  "terms.v33.updated": "Version 3.3 — last updated 2 de noviembre de 2026",
   "terms.v33.intro": "Estas Condiciones de uso («Condiciones») rigen su uso de la aplicación DuoVox («Aplicación») proporcionada por David Arthur Software («DAS», «nosotros», «nuestro»). Léalas antes de utilizar DuoVox. En la Aplicación las acepta marcando la casilla y eligiendo «Aceptar y continuar»; si no está de acuerdo, elija «Rechazar y salir» y la Aplicación se cerrará. Al instalar o utilizar la Aplicación, usted acepta estas Condiciones.",
   "terms.v33.s1.title": "1. Qué es DuoVox",
   "terms.v33.s1.p1": "DuoVox es una aplicación de transcripción de voz y traducción en tiempo real. Capta audio, transcribe el habla a texto y ofrece traducción asistida por IA entre los idiomas admitidos. La Aplicación es una aplicación de escritorio para Windows distribuida a través de Microsoft Store.",
@@ -289,7 +289,7 @@
   "terms.v33.s2.title": "2. Planes y Pay-As-You-Go",
   "terms.v33.s2.intro": "La Aplicación ofrece los siguientes planes. El precio para su país se muestra en Microsoft Store antes de la compra, en su propia moneda, y ese es el precio que paga. Los precios actuales también se publican en duovox.net. Aquí describimos lo que incluye cada plan en lugar de repetir precios, para que este documento no pueda desajustarse respecto de lo que la tienda cobra realmente.",
   "terms.v33.s2.f1": "Free: Transcripción en el dispositivo mediante reconocimiento de voz local. Funciona totalmente sin conexión, sin necesidad de Internet. Pueden mostrarse mensajes promocionales dentro de la Aplicación o publicidad discreta en banner.",
-  "terms.v33.s2.f2": "Standard (mensual o anual): Transcripción y traducción en directo asistidas por IA en 33 idiomas admitidos (Professional cubre 43; la traducción está disponible para más idiomas de los que pueden transcribirse — la lista actual por plan se publica en duovox.net/languages). Incluye 15 horas de uso de IA al mes y traducción de documentos. Sin publicidad. El uso adicional por encima de las horas incluidas está disponible mediante Pay-As-You-Go.",
+  "terms.v33.s2.f2": "Standard (mensual o anual): Transcripción y traducción en directo asistidas por IA en 53 idiomas admitidos (Professional cubre 57; la traducción está disponible para más idiomas de los que pueden transcribirse — la lista actual por plan se publica en duovox.net/languages). Incluye 15 horas de uso de IA al mes y traducción de documentos. Sin publicidad. El uso adicional por encima de las horas incluidas está disponible mediante Pay-As-You-Go.",
   "terms.v33.s2.f3": "Professional (mensual o semestral): Reconocimiento terminológico mejorado para vocabulario especializado, traducción avanzada por IA y 40 horas de uso de IA al mes. Incluye exportación de subtítulos (SRT y VTT), transcripción y traducción de archivos (audio y vídeo), Glosario de traducción y Modo privado.",
   "terms.v33.s2.f4": "Pay-As-You-Go: No requiere suscripción. Compre crédito a una tarifa por hora en calidad Standard o Professional, en paquetes de 1, 10 y 25 horas; los paquetes mayores cuestan menos por hora. Los créditos nunca caducan. Disponible tanto como opción independiente (sin suscripción) como recarga para suscriptores que superen sus horas mensuales.",
   "terms.v33.s2.p1": "Cómo se combinan los créditos y las horas incluidas depende de la calidad de la sesión. Si no tiene una suscripción activa, todo el uso se descuenta de sus créditos. Si tiene suscripción y la sesión se ejecuta con la calidad que su suscripción incluye, primero se consumen las horas incluidas y después se recurre automáticamente a su saldo de créditos cuando aquellas se agotan, sin que usted deba hacer nada. Si un saldo de créditos Professional le permite trabajar con una calidad superior a la que incluye su suscripción — por ejemplo, un suscriptor Standard que utiliza horas Professional —, esa sesión se financia íntegramente con su saldo de créditos, y sus horas incluidas no se consumen hasta que los créditos se agoten. Las funciones de IA solo se detienen cuando se agotan tanto sus horas incluidas como sus créditos.",
@@ -359,7 +359,7 @@
   "lang.free.sub": "Funciona completamente en su dispositivo. No necesita internet y ningún audio sale jamás de su equipo.",
   "lang.free.title": "Gratis",
   "lang.intro": "Cada plan de abajo indica los idiomas que admite. El plan Gratis funciona completamente en tu dispositivo, por lo que cubre los idiomas para los que podemos incluir un modelo de voz; los planes en línea llegan mucho más lejos. Encuentra tu idioma y podrás ver de un vistazo qué plan necesitas.",
-  "lang.key.part": "• Subtítulos en su dispositivo; la traducción requiere un plan en línea",
+  "lang.key.part": "• Subtítulos en tu dispositivo; traducción según se indica para cada idioma",
   "lang.key.yes": "✓ Subtítulos y traducción",
   "lang.professional.sub": "Nuestro motor más preciso, para trabajo especializado y profesional.",
   "lang.professional.title": "Profesional",
@@ -757,5 +757,8 @@
   "home.learn.desc": "Di una frase en tu propio idioma y DuoVox te muestra la traducción mientras hablas. Luego intenta decirla en el idioma que estás aprendiendo: DuoVox escribe exactamente lo que ha oído y lo traduce de vuelta, para que puedas ver enseguida si se te entendió. Practica conversaciones reales con un amigo o un profesor, cada uno hablando su propio idioma, y ambos siguiendo el texto.",
   "home.learn.note": "También funciona con el plan Gratis, con 30 idiomas que funcionan sin conexión en tu PC.",
   "home.who.learn": "Estudiantes de idiomas",
-  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Ver el video de aprendizaje de idiomas &rarr;</a>"
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Ver el video de aprendizaje de idiomas &rarr;</a>",
+  "home.chat.title": "Nuevo: la vista de chat",
+  "home.chat.desc": "Ve toda la conversación como burbujas de diálogo: cada persona en su propio lado, con la traducción en cada burbuja.",
+  "lang.note.captions_device_only": "Subtítulos en tu dispositivo — la traducción todavía no está disponible para este idioma"
 }

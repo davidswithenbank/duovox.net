@@ -281,7 +281,7 @@
   "terms.v32.s15.p3": "Kirkbymoorside, York, YO62 6LJ, Verenigd Koninkrijk",
   "terms.v32.s15.p4": "E-mail: info@duovox.net",
   "terms.v33.title": "DuoVox — Gebruiksvoorwaarden",
-  "terms.v33.updated": "Version 3.3 — last updated 25 september 2026",
+  "terms.v33.updated": "Version 3.3 — last updated 2 november 2026",
   "terms.v33.intro": "Deze Gebruiksvoorwaarden (“Voorwaarden”) zijn van toepassing op uw gebruik van de DuoVox-applicatie (“App”), aangeboden door David Arthur Software (“DAS”, “wij”, “ons”, “onze”). Lees ze door voordat u DuoVox gebruikt. In de App aanvaardt u ze door het vakje aan te vinken en te kiezen voor “Akkoord & doorgaan”; als u niet akkoord gaat, kiest u “Weigeren & afsluiten” en wordt de App gesloten. Door de App te installeren of te gebruiken gaat u akkoord met deze Voorwaarden.",
   "terms.v33.s1.title": "1. Wat DuoVox is",
   "terms.v33.s1.p1": "DuoVox is een applicatie voor spraaktranscriptie en vertaling in realtime. De App legt audio vast, zet spraak om in tekst en biedt AI-gestuurde vertaling tussen de ondersteunde talen. De App is een Windows-desktopapplicatie die via de Microsoft Store wordt gedistribueerd.",
@@ -289,7 +289,7 @@
   "terms.v33.s2.title": "2. Pakketten en Pay-As-You-Go",
   "terms.v33.s2.intro": "De App biedt de volgende pakketten. De prijs voor uw land wordt vóór aankoop in de Microsoft Store weergegeven, in uw eigen valuta, en dat is de prijs die u betaalt. De actuele prijzen worden ook gepubliceerd op duovox.net. Wij beschrijven hier wat elk pakket omvat in plaats van prijzen te herhalen, zodat dit document niet uit de pas kan gaan lopen met wat de store daadwerkelijk in rekening brengt.",
   "terms.v33.s2.f1": "Free: transcriptie op het apparaat zelf met lokale spraakherkenning. Werkt volledig offline, zonder internetverbinding. In de App kunnen promotionele berichten of lichte bannerreclame worden weergegeven.",
-  "terms.v33.s2.f2": "Standard (maandelijks of jaarlijks): AI-gestuurde live transcriptie en vertaling in 33 ondersteunde talen (Professional omvat er 43; vertaling is beschikbaar voor meer talen dan er getranscribeerd kunnen worden — de actuele lijst per pakket wordt gepubliceerd op duovox.net/languages). Omvat 15 uur AI-gebruik per maand en documentvertaling. Geen reclame. Aanvullend gebruik boven de inbegrepen uren is beschikbaar via Pay-As-You-Go.",
+  "terms.v33.s2.f2": "Standard (maandelijks of jaarlijks): AI-gestuurde live transcriptie en vertaling in 53 ondersteunde talen (Professional omvat er 57; vertaling is beschikbaar voor meer talen dan er getranscribeerd kunnen worden — de actuele lijst per pakket wordt gepubliceerd op duovox.net/languages). Omvat 15 uur AI-gebruik per maand en documentvertaling. Geen reclame. Aanvullend gebruik boven de inbegrepen uren is beschikbaar via Pay-As-You-Go.",
   "terms.v33.s2.f3": "Professional (maandelijks of halfjaarlijks): verbeterde terminologieherkenning voor vakjargon, geavanceerde AI-vertaling en 40 uur AI-gebruik per maand. Omvat ondertitelexport (SRT en VTT), transcriptie en vertaling van bestanden (audio en video), Vertaalglossarium en Privémodus.",
   "terms.v33.s2.f4": "Pay-As-You-Go: geen abonnement vereist. Koop tegoed tegen een uurtarief in Standard- of Professional-kwaliteit, in bundels van 1, 10 en 25 uur; de grotere bundels kosten minder per uur. Tegoed verloopt nooit. Beschikbaar zowel als losstaande optie (zonder abonnement) als in de vorm van een opwaardering voor abonnees die hun maanduren overschrijden.",
   "terms.v33.s2.p1": "Hoe tegoed en inbegrepen uren samen worden gebruikt, hangt af van de kwaliteit van de sessie. Als u geen actief abonnement hebt, wordt al het gebruik van uw tegoed afgeschreven. Hebt u wel een abonnement en draait de sessie op de kwaliteit die uw abonnement omvat, dan worden eerst uw inbegrepen uren gebruikt en wordt daarna automatisch uw tegoed aangesproken zodra die uren op zijn, zonder dat u iets hoeft te doen. Als een Professional-tegoed u in staat stelt op een hogere kwaliteit te werken dan uw abonnement omvat — bijvoorbeeld een Standard-abonnee die Professional-uren gebruikt — dan wordt die sessie volledig uit uw tegoed betaald en worden uw inbegrepen uren pas verbruikt wanneer het tegoed is uitgeput. AI-functies stoppen pas wanneer zowel uw inbegrepen uren als uw tegoed zijn uitgeput.",
@@ -359,7 +359,7 @@
   "lang.free.sub": "Draait volledig op uw apparaat. Geen internet nodig, er verlaat nooit audio uw computer.",
   "lang.free.title": "Gratis",
   "lang.intro": "Elk abonnement hieronder vermeldt welke talen het ondersteunt. Het Gratis-abonnement draait volledig op je apparaat, dus het omvat de talen waarvoor we een stemmodel kunnen meeleveren; de online abonnementen reiken aanzienlijk verder. Zoek je taal en je ziet in één oogopslag welk abonnement je nodig hebt.",
-  "lang.key.part": "• Ondertiteling op uw apparaat, vertaling vereist een online abonnement",
+  "lang.key.part": "• Ondertiteling op je apparaat; vertaling zoals vermeld voor elke taal",
   "lang.key.yes": "✓ Ondertiteling en vertaling",
   "lang.professional.sub": "Onze meest nauwkeurige engine, voor specialistisch en professioneel werk.",
   "lang.professional.title": "Professional",
@@ -757,5 +757,8 @@
   "home.learn.desc": "Zeg een zin in je eigen taal en DuoVox toont de vertaling terwijl je spreekt. Probeer het daarna in de taal die je aan het leren bent: DuoVox schrijft precies op wat het heeft gehoord en vertaalt het terug, zodat je meteen kunt zien of je begrepen werd. Oefen echte gesprekken met een vriend of een docent, waarbij ieder zijn eigen taal spreekt en jullie allebei meelezen.",
   "home.learn.note": "Werkt ook met het Gratis-abonnement, met 30 talen die offline op je pc draaien.",
   "home.who.learn": "Taalleerders",
-  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Bekijk de taal-leervideo &rarr;</a>"
+  "home.who.learnvid": "<a href=\"https://youtu.be/_J8kYKG_Pqw\">Bekijk de taal-leervideo &rarr;</a>",
+  "home.chat.title": "Nieuw: de chatweergave",
+  "home.chat.desc": "Bekijk het hele gesprek als spraakballonnen: elke persoon aan een eigen kant, met de vertaling in elke ballon.",
+  "lang.note.captions_device_only": "Ondertiteling op je apparaat — vertaling is voor deze taal nog niet beschikbaar"
 }
