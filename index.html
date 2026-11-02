@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DuoVox: live captions and translation for interpreters and calls on Windows</title>
+    <title>DuoVox: live captions &amp; translation for calls on Windows</title>
     <link rel="canonical" href="https://duovox.net/">
-    <meta name="description" content="A live two-language transcript and translation on your Windows PC, built for professional interpreters. Works with Teams, Zoom and any audio your PC plays, or people in the room. Free offline plan.">
+    <meta name="description" content="Live captions and translation for both sides of a conversation on your Windows PC. For interpreters and calls on Teams, Zoom or any app. Free offline plan.">
     <!-- Open Graph -->
     <meta property="og:title" content="DuoVox: live captions and translation for interpreters and calls">
     <meta property="og:description" content="Both sides of a conversation as live text, with the translation beside it, on your Windows PC. Teams, Zoom, any audio your PC plays, or people in the room.">
@@ -19,6 +19,7 @@
     <meta name="twitter:image" content="https://duovox.net/og-image.png">
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="home-condensed.css?v=1">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -46,6 +47,33 @@
         "url": "https://davidarthur.app"
       }
     }
+    </script>
+    <!-- 2 Nov 2026 (SEO): the two home-page videos, so they can show as video results. Dates and titles are YouTube's own. -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "DuoVox: live captions and translation on your Windows PC",
+        "description": "Live captions and translation on your PC, in under a minute: DuoVox shows what each person says and the translation, side by side.",
+        "thumbnailUrl": "https://duovox.net/avatar-ad-poster.jpg",
+        "uploadDate": "2026-10-25T05:23:43-07:00",
+        "duration": "PT54S",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/VZ_IQDdW804",
+        "contentUrl": "https://www.youtube.com/watch?v=VZ_IQDdW804"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "DuoVox: see both sides of any conversation, translated live on your PC",
+        "description": "Two languages, one conversation: DuoVox captions and translates both sides live on a Windows PC.",
+        "thumbnailUrl": "https://duovox.net/video-poster.jpg",
+        "uploadDate": "2026-10-10T05:30:48-07:00",
+        "duration": "PT31S",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/NwxHrfJecY0",
+        "contentUrl": "https://www.youtube.com/watch?v=NwxHrfJecY0"
+      }
+    ]
     </script>
 <style>
     /* Demo video (site_video_1oct.py): click-to-load, so nothing is requested from YouTube until play. */
@@ -81,7 +109,7 @@
     .video-note a { color: var(--accent-light); }
 </style>
 </head>
-<body>
+<body class="home-c">
 <a href="#main-content" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
 <!-- Wording for the language suggestion bar (i18n.js suggestLang) - never shown here; translated with the rest of the site -->
 <div hidden><span data-i18n="suggest.text">This page is also available in your language.</span> <span data-i18n="suggest.no">No thanks</span></div>
@@ -109,11 +137,24 @@
 </nav>
 
 <!-- Hero -->
-<section class="hero" id="main-content">
-    <img src="icon.png" alt="DuoVox" class="hero-icon">
-    <h1>DuoVox</h1>
-    <p class="subtitle" data-i18n="home.subtitle2">Live captions and translation for both sides of a conversation, on your Windows PC.</p>
-    <p class="tagline" data-i18n="home.tagline2">Built for professional interpreters, and for anyone on a call across a language gap. DuoVox writes down what each person says and translates it, live and side by side, from a Teams or Zoom call, anything else your PC plays, or the people in the room. The free plan runs offline with no time limit.</p>
+<section class="hero hero-c" id="main-content">
+    <div class="hero-c-text">
+        <h1><img src="icon.png" alt="" class="hero-c-icon">DuoVox</h1>
+        <p class="subtitle" data-i18n="home.subtitle2">Live captions and translation for both sides of a conversation, on your Windows PC.</p>
+        <p class="tagline" data-i18n="home.tagline2">Built for professional interpreters, and for anyone on a call across a language gap. DuoVox writes down what each person says and translates it, live and side by side, from a Teams or Zoom call, anything else your PC plays, or the people in the room. The free plan runs offline with no time limit.</p>
+        <div class="hero-c-cta">
+            <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17,2H7A5,5,0,0,0,2,7V17a5,5,0,0,0,5,5H17a5,5,0,0,0,5-5V7A5,5,0,0,0,17,2ZM12,17.5A5.5,5.5,0,1,1,17.5,12,5.51,5.51,0,0,1,12,17.5Zm0-9A3.5,3.5,0,1,0,15.5,12,3.5,3.5,0,0,0,12,8.5Z"/></svg>
+                <span data-i18n="cta.ms_get">Get it on the Microsoft Store</span>
+            </a>
+            <a href="#demo" class="btn btn-secondary">&#9654;&nbsp;<span data-i18n="home.video.title">See DuoVox in action</span></a>
+        </div>
+        <p class="hero-c-note"><span data-i18n="home.pricing.free.micro">No account needed. Free forever.</span> <span data-i18n="cta.avail_win">For Windows 10 and 11, from the Microsoft Store.</span></p>
+    </div>
+    <figure class="hero-c-shot">
+        <a href="img/home-four-box.png"><img src="img/home-four-box.png" alt="DuoVox 4-box view on Professional: a doctor and a lawyer speaking English with a Spanish-speaking client, each person's words and the translation in four boxes" width="1164" height="1040"></a>
+        <figcaption data-i18n="home.hero.caption">The 4-box view: both speakers' words and both translations, live, side by side. A real session on Professional.</figcaption>
+    </figure>
 </section>
 <!-- Demo video (site_video_1oct.py). Click-to-load: the poster is our own file and nothing is requested from
      YouTube until the visitor presses play; the player then loads from youtube-nocookie.com. -->
@@ -138,37 +179,8 @@
             </div>
             <figcaption class="video-tagline" id="vtag-2" data-i18n="home.video.tag2">Two languages, one conversation: both sides, live</figcaption>
         </figure>
-        <figure class="video-item">
-            <div class="video-frame" data-video="_J8kYKG_Pqw">
-                <button class="video-play" type="button" aria-labelledby="vtag-3">
-                    <img src="ll-video-poster.jpg" alt="" width="1280" height="720" loading="lazy">
-                    <span class="video-play-icon" aria-hidden="true"></span>
-                </button>
             </div>
-            <figcaption class="video-tagline" id="vtag-3" data-i18n="home.video.tag3">For language learners: speak, see it, check yourself</figcaption>
-        </figure>
-        <figure class="video-item">
-            <div class="video-frame" data-video="JrTgGcbDwOA">
-                <button class="video-play" type="button" aria-labelledby="vtag-4">
-                    <img src="interp-video-poster.jpg" alt="" width="1280" height="720" loading="lazy">
-                    <span class="video-play-icon" aria-hidden="true"></span>
-                </button>
-            </div>
-            <figcaption class="video-tagline" id="vtag-4" data-i18n="home.video.tag4">For professional interpreters: a live two-language transcript beside you</figcaption>
-        </figure>
-    </div>
-    <p class="video-note"><span data-i18n="home.video.note">Plays from YouTube.</span> <a href="https://youtu.be/VZ_IQDdW804" data-i18n="home.video.link">Watch on YouTube</a></p>
-    </div>
-    <div class="video-cta" style="text-align:center; margin-top:1.75rem;">
-        <div class="btn-group">
-            <!-- SVG icons from Material Design Icons (Apache License 2.0) — https://materialdesignicons.com -->
-            <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary">
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17,2H7A5,5,0,0,0,2,7V17a5,5,0,0,0,5,5H17a5,5,0,0,0,5-5V7A5,5,0,0,0,17,2ZM12,17.5A5.5,5.5,0,1,1,17.5,12,5.51,5.51,0,0,1,12,17.5Zm0-9A3.5,3.5,0,1,0,15.5,12,3.5,3.5,0,0,0,12,8.5Z"/></svg>
-                <span data-i18n="cta.ms_get">Get it on the Microsoft Store</span>
-            </a>
-        </div>
-        <p class="cta-avail-note" data-i18n="cta.avail_win" style="margin-top:1rem; font-size:0.85rem; color:var(--text-secondary);">For Windows 10 and 11, from the Microsoft Store.</p>
-    </div>
+    <p class="video-note"><span data-i18n="home.video.note">Plays from YouTube.</span> <a href="https://youtu.be/VZ_IQDdW804" data-i18n="home.video.link">Watch on YouTube</a> &middot; <a href="https://www.youtube.com/@DuoVoxApp/videos" data-i18n="home.video.more">More videos: interpreters, language learners and tutorials &rarr;</a></p>
     <script>
     (function () {
         document.querySelectorAll('.video-frame').forEach(function (frame) {
@@ -184,6 +196,27 @@
         });
     })();
     </script>
+</section>
+
+<!-- Two layouts (2 Nov 2026, David: the 4-box view is the professional USP; the Chat view is the everyday layout). Real captures. -->
+<section class="section" id="layouts">
+    <h2 class="section-title" data-i18n="home.layouts.title">Two layouts, for two kinds of conversation</h2>
+    <div class="layouts-grid">
+        <figure class="layout-card">
+            <a href="img/home-four-box.png"><img src="img/home-four-box.png" alt="The 4-box view" width="1164" height="1040" loading="lazy"></a>
+            <figcaption>
+                <h3 data-i18n="home.layouts.4box.title">4-box view: for professionals</h3>
+                <p data-i18n="home.layouts.4box.desc">Each speaker's exact words and the translation, in four boxes side by side. Made for interpreters and for anyone who needs to check what was said, in both languages, as it happens.</p>
+            </figcaption>
+        </figure>
+        <figure class="layout-card">
+            <a href="img/home-chat-view-full.png"><img class="layout-img-full" src="img/home-chat-view-full.png" alt="The Chat view" width="904" height="954" loading="lazy"></a>
+            <figcaption>
+                <h3 data-i18n="home.layouts.chat.title">Chat view: for everyday conversations</h3>
+                <p data-i18n="home.layouts.chat.desc">The conversation as speech bubbles, like a messaging app, with the translation in every bubble. Easy to follow on a family call, while travelling or practising a language.</p>
+            </figcaption>
+        </figure>
+    </div>
 </section>
 
 <!-- Trust Badges -->
@@ -249,30 +282,6 @@
     </div>
 </section>
 
-<!-- Chat view (12.3.145, 2 Nov 2026): a real capture - English/Spanish on Standard, every line the app's own output -->
-<section class="section" id="chat-view" style="padding-top:20px; padding-bottom:40px;">
-    <h2 class="section-title" data-i18n="home.chat.title">New: the Chat view</h2>
-    <p class="section-subtitle" data-i18n="home.chat.desc">See the whole conversation as speech bubbles: each person on their own side, with the translation in every bubble.</p>
-    <figure style="max-width:1100px; margin:1.5rem auto 0;">
-        <a href="presskit/duovox-screenshot-9-chat-view.png"><img src="presskit/duovox-screenshot-9-chat-view.png" alt="DuoVox Chat view: an English and a Spanish speaker as speech bubbles, each line with its translation" width="1584" height="891" loading="lazy" style="width:100%; height:auto; border-radius:14px; box-shadow:0 12px 40px rgba(0,0,0,.35);"></a>
-    </figure>
-</section>
-
-<!-- Reassurance -->
-<section class="section reassurance-section">
-    <div class="reassurance-box">
-        <h3 data-i18n="home.reassurance.title">Designed for Real Conversations</h3>
-        <p data-i18n="home.reassurance.desc">DuoVox is designed to cope with everyday accents and background noise, though accuracy can vary in difficult audio &mdash; always verify important details. Whether you're ordering coffee abroad or following a business meeting, it aims to follow real speech as it happens.</p>
-    </div>
-</section>
-
-<!-- Mid-page CTA -->
-<section class="section" style="padding-top:0; padding-bottom:40px;">
-    <div style="text-align:center;">
-        <a href="#pricing" class="btn btn-primary" style="font-size:1.05rem; padding:16px 36px;" data-i18n="home.cta.plans">See Plans &amp; Pricing</a>
-    </div>
-</section>
-
 <!-- How It Works -->
 <section class="section" id="how-it-works" style="padding-top:40px;">
     <h2 class="section-title" data-i18n="home.how.1">How It Works</h2>
@@ -318,94 +327,94 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Live conversations -->
-                <tr class="category-row"><td colspan="6" data-i18n-html="home.cmpx.cat.live"><strong>Live Conversations</strong></td></tr>
                 <tr>
                     <td><span class="cmp-feat" data-i18n="home.cmpx.4box">4-box dual-lane view</span><span class="cmp-sub" data-i18n="home.cmpx.4box.sub">Both speakers&rsquo; words and both translations on screen at the same time</span></td>
-                    <td class="highlight-col" data-i18n-html="home.cmpx.4box.dv"><span class="check">&#10003;</span> 4 live boxes <span class="unique-badge">Standout</span></td>
-                    <td class="cmp-note" data-i18n="home.cmpx.split.phone">Phone split screen</td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-note" data-i18n="home.cmpx.split.phone">Phone split screen</td>
-                    <td class="cmp-note" data-i18n="home.cmpx.split.f2f">Face-to-face split screen</td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.4box.dv"><span class="check">&#10003;</span> 4 live boxes <span class="unique-badge">Standout</span></td>
+                    <td data-label="Google" class="cmp-note" data-i18n="home.cmpx.split.phone">Phone split screen</td>
+                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
+                    <td data-label="Microsoft" class="cmp-note" data-i18n="home.cmpx.split.phone">Phone split screen</td>
+                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.split.f2f">Face-to-face split screen</td>
                 </tr>
                 <tr>
                     <td><span class="cmp-feat" data-i18n="home.cmpx.cont">Continuous, hands-free translation</span><span class="cmp-sub" data-i18n="home.cmpx.cont.sub">Just talk &mdash; no tapping a button and waiting your turn</span></td>
-                    <td class="highlight-col" data-i18n-html="home.cmp.5"><span class="check">&#10003;</span> Continuous</td>
-                    <td class="cmp-note" data-i18n="home.cmpx.cont.google">Conversations take turns</td>
-                    <td class="cmp-note" data-i18n="home.cmpx.turn">Turn-based</td>
-                    <td class="cmp-note" data-i18n="home.cmpx.turn">Turn-based</td>
-                    <td class="cmp-note" data-i18n="home.cmpx.paid.voice">Paid plans only (DeepL Voice)</td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmp.5"><span class="check">&#10003;</span> Continuous</td>
+                    <td data-label="Google" class="cmp-note" data-i18n="home.cmpx.cont.google">Conversations take turns</td>
+                    <td data-label="iTranslate" class="cmp-note" data-i18n="home.cmpx.turn">Turn-based</td>
+                    <td data-label="Microsoft" class="cmp-note" data-i18n="home.cmpx.turn">Turn-based</td>
+                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.paid.voice">Paid plans only (DeepL Voice)</td>
                 </tr>
                 <tr>
                     <td><span class="cmp-feat" data-i18n="home.cmpx.sys">Captions anything playing on your PC</span><span class="cmp-sub" data-i18n="home.cmpx.sys.sub">Calls, meetings, YouTube and films &mdash; from any app</span></td>
-                    <td class="highlight-col" data-i18n-html="home.cmpx.sys.dv"><span class="check">&#10003;</span> Any app <span class="unique-badge">Standout</span></td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-note" data-i18n="home.cmpx.sys.deepl">Teams, Zoom &amp; Meet only (paid)</td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.sys.dv"><span class="check">&#10003;</span> Any app <span class="unique-badge">Standout</span></td>
+                    <td data-label="Google" class="cmp-none">&mdash;</td>
+                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
+                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
+                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.sys.deepl">Teams, Zoom &amp; Meet only (paid)</td>
                 </tr>
-                <!-- Works your way -->
-                <tr class="category-row"><td colspan="6" data-i18n-html="home.cmpx.cat.yours"><strong>Works Your Way</strong></td></tr>
                 <tr>
                     <td><span class="cmp-feat" data-i18n="home.cmpx.offline">Free offline mode</span><span class="cmp-sub" data-i18n="home.cmpx.offline.sub">No internet needed, and your audio never leaves your PC</span></td>
-                    <td class="highlight-col" data-i18n-html="home.cmp.25"><span class="check">&#10003;</span> Free plan, 31 languages</td>
-                    <td class="cmp-note" data-i18n="home.cmpx.offline.google">Text and camera; live on Pixel phones only</td>
-                    <td class="cmp-note" data-i18n="home.cmp.27">Paid only</td>
-                    <td class="cmp-note" data-i18n="home.cmp.28">Text only</td>
-                    <td class="cmp-none">&mdash;</td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmp.25"><span class="check">&#10003;</span> Free plan, 31 languages</td>
+                    <td data-label="Google" class="cmp-note" data-i18n="home.cmpx.offline.google">Text and camera; live on Pixel phones only</td>
+                    <td data-label="iTranslate" class="cmp-note" data-i18n="home.cmp.27">Paid only</td>
+                    <td data-label="Microsoft" class="cmp-note" data-i18n="home.cmp.28">Text only</td>
+                    <td data-label="DeepL" class="cmp-none">&mdash;</td>
                 </tr>
                 <tr>
                     <td><span class="cmp-feat" data-i18n="home.cmpx.desktop">Desktop app for Windows</span></td>
-                    <td class="highlight-col"><span class="check">&#10003;</span></td>
-                    <td class="cmp-note" data-i18n="home.cmp.39">Web only</td>
-                    <td class="cmp-note" data-i18n="home.cmp.40">Web and Mac only</td>
-                    <td class="cmp-note" data-i18n="home.cmpx.retired">Retired in 2021</td>
-                    <td><span class="check-muted">&#10003;</span></td>
+                    <td data-label="DuoVox" class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td data-label="Google" class="cmp-note" data-i18n="home.cmp.39">Web only</td>
+                    <td data-label="iTranslate" class="cmp-note" data-i18n="home.cmp.40">Web and Mac only</td>
+                    <td data-label="Microsoft" class="cmp-note" data-i18n="home.cmpx.retired">Retired in 2021</td>
+                    <td data-label="DeepL"><span class="check-muted">&#10003;</span></td>
                 </tr>
-                <!-- Professional tools -->
-                <tr class="category-row"><td colspan="6" data-i18n-html="home.cmp.29"><strong>Professional Tools</strong></td></tr>
                 <tr>
                     <td><span class="cmp-feat" data-i18n="home.cmpx.subs">Subtitles from live sessions and media files</span><span class="cmp-sub" data-i18n="home.cmpx.subs.sub">Ready-to-use SRT and VTT files, transcribed and, if you want, translated</span></td>
-                    <td class="highlight-col" data-i18n-html="home.cmpx.subs.dv"><span class="check">&#10003;</span> Professional <span class="unique-badge">Standout</span></td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-note" data-i18n="home.cmpx.subs.deepl">Existing subtitle files only</td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.subs.dv"><span class="check">&#10003;</span> Professional <span class="unique-badge">Standout</span></td>
+                    <td data-label="Google" class="cmp-none">&mdash;</td>
+                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
+                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
+                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.subs.deepl">Existing subtitle files only</td>
+                </tr>
+                                <tr class="cmp-new">
+                    <td><span class="cmp-feat" data-i18n="home.cmpx.subject">Subject modes for interpreters</span><span class="cmp-sub" data-i18n="home.cmpx.subject.sub">Medical, legal, immigration, education, IT and business vocabulary</span></td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.subject.dv"><span class="check">&#10003;</span> <span class="unique-badge">Standout</span></td>
+                    <td data-label="Google" class="cmp-none">&mdash;</td>
+                    <td data-label="iTranslate" class="cmp-note" data-i18n="home.cmpx.subject.itr">Separate medical app</td>
+                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
+                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.subject.deepl">Glossary only</td>
                 </tr>
                 <tr>
                     <td><span class="cmp-feat" data-i18n="home.cmpx.gloss">Glossary &amp; keyword boost</span><span class="cmp-sub" data-i18n="home.cmpx.gloss.sub">Names, jargon and specialist terms come through right</span></td>
-                    <td class="highlight-col" data-i18n-html="home.cmp.37"><span class="check">&#10003;</span> Professional</td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td data-i18n-html="home.cmpx.gloss.deepl"><span class="check-muted">&#10003;</span> Glossary</td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmp.37"><span class="check">&#10003;</span> Professional</td>
+                    <td data-label="Google" class="cmp-none">&mdash;</td>
+                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
+                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
+                    <td data-label="DeepL" data-i18n-html="home.cmpx.gloss.deepl"><span class="check-muted">&#10003;</span> Glossary</td>
                 </tr>
-                <!-- Privacy -->
-                <tr class="category-row"><td colspan="6" data-i18n-html="home.cmp.42"><strong>Privacy &amp; Security</strong></td></tr>
                 <tr>
                     <td><span class="cmp-feat" data-i18n="home.cmpx.private">Private Mode</span><span class="cmp-sub" data-i18n="home.cmpx.private.sub">Captions are cleared when you stop, with no local log, copy or export</span></td>
-                    <td class="highlight-col" data-i18n-html="home.cmp.44"><span class="check">&#10003;</span> Professional <span class="unique-badge">Standout</span></td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-none">&mdash;</td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmp.44"><span class="check">&#10003;</span> Professional <span class="unique-badge">Standout</span></td>
+                    <td data-label="Google" class="cmp-none">&mdash;</td>
+                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
+                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
+                    <td data-label="DeepL" class="cmp-none">&mdash;</td>
                 </tr>
                 <tr>
                     <td><span class="cmp-feat" data-i18n="home.cmp.49">No third-party ads or tracking</span></td>
-                    <td class="highlight-col"><span class="check">&#10003;</span></td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td class="cmp-none">&mdash;</td>
-                    <td data-i18n-html="home.cmp.50"><span class="check-muted">&#10003;</span> Apps</td>
-                    <td class="cmp-note" data-i18n="home.cmp.51">No ads; tracking on its website</td>
+                    <td data-label="DuoVox" class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td data-label="Google" class="cmp-none">&mdash;</td>
+                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
+                    <td data-label="Microsoft" data-i18n-html="home.cmp.50"><span class="check-muted">&#10003;</span> Apps</td>
+                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmp.51">No ads; tracking on its website</td>
                 </tr>
                 <!-- Best For -->
                 <tr class="category-row best-for-row">
                     <td data-i18n-html="home.cmp.52"><strong>Best for&hellip;</strong></td>
-                    <td class="highlight-col" data-i18n-html="home.cmpx.best.dv"><strong>Live two-way conversations, calls and videos on your PC</strong></td>
-                    <td data-i18n="home.cmp.54">Casual text &amp; voice</td>
-                    <td data-i18n="home.cmp.55">Casual voice</td>
-                    <td data-i18n="home.cmp.56">Phrase-by-phrase translation on a phone</td>
-                    <td data-i18n="home.cmp.57">Written translation &amp; business meetings</td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.best.dv"><strong>Live two-way conversations, calls and videos on your PC</strong></td>
+                    <td data-label="Google" data-i18n="home.cmp.54">Casual text &amp; voice</td>
+                    <td data-label="iTranslate" data-i18n="home.cmp.55">Casual voice</td>
+                    <td data-label="Microsoft" data-i18n="home.cmp.56">Phrase-by-phrase translation on a phone</td>
+                    <td data-label="DeepL" data-i18n="home.cmp.57">Written translation &amp; business meetings</td>
                 </tr>
             </tbody>
         </table>
@@ -414,7 +423,7 @@
         <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary" data-i18n="home.cmpx.cta">Try DuoVox free on Windows</a>
         <p class="cta-micro" data-i18n="home.pricing.free.micro">No account needed. Free forever.</p>
     </div>
-    <p class="pricing-footnote compare-checked" style="max-width:900px;margin:1rem auto 0;" data-i18n-html="home.cmp.58">Competitor information checked on 6 October 2026 against each company&rsquo;s own website and app store listings. &mdash; means not offered, or not found on the company&rsquo;s own pages. Features change often; if anything here is out of date, please tell us at <a href="mailto:support@duovox.net">support@duovox.net</a>.</p>
+    <p class="pricing-footnote compare-checked" style="max-width:900px;margin:1rem auto 0;" data-i18n-html="home.cmp.58">Competitor information checked on 6 October 2026 (subject modes: 2 November 2026) against each company&rsquo;s own website and app store listings. &mdash; means not offered, or not found on the company&rsquo;s own pages. Features change often; if anything here is out of date, please tell us at <a href="mailto:support@duovox.net">support@duovox.net</a>.</p>
 </section>
 
 <!-- Who It's For -->

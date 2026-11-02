@@ -1,0 +1,125 @@
+/* PREVIEW (2 Nov 2026, branch preview/condensed-home): a tighter home page. Loaded by index.html only and scoped to
+   body.home-c, so no other page changes. Goals: the Store button and the product on the first screen; about half the
+   scrolling; the comparison table readable on a phone without sideways scrolling. */
+
+/* ── Spacing everywhere on the page ── */
+.home-c .section { padding: 48px 1.5rem; }
+.home-c .section-title { font-size: 1.75rem; margin-bottom: 1.6rem; }
+.home-c .section-subtitle { margin-top: -0.9rem; margin-bottom: 1.4rem; }
+
+/* ── Hero: words + buttons left, the real Chat view right ── */
+.home-c .hero-c {
+    max-width: 1180px; padding: 104px 1.5rem 36px; text-align: left;
+    display: grid; grid-template-columns: 1fr 1.15fr; gap: 2.5rem; align-items: center;
+}
+.home-c .hero-c h1 { font-size: 2.6rem; display: flex; align-items: center; gap: .6rem; margin-bottom: .6rem; }
+.home-c .hero-c-icon { width: 48px; height: 48px; border-radius: 12px; }
+.home-c .hero-c .subtitle { font-size: 1.2rem; color: var(--text-primary); margin-bottom: .8rem; }
+.home-c .hero-c .tagline { font-size: .95rem; margin: 0 0 1.4rem; max-width: none; }
+.home-c .hero-c-cta { display: flex; flex-wrap: wrap; gap: .75rem; }
+.home-c .hero-c-note { margin-top: .8rem; font-size: .82rem; color: var(--text-muted); }
+.home-c .hero-c-shot { margin: 0; }
+.home-c .hero-c-shot img { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 16px 48px rgba(0,0,0,.45); display: block; }
+.home-c .hero-c-shot figcaption { margin-top: .6rem; font-size: .85rem; color: var(--text-secondary); text-align: center; }
+.home-c .hero-c-shot figcaption strong { color: var(--accent); }
+
+/* ── Videos: one row of two ── */
+.home-c #demo { padding-top: 24px; }
+.home-c #demo .video-pair { grid-template-columns: 1fr 1fr; }
+
+/* ── Feature cards: three across, tighter ── */
+.home-c .features-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.home-c .feature-card { padding: 1.25rem 1.35rem; }
+.home-c .feature-icon { font-size: 1.5rem; margin-bottom: .4rem; }
+.home-c .feature-card p { font-size: .9rem; line-height: 1.5; }
+
+/* ── How it works: one compact row ── */
+.home-c .step-card { padding: 1.2rem 1rem; }
+.home-c .step-number { width: 32px; height: 32px; font-size: .95rem; margin-bottom: .6rem; }
+.home-c .step-card p { font-size: .86rem; line-height: 1.5; }
+
+/* ── Comparison ── */
+.home-c .comparison-table th, .home-c .comparison-table td { padding: .5rem .7rem; font-size: .86rem; }
+.home-c .comparison-table .cmp-sub { font-size: .76rem; }
+.home-c .cmp-cta { margin-top: 1.2rem; }
+/* competitor cells of a NEW row that still need checking against each company's own pages (preview only) */
+.home-c .cmp-tocheck { outline: 1px dashed #e0a030; outline-offset: -3px; }
+.home-c .cmp-tocheck::after { content: " (to check)"; color: #e0a030; font-size: .7rem; white-space: nowrap; }
+
+/* ── Who it's for, pricing, FAQ, disclaimer: tighter ── */
+.home-c .audience-grid { gap: 1rem; }
+.home-c .audience-card { padding: 1.25rem; }
+.home-c .audience-card p { font-size: .88rem; line-height: 1.5; }
+.home-c .price-card { padding: 1.5rem 1.25rem; }
+.home-c .disclaimer-box { padding: 1.1rem 1.4rem; }
+.home-c .disclaimer-box p { font-size: .82rem; line-height: 1.5; }
+.home-c .trust-badges { padding: 8px 1.5rem; }
+
+/* ── Tablets ── */
+@media (max-width: 1000px) {
+    .home-c .hero-c { grid-template-columns: 1fr; text-align: center; padding-top: 92px; }
+    .home-c .hero-c h1 { justify-content: center; }
+    .home-c .hero-c-cta { justify-content: center; }
+    .home-c .features-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Phones: one compact card per feature - DuoVox's answer on its own line, the four others on one small line ── */
+@media (max-width: 700px) {
+    .home-c .section { padding: 36px 1rem; }
+    .home-c .hero-c h1 { font-size: 2.1rem; }
+    .home-c #demo .video-pair, .home-c .features-grid { grid-template-columns: 1fr; }
+    .home-c .comparison-table { min-width: 0; }
+    .home-c .comparison-table thead { display: none; }
+    .home-c .comparison-table, .home-c .comparison-table tbody { display: block; width: 100%; }
+    .home-c .comparison-table tr { display: block; border: 1px solid var(--border); border-radius: 12px; margin-bottom: .6rem; padding: .55rem .75rem; background: var(--bg-card); text-align: left; }
+    .home-c .comparison-table td { display: inline; border: none; padding: 0; text-align: left; font-size: .78rem; line-height: 1.45; }
+    .home-c .comparison-table td:first-child { display: block; width: auto; font-size: .92rem; margin-bottom: .2rem; }
+    .home-c .comparison-table td.highlight-col { display: block; background: none; font-size: .9rem; color: var(--text-primary); margin-bottom: .25rem; }
+    .home-c .comparison-table td.highlight-col::before { content: none; }
+    .home-c .comparison-table td[data-label]:not(.highlight-col)::before { content: attr(data-label) ": "; font-weight: 600; color: var(--text-muted); }
+    .home-c .comparison-table td[data-label]:not(.highlight-col)::after { content: "  \00b7  "; color: var(--text-muted); }
+    .home-c .comparison-table td[data-label]:last-child::after { content: none; }
+    .home-c .comparison-table .cmp-sub { display: none; }
+    .home-c .comparison-table-wrap { overflow: visible; }
+}
+
+/* ── Second pass (measured at 1366x768): the tallest blocks ── */
+.home-c .comparison-table td, .home-c .comparison-table th { line-height: 1.3; }
+.home-c .comparison-table td:first-child, .home-c .comparison-table th:first-child { width: 30%; }
+.home-c .comparison-table .cmp-sub { font-size: .74rem; line-height: 1.3; }
+.home-c .faq-list { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem 1rem; align-items: start; max-width: 1100px; }
+.home-c .faq-question { padding: .85rem 1.1rem; font-size: .95rem; }
+.home-c .price-card { padding: 1.4rem 1.1rem; }
+.home-c .price-amount { font-size: 2.1rem; margin: .5rem 0 .1rem; }
+.home-c .best-for { margin-bottom: .7rem; }
+.home-c .price-features { margin-bottom: 1.1rem; }
+.home-c .price-features li { padding: .22rem 0; font-size: .86rem; line-height: 1.4; }
+.home-c .audience-grid { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 1000px) { .home-c .audience-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 700px) { .home-c .faq-list, .home-c .audience-grid { grid-template-columns: 1fr; } }
+.home-c .hero-c-cta .btn { padding: 12px 20px; font-size: .95rem; }
+/* the screenshot's 1584px intrinsic width must not set the grid column's minimum (phones cut the hero text off) */
+.home-c .hero-c > * { min-width: 0; }
+@media (max-width: 1000px) { .home-c .hero-c { grid-template-columns: minmax(0, 1fr); } }
+
+/* ── Two layouts side by side (2 Nov 2026) ── */
+.home-c #layouts { padding-top: 24px; }
+.home-c .layouts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; }
+.home-c .layout-card { margin: 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 1rem; }
+.home-c .layout-card img { width: 100%; height: auto; display: block; border-radius: 10px; }
+.home-c .layout-card figcaption { padding: .9rem .3rem .2rem; }
+.home-c .layout-card h3 { font-size: 1.1rem; margin-bottom: .35rem; }
+.home-c .layout-card p { color: var(--text-secondary); font-size: .9rem; line-height: 1.5; }
+.home-c .hero-c-shot figcaption { font-size: .82rem; }
+@media (max-width: 700px) { .home-c .layouts-grid { grid-template-columns: 1fr; } }
+/* David, 2 Nov: hero text sits higher (top-aligned with the picture); the two layout cards are the same height */
+.home-c .hero-c { align-items: start; }
+.home-c .hero-c-text { padding-top: .4rem; }
+.home-c .layouts-grid { align-items: stretch; }
+.home-c .layout-card img { aspect-ratio: 1164 / 1040; object-fit: cover; object-position: top; }
+/* David, 2 Nov (2nd): centred beside the picture again, then lifted a little (not top-aligned) */
+.home-c .hero-c { align-items: center; }
+.home-c .hero-c-text { padding-top: 0; transform: translateY(-40px); }
+@media (max-width: 1000px) { .home-c .hero-c-text { transform: none; } }
+/* TRY (David, 2 Nov): the whole Chat view, not cropped, at the same height as the 4-box picture */
+.home-c .layout-card img.layout-img-full { object-fit: contain; object-position: center; }
