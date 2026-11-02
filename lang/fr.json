@@ -782,5 +782,13 @@
   "med.setup.title": "Configurer pour les rendez-vous médicaux",
   "med.more": "Plus de contenus pour les interprètes, y compris l’interprétation juridique et à distance : <a href=\"interpreters.html\">DuoVox pour les interprètes</a>.",
   "meta.medical-interpreting.title": "DuoVox pour les interprètes médicaux : transcription en direct en deux langues",
-  "meta.medical-interpreting.desc": "Les deux langues en texte en direct à vos côtés lors de rendez-vous chez le médecin généraliste, à l’hôpital et en santé mentale : les doses, les dates et les médicaments restent affichés à l’écran. Une aide, pas un remplacement."
+  "meta.medical-interpreting.desc": "Les deux langues en texte en direct à vos côtés lors de rendez-vous chez le médecin généraliste, à l’hôpital et en santé mentale : les doses, les dates et les médicaments restent affichés à l’écran. Une aide, pas un remplacement.",
+  "interp.legal.link": "Travail juridique ou en immigration ? <a href=\"legal-interpreting.html\">Voir DuoVox pour les interprètes juridiques &rarr;</a>",
+  "legal.title": "Une transcription en direct à vos côtés en interprétation juridique et d’immigration",
+  "legal.lead": "Avec un solicitor, lors d’un rendez-vous d’immigration ou d’un entretien avec la police, DuoVox écrit au fur et à mesure les deux côtés de la conversation dans les deux langues. Un nom, une date ou une adresse restent à l’écran, afin que vous puissiez les vérifier avant de les restituer. DuoVox soutient votre interprétation ; il ne la remplace jamais, et son texte n’est pas un compte rendu officiel.",
+  "legal.shot": "Une vraie session sur Professionnel avec le thème défini sur Juridique/Immigration/Police : un avocat commis d’office explique à un client hispanophone une audience préliminaire, la libération sous caution et une déclaration sous serment, et les traductions apparaissent à côté.",
+  "legal.setup.title": "Configuration pour le travail juridique et d’immigration",
+  "legal.more": "Plus de contenu pour les interprètes, y compris l’interprétation médicale et à distance : <a href=\"interpreters.html\">DuoVox pour les interprètes</a>.",
+  "meta.legal-interpreting.title": "DuoVox pour les interprètes juridiques : transcription en direct en deux langues",
+  "meta.legal-interpreting.desc": "Les deux langues en texte en direct à vos côtés avec des solicitors, lors de rendez-vous d’immigration et d’entretiens avec la police : les noms et les dates restent à l’écran. Assistance uniquement."
 }

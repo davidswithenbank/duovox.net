@@ -782,5 +782,13 @@
   "med.setup.title": "Prepárate para citas médicas",
   "med.more": "Más para intérpretes, incluida la interpretación jurídica y la interpretación a distancia: <a href=\"interpreters.html\">DuoVox para intérpretes</a>.",
   "meta.medical-interpreting.title": "DuoVox para intérpretes médicos: transcripción bilingüe en directo",
-  "meta.medical-interpreting.desc": "Ambos idiomas como texto en directo a tu lado en citas de medicina general, hospitalarias y de salud mental: las dosis, las fechas y los medicamentos permanecen en pantalla. Una ayuda, no un sustituto."
+  "meta.medical-interpreting.desc": "Ambos idiomas como texto en directo a tu lado en citas de medicina general, hospitalarias y de salud mental: las dosis, las fechas y los medicamentos permanecen en pantalla. Una ayuda, no un sustituto.",
+  "interp.legal.link": "¿Trabajo legal o de inmigración? <a href=\"legal-interpreting.html\">Ver DuoVox para intérpretes legales &rarr;</a>",
+  "legal.title": "Una transcripción en vivo a tu lado en interpretación legal y de inmigración",
+  "legal.lead": "Con un abogado, en una cita de inmigración o en un interrogatorio policial, DuoVox pone por escrito ambos lados de la conversación en ambos idiomas a medida que ocurre. Un nombre, una fecha o una dirección permanecen en pantalla, para que puedas comprobarlos antes de interpretarlos. DuoVox apoya tu interpretación; nunca la sustituye, y su texto no es un registro oficial.",
+  "legal.shot": "Una sesión real en Profesional con el Tema configurado como Legal/Inmigración/Policía: un defensor público guía a un cliente hispanohablante a través de una audiencia preliminar, la fianza y una declaración jurada, y las traducciones aparecen al lado.",
+  "legal.setup.title": "Configúralo para trabajo legal y de inmigración",
+  "legal.more": "Más para intérpretes, incluida la interpretación médica y remota: <a href=\"interpreters.html\">DuoVox para intérpretes</a>.",
+  "meta.legal-interpreting.title": "DuoVox para intérpretes legales: transcripción en vivo en dos idiomas",
+  "meta.legal-interpreting.desc": "Ambos idiomas como texto en vivo a tu lado con abogados, en citas de inmigración y en interrogatorios policiales: los nombres y las fechas permanecen en pantalla. Solo como asistencia."
 }

@@ -782,5 +782,13 @@
   "med.setup.title": "Configuração para consultas médicas",
   "med.more": "Mais para intérpretes, incluindo interpretação jurídica e remota: <a href=\"interpreters.html\">DuoVox para intérpretes</a>.",
   "meta.medical-interpreting.title": "DuoVox para intérpretes médicos: transcrição em direto em duas línguas",
-  "meta.medical-interpreting.desc": "Ambas as línguas como texto em direto ao seu lado em consultas de medicina geral e familiar, no hospital e de saúde mental: doses, datas e medicamentos permanecem no ecrã. Assistivo, não é um substituto."
+  "meta.medical-interpreting.desc": "Ambas as línguas como texto em direto ao seu lado em consultas de medicina geral e familiar, no hospital e de saúde mental: doses, datas e medicamentos permanecem no ecrã. Assistivo, não é um substituto.",
+  "interp.legal.link": "Trabalho jurídico ou de imigração? <a href=\"legal-interpreting.html\">Veja o DuoVox para intérpretes jurídicos &rarr;</a>",
+  "legal.title": "Uma transcrição em direto ao seu lado na interpretação jurídica e de imigração",
+  "legal.lead": "Com um advogado, numa consulta de imigração ou num interrogatório policial, o DuoVox escreve ambos os lados da conversa nas duas línguas à medida que acontece. Um nome, uma data ou uma morada ficam no ecrã, para que os possa verificar antes de os interpretar. O DuoVox apoia a sua interpretação; nunca a substitui, e o seu texto não é um registo oficial.",
+  "legal.shot": "Uma sessão real em Profissional com o Tópico definido para Jurídico/Imigração/Polícia: um defensor público orienta um cliente que fala espanhol sobre uma audiência preliminar, fiança e uma declaração juramentada, e as traduções aparecem ao lado.",
+  "legal.setup.title": "Configure para trabalho jurídico e de imigração",
+  "legal.more": "Mais para intérpretes, incluindo interpretação médica e remota: <a href=\"interpreters.html\">DuoVox para intérpretes</a>.",
+  "meta.legal-interpreting.title": "DuoVox para intérpretes jurídicos: transcrição em direto em duas línguas",
+  "meta.legal-interpreting.desc": "Ambas as línguas em texto em direto ao seu lado com advogados, em consultas de imigração e em interrogatórios policiais: nomes e datas ficam no ecrã. Apenas assistivo."
 }

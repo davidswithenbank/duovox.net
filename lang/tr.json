@@ -782,5 +782,13 @@
   "med.setup.title": "Tıbbi randevular için kurulum",
   "med.more": "Hukuki ve uzaktan sözlü çeviri dahil tercümanlara yönelik daha fazlası: <a href=\"interpreters.html\">Tercümanlar için DuoVox</a>.",
   "meta.medical-interpreting.title": "Tıbbi tercümanlar için DuoVox: canlı iki dilli döküm",
-  "meta.medical-interpreting.desc": "Aile hekimi, hastane ve ruh sağlığı randevularında iki dil de yanınızda canlı metin olarak görünür: dozlar, tarihler ve ilaçlar ekranda kalır. Destekleyicidir, yerine geçmez."
+  "meta.medical-interpreting.desc": "Aile hekimi, hastane ve ruh sağlığı randevularında iki dil de yanınızda canlı metin olarak görünür: dozlar, tarihler ve ilaçlar ekranda kalır. Destekleyicidir, yerine geçmez.",
+  "interp.legal.link": "Hukuki veya göçmenlik işi mi? <a href=\"legal-interpreting.html\">Hukuk tercümanları için DuoVox'a bakın &rarr;</a>",
+  "legal.title": "Hukuk ve göçmenlik tercümesinde yanınızda canlı döküm",
+  "legal.lead": "Bir avukatla, bir göçmenlik randevusunda veya bir polis mülakatında DuoVox, konuşmanın iki tarafını da iki dilde, gerçekleşirken yazıya döker. Bir isim, bir tarih veya bir adres ekranda kalır; böylece çevirmeden önce kontrol edebilirsiniz. DuoVox tercümenizi destekler; asla onun yerini almaz ve ürettiği metin resmî kayıt değildir.",
+  "legal.shot": "Konu Hukuk/Göçmenlik/Polis olarak ayarlanmış Profesyonel'de gerçek bir oturum: bir kamu avukatı, İspanyolca konuşan bir müvekkile ön duruşma, kefalet ve yeminli beyanı anlatıyor; çeviriler de yanında görünüyor.",
+  "legal.setup.title": "Hukuk ve göçmenlik işleri için kurulum",
+  "legal.more": "Tercümanlar için daha fazlası, tıbbi ve uzaktan tercüme dahil: <a href=\"interpreters.html\">Tercümanlar için DuoVox</a>.",
+  "meta.legal-interpreting.title": "Hukuk tercümanları için DuoVox: canlı iki dilli döküm",
+  "meta.legal-interpreting.desc": "Avukatlarla, göçmenlik randevularında ve polis mülakatlarında iki dil de yanınızda canlı metin olarak görünür: isimler ve tarihler ekranda kalır. Yalnızca yardımcı amaçlıdır."
 }

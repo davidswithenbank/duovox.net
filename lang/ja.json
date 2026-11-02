@@ -782,5 +782,13 @@
   "med.setup.title": "医療受診のための設定",
   "med.more": "法律通訳や遠隔通訳を含む、通訳者向けの詳しい情報：<a href=\"interpreters.html\">通訳者向けDuoVox</a>。",
   "meta.medical-interpreting.title": "医療通訳者向けDuoVox：2言語のライブ書き起こし",
-  "meta.medical-interpreting.desc": "GP、病院、メンタルヘルスの診察で、両言語が手元にライブテキストで表示されます。用量、日付、薬名が画面に残ります。支援用であり、代替ではありません。"
+  "meta.medical-interpreting.desc": "GP、病院、メンタルヘルスの診察で、両言語が手元にライブテキストで表示されます。用量、日付、薬名が画面に残ります。支援用であり、代替ではありません。",
+  "interp.legal.link": "法律・入管業務ですか？ <a href=\"legal-interpreting.html\">法律通訳者向け DuoVox を見る &rarr;</a>",
+  "legal.title": "法律・入管通訳で、手元にライブ文字起こし",
+  "legal.lead": "弁護士との場面でも、入管での面談でも、警察での事情聴取でも、DuoVox は会話の両側をその場で両言語で書き起こします。名前、日付、住所は画面に残るので、通訳する前に確認できます。DuoVox は通訳を支援するものであり、通訳に取って代わることはありません。また、そのテキストは公的な記録ではありません。",
+  "legal.shot": "トピックを「Legal/Immigration/Police」に設定したプロフェッショナルでの実際のセッション。国選弁護人がスペイン語話者の依頼人に予備審問、保釈宣誓供述書について説明し、その横に翻訳が表示されます。",
+  "legal.setup.title": "法律・入管業務向けの設定",
+  "legal.more": "医療通訳や遠隔通訳を含む、通訳者向けの詳細はこちら：<a href=\"interpreters.html\">通訳者向け DuoVox</a>。",
+  "meta.legal-interpreting.title": "法律通訳者向け DuoVox：2言語のライブ文字起こし",
+  "meta.legal-interpreting.desc": "弁護士との場面、入管での面談、警察での事情聴取で、両言語が手元にライブテキストで表示されます。名前や日付は画面に残ります。支援用途のみ。"
 }

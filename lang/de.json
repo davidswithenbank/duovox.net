@@ -782,5 +782,13 @@
   "med.setup.title": "Einrichtung für medizinische Termine",
   "med.more": "Mehr für Dolmetscher, einschließlich juristischem und Remote-Dolmetschen: <a href=\"interpreters.html\">DuoVox für Dolmetscher</a>.",
   "meta.medical-interpreting.title": "DuoVox für medizinische Dolmetscher: Live-Transkript in zwei Sprachen",
-  "meta.medical-interpreting.desc": "Beide Sprachen als Live-Text direkt neben Ihnen bei Terminen in der Hausarztpraxis, im Krankenhaus und im Bereich psychische Gesundheit: Dosen, Daten und Medikamente bleiben auf dem Bildschirm. Unterstützend, kein Ersatz."
+  "meta.medical-interpreting.desc": "Beide Sprachen als Live-Text direkt neben Ihnen bei Terminen in der Hausarztpraxis, im Krankenhaus und im Bereich psychische Gesundheit: Dosen, Daten und Medikamente bleiben auf dem Bildschirm. Unterstützend, kein Ersatz.",
+  "interp.legal.link": "Juristische oder Einwanderungsfälle? <a href=\"legal-interpreting.html\">Mehr zu DuoVox für Gerichtsdolmetscher &rarr;</a>",
+  "legal.title": "Ein Live-Transkript direkt neben Ihnen beim juristischen Dolmetschen und im Einwanderungsbereich",
+  "legal.lead": "Bei einem Gespräch mit einem Anwalt, bei einem Termin im Einwanderungsverfahren oder bei einer polizeilichen Vernehmung schreibt DuoVox beide Seiten des Gesprächs in beiden Sprachen mit, während es stattfindet. Ein Name, ein Datum oder eine Adresse bleibt auf dem Bildschirm, damit Sie es prüfen können, bevor Sie es dolmetschen. DuoVox unterstützt Ihr Dolmetschen; es ersetzt es nie, und sein Text ist kein offizielles Protokoll.",
+  "legal.shot": "Eine echte Sitzung mit Professional und dem Thema Juristisch/Einwanderung/Polizei: Ein Pflichtverteidiger erklärt einem spanischsprachigen Mandanten eine Vorverhandlung, Kaution und eine eidesstattliche Erklärung, und die Übersetzungen erscheinen daneben.",
+  "legal.setup.title": "Einrichtung für juristisches Dolmetschen und den Einwanderungsbereich",
+  "legal.more": "Mehr für Dolmetscher, einschließlich medizinischem Dolmetschen und Ferndolmetschen: <a href=\"interpreters.html\">DuoVox für Dolmetscher</a>.",
+  "meta.legal-interpreting.title": "DuoVox für Gerichtsdolmetscher: Live-Transkript in zwei Sprachen",
+  "meta.legal-interpreting.desc": "Beide Sprachen als Live-Text direkt neben Ihnen bei Gesprächen mit Anwälten, bei Terminen im Einwanderungsverfahren und bei polizeilichen Vernehmungen: Namen und Daten bleiben auf dem Bildschirm. Nur unterstützend."
 }

@@ -782,5 +782,13 @@
   "med.setup.title": "Skonfigurowane do wizyt medycznych",
   "med.more": "Więcej dla tłumaczy, w tym o tłumaczeniach prawnych i zdalnych: <a href=\"interpreters.html\">DuoVox dla tłumaczy</a>.",
   "meta.medical-interpreting.title": "DuoVox dla tłumaczy medycznych: transkrypcja na żywo w dwóch językach",
-  "meta.medical-interpreting.desc": "Oba języki jako tekst na żywo obok Ciebie podczas wizyt u lekarza rodzinnego, w szpitalu i na konsultacjach psychiatrycznych: dawki, daty i leki pozostają na ekranie. Narzędzie wspomagające, nie zastępstwo."
+  "meta.medical-interpreting.desc": "Oba języki jako tekst na żywo obok Ciebie podczas wizyt u lekarza rodzinnego, w szpitalu i na konsultacjach psychiatrycznych: dawki, daty i leki pozostają na ekranie. Narzędzie wspomagające, nie zastępstwo.",
+  "interp.legal.link": "Praca prawna lub imigracyjna? <a href=\"legal-interpreting.html\">Zobacz DuoVox dla tłumaczy prawnych &rarr;</a>",
+  "legal.title": "Transkrypcja na żywo obok Ciebie podczas tłumaczenia prawnego i imigracyjnego",
+  "legal.lead": "U prawnika, na spotkaniu imigracyjnym lub podczas przesłuchania policyjnego DuoVox zapisuje obie strony rozmowy w obu językach na bieżąco. Imię i nazwisko, data lub adres pozostają na ekranie, więc możesz je sprawdzić, zanim je przetłumaczysz. DuoVox wspiera Twoje tłumaczenie ustne; nigdy go nie zastępuje, a jego tekst nie jest oficjalnym zapisem.",
+  "legal.shot": "Prawdziwa sesja w planie Profesjonalny z tematem ustawionym na Prawo/Imigracja/Policja: obrońca z urzędu omawia z hiszpańskojęzycznym klientem rozprawę wstępną, kaucję i oświadczenie pod przysięgą, a tłumaczenia pojawiają się obok.",
+  "legal.setup.title": "Konfiguracja do pracy prawnej i imigracyjnej",
+  "legal.more": "Więcej dla tłumaczy ustnych, w tym o tłumaczeniu medycznym i zdalnym: <a href=\"interpreters.html\">DuoVox dla tłumaczy ustnych</a>.",
+  "meta.legal-interpreting.title": "DuoVox dla tłumaczy prawnych: transkrypcja na żywo w dwóch językach",
+  "meta.legal-interpreting.desc": "Oba języki jako tekst na żywo obok Ciebie u prawników, na spotkaniach imigracyjnych i podczas przesłuchań policyjnych: imiona i nazwiska oraz daty pozostają na ekranie. Wyłącznie pomocnicze."
 }
