@@ -774,5 +774,13 @@
   "home.cmpx.subject.deepl": "Tylko glosariusz",
   "interp.remote.title": "Do tłumaczenia ustnego przez wideo i telefon (VRI i OPI)",
   "interp.remote.body": "Tłumaczenie ustne podczas połączenia wideo albo rozmowy telefonicznej, którą odbierasz na komputerze? DuoVox nasłuchuje rozmowy przez dźwięk z Twojego komputera, niezależnie od tego, czy działa ona w Microsoft Teams, Zoom czy na platformie do tłumaczeń zdalnych w przeglądarce, i wyświetla oba języki jako tekst na żywo obok Ciebie, bez dołączania czegokolwiek do rozmowy. Rozmowę na osobnym telefonie można wyświetlać jako napisy za pomocą mikrofonu komputera, gdy telefon jest w trybie głośnomówiącym. DuoVox wspiera Twoją pamięć i terminologię; nigdy nie zastępuje Twojego tłumaczenia ustnego.",
-  "home.cmpx.subject.itr": "Oddzielna aplikacja medyczna"
+  "home.cmpx.subject.itr": "Oddzielna aplikacja medyczna",
+  "interp.med.link": "Tłumaczenia ustne w ochronie zdrowia? <a href=\"medical-interpreting.html\">Zobacz DuoVox dla tłumaczy medycznych &rarr;</a>",
+  "med.title": "Transkrypcja na żywo obok Ciebie podczas tłumaczeń medycznych",
+  "med.lead": "Podczas wizyty u lekarza rodzinnego, w szpitalu lub na konsultacji psychiatrycznej DuoVox zapisuje na bieżąco obie strony rozmowy w obu językach. Dawka, data urodzenia czy nazwa leku pozostają na ekranie, więc możesz je sprawdzić, zanim je przetłumaczysz. DuoVox wspiera Twoje tłumaczenie ustne; nigdy go nie zastępuje.",
+  "med.shot": "Rzeczywista sesja w planie Profesjonalny z tematem ustawionym na Medyczny/Zdrowie psychiczne: lekarz pyta o reakcję alergiczną i antybiotyki, pacjent odpowiada po hiszpańsku, a tłumaczenia pojawiają się obok. W tej samej sesji następuje potem rozmowa prawna.",
+  "med.setup.title": "Skonfigurowane do wizyt medycznych",
+  "med.more": "Więcej dla tłumaczy, w tym o tłumaczeniach prawnych i zdalnych: <a href=\"interpreters.html\">DuoVox dla tłumaczy</a>.",
+  "meta.medical-interpreting.title": "DuoVox dla tłumaczy medycznych: transkrypcja na żywo w dwóch językach",
+  "meta.medical-interpreting.desc": "Oba języki jako tekst na żywo obok Ciebie podczas wizyt u lekarza rodzinnego, w szpitalu i na konsultacjach psychiatrycznych: dawki, daty i leki pozostają na ekranie. Narzędzie wspomagające, nie zastępstwo."
 }

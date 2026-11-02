@@ -774,5 +774,13 @@
   "home.cmpx.subject.deepl": "Glossaire uniquement",
   "interp.remote.title": "Pour l’interprétation vidéo et téléphonique (VRI et OPI)",
   "interp.remote.body": "Vous interprétez lors d’un appel vidéo ou d’un appel téléphonique que vous prenez sur votre PC ? DuoVox écoute l’appel via le son de votre PC, qu’il fonctionne dans Microsoft Teams, Zoom ou une plateforme d’interprétation à distance dans votre navigateur, et affiche les deux langues sous forme de texte en direct à côté de vous, sans que rien ne rejoigne l’appel. Un appel sur un téléphone séparé peut être sous-titré via le microphone de votre PC avec le téléphone en haut-parleur. DuoVox soutient votre mémoire et votre terminologie ; il ne remplace jamais votre interprétation.",
-  "home.cmpx.subject.itr": "Application médicale distincte"
+  "home.cmpx.subject.itr": "Application médicale distincte",
+  "interp.med.link": "Interprétation en santé ? <a href=\"medical-interpreting.html\">Voir DuoVox pour les interprètes médicaux &rarr;</a>",
+  "med.title": "Une transcription en direct à vos côtés en interprétation médicale",
+  "med.lead": "Lors d’un rendez-vous chez un médecin généraliste, à l’hôpital ou en santé mentale, DuoVox transcrit en temps réel les deux côtés de la conversation dans les deux langues. Une dose, une date de naissance ou le nom d’un médicament restent affichés à l’écran, pour que vous puissiez les vérifier avant de les restituer. DuoVox soutient votre interprétation ; il ne la remplace jamais.",
+  "med.shot": "Une session réelle en Professionnel avec le sujet réglé sur Médical/Santé mentale : un médecin pose des questions sur une réaction allergique et des antibiotiques, le patient répond en espagnol, et les traductions s’affichent à côté. Une conversation juridique suit dans la même session.",
+  "med.setup.title": "Configurer pour les rendez-vous médicaux",
+  "med.more": "Plus de contenus pour les interprètes, y compris l’interprétation juridique et à distance : <a href=\"interpreters.html\">DuoVox pour les interprètes</a>.",
+  "meta.medical-interpreting.title": "DuoVox pour les interprètes médicaux : transcription en direct en deux langues",
+  "meta.medical-interpreting.desc": "Les deux langues en texte en direct à vos côtés lors de rendez-vous chez le médecin généraliste, à l’hôpital et en santé mentale : les doses, les dates et les médicaments restent affichés à l’écran. Une aide, pas un remplacement."
 }

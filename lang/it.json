@@ -774,5 +774,13 @@
   "home.cmpx.subject.deepl": "Solo glossario",
   "interp.remote.title": "Per l'interpretazione in video e telefonica (VRI e OPI)",
   "interp.remote.body": "Interpretazione durante una videochiamata o una chiamata telefonica che gestisci dal tuo PC? DuoVox ascolta la chiamata tramite l'audio del tuo PC, sia che avvenga in Microsoft Teams, Zoom o su una piattaforma di interpretazione remota nel browser, e mostra entrambe le lingue come testo in tempo reale accanto a te, senza che nulla si unisca alla chiamata. Una chiamata su un telefono separato può essere sottotitolata tramite il microfono del tuo PC con il telefono in vivavoce. DuoVox supporta la tua memoria e la tua terminologia; non sostituisce mai la tua interpretazione.",
-  "home.cmpx.subject.itr": "App medica separata"
+  "home.cmpx.subject.itr": "App medica separata",
+  "interp.med.link": "Interpretariato in ambito sanitario? <a href=\"medical-interpreting.html\">Scopri DuoVox per gli interpreti medici &rarr;</a>",
+  "med.title": "Una trascrizione in tempo reale accanto a te nell'interpretariato medico",
+  "med.lead": "Durante un appuntamento con il medico di base, in ospedale o per la salute mentale, DuoVox trascrive in tempo reale entrambi i lati della conversazione in entrambe le lingue. Una dose, una data di nascita o il nome di un medicinale restano sullo schermo, così puoi verificarli prima di interpretarli. DuoVox supporta il tuo lavoro di interpretazione; non lo sostituisce mai.",
+  "med.shot": "Una sessione reale con Professional e l'argomento impostato su Medical/Mental Health: un medico chiede di una reazione allergica e degli antibiotici, il paziente risponde in spagnolo e le traduzioni appaiono accanto. Nella stessa sessione segue una conversazione legale.",
+  "med.setup.title": "Configurazione per appuntamenti medici",
+  "med.more": "Altro per gli interpreti, incluso l'interpretariato legale e da remoto: <a href=\"interpreters.html\">DuoVox per interpreti</a>.",
+  "meta.medical-interpreting.title": "DuoVox per interpreti medici: trascrizione in tempo reale in due lingue",
+  "meta.medical-interpreting.desc": "Entrambe le lingue come testo in tempo reale accanto a te durante appuntamenti con il medico di base, in ospedale e per la salute mentale: dosi, date e medicinali restano sullo schermo. Uno strumento di supporto, non un sostituto."
 }

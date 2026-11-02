@@ -774,5 +774,13 @@
   "home.cmpx.subject.deepl": "Nur Glossar",
   "interp.remote.title": "Für Video- und Telefondolmetschen (VRI und OPI)",
   "interp.remote.body": "Dolmetschen über einen Videoanruf oder einen Telefonanruf, den Sie an Ihrem PC annehmen? DuoVox hört den Anruf über den Ton Ihres PCs mit, egal ob er in Teams, Zoom oder auf einer Ferndolmetsch-Plattform in Ihrem Browser läuft, und zeigt beide Sprachen als Live-Text neben Ihnen an, ohne dass sich etwas in den Anruf einklinkt. Ein Anruf auf einem separaten Telefon kann über das Mikrofon Ihres PCs mit Untertiteln versehen werden, wenn das Telefon auf Lautsprecher gestellt ist. DuoVox unterstützt Ihr Gedächtnis und Ihre Terminologie; es ersetzt niemals Ihr Dolmetschen.",
-  "home.cmpx.subject.itr": "Separate medizinische App"
+  "home.cmpx.subject.itr": "Separate medizinische App",
+  "interp.med.link": "Dolmetschen im Gesundheitswesen? <a href=\"medical-interpreting.html\">Mehr zu DuoVox für medizinische Dolmetscher &rarr;</a>",
+  "med.title": "Ein Live-Transkript direkt neben Ihnen beim medizinischen Dolmetschen",
+  "med.lead": "Bei einem Termin in der Hausarztpraxis, im Krankenhaus oder im Bereich psychische Gesundheit schreibt DuoVox beide Seiten des Gesprächs in beiden Sprachen mit, während es stattfindet. Eine Dosis, ein Geburtsdatum oder der Name eines Medikaments bleibt auf dem Bildschirm, sodass Sie es prüfen können, bevor Sie es dolmetschen. DuoVox unterstützt Ihr Dolmetschen; es ersetzt es nie.",
+  "med.shot": "Eine echte Sitzung in Professional mit dem Thema Medizin/Psychische Gesundheit: Ein Arzt fragt nach einer allergischen Reaktion und Antibiotika, der Patient antwortet auf Spanisch, und die Übersetzungen erscheinen daneben. Im selben Gespräch folgt anschließend ein rechtliches Gespräch.",
+  "med.setup.title": "Einrichtung für medizinische Termine",
+  "med.more": "Mehr für Dolmetscher, einschließlich juristischem und Remote-Dolmetschen: <a href=\"interpreters.html\">DuoVox für Dolmetscher</a>.",
+  "meta.medical-interpreting.title": "DuoVox für medizinische Dolmetscher: Live-Transkript in zwei Sprachen",
+  "meta.medical-interpreting.desc": "Beide Sprachen als Live-Text direkt neben Ihnen bei Terminen in der Hausarztpraxis, im Krankenhaus und im Bereich psychische Gesundheit: Dosen, Daten und Medikamente bleiben auf dem Bildschirm. Unterstützend, kein Ersatz."
 }

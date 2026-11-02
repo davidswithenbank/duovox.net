@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuoVox for medical interpreters: live two-language transcript</title>
+    <link rel="canonical" href="https://duovox.net/medical-interpreting.html">
+    <meta name="description" content="Both languages as live text beside you in GP, hospital and mental-health appointments: doses, dates and medicines stay on screen. Assistive, not a replacement.">
+    <meta property="og:title" content="DuoVox for medical interpreters">
+    <meta property="og:description" content="Doses, dates of birth and medicine names stay on screen in both languages while you interpret.">
+    <meta property="og:image" content="https://duovox.net/og-image.png">
+    <meta property="og:url" content="https://duovox.net/medical-interpreting.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .video-frame { position: relative; max-width: 880px; margin: 1.25rem auto 0; aspect-ratio: 16 / 9; border-radius: 16px;
+                   overflow: hidden; border: 1px solid var(--border); background: #000;
+                   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45); }
+    .video-frame img, .video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                   border: 0; display: block; object-fit: cover; }
+    .video-play { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 0; border: 0;
+                   background: none; cursor: pointer; }
+    .video-play-icon { position: absolute; left: 50%; top: 50%; width: 84px; height: 84px; margin: -42px 0 0 -42px;
+                   border-radius: 50%; background: rgba(15, 17, 23, 0.78); border: 2px solid #fff;
+                   transition: background 0.15s; }
+    .video-play-icon::after { content: ""; position: absolute; left: 33px; top: 25px; border-style: solid;
+                   border-width: 17px 0 17px 26px; border-color: transparent transparent transparent #fff; }
+    .video-play:hover .video-play-icon, .video-play:focus-visible .video-play-icon { background: var(--accent); }
+    .video-play:focus-visible { outline: 3px solid var(--accent-light); outline-offset: -3px; }
+    .video-note { text-align: center; margin-top: 0.9rem; font-size: 0.85rem; color: var(--text-secondary); }
+    .video-note a { color: var(--accent-light); }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <img src="icon.png" alt="DuoVox icon">
+            DuoVox
+        </a>
+        <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('open')"><span></span><span></span><span></span></button>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="interpreters.html" data-i18n="nav.interpreters">For interpreters</a></li>
+            <li><a href="calls.html" data-i18n="nav.calls">Video calls</a></li>
+            <li><a href="languages.html" data-i18n="nav.languages">Languages</a></li>
+            <li><a href="help.html" data-i18n="nav.help">Help</a></li>
+            <li><a href="security.html" data-i18n="nav.security">Security</a></li>
+            <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+            <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="legal">
+    <h1 data-i18n="med.title">A live transcript beside you in medical interpreting</h1>
+    <p data-i18n="med.lead">In a GP, hospital or mental-health appointment, DuoVox writes down both sides of the conversation in both languages as it happens. A dose, a date of birth or the name of a medicine stays on screen, so you can check it before you render it. DuoVox supports your interpreting; it never replaces it.</p>
+
+    <div class="btn-group" style="margin:1.5rem 0;">
+        <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary" data-i18n="home.cmpx.cta">Try DuoVox free on Windows</a>
+        <a href="index.html#pricing" class="btn btn-secondary" data-i18n="home.cta.plans">See Plans &amp; Pricing</a>
+    </div>
+
+    <figure style="margin:1.5rem 0;">
+        <a href="img/home-four-box.png"><img src="img/home-four-box.png" alt="DuoVox 4-box view: an English-speaking doctor and a Spanish-speaking patient, each line with its translation" width="1164" height="1040" loading="lazy" style="width:100%; height:auto; border-radius:12px;"></a>
+        <figcaption style="font-size:.85rem; color:var(--text-secondary); margin-top:.5rem;" data-i18n="med.shot">A real session on Professional with the Topic set to Medical/Mental Health: a doctor asks about an allergic reaction and antibiotics, the patient answers in Spanish, and the translations appear alongside. A legal conversation follows in the same session.</figcaption>
+    </figure>
+
+    <h2 data-i18n="med.setup.title">Set up for medical appointments</h2>
+    <ul>
+        <li data-i18n-html="interp.why.f2"><strong>It speaks your specialism.</strong> Set the <strong>Topic</strong> to Medical/Mental Health, Legal/Immigration/Police or Education and DuoVox listens out for that field's terminology &mdash; on Professional, the full lists of several hundred terms each in English, with shorter lists in other languages.</li>
+        <li data-i18n-html="interp.why.f3"><strong>Add the words you meet.</strong> With <strong>Boost keywords</strong>, add the names, places and terms that keep coming up in your work.</li>
+        <li data-i18n-html="interp.why.f4"><strong>Your terminology, your way.</strong> In the <strong>Glossary</strong>, set how a name or term should be translated, and the AI translation is instructed to use it.</li>
+        <li data-i18n-html="interp.why.f1"><strong>Catch the details that matter.</strong> Numbers, names, addresses and medicines stay on screen after they are spoken, so you can check them before you render them.</li>
+        <li data-i18n-html="interp.why.f6"><strong>In the room or remote.</strong> Use a microphone face to face, or caption whatever your PC plays for telephone and video interpreting in Microsoft Teams, Zoom and other apps. Nothing joins the call and no plugin is needed.</li>
+        <li data-i18n-html="interp.why.f8"><strong>Private Mode for confidential sessions.</strong> Nothing is kept on your PC: no log files, copy and export are switched off, and the text is cleared when you stop. Audio is still processed in real time by our AI providers, as on every paid plan.</li>
+    </ul>
+
+    <h2 data-i18n="interp.plans.title">Professional: everything above, 40 hours a month</h2>
+    <p data-i18n-html="interp.plans.body">Professional includes 40 hours every month, and Pay-As-You-Go hours that never expire cover your busiest months. Want to try it first? The Free plan runs entirely on your PC in 31 languages, with no account and no internet connection, so no audio leaves your computer. <a href="index.html#pricing">See plans and prices</a>.</p>
+
+    <h2 data-i18n="interp.good.title">Using DuoVox responsibly</h2>
+    <ul>
+        <li data-i18n="interp.good.f1">DuoVox is an assistive tool. It does not replace a qualified interpreter, and its output is not a certified, sworn or official translation or record.</li>
+        <li data-i18n="interp.good.f2">Automated transcription and translation can contain errors. Do not rely on DuoVox as the only source of meaning in medical, legal or other high-stakes situations: you remain professionally responsible for your interpretation.</li>
+        <li data-i18n="interp.good.f3">DuoVox is not a medical device and is not approved for clinical, diagnostic or treatment use.</li>
+        <li data-i18n="interp.good.f4">Follow your client's and your organisation's rules on confidentiality, recording and consent, and tell the people present that live captions are on where that is required.</li>
+        <li data-i18n="interp.good.f5">DuoVox is available for Windows 10 and Windows 11. It is not yet available in the EU or EEA.</li>
+    </ul>
+
+    <p style="margin:2rem 0 1rem;" data-i18n-html="med.more">More for interpreters, including legal and remote interpreting: <a href="interpreters.html">DuoVox for interpreters</a>.</p>
+    <div class="btn-group">
+        <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary" data-i18n="cta.ms_get">Get it on the Microsoft Store</a>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-links">
+            <a href="https://davidarthur.app/about/" data-i18n="footer.about">About us</a>
+            <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+            <a href="security.html" data-i18n="nav.security">Security</a>
+            <a href="calls.html" data-i18n="footer.calls">Video calls</a>
+            <a href="interpreters.html" data-i18n="footer.interpreters">For interpreters</a>
+            <a href="help.html" data-i18n="nav.help">Help</a>
+            <a href="press.html" data-i18n="footer.press">Press kit</a>
+            <a href="contact.html" data-i18n="footer.contact">Contact</a>
+        </div>
+        <p class="footer-company" data-i18n="footer.copyright">&copy; 2026 David Arthur Software (DAS). All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="i18n.js"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6da9362d8d7f49fc913578849ffbc7bb"}'></script><!-- End Cloudflare Web Analytics -->
+<script src="/store-click.js" defer></script>
+</body>
+</html>

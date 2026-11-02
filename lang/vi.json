@@ -774,5 +774,13 @@
   "home.cmpx.subject.deepl": "Chỉ có bảng thuật ngữ",
   "interp.remote.title": "Dành cho phiên dịch qua video và điện thoại (VRI và OPI)",
   "interp.remote.body": "Phiên dịch qua cuộc gọi video, hoặc cuộc gọi điện thoại bạn thực hiện trên PC? DuoVox nghe cuộc gọi qua âm thanh trên PC của bạn, dù chạy trong Microsoft Teams, Zoom hay một nền tảng phiên dịch từ xa trong trình duyệt của bạn, và hiển thị trực tiếp cả hai ngôn ngữ dưới dạng văn bản bên cạnh bạn, mà không có gì tham gia vào cuộc gọi. Cuộc gọi trên một điện thoại riêng cũng có thể được phụ đề qua micrô của PC khi điện thoại bật loa ngoài. DuoVox hỗ trợ trí nhớ và thuật ngữ của bạn; nó không bao giờ thay thế việc phiên dịch của bạn.",
-  "home.cmpx.subject.itr": "Ứng dụng y tế riêng biệt"
+  "home.cmpx.subject.itr": "Ứng dụng y tế riêng biệt",
+  "interp.med.link": "Phiên dịch trong lĩnh vực y tế? <a href=\"medical-interpreting.html\">Xem DuoVox cho phiên dịch viên y khoa &rarr;</a>",
+  "med.title": "Bản chép lời trực tiếp bên cạnh bạn khi phiên dịch y khoa",
+  "med.lead": "Trong một buổi khám tại phòng khám đa khoa, bệnh viện hoặc cuộc hẹn về sức khỏe tâm thần, DuoVox ghi lại cả hai phía của cuộc trò chuyện bằng cả hai ngôn ngữ ngay khi diễn ra. Một liều dùng, ngày sinh hoặc tên thuốc sẽ vẫn hiển thị trên màn hình, để bạn có thể kiểm tra trước khi chuyển ngữ. DuoVox hỗ trợ việc phiên dịch của bạn; không bao giờ thay thế việc đó.",
+  "med.shot": "Một phiên làm việc thực tế trên gói Professional với Chủ đề được đặt là Y khoa/Sức khỏe tâm thần: bác sĩ hỏi về phản ứng dị ứng và thuốc kháng sinh, bệnh nhân trả lời bằng tiếng Tây Ban Nha, và các bản dịch xuất hiện song song bên cạnh. Một cuộc trao đổi pháp lý diễn ra tiếp theo trong cùng phiên làm việc.",
+  "med.setup.title": "Thiết lập cho các cuộc hẹn y tế",
+  "med.more": "Thêm nội dung cho phiên dịch viên, bao gồm phiên dịch pháp lý và phiên dịch từ xa: <a href=\"interpreters.html\">DuoVox cho phiên dịch viên</a>.",
+  "meta.medical-interpreting.title": "DuoVox cho phiên dịch viên y khoa: bản chép lời trực tiếp bằng hai ngôn ngữ",
+  "meta.medical-interpreting.desc": "Cả hai ngôn ngữ dưới dạng văn bản trực tiếp bên cạnh bạn trong các buổi khám tại phòng khám đa khoa, bệnh viện và cuộc hẹn về sức khỏe tâm thần: liều dùng, ngày tháng và thuốc vẫn hiển thị trên màn hình. Công cụ hỗ trợ, không phải thay thế."
 }

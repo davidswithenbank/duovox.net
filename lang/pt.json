@@ -774,5 +774,13 @@
   "home.cmpx.subject.deepl": "Apenas glossário",
   "interp.remote.title": "Para interpretação por vídeo e telefone (VRI e OPI)",
   "interp.remote.body": "Interpretação numa videochamada, ou numa chamada telefónica que atende no seu PC? O DuoVox ouve a chamada através do som do seu PC, quer esteja a funcionar no Microsoft Teams, Zoom ou numa plataforma de interpretação remota no seu navegador, e apresenta ambas as línguas como texto em direto ao seu lado, sem nada entrar na chamada. Uma chamada num telefone separado pode ser legendada através do microfone do seu PC com o telefone em alta-voz. O DuoVox apoia a sua memória e terminologia; nunca substitui a sua interpretação.",
-  "home.cmpx.subject.itr": "Aplicação médica separada"
+  "home.cmpx.subject.itr": "Aplicação médica separada",
+  "interp.med.link": "Interpretação em cuidados de saúde? <a href=\"medical-interpreting.html\">Veja o DuoVox para intérpretes médicos &rarr;</a>",
+  "med.title": "Uma transcrição em direto ao seu lado na interpretação médica",
+  "med.lead": "Numa consulta de medicina geral e familiar, no hospital ou de saúde mental, o DuoVox regista os dois lados da conversa em ambas as línguas à medida que acontece. Uma dose, uma data de nascimento ou o nome de um medicamento permanece no ecrã, para que o possa verificar antes de o interpretar. O DuoVox apoia a sua interpretação; nunca a substitui.",
+  "med.shot": "Uma sessão real no Profissional com o Tópico definido como Médico/Saúde Mental: um médico pergunta sobre uma reação alérgica e antibióticos, o paciente responde em espanhol e as traduções aparecem ao lado. Segue-se uma conversa jurídica na mesma sessão.",
+  "med.setup.title": "Configuração para consultas médicas",
+  "med.more": "Mais para intérpretes, incluindo interpretação jurídica e remota: <a href=\"interpreters.html\">DuoVox para intérpretes</a>.",
+  "meta.medical-interpreting.title": "DuoVox para intérpretes médicos: transcrição em direto em duas línguas",
+  "meta.medical-interpreting.desc": "Ambas as línguas como texto em direto ao seu lado em consultas de medicina geral e familiar, no hospital e de saúde mental: doses, datas e medicamentos permanecem no ecrã. Assistivo, não é um substituto."
 }
