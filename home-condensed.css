@@ -117,3 +117,7 @@
 .home-c .hero-c-text { padding-top: .4rem; }
 .home-c .layouts-grid { align-items: stretch; }
 .home-c .layout-card img { aspect-ratio: 1164 / 1040; object-fit: cover; object-position: top; }
+/* David, 2 Nov (2nd): centred beside the picture again, then lifted a little (not top-aligned) */
+.home-c .hero-c { align-items: center; }
+.home-c .hero-c-text { padding-top: 0; transform: translateY(-40px); }
+@media (max-width: 1000px) { .home-c .hero-c-text { transform: none; } }
