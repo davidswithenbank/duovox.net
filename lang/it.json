@@ -782,5 +782,13 @@
   "med.setup.title": "Configurazione per appuntamenti medici",
   "med.more": "Altro per gli interpreti, incluso l'interpretariato legale e da remoto: <a href=\"interpreters.html\">DuoVox per interpreti</a>.",
   "meta.medical-interpreting.title": "DuoVox per interpreti medici: trascrizione in tempo reale in due lingue",
-  "meta.medical-interpreting.desc": "Entrambe le lingue come testo in tempo reale accanto a te durante appuntamenti con il medico di base, in ospedale e per la salute mentale: dosi, date e medicinali restano sullo schermo. Uno strumento di supporto, non un sostituto."
+  "meta.medical-interpreting.desc": "Entrambe le lingue come testo in tempo reale accanto a te durante appuntamenti con il medico di base, in ospedale e per la salute mentale: dosi, date e medicinali restano sullo schermo. Uno strumento di supporto, non un sostituto.",
+  "interp.legal.link": "Lavori in ambito legale o immigrazione? <a href=\"legal-interpreting.html\">Scopri DuoVox per interpreti legali &rarr;</a>",
+  "legal.title": "Una trascrizione in tempo reale accanto a te nell’interpretazione legale e per l’immigrazione",
+  "legal.lead": "Con un avvocato, a un appuntamento per l’immigrazione o durante un colloquio con la polizia, DuoVox mette per iscritto entrambi i lati della conversazione in entrambe le lingue, mentre avviene. Un nome, una data o un indirizzo restano sullo schermo, così puoi verificarli prima di interpretarli. DuoVox supporta la tua interpretazione; non la sostituisce mai, e il suo testo non è un verbale ufficiale.",
+  "legal.shot": "Una sessione reale su Professional con l’argomento impostato su Legale/Immigrazione/Polizia: un difensore d’ufficio accompagna un cliente di lingua spagnola attraverso un’udienza preliminare, la cauzione e una dichiarazione giurata, e le traduzioni appaiono a fianco.",
+  "legal.setup.title": "Configurazione per lavoro legale e in ambito immigrazione",
+  "legal.more": "Altro per interpreti, inclusa l’interpretazione medica e da remoto: <a href=\"interpreters.html\">DuoVox per interpreti</a>.",
+  "meta.legal-interpreting.title": "DuoVox per interpreti legali: trascrizione bilingue in tempo reale",
+  "meta.legal-interpreting.desc": "Entrambe le lingue come testo in tempo reale accanto a te con avvocati, agli appuntamenti per l’immigrazione e durante i colloqui con la polizia: nomi e date restano sullo schermo. Solo supporto."
 }

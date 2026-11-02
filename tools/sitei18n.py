@@ -22,7 +22,7 @@ PROVENANCE = os.path.join(LANG_DIR, "_translated_from.json")
 PAGES = ["index.html", "calls.html", "languages.html", "security.html", "contact.html", "help.html", "interpreters.html",
          "live-captions-translation.html", "teams-translation.html", "zoom-translation.html",   # search pages, 14 Oct 2026
          "meet-translation.html", "youtube-translation.html", "whatsapp-translation.html", "discord-translation.html",
-         "medical-interpreting.html"]   # 2 Nov 2026   # 16 Oct 2026
+         "medical-interpreting.html", "legal-interpreting.html"]   # 2 Nov 2026   # 16 Oct 2026
 SITE = "https://duovox.net"
 
 # Translatable wording around prices. The NUMBERS are never translated: they are read at build time from the

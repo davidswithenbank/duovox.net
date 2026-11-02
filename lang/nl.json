@@ -782,5 +782,13 @@
   "med.setup.title": "Instellen voor medische afspraken",
   "med.more": "Meer voor tolken, waaronder juridisch tolken en tolken op afstand: <a href=\"interpreters.html\">DuoVox voor tolken</a>.",
   "meta.medical-interpreting.title": "DuoVox voor medische tolken: live transcript in twee talen",
-  "meta.medical-interpreting.desc": "Beide talen als live tekst naast je bij afspraken bij de huisarts, in het ziekenhuis en in de geestelijke gezondheidszorg: doses, datums en medicijnen blijven op het scherm staan. Ondersteunend, geen vervanging."
+  "meta.medical-interpreting.desc": "Beide talen als live tekst naast je bij afspraken bij de huisarts, in het ziekenhuis en in de geestelijke gezondheidszorg: doses, datums en medicijnen blijven op het scherm staan. Ondersteunend, geen vervanging.",
+  "interp.legal.link": "Juridisch of vreemdelingenwerk? <a href=\"legal-interpreting.html\">Bekijk DuoVox voor juridisch tolken &rarr;</a>",
+  "legal.title": "Een live transcriptie naast u bij juridisch tolken en tolken in vreemdelingenzaken",
+  "legal.lead": "Bij een advocaat, op een afspraak bij de immigratiedienst of tijdens een politieverhoor schrijft DuoVox beide kanten van het gesprek in beide talen mee terwijl het gebeurt. Een naam, een datum of een adres blijft op het scherm staan, zodat u het kunt controleren voordat u het vertolkt. DuoVox ondersteunt uw tolkwerk; het vervangt het nooit, en de tekst ervan is geen officieel verslag.",
+  "legal.shot": "Een echte sessie op Professional met het onderwerp ingesteld op Juridisch/Immigratie/Politie: een pro-Deoadvocaat neemt met een Spaanssprekende cliënt een voorbereidende zitting, borgtocht en een beëdigde verklaring door, en de vertalingen verschijnen ernaast.",
+  "legal.setup.title": "Instellen voor juridisch werk en vreemdelingenzaken",
+  "legal.more": "Meer voor tolken, waaronder medisch tolken en tolken op afstand: <a href=\"interpreters.html\">DuoVox voor tolken</a>.",
+  "meta.legal-interpreting.title": "DuoVox voor juridisch tolken: live transcriptie in twee talen",
+  "meta.legal-interpreting.desc": "Beide talen als live tekst naast u bij advocaten, op afspraken bij de immigratiedienst en tijdens politieverhoren: namen en datums blijven op het scherm. Alleen ondersteunend."
 }

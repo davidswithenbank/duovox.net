@@ -782,5 +782,13 @@
   "med.setup.title": "为医疗就诊做好设置",
   "med.more": "为口译员提供的更多内容，包括法律口译和远程口译：<a href=\"interpreters.html\">面向口译员的 DuoVox</a>。",
   "meta.medical-interpreting.title": "面向医疗口译员的 DuoVox：实时双语转写",
-  "meta.medical-interpreting.desc": "在全科门诊、医院和心理健康就诊中，两种语言都会以实时文字显示在你身旁：剂量、日期和药品名称会保留在屏幕上。提供辅助，不是替代。"
+  "meta.medical-interpreting.desc": "在全科门诊、医院和心理健康就诊中，两种语言都会以实时文字显示在你身旁：剂量、日期和药品名称会保留在屏幕上。提供辅助，不是替代。",
+  "interp.legal.link": "法律或移民相关工作？<a href=\"legal-interpreting.html\">查看面向法律口译员的 DuoVox &rarr;</a>",
+  "legal.title": "法律和移民口译时，你身边的实时双语文字记录",
+  "legal.lead": "无论是与律师会面、参加移民预约，还是进行警方讯问，DuoVox 都会在对话进行的同时，以两种语言记录双方的发言。姓名、日期或地址会保留在屏幕上，方便你在传译前核对。DuoVox 为你的口译提供支持；它绝不会替代你的口译，其文本也不是正式记录。",
+  "legal.shot": "这是一个使用专业版、并将主题设为“法律/移民/警务”的真实会话：一位公设辩护律师向一名讲西班牙语的当事人解释预审、保释和宣誓书，译文会同时显示在旁边。",
+  "legal.setup.title": "为法律和移民工作进行设置",
+  "legal.more": "为口译员提供的更多内容，包括医疗口译和远程口译：<a href=\"interpreters.html\">面向口译员的 DuoVox</a>。",
+  "meta.legal-interpreting.title": "面向法律口译员的 DuoVox：实时双语文字记录",
+  "meta.legal-interpreting.desc": "与律师会面、参加移民预约和警方讯问时，两种语言都会以实时文字显示在你身边：姓名和日期会保留在屏幕上。仅作辅助之用。"
 }

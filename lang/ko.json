@@ -782,5 +782,13 @@
   "med.setup.title": "의료 진료를 위한 설정",
   "med.more": "법률 통역과 원격 통역을 포함한 통역사를 위한 더 많은 내용: <a href=\"interpreters.html\">통역사를 위한 DuoVox</a>.",
   "meta.medical-interpreting.title": "의료 통역사를 위한 DuoVox: 실시간 이중 언어 기록문",
-  "meta.medical-interpreting.desc": "GP, 병원, 정신건강 진료에서 두 언어가 곁에서 실시간 텍스트로 표시됩니다. 복용량, 날짜, 약 이름이 화면에 그대로 남습니다. 보조용이며, 대체 수단이 아닙니다."
+  "meta.medical-interpreting.desc": "GP, 병원, 정신건강 진료에서 두 언어가 곁에서 실시간 텍스트로 표시됩니다. 복용량, 날짜, 약 이름이 화면에 그대로 남습니다. 보조용이며, 대체 수단이 아닙니다.",
+  "interp.legal.link": "법률 또는 이민 업무이신가요? <a href=\"legal-interpreting.html\">법률 통역사를 위한 DuoVox 보기 &rarr;</a>",
+  "legal.title": "법률 및 이민 통역에서 곁에 두는 실시간 기록문",
+  "legal.lead": "변호사와 함께 있을 때, 이민 관련 상담 예약에서, 또는 경찰 조사 면담에서 DuoVox는 대화의 양쪽 내용을 두 언어로 실시간으로 받아 적습니다. 이름, 날짜, 주소는 화면에 계속 남아 있어 통역하기 전에 확인할 수 있습니다. DuoVox는 통역을 지원할 뿐이며, 이를 대체하지 않습니다. 또한 그 텍스트는 공식 기록이 아닙니다.",
+  "legal.shot": "주제를 Legal/Immigration/Police로 설정한 프로페셔널의 실제 세션: 국선변호인이 스페인어를 사용하는 의뢰인에게 예비 심리, 보석, 진술서에 관해 설명하고, 번역문이 나란히 표시됩니다.",
+  "legal.setup.title": "법률 및 이민 업무를 위한 설정",
+  "legal.more": "의료 및 원격 통역을 포함한 통역사 관련 더 많은 내용: <a href=\"interpreters.html\">통역사를 위한 DuoVox</a>.",
+  "meta.legal-interpreting.title": "법률 통역사를 위한 DuoVox: 실시간 2개 언어 기록문",
+  "meta.legal-interpreting.desc": "변호사와 함께할 때, 이민 관련 상담 예약에서, 경찰 조사 면담에서 두 언어가 실시간 텍스트로 곁에 표시됩니다. 이름과 날짜가 화면에 계속 남습니다. 보조용 전용."
 }

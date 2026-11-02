@@ -782,5 +782,13 @@
   "med.setup.title": "Siapkan untuk konsultasi medis",
   "med.more": "Lebih banyak untuk interpreter, termasuk interpretasi hukum dan jarak jauh: <a href=\"interpreters.html\">DuoVox untuk interpreter</a>.",
   "meta.medical-interpreting.title": "DuoVox untuk juru bahasa medis: transkrip langsung dua bahasa",
-  "meta.medical-interpreting.desc": "Kedua bahasa sebagai teks langsung di samping Anda dalam janji temu di klinik dokter umum, rumah sakit, dan kesehatan mental: dosis, tanggal, dan obat tetap terlihat di layar. Bersifat membantu, bukan pengganti."
+  "meta.medical-interpreting.desc": "Kedua bahasa sebagai teks langsung di samping Anda dalam janji temu di klinik dokter umum, rumah sakit, dan kesehatan mental: dosis, tanggal, dan obat tetap terlihat di layar. Bersifat membantu, bukan pengganti.",
+  "interp.legal.link": "Pekerjaan hukum atau imigrasi? <a href=\"legal-interpreting.html\">Lihat DuoVox untuk juru bahasa hukum &rarr;</a>",
+  "legal.title": "Transkrip langsung di samping Anda dalam penjurubahasaan hukum dan imigrasi",
+  "legal.lead": "Bersama seorang pengacara, saat janji temu imigrasi, atau dalam wawancara polisi, DuoVox menuliskan kedua sisi percakapan dalam kedua bahasa saat percakapan berlangsung. Nama, tanggal, atau alamat tetap terlihat di layar, sehingga Anda dapat memeriksanya sebelum Anda menyampaikannya. DuoVox mendukung penjurubahasaan Anda; tidak pernah menggantikannya, dan teksnya bukan catatan resmi.",
+  "legal.shot": "Sesi nyata di Professional dengan Topik disetel ke Hukum/Imigrasi/Polisi: seorang pembela umum menjelaskan kepada klien berbahasa Spanyol tentang sidang pendahuluan, jaminan, dan surat pernyataan tertulis, dan terjemahannya muncul di sampingnya.",
+  "legal.setup.title": "Siapkan untuk pekerjaan hukum dan imigrasi",
+  "legal.more": "Lebih banyak untuk juru bahasa, termasuk penjurubahasaan medis dan jarak jauh: <a href=\"interpreters.html\">DuoVox untuk juru bahasa</a>.",
+  "meta.legal-interpreting.title": "DuoVox untuk juru bahasa hukum: transkrip langsung dua bahasa",
+  "meta.legal-interpreting.desc": "Kedua bahasa sebagai teks langsung di samping Anda bersama pengacara, saat janji temu imigrasi, dan dalam wawancara polisi: nama dan tanggal tetap terlihat di layar. Hanya bersifat membantu."
 }

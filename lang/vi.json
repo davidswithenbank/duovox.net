@@ -782,5 +782,13 @@
   "med.setup.title": "Thiết lập cho các cuộc hẹn y tế",
   "med.more": "Thêm nội dung cho phiên dịch viên, bao gồm phiên dịch pháp lý và phiên dịch từ xa: <a href=\"interpreters.html\">DuoVox cho phiên dịch viên</a>.",
   "meta.medical-interpreting.title": "DuoVox cho phiên dịch viên y khoa: bản chép lời trực tiếp bằng hai ngôn ngữ",
-  "meta.medical-interpreting.desc": "Cả hai ngôn ngữ dưới dạng văn bản trực tiếp bên cạnh bạn trong các buổi khám tại phòng khám đa khoa, bệnh viện và cuộc hẹn về sức khỏe tâm thần: liều dùng, ngày tháng và thuốc vẫn hiển thị trên màn hình. Công cụ hỗ trợ, không phải thay thế."
+  "meta.medical-interpreting.desc": "Cả hai ngôn ngữ dưới dạng văn bản trực tiếp bên cạnh bạn trong các buổi khám tại phòng khám đa khoa, bệnh viện và cuộc hẹn về sức khỏe tâm thần: liều dùng, ngày tháng và thuốc vẫn hiển thị trên màn hình. Công cụ hỗ trợ, không phải thay thế.",
+  "interp.legal.link": "Công việc pháp lý hoặc nhập cư? <a href=\"legal-interpreting.html\">Xem DuoVox dành cho phiên dịch viên pháp lý &rarr;</a>",
+  "legal.title": "Bản chép lời trực tiếp ngay bên cạnh bạn trong phiên dịch pháp lý và nhập cư",
+  "legal.lead": "Khi làm việc với luật sư, tại cuộc hẹn về nhập cư hoặc trong buổi thẩm vấn của cảnh sát, DuoVox ghi lại cả hai phía của cuộc trò chuyện bằng cả hai ngôn ngữ theo thời gian thực. Tên, ngày tháng hoặc địa chỉ sẽ vẫn hiển thị trên màn hình, để bạn có thể kiểm tra trước khi chuyển ngữ. DuoVox hỗ trợ công việc phiên dịch của bạn; nó không bao giờ thay thế công việc đó, và văn bản của nó không phải là hồ sơ chính thức.",
+  "legal.shot": "Một phiên làm việc thực tế trên Professional với Chủ đề được đặt là Pháp lý/Nhập cư/Cảnh sát: một luật sư bào chữa công nói chuyện với một thân chủ nói tiếng Tây Ban Nha về phiên điều trần sơ bộ, tiền bảo lãnh và bản tuyên thệ, và các bản dịch xuất hiện song song bên cạnh.",
+  "legal.setup.title": "Thiết lập cho công việc pháp lý và nhập cư",
+  "legal.more": "Thêm nội dung dành cho phiên dịch viên, bao gồm phiên dịch y tế và phiên dịch từ xa: <a href=\"interpreters.html\">DuoVox dành cho phiên dịch viên</a>.",
+  "meta.legal-interpreting.title": "DuoVox dành cho phiên dịch viên pháp lý: bản chép lời trực tiếp bằng hai ngôn ngữ",
+  "meta.legal-interpreting.desc": "Cả hai ngôn ngữ dưới dạng văn bản trực tiếp ngay bên cạnh bạn khi làm việc với luật sư, tại các cuộc hẹn về nhập cư và buổi thẩm vấn của cảnh sát: tên và ngày tháng vẫn hiển thị trên màn hình. Chỉ mang tính hỗ trợ."
 }
