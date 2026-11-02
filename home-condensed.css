@@ -121,3 +121,5 @@
 .home-c .hero-c { align-items: center; }
 .home-c .hero-c-text { padding-top: 0; transform: translateY(-40px); }
 @media (max-width: 1000px) { .home-c .hero-c-text { transform: none; } }
+/* TRY (David, 2 Nov): the whole Chat view, not cropped, at the same height as the 4-box picture */
+.home-c .layout-card img.layout-img-full { object-fit: contain; object-position: center; }
