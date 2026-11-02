@@ -771,5 +771,7 @@
   "home.cmpx.subject": "Modes par sujet pour les interprètes",
   "home.cmpx.subject.sub": "Vocabulaire médical, juridique, de l’immigration, de l’éducation, de l’informatique et des affaires",
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Remarquable</span>",
-  "home.cmpx.subject.deepl": "Glossaire uniquement"
+  "home.cmpx.subject.deepl": "Glossaire uniquement",
+  "interp.remote.title": "Pour l’interprétation vidéo et téléphonique (VRI et OPI)",
+  "interp.remote.body": "Vous interprétez lors d’un appel vidéo ou d’un appel téléphonique que vous prenez sur votre PC ? DuoVox écoute l’appel via le son de votre PC, qu’il fonctionne dans Microsoft Teams, Zoom ou une plateforme d’interprétation à distance dans votre navigateur, et affiche les deux langues sous forme de texte en direct à côté de vous, sans que rien ne rejoigne l’appel. Un appel sur un téléphone séparé peut être sous-titré via le microphone de votre PC avec le téléphone en haut-parleur. DuoVox soutient votre mémoire et votre terminologie ; il ne remplace jamais votre interprétation."
 }

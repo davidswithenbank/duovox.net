@@ -771,5 +771,7 @@
   "home.cmpx.subject": "面向口译员的主题模式",
   "home.cmpx.subject.sub": "医疗、法律、移民、教育、IT 和商务词汇",
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">亮点</span>",
-  "home.cmpx.subject.deepl": "仅术语表"
+  "home.cmpx.subject.deepl": "仅术语表",
+  "interp.remote.title": "用于视频和电话口译（VRI 和 OPI）",
+  "interp.remote.body": "在视频通话中口译，或者为你在 PC 上接听的电话进行口译？DuoVox 会通过你的 PC 音频收听通话，无论它是在 Microsoft Teams、Zoom 中运行，还是在浏览器中的远程口译平台上运行，并将两种语言以实时文字显示在你身旁，且不会有任何内容加入通话。在单独一部电话上的通话，也可以在电话开启免提时，通过你的 PC 麦克风进行字幕转写。DuoVox 帮助你记忆并掌握术语；它绝不会取代你的口译。"
 }

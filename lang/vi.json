@@ -771,5 +771,7 @@
   "home.cmpx.subject": "Chế độ chủ đề cho phiên dịch viên",
   "home.cmpx.subject.sub": "Từ vựng về y tế, pháp lý, nhập cư, giáo dục, CNTT và kinh doanh",
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Nổi bật</span>",
-  "home.cmpx.subject.deepl": "Chỉ có bảng thuật ngữ"
+  "home.cmpx.subject.deepl": "Chỉ có bảng thuật ngữ",
+  "interp.remote.title": "Dành cho phiên dịch qua video và điện thoại (VRI và OPI)",
+  "interp.remote.body": "Phiên dịch qua cuộc gọi video, hoặc cuộc gọi điện thoại bạn thực hiện trên PC? DuoVox nghe cuộc gọi qua âm thanh trên PC của bạn, dù chạy trong Microsoft Teams, Zoom hay một nền tảng phiên dịch từ xa trong trình duyệt của bạn, và hiển thị trực tiếp cả hai ngôn ngữ dưới dạng văn bản bên cạnh bạn, mà không có gì tham gia vào cuộc gọi. Cuộc gọi trên một điện thoại riêng cũng có thể được phụ đề qua micrô của PC khi điện thoại bật loa ngoài. DuoVox hỗ trợ trí nhớ và thuật ngữ của bạn; nó không bao giờ thay thế việc phiên dịch của bạn."
 }

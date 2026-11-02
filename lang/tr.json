@@ -771,5 +771,7 @@
   "home.cmpx.subject": "Tercümanlar için konu modları",
   "home.cmpx.subject.sub": "Tıp, hukuk, göçmenlik, eğitim, BT ve iş dünyası kelime dağarcığı",
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Öne çıkan</span>",
-  "home.cmpx.subject.deepl": "Yalnızca sözlükçe"
+  "home.cmpx.subject.deepl": "Yalnızca sözlükçe",
+  "interp.remote.title": "Video ve telefonla tercüme için (VRI ve OPI)",
+  "interp.remote.body": "Bir görüntülü görüşmede veya PC&rsquo;nizden yaptığınız bir telefon görüşmesinde tercüme mi yapıyorsunuz? DuoVox, görüşmeyi Microsoft Teams, Zoom veya tarayıcınızdaki bir uzaktan tercüme platformunda çalışsa da PC&rsquo;nizin sesi üzerinden dinler ve çağrıya hiçbir şey katılmadan her iki dili de yanınızda canlı metin olarak gösterir. Ayrı bir telefondaki bir görüşme, telefon hoparlördeyken PC&rsquo;nizin mikrofonu üzerinden altyazılanabilir. DuoVox hafızanızı ve terminolojinizi destekler; tercümenizin yerini asla almaz."
 }

@@ -771,5 +771,7 @@
   "home.cmpx.subject": "Mode bidang untuk juru bahasa",
   "home.cmpx.subject.sub": "Kosakata medis, hukum, imigrasi, pendidikan, IT, dan bisnis",
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Unggulan</span>",
-  "home.cmpx.subject.deepl": "Hanya glosarium"
+  "home.cmpx.subject.deepl": "Hanya glosarium",
+  "interp.remote.title": "Untuk penjurubahasaan video dan telepon (VRI dan OPI)",
+  "interp.remote.body": "Menjurubahasakan melalui panggilan video, atau panggilan telepon yang Anda terima di PC? DuoVox mendengarkan panggilan melalui suara PC Anda, baik berjalan di Microsoft Teams, Zoom, maupun platform penjurubahasaan jarak jauh di browser Anda, dan menampilkan kedua bahasa sebagai teks langsung di samping Anda, tanpa ada apa pun yang ikut bergabung ke dalam panggilan. Panggilan di telepon terpisah dapat diberi teks melalui mikrofon PC Anda dengan telepon pada mode speaker. DuoVox mendukung ingatan dan terminologi Anda; aplikasi ini tidak pernah menggantikan penjurubahasaan Anda."
 }

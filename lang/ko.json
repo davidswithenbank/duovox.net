@@ -771,5 +771,7 @@
   "home.cmpx.subject": "통역사를 위한 주제 모드",
   "home.cmpx.subject.sub": "의료, 법률, 이민, 교육, IT, 비즈니스 어휘",
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">눈에 띔</span>",
-  "home.cmpx.subject.deepl": "용어집만"
+  "home.cmpx.subject.deepl": "용어집만",
+  "interp.remote.title": "영상 및 전화 통역용(VRI 및 OPI)",
+  "interp.remote.body": "영상 통화나 PC로 받는 전화 통화를 통역하시나요? DuoVox는 Microsoft Teams, Zoom 또는 브라우저의 원격 통역 플랫폼에서 실행되는 통화든 상관없이 PC의 소리를 통해 통화를 듣고, 통화에 아무것도 참여시키지 않은 채 두 언어를 사용자 옆에 실시간 텍스트로 표시합니다. 별도의 전화기로 하는 통화는 스피커폰으로 켠 상태에서 PC 마이크를 통해 자막으로 표시할 수 있습니다. DuoVox는 기억과 전문 용어 사용을 돕지만, 통역을 대체하지는 않습니다."
 }

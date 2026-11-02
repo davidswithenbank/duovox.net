@@ -771,5 +771,7 @@
   "home.cmpx.subject": "Themenmodi für Dolmetschende",
   "home.cmpx.subject.sub": "Wortschatz für Medizin, Recht, Einwanderung, Bildung, IT und Wirtschaft",
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Herausragend</span>",
-  "home.cmpx.subject.deepl": "Nur Glossar"
+  "home.cmpx.subject.deepl": "Nur Glossar",
+  "interp.remote.title": "Für Video- und Telefondolmetschen (VRI und OPI)",
+  "interp.remote.body": "Dolmetschen über einen Videoanruf oder einen Telefonanruf, den Sie an Ihrem PC annehmen? DuoVox hört den Anruf über den Ton Ihres PCs mit, egal ob er in Teams, Zoom oder auf einer Ferndolmetsch-Plattform in Ihrem Browser läuft, und zeigt beide Sprachen als Live-Text neben Ihnen an, ohne dass sich etwas in den Anruf einklinkt. Ein Anruf auf einem separaten Telefon kann über das Mikrofon Ihres PCs mit Untertiteln versehen werden, wenn das Telefon auf Lautsprecher gestellt ist. DuoVox unterstützt Ihr Gedächtnis und Ihre Terminologie; es ersetzt niemals Ihr Dolmetschen."
 }

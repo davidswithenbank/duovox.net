@@ -771,5 +771,7 @@
   "home.cmpx.subject": "Onderwerpmodi voor tolken",
   "home.cmpx.subject.sub": "Woordenschat voor zorg, recht, immigratie, onderwijs, IT en zakelijke gesprekken",
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Onderscheidend</span>",
-  "home.cmpx.subject.deepl": "Alleen woordenlijst"
+  "home.cmpx.subject.deepl": "Alleen woordenlijst",
+  "interp.remote.title": "Voor video- en telefoontolken (VRI en OPI)",
+  "interp.remote.body": "Tolken via een videogesprek, of een telefoongesprek dat u op uw pc voert? DuoVox luistert naar het gesprek via het geluid van uw pc, of dat nu in Microsoft Teams, Zoom of een tolkplatform op afstand in uw browser draait, en toont beide talen als live tekst naast u, zonder dat er iets aan het gesprek deelneemt. Een gesprek op een aparte telefoon kan via de microfoon van uw pc worden ondertiteld terwijl de telefoon op luidspreker staat. DuoVox ondersteunt uw geheugen en terminologie; het vervangt uw tolkwerk nooit."
 }

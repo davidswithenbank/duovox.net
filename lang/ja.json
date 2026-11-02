@@ -771,5 +771,7 @@
   "home.cmpx.subject": "通訳者向けの専門分野モード",
   "home.cmpx.subject.sub": "医療、法律、移民、教育、IT、ビジネスの語彙",
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">注目</span>",
-  "home.cmpx.subject.deepl": "用語集のみ"
+  "home.cmpx.subject.deepl": "用語集のみ",
+  "interp.remote.title": "ビデオ通話および電話通話での通訳向け（VRI および OPI）",
+  "interp.remote.body": "ビデオ通話での通訳、または PC で受ける電話通話での通訳ですか？ DuoVox は、Microsoft Teams、Zoom、またはブラウザ上のリモート通訳プラットフォームのいずれで動作していても、PC の音声を通じて通話を聞き取り、通話に何も参加させることなく、両方の言語をあなたのそばにライブテキストで表示します。別の電話機での通話も、電話をスピーカーにした状態で PC のマイクを通じて字幕表示できます。DuoVox はあなたの記憶と用語管理を支援しますが、通訳に取って代わることはありません。"
 }

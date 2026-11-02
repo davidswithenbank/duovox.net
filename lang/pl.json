@@ -771,5 +771,7 @@
   "home.cmpx.subject": "Tryby tematyczne dla tłumaczy ustnych",
   "home.cmpx.subject.sub": "Słownictwo medyczne, prawnicze, imigracyjne, edukacyjne, IT i biznesowe",
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Wyróżnione</span>",
-  "home.cmpx.subject.deepl": "Tylko glosariusz"
+  "home.cmpx.subject.deepl": "Tylko glosariusz",
+  "interp.remote.title": "Do tłumaczenia ustnego przez wideo i telefon (VRI i OPI)",
+  "interp.remote.body": "Tłumaczenie ustne podczas połączenia wideo albo rozmowy telefonicznej, którą odbierasz na komputerze? DuoVox nasłuchuje rozmowy przez dźwięk z Twojego komputera, niezależnie od tego, czy działa ona w Microsoft Teams, Zoom czy na platformie do tłumaczeń zdalnych w przeglądarce, i wyświetla oba języki jako tekst na żywo obok Ciebie, bez dołączania czegokolwiek do rozmowy. Rozmowę na osobnym telefonie można wyświetlać jako napisy za pomocą mikrofonu komputera, gdy telefon jest w trybie głośnomówiącym. DuoVox wspiera Twoją pamięć i terminologię; nigdy nie zastępuje Twojego tłumaczenia ustnego."
 }
