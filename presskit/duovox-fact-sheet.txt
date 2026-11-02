@@ -5,7 +5,7 @@ In one line
 Live captions and translation for any conversation on your Windows PC.
 
 Short description
-DuoVox shows both sides of a conversation live: what each person says and its translation, side by side, in four boxes. It captions anything playing on your PC, from Teams, Zoom and Google Meet calls to WhatsApp and YouTube, or the people in the room through your microphone. The Free plan works offline in 30 languages, with no account needed.
+DuoVox shows both sides of a conversation live: what each person says and its translation, side by side, in four boxes. It captions anything playing on your PC, from Teams, Zoom and Google Meet calls to WhatsApp and YouTube, or the people in the room through your microphone. The Free plan works offline in 31 languages, with no account needed.
 
 Key facts
 - Developer: David Arthur Software (davidarthur.app)
@@ -13,7 +13,7 @@ Key facts
 - Platform: Windows 10 (version 1903 or later) and Windows 11, 64-bit. Android is in development; no date announced.
 - Get it: https://apps.microsoft.com/detail/9MSN7866TJQH
   Not yet available in the EU and EEA, Turkey, Saudi Arabia or Nigeria.
-- Languages: translation across 49 languages; speech recognised in 43 languages on Professional, 33 on Standard and 30 offline on Free; app interface in 23 languages.
+- Languages: translation across 62 languages; speech recognised in 57 languages on Professional, 53 on Standard and 31 offline on Free; app interface in 23 languages.
 - Plans: Free, Standard, Professional, and Pay-As-You-Go hours that never expire.
   Current prices: https://duovox.net/press.html (prices change; please check there rather than this file).
 - Privacy: Free runs fully on the device. On every plan, audio, transcripts and translations are never stored on DuoVox's own servers.
