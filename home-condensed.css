@@ -101,3 +101,14 @@
 /* the screenshot's 1584px intrinsic width must not set the grid column's minimum (phones cut the hero text off) */
 .home-c .hero-c > * { min-width: 0; }
 @media (max-width: 1000px) { .home-c .hero-c { grid-template-columns: minmax(0, 1fr); } }
+
+/* ── Two layouts side by side (2 Nov 2026) ── */
+.home-c #layouts { padding-top: 24px; }
+.home-c .layouts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; }
+.home-c .layout-card { margin: 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 1rem; }
+.home-c .layout-card img { width: 100%; height: auto; display: block; border-radius: 10px; }
+.home-c .layout-card figcaption { padding: .9rem .3rem .2rem; }
+.home-c .layout-card h3 { font-size: 1.1rem; margin-bottom: .35rem; }
+.home-c .layout-card p { color: var(--text-secondary); font-size: .9rem; line-height: 1.5; }
+.home-c .hero-c-shot figcaption { font-size: .82rem; }
+@media (max-width: 700px) { .home-c .layouts-grid { grid-template-columns: 1fr; } }
