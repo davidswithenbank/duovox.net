@@ -774,5 +774,13 @@
   "home.cmpx.subject.deepl": "Solo glosario",
   "interp.remote.title": "Para interpretación por video y por teléfono (VRI y OPI)",
   "interp.remote.body": "¿Interpretas en una videollamada o en una llamada telefónica que atiendes en tu PC? DuoVox escucha la llamada a través del sonido de tu PC, ya sea en Microsoft Teams, Zoom o una plataforma de interpretación remota en tu navegador, y muestra ambos idiomas como texto en vivo a tu lado, sin que nada se una a la llamada. Una llamada en un teléfono aparte puede subtitularse a través del micrófono de tu PC con el teléfono en altavoz. DuoVox sirve de apoyo para tu memoria y tu terminología; nunca sustituye tu interpretación.",
-  "home.cmpx.subject.itr": "Aplicación médica independiente"
+  "home.cmpx.subject.itr": "Aplicación médica independiente",
+  "interp.med.link": "¿Interpretación en el ámbito sanitario? <a href=\"medical-interpreting.html\">Ver DuoVox para intérpretes médicos &rarr;</a>",
+  "med.title": "Una transcripción en directo a tu lado en la interpretación médica",
+  "med.lead": "En una cita de medicina general, hospitalaria o de salud mental, DuoVox pone por escrito ambas partes de la conversación en ambos idiomas a medida que ocurre. Una dosis, una fecha de nacimiento o el nombre de un medicamento permanecen en pantalla, para que puedas comprobarlos antes de interpretarlos. DuoVox apoya tu interpretación; nunca la sustituye.",
+  "med.shot": "Una sesión real en Profesional con el tema configurado como Salud médica/salud mental: un médico pregunta por una reacción alérgica y por antibióticos, el paciente responde en español y las traducciones aparecen al lado. A continuación, en la misma sesión, sigue una conversación legal.",
+  "med.setup.title": "Prepárate para citas médicas",
+  "med.more": "Más para intérpretes, incluida la interpretación jurídica y la interpretación a distancia: <a href=\"interpreters.html\">DuoVox para intérpretes</a>.",
+  "meta.medical-interpreting.title": "DuoVox para intérpretes médicos: transcripción bilingüe en directo",
+  "meta.medical-interpreting.desc": "Ambos idiomas como texto en directo a tu lado en citas de medicina general, hospitalarias y de salud mental: las dosis, las fechas y los medicamentos permanecen en pantalla. Una ayuda, no un sustituto."
 }

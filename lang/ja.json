@@ -774,5 +774,13 @@
   "home.cmpx.subject.deepl": "用語集のみ",
   "interp.remote.title": "ビデオ通話および電話通話での通訳向け（VRI および OPI）",
   "interp.remote.body": "ビデオ通話での通訳、または PC で受ける電話通話での通訳ですか？ DuoVox は、Microsoft Teams、Zoom、またはブラウザ上のリモート通訳プラットフォームのいずれで動作していても、PC の音声を通じて通話を聞き取り、通話に何も参加させることなく、両方の言語をあなたのそばにライブテキストで表示します。別の電話機での通話も、電話をスピーカーにした状態で PC のマイクを通じて字幕表示できます。DuoVox はあなたの記憶と用語管理を支援しますが、通訳に取って代わることはありません。",
-  "home.cmpx.subject.itr": "医療向けの別アプリ"
+  "home.cmpx.subject.itr": "医療向けの別アプリ",
+  "interp.med.link": "医療通訳をしていますか？ <a href=\"medical-interpreting.html\">医療通訳者向けのDuoVoxを見る &rarr;</a>",
+  "med.title": "医療通訳で、手元にライブ字幕を",
+  "med.lead": "GP、病院、またはメンタルヘルスの診察で、DuoVoxは会話の両側をその場で両言語で書き起こします。用量、生年月日、薬の名前が画面に残るので、訳出する前に確認できます。DuoVoxは通訳を支援するものであり、決してそれに取って代わるものではありません。",
+  "med.shot": "トピックをMedical/Mental Healthに設定したプロフェッショナルでの実際のセッションです。医師がアレルギー反応と抗生物質について尋ね、患者がスペイン語で答えると、翻訳が横に表示されます。同じセッション内で、その後に法的な会話が続きます。",
+  "med.setup.title": "医療受診のための設定",
+  "med.more": "法律通訳や遠隔通訳を含む、通訳者向けの詳しい情報：<a href=\"interpreters.html\">通訳者向けDuoVox</a>。",
+  "meta.medical-interpreting.title": "医療通訳者向けDuoVox：2言語のライブ書き起こし",
+  "meta.medical-interpreting.desc": "GP、病院、メンタルヘルスの診察で、両言語が手元にライブテキストで表示されます。用量、日付、薬名が画面に残ります。支援用であり、代替ではありません。"
 }

@@ -774,5 +774,13 @@
   "home.cmpx.subject.deepl": "Yalnızca sözlükçe",
   "interp.remote.title": "Video ve telefonla tercüme için (VRI ve OPI)",
   "interp.remote.body": "Bir görüntülü görüşmede veya PC&rsquo;nizden yaptığınız bir telefon görüşmesinde tercüme mi yapıyorsunuz? DuoVox, görüşmeyi Microsoft Teams, Zoom veya tarayıcınızdaki bir uzaktan tercüme platformunda çalışsa da PC&rsquo;nizin sesi üzerinden dinler ve çağrıya hiçbir şey katılmadan her iki dili de yanınızda canlı metin olarak gösterir. Ayrı bir telefondaki bir görüşme, telefon hoparlördeyken PC&rsquo;nizin mikrofonu üzerinden altyazılanabilir. DuoVox hafızanızı ve terminolojinizi destekler; tercümenizin yerini asla almaz.",
-  "home.cmpx.subject.itr": "Ayrı tıbbi uygulama"
+  "home.cmpx.subject.itr": "Ayrı tıbbi uygulama",
+  "interp.med.link": "Sağlık hizmetlerinde sözlü çeviri mi yapıyorsunuz? <a href=\"medical-interpreting.html\">Tıbbi tercümanlar için DuoVox'u görün &rarr;</a>",
+  "med.title": "Tıbbi sözlü çeviride yanınızda canlı döküm",
+  "med.lead": "Aile hekimi, hastane veya ruh sağlığı randevusunda DuoVox, konuşmanın her iki tarafını da gerçekleşirken iki dilde yazıya döker. Bir doz, doğum tarihi veya ilacın adı ekranda kalır; böylece aktarmadan önce kontrol edebilirsiniz. DuoVox sözlü çevirinizi destekler; asla onun yerini almaz.",
+  "med.shot": "Konu Tıbbi/Ruh Sağlığı olarak ayarlanmış Profesyonel planda gerçek bir oturum: bir doktor alerjik reaksiyon ve antibiyotikler hakkında soruyor, hasta İspanyolca yanıt veriyor ve çeviriler yanında görünüyor. Aynı oturumda ardından hukuki bir konuşma geliyor.",
+  "med.setup.title": "Tıbbi randevular için kurulum",
+  "med.more": "Hukuki ve uzaktan sözlü çeviri dahil tercümanlara yönelik daha fazlası: <a href=\"interpreters.html\">Tercümanlar için DuoVox</a>.",
+  "meta.medical-interpreting.title": "Tıbbi tercümanlar için DuoVox: canlı iki dilli döküm",
+  "meta.medical-interpreting.desc": "Aile hekimi, hastane ve ruh sağlığı randevularında iki dil de yanınızda canlı metin olarak görünür: dozlar, tarihler ve ilaçlar ekranda kalır. Destekleyicidir, yerine geçmez."
 }

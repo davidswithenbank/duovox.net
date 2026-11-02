@@ -774,5 +774,13 @@
   "home.cmpx.subject.deepl": "Hanya glosarium",
   "interp.remote.title": "Untuk penjurubahasaan video dan telepon (VRI dan OPI)",
   "interp.remote.body": "Menjurubahasakan melalui panggilan video, atau panggilan telepon yang Anda terima di PC? DuoVox mendengarkan panggilan melalui suara PC Anda, baik berjalan di Microsoft Teams, Zoom, maupun platform penjurubahasaan jarak jauh di browser Anda, dan menampilkan kedua bahasa sebagai teks langsung di samping Anda, tanpa ada apa pun yang ikut bergabung ke dalam panggilan. Panggilan di telepon terpisah dapat diberi teks melalui mikrofon PC Anda dengan telepon pada mode speaker. DuoVox mendukung ingatan dan terminologi Anda; aplikasi ini tidak pernah menggantikan penjurubahasaan Anda.",
-  "home.cmpx.subject.itr": "Aplikasi medis terpisah"
+  "home.cmpx.subject.itr": "Aplikasi medis terpisah",
+  "interp.med.link": "Menafsirkan di layanan kesehatan? <a href=\"medical-interpreting.html\">Lihat DuoVox untuk juru bahasa medis &rarr;</a>",
+  "med.title": "Transkrip langsung di samping Anda untuk interpretasi medis",
+  "med.lead": "Dalam konsultasi dengan dokter umum, rumah sakit, atau kesehatan mental, DuoVox menuliskan kedua sisi percakapan dalam kedua bahasa saat percakapan berlangsung. Dosis, tanggal lahir, atau nama obat tetap terlihat di layar, sehingga Anda dapat memeriksanya sebelum menyampaikannya. DuoVox mendukung pekerjaan interpretasi Anda; tidak pernah menggantikannya.",
+  "med.shot": "Sesi nyata di Professional dengan Topik disetel ke Medical/Mental Health: seorang dokter bertanya tentang reaksi alergi dan antibiotik, pasien menjawab dalam bahasa Spanyol, dan terjemahannya muncul berdampingan. Percakapan hukum menyusul dalam sesi yang sama.",
+  "med.setup.title": "Siapkan untuk konsultasi medis",
+  "med.more": "Lebih banyak untuk interpreter, termasuk interpretasi hukum dan jarak jauh: <a href=\"interpreters.html\">DuoVox untuk interpreter</a>.",
+  "meta.medical-interpreting.title": "DuoVox untuk juru bahasa medis: transkrip langsung dua bahasa",
+  "meta.medical-interpreting.desc": "Kedua bahasa sebagai teks langsung di samping Anda dalam janji temu di klinik dokter umum, rumah sakit, dan kesehatan mental: dosis, tanggal, dan obat tetap terlihat di layar. Bersifat membantu, bukan pengganti."
 }

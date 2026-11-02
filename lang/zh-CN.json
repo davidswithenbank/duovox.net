@@ -774,5 +774,13 @@
   "home.cmpx.subject.deepl": "仅术语表",
   "interp.remote.title": "用于视频和电话口译（VRI 和 OPI）",
   "interp.remote.body": "在视频通话中口译，或者为你在 PC 上接听的电话进行口译？DuoVox 会通过你的 PC 音频收听通话，无论它是在 Microsoft Teams、Zoom 中运行，还是在浏览器中的远程口译平台上运行，并将两种语言以实时文字显示在你身旁，且不会有任何内容加入通话。在单独一部电话上的通话，也可以在电话开启免提时，通过你的 PC 麦克风进行字幕转写。DuoVox 帮助你记忆并掌握术语；它绝不会取代你的口译。",
-  "home.cmpx.subject.itr": "独立医疗应用"
+  "home.cmpx.subject.itr": "独立医疗应用",
+  "interp.med.link": "医疗口译？<a href=\"medical-interpreting.html\">查看面向医疗口译员的 DuoVox &rarr;</a>",
+  "med.title": "医疗口译时，身旁实时显示双语转写",
+  "med.lead": "在全科门诊、医院或心理健康就诊中，DuoVox 会在对话进行的同时，以两种语言记录双方所说内容。剂量、出生日期或药品名称会保留在屏幕上，让你在传译前先核对。DuoVox 为你的口译提供辅助；它绝不会取代你。",
+  "med.shot": "专业版中的一段真实会话，主题设为 Medical/Mental Health：医生询问过敏反应和抗生素，患者用西班牙语回答，旁边同时显示翻译。同一场会话中随后还接着进行了一段法律对话。",
+  "med.setup.title": "为医疗就诊做好设置",
+  "med.more": "为口译员提供的更多内容，包括法律口译和远程口译：<a href=\"interpreters.html\">面向口译员的 DuoVox</a>。",
+  "meta.medical-interpreting.title": "面向医疗口译员的 DuoVox：实时双语转写",
+  "meta.medical-interpreting.desc": "在全科门诊、医院和心理健康就诊中，两种语言都会以实时文字显示在你身旁：剂量、日期和药品名称会保留在屏幕上。提供辅助，不是替代。"
 }

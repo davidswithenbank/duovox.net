@@ -774,5 +774,13 @@
   "home.cmpx.subject.deepl": "Alleen woordenlijst",
   "interp.remote.title": "Voor video- en telefoontolken (VRI en OPI)",
   "interp.remote.body": "Tolken via een videogesprek, of een telefoongesprek dat u op uw pc voert? DuoVox luistert naar het gesprek via het geluid van uw pc, of dat nu in Microsoft Teams, Zoom of een tolkplatform op afstand in uw browser draait, en toont beide talen als live tekst naast u, zonder dat er iets aan het gesprek deelneemt. Een gesprek op een aparte telefoon kan via de microfoon van uw pc worden ondertiteld terwijl de telefoon op luidspreker staat. DuoVox ondersteunt uw geheugen en terminologie; het vervangt uw tolkwerk nooit.",
-  "home.cmpx.subject.itr": "Afzonderlijke medische app"
+  "home.cmpx.subject.itr": "Afzonderlijke medische app",
+  "interp.med.link": "Tolken in de zorg? <a href=\"medical-interpreting.html\">Bekijk DuoVox voor medische tolken &rarr;</a>",
+  "med.title": "Een live transcript naast je bij medisch tolken",
+  "med.lead": "Bij een afspraak bij de huisarts, in het ziekenhuis of in de geestelijke gezondheidszorg schrijft DuoVox beide kanten van het gesprek in beide talen op terwijl het plaatsvindt. Een dosis, een geboortedatum of de naam van een medicijn blijft op het scherm staan, zodat je die kunt controleren voordat je die vertolkt. DuoVox ondersteunt je tolkwerk; het vervangt het nooit.",
+  "med.shot": "Een echte sessie op Professional met het onderwerp ingesteld op Medical/Mental Health: een arts vraagt naar een allergische reactie en antibiotica, de patiënt antwoordt in het Spaans en de vertalingen verschijnen ernaast. Een juridisch gesprek volgt in dezelfde sessie.",
+  "med.setup.title": "Instellen voor medische afspraken",
+  "med.more": "Meer voor tolken, waaronder juridisch tolken en tolken op afstand: <a href=\"interpreters.html\">DuoVox voor tolken</a>.",
+  "meta.medical-interpreting.title": "DuoVox voor medische tolken: live transcript in twee talen",
+  "meta.medical-interpreting.desc": "Beide talen als live tekst naast je bij afspraken bij de huisarts, in het ziekenhuis en in de geestelijke gezondheidszorg: doses, datums en medicijnen blijven op het scherm staan. Ondersteunend, geen vervanging."
 }
