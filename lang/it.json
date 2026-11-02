@@ -513,7 +513,7 @@
   "home.cmp.55": "Voce per uso occasionale",
   "home.cmp.56": "Traduzione frase per frase su telefono",
   "home.cmp.57": "Traduzione scritta e riunioni di lavoro",
-  "home.cmp.58": "Informazioni sui concorrenti verificate il 6 ottobre 2026 confrontando il sito web di ciascuna azienda e le relative schede negli app store. &mdash; significa non offerto, o non trovato nelle pagine dell&rsquo;azienda. Le funzionalità cambiano spesso; se qualcosa qui non è aggiornato, faccelo sapere a <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
+  "home.cmp.58": "Informazioni sui concorrenti verificate il 6 ottobre 2026 (modalità argomento per interpreti: 2 novembre 2026) rispetto al sito web e alle schede negli app store di ciascuna azienda. &mdash; significa non offerto, oppure non trovato nelle pagine dell&rsquo;azienda stessa. Le funzionalità cambiano spesso; se qualcosa qui non è aggiornato, faccelo sapere scrivendo a <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
   "home.who.1": "Per chi è",
   "home.who.2": "Viaggiatori e studenti",
   "home.who.3": "Segui lezioni, videochiamate con familiari all'estero e film e video in lingua straniera. Il piano Gratuito funziona offline, senza connessione a internet.",
@@ -773,5 +773,6 @@
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">In evidenza</span>",
   "home.cmpx.subject.deepl": "Solo glossario",
   "interp.remote.title": "Per l'interpretazione in video e telefonica (VRI e OPI)",
-  "interp.remote.body": "Interpretazione durante una videochiamata o una chiamata telefonica che gestisci dal tuo PC? DuoVox ascolta la chiamata tramite l'audio del tuo PC, sia che avvenga in Microsoft Teams, Zoom o su una piattaforma di interpretazione remota nel browser, e mostra entrambe le lingue come testo in tempo reale accanto a te, senza che nulla si unisca alla chiamata. Una chiamata su un telefono separato può essere sottotitolata tramite il microfono del tuo PC con il telefono in vivavoce. DuoVox supporta la tua memoria e la tua terminologia; non sostituisce mai la tua interpretazione."
+  "interp.remote.body": "Interpretazione durante una videochiamata o una chiamata telefonica che gestisci dal tuo PC? DuoVox ascolta la chiamata tramite l'audio del tuo PC, sia che avvenga in Microsoft Teams, Zoom o su una piattaforma di interpretazione remota nel browser, e mostra entrambe le lingue come testo in tempo reale accanto a te, senza che nulla si unisca alla chiamata. Una chiamata su un telefono separato può essere sottotitolata tramite il microfono del tuo PC con il telefono in vivavoce. DuoVox supporta la tua memoria e la tua terminologia; non sostituisce mai la tua interpretazione.",
+  "home.cmpx.subject.itr": "App medica separata"
 }

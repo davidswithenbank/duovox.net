@@ -513,7 +513,7 @@
   "home.cmp.55": "日常語音",
   "home.cmp.56": "在手機上逐句翻譯",
   "home.cmp.57": "書面翻譯與商務會議",
-  "home.cmp.58": "競品資訊已於 2026 年 10 月 6 日，依各公司自己的網站與 app 商店頁面進行查核。&mdash; 表示未提供，或未在該公司自己的頁面上找到。功能經常變動；如果這裡有任何內容已過時，請來信告知：<a href=\"mailto:support@duovox.net\">support@duovox.net</a>。",
+  "home.cmp.58": "競品資訊於 2026 年 10 月 6 日查核（口譯員的主題模式：2026 年 11 月 2 日），依據各公司自己的網站與 app 商店頁面。&mdash; 表示未提供，或未在該公司自己的頁面找到。功能經常變更；如果這裡有任何內容已過時，請透過 <a href=\"mailto:support@duovox.net\">support@duovox.net</a> 告訴我們。",
   "home.who.1": "適合對象",
   "home.who.2": "旅客與學生",
   "home.who.3": "輕鬆跟上課堂講授、與海外家人的視訊通話，以及外語電影和影片。Free 方案可離線使用，不需網路連線。",
@@ -773,5 +773,6 @@
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">亮點</span>",
   "home.cmpx.subject.deepl": "僅限術語表",
   "interp.remote.title": "適用於視訊與電話口譯（VRI 與 OPI）",
-  "interp.remote.body": "透過視訊通話，或在您的 PC 上接聽電話通話進行口譯嗎？DuoVox 會透過您 PC 的音訊收聽通話，無論是在 Microsoft Teams、Zoom，或是瀏覽器中的遠端口譯平台上執行，並將兩種語言以即時文字顯示在您旁邊，而且不會有任何內容加入通話。使用另一支電話進行的通話，也可在電話開啟擴音的情況下，透過您 PC 的麥克風加上字幕。DuoVox 可支援您的記憶與術語掌握；它絕不會取代您的口譯。"
+  "interp.remote.body": "透過視訊通話，或在您的 PC 上接聽電話通話進行口譯嗎？DuoVox 會透過您 PC 的音訊收聽通話，無論是在 Microsoft Teams、Zoom，或是瀏覽器中的遠端口譯平台上執行，並將兩種語言以即時文字顯示在您旁邊，而且不會有任何內容加入通話。使用另一支電話進行的通話，也可在電話開啟擴音的情況下，透過您 PC 的麥克風加上字幕。DuoVox 可支援您的記憶與術語掌握；它絕不會取代您的口譯。",
+  "home.cmpx.subject.itr": "獨立醫療應用程式"
 }

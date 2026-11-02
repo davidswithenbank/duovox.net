@@ -513,7 +513,7 @@
   "home.cmp.55": "Informele spraak",
   "home.cmp.56": "Vertaling zin voor zin op een telefoon",
   "home.cmp.57": "Schriftelijke vertaling en zakelijke vergaderingen",
-  "home.cmp.58": "Informatie over concurrenten gecontroleerd op 6 oktober 2026 aan de hand van de eigen website en appstorevermeldingen van elk bedrijf. &mdash; betekent niet aangeboden, of niet gevonden op de eigen pagina’s van het bedrijf. Functies veranderen vaak; als iets hier verouderd is, laat het ons dan weten via <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
+  "home.cmp.58": "Concurrentie-informatie gecontroleerd op 6 oktober 2026 (onderwerpmodi voor tolken: 2 november 2026) aan de hand van de eigen website van elk bedrijf en appstorevermeldingen. &mdash; betekent niet aangeboden, of niet gevonden op de eigen pagina&rsquo;s van het bedrijf. Functies veranderen vaak; als iets hier verouderd is, laat het ons dan weten via <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
   "home.who.1": "Voor wie is het",
   "home.who.2": "Reizigers en studenten",
   "home.who.3": "Volg colleges, videogesprekken met familie in het buitenland en films en video's in een vreemde taal. Het Gratis-abonnement werkt offline, zonder internetverbinding.",
@@ -773,5 +773,6 @@
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Onderscheidend</span>",
   "home.cmpx.subject.deepl": "Alleen woordenlijst",
   "interp.remote.title": "Voor video- en telefoontolken (VRI en OPI)",
-  "interp.remote.body": "Tolken via een videogesprek, of een telefoongesprek dat u op uw pc voert? DuoVox luistert naar het gesprek via het geluid van uw pc, of dat nu in Microsoft Teams, Zoom of een tolkplatform op afstand in uw browser draait, en toont beide talen als live tekst naast u, zonder dat er iets aan het gesprek deelneemt. Een gesprek op een aparte telefoon kan via de microfoon van uw pc worden ondertiteld terwijl de telefoon op luidspreker staat. DuoVox ondersteunt uw geheugen en terminologie; het vervangt uw tolkwerk nooit."
+  "interp.remote.body": "Tolken via een videogesprek, of een telefoongesprek dat u op uw pc voert? DuoVox luistert naar het gesprek via het geluid van uw pc, of dat nu in Microsoft Teams, Zoom of een tolkplatform op afstand in uw browser draait, en toont beide talen als live tekst naast u, zonder dat er iets aan het gesprek deelneemt. Een gesprek op een aparte telefoon kan via de microfoon van uw pc worden ondertiteld terwijl de telefoon op luidspreker staat. DuoVox ondersteunt uw geheugen en terminologie; het vervangt uw tolkwerk nooit.",
+  "home.cmpx.subject.itr": "Afzonderlijke medische app"
 }

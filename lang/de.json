@@ -513,7 +513,7 @@
   "home.cmp.55": "Alltägliche Sprache",
   "home.cmp.56": "Übersetzung Satz für Satz auf einem Smartphone",
   "home.cmp.57": "Schriftliche Übersetzung & Geschäftstreffen",
-  "home.cmp.58": "Informationen zu Wettbewerbern wurden am 6. Oktober 2026 anhand der jeweiligen Unternehmenswebsite und App-Store-Einträge geprüft. &mdash; bedeutet: nicht angeboten oder auf den eigenen Seiten des Unternehmens nicht gefunden. Funktionen ändern sich häufig; wenn hier etwas nicht mehr aktuell ist, teilen Sie es uns bitte mit unter <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
+  "home.cmp.58": "Informationen zu Wettbewerbern geprüft am 6. Oktober 2026 (Themenmodi für Dolmetscher: 2. November 2026) anhand der jeweiligen eigenen Website und App-Store-Einträge des Unternehmens. &mdash; bedeutet: nicht angeboten oder nicht auf den eigenen Seiten des Unternehmens gefunden. Funktionen ändern sich häufig; wenn hier etwas nicht mehr aktuell ist, teilen Sie es uns bitte unter <a href=\"mailto:support@duovox.net\">support@duovox.net</a> mit.",
   "home.who.1": "Für wen es ist",
   "home.who.2": "Reisende & Studierende",
   "home.who.3": "Verfolgen Sie Vorlesungen, Videoanrufe mit der Familie im Ausland und fremdsprachige Filme und Videos. Der Kostenlos-Tarif funktioniert offline, ohne Internetverbindung.",
@@ -773,5 +773,6 @@
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Herausragend</span>",
   "home.cmpx.subject.deepl": "Nur Glossar",
   "interp.remote.title": "Für Video- und Telefondolmetschen (VRI und OPI)",
-  "interp.remote.body": "Dolmetschen über einen Videoanruf oder einen Telefonanruf, den Sie an Ihrem PC annehmen? DuoVox hört den Anruf über den Ton Ihres PCs mit, egal ob er in Teams, Zoom oder auf einer Ferndolmetsch-Plattform in Ihrem Browser läuft, und zeigt beide Sprachen als Live-Text neben Ihnen an, ohne dass sich etwas in den Anruf einklinkt. Ein Anruf auf einem separaten Telefon kann über das Mikrofon Ihres PCs mit Untertiteln versehen werden, wenn das Telefon auf Lautsprecher gestellt ist. DuoVox unterstützt Ihr Gedächtnis und Ihre Terminologie; es ersetzt niemals Ihr Dolmetschen."
+  "interp.remote.body": "Dolmetschen über einen Videoanruf oder einen Telefonanruf, den Sie an Ihrem PC annehmen? DuoVox hört den Anruf über den Ton Ihres PCs mit, egal ob er in Teams, Zoom oder auf einer Ferndolmetsch-Plattform in Ihrem Browser läuft, und zeigt beide Sprachen als Live-Text neben Ihnen an, ohne dass sich etwas in den Anruf einklinkt. Ein Anruf auf einem separaten Telefon kann über das Mikrofon Ihres PCs mit Untertiteln versehen werden, wenn das Telefon auf Lautsprecher gestellt ist. DuoVox unterstützt Ihr Gedächtnis und Ihre Terminologie; es ersetzt niemals Ihr Dolmetschen.",
+  "home.cmpx.subject.itr": "Separate medizinische App"
 }

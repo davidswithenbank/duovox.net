@@ -513,7 +513,7 @@
   "home.cmp.55": "Günlük sesli kullanım",
   "home.cmp.56": "Telefonda cümle cümle çeviri",
   "home.cmp.57": "Yazılı çeviri ve iş toplantıları",
-  "home.cmp.58": "Rakip bilgileri, her şirketin kendi web sitesi ve uygulama mağazası listelerine göre 6 Ekim 2026 tarihinde kontrol edilmiştir. &mdash; sunulmadığı veya şirketin kendi sayfalarında bulunmadığı anlamına gelir. Özellikler sık sık değişir; burada bir şey güncel değilse lütfen bize <a href=\"mailto:support@duovox.net\">support@duovox.net</a> adresinden bildirin.",
+  "home.cmp.58": "Rakip bilgileri 6 Ekim 2026 tarihinde (tercümanlar için konu modları: 2 Kasım 2026) her şirketin kendi web sitesi ve uygulama mağazası listeleri üzerinden kontrol edilmiştir. &mdash; sunulmadığı veya şirketin kendi sayfalarında bulunamadığı anlamına gelir. Özellikler sık sık değişir; burada herhangi bir şey güncel değilse lütfen bize <a href=\"mailto:support@duovox.net\">support@duovox.net</a> adresinden bildirin.",
   "home.who.1": "Kimler İçin",
   "home.who.2": "Gezginler ve Öğrenciler",
   "home.who.3": "Dersleri, yurt dışındaki aileyle yapılan görüntülü aramaları ve yabancı dildeki film ve videoları takip edin. Ücretsiz plan, internet bağlantısı olmadan çevrimdışı çalışır.",
@@ -773,5 +773,6 @@
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Öne çıkan</span>",
   "home.cmpx.subject.deepl": "Yalnızca sözlükçe",
   "interp.remote.title": "Video ve telefonla tercüme için (VRI ve OPI)",
-  "interp.remote.body": "Bir görüntülü görüşmede veya PC&rsquo;nizden yaptığınız bir telefon görüşmesinde tercüme mi yapıyorsunuz? DuoVox, görüşmeyi Microsoft Teams, Zoom veya tarayıcınızdaki bir uzaktan tercüme platformunda çalışsa da PC&rsquo;nizin sesi üzerinden dinler ve çağrıya hiçbir şey katılmadan her iki dili de yanınızda canlı metin olarak gösterir. Ayrı bir telefondaki bir görüşme, telefon hoparlördeyken PC&rsquo;nizin mikrofonu üzerinden altyazılanabilir. DuoVox hafızanızı ve terminolojinizi destekler; tercümenizin yerini asla almaz."
+  "interp.remote.body": "Bir görüntülü görüşmede veya PC&rsquo;nizden yaptığınız bir telefon görüşmesinde tercüme mi yapıyorsunuz? DuoVox, görüşmeyi Microsoft Teams, Zoom veya tarayıcınızdaki bir uzaktan tercüme platformunda çalışsa da PC&rsquo;nizin sesi üzerinden dinler ve çağrıya hiçbir şey katılmadan her iki dili de yanınızda canlı metin olarak gösterir. Ayrı bir telefondaki bir görüşme, telefon hoparlördeyken PC&rsquo;nizin mikrofonu üzerinden altyazılanabilir. DuoVox hafızanızı ve terminolojinizi destekler; tercümenizin yerini asla almaz.",
+  "home.cmpx.subject.itr": "Ayrı tıbbi uygulama"
 }

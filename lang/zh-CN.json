@@ -513,7 +513,7 @@
   "home.cmp.55": "日常语音",
   "home.cmp.56": "在手机上逐句翻译",
   "home.cmp.57": "书面翻译和商务会议",
-  "home.cmp.58": "竞品信息于 2026 年 10 月 6 日根据各家公司自己的网站和应用商店列表核对。&mdash; 表示未提供，或未在该公司自己的页面上找到。功能经常变化；如果这里有任何信息已过时，请通过 <a href=\"mailto:support@duovox.net\">support@duovox.net</a> 告知我们。",
+  "home.cmp.58": "竞品信息于 2026 年 10 月 6 日核对（口译员主题模式：2026 年 11 月 2 日），依据各公司官网及应用商店页面。&mdash; 表示未提供，或未在该公司自有页面中找到。功能经常变化；如果这里有任何内容已过时，请通过 <a href=\"mailto:support@duovox.net\">support@duovox.net</a> 告知我们。",
   "home.who.1": "适合谁使用",
   "home.who.2": "旅行者和学生",
   "home.who.3": "听懂讲座、与海外家人进行视频通话，以及观看外语电影和视频。免费可离线使用，无需互联网连接。",
@@ -773,5 +773,6 @@
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">亮点</span>",
   "home.cmpx.subject.deepl": "仅术语表",
   "interp.remote.title": "用于视频和电话口译（VRI 和 OPI）",
-  "interp.remote.body": "在视频通话中口译，或者为你在 PC 上接听的电话进行口译？DuoVox 会通过你的 PC 音频收听通话，无论它是在 Microsoft Teams、Zoom 中运行，还是在浏览器中的远程口译平台上运行，并将两种语言以实时文字显示在你身旁，且不会有任何内容加入通话。在单独一部电话上的通话，也可以在电话开启免提时，通过你的 PC 麦克风进行字幕转写。DuoVox 帮助你记忆并掌握术语；它绝不会取代你的口译。"
+  "interp.remote.body": "在视频通话中口译，或者为你在 PC 上接听的电话进行口译？DuoVox 会通过你的 PC 音频收听通话，无论它是在 Microsoft Teams、Zoom 中运行，还是在浏览器中的远程口译平台上运行，并将两种语言以实时文字显示在你身旁，且不会有任何内容加入通话。在单独一部电话上的通话，也可以在电话开启免提时，通过你的 PC 麦克风进行字幕转写。DuoVox 帮助你记忆并掌握术语；它绝不会取代你的口译。",
+  "home.cmpx.subject.itr": "独立医疗应用"
 }

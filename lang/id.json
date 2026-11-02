@@ -513,7 +513,7 @@
   "home.cmp.55": "Suara santai",
   "home.cmp.56": "Terjemahan per frasa di ponsel",
   "home.cmp.57": "Terjemahan tertulis & rapat bisnis",
-  "home.cmp.58": "Informasi pesaing diperiksa pada 6 Oktober 2026 berdasarkan situs web dan listing toko aplikasi masing-masing perusahaan. &mdash; berarti tidak ditawarkan, atau tidak ditemukan di halaman milik perusahaan tersebut. Fitur sering berubah; jika ada yang sudah tidak terbaru di sini, beri tahu kami di <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
+  "home.cmp.58": "Informasi kompetitor diperiksa pada 6 Oktober 2026 (mode subjek untuk interpreter: 2 November 2026) berdasarkan situs web dan listing toko aplikasi masing-masing perusahaan. &mdash; berarti tidak ditawarkan, atau tidak ditemukan di halaman milik perusahaan itu sendiri. Fitur sering berubah; jika ada yang di sini sudah tidak terbaru, beri tahu kami di <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
   "home.who.1": "Untuk Siapa",
   "home.who.2": "Wisatawan & Pelajar",
   "home.who.3": "Ikuti kuliah, panggilan video dengan keluarga di luar negeri, serta film dan video berbahasa asing. Paket Free berfungsi offline, tanpa koneksi internet.",
@@ -773,5 +773,6 @@
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Unggulan</span>",
   "home.cmpx.subject.deepl": "Hanya glosarium",
   "interp.remote.title": "Untuk penjurubahasaan video dan telepon (VRI dan OPI)",
-  "interp.remote.body": "Menjurubahasakan melalui panggilan video, atau panggilan telepon yang Anda terima di PC? DuoVox mendengarkan panggilan melalui suara PC Anda, baik berjalan di Microsoft Teams, Zoom, maupun platform penjurubahasaan jarak jauh di browser Anda, dan menampilkan kedua bahasa sebagai teks langsung di samping Anda, tanpa ada apa pun yang ikut bergabung ke dalam panggilan. Panggilan di telepon terpisah dapat diberi teks melalui mikrofon PC Anda dengan telepon pada mode speaker. DuoVox mendukung ingatan dan terminologi Anda; aplikasi ini tidak pernah menggantikan penjurubahasaan Anda."
+  "interp.remote.body": "Menjurubahasakan melalui panggilan video, atau panggilan telepon yang Anda terima di PC? DuoVox mendengarkan panggilan melalui suara PC Anda, baik berjalan di Microsoft Teams, Zoom, maupun platform penjurubahasaan jarak jauh di browser Anda, dan menampilkan kedua bahasa sebagai teks langsung di samping Anda, tanpa ada apa pun yang ikut bergabung ke dalam panggilan. Panggilan di telepon terpisah dapat diberi teks melalui mikrofon PC Anda dengan telepon pada mode speaker. DuoVox mendukung ingatan dan terminologi Anda; aplikasi ini tidak pernah menggantikan penjurubahasaan Anda.",
+  "home.cmpx.subject.itr": "Aplikasi medis terpisah"
 }

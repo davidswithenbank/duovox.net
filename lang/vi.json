@@ -513,7 +513,7 @@
   "home.cmp.55": "Giọng nói thông thường",
   "home.cmp.56": "Dịch từng cụm trên điện thoại",
   "home.cmp.57": "Dịch văn bản và họp công việc",
-  "home.cmp.58": "Thông tin đối thủ cạnh tranh được kiểm tra vào ngày 6 tháng 10 năm 2026 dựa trên website và danh sách ứng dụng trên cửa hàng ứng dụng của từng công ty. &mdash; nghĩa là không được cung cấp, hoặc không tìm thấy trên các trang của chính công ty đó. Tính năng thường xuyên thay đổi; nếu có nội dung nào ở đây đã lỗi thời, vui lòng báo cho chúng tôi tại <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
+  "home.cmp.58": "Thông tin về đối thủ cạnh tranh được kiểm tra vào ngày 6 tháng 10 năm 2026 (chế độ chủ đề cho thông dịch viên: 2 tháng 11 năm 2026) dựa trên chính trang web và danh sách cửa hàng ứng dụng của từng công ty. &mdash; nghĩa là không được cung cấp hoặc không tìm thấy trên các trang riêng của công ty. Các tính năng thường thay đổi; nếu có điều gì ở đây đã lỗi thời, vui lòng cho chúng tôi biết tại <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
   "home.who.1": "Dành cho ai",
   "home.who.2": "Khách du lịch & Sinh viên",
   "home.who.3": "Theo dõi bài giảng, cuộc gọi video với gia đình ở nước ngoài, cùng phim và video bằng tiếng nước ngoài. Gói Free hoạt động ngoại tuyến, không cần kết nối internet.",
@@ -773,5 +773,6 @@
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Nổi bật</span>",
   "home.cmpx.subject.deepl": "Chỉ có bảng thuật ngữ",
   "interp.remote.title": "Dành cho phiên dịch qua video và điện thoại (VRI và OPI)",
-  "interp.remote.body": "Phiên dịch qua cuộc gọi video, hoặc cuộc gọi điện thoại bạn thực hiện trên PC? DuoVox nghe cuộc gọi qua âm thanh trên PC của bạn, dù chạy trong Microsoft Teams, Zoom hay một nền tảng phiên dịch từ xa trong trình duyệt của bạn, và hiển thị trực tiếp cả hai ngôn ngữ dưới dạng văn bản bên cạnh bạn, mà không có gì tham gia vào cuộc gọi. Cuộc gọi trên một điện thoại riêng cũng có thể được phụ đề qua micrô của PC khi điện thoại bật loa ngoài. DuoVox hỗ trợ trí nhớ và thuật ngữ của bạn; nó không bao giờ thay thế việc phiên dịch của bạn."
+  "interp.remote.body": "Phiên dịch qua cuộc gọi video, hoặc cuộc gọi điện thoại bạn thực hiện trên PC? DuoVox nghe cuộc gọi qua âm thanh trên PC của bạn, dù chạy trong Microsoft Teams, Zoom hay một nền tảng phiên dịch từ xa trong trình duyệt của bạn, và hiển thị trực tiếp cả hai ngôn ngữ dưới dạng văn bản bên cạnh bạn, mà không có gì tham gia vào cuộc gọi. Cuộc gọi trên một điện thoại riêng cũng có thể được phụ đề qua micrô của PC khi điện thoại bật loa ngoài. DuoVox hỗ trợ trí nhớ và thuật ngữ của bạn; nó không bao giờ thay thế việc phiên dịch của bạn.",
+  "home.cmpx.subject.itr": "Ứng dụng y tế riêng biệt"
 }

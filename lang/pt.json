@@ -513,7 +513,7 @@
   "home.cmp.55": "Voz casual",
   "home.cmp.56": "Tradução frase a frase num telemóvel",
   "home.cmp.57": "Tradução escrita e reuniões de negócios",
-  "home.cmp.58": "Informações sobre concorrentes verificadas em 6 de outubro de 2026 com base no próprio website e nas listagens nas lojas de aplicações de cada empresa. &mdash; significa não oferecido, ou não encontrado nas páginas da própria empresa. As funcionalidades mudam com frequência; se alguma coisa aqui estiver desatualizada, avise-nos em <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
+  "home.cmp.58": "Informações dos concorrentes verificadas em 6 de outubro de 2026 (modos de assunto para intérpretes: 2 de novembro de 2026) em comparação com o website e as listagens na loja de aplicações de cada empresa. &mdash; significa que não é oferecido ou não foi encontrado nas páginas da própria empresa. As funcionalidades mudam frequentemente; se alguma coisa aqui estiver desatualizada, informe-nos em <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
   "home.who.1": "A quem se destina",
   "home.who.2": "Viajantes e estudantes",
   "home.who.3": "Acompanhe aulas, videochamadas com família no estrangeiro e filmes e vídeos em línguas estrangeiras. O plano Grátis funciona offline, sem ligação à internet.",
@@ -773,5 +773,6 @@
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Destaque</span>",
   "home.cmpx.subject.deepl": "Apenas glossário",
   "interp.remote.title": "Para interpretação por vídeo e telefone (VRI e OPI)",
-  "interp.remote.body": "Interpretação numa videochamada, ou numa chamada telefónica que atende no seu PC? O DuoVox ouve a chamada através do som do seu PC, quer esteja a funcionar no Microsoft Teams, Zoom ou numa plataforma de interpretação remota no seu navegador, e apresenta ambas as línguas como texto em direto ao seu lado, sem nada entrar na chamada. Uma chamada num telefone separado pode ser legendada através do microfone do seu PC com o telefone em alta-voz. O DuoVox apoia a sua memória e terminologia; nunca substitui a sua interpretação."
+  "interp.remote.body": "Interpretação numa videochamada, ou numa chamada telefónica que atende no seu PC? O DuoVox ouve a chamada através do som do seu PC, quer esteja a funcionar no Microsoft Teams, Zoom ou numa plataforma de interpretação remota no seu navegador, e apresenta ambas as línguas como texto em direto ao seu lado, sem nada entrar na chamada. Uma chamada num telefone separado pode ser legendada através do microfone do seu PC com o telefone em alta-voz. O DuoVox apoia a sua memória e terminologia; nunca substitui a sua interpretação.",
+  "home.cmpx.subject.itr": "Aplicação médica separada"
 }

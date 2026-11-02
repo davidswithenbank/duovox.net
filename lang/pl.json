@@ -513,7 +513,7 @@
   "home.cmp.55": "Codzienne użycie głosowe",
   "home.cmp.56": "Tłumaczenie fraza po frazie na telefonie",
   "home.cmp.57": "Tłumaczenie pisemne i spotkania biznesowe",
-  "home.cmp.58": "Informacje o konkurencji sprawdzone 6 października 2026 na stronie internetowej każdej firmy oraz w jej ofertach w sklepach z aplikacjami. &mdash; oznacza, że funkcja nie jest oferowana albo nie została znaleziona na stronach danej firmy. Funkcje często się zmieniają; jeśli coś tutaj jest nieaktualne, daj nam znać pod adresem <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
+  "home.cmp.58": "Informacje o konkurencji sprawdzone 6 października 2026 r. (tryby tematyczne dla tłumaczy ustnych: 2 listopada 2026 r.) na podstawie stron internetowych i ofert w sklepach z aplikacjami poszczególnych firm. &mdash; oznacza, że funkcja nie jest oferowana lub nie została znaleziona na stronach danej firmy. Funkcje często się zmieniają; jeśli coś tutaj jest nieaktualne, daj nam znać pod adresem <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
   "home.who.1": "Dla kogo",
   "home.who.2": "Podróżni i studenci",
   "home.who.3": "Śledź wykłady, rozmowy wideo z rodziną za granicą oraz filmy i wideo w językach obcych. Plan Bezpłatny działa offline, bez połączenia z internetem.",
@@ -773,5 +773,6 @@
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Wyróżnione</span>",
   "home.cmpx.subject.deepl": "Tylko glosariusz",
   "interp.remote.title": "Do tłumaczenia ustnego przez wideo i telefon (VRI i OPI)",
-  "interp.remote.body": "Tłumaczenie ustne podczas połączenia wideo albo rozmowy telefonicznej, którą odbierasz na komputerze? DuoVox nasłuchuje rozmowy przez dźwięk z Twojego komputera, niezależnie od tego, czy działa ona w Microsoft Teams, Zoom czy na platformie do tłumaczeń zdalnych w przeglądarce, i wyświetla oba języki jako tekst na żywo obok Ciebie, bez dołączania czegokolwiek do rozmowy. Rozmowę na osobnym telefonie można wyświetlać jako napisy za pomocą mikrofonu komputera, gdy telefon jest w trybie głośnomówiącym. DuoVox wspiera Twoją pamięć i terminologię; nigdy nie zastępuje Twojego tłumaczenia ustnego."
+  "interp.remote.body": "Tłumaczenie ustne podczas połączenia wideo albo rozmowy telefonicznej, którą odbierasz na komputerze? DuoVox nasłuchuje rozmowy przez dźwięk z Twojego komputera, niezależnie od tego, czy działa ona w Microsoft Teams, Zoom czy na platformie do tłumaczeń zdalnych w przeglądarce, i wyświetla oba języki jako tekst na żywo obok Ciebie, bez dołączania czegokolwiek do rozmowy. Rozmowę na osobnym telefonie można wyświetlać jako napisy za pomocą mikrofonu komputera, gdy telefon jest w trybie głośnomówiącym. DuoVox wspiera Twoją pamięć i terminologię; nigdy nie zastępuje Twojego tłumaczenia ustnego.",
+  "home.cmpx.subject.itr": "Oddzielna aplikacja medyczna"
 }

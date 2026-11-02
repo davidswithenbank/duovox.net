@@ -513,7 +513,7 @@
   "home.cmp.55": "Voix occasionnelle",
   "home.cmp.56": "Traduction phrase par phrase sur téléphone",
   "home.cmp.57": "Traduction écrite et réunions professionnelles",
-  "home.cmp.58": "Informations sur les concurrents vérifiées le 6 octobre 2026 d’après le propre site web de chaque entreprise et ses fiches sur les app stores. &mdash; signifie non proposé, ou non trouvé sur les propres pages de l’entreprise. Les fonctionnalités changent souvent ; si quelque chose ici n’est pas à jour, merci de nous le signaler à <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
+  "home.cmp.58": "Informations sur les concurrents vérifiées le 6 octobre 2026 (modes de sujet pour les interprètes\u0000a0: 2 novembre 2026) d&rsquo;apr\u0000e8s le site web et les fiches des boutiques d&rsquo;applications de chaque entreprise. &mdash; signifie non propos\u0000e9, ou introuvable sur les pages de l&rsquo;entreprise elle-m\u0000eame. Les fonctionnalit\u0000e9s changent souvent\u0000a0; si quelque chose ici n&rsquo;est plus \u0000e0 jour, merci de nous le signaler \u0000e0 <a href=\"mailto:support@duovox.net\">support@duovox.net</a>.",
   "home.who.1": "À qui s’adresse ce produit",
   "home.who.2": "Voyageurs et étudiants",
   "home.who.3": "Suivez des cours, des appels vidéo avec votre famille à l’étranger, ainsi que des films et vidéos en langue étrangère. Le forfait Gratuit fonctionne hors ligne, sans connexion internet.",
@@ -773,5 +773,6 @@
   "home.cmpx.subject.dv": "<span class=\"check\">&#10003;</span> <span class=\"unique-badge\">Remarquable</span>",
   "home.cmpx.subject.deepl": "Glossaire uniquement",
   "interp.remote.title": "Pour l’interprétation vidéo et téléphonique (VRI et OPI)",
-  "interp.remote.body": "Vous interprétez lors d’un appel vidéo ou d’un appel téléphonique que vous prenez sur votre PC ? DuoVox écoute l’appel via le son de votre PC, qu’il fonctionne dans Microsoft Teams, Zoom ou une plateforme d’interprétation à distance dans votre navigateur, et affiche les deux langues sous forme de texte en direct à côté de vous, sans que rien ne rejoigne l’appel. Un appel sur un téléphone séparé peut être sous-titré via le microphone de votre PC avec le téléphone en haut-parleur. DuoVox soutient votre mémoire et votre terminologie ; il ne remplace jamais votre interprétation."
+  "interp.remote.body": "Vous interprétez lors d’un appel vidéo ou d’un appel téléphonique que vous prenez sur votre PC ? DuoVox écoute l’appel via le son de votre PC, qu’il fonctionne dans Microsoft Teams, Zoom ou une plateforme d’interprétation à distance dans votre navigateur, et affiche les deux langues sous forme de texte en direct à côté de vous, sans que rien ne rejoigne l’appel. Un appel sur un téléphone séparé peut être sous-titré via le microphone de votre PC avec le téléphone en haut-parleur. DuoVox soutient votre mémoire et votre terminologie ; il ne remplace jamais votre interprétation.",
+  "home.cmpx.subject.itr": "Application médicale distincte"
 }
