@@ -790,5 +790,6 @@
   "legal.setup.title": "为法律和移民工作进行设置",
   "legal.more": "为口译员提供的更多内容，包括医疗口译和远程口译：<a href=\"interpreters.html\">面向口译员的 DuoVox</a>。",
   "meta.legal-interpreting.title": "面向法律口译员的 DuoVox：实时双语文字记录",
-  "meta.legal-interpreting.desc": "与律师会面、参加移民预约和警方讯问时，两种语言都会以实时文字显示在你身边：姓名和日期会保留在屏幕上。仅作辅助之用。"
+  "meta.legal-interpreting.desc": "与律师会面、参加移民预约和警方讯问时，两种语言都会以实时文字显示在你身边：姓名和日期会保留在屏幕上。仅作辅助之用。",
+  "footer.refunds": "退款政策"
 }

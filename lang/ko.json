@@ -790,5 +790,6 @@
   "legal.setup.title": "법률 및 이민 업무를 위한 설정",
   "legal.more": "의료 및 원격 통역을 포함한 통역사 관련 더 많은 내용: <a href=\"interpreters.html\">통역사를 위한 DuoVox</a>.",
   "meta.legal-interpreting.title": "법률 통역사를 위한 DuoVox: 실시간 2개 언어 기록문",
-  "meta.legal-interpreting.desc": "변호사와 함께할 때, 이민 관련 상담 예약에서, 경찰 조사 면담에서 두 언어가 실시간 텍스트로 곁에 표시됩니다. 이름과 날짜가 화면에 계속 남습니다. 보조용 전용."
+  "meta.legal-interpreting.desc": "변호사와 함께할 때, 이민 관련 상담 예약에서, 경찰 조사 면담에서 두 언어가 실시간 텍스트로 곁에 표시됩니다. 이름과 날짜가 화면에 계속 남습니다. 보조용 전용.",
+  "footer.refunds": "환불 정책"
 }

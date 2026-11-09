@@ -7,6 +7,7 @@
 // exactly by name, no redirects) and this script handles only what does NOT match a file:
 //   /  and  /es/      -> the folder's index.html
 //   /es  (a folder)   -> 301 to /es/   (what GitHub Pages did)
+//   /terms (a page)   -> 301 to /terms.html (GitHub Pages served it; added 9 Nov 2026)
 //   anything else     -> 404.html with a real 404 status
 // Requests that match a file never reach this script (run_worker_first is off), so they cost nothing.
 export default {
@@ -21,6 +22,13 @@ export default {
 			const res = await asset(url.pathname + "/index.html");
 			if (res.status !== 404) {
 				return Response.redirect(url.origin + url.pathname + "/" + url.search + url.hash, 301);
+			}
+			// 9 Nov 2026: /terms, /privacy, /refunds, /languages -> the .html page. GitHub Pages served these short
+			// addresses; they 404'd after the 9 Oct move, although the Terms (in the app too) quote duovox.net/terms,
+			// /privacy and /languages. A redirect, not a copy, so every canonical link stays the .html one.
+			const page = await asset(url.pathname + ".html");
+			if (page.status !== 404) {
+				return Response.redirect(url.origin + url.pathname + ".html" + url.search + url.hash, 301);
 			}
 		}
 		const nf = await asset("/404.html");

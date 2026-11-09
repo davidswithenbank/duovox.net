@@ -790,5 +790,6 @@
   "legal.setup.title": "Instellen voor juridisch werk en vreemdelingenzaken",
   "legal.more": "Meer voor tolken, waaronder medisch tolken en tolken op afstand: <a href=\"interpreters.html\">DuoVox voor tolken</a>.",
   "meta.legal-interpreting.title": "DuoVox voor juridisch tolken: live transcriptie in twee talen",
-  "meta.legal-interpreting.desc": "Beide talen als live tekst naast u bij advocaten, op afspraken bij de immigratiedienst en tijdens politieverhoren: namen en datums blijven op het scherm. Alleen ondersteunend."
+  "meta.legal-interpreting.desc": "Beide talen als live tekst naast u bij advocaten, op afspraken bij de immigratiedienst en tijdens politieverhoren: namen en datums blijven op het scherm. Alleen ondersteunend.",
+  "footer.refunds": "Restitutiebeleid"
 }

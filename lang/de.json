@@ -790,5 +790,6 @@
   "legal.setup.title": "Einrichtung für juristisches Dolmetschen und den Einwanderungsbereich",
   "legal.more": "Mehr für Dolmetscher, einschließlich medizinischem Dolmetschen und Ferndolmetschen: <a href=\"interpreters.html\">DuoVox für Dolmetscher</a>.",
   "meta.legal-interpreting.title": "DuoVox für Gerichtsdolmetscher: Live-Transkript in zwei Sprachen",
-  "meta.legal-interpreting.desc": "Beide Sprachen als Live-Text direkt neben Ihnen bei Gesprächen mit Anwälten, bei Terminen im Einwanderungsverfahren und bei polizeilichen Vernehmungen: Namen und Daten bleiben auf dem Bildschirm. Nur unterstützend."
+  "meta.legal-interpreting.desc": "Beide Sprachen als Live-Text direkt neben Ihnen bei Gesprächen mit Anwälten, bei Terminen im Einwanderungsverfahren und bei polizeilichen Vernehmungen: Namen und Daten bleiben auf dem Bildschirm. Nur unterstützend.",
+  "footer.refunds": "Rückerstattungsrichtlinie"
 }

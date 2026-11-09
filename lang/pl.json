@@ -790,5 +790,6 @@
   "legal.setup.title": "Konfiguracja do pracy prawnej i imigracyjnej",
   "legal.more": "Więcej dla tłumaczy ustnych, w tym o tłumaczeniu medycznym i zdalnym: <a href=\"interpreters.html\">DuoVox dla tłumaczy ustnych</a>.",
   "meta.legal-interpreting.title": "DuoVox dla tłumaczy prawnych: transkrypcja na żywo w dwóch językach",
-  "meta.legal-interpreting.desc": "Oba języki jako tekst na żywo obok Ciebie u prawników, na spotkaniach imigracyjnych i podczas przesłuchań policyjnych: imiona i nazwiska oraz daty pozostają na ekranie. Wyłącznie pomocnicze."
+  "meta.legal-interpreting.desc": "Oba języki jako tekst na żywo obok Ciebie u prawników, na spotkaniach imigracyjnych i podczas przesłuchań policyjnych: imiona i nazwiska oraz daty pozostają na ekranie. Wyłącznie pomocnicze.",
+  "footer.refunds": "Polityka zwrotów"
 }

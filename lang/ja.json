@@ -790,5 +790,6 @@
   "legal.setup.title": "法律・入管業務向けの設定",
   "legal.more": "医療通訳や遠隔通訳を含む、通訳者向けの詳細はこちら：<a href=\"interpreters.html\">通訳者向け DuoVox</a>。",
   "meta.legal-interpreting.title": "法律通訳者向け DuoVox：2言語のライブ文字起こし",
-  "meta.legal-interpreting.desc": "弁護士との場面、入管での面談、警察での事情聴取で、両言語が手元にライブテキストで表示されます。名前や日付は画面に残ります。支援用途のみ。"
+  "meta.legal-interpreting.desc": "弁護士との場面、入管での面談、警察での事情聴取で、両言語が手元にライブテキストで表示されます。名前や日付は画面に残ります。支援用途のみ。",
+  "footer.refunds": "返金ポリシー"
 }

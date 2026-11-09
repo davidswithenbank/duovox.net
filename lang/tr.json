@@ -790,5 +790,6 @@
   "legal.setup.title": "Hukuk ve göçmenlik işleri için kurulum",
   "legal.more": "Tercümanlar için daha fazlası, tıbbi ve uzaktan tercüme dahil: <a href=\"interpreters.html\">Tercümanlar için DuoVox</a>.",
   "meta.legal-interpreting.title": "Hukuk tercümanları için DuoVox: canlı iki dilli döküm",
-  "meta.legal-interpreting.desc": "Avukatlarla, göçmenlik randevularında ve polis mülakatlarında iki dil de yanınızda canlı metin olarak görünür: isimler ve tarihler ekranda kalır. Yalnızca yardımcı amaçlıdır."
+  "meta.legal-interpreting.desc": "Avukatlarla, göçmenlik randevularında ve polis mülakatlarında iki dil de yanınızda canlı metin olarak görünür: isimler ve tarihler ekranda kalır. Yalnızca yardımcı amaçlıdır.",
+  "footer.refunds": "İade Politikası"
 }

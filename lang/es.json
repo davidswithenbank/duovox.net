@@ -790,5 +790,6 @@
   "legal.setup.title": "Configúralo para trabajo legal y de inmigración",
   "legal.more": "Más para intérpretes, incluida la interpretación médica y remota: <a href=\"interpreters.html\">DuoVox para intérpretes</a>.",
   "meta.legal-interpreting.title": "DuoVox para intérpretes legales: transcripción en vivo en dos idiomas",
-  "meta.legal-interpreting.desc": "Ambos idiomas como texto en vivo a tu lado con abogados, en citas de inmigración y en interrogatorios policiales: los nombres y las fechas permanecen en pantalla. Solo como asistencia."
+  "meta.legal-interpreting.desc": "Ambos idiomas como texto en vivo a tu lado con abogados, en citas de inmigración y en interrogatorios policiales: los nombres y las fechas permanecen en pantalla. Solo como asistencia.",
+  "footer.refunds": "Política de reembolsos"
 }
