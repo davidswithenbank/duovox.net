@@ -23,7 +23,7 @@
   "home.feat.privacy.title": "Privasi bawaan",
   "home.feat.privacy.desc": "Audio diproses secara real time dan tidak disimpan oleh kami; pada paket berbayar audio dialirkan ke penyedia AI kami hanya untuk pemrosesan real time. Penyedia dapat menyimpan log operasional terbatas sesuai kebijakan privasi mereka sendiri. Transkripsi hanya ada di perangkat Anda dan akan dihapus saat sesi Anda berakhir. Paket Free bekerja sepenuhnya di perangkat. Aktifkan Private Mode untuk opsi paling ketat tanpa log lokal.",
   "home.pricing.title": "Harga yang Sederhana",
-  "home.pricing.subtitle": "Pilih paket yang sesuai dengan cara Anda menggunakan DuoVox. Paket jangka lebih panjang biayanya lebih rendah daripada membayar bulan per bulan, atau bayar hanya untuk yang Anda gunakan dengan Pay-As-You-Go.<br><small style=\"opacity:0.6;\">Harga default dalam USD. Pengunjung dari UK melihat GBP. DuoVox belum tersedia di EU atau EEA. Microsoft Store akan menagihkan nilai yang setara dalam mata uang lokal Anda saat checkout. Semua langganan dapat dibatalkan kapan saja.</small>",
+  "home.pricing.subtitle": "Pilih paket yang sesuai dengan cara Anda menggunakan DuoVox. Paket jangka panjang biayanya lebih rendah daripada membayar per bulan, atau bayar hanya untuk yang Anda gunakan dengan Pay-As-You-Go.<br><small style=\"opacity:0.6;\">Harga default dalam USD. Pengunjung UK melihat GBP. DuoVox belum tersedia di EU atau EEA. Microsoft Store mengenakan biaya setara dalam mata uang lokal Anda saat checkout. Langganan diperpanjang secara otomatis sampai Anda membatalkannya, dan Anda dapat membatalkannya kapan saja.</small>",
   "home.pricing.free.name": "Free",
   "home.pricing.free.period": "per bulan",
   "home.pricing.free.f1": "Terjemahan di perangkat",

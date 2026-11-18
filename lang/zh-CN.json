@@ -23,7 +23,7 @@
   "home.feat.privacy.title": "内置隐私保护",
   "home.feat.privacy.desc": "音频实时处理，我们不会加以存储；在付费套餐中，音频会传输至我们的 AI 服务提供商，仅用于处理，并不会刻意保留。转录内容仅存在于您的设备上，会在会话结束时清除。免费套餐完全在设备本地运行。开启隐私模式可获得最严格、无本地日志的选项。",
   "home.pricing.title": "简单透明的定价",
-  "home.pricing.subtitle": "选择适合你使用 DuoVox 方式的方案。长期方案比按月支付更便宜，或者你也可以使用 Pay-As-You-Go，只为实际用量付费。<br><small style=\"opacity:0.6;\">默认价格以 USD 显示。英国访客将看到 GBP。DuoVox 目前尚未在 EU 或 EEA 提供。Microsoft Store 会在结账时按你的本地货币收取等值金额。所有订阅均可随时取消。</small>",
+  "home.pricing.subtitle": "选择适合您使用 DuoVox 方式的方案。长期套餐比按月付费更便宜，或者也可以通过 Pay-As-You-Go 只为您的实际使用量付费。<br><small style=\"opacity:0.6;\">默认价格以 USD 显示。英国访客将看到 GBP。DuoVox 尚未在欧盟或欧洲经济区提供。Microsoft Store 会在结账时按您当地货币收取等值金额。订阅会自动续订，直到您取消为止，且您可以随时取消。</small>",
   "home.pricing.free.name": "免费版",
   "home.pricing.free.period": "每月",
   "home.pricing.free.f1": "设备本地翻译",

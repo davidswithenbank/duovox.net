@@ -23,7 +23,7 @@
   "home.feat.privacy.title": "Ingebouwde privacy",
   "home.feat.privacy.desc": "Audio wordt in realtime verwerkt en niet door ons opgeslagen; op betaalde niveaus wordt deze alleen naar onze AI-provider gestreamd voor realtime verwerking. Providers kunnen beperkte operationele logs bewaren onder hun eigen privacybeleid. Transcripties bestaan alleen op je apparaat en worden gewist wanneer je sessie eindigt. Het Gratis-niveau werkt volledig op het apparaat. Schakel Privémodus in voor de strengste optie, zonder lokale logs.",
   "home.pricing.title": "Eenvoudige prijzen",
-  "home.pricing.subtitle": "Kies het abonnement dat past bij hoe je DuoVox gebruikt. Langlopende abonnementen kosten minder dan maand voor maand betalen, of betaal alleen voor wat je gebruikt met Pay-As-You-Go.<br><small style=\"opacity:0.6;\">Standaardprijzen in USD. Bezoekers uit het VK zien GBP. DuoVox is nog niet beschikbaar in de EU of EER. De Microsoft Store rekent bij het afrekenen het equivalente bedrag in je lokale valuta. Alle abonnementen kunnen op elk moment worden opgezegd.</small>",
+  "home.pricing.subtitle": "Kies het abonnement dat past bij hoe je DuoVox gebruikt. Langlopende abonnementen kosten minder dan maandelijks betalen, of betaal alleen voor wat je gebruikt met Pay-As-You-Go.<br><small style=\"opacity:0.6;\">Standaardprijzen in USD. Bezoekers uit het VK zien GBP. DuoVox is nog niet beschikbaar in de EU of EER. De Microsoft Store rekent bij het afrekenen het equivalente bedrag in je lokale valuta. Abonnementen worden automatisch verlengd totdat je opzegt, en je kunt op elk moment opzeggen.</small>",
   "home.pricing.free.name": "Gratis",
   "home.pricing.free.period": "per maand",
   "home.pricing.free.f1": "Vertalingen op het apparaat zelf",
