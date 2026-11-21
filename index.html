@@ -107,14 +107,25 @@
     @media (min-width: 769px) and (max-width: 1024px) { #who-its-for .audience-card:last-child { grid-column: 1 / -1; } }
     .video-note { text-align: center; margin-top: 0.9rem; font-size: 0.85rem; color: var(--text-secondary); }
     .video-note a { color: var(--accent-light); }
-    /* Card / PayPal checkout (Paddle) beside the Store button: a summary that opens the plan's options. */
-    .card-pay { width: 100%; margin-top: 0.6rem; }
-    .card-pay > summary { list-style: none; cursor: pointer; width: 100%; justify-content: center; }
-    .card-pay > summary::-webkit-details-marker { display: none; }
-    .card-pay-options { display: flex; flex-direction: column; gap: 0.45rem; margin-top: 0.6rem; }
-    .card-pay-options a { display: block; text-align: center; padding: 0.5rem 0.75rem; border: 1px solid var(--border);
-        border-radius: 8px; color: var(--accent-light); text-decoration: none; font-size: 0.9rem; }
-    .card-pay-options a:hover { background: var(--bg-card-hover); }
+    /* 21 Nov 2026 (David: "all the Get it in the Microsoft store buttons in a tidy horizontal line ... a little more
+       attractive"). Each card's buttons + notes sit in one block pinned to the card's bottom; every block has the same
+       shape (Store button, second button or an invisible spacer of the same size, notes area of a fixed minimum
+       height), so the Store buttons line up across the row. Card / PayPal goes to the buy page (buy.html). */
+    #pricing .price-card { display: flex; flex-direction: column; }
+    #pricing .price-actions { margin-top: auto; padding-top: 1.1rem; display: flex; flex-direction: column; gap: 0.6rem; }
+    #pricing .btn-store { width: 100%; justify-content: center; gap: 0.55rem; padding: 0.8rem 1rem; font-size: 0.97rem;
+        line-height: 1.25; text-align: center; border-radius: 12px; min-height: 3.1rem;
+        transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s; }
+    #pricing .btn-store svg { width: 19px; height: 19px; flex: none; }
+    #pricing .btn-store span { text-wrap: balance; }
+    #pricing .btn-store:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35); }
+    #pricing .btn-secondary.btn-store:not(.btn-card) { border: 1px solid var(--accent); }
+    #pricing .btn-card { background: transparent; border: 1px solid var(--border); }
+    #pricing .btn-card:hover { border-color: var(--accent-light); }
+    #pricing .btn-spacer { visibility: hidden; }
+    #pricing .price-notes { min-height: 3.6em; }
+    #pricing .price-notes .cta-micro { margin: 0.2rem 0 0; }
+    @media (max-width: 768px) { #pricing .btn-spacer { display: none; } #pricing .price-notes { min-height: 0; } }
 </style>
 </head>
 <body class="home-c">
@@ -491,8 +502,13 @@
                 <li data-i18n="home.pricing.free.f3">Works without internet</li>
                 <li data-i18n="home.pricing.free.f4">In-app promotional messages</li>
             </ul>
-            <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="cta.ms_get">Get it on the Microsoft Store</a>
-            <p class="cta-micro" data-i18n="home.pricing.free.micro">No account needed.</p>
+            <div class="price-actions">
+                <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="cta.ms_get">Get it on the Microsoft Store</span></a>
+                <span class="btn btn-store btn-spacer" aria-hidden="true"></span>
+                <div class="price-notes">
+                    <p class="cta-micro" data-i18n="home.pricing.free.micro">No account needed.</p>
+                </div>
+            </div>
         </div>
 
         <!-- Standard tier -->
@@ -512,16 +528,13 @@
                 <li data-i18n="home.pricing.standard.f4">No ads</li>
                 <li data-i18n="home.pricing.standard.f5">Cancel anytime</li>
             </ul>
-            <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="cta.ms_get">Get it on the Microsoft Store</a>
-            <details class="card-pay">
-                <summary class="btn btn-secondary" data-i18n="pay.card.button">Pay by card or PayPal</summary>
-                <div class="card-pay-options">
-                    <a href="https://api.duovox.net/buy/duovox_standard_monthly" rel="nofollow"><span data-i18n="pay.opt.monthly">Monthly</span> &middot; <span class="pay-opt-price" data-opt-usd="$22.99" data-opt-gbp="&pound;22.99" data-opt-eur="&euro;22.99">$22.99</span></a>
-                    <a href="https://api.duovox.net/buy/duovox_standard_annual" rel="nofollow"><span data-i18n="pay.opt.annual">Annual</span> &middot; <span class="pay-opt-price" data-opt-usd="$249.99" data-opt-gbp="&pound;249.99" data-opt-eur="&euro;249.99">$249.99</span></a>
+            <div class="price-actions">
+                <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="cta.ms_get">Get it on the Microsoft Store</span></a>
+                <a href="buy.html#plans" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span data-i18n="pay.card.button">Pay by card or PayPal</span></a>
+                <div class="price-notes">
+                    <p class="cta-micro" data-i18n="home.pricing.standard.micro">Best if you use it 10+ hours per month.</p>
                 </div>
-                <p class="cta-micro" data-i18n="pay.card.after">Payment is handled by Paddle. Then get DuoVox from the Microsoft Store and activate your purchase in the app.</p>
-            </details>
-            <p class="cta-micro" data-i18n="home.pricing.standard.micro">Best if you use it 10+ hours per month.</p>
+            </div>
         </div>
 
         <!-- Professional tier -->
@@ -544,16 +557,13 @@
                 <li data-i18n="home.pricing.professional.f6">Translation Glossary (Desktop)</li>
                 <li data-i18n="home.pricing.professional.f7">Private Mode</li>
             </ul>
-            <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="cta.ms_get">Get it on the Microsoft Store</a>
-            <details class="card-pay">
-                <summary class="btn btn-secondary" data-i18n="pay.card.button">Pay by card or PayPal</summary>
-                <div class="card-pay-options">
-                    <a href="https://api.duovox.net/buy/duovox_professional_monthly" rel="nofollow"><span data-i18n="pay.opt.monthly">Monthly</span> &middot; <span class="pay-opt-price" data-opt-usd="$159.99" data-opt-gbp="&pound;159.99" data-opt-eur="&euro;159.99">$159.99</span></a>
-                    <a href="https://api.duovox.net/buy/duovox_professional_6month" rel="nofollow"><span data-i18n="pay.opt.6month">6 months</span> &middot; <span class="pay-opt-price" data-opt-usd="$899.99" data-opt-gbp="&pound;839.99" data-opt-eur="&euro;899.99">$899.99</span></a>
+            <div class="price-actions">
+                <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="cta.ms_get">Get it on the Microsoft Store</span></a>
+                <a href="buy.html#plans" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span data-i18n="pay.card.button">Pay by card or PayPal</span></a>
+                <div class="price-notes">
+                    <p class="cta-micro" data-i18n="home.pricing.professional.micro">Best if you use it 28+ hours per month.</p>
                 </div>
-                <p class="cta-micro" data-i18n="pay.card.after">Payment is handled by Paddle. Then get DuoVox from the Microsoft Store and activate your purchase in the app.</p>
-            </details>
-            <p class="cta-micro" data-i18n="home.pricing.professional.micro">Best if you use it 28+ hours per month.</p>
+            </div>
         </div>
 
         <!-- Pay-As-You-Go -->
@@ -575,21 +585,14 @@
                 <li data-i18n="home.pricing.payg.f4">No subscription, no commitment</li>
                 <li data-i18n="home.pricing.payg.f5">Credits never expire</li>
             </ul>
-            <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="cta.ms_get">Get it on the Microsoft Store</a>
-            <details class="card-pay">
-                <summary class="btn btn-secondary" data-i18n="pay.card.button">Pay by card or PayPal</summary>
-                <div class="card-pay-options">
-                    <a href="https://api.duovox.net/buy/duovox_standard_payg_1" rel="nofollow"><span data-i18n="pay.opt.std1">Standard, 1 hour</span> &middot; <span class="pay-opt-price" data-opt-usd="$2.99" data-opt-gbp="&pound;2.99" data-opt-eur="&euro;2.99">$2.99</span></a>
-                    <a href="https://api.duovox.net/buy/duovox_standard_payg_10" rel="nofollow"><span data-i18n="pay.opt.std10">Standard, 10 hours</span> &middot; <span class="pay-opt-price" data-opt-usd="$24.99" data-opt-gbp="&pound;24.99" data-opt-eur="&euro;24.99">$24.99</span></a>
-                    <a href="https://api.duovox.net/buy/duovox_standard_payg_25" rel="nofollow"><span data-i18n="pay.opt.std25">Standard, 25 hours</span> &middot; <span class="pay-opt-price" data-opt-usd="$59.99" data-opt-gbp="&pound;59.99" data-opt-eur="&euro;59.99">$59.99</span></a>
-                    <a href="https://api.duovox.net/buy/duovox_professional_payg_1" rel="nofollow"><span data-i18n="pay.opt.pro1">Professional, 1 hour</span> &middot; <span class="pay-opt-price" data-opt-usd="$6.99" data-opt-gbp="&pound;6.99" data-opt-eur="&euro;6.99">$6.99</span></a>
-                    <a href="https://api.duovox.net/buy/duovox_professional_payg_10" rel="nofollow"><span data-i18n="pay.opt.pro10">Professional, 10 hours</span> &middot; <span class="pay-opt-price" data-opt-usd="$59.99" data-opt-gbp="&pound;59.99" data-opt-eur="&euro;59.99">$59.99</span></a>
-                    <a href="https://api.duovox.net/buy/duovox_professional_payg_25" rel="nofollow"><span data-i18n="pay.opt.pro25">Professional, 25 hours</span> &middot; <span class="pay-opt-price" data-opt-usd="$144.99" data-opt-gbp="&pound;144.99" data-opt-eur="&euro;144.99">$144.99</span></a>
+            <div class="price-actions">
+                <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="cta.ms_get">Get it on the Microsoft Store</span></a>
+                <a href="buy.html#hours" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span data-i18n="pay.card.button">Pay by card or PayPal</span></a>
+                <div class="price-notes">
+                    <p class="cta-micro" data-i18n="cta.credits_note">Credits can also be bought inside the app.</p>
+                    <p class="cta-micro" data-i18n="home.pricing.payg.micro">Try either tier without subscribing.</p>
                 </div>
-                <p class="cta-micro" data-i18n="pay.card.after">Payment is handled by Paddle. Then get DuoVox from the Microsoft Store and activate your purchase in the app.</p>
-            </details>
-            <p class="cta-micro" data-i18n="cta.credits_note">Credits can also be bought inside the app.</p>
-            <p class="cta-micro" data-i18n="home.pricing.payg.micro">Try either tier without subscribing.</p>
+            </div>
         </div>
     </div>
     <p class="pricing-footnote" data-i18n-html="home.pricing.footnote">On a subscription, Pay-As-You-Go hours you already hold take over automatically when your monthly hours run out &mdash; even mid-session, so a long call carries on without a break. If you hold none, you'll be offered three choices: buy hours (they're ready for your next session), continue in free offline mode for the rest of the session (lower quality, no internet needed), or end the session. We never auto-charge beyond your subscription without explicit confirmation. See our <a href="terms.html">fair usage policy</a>.</p>

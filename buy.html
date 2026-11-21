@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy DuoVox by card or PayPal - DuoVox | David Arthur Software</title>
+    <link rel="canonical" href="https://duovox.net/buy.html">
+    <meta name="description" content="Buy a DuoVox plan or Pay-As-You-Go hours by card or PayPal. Every plan and pack with its price, secure checkout by Paddle, then activate in the app.">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+<style>
+    /* 21 Nov 2026 (David: "a purpose built sales page that shows all the pack options with prices", "Be creative as
+       this is the sales page and it needs to be easy to understand and attractive"). Prices are the site's usual
+       data-price-{usd,gbp,eur} elements, so the admin price publisher and the currency swap in i18n.js keep them right;
+       per-hour prices and savings are COMPUTED on the page from those prices (script below), never typed. */
+    main.buy { max-width: 1120px; margin: 0 auto; padding: 6.5rem 1.25rem 3rem; }
+    .buy-hero { text-align: center; padding: 2.2rem 1rem 1.6rem; border-radius: 24px; position: relative; overflow: hidden;
+        background: radial-gradient(120% 140% at 50% 0%, rgba(76,175,80,0.20), rgba(76,175,80,0) 60%), var(--bg-card);
+        border: 1px solid var(--border); }
+    .buy-hero h1 { font-size: clamp(1.9rem, 4.5vw, 2.9rem); margin: 0 0 0.6rem; line-height: 1.15;
+        background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); -webkit-background-clip: text;
+        background-clip: text; color: transparent; }
+    .buy-hero p { color: var(--text-secondary); max-width: 640px; margin: 0 auto; font-size: 1.05rem; }
+    .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-top: 1.3rem; padding: 0; list-style: none; }
+    .chips li { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.85rem; border-radius: 999px;
+        border: 1px solid var(--border); background: rgba(255,255,255,0.04); font-size: 0.86rem; }
+    .chips svg { width: 16px; height: 16px; flex: none; stroke: var(--accent-light); }
+    .jump { display: flex; justify-content: center; gap: 0.6rem; margin: 1.4rem 0 0; flex-wrap: wrap; }
+    .jump a { padding: 0.55rem 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 600; color: inherit;
+        border: 1px solid var(--border); }
+    .jump a:first-child { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    .steps { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: 0.9rem; grid-template-columns: 1fr; }
+    @media (min-width: 780px) { .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    .steps li { display: flex; gap: 0.9rem; align-items: flex-start; padding: 1rem 1.1rem; border-radius: 16px;
+        border: 1px solid var(--border); background: var(--bg-card); }
+    .step-ico { flex: none; width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center;
+        background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); }
+    .step-ico svg { width: 22px; height: 22px; stroke: #fff; }
+    .steps li > div > strong { display: block; margin-bottom: 0.15rem; }
+    .steps span { color: var(--text-secondary); font-size: 0.9rem; }
+    .steps a, .buy-notes a { color: var(--accent-light); }
+
+    .sec-head { text-align: center; margin: 3rem 0 1.2rem; }
+    .sec-head h2 { font-size: clamp(1.5rem, 3.2vw, 2rem); margin: 0 0 0.35rem; }
+    .sec-head p { color: var(--text-secondary); margin: 0; }
+
+    .tiers { display: grid; gap: 1.2rem; grid-template-columns: 1fr; }
+    @media (min-width: 860px) { .tiers { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .tier { position: relative; border: 1px solid var(--border); border-radius: 20px; padding: 1.5rem 1.3rem 1.3rem;
+        background: var(--bg-card); display: flex; flex-direction: column; }
+    .tier.pro { border-color: var(--accent); box-shadow: 0 0 32px rgba(76,175,80,0.16); }
+    .tier .price-badge { white-space: nowrap; }
+    .tier h3 { font-size: 1.45rem; margin: 0.2rem 0 0.2rem; }
+    .tier .bestfor { color: var(--text-muted); font-size: 0.88rem; margin: 0 0 1rem; }
+    .opt { display: grid; grid-template-columns: 1fr auto; gap: 0.2rem 0.9rem; align-items: center; padding: 0.85rem 0.95rem;
+        border: 1px solid var(--border); border-radius: 14px; margin-bottom: 0.65rem; background: rgba(255,255,255,0.025); }
+    .opt.best { border-color: var(--accent-light); background: rgba(76,175,80,0.07); }
+    .opt-name { font-weight: 700; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+    .tag { font-size: 0.72rem; font-weight: 700; padding: 0.15rem 0.55rem; border-radius: 999px; color: #fff;
+        background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); }
+    .opt .price-amount { font-size: 1.6rem; margin: 0; line-height: 1.1; }
+    .opt-sub { color: var(--text-muted); font-size: 0.83rem; }
+    .opt-sub .save { color: var(--accent-light); font-weight: 600; }
+    .opt-right { grid-row: 1 / span 2; grid-column: 2; }
+    .opt .btn { padding: 0.6rem 1.15rem; white-space: nowrap; }
+    .feat { list-style: none; padding: 0; margin: 0.8rem 0 0; display: grid; gap: 0.35rem; }
+    .feat li { padding-left: 1.6rem; position: relative; color: var(--text-secondary); font-size: 0.92rem; }
+    .feat li::before { content: ""; position: absolute; left: 0.2rem; top: 0.35rem; width: 0.8rem; height: 0.45rem;
+        border-left: 2px solid var(--accent-light); border-bottom: 2px solid var(--accent-light); transform: rotate(-45deg); }
+
+    .buy-notes { margin: 3rem auto 0; max-width: 820px; display: grid; gap: 0.6rem; }
+    .buy-notes p { color: var(--text-secondary); font-size: 0.9rem; margin: 0; padding: 0.8rem 1rem; border-radius: 12px;
+        border: 1px solid var(--border); background: var(--bg-card); }
+    @media (max-width: 480px) { .opt { grid-template-columns: 1fr; } .opt-right { grid-row: auto; grid-column: 1; order: 3; margin-top: 0.4rem; }
+        .opt .btn { width: 100%; justify-content: center; } }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <img src="icon.png" alt="DuoVox icon">
+            DuoVox
+        </a>
+        <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('open')"><span></span><span></span><span></span></button>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="interpreters.html" data-i18n="nav.interpreters">For interpreters</a></li>
+            <li><a href="calls.html" data-i18n="nav.calls">Video calls</a></li>
+            <li><a href="languages.html" data-i18n="nav.languages">Languages</a></li>
+            <li><a href="help.html" data-i18n="nav.help">Help</a></li>
+            <li><a href="security.html" data-i18n="nav.security">Security</a></li>
+            <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+            <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="buy">
+    <section class="buy-hero">
+        <h1 data-i18n="buy.title">Buy DuoVox by card or PayPal</h1>
+        <p data-i18n="buy.intro">Live AI captions and translation for your conversations. Pick a plan or a pack of hours, pay securely, then activate it in the app.</p>
+        <ul class="chips">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span data-i18n="buy.chip.secure">Secure checkout by Paddle</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span data-i18n="buy.chip.pay">Card or PayPal</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-i18n="buy.chip.expire">Hours never expire</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-i18n="buy.chip.cancel">Cancel plans anytime</span></li>
+        </ul>
+        <div class="jump">
+            <a href="#plans" data-i18n="buy.jump.plans">Plans</a>
+            <a href="#hours" data-i18n="buy.jump.hours">Pay-As-You-Go hours</a>
+        </div>
+    </section>
+
+    <ol class="steps">
+        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
+            <div><strong data-i18n="buy.step1.t">1. Choose and pay</strong><span data-i18n="buy.step1.d">Pick a plan or hours below and pay by card or PayPal.</span></div></li>
+        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 20h16"/></svg></span>
+            <div><strong data-i18n="buy.step2.t">2. Install DuoVox</strong><span data-i18n-html="buy.step2.d">Get DuoVox free from the <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxbuy">Microsoft Store</a>.</span></div></li>
+        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9"/><path d="M16 7l3 3"/></svg></span>
+            <div><strong data-i18n="buy.step3.t">3. Activate</strong><span data-i18n-html="buy.step3.d">Click <strong>Activate in DuoVox</strong> after paying, or enter your code in the app under <strong>Plans &amp; hours</strong>. <a href="help.html#activate">How?</a></span></div></li>
+    </ol>
+
+    <div class="sec-head" id="plans">
+        <h2 data-i18n="buy.plans.title">Plans</h2>
+        <p data-i18n="buy.plans.sub">AI hours every month, on up to three computers. Renews automatically until you cancel.</p>
+    </div>
+    <div class="tiers">
+        <div class="tier">
+            <h3 data-i18n="home.pricing.standard.name">Standard</h3>
+            <p class="bestfor" data-i18n="home.pricing.standard.bestfor">Best for: travellers, students &amp; everyday bilingual chat</p>
+            <div class="opt">
+                <div class="opt-name" data-i18n="pay.opt.monthly">Monthly</div>
+                <div class="opt-right"><a class="btn btn-secondary" href="https://api.duovox.net/buy/duovox_standard_monthly" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_standard_monthly" id="p-std-m" data-price-usd="$22.99" data-price-gbp="&pound;22.99" data-price-eur="&euro;22.99">$22.99</span> <span class="opt-sub" data-i18n="buy.per.month">per month</span></div>
+            </div>
+            <div class="opt best">
+                <div class="opt-name"><span data-i18n="pay.opt.annual">Annual</span><span class="tag" data-i18n="buy.tag.value">Best value</span></div>
+                <div class="opt-right"><a class="btn btn-primary" href="https://api.duovox.net/buy/duovox_standard_annual" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_standard_annual" id="p-std-y" data-price-usd="$249.99" data-price-gbp="&pound;249.99" data-price-eur="&euro;249.99">$249.99</span> <span class="opt-sub" data-i18n="buy.per.year">per year</span>
+                    <div class="opt-sub"><span class="save" data-save-of="p-std-m" data-save-for="p-std-y" data-months="12" data-i18n="buy.save">Save {p}% compared with monthly</span></div></div>
+            </div>
+            <ul class="feat">
+                <li data-i18n="home.pricing.standard.f1">Live AI transcription &amp; translation</li>
+                <li data-i18n="home.pricing.standard.f2">15 hours included per month</li>
+                <li data-i18n="home.pricing.standard.f3">53 supported languages</li>
+                <li data-i18n="home.pricing.standard.f6">Document translation (Desktop)</li>
+                <li data-i18n="home.pricing.standard.f4">No ads</li>
+            </ul>
+        </div>
+        <div class="tier pro">
+            <div class="price-badge" data-i18n="home.pricing.professional.badge">Best for professionals</div>
+            <h3 data-i18n="home.pricing.professional.name">Professional</h3>
+            <p class="bestfor" data-i18n="home.pricing.professional.bestfor">Best for: businesses and professional interpreters</p>
+            <div class="opt">
+                <div class="opt-name" data-i18n="pay.opt.monthly">Monthly</div>
+                <div class="opt-right"><a class="btn btn-secondary" href="https://api.duovox.net/buy/duovox_professional_monthly" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_professional_monthly" id="p-pro-m" data-price-usd="$159.99" data-price-gbp="&pound;159.99" data-price-eur="&euro;159.99">$159.99</span> <span class="opt-sub" data-i18n="buy.per.month">per month</span></div>
+            </div>
+            <div class="opt best">
+                <div class="opt-name"><span data-i18n="pay.opt.6month">6 months</span><span class="tag" data-i18n="buy.tag.value">Best value</span></div>
+                <div class="opt-right"><a class="btn btn-primary" href="https://api.duovox.net/buy/duovox_professional_6month" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_professional_6month" id="p-pro-6" data-price-usd="$899.99" data-price-gbp="&pound;839.99" data-price-eur="&euro;899.99">$899.99</span> <span class="opt-sub" data-i18n="buy.per.6month">every 6 months</span>
+                    <div class="opt-sub"><span class="save" data-save-of="p-pro-m" data-save-for="p-pro-6" data-months="6" data-i18n="buy.save">Save {p}% compared with monthly</span></div></div>
+            </div>
+            <ul class="feat">
+                <li data-i18n="home.pricing.professional.f1">Enhanced terminology recognition for specialist vocabulary</li>
+                <li data-i18n="home.pricing.professional.f2">Advanced AI translation</li>
+                <li data-i18n="home.pricing.professional.f3">40 hours included per month</li>
+                <li data-i18n="home.pricing.professional.f8">57 supported languages</li>
+                <li data-i18n="home.pricing.professional.f5">Translate audio &amp; video files (Desktop)</li>
+                <li data-i18n="home.pricing.professional.f7">Private Mode</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sec-head" id="hours">
+        <h2 data-i18n="buy.hours.title">Pay-As-You-Go hours</h2>
+        <p data-i18n="buy.hours.sub">No subscription. Buy hours when you need them; they never expire.</p>
+    </div>
+    <div class="tiers">
+        <div class="tier">
+            <h3 data-i18n="home.pricing.standard.name">Standard</h3>
+            <p class="bestfor" data-i18n="home.pricing.standard.f1">Live AI transcription &amp; translation</p>
+            <div class="opt">
+                <div class="opt-name" data-i18n="buy.h1">1 hour</div>
+                <div class="opt-right"><a class="btn btn-secondary" href="https://api.duovox.net/buy/duovox_standard_payg_1" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_standard_payg_1" data-hours="1" data-price-usd="$2.99" data-price-gbp="&pound;2.99" data-price-eur="&euro;2.99">$2.99</span></div>
+            </div>
+            <div class="opt">
+                <div class="opt-name" data-i18n="buy.h10">10 hours</div>
+                <div class="opt-right"><a class="btn btn-secondary" href="https://api.duovox.net/buy/duovox_standard_payg_10" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_standard_payg_10" data-hours="10" data-price-usd="$24.99" data-price-gbp="&pound;24.99" data-price-eur="&euro;24.99">$24.99</span> <span class="opt-sub"><span class="ph"></span> <span data-i18n="buy.perhour">per hour</span></span></div>
+            </div>
+            <div class="opt best">
+                <div class="opt-name"><span data-i18n="buy.h25">25 hours</span><span class="tag" data-i18n="buy.tag.value">Best value</span></div>
+                <div class="opt-right"><a class="btn btn-primary" href="https://api.duovox.net/buy/duovox_standard_payg_25" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_standard_payg_25" data-hours="25" data-price-usd="$59.99" data-price-gbp="&pound;59.99" data-price-eur="&euro;59.99">$59.99</span> <span class="opt-sub"><span class="ph"></span> <span data-i18n="buy.perhour">per hour</span></span></div>
+            </div>
+        </div>
+        <div class="tier pro">
+            <h3 data-i18n="home.pricing.professional.name">Professional</h3>
+            <p class="bestfor" data-i18n="home.pricing.professional.f1">Enhanced terminology recognition for specialist vocabulary</p>
+            <div class="opt">
+                <div class="opt-name" data-i18n="buy.h1">1 hour</div>
+                <div class="opt-right"><a class="btn btn-secondary" href="https://api.duovox.net/buy/duovox_professional_payg_1" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_professional_payg_1" data-hours="1" data-price-usd="$6.99" data-price-gbp="&pound;6.99" data-price-eur="&euro;6.99">$6.99</span></div>
+            </div>
+            <div class="opt">
+                <div class="opt-name" data-i18n="buy.h10">10 hours</div>
+                <div class="opt-right"><a class="btn btn-secondary" href="https://api.duovox.net/buy/duovox_professional_payg_10" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_professional_payg_10" data-hours="10" data-price-usd="$59.99" data-price-gbp="&pound;59.99" data-price-eur="&euro;59.99">$59.99</span> <span class="opt-sub"><span class="ph"></span> <span data-i18n="buy.perhour">per hour</span></span></div>
+            </div>
+            <div class="opt best">
+                <div class="opt-name"><span data-i18n="buy.h25">25 hours</span><span class="tag" data-i18n="buy.tag.value">Best value</span></div>
+                <div class="opt-right"><a class="btn btn-primary" href="https://api.duovox.net/buy/duovox_professional_payg_25" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_professional_payg_25" data-hours="25" data-price-usd="$144.99" data-price-gbp="&pound;144.99" data-price-eur="&euro;144.99">$144.99</span> <span class="opt-sub"><span class="ph"></span> <span data-i18n="buy.perhour">per hour</span></span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buy-notes">
+        <p data-i18n-html="buy.note.currency">Prices are shown in USD; UK visitors see GBP. Paddle.com, our reseller and Merchant of Record, charges the equivalent in your local currency and shows any sales tax before you pay. DuoVox is not yet available in the EU or EEA.</p>
+        <p data-i18n-html="buy.note.cancel">Cancel a plan at any time with the link in your receipt email from Paddle, at <a href="https://paddle.net">paddle.net</a>, or by emailing <a href="mailto:info@duovox.net">info@duovox.net</a>. You keep the plan until the end of the period you paid for. See our <a href="refunds.html">Refund Policy</a>.</p>
+        <p data-i18n-html="buy.note.compare">Not sure yet? <a href="index.html#pricing">Compare all plans</a>, or start with the Free plan from the Microsoft Store. Every plan and pack can also be bought inside the app.</p>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-links">
+            <a href="https://davidarthur.app/about/" data-i18n="footer.about">About us</a>
+            <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+            <a href="refunds.html" data-i18n="footer.refunds">Refund Policy</a>
+            <a href="security.html" data-i18n="nav.security">Security</a>
+            <a href="help.html" data-i18n="nav.help">Help</a>
+            <a href="calls.html" data-i18n="footer.calls">Video calls</a>
+            <a href="interpreters.html" data-i18n="footer.interpreters">For interpreters</a>
+            <a href="press.html" data-i18n="footer.press">Press kit</a>
+            <a href="contact.html" data-i18n="footer.contact">Contact</a>
+        </div>
+        <p class="footer-company" data-i18n="footer.copyright">&copy; 2026 David Arthur Software (DAS). All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+(function () {
+    // Per-hour prices and savings are computed from the prices on the page, so they follow the currency swap and the
+    // admin price publisher; nothing derived is ever typed into the markup.
+    function num(el) { var m = (el.textContent || '').match(/([^\d\s]*)\s*([\d.,]+)/); if (!m) return null;
+        return { sym: m[1], v: parseFloat(m[2].replace(/,/g, '')) }; }
+    var tpl = {};
+    function update() {
+        var els = document.querySelectorAll('.price-amount[data-hours]');
+        for (var i = 0; i < els.length; i++) {
+            var h = parseFloat(els[i].getAttribute('data-hours')), p = num(els[i]);
+            var ph = els[i].parentNode.querySelector('.ph');
+            if (!ph || !p || !(h > 1)) continue;
+            var t = p.sym + (p.v / h).toFixed(2);
+            if (ph.textContent !== t) ph.textContent = t;
+        }
+        var saves = document.querySelectorAll('.save[data-save-of]');
+        for (var j = 0; j < saves.length; j++) {
+            var s = saves[j], k = s.getAttribute('data-i18n');
+            if (!tpl[j] || s.textContent.indexOf('{p}') >= 0) tpl[j] = s.textContent.indexOf('{p}') >= 0 ? s.textContent : tpl[j];
+            var a = document.getElementById(s.getAttribute('data-save-of')), b = document.getElementById(s.getAttribute('data-save-for'));
+            var n = parseFloat(s.getAttribute('data-months')), pa = a && num(a), pb = b && num(b);
+            if (!pa || !pb || !tpl[j]) continue;
+            var pct = Math.floor((1 - pb.v / (pa.v * n)) * 100);
+            var out = pct > 0 ? tpl[j].replace('{p}', pct) : '';
+            if (s.textContent !== out) s.textContent = out;
+        }
+    }
+    update();
+    if (window.MutationObserver) new MutationObserver(update).observe(document.querySelector('main.buy'), { subtree: true, childList: true, characterData: true });
+})();
+</script>
+<script src="i18n.js"></script>
+<script src="prices.js"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6da9362d8d7f49fc913578849ffbc7bb"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
