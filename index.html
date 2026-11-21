@@ -107,6 +107,14 @@
     @media (min-width: 769px) and (max-width: 1024px) { #who-its-for .audience-card:last-child { grid-column: 1 / -1; } }
     .video-note { text-align: center; margin-top: 0.9rem; font-size: 0.85rem; color: var(--text-secondary); }
     .video-note a { color: var(--accent-light); }
+    /* Card / PayPal checkout (Paddle) beside the Store button: a summary that opens the plan's options. */
+    .card-pay { width: 100%; margin-top: 0.6rem; }
+    .card-pay > summary { list-style: none; cursor: pointer; width: 100%; justify-content: center; }
+    .card-pay > summary::-webkit-details-marker { display: none; }
+    .card-pay-options { display: flex; flex-direction: column; gap: 0.45rem; margin-top: 0.6rem; }
+    .card-pay-options a { display: block; text-align: center; padding: 0.5rem 0.75rem; border: 1px solid var(--border);
+        border-radius: 8px; color: var(--accent-light); text-decoration: none; font-size: 0.9rem; }
+    .card-pay-options a:hover { background: var(--bg-card-hover); }
 </style>
 </head>
 <body class="home-c">
@@ -468,7 +476,7 @@
 <!-- Pricing -->
 <section class="section" id="pricing">
     <h2 class="section-title" data-i18n="home.pricing.title">Simple Pricing</h2>
-    <p class="section-subtitle" data-i18n-html="home.pricing.subtitle">Choose the plan that fits how you use DuoVox. Longer-term plans cost less than paying month by month, or pay only for what you use with Pay-As-You-Go.<br><small style="opacity:0.6;">Default prices in USD. UK visitors see GBP. DuoVox is not yet available in the EU or EEA. The Microsoft Store charges the equivalent in your local currency at checkout. Subscriptions renew automatically until you cancel, and you can cancel at any time.</small></p>
+    <p class="section-subtitle" data-i18n-html="home.pricing.subtitle">Choose the plan that fits how you use DuoVox. Longer-term plans cost less than paying month by month, or pay only for what you use with Pay-As-You-Go.<br><small style="opacity:0.6;">Default prices in USD. UK visitors see GBP. DuoVox is not yet available in the EU or EEA. At checkout the Microsoft Store, or Paddle if you pay by card or PayPal on duovox.net, charges the equivalent in your local currency. Subscriptions renew automatically until you cancel, and you can cancel at any time.</small></p>
     <div class="pricing-grid four-col">
 
         <!-- Free tier -->
@@ -505,6 +513,14 @@
                 <li data-i18n="home.pricing.standard.f5">Cancel anytime</li>
             </ul>
             <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="cta.ms_get">Get it on the Microsoft Store</a>
+            <details class="card-pay">
+                <summary class="btn btn-secondary" data-i18n="pay.card.button">Pay by card or PayPal</summary>
+                <div class="card-pay-options">
+                    <a href="https://api.duovox.net/buy/duovox_standard_monthly" rel="nofollow" data-i18n="pay.opt.monthly">Monthly</a>
+                    <a href="https://api.duovox.net/buy/duovox_standard_annual" rel="nofollow" data-i18n="pay.opt.annual">Annual</a>
+                </div>
+                <p class="cta-micro" data-i18n="pay.card.after">Payment is handled by Paddle. Then get DuoVox from the Microsoft Store and activate your purchase in the app.</p>
+            </details>
             <p class="cta-micro" data-i18n="home.pricing.standard.micro">Best if you use it 10+ hours per month.</p>
         </div>
 
@@ -529,6 +545,14 @@
                 <li data-i18n="home.pricing.professional.f7">Private Mode</li>
             </ul>
             <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="cta.ms_get">Get it on the Microsoft Store</a>
+            <details class="card-pay">
+                <summary class="btn btn-secondary" data-i18n="pay.card.button">Pay by card or PayPal</summary>
+                <div class="card-pay-options">
+                    <a href="https://api.duovox.net/buy/duovox_professional_monthly" rel="nofollow" data-i18n="pay.opt.monthly">Monthly</a>
+                    <a href="https://api.duovox.net/buy/duovox_professional_6month" rel="nofollow" data-i18n="pay.opt.6month">6 months</a>
+                </div>
+                <p class="cta-micro" data-i18n="pay.card.after">Payment is handled by Paddle. Then get DuoVox from the Microsoft Store and activate your purchase in the app.</p>
+            </details>
             <p class="cta-micro" data-i18n="home.pricing.professional.micro">Best if you use it 28+ hours per month.</p>
         </div>
 
@@ -552,7 +576,19 @@
                 <li data-i18n="home.pricing.payg.f5">Credits never expire</li>
             </ul>
             <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="cta.ms_get">Get it on the Microsoft Store</a>
-            <p class="cta-micro" data-i18n="cta.credits_note">Pay-as-you-go credits are purchased inside the app</p>
+            <details class="card-pay">
+                <summary class="btn btn-secondary" data-i18n="pay.card.button">Pay by card or PayPal</summary>
+                <div class="card-pay-options">
+                    <a href="https://api.duovox.net/buy/duovox_standard_payg_1" rel="nofollow" data-i18n="pay.opt.std1">Standard, 1 hour</a>
+                    <a href="https://api.duovox.net/buy/duovox_standard_payg_10" rel="nofollow" data-i18n="pay.opt.std10">Standard, 10 hours</a>
+                    <a href="https://api.duovox.net/buy/duovox_standard_payg_25" rel="nofollow" data-i18n="pay.opt.std25">Standard, 25 hours</a>
+                    <a href="https://api.duovox.net/buy/duovox_professional_payg_1" rel="nofollow" data-i18n="pay.opt.pro1">Professional, 1 hour</a>
+                    <a href="https://api.duovox.net/buy/duovox_professional_payg_10" rel="nofollow" data-i18n="pay.opt.pro10">Professional, 10 hours</a>
+                    <a href="https://api.duovox.net/buy/duovox_professional_payg_25" rel="nofollow" data-i18n="pay.opt.pro25">Professional, 25 hours</a>
+                </div>
+                <p class="cta-micro" data-i18n="pay.card.after">Payment is handled by Paddle. Then get DuoVox from the Microsoft Store and activate your purchase in the app.</p>
+            </details>
+            <p class="cta-micro" data-i18n="cta.credits_note">Credits can also be bought inside the app.</p>
             <p class="cta-micro" data-i18n="home.pricing.payg.micro">Try either tier without subscribing.</p>
         </div>
     </div>
@@ -596,7 +632,7 @@
         <div class="faq-item">
             <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="home.faq.10">Do I need to create an account?</button>
             <div class="faq-answer">
-                <p data-i18n="home.faq.11">No. DuoVox works without accounts or sign-ups. Download the app and start using it immediately. Subscriptions are managed through the Microsoft Store.</p>
+                <p data-i18n="home.faq.11">No. DuoVox works without accounts or sign-ups. Download the app and start using it immediately. Plans and hours are bought in the app through the Microsoft Store, or on this website by card or PayPal.</p>
             </div>
         </div>
         <div class="faq-item">
@@ -626,7 +662,13 @@
         <div class="faq-item">
             <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="home.faq.20">How do I cancel, and can I get a refund?</button>
             <div class="faq-answer">
-                <p data-i18n-html="home.faq.21">You can cancel at any time through the Microsoft Store. You keep paid features until the end of the billing period you have already paid for. Refunds are handled by that store under its own refund policy, not by us. If you think you are owed a refund for unused subscription time, email <a href="mailto:support@duovox.net">support@duovox.net</a> and we will look at it case by case. The full wording is in section 10a of the <a href="terms.html">Terms of Use</a>.</p>
+                <p data-i18n-html="home.faq.21">You can cancel at any time, and you keep paid features until the end of the period you have already paid for. If you bought in the Microsoft Store, cancel in your Microsoft account; refunds are handled by Microsoft under its own refund policy. If you paid by card or PayPal on this website, cancel using the link in your receipt email from Paddle, at paddle.net, or by asking us at <a href="mailto:info@duovox.net">info@duovox.net</a>; you can request a refund at paddle.net within 14 days of a purchase. The full wording is in our <a href="refunds.html">Refund Policy</a> and section 10a of the <a href="terms.html">Terms of Use</a>.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" data-i18n="home.faq.paidweb.q">I paid on this website. How do I get my plan or hours?</button>
+            <div class="faq-answer">
+                <p data-i18n-html="home.faq.paidweb.a">After you pay, the confirmation page shows a code and an <strong>Activate in DuoVox</strong> button. Install DuoVox from the Microsoft Store, then click <strong>Activate in DuoVox</strong>. Or open <strong>Plans &amp; hours</strong> in the app, choose <strong>Have a DuoVox code?</strong>, enter the code and press <strong>Use code</strong>. Hours are added to that computer. A plan becomes active on that computer, which then shows a code for adding your other computers (up to three). Keep your code; if you lose it, email <a href="mailto:info@duovox.net">info@duovox.net</a> with your Paddle receipt and we will find it.</p>
             </div>
         </div>
     </div>
