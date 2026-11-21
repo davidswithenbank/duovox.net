@@ -84,6 +84,12 @@
       var pgval = pgel.getAttribute('data-payg-' + code);
       if (pgval) pgel.textContent = pgval;
     }
+    // 21 Nov 2026: the price beside each 'Pay by card or PayPal' option (packs had none).
+    var opts = document.querySelectorAll('.pay-opt-price');
+    for (var q = 0; q < opts.length; q++) {
+      var oval = opts[q].getAttribute('data-opt-' + code);
+      if (oval) opts[q].textContent = oval;
+    }
     // Note: we don't substitute the currency-code in the pricing subtitle anymore.
     // The default subtitle text explains the per-region behaviour ("Default prices in
     // USD. UK visitors see GBP. DuoVox is not yet available in the EU or EEA.") which is already
