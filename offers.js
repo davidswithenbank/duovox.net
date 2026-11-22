@@ -40,12 +40,75 @@
         });
     }
 
+    // ---- the card on the language pages (22 Nov 2026, David: "Yes") ----
+    // The server sends English. The wording lives in <template id="offer-i18n"> on this page, translated by the site build
+    // like every other line. A known offer type uses its translated wording (David's own English text would be the only
+    // English on the page); a "custom" offer keeps what he typed. The footnote is always kept as typed: it may carry a condition.
+    var tplEl = document.getElementById("offer-i18n");
+    function T(k) {
+        var e = tplEl && tplEl.content ? tplEl.content.querySelector('[data-i18n="' + k + '"]') : null;
+        return e ? e.textContent : "";
+    }
+    function fill(s, m) { return String(s).replace(/\{(n|p|d)\}/g, function (_, k) { return m[k]; }); }
+    var plural = (function () { try { var r = new Intl.PluralRules(lang); return function (n) { return r.select(n); }; } catch (e) { return function (n) { return n === 1 ? "one" : "other"; }; } })();
+    function counted(base, n) {
+        var c = plural(n), s = T(base + "." + c) || T(base + "." + (n === 1 ? "one" : "other"));
+        return fill(s, { n: n });
+    }
+    function plan(t) { return T("offer.ui.plan." + String(t || "").toLowerCase()) || t || ""; }
+    function pct(price, was) { price = Number(price); was = Number(was); return (was > price && price > 0) ? Math.floor((1 - price / was) * 100) : 0; }
+    function rangeSave(o) { return (o.packs || []).reduce(function (m, p) { return Math.max(m, pct(p.price, p.was_price)); }, 0); }
+    function localise(o) {
+        var r = Object.assign({}, o), hours = Number(o.hours) || 0, bonus = Number(o.bonus_hours) || 0;
+        var save = o.mechanic === "range" ? rangeSave(o) : pct(o.price, o.was_price);
+        var val = { hours: hours ? String(hours) : "", tier: plan(o.tier), save: save ? String(save) : "", bonus: bonus ? counted("offer.ui.hours", bonus) : "" };
+        if (o.type && o.type !== "custom") {
+            ["eyebrow", "headline", "subhead", "badge", "cta"].forEach(function (f) {
+                var s = T("offer.t." + o.type + "." + f), ok = true;
+                if (!s) return;
+                s = s.replace(/\{(hours|tier|save|bonus|pack)\}/g, function (_, k) { var x = val[k] || ""; if (!x) ok = false; return x; });
+                if (ok) r[f] = s;   // a value missing (e.g. no saving to quote): the card's own English line stays
+            });
+        }
+        if (!r.headline) r.headline = T("offer.ui.special") || "";
+        if (!r.cta) r.cta = T("offer.ui.buy") || "";
+        if (hours) r.pack = counted("offer.ui.hours", hours) + (o.tier ? " · " + plan(o.tier) : "");
+        if (Array.isArray(o.packs)) r.packs = o.packs.map(function (p) { return Object.assign({}, p, { label: counted("offer.ui.hours", Number(p.hours) || 0) }); });
+        return r;
+    }
+    function localiseCard(card, o) {
+        var mech = /^(bonus|range|code)$/.test(o.mechanic) ? o.mechanic : "discount", bonus = Number(o.bonus_hours) || 0;
+        var save = card.querySelector(".oc-save");
+        if (save && !save.hidden) {
+            var s = mech === "range" ? fill(T("offer.ui.saveupto"), { n: rangeSave(o) })
+                  : mech === "bonus" && bonus ? counted("offer.ui.bonusfree", bonus)
+                  : fill(T("offer.ui.save"), { n: pct(o.price, o.was_price) });
+            if (s) save.textContent = s;
+        }
+        var per = card.querySelector(".oc-per");
+        if (per && !per.hidden) {
+            var m = /^(.*?) an hour( with the bonus)?$/.exec(per.textContent || "");
+            var tp = m && T(m[2] ? "offer.ui.perhourbonus" : "offer.ui.perhour");
+            if (tp) per.textContent = fill(tp, { p: m[1] });
+        }
+        var code = card.querySelector(".oc-code > span"); if (code && T("offer.ui.code")) code.textContent = T("offer.ui.code");
+        var copy = card.querySelector(".oc-copy"); if (copy && T("offer.ui.copy")) copy.textContent = T("offer.ui.copy");
+        var h = card.querySelector(".oc-headline"); if (h) card.setAttribute("aria-label", h.textContent.trim());
+        // The countdown redraws itself every second, and Copy turns into "Copied": put the translation back each time.
+        var swap = { "Ends in": T("offer.ui.endsin"), "Copied": T("offer.ui.copied") };
+        var fix = function () {
+            var t = card.querySelector(".oc-timer > span");
+            if (t && swap[t.textContent] && t.textContent !== swap[t.textContent]) t.textContent = swap[t.textContent];
+            if (copy && swap[copy.textContent]) copy.textContent = swap[copy.textContent];
+        };
+        fix();
+        if (window.MutationObserver) new MutationObserver(fix).observe(card, { subtree: true, childList: true });
+    }
+
     fetch(API + "/offers?set=web&lang=" + encodeURIComponent(lang), { mode: "cors", credentials: "omit" })
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (d) {
             var list = d && Array.isArray(d.offers) ? d.offers : [];
-            // The card's wording is English (the server does not translate it yet), so it shows on the English pages only.
-            if (lang.indexOf("en") !== 0) return;
             var o = list.filter(function (x) { return x && ID_RE.test(x.id || ""); })[0];
             if (!o) return;
             var v = "?v=" + encodeURIComponent(String(d.cards || ""));
@@ -55,7 +118,9 @@
             ]).then(function () {
                 if (typeof window.renderOfferCard !== "function") return;
                 var variant = o.variant === "b" ? "b" : "a";
-                var card = window.renderOfferCard(o);
+                var en = lang.indexOf("en") === 0;
+                var card = window.renderOfferCard(en ? o : localise(o));
+                if (!en) localiseCard(card, o);
                 var cta = card.querySelector(".oc-cta");
                 if (cta) {
                     try {
