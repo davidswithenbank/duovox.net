@@ -138,8 +138,7 @@
         }
         return assets;
     }
-    // preview (the admin's Website editor, below): nothing is counted, the button goes nowhere, and a "Preview" label says it
-    // is not a live offer.
+    // preview (the admin's Website editor, below): nothing is counted and the button goes nowhere.
     function show(o, preview) {
         if (typeof window.renderOfferCard !== "function") return;
         var variant = o.variant === "b" ? "b" : "a";
@@ -161,14 +160,7 @@
             } catch (e) { /* keep the server's link */ }
             cta.addEventListener("click", function () { send(o.id, variant, "click"); });
         }
-        var kids = [card];
-        if (preview) {
-            var tag = document.createElement("div");
-            tag.className = "site-offer-preview";
-            tag.textContent = "Preview - not a live offer";
-            kids.unshift(tag);
-        }
-        host.replaceChildren.apply(host, kids);
+        host.replaceChildren(card);   // no "Preview" label (David, 22 Nov); the postMessage gate below is the protection
         host.hidden = false;
         if (preview) host.scrollIntoView({ block: "center" });
         else send(o.id, variant, "shown");   // once per page view (Admin, 22 Nov)
