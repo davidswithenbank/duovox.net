@@ -109,11 +109,25 @@
     // web_layout: landscape (the app card's shape) | portrait. web_size: small | medium | large.
     // web_place: top (under the opening section) | pricing (above the plans; on buy.html: the top) | after-pricing | bottom.
     // A landscape card needs ~600px: on a narrower screen (phones) it is shown in portrait instead.
+    // web_pair: another website offer's id - the two are shown side by side (David, 22 Nov).
     var SIZES = { small: 0.8, medium: 0.9, large: 1 };
+    var GAP = 24;
+    function room() { return Math.max(280, (document.documentElement.clientWidth || 375) - 32); }
+    function zoomOf(o) { return SIZES[o.web_size] || SIZES.medium; }
+    function widthOf(landscape, z) { return (landscape ? 600 : 360) * z; }
     function layout(o) {
-        var z = SIZES[o.web_size] || SIZES.medium, room = Math.max(280, (document.documentElement.clientWidth || 375) - 32);
-        var landscape = o.web_layout !== "portrait" && 600 * z <= room;
-        return { landscape: landscape, zoom: Math.min(z, room / (landscape ? 600 : 360)) };
+        var z = zoomOf(o), r = room();
+        var landscape = o.web_layout !== "portrait" && widthOf(true, z) <= r;
+        return { landscape: landscape, zoom: Math.min(z, r / (landscape ? 600 : 360)) };
+    }
+    // Two offers side by side (David, 22 Nov: web_pair): each keeps its own shape and size if both fit in one row; else both in
+    // portrait if that fits; else one under the other, each as it would be alone.
+    function pairLayout(a, b) {
+        var r = room(), za = zoomOf(a), zb = zoomOf(b);
+        var la = a.web_layout !== "portrait", lb = b.web_layout !== "portrait";
+        if (widthOf(la, za) + GAP + widthOf(lb, zb) <= r) return { row: true, lays: [{ landscape: la, zoom: za }, { landscape: lb, zoom: zb }] };
+        if (widthOf(false, za) + GAP + widthOf(false, zb) <= r) return { row: true, lays: [{ landscape: false, zoom: za }, { landscape: false, zoom: zb }] };
+        return { row: false, lays: [layout(a), layout(b)] };
     }
     var home0 = { parent: host.parentNode, next: host.nextSibling };   // where the page put it ("pricing")
     function place(where) {
@@ -139,15 +153,12 @@
         return assets;
     }
     // preview (the admin's Website editor, below): nothing is counted and the button goes nowhere.
-    function show(o, preview) {
-        if (typeof window.renderOfferCard !== "function") return;
+    function build(o, lay, preview) {
         var variant = o.variant === "b" ? "b" : "a";
         var en = lang.indexOf("en") === 0;
-        var lay = layout(o);
         var shown = Object.assign({}, en ? o : localise(o), lay.landscape ? { set: "app", dismissible: false } : {});
         var card = window.renderOfferCard(shown);
         card.style.zoom = String(lay.zoom);
-        place(o.web_place);
         if (!en) localiseCard(card, o);
         var cta = card.querySelector(".oc-cta");
         if (cta && preview) {
@@ -160,11 +171,23 @@
             } catch (e) { /* keep the server's link */ }
             cta.addEventListener("click", function () { send(o.id, variant, "click"); });
         }
-        host.replaceChildren(card);   // no "Preview" label (David, 22 Nov); the postMessage gate below is the protection
+        return card;
+    }
+    // offers: one, or two shown side by side (the first one's place decides where).
+    function show(offers, preview) {
+        if (typeof window.renderOfferCard !== "function" || !offers.length) return;
+        var pl = offers.length > 1 ? pairLayout(offers[0], offers[1]) : { row: false, lays: [layout(offers[0])] };
+        var cards = offers.map(function (o, i) { return build(o, pl.lays[i], preview); });
+        place(offers[0].web_place);
+        host.classList.toggle("site-offer-pair", offers.length > 1);
+        host.classList.toggle("site-offer-row", offers.length > 1 && pl.row);
+        host.replaceChildren.apply(host, cards);   // no "Preview" label (David, 22 Nov); the postMessage gate below is the protection
         host.hidden = false;
         if (preview) host.scrollIntoView({ block: "center" });
-        else send(o.id, variant, "shown");   // once per page view (Admin, 22 Nov)
+        else offers.forEach(function (o) { send(o.id, o.variant === "b" ? "b" : "a", "shown"); });   // once per page view, per card
     }
+    var lastPreview = null;
+    window.addEventListener("resize", function () { if (lastPreview) show(lastPreview, true); });
     // The admin frames this page (URL + #offer-preview) and posts the draft to it. Only a message from the admin origin, sent by
     // the frame's own parent, is accepted: a link on its own shows nothing, so nobody can make duovox.net show a made-up offer.
     if (/[#&]offer-preview\b/.test(location.hash) && window.parent !== window) {
@@ -172,19 +195,28 @@
             var d = ev.data;
             if (ev.origin !== API || ev.source !== window.parent || !d || d.type !== "duovox-offer-preview") return;
             if (!d.offer || typeof d.offer !== "object") return;
-            loadCards("preview").then(function () { show(d.offer, true); });   // each new message redraws it (no reload)
+            var list = [d.offer];
+            if (d.pair && typeof d.pair === "object") list.push(d.pair);
+            loadCards("preview").then(function () { lastPreview = list; show(list, true); });   // each message redraws (no reload)
         });
         try { window.parent.postMessage({ type: "duovox-offer-preview-ready" }, API); } catch (e) { /* not framed by the admin */ }
         return;
     }
 
+    // Live: the first offer, plus its partner if either names the other in web_pair (both must be live: in the list).
+    function pick(list) {
+        var o = list[0];
+        if (!o) return [];
+        var p = list.filter(function (x) { return x !== o && (x.id === o.web_pair || x.web_pair === o.id); })[0];
+        return p ? [o, p] : [o];   // a partner that is off / ended / not for this visitor is not in the list: one card
+    }
     fetch(API + "/offers?set=web&lang=" + encodeURIComponent(lang), { mode: "cors", credentials: "omit" })
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (d) {
-            var list = d && Array.isArray(d.offers) ? d.offers : [];
-            var o = list.filter(function (x) { return x && ID_RE.test(x.id || ""); })[0];
-            if (!o) return;
-            return loadCards(d.cards).then(function () { show(o, false); });
+            var list = (d && Array.isArray(d.offers) ? d.offers : []).filter(function (x) { return x && ID_RE.test(x.id || ""); });
+            var offers = pick(list);
+            if (!offers.length) return;
+            return loadCards(d.cards).then(function () { show(offers, false); });
         })
         .catch(function () { /* no offer shown: the page is as it always was */ });
 })();
