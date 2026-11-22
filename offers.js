@@ -31,10 +31,6 @@
                 body: JSON.stringify({ id: id, variant: variant, kind: kind }) }).catch(function () {});
         } catch (e) { /* not counted */ }
     }
-    function once(key) {
-        try { if (sessionStorage.getItem(key)) return false; sessionStorage.setItem(key, "1"); } catch (e) { /* count it anyway */ }
-        return true;
-    }
     function load(tag, attrs) {
         return new Promise(function (ok, fail) {
             var el = document.createElement(tag);
@@ -70,7 +66,7 @@
                 }
                 host.replaceChildren(card);
                 host.hidden = false;
-                if (once("offer-shown:" + o.id)) send(o.id, variant, "shown");
+                send(o.id, variant, "shown");   // once per page view (Admin, 22 Nov)
             });
         })
         .catch(function () { /* no offer shown: the page is as it always was */ });
