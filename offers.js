@@ -105,34 +105,94 @@
         if (window.MutationObserver) new MutationObserver(fix).observe(card, { subtree: true, childList: true });
     }
 
+    // ---- where, which shape and how big (set per offer in the admin's Website editor; 22 Nov 2026, David) ----
+    // web_layout: landscape (the app card's shape) | portrait. web_size: small | medium | large.
+    // web_place: top (under the opening section) | pricing (above the plans; on buy.html: the top) | after-pricing | bottom.
+    // A landscape card needs ~600px: on a narrower screen (phones) it is shown in portrait instead.
+    var SIZES = { small: 0.8, medium: 0.9, large: 1 };
+    function layout(o) {
+        var z = SIZES[o.web_size] || SIZES.medium, room = Math.max(280, (document.documentElement.clientWidth || 375) - 32);
+        var landscape = o.web_layout !== "portrait" && 600 * z <= room;
+        return { landscape: landscape, zoom: Math.min(z, room / (landscape ? 600 : 360)) };
+    }
+    var home0 = { parent: host.parentNode, next: host.nextSibling };   // where the page put it ("pricing")
+    function place(where) {
+        var page = /buy\.html$/.test(location.pathname) ? "buy" : "home";
+        var ANCHOR = {
+            home: { top: "#demo", "after-pricing": "#faq", bottom: ".disclaimer-section" },
+            buy: { "after-pricing": "footer.footer", bottom: "footer.footer" }
+        };
+        var sel = (ANCHOR[page] || {})[where], a = sel && document.querySelector(sel);
+        if (a && a.parentNode) { a.parentNode.insertBefore(host, a); host.classList.add("site-offer-out"); }
+        else { home0.parent.insertBefore(host, home0.next); host.classList.remove("site-offer-out"); }
+    }
+
+    var assets = null;
+    function loadCards(ver) {
+        if (!assets) {
+            var v = "?v=" + encodeURIComponent(String(ver || ""));
+            assets = Promise.all([
+                load("link", { rel: "stylesheet", href: API + "/offers/cards.css" + v }),
+                load("script", { src: API + "/offers/cards.js" + v })
+            ]);
+        }
+        return assets;
+    }
+    // preview (the admin's Website editor, below): nothing is counted, the button goes nowhere, and a "Preview" label says it
+    // is not a live offer.
+    function show(o, preview) {
+        if (typeof window.renderOfferCard !== "function") return;
+        var variant = o.variant === "b" ? "b" : "a";
+        var en = lang.indexOf("en") === 0;
+        var lay = layout(o);
+        var shown = Object.assign({}, en ? o : localise(o), lay.landscape ? { set: "app", dismissible: false } : {});
+        var card = window.renderOfferCard(shown);
+        card.style.zoom = String(lay.zoom);
+        place(o.web_place);
+        if (!en) localiseCard(card, o);
+        var cta = card.querySelector(".oc-cta");
+        if (cta && preview) {
+            cta.removeAttribute("href");
+            cta.addEventListener("click", function (e) { e.preventDefault(); });
+        } else if (cta) {
+            try {
+                var u = new URL(cta.getAttribute("href"), location.href);
+                if (u.searchParams.get("offer")) { u.searchParams.set("v", variant); cta.href = u.toString(); }
+            } catch (e) { /* keep the server's link */ }
+            cta.addEventListener("click", function () { send(o.id, variant, "click"); });
+        }
+        var kids = [card];
+        if (preview) {
+            var tag = document.createElement("div");
+            tag.className = "site-offer-preview";
+            tag.textContent = "Preview - not a live offer";
+            kids.unshift(tag);
+        }
+        host.replaceChildren.apply(host, kids);
+        host.hidden = false;
+        if (preview) host.scrollIntoView({ block: "center" });
+        else send(o.id, variant, "shown");   // once per page view (Admin, 22 Nov)
+    }
+    // The admin frames this page (URL + #offer-preview) and posts the draft to it. Only a message from the admin origin, sent by
+    // the frame's own parent, is accepted: a link on its own shows nothing, so nobody can make duovox.net show a made-up offer.
+    if (/[#&]offer-preview\b/.test(location.hash) && window.parent !== window) {
+        window.addEventListener("message", function (ev) {
+            var d = ev.data;
+            if (ev.origin !== API || ev.source !== window.parent || !d || d.type !== "duovox-offer-preview") return;
+            if (!d.offer || typeof d.offer !== "object") return;
+            loadCards("preview").then(function () { show(d.offer, true); });   // each new message redraws it (no reload)
+        });
+        try { window.parent.postMessage({ type: "duovox-offer-preview-ready" }, API); } catch (e) { /* not framed by the admin */ }
+        return;
+    }
+
     fetch(API + "/offers?set=web&lang=" + encodeURIComponent(lang), { mode: "cors", credentials: "omit" })
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (d) {
             var list = d && Array.isArray(d.offers) ? d.offers : [];
             var o = list.filter(function (x) { return x && ID_RE.test(x.id || ""); })[0];
             if (!o) return;
-            var v = "?v=" + encodeURIComponent(String(d.cards || ""));
-            return Promise.all([
-                load("link", { rel: "stylesheet", href: API + "/offers/cards.css" + v }),
-                load("script", { src: API + "/offers/cards.js" + v })
-            ]).then(function () {
-                if (typeof window.renderOfferCard !== "function") return;
-                var variant = o.variant === "b" ? "b" : "a";
-                var en = lang.indexOf("en") === 0;
-                var card = window.renderOfferCard(en ? o : localise(o));
-                if (!en) localiseCard(card, o);
-                var cta = card.querySelector(".oc-cta");
-                if (cta) {
-                    try {
-                        var u = new URL(cta.getAttribute("href"), location.href);
-                        if (u.searchParams.get("offer")) { u.searchParams.set("v", variant); cta.href = u.toString(); }
-                    } catch (e) { /* keep the server's link */ }
-                    cta.addEventListener("click", function () { send(o.id, variant, "click"); });
-                }
-                host.replaceChildren(card);
-                host.hidden = false;
-                send(o.id, variant, "shown");   // once per page view (Admin, 22 Nov)
-            });
+            return loadCards(d.cards).then(function () { show(o, false); });
         })
         .catch(function () { /* no offer shown: the page is as it always was */ });
 })();
