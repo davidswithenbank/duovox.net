@@ -127,6 +127,7 @@
     #pricing .price-notes .cta-micro { margin: 0.2rem 0 0; }
     @media (max-width: 768px) { #pricing .btn-spacer { display: none; } #pricing .price-notes { min-height: 0; } }
 </style>
+<style>.site-offer{display:flex;justify-content:center;margin:0 auto 2rem;padding:0 16px;max-width:100%}.site-offer[hidden]{display:none}.site-offer .oc-web{max-width:100%}</style>
 </head>
 <body class="home-c">
 <a href="#main-content" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
@@ -488,6 +489,7 @@
 <section class="section" id="pricing">
     <h2 class="section-title" data-i18n="home.pricing.title">Simple Pricing</h2>
     <p class="section-subtitle" data-i18n-html="home.pricing.subtitle">Choose the plan that fits how you use DuoVox. Longer-term plans cost less than paying month by month, or pay only for what you use with Pay-As-You-Go.<br><small style="opacity:0.6;">Default prices in USD. UK visitors see GBP. DuoVox is not yet available in the EU or EEA. At checkout the Microsoft Store, or Paddle if you pay by card or PayPal on duovox.net, charges the equivalent in your local currency. Subscriptions renew automatically until you cancel, and you can cancel at any time.</small></p>
+    <div id="site-offer" class="site-offer" hidden></div>
     <div class="pricing-grid four-col">
 
         <!-- Free tier -->
@@ -716,6 +718,7 @@
 </footer>
 
 <script src="i18n.js"></script>
+<script src="offers.js" defer></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6da9362d8d7f49fc913578849ffbc7bb"}'></script><!-- End Cloudflare Web Analytics -->
 <script src="/store-click.js" defer></script>
 <!-- Paddle Retain (payment recovery, 17 Nov 2026): Paddle.js, then api.duovox.net initialises it with the client-side token. -->
