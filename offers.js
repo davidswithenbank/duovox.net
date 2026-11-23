@@ -15,6 +15,9 @@
             for (var i = 0; i < links.length; i++) {
                 var u = new URL(links[i].href);
                 u.searchParams.set("offer", oid); u.searchParams.set("v", ov);
+                // 23 Nov 2026 (Worker item 11.4): the page language, so an offer limited to some languages is honoured at checkout
+                // (the same lower-case code this page sends to /offers?lang=).
+                u.searchParams.set("lang", (document.documentElement.lang || "en").toLowerCase());
                 links[i].href = u.toString();
             }
         }
