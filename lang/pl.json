@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "Wróć",
   "offer.t.win-back.eyebrow": "Witamy ponownie",
   "offer.t.win-back.headline": "Tęskniliśmy za Tobą",
-  "offer.t.win-back.subhead": "Wróć do {hours} godzin {tier} za mniej."
+  "offer.t.win-back.subhead": "Wróć do {hours} godzin {tier} za mniej.",
+  "plan.btn.app": "Pobierz bezpłatną aplikację",
+  "plan.btn.plan": "Kup ten plan",
+  "plan.btn.via": "kartą lub przez PayPal",
+  "plan.btn.hours": "Kup godziny"
 }

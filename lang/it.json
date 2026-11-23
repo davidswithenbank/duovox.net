@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "Torna",
   "offer.t.win-back.eyebrow": "Bentornato",
   "offer.t.win-back.headline": "Ci sei mancato",
-  "offer.t.win-back.subhead": "Torna a {hours} ore {tier} a meno."
+  "offer.t.win-back.subhead": "Torna a {hours} ore {tier} a meno.",
+  "plan.btn.app": "Ottieni l'app gratuita",
+  "plan.btn.plan": "Acquista questo piano",
+  "plan.btn.via": "carta o PayPal",
+  "plan.btn.hours": "Acquista ore"
 }

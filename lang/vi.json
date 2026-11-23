@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "Quay lại",
   "offer.t.win-back.eyebrow": "Chào mừng bạn quay lại",
   "offer.t.win-back.headline": "Chúng tôi đã nhớ bạn",
-  "offer.t.win-back.subhead": "Quay lại với {hours} giờ {tier} với chi phí thấp hơn."
+  "offer.t.win-back.subhead": "Quay lại với {hours} giờ {tier} với chi phí thấp hơn.",
+  "plan.btn.app": "Tải ứng dụng miễn phí",
+  "plan.btn.plan": "Mua gói này",
+  "plan.btn.via": "thẻ hoặc PayPal",
+  "plan.btn.hours": "Mua giờ"
 }

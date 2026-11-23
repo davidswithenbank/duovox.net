@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "Повернутися",
   "offer.t.win-back.eyebrow": "З поверненням",
   "offer.t.win-back.headline": "Ми за вами скучили",
-  "offer.t.win-back.subhead": "Поверніться до {hours} {tier} годин дешевше."
+  "offer.t.win-back.subhead": "Поверніться до {hours} {tier} годин дешевше.",
+  "plan.btn.app": "Завантажити безкоштовний застосунок",
+  "plan.btn.plan": "Купити цей план",
+  "plan.btn.via": "карткою або через PayPal",
+  "plan.btn.hours": "Купити години"
 }

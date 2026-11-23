@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "عُد",
   "offer.t.win-back.eyebrow": "مرحبًا بعودتك",
   "offer.t.win-back.headline": "لقد افتقدناك",
-  "offer.t.win-back.subhead": "عُد إلى {hours} ساعة من {tier} بسعر أقل."
+  "offer.t.win-back.subhead": "عُد إلى {hours} ساعة من {tier} بسعر أقل.",
+  "plan.btn.app": "احصل على التطبيق المجاني",
+  "plan.btn.plan": "اشترِ هذه الباقة",
+  "plan.btn.via": "بطاقة أو PayPal",
+  "plan.btn.hours": "شراء ساعات"
 }

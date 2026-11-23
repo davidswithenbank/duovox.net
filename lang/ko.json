@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "다시 돌아오기",
   "offer.t.win-back.eyebrow": "다시 오신 것을 환영합니다",
   "offer.t.win-back.headline": "다시 뵙고 싶었습니다",
-  "offer.t.win-back.subhead": "{hours} {tier} 시간을 더 저렴하게 이용하러 다시 돌아오세요."
+  "offer.t.win-back.subhead": "{hours} {tier} 시간을 더 저렴하게 이용하러 다시 돌아오세요.",
+  "plan.btn.app": "무료 앱 받기",
+  "plan.btn.plan": "이 플랜 구매",
+  "plan.btn.via": "카드 또는 PayPal",
+  "plan.btn.hours": "시간 구매"
 }

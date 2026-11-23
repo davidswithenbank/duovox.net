@@ -122,10 +122,29 @@
     #pricing .btn-secondary.btn-store:not(.btn-card) { border: 1px solid var(--accent); }
     #pricing .btn-card { background: transparent; border: 1px solid var(--border); }
     #pricing .btn-card:hover { border-color: var(--accent-light); }
+    /* 23 Nov 2026 (David: the two buttons were misleading - one downloads the app, the other buys): short labels that say
+       what each does; the card button carries 'card or PayPal' small under its label. */
+    #pricing .btn-card, #pricing .btn-spacer { min-height: 3.5rem; padding-top: 0.55rem; padding-bottom: 0.55rem; }
+    #pricing .btn-two { display: flex; flex-direction: column; align-items: center; line-height: 1.15; }
+    #pricing .btn-two small { font-size: 0.74rem; font-weight: 400; opacity: 0.75; margin-top: 0.15rem; }
     #pricing .btn-spacer { visibility: hidden; }
     #pricing .price-notes { min-height: 3.6em; }
     #pricing .price-notes .cta-micro { margin: 0.2rem 0 0; }
     @media (max-width: 768px) { #pricing .btn-spacer { display: none; } #pricing .price-notes { min-height: 0; } }
+    /* 23 Nov 2026: the buttons line up in EVERY language. The cards share the grid's rows (subgrid): name, price, period,
+       best-for, features, Store button, card button, notes - so a longer translated label or note in one card moves the
+       same row in all of them. Browsers without subgrid keep the layout above. */
+    @supports (grid-template-rows: subgrid) {
+        @media (min-width: 769px) {
+            #pricing .pricing-grid { row-gap: 0; }
+            #pricing .price-card { display: grid; grid-template-rows: subgrid; grid-row: span 8; row-gap: 0; align-content: start; }
+            #pricing .price-actions { display: contents; }
+            #pricing .price-actions > .btn-store { margin-top: 0.6rem; align-self: stretch; }
+            #pricing .price-actions > .btn-store:first-child { margin-top: 1.1rem; }
+            #pricing .price-notes { min-height: 0; margin-top: 0.6rem; }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) { #pricing .price-card { margin-bottom: 1.5rem; } }
+    }
 </style>
 <style>.site-offer{display:flex;flex-direction:column;align-items:center;margin:0 auto 2rem;padding:0 16px;max-width:100%}.site-offer[hidden]{display:none}.site-offer .oc-web,.site-offer .oc-app{max-width:100%}.site-offer-out{margin:2.5rem auto}.site-offer-row{flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:24px}.site-offer-pair:not(.site-offer-row){gap:24px}</style>
 </head>
@@ -668,7 +687,7 @@
                 <li data-i18n="home.pricing.free.f4">In-app promotional messages</li>
             </ul>
             <div class="price-actions">
-                <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="cta.ms_get">Get it on the Microsoft Store</span></a>
+                <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="plan.btn.app">Get the free app</span></a>
                 <span class="btn btn-store btn-spacer" aria-hidden="true"></span>
                 <div class="price-notes">
                     <p class="cta-micro" data-i18n="home.pricing.free.micro">No account needed.</p>
@@ -694,8 +713,8 @@
                 <li data-i18n="home.pricing.standard.f5">Cancel anytime</li>
             </ul>
             <div class="price-actions">
-                <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="cta.ms_get">Get it on the Microsoft Store</span></a>
-                <a href="buy.html#plans" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span data-i18n="pay.card.button">Pay by card or PayPal</span></a>
+                <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="plan.btn.app">Get the free app</span></a>
+                <a href="buy.html#plans" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span class="btn-two"><span data-i18n="plan.btn.plan">Buy this plan</span><small data-i18n="plan.btn.via">card or PayPal</small></span></a>
                 <div class="price-notes">
                     <p class="cta-micro" data-i18n="home.pricing.standard.micro">Best if you use it 10+ hours per month.</p>
                 </div>
@@ -723,8 +742,8 @@
                 <li data-i18n="home.pricing.professional.f7">Private Mode</li>
             </ul>
             <div class="price-actions">
-                <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="cta.ms_get">Get it on the Microsoft Store</span></a>
-                <a href="buy.html#plans" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span data-i18n="pay.card.button">Pay by card or PayPal</span></a>
+                <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="plan.btn.app">Get the free app</span></a>
+                <a href="buy.html#plans" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span class="btn-two"><span data-i18n="plan.btn.plan">Buy this plan</span><small data-i18n="plan.btn.via">card or PayPal</small></span></a>
                 <div class="price-notes">
                     <p class="cta-micro" data-i18n="home.pricing.professional.micro">Best if you use it 28+ hours per month.</p>
                 </div>
@@ -751,8 +770,8 @@
                 <li data-i18n="home.pricing.payg.f5">Credits never expire</li>
             </ul>
             <div class="price-actions">
-                <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="cta.ms_get">Get it on the Microsoft Store</span></a>
-                <a href="buy.html#hours" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span data-i18n="pay.card.button">Pay by card or PayPal</span></a>
+                <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="plan.btn.app">Get the free app</span></a>
+                <a href="buy.html#hours" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span class="btn-two"><span data-i18n="plan.btn.hours">Buy hours</span><small data-i18n="plan.btn.via">card or PayPal</small></span></a>
                 <div class="price-notes">
                     <p class="cta-micro" data-i18n="cta.credits_note">Credits can also be bought inside the app.</p>
                     <p class="cta-micro" data-i18n="home.pricing.payg.micro">Try either tier without subscribing.</p>

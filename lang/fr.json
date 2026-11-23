@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "Revenez",
   "offer.t.win-back.eyebrow": "Bon retour",
   "offer.t.win-back.headline": "Vous nous avez manqué",
-  "offer.t.win-back.subhead": "Revenez pour {hours} heures {tier} à moindre coût."
+  "offer.t.win-back.subhead": "Revenez pour {hours} heures {tier} à moindre coût.",
+  "plan.btn.app": "Télécharger l’application gratuite",
+  "plan.btn.plan": "Acheter ce forfait",
+  "plan.btn.via": "carte ou PayPal",
+  "plan.btn.hours": "Acheter des heures"
 }

@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "Kembali lagi",
   "offer.t.win-back.eyebrow": "Selamat datang kembali",
   "offer.t.win-back.headline": "Kami merindukan Anda",
-  "offer.t.win-back.subhead": "Kembali ke {hours} Hours {tier} dengan harga lebih murah."
+  "offer.t.win-back.subhead": "Kembali ke {hours} Hours {tier} dengan harga lebih murah.",
+  "plan.btn.app": "Dapatkan aplikasi gratis",
+  "plan.btn.plan": "Beli paket ini",
+  "plan.btn.via": "kartu atau PayPal",
+  "plan.btn.hours": "Beli jam"
 }

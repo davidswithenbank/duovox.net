@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "Geri dönün",
   "offer.t.win-back.eyebrow": "Yeniden hoş geldiniz",
   "offer.t.win-back.headline": "Sizi özledik",
-  "offer.t.win-back.subhead": "Daha ucuza {hours} {tier} saat için geri dönün."
+  "offer.t.win-back.subhead": "Daha ucuza {hours} {tier} saat için geri dönün.",
+  "plan.btn.app": "Ücretsiz uygulamayı edinin",
+  "plan.btn.plan": "Bu planı satın alın",
+  "plan.btn.via": "kart veya PayPal",
+  "plan.btn.hours": "Saat satın alın"
 }

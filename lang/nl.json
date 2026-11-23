@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "Kom terug",
   "offer.t.win-back.eyebrow": "Welkom terug",
   "offer.t.win-back.headline": "We hebben je gemist",
-  "offer.t.win-back.subhead": "Kom terug naar {hours} {tier} uur voor minder."
+  "offer.t.win-back.subhead": "Kom terug naar {hours} {tier} uur voor minder.",
+  "plan.btn.app": "Download de gratis app",
+  "plan.btn.plan": "Koop dit abonnement",
+  "plan.btn.via": "kaart of PayPal",
+  "plan.btn.hours": "Koop uren"
 }

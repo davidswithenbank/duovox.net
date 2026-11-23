@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "回来看看",
   "offer.t.win-back.eyebrow": "欢迎回来",
   "offer.t.win-back.headline": "我们想你了",
-  "offer.t.win-back.subhead": "回来购买 {hours} {tier} 时长，更划算。"
+  "offer.t.win-back.subhead": "回来购买 {hours} {tier} 时长，更划算。",
+  "plan.btn.app": "获取免费应用",
+  "plan.btn.plan": "购买此方案",
+  "plan.btn.via": "银行卡或 PayPal",
+  "plan.btn.hours": "购买时长"
 }

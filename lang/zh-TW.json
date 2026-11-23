@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "回來吧",
   "offer.t.win-back.eyebrow": "歡迎回來",
   "offer.t.win-back.headline": "我們想你了",
-  "offer.t.win-back.subhead": "回來享有更優惠的 {hours} {tier} 時數。"
+  "offer.t.win-back.subhead": "回來享有更優惠的 {hours} {tier} 時數。",
+  "plan.btn.app": "取得免費應用程式",
+  "plan.btn.plan": "購買此方案",
+  "plan.btn.via": "使用卡片或 PayPal",
+  "plan.btn.hours": "購買時數"
 }

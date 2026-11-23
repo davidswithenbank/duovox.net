@@ -1160,5 +1160,9 @@
   "offer.t.win-back.subhead": "कम कीमत में {hours} {tier} घंटों के साथ वापस आएँ।",
   "offer.t.try-pro.cta": "प्रोफ़ेशनल आज़माएँ",
   "offer.t.try-pro.eyebrow": "प्रोफ़ेशनल आज़माएँ",
-  "offer.t.try-pro.subhead": "कम कीमत में {hours} प्रोफ़ेशनल घंटे: विशेषज्ञ और पेशेवर काम के लिए बनाया गया।"
+  "offer.t.try-pro.subhead": "कम कीमत में {hours} प्रोफ़ेशनल घंटे: विशेषज्ञ और पेशेवर काम के लिए बनाया गया।",
+  "plan.btn.app": "मुफ़्त ऐप प्राप्त करें",
+  "plan.btn.plan": "यह प्लान खरीदें",
+  "plan.btn.via": "कार्ड या PayPal",
+  "plan.btn.hours": "घंटे खरीदें"
 }

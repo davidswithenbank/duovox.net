@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "戻る",
   "offer.t.win-back.eyebrow": "おかえりなさい",
   "offer.t.win-back.headline": "あなたがいなくて寂しかったです",
-  "offer.t.win-back.subhead": "{hours}時間分の{tier}を、もう一度お得に。"
+  "offer.t.win-back.subhead": "{hours}時間分の{tier}を、もう一度お得に。",
+  "plan.btn.app": "無料アプリを入手",
+  "plan.btn.plan": "このプランを購入",
+  "plan.btn.via": "カードまたはPayPal",
+  "plan.btn.hours": "時間を購入"
 }

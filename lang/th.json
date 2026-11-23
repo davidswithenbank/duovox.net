@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "กลับมา",
   "offer.t.win-back.eyebrow": "ยินดีต้อนรับกลับ",
   "offer.t.win-back.headline": "เราคิดถึงคุณ",
-  "offer.t.win-back.subhead": "กลับมารับ {hours} ชั่วโมง {tier} ในราคาที่ถูกลง"
+  "offer.t.win-back.subhead": "กลับมารับ {hours} ชั่วโมง {tier} ในราคาที่ถูกลง",
+  "plan.btn.app": "ดาวน์โหลดแอปฟรี",
+  "plan.btn.plan": "ซื้อแพลนนี้",
+  "plan.btn.via": "บัตรหรือ PayPal",
+  "plan.btn.hours": "ซื้อชั่วโมง"
 }

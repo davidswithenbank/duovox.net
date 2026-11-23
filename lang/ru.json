@@ -1160,5 +1160,9 @@
   "offer.t.win-back.cta": "Вернуться",
   "offer.t.win-back.eyebrow": "С возвращением",
   "offer.t.win-back.headline": "Мы скучали по вам",
-  "offer.t.win-back.subhead": "Вернитесь к {hours} часам {tier} по более низкой цене."
+  "offer.t.win-back.subhead": "Вернитесь к {hours} часам {tier} по более низкой цене.",
+  "plan.btn.app": "Скачать бесплатное приложение",
+  "plan.btn.plan": "Купить этот план",
+  "plan.btn.via": "картой или через PayPal",
+  "plan.btn.hours": "Купить пакет часов"
 }
