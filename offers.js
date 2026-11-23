@@ -70,6 +70,12 @@
                 if (!s) return;
                 s = s.replace(/\{(hours|tier|save|bonus|pack)\}/g, function (_, k) { var x = val[k] || ""; if (!x) ok = false; return x; });
                 if (ok) r[f] = s;   // a value missing (e.g. no saving to quote): the card's own English line stays
+                else if (f === "subhead" && o.mechanic === "range") {
+                    // a sale on every pack has no single number of hours: use the translated "Every {tier} pack for less" line
+                    // (David, 23 Nov) - dropping {hours} from the type's own line breaks the grammar in some languages
+                    var rs = T("offer.t.range.subhead");
+                    if (rs && (val.tier || rs.indexOf("{tier}") < 0)) r[f] = rs.replace(/\{tier\}/g, val.tier);
+                }
             });
         }
         if (!r.headline) r.headline = T("offer.ui.special") || "";
