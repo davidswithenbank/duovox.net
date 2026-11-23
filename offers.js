@@ -129,16 +129,26 @@
         if (widthOf(false, za) + GAP + widthOf(false, zb) <= r) return { row: true, lays: [{ landscape: false, zoom: za }, { landscape: false, zoom: zb }] };
         return { row: false, lays: [layout(a), layout(b)] };
     }
-    var home0 = { parent: host.parentNode, next: host.nextSibling };   // where the page put it ("pricing")
-    function place(where) {
+    // ---- spots (23 Nov 2026, David's redesigned editor: the page has four spots, every one can hold an offer or two) ----
+    // The page's own #site-offer is the "pricing" spot; the others get their own box before their anchor.
+    function spotKey(where) {
         var page = /buy\.html$/.test(location.pathname) ? "buy" : "home";
         var ANCHOR = {
             home: { top: "#demo", "after-pricing": "#faq", bottom: ".disclaimer-section" },
             buy: { "after-pricing": "footer.footer", bottom: "footer.footer" }
         };
-        var sel = (ANCHOR[page] || {})[where], a = sel && document.querySelector(sel);
-        if (a && a.parentNode) { a.parentNode.insertBefore(host, a); host.classList.add("site-offer-out"); }
-        else { home0.parent.insertBefore(host, home0.next); host.classList.remove("site-offer-out"); }
+        var sel = (ANCHOR[page] || {})[where];
+        return sel && document.querySelector(sel) ? sel : "";   // "" = where the page put #site-offer
+    }
+    var extraHosts = [];
+    function hostFor(key, made) {
+        if (!key) return host;
+        if (made[key]) return made[key];
+        var a = document.querySelector(key), h = document.createElement("div");
+        h.className = "site-offer site-offer-out";
+        a.parentNode.insertBefore(h, a);
+        extraHosts.push(h);
+        return (made[key] = h);
     }
 
     var assets = null;
@@ -173,21 +183,56 @@
         }
         return card;
     }
-    // offers: one, or two shown side by side (the first one's place decides where).
-    function show(offers, preview) {
-        if (typeof window.renderOfferCard !== "function" || !offers.length) return;
-        var pl = offers.length > 1 ? pairLayout(offers[0], offers[1]) : { row: false, lays: [layout(offers[0])] };
-        var cards = offers.map(function (o, i) { return build(o, pl.lays[i], preview); });
-        place(offers[0].web_place);
-        host.classList.toggle("site-offer-pair", offers.length > 1);
-        host.classList.toggle("site-offer-row", offers.length > 1 && pl.row);
-        host.replaceChildren.apply(host, cards);   // no "Preview" label (David, 22 Nov); the postMessage gate below is the protection
-        host.hidden = false;
-        if (preview) host.scrollIntoView({ block: "center" });
-        else offers.forEach(function (o) { send(o.id, o.variant === "b" ? "b" : "a", "shown"); });   // once per page view, per card
+    // groups: [[offer] or [offer, partner]], each drawn at its first offer's spot. Groups landing on the same spot (buy.html has
+    // only two) share it in one wrapping row.
+    function show(groups, preview, quiet) {
+        if (typeof window.renderOfferCard !== "function") return;
+        extraHosts.forEach(function (h) { h.remove(); });
+        extraHosts = [];
+        host.replaceChildren(); host.hidden = true;
+        var made = {}, perHost = [], first = null;
+        groups.forEach(function (g) {
+            var h = hostFor(spotKey(g[0].web_place), made);
+            var e = perHost.filter(function (x) { return x.h === h; })[0];
+            if (!e) perHost.push(e = { h: h, offers: [] });
+            e.offers = e.offers.concat(g);
+        });
+        perHost.forEach(function (e) {
+            var os = e.offers;
+            var pl = os.length === 2 ? pairLayout(os[0], os[1])
+                   : { row: os.length > 2, lays: os.map(layout) };
+            var cards = os.map(function (o, i) { return build(o, pl.lays[i], preview); });
+            e.h.classList.toggle("site-offer-pair", os.length > 1);
+            e.h.classList.toggle("site-offer-row", os.length > 1 && pl.row);
+            e.h.replaceChildren.apply(e.h, cards);   // no "Preview" label (David, 22 Nov); the postMessage gate is the protection
+            e.h.hidden = false;
+            if (!first) first = e.h;
+            if (!preview && !quiet) os.forEach(function (o) { send(o.id, o.variant === "b" ? "b" : "a", "shown"); });   // once per view, per card
+        });
+        return first;
     }
-    var lastPreview = null;
-    window.addEventListener("resize", function () { if (lastPreview) show(lastPreview, true); });
+    // A list of offers -> groups: by spot in list order; each spot's first offer + the one it names in web_pair (either way;
+    // the server pairs same-spot offers itself). Never more than two to a spot; a partner is drawn only once.
+    function groupOffers(list) {
+        var used = [], groups = [], taken = {};
+        list.forEach(function (o) {
+            if (used.indexOf(o) >= 0) return;
+            var spot = spotKey(o.web_place) || "pricing";
+            if (taken[spot]) return;
+            var p = list.filter(function (x) {
+                return x !== o && used.indexOf(x) < 0 && (x.id === o.web_pair || x.web_pair === o.id);
+            })[0];
+            used.push(o); if (p) used.push(p);
+            taken[spot] = true;
+            groups.push(p ? [o, p] : [o]);
+        });
+        return groups;
+    }
+    var lastPreview = null, lastLive = null, resizeT = 0;
+    window.addEventListener("resize", function () {   // the shape follows the window (a redraw is not counted again)
+        clearTimeout(resizeT);
+        resizeT = setTimeout(function () { if (lastPreview) show(lastPreview, true); else if (lastLive) show(lastLive, false, true); }, 150);
+    });
     // The admin frames this page (URL + #offer-preview) and posts the draft to it. Only a message from the admin origin, sent by
     // the frame's own parent, is accepted: a link on its own shows nothing, so nobody can make duovox.net show a made-up offer.
     if (/[#&]offer-preview\b/.test(location.hash) && window.parent !== window) {
@@ -195,28 +240,34 @@
             var d = ev.data;
             if (ev.origin !== API || ev.source !== window.parent || !d || d.type !== "duovox-offer-preview") return;
             if (!d.offer || typeof d.offer !== "object") return;
-            var list = [d.offer];
-            if (d.pair && typeof d.pair === "object") list.push(d.pair);
-            loadCards("preview").then(function () { lastPreview = list; show(list, true); });   // each message redraws (no reload)
+            var draft = [d.offer];
+            if (d.pair && typeof d.pair === "object") draft.push(d.pair);
+            var others = (Array.isArray(d.others) ? d.others : []).filter(function (x) { return x && typeof x === "object"; });
+            // the other spots: two in the same spot side by side
+            var bySpot = {}, order = [];
+            others.forEach(function (x) {
+                var k = spotKey(x.web_place) || "pricing";
+                if (!bySpot[k]) { bySpot[k] = []; order.push(k); }
+                if (bySpot[k].length < 2) bySpot[k].push(x);
+            });
+            var groups = [draft].concat(order.map(function (k) { return bySpot[k]; }));
+            loadCards("preview").then(function () {
+                lastPreview = groups;
+                var h = show(groups, true);
+                if (h) h.scrollIntoView({ block: "center" });   // the draft's spot
+            });
         });
         try { window.parent.postMessage({ type: "duovox-offer-preview-ready" }, API); } catch (e) { /* not framed by the admin */ }
         return;
     }
 
-    // Live: the first offer, plus its partner if either names the other in web_pair (both must be live: in the list).
-    function pick(list) {
-        var o = list[0];
-        if (!o) return [];
-        var p = list.filter(function (x) { return x !== o && (x.id === o.web_pair || x.web_pair === o.id); })[0];
-        return p ? [o, p] : [o];   // a partner that is off / ended / not for this visitor is not in the list: one card
-    }
     fetch(API + "/offers?set=web&lang=" + encodeURIComponent(lang), { mode: "cors", credentials: "omit" })
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (d) {
             var list = (d && Array.isArray(d.offers) ? d.offers : []).filter(function (x) { return x && ID_RE.test(x.id || ""); });
-            var offers = pick(list);
-            if (!offers.length) return;
-            return loadCards(d.cards).then(function () { show(offers, false); });
+            var groups = groupOffers(list);
+            if (!groups.length) return;
+            return loadCards(d.cards).then(function () { lastLive = groups; show(groups, false); });
         })
         .catch(function () { /* no offer shown: the page is as it always was */ });
 })();
