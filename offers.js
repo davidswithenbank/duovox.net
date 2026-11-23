@@ -185,7 +185,7 @@
     }
     // groups: [[offer] or [offer, partner]], each drawn at its first offer's spot. Groups landing on the same spot (buy.html has
     // only two) share it in one wrapping row.
-    var counted = {};
+    var shownIds = Object.create(null);   // NOT "counted": that name is the wording function above
     function show(groups, preview, quiet) {
         if (typeof window.renderOfferCard !== "function") return;
         extraHosts.forEach(function (h) { h.remove(); });
@@ -209,8 +209,8 @@
             e.h.hidden = false;
             if (!first) first = e.h;
             if (!preview && !quiet) os.forEach(function (o) {   // once per OFFER per view: one offer in two spots counts once
-                if (counted[o.id]) return;
-                counted[o.id] = true;
+                if (shownIds[o.id]) return;
+                shownIds[o.id] = true;
                 send(o.id, o.variant === "b" ? "b" : "a", "shown");
             });
         });
