@@ -185,6 +185,7 @@
     }
     // groups: [[offer] or [offer, partner]], each drawn at its first offer's spot. Groups landing on the same spot (buy.html has
     // only two) share it in one wrapping row.
+    var counted = {};
     function show(groups, preview, quiet) {
         if (typeof window.renderOfferCard !== "function") return;
         extraHosts.forEach(function (h) { h.remove(); });
@@ -207,7 +208,11 @@
             e.h.replaceChildren.apply(e.h, cards);   // no "Preview" label (David, 22 Nov); the postMessage gate is the protection
             e.h.hidden = false;
             if (!first) first = e.h;
-            if (!preview && !quiet) os.forEach(function (o) { send(o.id, o.variant === "b" ? "b" : "a", "shown"); });   // once per view, per card
+            if (!preview && !quiet) os.forEach(function (o) {   // once per OFFER per view: one offer in two spots counts once
+                if (counted[o.id]) return;
+                counted[o.id] = true;
+                send(o.id, o.variant === "b" ? "b" : "a", "shown");
+            });
         });
         return first;
     }
@@ -220,7 +225,8 @@
             var spot = spotKey(o.web_place) || "pricing";
             if (taken[spot]) return;
             var p = list.filter(function (x) {
-                return x !== o && used.indexOf(x) < 0 && (x.id === o.web_pair || x.web_pair === o.id);
+                return x !== o && used.indexOf(x) < 0 && (x.id === o.web_pair || x.web_pair === o.id)
+                    && (spotKey(x.web_place) || "pricing") === spot;   // the same offer may be in several spots: partner from THIS spot only
             })[0];
             used.push(o); if (p) used.push(p);
             taken[spot] = true;
