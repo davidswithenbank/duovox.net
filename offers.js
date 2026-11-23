@@ -46,7 +46,9 @@
     // English on the page); a "custom" offer keeps what he typed. The footnote is always kept as typed: it may carry a condition.
     var tplEl = document.getElementById("offer-i18n");
     function T(k) {
-        var e = tplEl && tplEl.content ? tplEl.content.querySelector('[data-i18n="' + k + '"]') : null;
+        var e = null;
+        try { e = tplEl && tplEl.content ? tplEl.content.querySelector('[data-i18n="' + k + '"]') : null; }
+        catch (x) { /* a key the selector cannot hold: no translation, the English stays */ }
         return e ? e.textContent : "";
     }
     function fill(s, m) { return String(s).replace(/\{(n|p|d)\}/g, function (_, k) { return m[k]; }); }
@@ -99,7 +101,7 @@
         var fix = function () {
             var t = card.querySelector(".oc-timer > span");
             if (t && swap[t.textContent] && t.textContent !== swap[t.textContent]) t.textContent = swap[t.textContent];
-            if (copy && swap[copy.textContent]) copy.textContent = swap[copy.textContent];
+            if (copy && swap[copy.textContent] && copy.textContent !== swap[copy.textContent]) copy.textContent = swap[copy.textContent];   // guard: an equal write still fires the observer (endless loop)
         };
         fix();
         if (window.MutationObserver) new MutationObserver(fix).observe(card, { subtree: true, childList: true });
@@ -165,7 +167,8 @@
     // preview (the admin's Website editor, below): nothing is counted and the button goes nowhere.
     function build(o, lay, preview) {
         var variant = o.variant === "b" ? "b" : "a";
-        var en = lang.indexOf("en") === 0;
+        // "Translate into every app and site language" unticked in the admin: show it exactly as David typed it
+        var en = lang.indexOf("en") === 0 || o.auto_translate === false;
         var shown = Object.assign({}, en ? o : localise(o), lay.landscape ? { set: "app", dismissible: false } : {});
         var card = window.renderOfferCard(shown);
         card.style.zoom = String(lay.zoom);
@@ -217,22 +220,37 @@
         return first;
     }
     // A list of offers -> groups: by spot in list order; each spot's first offer + the one it names in web_pair (either way;
-    // the server pairs same-spot offers itself). Never more than two to a spot; a partner is drawn only once.
+    // the server pairs same-spot offers itself). A partner is drawn only once.
+    // The limit is per BOX, not per spot name: buy.html has two boxes for four spots (top = pricing, after-pricing = bottom), so
+    // two single offers there share a box side by side, never more than two, and never the same offer twice in one box.
+    function boxOf(o) { return spotKey(o.web_place) || "pricing"; }
     function groupOffers(list) {
-        var used = [], groups = [], taken = {};
+        var used = [], groups = [], inBox = {};
         list.forEach(function (o) {
             if (used.indexOf(o) >= 0) return;
-            var spot = spotKey(o.web_place) || "pricing";
-            if (taken[spot]) return;
-            var p = list.filter(function (x) {
-                return x !== o && used.indexOf(x) < 0 && (x.id === o.web_pair || x.web_pair === o.id)
-                    && (spotKey(x.web_place) || "pricing") === spot;   // the same offer may be in several spots: partner from THIS spot only
+            var box = boxOf(o), have = inBox[box] || [];
+            if (have.length >= 2 || have.indexOf(o.id) >= 0) return;
+            var p = have.length ? null : list.filter(function (x) {
+                return x !== o && used.indexOf(x) < 0 && x.id !== o.id && (x.id === o.web_pair || x.web_pair === o.id)
+                    && boxOf(x) === box;   // the same offer may be in several spots: partner from THIS box only
             })[0];
             used.push(o); if (p) used.push(p);
-            taken[spot] = true;
+            inBox[box] = have.concat(p ? [o.id, p.id] : [o.id]);
             groups.push(p ? [o, p] : [o]);
         });
         return groups;
+    }
+    // The same limit for the admin preview, so the preview never shows a card the live page would leave out.
+    function capPerBox(groups) {
+        var inBox = {};
+        return groups.map(function (g) {
+            var box = boxOf(g[0]), have = inBox[box] || (inBox[box] = []);
+            return g.filter(function (o) {
+                if (have.length >= 2 || (o.id && have.indexOf(o.id) >= 0)) return false;
+                have.push(o.id || {});
+                return true;
+            });
+        }).filter(function (g) { return g.length; });
     }
     var lastPreview = null, lastLive = null, resizeT = 0;
     window.addEventListener("resize", function () {   // the shape follows the window (a redraw is not counted again)
@@ -256,7 +274,7 @@
                 if (!bySpot[k]) { bySpot[k] = []; order.push(k); }
                 if (bySpot[k].length < 2) bySpot[k].push(x);
             });
-            var groups = [draft].concat(order.map(function (k) { return bySpot[k]; }));
+            var groups = capPerBox([draft].concat(order.map(function (k) { return bySpot[k]; })));
             loadCards("preview").then(function () {
                 lastPreview = groups;
                 var h = show(groups, true);
