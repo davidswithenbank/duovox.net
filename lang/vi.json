@@ -1164,5 +1164,6 @@
   "plan.btn.app": "Tải ứng dụng miễn phí",
   "plan.btn.plan": "Mua gói này",
   "plan.btn.via": "thẻ hoặc PayPal",
-  "plan.btn.hours": "Mua giờ"
+  "plan.btn.hours": "Mua giờ",
+  "home.pricing.tax": "Thuế có thể được áp dụng và sẽ được tính khi thanh toán."
 }

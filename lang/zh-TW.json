@@ -1164,5 +1164,6 @@
   "plan.btn.app": "取得免費應用程式",
   "plan.btn.plan": "購買此方案",
   "plan.btn.via": "使用卡片或 PayPal",
-  "plan.btn.hours": "購買時數"
+  "plan.btn.hours": "購買時數",
+  "home.pricing.tax": "可能適用稅金，並將於結帳時計算。"
 }

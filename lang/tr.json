@@ -1164,5 +1164,6 @@
   "plan.btn.app": "Ücretsiz uygulamayı edinin",
   "plan.btn.plan": "Bu planı satın alın",
   "plan.btn.via": "kart veya PayPal",
-  "plan.btn.hours": "Saat satın alın"
+  "plan.btn.hours": "Saat satın alın",
+  "home.pricing.tax": "Vergiler uygulanabilir ve ödeme sırasında hesaplanır."
 }

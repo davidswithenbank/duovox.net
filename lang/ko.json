@@ -1164,5 +1164,6 @@
   "plan.btn.app": "무료 앱 받기",
   "plan.btn.plan": "이 플랜 구매",
   "plan.btn.via": "카드 또는 PayPal",
-  "plan.btn.hours": "시간 구매"
+  "plan.btn.hours": "시간 구매",
+  "home.pricing.tax": "세금이 적용될 수 있으며 결제 시 계산됩니다."
 }

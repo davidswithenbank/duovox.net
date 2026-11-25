@@ -1164,5 +1164,6 @@
   "plan.btn.app": "無料アプリを入手",
   "plan.btn.plan": "このプランを購入",
   "plan.btn.via": "カードまたはPayPal",
-  "plan.btn.hours": "時間を購入"
+  "plan.btn.hours": "時間を購入",
+  "home.pricing.tax": "税金が適用される場合があり、購入手続き時に計算されます。"
 }

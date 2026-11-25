@@ -1164,5 +1164,6 @@
   "plan.btn.app": "Obtén la app gratis",
   "plan.btn.plan": "Compra este plan",
   "plan.btn.via": "tarjeta o PayPal",
-  "plan.btn.hours": "Compra horas"
+  "plan.btn.hours": "Compra horas",
+  "home.pricing.tax": "Pueden aplicarse impuestos y se calcularán al finalizar la compra."
 }

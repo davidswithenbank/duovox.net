@@ -1164,5 +1164,6 @@
   "plan.btn.app": "मुफ़्त ऐप प्राप्त करें",
   "plan.btn.plan": "यह प्लान खरीदें",
   "plan.btn.via": "कार्ड या PayPal",
-  "plan.btn.hours": "घंटे खरीदें"
+  "plan.btn.hours": "घंटे खरीदें",
+  "home.pricing.tax": "कर लागू हो सकते हैं और चेकआउट पर गणना किए जाएँगे।"
 }

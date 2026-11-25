@@ -1164,5 +1164,6 @@
   "plan.btn.app": "Télécharger l’application gratuite",
   "plan.btn.plan": "Acheter ce forfait",
   "plan.btn.via": "carte ou PayPal",
-  "plan.btn.hours": "Acheter des heures"
+  "plan.btn.hours": "Acheter des heures",
+  "home.pricing.tax": "Des taxes peuvent s’appliquer et seront calculées au moment du paiement."
 }

@@ -1164,5 +1164,6 @@
   "plan.btn.app": "Dapatkan aplikasi gratis",
   "plan.btn.plan": "Beli paket ini",
   "plan.btn.via": "kartu atau PayPal",
-  "plan.btn.hours": "Beli jam"
+  "plan.btn.hours": "Beli jam",
+  "home.pricing.tax": "Pajak mungkin berlaku dan akan dihitung saat checkout."
 }

@@ -1164,5 +1164,6 @@
   "plan.btn.app": "获取免费应用",
   "plan.btn.plan": "购买此方案",
   "plan.btn.via": "银行卡或 PayPal",
-  "plan.btn.hours": "购买时长"
+  "plan.btn.hours": "购买时长",
+  "home.pricing.tax": "可能会收取税费，并将在结账时计算。"
 }

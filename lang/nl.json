@@ -1164,5 +1164,6 @@
   "plan.btn.app": "Download de gratis app",
   "plan.btn.plan": "Koop dit abonnement",
   "plan.btn.via": "kaart of PayPal",
-  "plan.btn.hours": "Koop uren"
+  "plan.btn.hours": "Koop uren",
+  "home.pricing.tax": "Er kunnen belastingen van toepassing zijn en die worden berekend bij het afrekenen."
 }

@@ -1164,5 +1164,6 @@
   "plan.btn.app": "احصل على التطبيق المجاني",
   "plan.btn.plan": "اشترِ هذه الباقة",
   "plan.btn.via": "بطاقة أو PayPal",
-  "plan.btn.hours": "شراء ساعات"
+  "plan.btn.hours": "شراء ساعات",
+  "home.pricing.tax": "قد تُطبَّق الضرائب وسيُحسب ذلك عند إتمام الشراء."
 }

@@ -1164,5 +1164,6 @@
   "plan.btn.app": "ดาวน์โหลดแอปฟรี",
   "plan.btn.plan": "ซื้อแพลนนี้",
   "plan.btn.via": "บัตรหรือ PayPal",
-  "plan.btn.hours": "ซื้อชั่วโมง"
+  "plan.btn.hours": "ซื้อชั่วโมง",
+  "home.pricing.tax": "อาจมีการคิดภาษีและจะคำนวณในขั้นตอนชำระเงิน"
 }
