@@ -68,15 +68,69 @@
     function plan(t) { return T("offer.ui.plan." + String(t || "").toLowerCase()) || t || ""; }
     function pct(price, was) { price = Number(price); was = Number(was); return (was > price && price > 0) ? Math.floor((1 - price / was) * 100) : 0; }
     function rangeSave(o) { return (o.packs || []).reduce(function (m, p) { return Math.max(m, pct(p.price, p.was_price)); }, 0); }
+    // ---- 26 Nov 2026 (Worker item 21): the card's DEFAULT words fitted to the offer - a COPY of offerHours + fitWords from the
+    // Worker's renderer (proxy/src/offerAssets.ts). Keep them identical: _claude_tools/website_offers/fit_variants.mjs lists
+    // what they produce, offer_i18n_block.py puts those texts on the page (offer.fit.*), translate_missing translates them.
+    function offerHours(r) {
+      var end = Date.parse(r.ends_at || ""), start = Date.parse(r.starts_at || "");
+      if (!isFinite(end)) return Infinity;
+      if (!isFinite(start)) start = Date.now();
+      return Math.max(0, (end - start) / 3600000);
+    }
+    function fitWords(s, r, save, field) {
+      var mech = r.mechanic, hrs = offerHours(r);
+      if (mech === "bonus") {
+        // a bonus is the usual price plus free hours: say what is free, never "save" or "for less"
+        s = s.replace(/[Ss]ave \{save\}% on (\{hours\} \{tier\} hours)/g, function (m) { return (m[0] === "S" ? "Get" : "get") + " {bonus} free with {hours} {tier} hours"; })
+          .replace(/[Ss]ave \{save\}%/g, function (m) { return (m[0] === "S" ? "Get" : "get") + " {bonus} free"; })
+          .replace(/(\{hours\} (?:\{tier\}|Professional) hours)(.*?),? for less/g, "$1 + {bonus} free$2")
+          .replace(/, \*for less\*/g, ", *with free hours*").replace(/ for less/g, " with free hours")
+          .replace(/^Top up and save$/, "Top up and get more");
+        if (/\{save\}|\bsave\b/i.test(s)) s = field === "subhead" ? "Get {bonus} free with {hours} {tier} hours." : s.replace(/\bsave\b/gi, "get more");
+        // the subhead always names what is free ("10 Standard hours to keep the conversations going" says nothing of it)
+        if (field === "subhead" && !/\{bonus\}/.test(s) && /\{hours\} \{tier\} hours/.test(s)) s = s.replace("{hours} {tier} hours", "{hours} {tier} hours + {bonus} free");
+      } else if (mech === "range") {
+        // a sale on every pack: no single pack size, and "up to" when the packs' savings differ
+        var p = (r.packs || []).map(function (x) { return pct(x.price, x.was_price); });
+        var same = p.length > 0 && p.every(function (x) { return x === p[0]; });
+        s = s.replace(/\{hours\} \{tier\} hours/g, "every {tier} pack").replace(/\{hours\} Professional hours/g, "every Professional pack")
+          .replace(/Take every/g, "Take any").replace(/with every/g, "with any");
+        if (!same) s = s.replace(/([Ss]ave) \{save\}%/g, "$1 up to {save}%");
+      }
+      // time claims only when they are true for this offer's own dates
+      if (hrs > 12) s = s.replace(/, for a few hours only\./, ", for a limited time.");
+      if (hrs > 36) s = s.replace(/^One day only: (.)/, function (_, c) { return c.toUpperCase(); }).replace(/^Today only$/, "Limited time");
+      if (hrs > 72) s = s.replace(/ · Ends soon$/, "");
+      if (hrs > 96) s = s.replace(/ this weekend\./, ".");
+      return s;
+    }
+    // offer.fit.* lines carry their English in data-en (generated): English text -> this page's translation
+    var fitMap = null;
+    function FIT(en) {
+        if (!fitMap) {
+            fitMap = Object.create(null);
+            try {
+                var els = tplEl && tplEl.content ? tplEl.content.querySelectorAll("[data-en]") : [];
+                for (var i = 0; i < els.length; i++) fitMap[els[i].getAttribute("data-en")] = els[i].textContent;
+            } catch (e) { /* no template: English stays */ }
+        }
+        return fitMap[en] || "";
+    }
     function localise(o) {
         var r = Object.assign({}, o), hours = Number(o.hours) || 0, bonus = Number(o.bonus_hours) || 0;
         var save = o.mechanic === "range" ? rangeSave(o) : pct(o.price, o.was_price);
         var val = { hours: hours ? String(hours) : "", tier: plan(o.tier), save: save ? String(save) : "", bonus: bonus ? counted("offer.ui.hours", bonus) : "" };
         if (o.type && o.type !== "custom") {
             ["eyebrow", "headline", "subhead", "badge", "cta"].forEach(function (f) {
-                var s = T("offer.t." + o.type + "." + f), ok = true;
-                if (!s) return;
+                // the type's English default, fitted to this offer exactly as the Worker's card fits it (item 21); a fitted text
+                // uses its own translation (offer.fit.*), never the unfitted one ("Save ... this weekend" on a bonus offer)
+                var en0 = ((window.OFFER_TYPES || {})[o.type] || {})[f] || "";
+                var fitted = en0 ? fitWords(en0, o, save, f) : "";
+                var changed = !!fitted && fitted !== en0;
+                var s = changed ? FIT(fitted) : T("offer.t." + o.type + "." + f), ok = true;
+                if (!s) { if (changed && !o[f]) r[f] = ""; return; }   // no translation yet: the card's own (fitted) English
                 s = s.replace(/\{(hours|tier|save|bonus|pack)\}/g, function (_, k) { var x = val[k] || ""; if (!x) ok = false; return x; });
+                if (ok && changed) s = s.charAt(0).toUpperCase() + s.slice(1);   // "every Standard pack ..." starts a sentence
                 if (ok) r[f] = s;   // a value missing (e.g. no saving to quote): the card's own English line stays
                 else if (f === "subhead" && o.mechanic === "range") {
                     // a sale on every pack has no single number of hours: use the translated "Every {tier} pack for less" line
@@ -344,7 +398,7 @@
     document.addEventListener("i18n-applied", function () {
         var l = (document.documentElement.lang || "en").toLowerCase();
         if (l === lang) return;
-        lang = l; plural = mkPlural();
+        lang = l; plural = mkPlural(); fitMap = null;
         loadLive();
     });
 })();
