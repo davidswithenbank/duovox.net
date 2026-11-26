@@ -59,7 +59,8 @@
         return e ? e.textContent : "";
     }
     function fill(s, m) { return String(s).replace(/\{(n|p|d)\}/g, function (_, k) { return m[k]; }); }
-    var plural = (function () { try { var r = new Intl.PluralRules(lang); return function (n) { return r.select(n); }; } catch (e) { return function (n) { return n === 1 ? "one" : "other"; }; } })();
+    function mkPlural() { try { var r = new Intl.PluralRules(lang); return function (n) { return r.select(n); }; } catch (e) { return function (n) { return n === 1 ? "one" : "other"; }; } }
+    var plural = mkPlural();
     function counted(base, n) {
         var c = plural(n), s = T(base + "." + c) || T(base + "." + (n === 1 ? "one" : "other"));
         return fill(s, { n: n });
@@ -87,7 +88,8 @@
         }
         if (!r.headline) r.headline = T("offer.ui.special") || "";
         if (!r.cta) r.cta = T("offer.ui.buy") || "";
-        if (hours) r.pack = counted("offer.ui.hours", hours) + (o.tier ? " · " + plan(o.tier) : "");
+        // 26 Nov 2026: a bonus offer keeps its free hours on the pack line ("10 Stunden +5 Stunden gratis · Standard")
+        if (hours) r.pack = counted("offer.ui.hours", hours) + (o.mechanic === "bonus" && bonus ? " " + counted("offer.ui.bonusfree", bonus) : "") + (o.tier ? " · " + plan(o.tier) : "");
         if (Array.isArray(o.packs)) r.packs = o.packs.map(function (p) { return Object.assign({}, p, { label: counted("offer.ui.hours", Number(p.hours) || 0) }); });
         return r;
     }
@@ -322,13 +324,27 @@
         return;
     }
 
-    fetch(API + "/offers?set=web&lang=" + encodeURIComponent(lang), { mode: "cors", credentials: "omit" })
-        .then(function (r) { return r.ok ? r.json() : null; })
-        .then(function (d) {
-            var list = (d && Array.isArray(d.offers) ? d.offers : []).filter(function (x) { return x && ID_RE.test(x.id || ""); });
-            var groups = groupOffers(list);
-            if (!groups.length) return;
-            return loadCards(d.cards).then(function () { lastLive = groups; show(groups, false); });
-        })
-        .catch(function () { /* no offer shown: the page is as it always was */ });
+    var liveN = 0;
+    function loadLive() {
+        var n = ++liveN;
+        fetch(API + "/offers?set=web&lang=" + encodeURIComponent(lang), { mode: "cors", credentials: "omit" })
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (d) {
+                if (n !== liveN) return;   // the language changed again meanwhile
+                var list = (d && Array.isArray(d.offers) ? d.offers : []).filter(function (x) { return x && ID_RE.test(x.id || ""); });
+                var groups = groupOffers(list);
+                if (!groups.length) { if (lastLive) { lastLive = null; show([], false, true); } return; }
+                return loadCards(d.cards).then(function () { if (n === liveN) { lastLive = groups; show(groups, false); } });
+            })
+            .catch(function () { /* no offer shown: the page is as it always was */ });
+    }
+    loadLive();
+    // 26 Nov 2026: davidarthur.app/duovox/ loads this file too. Its language is chosen in the page (i18n.js), which fires
+    // "i18n-applied" once the words (the offer-i18n template included) are in: ask again in that language and redraw.
+    document.addEventListener("i18n-applied", function () {
+        var l = (document.documentElement.lang || "en").toLowerCase();
+        if (l === lang) return;
+        lang = l; plural = mkPlural();
+        loadLive();
+    });
 })();
