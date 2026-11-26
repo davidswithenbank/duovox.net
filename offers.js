@@ -6,6 +6,10 @@
     "use strict";
     var API = "https://api.duovox.net";
     var ID_RE = /^[a-z0-9][a-z0-9-]{1,47}$/;
+    // The server's offer packs (proxy/src/offers.ts OFFER_PACKS, DuoVox only) -> the checkout token on api.duovox.net/buy/<token>
+    var PACK_TOKEN = { "std-1": "duovox_standard_payg_1", "std-10": "duovox_standard_payg_10", "std-25": "duovox_standard_payg_25",
+        "pro-1": "duovox_professional_payg_1", "pro-10": "duovox_professional_payg_10", "pro-25": "duovox_professional_payg_25",
+        "std-monthly": "duovox_standard_monthly", "pro-monthly": "duovox_professional_monthly" };
 
     // 1. buy.html?offer=<id>: pass the offer on to every checkout link
     try {
@@ -189,7 +193,20 @@
         } else if (cta) {
             try {
                 var u = new URL(cta.getAttribute("href"), location.href);
-                if (u.searchParams.get("offer")) { u.searchParams.set("v", variant); cta.href = u.toString(); }
+                if (u.searchParams.get("offer")) {
+                    u.searchParams.set("v", variant);
+                    // 26 Nov 2026 (David: "Get the deal" opened the buy page, which showed the same card with no way to pay): ON the
+                    // buy page the button is the card / PayPal checkout itself - the offer's pack, or for a sale on every pack the
+                    // hours list below. Website offers always sell by card (the server refuses a Store-only sale on the web).
+                    if (/\/buy(\.html)?$/.test(location.pathname) && /\/buy\.html$/.test(u.pathname)) {
+                        var tok = o.token || PACK_TOKEN[o.pack_id] || "";
+                        if (/^duovox_[a-z0-9_]+$/.test(tok)) {
+                            u = new URL(API + "/buy/" + tok);
+                            u.searchParams.set("offer", o.id); u.searchParams.set("v", variant); u.searchParams.set("lang", lang);
+                        } else u = new URL("#hours", location.href);
+                    }
+                    cta.href = u.toString();
+                }
             } catch (e) { /* keep the server's link */ }
             cta.addEventListener("click", function () { send(o.id, variant, "click"); });
         }
