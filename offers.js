@@ -198,12 +198,15 @@
                     // 26 Nov 2026 (David: "Get the deal" opened the buy page, which showed the same card with no way to pay): ON the
                     // buy page the button is the card / PayPal checkout itself - the offer's pack, or for a sale on every pack the
                     // hours list below. Website offers always sell by card (the server refuses a Store-only sale on the web).
-                    if (/\/buy(\.html)?$/.test(location.pathname) && /\/buy\.html$/.test(u.pathname)) {
+                    // 26 Nov 2026 (David): on EVERY page the button goes straight to Paddle for a one-pack offer; only a sale on
+                    // every pack still opens the hours list (on the buy page itself: jump to it).
+                    if (/\/buy\.html$/.test(u.pathname)) {
                         var tok = o.token || PACK_TOKEN[o.pack_id] || "";
                         if (/^duovox_[a-z0-9_]+$/.test(tok)) {
                             u = new URL(API + "/buy/" + tok);
                             u.searchParams.set("offer", o.id); u.searchParams.set("v", variant); u.searchParams.set("lang", lang);
-                        } else u = new URL("#hours", location.href);
+                        } else if (/\/buy(\.html)?$/.test(location.pathname)) u = new URL("#hours", location.href);
+                        else u.hash = "hours";
                     }
                     cta.href = u.toString();
                 }
