@@ -278,7 +278,7 @@
             });
         }).filter(function (g) { return g.length; });
     }
-    var lastPreview = null, lastLive = null, resizeT = 0;
+    var lastPreview = null, lastLive = null, resizeT = 0, lastSpot = null;
     window.addEventListener("resize", function () {   // the shape follows the window (a redraw is not counted again)
         clearTimeout(resizeT);
         resizeT = setTimeout(function () { if (lastPreview) show(lastPreview, true); else if (lastLive) show(lastLive, false, true); }, 150);
@@ -304,7 +304,15 @@
             loadCards("preview").then(function () {
                 lastPreview = groups;
                 var h = show(groups, true);
-                if (h) h.scrollIntoView({ block: "center" });   // the draft's spot
+                // the draft's spot - 26 Nov 2026 (David: moving something in the APP tile scrolled the builder back up to the website
+                // tile): scrollIntoView also scrolls the ADMIN page around this frame. Scroll inside this frame only, and only when
+                // the draft lands in a new spot (first preview, or its place changed), never on every edit.
+                var spot = spotKey(d.offer.web_place) || "pricing";
+                if (h && spot !== lastSpot) {
+                    lastSpot = spot;
+                    var r = h.getBoundingClientRect();
+                    window.scrollTo(0, Math.max(0, window.pageYOffset + r.top - (window.innerHeight - r.height) / 2));
+                }
             });
         });
         try { window.parent.postMessage({ type: "duovox-offer-preview-ready" }, API); } catch (e) { /* not framed by the admin */ }
