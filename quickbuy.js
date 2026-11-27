@@ -11,6 +11,7 @@
         for (var i = 0; i < groups.length; i++) { var on = groups[i].getAttribute("data-qb-group") === id; groups[i].hidden = !on; found = found || on; }
         if (!found) return false;
         if (after) after.hidden = id === "howto" || id === "pay";
+        dlg.classList.toggle("qb-two", id === "hours");   // Standard and Professional packs side by side
         dlg.classList.toggle("qb-wide", id === "pay");   // the checkout: wide, our details beside Paddle's form (no scrolling)
         if (!dlg.open) dlg.showModal();
         dlg.scrollTop = 0;
