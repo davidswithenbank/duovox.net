@@ -79,3 +79,4 @@
     .qb-wide .qb-after { text-align: left; margin-top: 0.4rem; }
     .qb-wide .dvx-pay { margin-right: 2.6rem; }   /* clear of the close button */
 }
+@media (min-width: 820px) { .qb.qb-wide { padding: 0.7rem 1.2rem 0.3rem; max-height: calc(100vh - 8px); } .qb-wide .qb-x { top: 0.5rem; } }
