@@ -1232,5 +1232,11 @@
   "offer.fit.2fd488e57d": "{hours}時間分の{tier}時間 + {bonus}分無料。大切な人との会話に。",
   "offer.fit.2d7c6c65e4": "{hours}時間分の{tier}時間 + {bonus}分無料。",
   "offer.fit.35d73ab72d": "{hours}時間分の{tier}時間がよりお得に。期間限定。",
-  "offer.fit.43f818a2e2": "{hours}時間分の{tier}時間がよりお得に。"
+  "offer.fit.43f818a2e2": "{hours}時間分の{tier}時間がよりお得に。",
+  "home.cmp.showall": "比較の全文を表示",
+  "buy.how.title": "仕組み",
+  "buy.how.back": "料金に戻る",
+  "buy.pay.opening": "安全なチェックアウトを開いています…",
+  "buy.after": "お支払い後、Microsoft StoreからDuoVoxを無料でインストールし、DuoVoxで［有効化］をクリックしてください。",
+  "buy.how.link": "仕組み"
 }

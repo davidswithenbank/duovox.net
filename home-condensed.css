@@ -123,3 +123,67 @@
 @media (max-width: 1000px) { .home-c .hero-c-text { transform: none; } }
 /* TRY (David, 2 Nov): the whole Chat view, not cropped, at the same height as the 4-box picture */
 .home-c .layout-card img.layout-img-full { object-fit: contain; object-position: center; }
+
+/* ══ Third pass (27 Nov 2026, David: still "really big and spread out"; prices now sit straight after the videos) ══ */
+.home-c .section { padding: 34px 1.25rem; }
+.home-c .section-title { font-size: 1.55rem; margin-bottom: 1.2rem; }
+.home-c .section-subtitle { margin-top: -0.7rem; margin-bottom: 1.1rem; font-size: 0.93rem; }
+.home-c .hero-c { padding: 88px 1.5rem 18px; grid-template-columns: 1fr 1fr; max-width: 1120px; gap: 2rem; }
+.home-c .hero-c-text { transform: none; }
+.home-c .hero-c h1 { font-size: 2.3rem; margin-bottom: .4rem; }
+.home-c .hero-c .subtitle { font-size: 1.12rem; margin-bottom: .6rem; }
+.home-c .hero-c .tagline { font-size: .92rem; margin-bottom: 1rem; }
+.home-c .hero-c-shot img { max-height: 420px; width: auto; max-width: 100%; margin: 0 auto; }
+.home-c #demo { padding-top: 10px; padding-bottom: 18px !important; max-width: 940px; }
+.home-c #pricing { padding-top: 22px; }
+.home-c .pricing-grid { gap: .8rem; }
+.home-c .price-card { padding: 1.1rem .95rem 1rem; }
+.home-c .price-card h3 { font-size: 1.1rem; margin: .15rem 0 0; }
+.home-c .price-amount { font-size: 1.85rem; margin: .3rem 0 0; }
+.home-c .price-period { font-size: .82rem; margin-bottom: .3rem; }
+.home-c .best-for { font-size: .78rem; padding: .3rem .6rem; margin-bottom: .5rem; }
+.home-c .price-features { margin-bottom: .8rem; }
+.home-c .price-features li { padding: .14rem 0; font-size: .83rem; line-height: 1.35; }
+.home-c .price-actions .btn { padding-top: .55rem; padding-bottom: .55rem; }
+.home-c .features-grid { gap: .8rem; }
+.home-c .feature-card { padding: .95rem 1.1rem; }
+.home-c .feature-card h3 { font-size: 1rem; }
+.home-c .feature-card p { font-size: .86rem; line-height: 1.45; }
+.home-c #who-its-for { max-width: 1280px; }
+.home-c .audience-grid { grid-template-columns: repeat(5, 1fr); gap: .8rem; max-width: 1280px; }
+.home-c .audience-card { padding: .95rem .8rem; }
+.home-c .audience-icon { font-size: 1.5rem; margin-bottom: .3rem; }
+.home-c .audience-card h3 { font-size: .98rem; margin-bottom: .25rem; }
+.home-c .audience-card p { font-size: .82rem; line-height: 1.45; margin-bottom: .5rem; }
+@media (max-width: 1150px) { .home-c .audience-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 1000px) { .home-c .audience-grid { grid-template-columns: repeat(2, 1fr); } .home-c .hero-c { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 700px) { .home-c .audience-grid { grid-template-columns: 1fr; } .home-c .section { padding: 28px 1rem; } }
+.home-c .layouts-grid { max-width: 900px; margin: 0 auto; gap: 1rem; }
+.home-c .layout-card { padding: .75rem; }
+.home-c .step-card { padding: .9rem .9rem; }
+.home-c .disclaimer-section { padding-top: 10px; padding-bottom: 10px; }
+.home-c .price-card.featured { padding-top: 1.9rem; }
+.home-c .price-badge { white-space: nowrap; }
+/* David, 27 Nov: neat rows and columns - the three opening buttons sit on ONE row, sharing its width; if a language's
+   labels cannot fit they wrap as full-width rows, never a lone small button underneath */
+.home-c .hero-c-cta { gap: .55rem; }
+.home-c .hero-c-cta .btn { flex: 1 1 auto; justify-content: center; text-align: center; padding: 11px 14px; font-size: .9rem; white-space: nowrap; }
+.home-c .hero-c-cta .btn svg { width: 18px; height: 18px; flex: none; }
+/* Opening buttons as a tidy grid in every language: the Store button across the top, the two others side by side, equal */
+.home-c .hero-c-cta { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem; max-width: 460px; }
+.home-c .hero-c-cta .btn:first-child { grid-column: 1 / -1; }
+.home-c .hero-c-cta .btn { white-space: normal; }
+@media (max-width: 1000px) { .home-c .hero-c-cta { margin: 0 auto; } }
+/* Who it's for: five in ONE row on a wide screen (it was three and a centred two) */
+@media (min-width: 1151px) {
+    body.home-c #who-its-for .audience-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    body.home-c #who-its-for .audience-grid > .audience-card { grid-column: auto !important; }
+}
+/* the plan label of every "Who it's for" card on one line across the row (pinned to the card's foot) */
+.home-c .audience-card { display: flex; flex-direction: column; align-items: center; }
+.home-c .audience-card .audience-plan { margin-top: auto; }
+.home-c .audience-card p { margin-bottom: .7rem; }
+.home-c .section-subtitle { margin-top: -0.35rem; }
+/* David, 27 Nov (2nd): no Pricing button here (the menu has Pricing and Buy now) - two equal buttons on one row */
+.home-c .hero-c-cta .btn:first-child { grid-column: auto; }
+.home-c .hero-c-cta { max-width: 520px; }

@@ -1232,5 +1232,11 @@
   "offer.fit.2fd488e57d": "önem verdiğiniz kişilerle konuşmak için, {hours} {tier} saat + {bonus} ücretsiz.",
   "offer.fit.2d7c6c65e4": "{hours} {tier} saat + {bonus} ücretsiz.",
   "offer.fit.35d73ab72d": "{hours} {tier} saat daha uygun fiyata, sınırlı bir süre için.",
-  "offer.fit.43f818a2e2": "{hours} {tier} saat daha uygun fiyata."
+  "offer.fit.43f818a2e2": "{hours} {tier} saat daha uygun fiyata.",
+  "home.cmp.showall": "Tam karşılaştırmayı göster",
+  "buy.how.title": "Nasıl çalışır",
+  "buy.how.back": "Fiyatlara geri dön",
+  "buy.pay.opening": "Güvenli ödeme açılıyor…",
+  "buy.after": "Ödeme yaptıktan sonra DuoVox’u Microsoft Store’dan ücretsiz olarak yükleyin ve DuoVox içinde Etkinleştir’e tıklayın.",
+  "buy.how.link": "Nasıl çalışır"
 }

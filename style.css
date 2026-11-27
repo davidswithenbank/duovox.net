@@ -1241,3 +1241,29 @@ a:focus-visible,
 [dir="rtl"] .footer-links { flex-direction: row-reverse; }
 [dir="rtl"] .feature-card { text-align: right; }
 [dir="rtl"] .hero { text-align: right; }
+
+/* ══ Compact layer (27 Nov 2026, David: "everything just seems really big and spread out"). Site-wide; the home page has
+   its own tighter rules in home-condensed.css. Delete this block to get the old spacing back. ══ */
+.section { padding: 48px 1.25rem; }
+.section-title { font-size: 1.7rem; margin-bottom: 1.6rem; }
+.section-subtitle { font-size: 0.95rem; margin-top: -1rem; margin-bottom: 1.4rem; }
+.features-grid { gap: 1rem; }
+.feature-card { padding: 1.25rem 1.35rem; }
+.feature-icon { font-size: 1.5rem; margin-bottom: 0.45rem; }
+.feature-card h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
+.feature-card p { font-size: 0.9rem; line-height: 1.5; }
+.price-card { padding: 1.4rem 1.1rem; }
+.price-amount { font-size: 2.1rem; margin: 0.5rem 0 0.1rem; }
+.price-features { margin-bottom: 1.1rem; }
+.price-features li { padding: 0.22rem 0; font-size: 0.86rem; line-height: 1.4; }
+.step-card { padding: 1.2rem 1rem; }
+.audience-card { padding: 1.25rem 1rem; }
+.faq-question { padding-top: 0.85rem; padding-bottom: 0.85rem; }
+/* the Buy button in the menu: the one coloured item, so the way to pay is always on screen */
+.nav-links li.nav-buy a { background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); color: #fff;
+    padding: 0.42rem 0.95rem; border-radius: 10px; font-weight: 700; white-space: nowrap; }
+.nav-links li.nav-buy a:hover { filter: brightness(1.08); color: #fff; }
+/* comparison: the first six rows, the rest behind "Show the full comparison" (quickbuy.js) */
+.comparison-table.cmp-short tr.cmp-more { display: none; }
+.cmp-showall { text-align: center; margin: 0.9rem 0 0; }
+.cmp-showall .btn { padding: 0.5rem 1.1rem; font-size: 0.9rem; }

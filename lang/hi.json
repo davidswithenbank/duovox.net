@@ -1232,5 +1232,11 @@
   "offer.fit.2fd488e57d": "{hours} {tier} घंटे + {bonus} मुफ़्त, उन लोगों से बात करने के लिए जो मायने रखते हैं।",
   "offer.fit.2d7c6c65e4": "{hours} {tier} घंटे + {bonus} मुफ़्त।",
   "offer.fit.35d73ab72d": "{hours} {tier} घंटे कम में, सीमित समय के लिए।",
-  "offer.fit.43f818a2e2": "{hours} {tier} घंटे कम में।"
+  "offer.fit.43f818a2e2": "{hours} {tier} घंटे कम में।",
+  "home.cmp.showall": "पूरा तुलना देखें",
+  "buy.how.title": "यह कैसे काम करता है",
+  "buy.how.back": "कीमतों पर वापस जाएँ",
+  "buy.pay.opening": "सुरक्षित चेकआउट खोला जा रहा है…",
+  "buy.after": "भुगतान करने के बाद, Microsoft Store से DuoVox मुफ़्त में इंस्टॉल करें और DuoVox में Activate पर क्लिक करें।",
+  "buy.how.link": "यह कैसे काम करता है"
 }

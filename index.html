@@ -19,7 +19,7 @@
     <meta name="twitter:image" content="https://duovox.net/og-image.png">
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css?v=3">
-    <link rel="stylesheet" href="home-condensed.css?v=1">
+    <link rel="stylesheet" href="home-condensed.css?v=8">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -147,6 +147,7 @@
     }
 </style>
 <style>.site-offer{display:flex;flex-direction:column;align-items:center;margin:0 auto 2rem;padding:0 16px;max-width:100%}.site-offer[hidden]{display:none}.site-offer .oc-web,.site-offer .oc-app{max-width:100%}.site-offer-out{margin:2.5rem auto}.site-offer-row{flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:24px}.site-offer-pair:not(.site-offer-row){gap:24px}</style>
+<link rel="stylesheet" href="quickbuy.css">
 </head>
 <body class="home-c">
 <a href="#main-content" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
@@ -168,9 +169,7 @@
             <li><a href="calls.html" data-i18n="nav.calls">Video calls</a></li>
             <li><a href="languages.html" data-i18n="nav.languages">Languages</a></li>
             <li><a href="help.html" data-i18n="nav.help">Help</a></li>
-            <li><a href="security.html" data-i18n="nav.security">Security</a></li>
-            <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
-            <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
+            <li class="nav-buy"><a href="buy.html" data-i18n="buy.btn">Buy now</a></li>
         </ul>
     </div>
 </nav>
@@ -195,6 +194,32 @@
         <figcaption data-i18n="home.hero.caption">The 4-box view: both speakers' words and both translations, live, side by side. A real session on Professional.</figcaption>
     </figure>
 </section>
+<!-- Trust Badges -->
+<section class="trust-badges">
+    <div class="badge-row">
+        <div class="trust-badge">
+            <span class="trust-icon">&#128274;</span>
+            <span data-i18n="home.badge.1">No account required</span>
+        </div>
+        <div class="trust-badge">
+            <span class="trust-icon">&#9889;</span>
+            <span data-i18n="home.badge.2">Works offline</span>
+        </div>
+        <div class="trust-badge">
+            <span class="trust-icon">&#127760;</span>
+            <span data-i18n="home.badge.3">62 languages</span>
+        </div>
+        <div class="trust-badge">
+            <span class="trust-icon">&#128737;</span>
+            <span data-i18n="home.badge.4">Private mode</span>
+        </div>
+        <div class="trust-badge">
+            <span class="trust-icon">&#128241;</span>
+            <span>Windows</span>
+        </div>
+    </div>
+</section>
+
 <!-- Demo video (site_video_1oct.py). Click-to-load: the poster is our own file and nothing is requested from
      YouTube until the visitor presses play; the player then loads from youtube-nocookie.com. -->
 <section class="section" id="demo" style="padding-top:0; padding-bottom:40px;">
@@ -235,273 +260,6 @@
         });
     })();
     </script>
-</section>
-
-<!-- Two layouts (2 Nov 2026, David: the 4-box view is the professional USP; the Chat view is the everyday layout). Real captures. -->
-<section class="section" id="layouts">
-    <h2 class="section-title" data-i18n="home.layouts.title">Two layouts, for two kinds of conversation</h2>
-    <div class="layouts-grid">
-        <figure class="layout-card">
-            <a href="img/home-four-box.png"><img src="img/home-four-box.png" alt="The 4-box view" width="1164" height="1040" loading="lazy"></a>
-            <figcaption>
-                <h3 data-i18n="home.layouts.4box.title">4-box view: for professionals</h3>
-                <p data-i18n="home.layouts.4box.desc">Each speaker's exact words and the translation, in four boxes side by side. Made for interpreters and for anyone who needs to check what was said, in both languages, as it happens.</p>
-            </figcaption>
-        </figure>
-        <figure class="layout-card">
-            <a href="img/home-chat-view-full.png"><img class="layout-img-full" src="img/home-chat-view-full.png" alt="The Chat view" width="904" height="954" loading="lazy"></a>
-            <figcaption>
-                <h3 data-i18n="home.layouts.chat.title">Chat view: for everyday conversations</h3>
-                <p data-i18n="home.layouts.chat.desc">The conversation as speech bubbles, like a messaging app, with the translation in every bubble. Easy to follow on a family call, while travelling or practising a language.</p>
-            </figcaption>
-        </figure>
-    </div>
-</section>
-
-<!-- Trust Badges -->
-<section class="trust-badges">
-    <div class="badge-row">
-        <div class="trust-badge">
-            <span class="trust-icon">&#128274;</span>
-            <span data-i18n="home.badge.1">No account required</span>
-        </div>
-        <div class="trust-badge">
-            <span class="trust-icon">&#9889;</span>
-            <span data-i18n="home.badge.2">Works offline</span>
-        </div>
-        <div class="trust-badge">
-            <span class="trust-icon">&#127760;</span>
-            <span data-i18n="home.badge.3">62 languages</span>
-        </div>
-        <div class="trust-badge">
-            <span class="trust-icon">&#128737;</span>
-            <span data-i18n="home.badge.4">Private mode</span>
-        </div>
-        <div class="trust-badge">
-            <span class="trust-icon">&#128241;</span>
-            <span>Windows</span>
-        </div>
-    </div>
-</section>
-
-<!-- Features -->
-<section class="section" id="features">
-    <h2 class="section-title" data-i18n="home.features.title">Why DuoVox?</h2>
-    <div class="features-grid">
-        <div class="feature-card">
-            <div class="feature-icon">&#127911;</div>
-            <h3 data-i18n="home.feat.dual.title">Clear Two-Way Conversations</h3>
-            <p data-i18n="home.feat.dual.desc">See both sides of the dialogue separately, so nothing gets mixed up. Each language gets its own dedicated panel with real-time text.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">&#127760;</div>
-            <h3 data-i18n="home.feat.langs.title">62 Languages</h3>
-            <p data-i18n="home.feat.langs.desc">From English and Russian to Japanese, Arabic, Hindi and many more. The app's own menus and screens are available in 23 languages.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">&#9889;</div>
-            <h3 data-i18n="home.feat.ai.title">Real-time Translations</h3>
-            <p data-i18n="home.feat.ai.desc">Fast, natural-sounding translations that aim to follow real speech. DuoVox is designed to cope with everyday accents and background noise, though accuracy can vary in difficult audio &mdash; always verify important details.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">&#128274;</div>
-            <h3 data-i18n="home.feat.offline.title">Works Offline</h3>
-            <p data-i18n="home.feat.offline.desc">No signal? No problem. DuoVox includes built-in offline transcription that works without internet &mdash; available on all tiers. Great for holidays and travel.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">&#128187;</div>
-            <h3 data-i18n="home.feat.pcaudio.title">Works With Anything Your PC Plays</h3>
-            <p data-i18n-html="home.feat.pcaudio.desc">Teams, Zoom, Google Meet and WhatsApp calls, YouTube and films, with nothing joining the meeting. Or switch to the microphone for the people in the room. <a href="calls.html">Video calls &rarr;</a></p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">&#128737;</div>
-            <h3 data-i18n="home.feat.privacy.title">Privacy Built In</h3>
-            <p data-i18n="home.feat.privacy.desc">Audio is processed in real time and not stored by us; on paid tiers it is streamed to our AI providers for real-time processing only. Providers may keep limited operational logs under their own privacy policies. Transcriptions stay on your device. Free offline mode works entirely on-device. Enable Private Mode for the strictest, no-local-log option.</p>
-        </div>
-    </div>
-</section>
-
-<!-- How It Works -->
-<section class="section" id="how-it-works" style="padding-top:40px;">
-    <h2 class="section-title" data-i18n="home.how.1">How It Works</h2>
-    <div class="steps-grid">
-        <div class="step-card">
-            <div class="step-number">1</div>
-            <h3 data-i18n="home.how.2">Choose Your Languages</h3>
-            <p><span data-i18n="home.how.s1.text">Select a primary language and a target language. DuoVox offers 62 languages &mdash; 57 on Professional, 53 on Standard, and 31 that work offline on Free.</span>
-               <a href="languages.html" data-i18n="home.how.s1.see">See exactly what each plan covers.</a></p>
-        </div>
-        <div class="step-card">
-            <div class="step-number">2</div>
-            <h3 data-i18n="home.how.3">Start Talking</h3>
-            <p data-i18n="home.how.4b">Press Start. DuoVox listens to what your PC is playing, such as a call or a video, or to the people in the room through your microphone, and starts writing it down straight away.</p>
-        </div>
-        <div class="step-card">
-            <div class="step-number">3</div>
-            <h3 data-i18n="home.how.5">See Both Languages</h3>
-            <p data-i18n="home.how.6">Each language gets its own panel. You see your words on the left and the translation on the right &mdash; in real time.</p>
-        </div>
-        <div class="step-card">
-            <div class="step-number">4</div>
-            <h3 data-i18n="home.how.7">Keep the Conversation</h3>
-            <p data-i18n="home.how.8">DuoVox detects which language is being spoken and puts each sentence in the right panel. Just talk naturally &mdash; it keeps up.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Comparison Table -->
-<section class="section" id="compare" style="padding-top:40px;">
-    <h2 class="section-title" data-i18n="home.cmpx.title">Why DuoVox Stands Out</h2>
-    <p class="section-subtitle" style="margin-top:-2rem; margin-bottom:2rem;" data-i18n="home.cmpx.subtitle">Built for real two-way conversations on your PC &mdash; see how it compares with the most popular translation apps.</p>
-    <div class="comparison-table-wrap">
-        <table class="comparison-table">
-            <thead>
-                <tr>
-                    <th scope="col" data-i18n="home.cmp.feature">Feature</th>
-                    <th scope="col" class="highlight-col">DuoVox</th>
-                    <th scope="col">Google Translate</th>
-                    <th scope="col">iTranslate</th>
-                    <th scope="col">Microsoft Translator</th>
-                    <th scope="col">DeepL</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><span class="cmp-feat" data-i18n="home.cmpx.4box">4-box dual-lane view</span><span class="cmp-sub" data-i18n="home.cmpx.4box.sub">Both speakers&rsquo; words and both translations on screen at the same time</span></td>
-                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.4box.dv"><span class="check">&#10003;</span> 4 live boxes <span class="unique-badge">Standout</span></td>
-                    <td data-label="Google" class="cmp-note" data-i18n="home.cmpx.split.phone">Phone split screen</td>
-                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
-                    <td data-label="Microsoft" class="cmp-note" data-i18n="home.cmpx.split.phone">Phone split screen</td>
-                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.split.f2f">Face-to-face split screen</td>
-                </tr>
-                <tr>
-                    <td><span class="cmp-feat" data-i18n="home.cmpx.cont">Continuous, hands-free translation</span><span class="cmp-sub" data-i18n="home.cmpx.cont.sub">Just talk &mdash; no tapping a button and waiting your turn</span></td>
-                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmp.5"><span class="check">&#10003;</span> Continuous</td>
-                    <td data-label="Google" class="cmp-note" data-i18n="home.cmpx.cont.google">Conversations take turns</td>
-                    <td data-label="iTranslate" class="cmp-note" data-i18n="home.cmpx.turn">Turn-based</td>
-                    <td data-label="Microsoft" class="cmp-note" data-i18n="home.cmpx.turn">Turn-based</td>
-                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.paid.voice">Paid plans only (DeepL Voice)</td>
-                </tr>
-                <tr>
-                    <td><span class="cmp-feat" data-i18n="home.cmpx.sys">Captions anything playing on your PC</span><span class="cmp-sub" data-i18n="home.cmpx.sys.sub">Calls, meetings, YouTube and films &mdash; from any app</span></td>
-                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.sys.dv"><span class="check">&#10003;</span> Any app <span class="unique-badge">Standout</span></td>
-                    <td data-label="Google" class="cmp-none">&mdash;</td>
-                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
-                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
-                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.sys.deepl">Teams, Zoom &amp; Meet only (paid)</td>
-                </tr>
-                <tr>
-                    <td><span class="cmp-feat" data-i18n="home.cmpx.offline">Free offline mode</span><span class="cmp-sub" data-i18n="home.cmpx.offline.sub">No internet needed, and your audio never leaves your PC</span></td>
-                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmp.25"><span class="check">&#10003;</span> Free plan, 31 languages</td>
-                    <td data-label="Google" class="cmp-note" data-i18n="home.cmpx.offline.google">Text and camera; live on Pixel phones only</td>
-                    <td data-label="iTranslate" class="cmp-note" data-i18n="home.cmp.27">Paid only</td>
-                    <td data-label="Microsoft" class="cmp-note" data-i18n="home.cmp.28">Text only</td>
-                    <td data-label="DeepL" class="cmp-none">&mdash;</td>
-                </tr>
-                <tr>
-                    <td><span class="cmp-feat" data-i18n="home.cmpx.desktop">Desktop app for Windows</span></td>
-                    <td data-label="DuoVox" class="highlight-col"><span class="check">&#10003;</span></td>
-                    <td data-label="Google" class="cmp-note" data-i18n="home.cmp.39">Web only</td>
-                    <td data-label="iTranslate" class="cmp-note" data-i18n="home.cmp.40">Web and Mac only</td>
-                    <td data-label="Microsoft" class="cmp-note" data-i18n="home.cmpx.retired">Retired in 2021</td>
-                    <td data-label="DeepL"><span class="check-muted">&#10003;</span></td>
-                </tr>
-                <tr>
-                    <td><span class="cmp-feat" data-i18n="home.cmpx.subs">Subtitles from live sessions and media files</span><span class="cmp-sub" data-i18n="home.cmpx.subs.sub">Ready-to-use SRT and VTT files, transcribed and, if you want, translated</span></td>
-                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.subs.dv"><span class="check">&#10003;</span> Professional <span class="unique-badge">Standout</span></td>
-                    <td data-label="Google" class="cmp-none">&mdash;</td>
-                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
-                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
-                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.subs.deepl">Existing subtitle files only</td>
-                </tr>
-                                <tr class="cmp-new">
-                    <td><span class="cmp-feat" data-i18n="home.cmpx.subject">Subject modes for interpreters</span><span class="cmp-sub" data-i18n="home.cmpx.subject.sub">Medical, legal, education, IT and business vocabulary</span></td>
-                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.subject.dv"><span class="check">&#10003;</span> <span class="unique-badge">Standout</span></td>
-                    <td data-label="Google" class="cmp-none">&mdash;</td>
-                    <td data-label="iTranslate" class="cmp-note" data-i18n="home.cmpx.subject.itr">Separate medical app</td>
-                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
-                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.subject.deepl">Glossary only</td>
-                </tr>
-                <tr>
-                    <td><span class="cmp-feat" data-i18n="home.cmpx.gloss">Glossary &amp; keyword boost</span><span class="cmp-sub" data-i18n="home.cmpx.gloss.sub">Helps names, jargon and specialist terms come through</span></td>
-                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmp.37"><span class="check">&#10003;</span> Professional</td>
-                    <td data-label="Google" class="cmp-none">&mdash;</td>
-                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
-                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
-                    <td data-label="DeepL" data-i18n-html="home.cmpx.gloss.deepl"><span class="check-muted">&#10003;</span> Glossary</td>
-                </tr>
-                <tr>
-                    <td><span class="cmp-feat" data-i18n="home.cmpx.private">Private Mode</span><span class="cmp-sub" data-i18n="home.cmpx.private.sub">Captions are cleared when you stop, with no local log, copy or export</span></td>
-                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmp.44"><span class="check">&#10003;</span> Professional <span class="unique-badge">Standout</span></td>
-                    <td data-label="Google" class="cmp-none">&mdash;</td>
-                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
-                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
-                    <td data-label="DeepL" class="cmp-none">&mdash;</td>
-                </tr>
-                <tr>
-                    <td><span class="cmp-feat" data-i18n="home.cmp.49">No third-party ads in the app</span></td>
-                    <td data-label="DuoVox" class="highlight-col"><span class="check">&#10003;</span></td>
-                    <td data-label="Google" class="cmp-none">&mdash;</td>
-                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
-                    <td data-label="Microsoft" data-i18n-html="home.cmp.50"><span class="check-muted">&#10003;</span> Apps</td>
-                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmp.51">No ads; tracking on its website</td>
-                </tr>
-                <!-- Best For -->
-                <tr class="category-row best-for-row">
-                    <td data-i18n-html="home.cmp.52"><strong>Best for&hellip;</strong></td>
-                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.best.dv"><strong>Live two-way conversations, calls and videos on your PC</strong></td>
-                    <td data-label="Google" data-i18n="home.cmp.54">Casual text &amp; voice</td>
-                    <td data-label="iTranslate" data-i18n="home.cmp.55">Casual voice</td>
-                    <td data-label="Microsoft" data-i18n="home.cmp.56">Phrase-by-phrase translation on a phone</td>
-                    <td data-label="DeepL" data-i18n="home.cmp.57">Written translation &amp; business meetings</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="cmp-cta">
-        <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary" data-i18n="home.cmpx.cta">Try DuoVox free on Windows</a>
-        <p class="cta-micro" data-i18n="home.pricing.free.micro">No account needed.</p>
-    </div>
-    <p class="pricing-footnote compare-checked" style="max-width:900px;margin:1rem auto 0;" data-i18n-html="home.cmp.58">Competitor information checked on 6 October 2026 (subject modes: 2 November 2026) against each company&rsquo;s own website and app store listings. &mdash; means not offered, or not found on the company&rsquo;s own pages. Features change often; if anything here is out of date, please tell us at <a href="mailto:support@duovox.net">support@duovox.net</a>.</p>
-</section>
-
-<!-- Who It's For -->
-<section class="section" id="who-its-for" style="padding-bottom:40px;">
-    <h2 class="section-title" data-i18n="home.who.1">Who It's For</h2>
-    <div class="audience-grid">
-        <div class="audience-card">
-            <div class="audience-icon">&#127973;</div>
-            <h3 data-i18n="home.who.8">Professional Interpreters</h3>
-            <p data-i18n="home.who.9">Enhanced terminology recognition for specialist professional settings, with Private Mode for sensitive content. As an assistive aid, DuoVox supports &mdash; but does not replace &mdash; a qualified human interpreter.</p>
-            <p data-i18n-html="home.who.interp"><a href="interpreters.html">How DuoVox helps interpreters &rarr;</a></p>
-            <span class="audience-plan" data-i18n="home.who.10">Professional</span>
-        </div>
-        <div class="audience-card">
-            <div class="audience-icon">&#127891;</div>
-            <h3 data-i18n="home.who.learn">Language Learners</h3>
-            <p data-i18n="home.learn.desc">Say a sentence in your own language and DuoVox shows you the translation as you speak. Then try saying it in the language you are learning: DuoVox writes down exactly what it heard and translates it back, so you can see straight away whether you were understood. Practise real conversations with a friend or a teacher, each speaking your own language, both reading along.</p>
-            <p data-i18n-html="home.who.learnvid"><a href="https://youtu.be/_J8kYKG_Pqw">Watch the language-learning video &rarr;</a></p>
-            <span class="audience-plan" data-i18n="home.who.4">Free or Standard</span>
-        </div>
-        <div class="audience-card">
-            <div class="audience-icon">&#9992;</div>
-            <h3 data-i18n="home.who.2">Travellers &amp; Students</h3>
-            <p data-i18n="home.who.3">Follow lectures, video calls with family abroad, and foreign-language films and videos. The Free plan works offline, with no internet connection.</p>
-            <span class="audience-plan" data-i18n="home.who.4">Free or Standard</span>
-        </div>
-        <div class="audience-card">
-            <div class="audience-icon">&#128188;</div>
-            <h3 data-i18n="home.who.5">Business Professionals</h3>
-            <p data-i18n="home.who.6">Follow international meetings, client calls, and negotiations in real time. Export subtitles and translate documents for your records.</p>
-            <span class="audience-plan" data-i18n="home.who.7">Standard or Professional</span>
-        </div>
-        <div class="audience-card">
-            <div class="audience-icon">&#128179;</div>
-            <h3 data-i18n="home.who.11">Occasional Users</h3>
-            <p data-i18n="home.who.12">Try DuoVox without signing up to a monthly plan. Buy credits as you need them &mdash; great for one-off translation, testing the service, or topping up beyond your subscription.</p>
-            <span class="audience-plan" data-i18n="home.who.13">Pay-As-You-Go</span>
-        </div>
-    </div>
 </section>
 
 <!-- Pricing -->
@@ -781,7 +539,7 @@
             </ul>
             <div class="price-actions">
                 <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="plan.btn.app">Get the free app</span></a>
-                <a href="buy.html#plans" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span class="btn-two"><span data-i18n="plan.btn.plan">Buy this plan</span><small data-i18n="plan.btn.via">card or PayPal</small></span></a>
+                <a data-quickbuy="std-plans" href="buy.html#plans" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span class="btn-two"><span data-i18n="plan.btn.plan">Buy this plan</span><small data-i18n="plan.btn.via">card or PayPal</small></span></a>
                 <div class="price-notes">
                     <p class="cta-micro" data-i18n="home.pricing.standard.micro">Best if you use it 10+ hours per month.</p>
                 </div>
@@ -810,7 +568,7 @@
             </ul>
             <div class="price-actions">
                 <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="plan.btn.app">Get the free app</span></a>
-                <a href="buy.html#plans" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span class="btn-two"><span data-i18n="plan.btn.plan">Buy this plan</span><small data-i18n="plan.btn.via">card or PayPal</small></span></a>
+                <a data-quickbuy="pro-plans" href="buy.html#plans" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span class="btn-two"><span data-i18n="plan.btn.plan">Buy this plan</span><small data-i18n="plan.btn.via">card or PayPal</small></span></a>
                 <div class="price-notes">
                     <p class="cta-micro" data-i18n="home.pricing.professional.micro">Best if you use it 28+ hours per month.</p>
                 </div>
@@ -838,7 +596,7 @@
             </ul>
             <div class="price-actions">
                 <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-secondary btn-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-i18n="plan.btn.app">Get the free app</span></a>
-                <a href="buy.html#hours" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span class="btn-two"><span data-i18n="plan.btn.hours">Buy hours</span><small data-i18n="plan.btn.via">card or PayPal</small></span></a>
+                <a data-quickbuy="hours" href="buy.html#hours" class="btn btn-secondary btn-store btn-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span class="btn-two"><span data-i18n="plan.btn.hours">Buy hours</span><small data-i18n="plan.btn.via">card or PayPal</small></span></a>
                 <div class="price-notes">
                     <p class="cta-micro" data-i18n="cta.credits_note">Credits can also be bought inside the app.</p>
                     <p class="cta-micro" data-i18n="home.pricing.payg.micro">Try either tier without subscribing.</p>
@@ -848,6 +606,248 @@
     </div>
     <p class="pricing-footnote" style="text-align:center;font-weight:600;" data-i18n="home.pricing.tax">Taxes may apply and will be calculated at checkout.</p>
     <p class="pricing-footnote" data-i18n-html="home.pricing.footnote">On a subscription, Pay-As-You-Go hours you already hold take over automatically when your monthly hours run out &mdash; even mid-session, so a long call carries on without a break. If you hold none, you'll be offered three choices: buy hours (they're ready for your next session), continue in free offline mode for the rest of the session (lower quality, no internet needed), or end the session. We never auto-charge beyond your subscription without explicit confirmation. See our <a href="terms.html">fair usage policy</a>.</p>
+</section>
+
+<!-- Features -->
+<section class="section" id="features">
+    <h2 class="section-title" data-i18n="home.features.title">Why DuoVox?</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">&#127911;</div>
+            <h3 data-i18n="home.feat.dual.title">Clear Two-Way Conversations</h3>
+            <p data-i18n="home.feat.dual.desc">See both sides of the dialogue separately, so nothing gets mixed up. Each language gets its own dedicated panel with real-time text.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">&#127760;</div>
+            <h3 data-i18n="home.feat.langs.title">62 Languages</h3>
+            <p data-i18n="home.feat.langs.desc">From English and Russian to Japanese, Arabic, Hindi and many more. The app's own menus and screens are available in 23 languages.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">&#9889;</div>
+            <h3 data-i18n="home.feat.ai.title">Real-time Translations</h3>
+            <p data-i18n="home.feat.ai.desc">Fast, natural-sounding translations that aim to follow real speech. DuoVox is designed to cope with everyday accents and background noise, though accuracy can vary in difficult audio &mdash; always verify important details.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">&#128274;</div>
+            <h3 data-i18n="home.feat.offline.title">Works Offline</h3>
+            <p data-i18n="home.feat.offline.desc">No signal? No problem. DuoVox includes built-in offline transcription that works without internet &mdash; available on all tiers. Great for holidays and travel.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">&#128187;</div>
+            <h3 data-i18n="home.feat.pcaudio.title">Works With Anything Your PC Plays</h3>
+            <p data-i18n-html="home.feat.pcaudio.desc">Teams, Zoom, Google Meet and WhatsApp calls, YouTube and films, with nothing joining the meeting. Or switch to the microphone for the people in the room. <a href="calls.html">Video calls &rarr;</a></p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">&#128737;</div>
+            <h3 data-i18n="home.feat.privacy.title">Privacy Built In</h3>
+            <p data-i18n="home.feat.privacy.desc">Audio is processed in real time and not stored by us; on paid tiers it is streamed to our AI providers for real-time processing only. Providers may keep limited operational logs under their own privacy policies. Transcriptions stay on your device. Free offline mode works entirely on-device. Enable Private Mode for the strictest, no-local-log option.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Who It's For -->
+<section class="section" id="who-its-for" style="padding-bottom:40px;">
+    <h2 class="section-title" data-i18n="home.who.1">Who It's For</h2>
+    <div class="audience-grid">
+        <div class="audience-card">
+            <div class="audience-icon">&#127973;</div>
+            <h3 data-i18n="home.who.8">Professional Interpreters</h3>
+            <p data-i18n="home.who.9">Enhanced terminology recognition for specialist professional settings, with Private Mode for sensitive content. As an assistive aid, DuoVox supports &mdash; but does not replace &mdash; a qualified human interpreter.</p>
+            <p data-i18n-html="home.who.interp"><a href="interpreters.html">How DuoVox helps interpreters &rarr;</a></p>
+            <span class="audience-plan" data-i18n="home.who.10">Professional</span>
+        </div>
+        <div class="audience-card">
+            <div class="audience-icon">&#127891;</div>
+            <h3 data-i18n="home.who.learn">Language Learners</h3>
+            <p data-i18n="home.learn.desc">Say a sentence in your own language and DuoVox shows you the translation as you speak. Then try saying it in the language you are learning: DuoVox writes down exactly what it heard and translates it back, so you can see straight away whether you were understood. Practise real conversations with a friend or a teacher, each speaking your own language, both reading along.</p>
+            <p data-i18n-html="home.who.learnvid"><a href="https://youtu.be/_J8kYKG_Pqw">Watch the language-learning video &rarr;</a></p>
+            <span class="audience-plan" data-i18n="home.who.4">Free or Standard</span>
+        </div>
+        <div class="audience-card">
+            <div class="audience-icon">&#9992;</div>
+            <h3 data-i18n="home.who.2">Travellers &amp; Students</h3>
+            <p data-i18n="home.who.3">Follow lectures, video calls with family abroad, and foreign-language films and videos. The Free plan works offline, with no internet connection.</p>
+            <span class="audience-plan" data-i18n="home.who.4">Free or Standard</span>
+        </div>
+        <div class="audience-card">
+            <div class="audience-icon">&#128188;</div>
+            <h3 data-i18n="home.who.5">Business Professionals</h3>
+            <p data-i18n="home.who.6">Follow international meetings, client calls, and negotiations in real time. Export subtitles and translate documents for your records.</p>
+            <span class="audience-plan" data-i18n="home.who.7">Standard or Professional</span>
+        </div>
+        <div class="audience-card">
+            <div class="audience-icon">&#128179;</div>
+            <h3 data-i18n="home.who.11">Occasional Users</h3>
+            <p data-i18n="home.who.12">Try DuoVox without signing up to a monthly plan. Buy credits as you need them &mdash; great for one-off translation, testing the service, or topping up beyond your subscription.</p>
+            <span class="audience-plan" data-i18n="home.who.13">Pay-As-You-Go</span>
+        </div>
+    </div>
+</section>
+
+<!-- Two layouts (2 Nov 2026, David: the 4-box view is the professional USP; the Chat view is the everyday layout). Real captures. -->
+<section class="section" id="layouts">
+    <h2 class="section-title" data-i18n="home.layouts.title">Two layouts, for two kinds of conversation</h2>
+    <div class="layouts-grid">
+        <figure class="layout-card">
+            <a href="img/home-four-box.png"><img src="img/home-four-box.png" alt="The 4-box view" width="1164" height="1040" loading="lazy"></a>
+            <figcaption>
+                <h3 data-i18n="home.layouts.4box.title">4-box view: for professionals</h3>
+                <p data-i18n="home.layouts.4box.desc">Each speaker's exact words and the translation, in four boxes side by side. Made for interpreters and for anyone who needs to check what was said, in both languages, as it happens.</p>
+            </figcaption>
+        </figure>
+        <figure class="layout-card">
+            <a href="img/home-chat-view-full.png"><img class="layout-img-full" src="img/home-chat-view-full.png" alt="The Chat view" width="904" height="954" loading="lazy"></a>
+            <figcaption>
+                <h3 data-i18n="home.layouts.chat.title">Chat view: for everyday conversations</h3>
+                <p data-i18n="home.layouts.chat.desc">The conversation as speech bubbles, like a messaging app, with the translation in every bubble. Easy to follow on a family call, while travelling or practising a language.</p>
+            </figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="section" id="how-it-works" style="padding-top:40px;">
+    <h2 class="section-title" data-i18n="home.how.1">How It Works</h2>
+    <div class="steps-grid">
+        <div class="step-card">
+            <div class="step-number">1</div>
+            <h3 data-i18n="home.how.2">Choose Your Languages</h3>
+            <p><span data-i18n="home.how.s1.text">Select a primary language and a target language. DuoVox offers 62 languages &mdash; 57 on Professional, 53 on Standard, and 31 that work offline on Free.</span>
+               <a href="languages.html" data-i18n="home.how.s1.see">See exactly what each plan covers.</a></p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">2</div>
+            <h3 data-i18n="home.how.3">Start Talking</h3>
+            <p data-i18n="home.how.4b">Press Start. DuoVox listens to what your PC is playing, such as a call or a video, or to the people in the room through your microphone, and starts writing it down straight away.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">3</div>
+            <h3 data-i18n="home.how.5">See Both Languages</h3>
+            <p data-i18n="home.how.6">Each language gets its own panel. You see your words on the left and the translation on the right &mdash; in real time.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">4</div>
+            <h3 data-i18n="home.how.7">Keep the Conversation</h3>
+            <p data-i18n="home.how.8">DuoVox detects which language is being spoken and puts each sentence in the right panel. Just talk naturally &mdash; it keeps up.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Comparison Table -->
+<section class="section" id="compare" style="padding-top:40px;">
+    <h2 class="section-title" data-i18n="home.cmpx.title">Why DuoVox Stands Out</h2>
+    <p class="section-subtitle" style="margin-top:-2rem; margin-bottom:2rem;" data-i18n="home.cmpx.subtitle">Built for real two-way conversations on your PC &mdash; see how it compares with the most popular translation apps.</p>
+    <div class="comparison-table-wrap">
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th scope="col" data-i18n="home.cmp.feature">Feature</th>
+                    <th scope="col" class="highlight-col">DuoVox</th>
+                    <th scope="col">Google Translate</th>
+                    <th scope="col">iTranslate</th>
+                    <th scope="col">Microsoft Translator</th>
+                    <th scope="col">DeepL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="cmp-feat" data-i18n="home.cmpx.4box">4-box dual-lane view</span><span class="cmp-sub" data-i18n="home.cmpx.4box.sub">Both speakers&rsquo; words and both translations on screen at the same time</span></td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.4box.dv"><span class="check">&#10003;</span> 4 live boxes <span class="unique-badge">Standout</span></td>
+                    <td data-label="Google" class="cmp-note" data-i18n="home.cmpx.split.phone">Phone split screen</td>
+                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
+                    <td data-label="Microsoft" class="cmp-note" data-i18n="home.cmpx.split.phone">Phone split screen</td>
+                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.split.f2f">Face-to-face split screen</td>
+                </tr>
+                <tr>
+                    <td><span class="cmp-feat" data-i18n="home.cmpx.cont">Continuous, hands-free translation</span><span class="cmp-sub" data-i18n="home.cmpx.cont.sub">Just talk &mdash; no tapping a button and waiting your turn</span></td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmp.5"><span class="check">&#10003;</span> Continuous</td>
+                    <td data-label="Google" class="cmp-note" data-i18n="home.cmpx.cont.google">Conversations take turns</td>
+                    <td data-label="iTranslate" class="cmp-note" data-i18n="home.cmpx.turn">Turn-based</td>
+                    <td data-label="Microsoft" class="cmp-note" data-i18n="home.cmpx.turn">Turn-based</td>
+                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.paid.voice">Paid plans only (DeepL Voice)</td>
+                </tr>
+                <tr>
+                    <td><span class="cmp-feat" data-i18n="home.cmpx.sys">Captions anything playing on your PC</span><span class="cmp-sub" data-i18n="home.cmpx.sys.sub">Calls, meetings, YouTube and films &mdash; from any app</span></td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.sys.dv"><span class="check">&#10003;</span> Any app <span class="unique-badge">Standout</span></td>
+                    <td data-label="Google" class="cmp-none">&mdash;</td>
+                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
+                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
+                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.sys.deepl">Teams, Zoom &amp; Meet only (paid)</td>
+                </tr>
+                <tr>
+                    <td><span class="cmp-feat" data-i18n="home.cmpx.offline">Free offline mode</span><span class="cmp-sub" data-i18n="home.cmpx.offline.sub">No internet needed, and your audio never leaves your PC</span></td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmp.25"><span class="check">&#10003;</span> Free plan, 31 languages</td>
+                    <td data-label="Google" class="cmp-note" data-i18n="home.cmpx.offline.google">Text and camera; live on Pixel phones only</td>
+                    <td data-label="iTranslate" class="cmp-note" data-i18n="home.cmp.27">Paid only</td>
+                    <td data-label="Microsoft" class="cmp-note" data-i18n="home.cmp.28">Text only</td>
+                    <td data-label="DeepL" class="cmp-none">&mdash;</td>
+                </tr>
+                <tr>
+                    <td><span class="cmp-feat" data-i18n="home.cmpx.desktop">Desktop app for Windows</span></td>
+                    <td data-label="DuoVox" class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td data-label="Google" class="cmp-note" data-i18n="home.cmp.39">Web only</td>
+                    <td data-label="iTranslate" class="cmp-note" data-i18n="home.cmp.40">Web and Mac only</td>
+                    <td data-label="Microsoft" class="cmp-note" data-i18n="home.cmpx.retired">Retired in 2021</td>
+                    <td data-label="DeepL"><span class="check-muted">&#10003;</span></td>
+                </tr>
+                <tr>
+                    <td><span class="cmp-feat" data-i18n="home.cmpx.subs">Subtitles from live sessions and media files</span><span class="cmp-sub" data-i18n="home.cmpx.subs.sub">Ready-to-use SRT and VTT files, transcribed and, if you want, translated</span></td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.subs.dv"><span class="check">&#10003;</span> Professional <span class="unique-badge">Standout</span></td>
+                    <td data-label="Google" class="cmp-none">&mdash;</td>
+                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
+                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
+                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.subs.deepl">Existing subtitle files only</td>
+                </tr>
+                                <tr class="cmp-new">
+                    <td><span class="cmp-feat" data-i18n="home.cmpx.subject">Subject modes for interpreters</span><span class="cmp-sub" data-i18n="home.cmpx.subject.sub">Medical, legal, education, IT and business vocabulary</span></td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.subject.dv"><span class="check">&#10003;</span> <span class="unique-badge">Standout</span></td>
+                    <td data-label="Google" class="cmp-none">&mdash;</td>
+                    <td data-label="iTranslate" class="cmp-note" data-i18n="home.cmpx.subject.itr">Separate medical app</td>
+                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
+                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmpx.subject.deepl">Glossary only</td>
+                </tr>
+                <tr class="cmp-more">
+                    <td><span class="cmp-feat" data-i18n="home.cmpx.gloss">Glossary &amp; keyword boost</span><span class="cmp-sub" data-i18n="home.cmpx.gloss.sub">Helps names, jargon and specialist terms come through</span></td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmp.37"><span class="check">&#10003;</span> Professional</td>
+                    <td data-label="Google" class="cmp-none">&mdash;</td>
+                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
+                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
+                    <td data-label="DeepL" data-i18n-html="home.cmpx.gloss.deepl"><span class="check-muted">&#10003;</span> Glossary</td>
+                </tr>
+                <tr class="cmp-more">
+                    <td><span class="cmp-feat" data-i18n="home.cmpx.private">Private Mode</span><span class="cmp-sub" data-i18n="home.cmpx.private.sub">Captions are cleared when you stop, with no local log, copy or export</span></td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmp.44"><span class="check">&#10003;</span> Professional <span class="unique-badge">Standout</span></td>
+                    <td data-label="Google" class="cmp-none">&mdash;</td>
+                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
+                    <td data-label="Microsoft" class="cmp-none">&mdash;</td>
+                    <td data-label="DeepL" class="cmp-none">&mdash;</td>
+                </tr>
+                <tr class="cmp-more">
+                    <td><span class="cmp-feat" data-i18n="home.cmp.49">No third-party ads in the app</span></td>
+                    <td data-label="DuoVox" class="highlight-col"><span class="check">&#10003;</span></td>
+                    <td data-label="Google" class="cmp-none">&mdash;</td>
+                    <td data-label="iTranslate" class="cmp-none">&mdash;</td>
+                    <td data-label="Microsoft" data-i18n-html="home.cmp.50"><span class="check-muted">&#10003;</span> Apps</td>
+                    <td data-label="DeepL" class="cmp-note" data-i18n="home.cmp.51">No ads; tracking on its website</td>
+                </tr>
+                <!-- Best For -->
+                <tr class="category-row best-for-row">
+                    <td data-i18n-html="home.cmp.52"><strong>Best for&hellip;</strong></td>
+                    <td data-label="DuoVox" class="highlight-col" data-i18n-html="home.cmpx.best.dv"><strong>Live two-way conversations, calls and videos on your PC</strong></td>
+                    <td data-label="Google" data-i18n="home.cmp.54">Casual text &amp; voice</td>
+                    <td data-label="iTranslate" data-i18n="home.cmp.55">Casual voice</td>
+                    <td data-label="Microsoft" data-i18n="home.cmp.56">Phrase-by-phrase translation on a phone</td>
+                    <td data-label="DeepL" data-i18n="home.cmp.57">Written translation &amp; business meetings</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="cmp-showall" hidden><button type="button" class="btn btn-secondary" data-cmp-showall data-i18n="home.cmp.showall">Show the full comparison</button></p>
+    <div class="cmp-cta">
+        <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxnet" class="btn btn-primary" data-i18n="home.cmpx.cta">Try DuoVox free on Windows</a>
+        <p class="cta-micro" data-i18n="home.pricing.free.micro">No account needed.</p>
+    </div>
+    <p class="pricing-footnote compare-checked" style="max-width:900px;margin:1rem auto 0;" data-i18n-html="home.cmp.58">Competitor information checked on 6 October 2026 (subject modes: 2 November 2026) against each company&rsquo;s own website and app store listings. &mdash; means not offered, or not found on the company&rsquo;s own pages. Features change often; if anything here is out of date, please tell us at <a href="mailto:support@duovox.net">support@duovox.net</a>.</p>
 </section>
 
 <!-- FAQ -->
@@ -948,6 +948,115 @@
     </div>
 </section>
 
+<!-- Quick buy pop-up (quickbuy.js / quickbuy.css) -->
+<dialog id="qb" class="qb" aria-label="DuoVox">
+<button class="qb-x" type="button" data-qb-close aria-label="Close">&times;</button>
+<div data-qb-group="std-plans" hidden>
+<div class="tier">
+            <h3 data-i18n="home.pricing.standard.name">Standard</h3>
+            <p class="bestfor" data-i18n="home.pricing.standard.bestfor">Best for: travellers, students &amp; everyday bilingual chat</p>
+            <div class="opt">
+                <div class="opt-name" data-i18n="pay.opt.monthly">Monthly</div>
+                <div class="opt-right"><a class="btn btn-secondary" href="https://api.duovox.net/buy/duovox_standard_monthly" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_standard_monthly" id="p-std-m" data-price-usd="$22.99" data-price-gbp="&pound;22.99" data-price-eur="&euro;22.99">$22.99</span> <span class="opt-sub" data-i18n="buy.per.month">per month</span></div>
+            </div>
+            <div class="opt best">
+                <div class="opt-name"><span data-i18n="pay.opt.annual">Annual</span><span class="tag" data-i18n="buy.tag.value">Best value</span></div>
+                <div class="opt-right"><a class="btn btn-primary" href="https://api.duovox.net/buy/duovox_standard_annual" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_standard_annual" id="p-std-y" data-price-usd="$249.99" data-price-gbp="&pound;249.99" data-price-eur="&euro;249.99">$249.99</span> <span class="opt-sub" data-i18n="buy.per.year">per year</span>
+                    <div class="opt-sub"><span class="save" data-save-of="p-std-m" data-save-for="p-std-y" data-months="12" data-i18n="buy.save">Save {p}% compared with monthly</span></div></div>
+            </div>
+        </div>
+</div>
+<div data-qb-group="pro-plans" hidden>
+<div class="tier pro">
+            <div class="price-badge" data-i18n="home.pricing.professional.badge">Best for professionals</div>
+            <h3 data-i18n="home.pricing.professional.name">Professional</h3>
+            <p class="bestfor" data-i18n="home.pricing.professional.bestfor">Best for: businesses and professional interpreters</p>
+            <div class="opt">
+                <div class="opt-name" data-i18n="pay.opt.monthly">Monthly</div>
+                <div class="opt-right"><a class="btn btn-secondary" href="https://api.duovox.net/buy/duovox_professional_monthly" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_professional_monthly" id="p-pro-m" data-price-usd="$159.99" data-price-gbp="&pound;159.99" data-price-eur="&euro;159.99">$159.99</span> <span class="opt-sub" data-i18n="buy.per.month">per month</span></div>
+            </div>
+            <div class="opt best">
+                <div class="opt-name"><span data-i18n="pay.opt.6month">6 months</span><span class="tag" data-i18n="buy.tag.value">Best value</span></div>
+                <div class="opt-right"><a class="btn btn-primary" href="https://api.duovox.net/buy/duovox_professional_6month" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_professional_6month" id="p-pro-6" data-price-usd="$899.99" data-price-gbp="&pound;839.99" data-price-eur="&euro;899.99">$899.99</span> <span class="opt-sub" data-i18n="buy.per.6month">every 6 months</span>
+                    <div class="opt-sub"><span class="save" data-save-of="p-pro-m" data-save-for="p-pro-6" data-months="6" data-i18n="buy.save">Save {p}% compared with monthly</span></div></div>
+            </div>
+        </div>
+</div>
+<div data-qb-group="hours" hidden>
+<h3 data-i18n="buy.hours.title">Pay-As-You-Go hours</h3>
+<p class="bestfor" data-i18n="buy.hours.sub">No subscription. Buy hours when you need them; they never expire.</p>
+<div class="tiers">
+<div class="tier">
+            <h3 data-i18n="home.pricing.standard.name">Standard</h3>
+            <p class="bestfor" data-i18n="home.pricing.standard.f1">Live AI transcription &amp; translation</p>
+            <div class="opt">
+                <div class="opt-name" data-i18n="buy.h1">1 hour</div>
+                <div class="opt-right"><a class="btn btn-secondary" href="https://api.duovox.net/buy/duovox_standard_payg_1" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_standard_payg_1" data-hours="1" data-price-usd="$2.99" data-price-gbp="&pound;2.99" data-price-eur="&euro;2.99">$2.99</span></div>
+            </div>
+            <div class="opt">
+                <div class="opt-name" data-i18n="buy.h10">10 hours</div>
+                <div class="opt-right"><a class="btn btn-secondary" href="https://api.duovox.net/buy/duovox_standard_payg_10" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_standard_payg_10" data-hours="10" data-price-usd="$24.99" data-price-gbp="&pound;24.99" data-price-eur="&euro;24.99">$24.99</span> <span class="opt-sub"><span class="ph"></span> <span data-i18n="buy.perhour">per hour</span></span></div>
+            </div>
+            <div class="opt best">
+                <div class="opt-name"><span data-i18n="buy.h25">25 hours</span><span class="tag" data-i18n="buy.tag.value">Best value</span></div>
+                <div class="opt-right"><a class="btn btn-primary" href="https://api.duovox.net/buy/duovox_standard_payg_25" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_standard_payg_25" data-hours="25" data-price-usd="$59.99" data-price-gbp="&pound;59.99" data-price-eur="&euro;59.99">$59.99</span> <span class="opt-sub"><span class="ph"></span> <span data-i18n="buy.perhour">per hour</span></span></div>
+            </div>
+        </div>
+<div class="tier pro">
+            <h3 data-i18n="home.pricing.professional.name">Professional</h3>
+            <p class="bestfor" data-i18n="home.pricing.professional.f1">Enhanced terminology recognition for specialist vocabulary</p>
+            <div class="opt">
+                <div class="opt-name" data-i18n="buy.h1">1 hour</div>
+                <div class="opt-right"><a class="btn btn-secondary" href="https://api.duovox.net/buy/duovox_professional_payg_1" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_professional_payg_1" data-hours="1" data-price-usd="$6.99" data-price-gbp="&pound;6.99" data-price-eur="&euro;6.99">$6.99</span></div>
+            </div>
+            <div class="opt">
+                <div class="opt-name" data-i18n="buy.h10">10 hours</div>
+                <div class="opt-right"><a class="btn btn-secondary" href="https://api.duovox.net/buy/duovox_professional_payg_10" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_professional_payg_10" data-hours="10" data-price-usd="$59.99" data-price-gbp="&pound;59.99" data-price-eur="&euro;59.99">$59.99</span> <span class="opt-sub"><span class="ph"></span> <span data-i18n="buy.perhour">per hour</span></span></div>
+            </div>
+            <div class="opt best">
+                <div class="opt-name"><span data-i18n="buy.h25">25 hours</span><span class="tag" data-i18n="buy.tag.value">Best value</span></div>
+                <div class="opt-right"><a class="btn btn-primary" href="https://api.duovox.net/buy/duovox_professional_payg_25" rel="nofollow" data-i18n="buy.btn">Buy now</a></div>
+                <div><span class="price-amount" data-product="duovox_professional_payg_25" data-hours="25" data-price-usd="$144.99" data-price-gbp="&pound;144.99" data-price-eur="&euro;144.99">$144.99</span> <span class="opt-sub"><span class="ph"></span> <span data-i18n="buy.perhour">per hour</span></span></div>
+            </div>
+        </div>
+</div>
+</div>
+<div data-qb-group="howto" hidden>
+<h3 data-i18n="buy.how.title">How it works</h3>
+<ol class="steps">
+        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
+            <div><strong data-i18n="buy.step1.t">1. Choose and pay</strong><span data-i18n="buy.step1.d">Pick a plan or hours below and pay by card or PayPal.</span></div></li>
+        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 20h16"/></svg></span>
+            <div><strong data-i18n="buy.step2.t">2. Install DuoVox</strong><span data-i18n-html="buy.step2.d">Get DuoVox free from the <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxbuy">Microsoft Store</a>.</span></div></li>
+        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9"/><path d="M16 7l3 3"/></svg></span>
+            <div><strong data-i18n="buy.step3.t">3. Activate</strong><span data-i18n-html="buy.step3.d">Click <strong>Activate in DuoVox</strong> after paying, or enter your code in the app under <strong>Plans &amp; hours</strong>. <a href="help.html#activate">How?</a></span></div></li>
+    </ol>
+<p class="qb-more" data-i18n-html="help.a.activate">After you pay by card or PayPal on duovox.net, the confirmation page shows a code and an <strong>Activate in DuoVox</strong> button. Install DuoVox from the Microsoft Store, then click <strong>Activate in DuoVox</strong>. Or open <strong>Plans &amp; hours</strong> in the app, choose <strong>Have a DuoVox code?</strong>, enter the code and press <strong>Use code</strong>. Hours are added to that computer. A plan becomes active on that computer, which then shows a code for adding your other computers (up to three). Keep your code; if you lose it, email <a href="mailto:info@duovox.net">info@duovox.net</a> with your Paddle receipt and we will find it.</p>
+<p class="qb-after"><a href="#" data-qb-back data-i18n="buy.how.back">Back to the prices</a></p>
+</div>
+<div data-qb-group="pay" hidden>
+<div class="qb-brand"><img src="icon.png" alt="" width="34" height="34"><strong>DuoVox</strong><span class="qb-secure" data-i18n="buy.chip.secure">Secure checkout by Paddle</span></div>
+<div class="qb-order"><div><strong data-qb-item></strong><span data-qb-sub></span></div><div class="qb-total" data-qb-price></div></div>
+<p class="qb-tax" data-i18n="home.pricing.tax">Taxes may apply and will be calculated at checkout.</p>
+<p class="qb-status" data-qb-status data-i18n="buy.pay.opening">Opening secure checkout&hellip;</p>
+<div class="dvx-pay"></div>
+<p class="qb-after"><a href="#" data-qb-back data-i18n="buy.how.back">Back to the prices</a></p>
+</div>
+<div data-qb-after>
+<ul class="qb-trust"><li><span data-i18n="buy.chip.secure">Secure checkout by Paddle</span></li><li><span data-i18n="buy.chip.pay">Card or PayPal</span></li></ul>
+<p class="qb-after"><span data-i18n="buy.after">After paying, install DuoVox free from the Microsoft Store and click Activate in DuoVox.</span> <a href="help.html#activate" data-howto data-i18n="buy.how.link">How it works</a></p>
+</div>
+</dialog>
+
 <!-- Footer -->
 <footer class="footer">
     <div class="footer-inner">
@@ -968,7 +1077,9 @@
 </footer>
 
 <script src="i18n.js"></script>
+<script src="prices.js"></script>
 <script src="offers.js" defer></script>
+<script src="quickbuy.js" defer></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6da9362d8d7f49fc913578849ffbc7bb"}'></script><!-- End Cloudflare Web Analytics -->
 <script src="/store-click.js" defer></script>
 <!-- Paddle Retain (payment recovery, 17 Nov 2026): Paddle.js, then api.duovox.net initialises it with the client-side token. -->

@@ -1232,5 +1232,11 @@
   "offer.fit.2fd488e57d": "{hours} {tier}-Stunden + {bonus} gratis, um mit den Menschen zu sprechen, die wichtig sind.",
   "offer.fit.2d7c6c65e4": "{hours} {tier}-Stunden + {bonus} gratis.",
   "offer.fit.35d73ab72d": "{hours} {tier}-Stunden günstiger, nur für begrenzte Zeit.",
-  "offer.fit.43f818a2e2": "{hours} {tier}-Stunden günstiger."
+  "offer.fit.43f818a2e2": "{hours} {tier}-Stunden günstiger.",
+  "home.cmp.showall": "Vollständigen Vergleich anzeigen",
+  "buy.how.title": "So funktioniert es",
+  "buy.how.back": "Zurück zu den Preisen",
+  "buy.pay.opening": "Sicherer Bezahlvorgang wird geöffnet…",
+  "buy.after": "Nach der Zahlung installieren Sie DuoVox kostenlos aus dem Microsoft Store und klicken in DuoVox auf Aktivieren.",
+  "buy.how.link": "So funktioniert es"
 }

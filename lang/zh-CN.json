@@ -1232,5 +1232,11 @@
   "offer.fit.2fd488e57d": "{hours} 小时{tier}时长 + 额外赠送 {bonus}，与重要的人畅快交谈。",
   "offer.fit.2d7c6c65e4": "{hours} 小时{tier}时长 + 额外赠送 {bonus}。",
   "offer.fit.35d73ab72d": "{hours} 小时{tier}时长更优惠，限时提供。",
-  "offer.fit.43f818a2e2": "{hours} 小时{tier}时长更优惠。"
+  "offer.fit.43f818a2e2": "{hours} 小时{tier}时长更优惠。",
+  "home.cmp.showall": "显示完整对比",
+  "buy.how.title": "如何运作",
+  "buy.how.back": "返回价格",
+  "buy.pay.opening": "正在打开安全结账页面…",
+  "buy.after": "付款后，请从 Microsoft Store 免费安装 DuoVox，然后在 DuoVox 中点击“激活”。",
+  "buy.how.link": "如何运作"
 }

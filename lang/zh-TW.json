@@ -1232,5 +1232,11 @@
   "offer.fit.2fd488e57d": "{hours} 小時的 {tier} 方案，另贈 {bonus}，和重要的人自在交談。",
   "offer.fit.2d7c6c65e4": "{hours} 小時的 {tier} 方案，另贈 {bonus}。",
   "offer.fit.35d73ab72d": "{hours} 小時的 {tier} 方案，限時優惠。",
-  "offer.fit.43f818a2e2": "{hours} 小時的 {tier} 方案，價格更優惠。"
+  "offer.fit.43f818a2e2": "{hours} 小時的 {tier} 方案，價格更優惠。",
+  "home.cmp.showall": "顯示完整比較",
+  "buy.how.title": "運作方式",
+  "buy.how.back": "返回價格",
+  "buy.pay.opening": "正在開啟安全結帳…",
+  "buy.after": "付款後，請從 Microsoft Store 免費安裝 DuoVox，並在 DuoVox 中點擊「啟用」。",
+  "buy.how.link": "運作方式"
 }

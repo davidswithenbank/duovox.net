@@ -1232,5 +1232,11 @@
   "offer.fit.2fd488e57d": "{hours} jam {tier} + {bonus} gratis, untuk berbicara dengan orang-orang yang berarti.",
   "offer.fit.2d7c6c65e4": "{hours} jam {tier} + {bonus} gratis.",
   "offer.fit.35d73ab72d": "{hours} jam {tier} dengan harga lebih murah, untuk waktu terbatas.",
-  "offer.fit.43f818a2e2": "{hours} jam {tier} dengan harga lebih murah."
+  "offer.fit.43f818a2e2": "{hours} jam {tier} dengan harga lebih murah.",
+  "home.cmp.showall": "Tampilkan perbandingan lengkap",
+  "buy.how.title": "Cara kerjanya",
+  "buy.how.back": "Kembali ke harga",
+  "buy.pay.opening": "Membuka checkout aman…",
+  "buy.after": "Setelah membayar, instal DuoVox gratis dari Microsoft Store dan klik Activate di DuoVox.",
+  "buy.how.link": "Cara kerjanya"
 }

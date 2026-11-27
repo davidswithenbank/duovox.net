@@ -1232,5 +1232,11 @@
   "offer.fit.2fd488e57d": "{hours} ชั่วโมง {tier} + ฟรี {bonus} เพื่อพูดคุยกับคนที่สำคัญ",
   "offer.fit.2d7c6c65e4": "{hours} ชั่วโมง {tier} + ฟรี {bonus}",
   "offer.fit.35d73ab72d": "{hours} ชั่วโมง {tier} ในราคาที่ถูกลง ในช่วงเวลาจำกัด",
-  "offer.fit.43f818a2e2": "{hours} ชั่วโมง {tier} ในราคาที่ถูกลง"
+  "offer.fit.43f818a2e2": "{hours} ชั่วโมง {tier} ในราคาที่ถูกลง",
+  "home.cmp.showall": "แสดงการเปรียบเทียบทั้งหมด",
+  "buy.how.title": "วิธีการทำงาน",
+  "buy.how.back": "กลับไปที่ราคา",
+  "buy.pay.opening": "กำลังเปิดหน้าชำระเงินที่ปลอดภัย…",
+  "buy.after": "หลังจากชำระเงินแล้ว ให้ติดตั้ง DuoVox ฟรีจาก Microsoft Store แล้วคลิก Activate ใน DuoVox",
+  "buy.how.link": "วิธีการทำงาน"
 }

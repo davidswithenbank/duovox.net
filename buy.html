@@ -76,6 +76,7 @@
         .opt .btn { width: 100%; justify-content: center; } }
 </style>
 <style>.site-offer{display:flex;flex-direction:column;align-items:center;margin:0 auto 2rem;padding:0 16px;max-width:100%}.site-offer[hidden]{display:none}.site-offer .oc-web,.site-offer .oc-app{max-width:100%}.site-offer-out{margin:2.5rem auto}.site-offer-row{flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:24px}.site-offer-pair:not(.site-offer-row){gap:24px}</style>
+<link rel="stylesheet" href="quickbuy.css">
 </head>
 <body>
 
@@ -94,9 +95,7 @@
             <li><a href="calls.html" data-i18n="nav.calls">Video calls</a></li>
             <li><a href="languages.html" data-i18n="nav.languages">Languages</a></li>
             <li><a href="help.html" data-i18n="nav.help">Help</a></li>
-            <li><a href="security.html" data-i18n="nav.security">Security</a></li>
-            <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
-            <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
+            <li class="nav-buy"><a href="buy.html" data-i18n="buy.btn">Buy now</a></li>
         </ul>
     </div>
 </nav>
@@ -348,14 +347,7 @@
 <span data-i18n="offer.fit.43f818a2e2" data-en="{hours} {tier} hours for less.">{hours} {tier} hours for less.</span>
 </template>
 <!-- /offer-i18n -->
-    <ol class="steps">
-        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
-            <div><strong data-i18n="buy.step1.t">1. Choose and pay</strong><span data-i18n="buy.step1.d">Pick a plan or hours below and pay by card or PayPal.</span></div></li>
-        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 20h16"/></svg></span>
-            <div><strong data-i18n="buy.step2.t">2. Install DuoVox</strong><span data-i18n-html="buy.step2.d">Get DuoVox free from the <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxbuy">Microsoft Store</a>.</span></div></li>
-        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9"/><path d="M16 7l3 3"/></svg></span>
-            <div><strong data-i18n="buy.step3.t">3. Activate</strong><span data-i18n-html="buy.step3.d">Click <strong>Activate in DuoVox</strong> after paying, or enter your code in the app under <strong>Plans &amp; hours</strong>. <a href="help.html#activate">How?</a></span></div></li>
-    </ol>
+    <p class="buy-after"><span data-i18n="buy.after">After paying, install DuoVox free from the Microsoft Store and click Activate in DuoVox.</span> <a href="help.html#activate" data-howto data-i18n="buy.how.link">How it works</a></p>
 
     <div class="sec-head" id="plans">
         <h2 data-i18n="buy.plans.title">Plans</h2>
@@ -462,6 +454,36 @@
     </div>
 </main>
 
+<!-- Quick buy pop-up (quickbuy.js / quickbuy.css) -->
+<dialog id="qb" class="qb" aria-label="DuoVox">
+<button class="qb-x" type="button" data-qb-close aria-label="Close">&times;</button>
+<div data-qb-group="howto" hidden>
+<h3 data-i18n="buy.how.title">How it works</h3>
+<ol class="steps">
+        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
+            <div><strong data-i18n="buy.step1.t">1. Choose and pay</strong><span data-i18n="buy.step1.d">Pick a plan or hours below and pay by card or PayPal.</span></div></li>
+        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 20h16"/></svg></span>
+            <div><strong data-i18n="buy.step2.t">2. Install DuoVox</strong><span data-i18n-html="buy.step2.d">Get DuoVox free from the <a href="https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxbuy">Microsoft Store</a>.</span></div></li>
+        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9"/><path d="M16 7l3 3"/></svg></span>
+            <div><strong data-i18n="buy.step3.t">3. Activate</strong><span data-i18n-html="buy.step3.d">Click <strong>Activate in DuoVox</strong> after paying, or enter your code in the app under <strong>Plans &amp; hours</strong>. <a href="help.html#activate">How?</a></span></div></li>
+    </ol>
+<p class="qb-more" data-i18n-html="help.a.activate">After you pay by card or PayPal on duovox.net, the confirmation page shows a code and an <strong>Activate in DuoVox</strong> button. Install DuoVox from the Microsoft Store, then click <strong>Activate in DuoVox</strong>. Or open <strong>Plans &amp; hours</strong> in the app, choose <strong>Have a DuoVox code?</strong>, enter the code and press <strong>Use code</strong>. Hours are added to that computer. A plan becomes active on that computer, which then shows a code for adding your other computers (up to three). Keep your code; if you lose it, email <a href="mailto:info@duovox.net">info@duovox.net</a> with your Paddle receipt and we will find it.</p>
+<p class="qb-after"><a href="#" data-qb-back data-i18n="buy.how.back">Back to the prices</a></p>
+</div>
+<div data-qb-group="pay" hidden>
+<div class="qb-brand"><img src="icon.png" alt="" width="34" height="34"><strong>DuoVox</strong><span class="qb-secure" data-i18n="buy.chip.secure">Secure checkout by Paddle</span></div>
+<div class="qb-order"><div><strong data-qb-item></strong><span data-qb-sub></span></div><div class="qb-total" data-qb-price></div></div>
+<p class="qb-tax" data-i18n="home.pricing.tax">Taxes may apply and will be calculated at checkout.</p>
+<p class="qb-status" data-qb-status data-i18n="buy.pay.opening">Opening secure checkout&hellip;</p>
+<div class="dvx-pay"></div>
+<p class="qb-after"><a href="#" data-qb-back data-i18n="buy.how.back">Back to the prices</a></p>
+</div>
+<div data-qb-after>
+<ul class="qb-trust"><li><span data-i18n="buy.chip.secure">Secure checkout by Paddle</span></li><li><span data-i18n="buy.chip.pay">Card or PayPal</span></li></ul>
+<p class="qb-after"><span data-i18n="buy.after">After paying, install DuoVox free from the Microsoft Store and click Activate in DuoVox.</span> <a href="help.html#activate" data-howto data-i18n="buy.how.link">How it works</a></p>
+</div>
+</dialog>
+
 <!-- Footer -->
 <footer class="footer">
     <div class="footer-inner">
@@ -516,6 +538,7 @@
 <script src="i18n.js"></script>
 <script src="prices.js"></script>
 <script src="offers.js" defer></script>
+<script src="quickbuy.js" defer></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6da9362d8d7f49fc913578849ffbc7bb"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

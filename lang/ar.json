@@ -1232,5 +1232,11 @@
   "offer.fit.35d73ab72d": "{hours} ساعة {tier} بسعر أقل، لفترة محدودة.",
   "offer.fit.43f818a2e2": "{hours} ساعة {tier} بسعر أقل.",
   "offer.fit.ff21c4347e": "كل باقة من الباقة الاحترافية بسعر أقل: مصممة للعمل المتخصص والمهني.",
-  "offer.fit.5ce966d9bc": "{hours} ساعة من الباقة الاحترافية + {bonus} مجانًا: مصممة للعمل المتخصص والمهني."
+  "offer.fit.5ce966d9bc": "{hours} ساعة من الباقة الاحترافية + {bonus} مجانًا: مصممة للعمل المتخصص والمهني.",
+  "home.cmp.showall": "عرض المقارنة الكاملة",
+  "buy.how.title": "كيف يعمل",
+  "buy.how.back": "العودة إلى الأسعار",
+  "buy.pay.opening": "جارٍ فتح صفحة دفع آمنة…",
+  "buy.after": "بعد الدفع، ثبّت DuoVox مجانًا من Microsoft Store وانقر على Activate في DuoVox.",
+  "buy.how.link": "كيف يعمل"
 }

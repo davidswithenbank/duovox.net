@@ -1232,5 +1232,11 @@
   "offer.fit.2fd488e57d": "{hours} {tier}-uren + {bonus} gratis, om te praten met de mensen die ertoe doen.",
   "offer.fit.2d7c6c65e4": "{hours} {tier}-uren + {bonus} gratis.",
   "offer.fit.35d73ab72d": "{hours} {tier}-uren voor minder, tijdelijk.",
-  "offer.fit.43f818a2e2": "{hours} {tier}-uren voor minder."
+  "offer.fit.43f818a2e2": "{hours} {tier}-uren voor minder.",
+  "home.cmp.showall": "Toon de volledige vergelijking",
+  "buy.how.title": "Hoe het werkt",
+  "buy.how.back": "Terug naar de prijzen",
+  "buy.pay.opening": "Veilige checkout wordt geopend…",
+  "buy.after": "Na betaling installeer je DuoVox gratis vanuit de Microsoft Store en klik je op Activeren in DuoVox.",
+  "buy.how.link": "Hoe het werkt"
 }

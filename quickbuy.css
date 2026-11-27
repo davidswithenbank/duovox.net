@@ -1,0 +1,65 @@
+/* Quick buy (27 Nov 2026, David: as few steps as possible, help in a pop-up on the same page). One <dialog id="qb"> per page:
+   a plan card's button opens its choices, each choice goes straight to the card / PayPal checkout; "How it works" opens the steps. */
+.qb { position: fixed; inset: 0; margin: auto; height: fit-content; width: min(560px, calc(100vw - 32px)); max-height: calc(100vh - 48px); overflow: auto; padding: 1.4rem 1.2rem 1.1rem;
+    border: 1px solid var(--border); border-radius: 20px; background: var(--bg-card, #16131f); color: inherit;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.6); }
+.qb::backdrop { background: rgba(6,5,12,0.72); backdrop-filter: blur(3px); }
+.qb-x { position: absolute; top: 0.6rem; right: 0.7rem; width: 36px; height: 36px; border-radius: 10px; border: 1px solid var(--border);
+    background: transparent; color: inherit; font-size: 1.3rem; line-height: 1; cursor: pointer; }
+.qb-x:hover { background: rgba(255,255,255,0.06); }
+.qb h3 { font-size: 1.35rem; margin: 0 2.4rem 0.2rem 0; }
+.qb .bestfor { color: var(--text-muted); font-size: 0.88rem; margin: 0 0 0.9rem; }
+.qb .tiers { display: grid; gap: 0.9rem; grid-template-columns: 1fr; }
+.qb .tier { border: 0; padding: 0; background: none; box-shadow: none; }
+.qb .tier + .tier { border-top: 1px solid var(--border); padding-top: 0.9rem; }
+.qb .price-badge, .qb .feat { display: none; }
+.qb .opt { display: grid; grid-template-columns: 1fr auto; gap: 0.2rem 0.9rem; align-items: center; padding: 0.8rem 0.9rem;
+    border: 1px solid var(--border); border-radius: 14px; margin-bottom: 0.6rem; background: rgba(255,255,255,0.025); }
+.qb .opt.best { border-color: var(--accent-light); background: rgba(76,175,80,0.07); }
+.qb .opt-name { font-weight: 700; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.qb .tag { font-size: 0.72rem; font-weight: 700; padding: 0.15rem 0.55rem; border-radius: 999px; color: #fff;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); }
+.qb .opt .price-amount { font-size: 1.45rem; margin: 0; line-height: 1.1; }
+.qb .opt-sub { color: var(--text-muted); font-size: 0.83rem; }
+.qb .opt-sub .save { color: var(--accent-light); font-weight: 600; }
+.qb .opt-right { grid-row: 1 / span 2; grid-column: 2; }
+.qb .opt .btn { padding: 0.6rem 1.15rem; white-space: nowrap; }
+.qb-trust { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; justify-content: center; list-style: none; padding: 0; margin: 0.4rem 0 0;
+    color: var(--text-secondary); font-size: 0.82rem; }
+.qb-trust li::before { content: "\2713"; color: var(--accent-light); margin-right: 0.3rem; font-weight: 700; }
+.qb-after { color: var(--text-secondary); font-size: 0.88rem; text-align: center; margin: 0.7rem 0 0; }
+.qb-after a, .qb a:not(.btn) { color: var(--accent-light); }
+.qb .steps { list-style: none; padding: 0; margin: 0.8rem 0 0; display: grid; gap: 0.7rem; }
+.qb .steps li { display: flex; gap: 0.8rem; align-items: flex-start; padding: 0.8rem 0.9rem; border-radius: 14px;
+    border: 1px solid var(--border); background: rgba(255,255,255,0.025); }
+.qb .step-ico { flex: none; width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); }
+.qb .step-ico svg { width: 20px; height: 20px; stroke: #fff; }
+.qb .steps li > div > strong { display: block; margin-bottom: 0.15rem; }
+.qb .steps span { color: var(--text-secondary); font-size: 0.9rem; }
+.qb .steps a[href*="help.html#activate"] { display: none; }   /* inside the pop-up the steps ARE the answer */
+.qb-more { color: var(--text-secondary); font-size: 0.88rem; margin: 0.8rem 0 0; }
+@media (max-width: 480px) { .qb .opt { grid-template-columns: 1fr; } .qb .opt-right { grid-row: auto; grid-column: 1; order: 3; margin-top: 0.4rem; }
+    .qb .opt .btn { width: 100%; justify-content: center; } }
+/* the slim "after paying" line that replaces the three step cards on buy.html */
+.buy-after { text-align: center; color: var(--text-secondary); margin: 1.4rem auto 0; max-width: 720px; }
+.buy-after a { color: var(--accent-light); font-weight: 600; }
+
+/* ---- the checkout inside the pop-up: our header and order line, Paddle's payment form below (inline, one page) ---- */
+.qb-brand { display: flex; align-items: center; gap: 0.55rem; margin: 0 2.6rem 0.9rem 0; font-size: 1.2rem; }
+.qb-brand img { border-radius: 9px; }
+.qb-secure { margin-left: auto; font-size: 0.78rem; color: var(--text-secondary); border: 1px solid var(--border); border-radius: 999px; padding: 0.25rem 0.7rem; white-space: nowrap; }
+.qb-secure::before { content: "\1F512"; margin-right: 0.35rem; font-size: 0.8em; }
+.qb-order { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0.85rem 1rem; border-radius: 14px;
+    border: 1px solid var(--accent-light); background: rgba(76,175,80,0.07); }
+.qb-order strong { display: block; }
+.qb-order span { color: var(--text-muted); font-size: 0.84rem; }
+.qb-total { font-size: 1.5rem; font-weight: 800; white-space: nowrap; }
+.qb-tax { color: var(--text-muted); font-size: 0.78rem; margin: 0.35rem 0 0.7rem; text-align: right; }
+.qb-status { color: var(--text-secondary); text-align: center; margin: 1.2rem 0; }
+.dvx-pay { min-height: 0; }
+.dvx-pay:empty { display: none; }
+.dvx-demo { border: 1px dashed var(--border); border-radius: 14px; padding: 3.2rem 1rem; text-align: center; color: var(--text-secondary); }
+.qb { box-sizing: border-box; overflow-x: hidden; overflow-y: auto; color-scheme: dark; }
+.qb-brand { margin-right: 3rem; }
+@media (max-width: 480px) { .qb-brand { flex-wrap: wrap; } .qb-brand strong { flex: 1 1 60%; } .qb-secure { margin-left: 0; } }

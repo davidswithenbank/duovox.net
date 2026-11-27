@@ -1232,5 +1232,11 @@
   "offer.fit.2fd488e57d": "{hours} giờ {tier} + {bonus} miễn phí, để trò chuyện với những người quan trọng.",
   "offer.fit.2d7c6c65e4": "{hours} giờ {tier} + {bonus} miễn phí.",
   "offer.fit.35d73ab72d": "{hours} giờ {tier} với giá thấp hơn, trong thời gian có hạn.",
-  "offer.fit.43f818a2e2": "{hours} giờ {tier} với giá thấp hơn."
+  "offer.fit.43f818a2e2": "{hours} giờ {tier} với giá thấp hơn.",
+  "home.cmp.showall": "Xem toàn bộ so sánh",
+  "buy.how.title": "Cách hoạt động",
+  "buy.how.back": "Quay lại bảng giá",
+  "buy.pay.opening": "Đang mở thanh toán bảo mật…",
+  "buy.after": "Sau khi thanh toán, hãy cài đặt DuoVox miễn phí từ Microsoft Store và nhấp vào Kích hoạt trong DuoVox.",
+  "buy.how.link": "Cách hoạt động"
 }

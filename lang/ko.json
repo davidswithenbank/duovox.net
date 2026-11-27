@@ -1232,5 +1232,11 @@
   "offer.fit.35d73ab72d": "한정 기간 동안 {hours}시간 {tier}를 더 저렴하게 이용하세요.",
   "offer.fit.43f818a2e2": "{hours}시간 {tier}를 더 저렴하게 이용하세요.",
   "offer.fit.ff21c4347e": "모든 프로페셔널 팩을 더 저렴하게: 전문적이고 직업적인 작업을 위해 설계되었습니다.",
-  "offer.fit.5ce966d9bc": "프로페셔널 {hours}시간 + 무료 {bonus}: 전문적이고 직업적인 작업을 위해 설계되었습니다."
+  "offer.fit.5ce966d9bc": "프로페셔널 {hours}시간 + 무료 {bonus}: 전문적이고 직업적인 작업을 위해 설계되었습니다.",
+  "home.cmp.showall": "전체 비교 보기",
+  "buy.how.title": "이용 방법",
+  "buy.how.back": "가격으로 돌아가기",
+  "buy.pay.opening": "보안 결제를 여는 중…",
+  "buy.after": "결제 후 Microsoft Store에서 DuoVox를 무료로 설치하고 DuoVox에서 활성화를 클릭하세요.",
+  "buy.how.link": "이용 방법"
 }
