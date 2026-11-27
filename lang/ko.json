@@ -976,7 +976,7 @@
   "buy.jump.plans": "플랜",
   "buy.jump.hours": "Pay-As-You-Go 시간",
   "buy.step1.t": "1. 선택하고 결제",
-  "buy.step1.d": "아래에서 플랜이나 시간을 선택하고 카드 또는 PayPal로 결제하세요.",
+  "buy.step1.d": "요금제 또는 시간을 선택하고 카드 또는 PayPal로 결제하세요.",
   "buy.step2.t": "2. DuoVox 설치",
   "buy.step2.d": "<a href=\"https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxbuy\">Microsoft Store</a>에서 DuoVox를 무료로 받으세요.",
   "buy.step3.t": "3. 활성화",

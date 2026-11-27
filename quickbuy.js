@@ -15,6 +15,11 @@
         dlg.classList.toggle("qb-wide", id === "pay");   // the checkout: wide, our details beside Paddle's form (no scrolling)
         if (!dlg.open) dlg.showModal();
         dlg.scrollTop = 0;
+        // keyboard / screen-reader users: focus moves into the group just shown (its first heading, else its first control)
+        for (var g = 0; g < groups.length; g++) if (!groups[g].hidden) {
+            var f = groups[g].querySelector("h2, h3") || groups[g].querySelector("a, button");
+            if (f) { if (/^H/.test(f.tagName)) f.setAttribute("tabindex", "-1"); try { f.focus({ preventScroll: true }); } catch (x) { f.focus(); } }
+        }
         return true;
     }
     document.addEventListener("click", function (e) {
@@ -27,7 +32,12 @@
     });
     function currentGroup() { for (var i = 0; i < groups.length; i++) if (!groups[i].hidden) return groups[i].getAttribute("data-qb-group"); return null; }
     dlg.addEventListener("click", function (e) {
-        if (e.target === dlg) dlg.close();                            // a click on the backdrop
+        // a click on the backdrop - NOT on the pop-up's own padding (that also reports the dialog as the target, and closing
+        // there threw away a half-typed payment)
+        if (e.target === dlg) {
+            var r = dlg.getBoundingClientRect();
+            if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) dlg.close();
+        }
         if (e.target.closest && e.target.closest("[data-qb-close]")) dlg.close();
         if (e.target.closest && e.target.closest("[data-qb-back]")) {
             e.preventDefault();
@@ -44,15 +54,22 @@
     // browser, Paddle not loading - follows the link as before (the Worker's own checkout page).
     var API = "https://api.duovox.net", payBox = dlg.querySelector('[data-qb-group="pay"]');
     var DEMO = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && /[?&]qbdemo=1/.test(location.search);
-    var libs = null, paying = false, started = {};
+    var libs = null, paying = false, started = {}, run = 0, opening = null;
     function loadScript(src) {
         return new Promise(function (ok, fail) { var s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = fail; document.head.appendChild(s); });
     }
+    // the DuoVox checkout only - a CCTV Converter one (same global name) would finish on the wrong thank-you page
+    function isDvx() { return !!(window.DuoVoxCheckout && window.DuoVoxCheckout.app === "duovox"); }
     function ensureLibs() {
         if (!libs) libs = (window.Paddle ? Promise.resolve() : loadScript("https://cdn.paddle.com/paddle/v2/paddle.js"))
-            .then(function () { return window.DuoVoxCheckout ? null : loadScript(API + "/pay/checkout.js?app=duovox"); });
+            .then(function () { return isDvx() ? null : loadScript(API + "/pay/checkout.js?app=duovox"); })
+            .catch(function (e) { libs = null; throw e; });   // a failed load is tried again on the next click
         return libs;
     }
+    // nothing waits for ever: a stalled request or script falls back to the link after 15 s
+    function within(p, ms) { return Promise.race([p, new Promise(function (ok, fail) { setTimeout(function () { fail(new Error("timeout")); }, ms); })]); }
+    // a checkout that was paid (or a page restored by Back) must never reuse its transaction
+    window.addEventListener("pageshow", function (e) { if (e.persisted) started = {}; });
     function text(el) { return el ? (el.textContent || "").replace(/\s+/g, " ").trim() : ""; }
     function setPay(k, v) { var el = payBox.querySelector("[data-qb-" + k + "]"); if (el) { el.textContent = v || ""; el.hidden = !v; } }
     function endPay() {
@@ -72,15 +89,16 @@
         else if (name.toLowerCase().indexOf(brand.toLowerCase()) < 0) name = brand + " " + name;
         setPay("item", name); setPay("price", price); setPay("sub", sub);
         var st = payBox.querySelector("[data-qb-status]"), fr = payBox.querySelector(".dvx-pay");
-        if (st) st.hidden = false;
+        if (st) { if (opening === null) opening = st.textContent; st.textContent = opening; st.hidden = false; }   // never an old error
         fr.replaceChildren();
         back = dlg.open ? currentGroup() : null;
         if (back === "pay") back = null;
         paying = true;
+        var me = ++run;   // only the latest click may open a checkout (close + reopen while loading must not open two)
         show("pay");
         if (DEMO) { if (st) st.hidden = true; fr.innerHTML = '<div class="dvx-demo">Paddle&rsquo;s card / PayPal form appears here<br><small>(email, country, card or PayPal &mdash; one page)</small></div>'; return; }
         var gone = false;
-        function fallback() { if (gone || !paying) return; gone = true; location.href = a.href; }
+        function fallback() { if (gone || !paying || me !== run) return; gone = true; location.href = a.href; }
         var u;
         try { u = new URL(a.href); u.searchParams.set("json", "1"); } catch (e) { return fallback(); }
         // One checkout per choice per visit: opening the same choice again reuses its transaction (the Worker allows only
@@ -88,12 +106,12 @@
         var key = u.toString(), kept = started[key];
         var first = kept && Date.now() - kept.at < 30 * 60000 ? Promise.resolve(kept.j)
             : fetch(key, { mode: "cors", credentials: "omit", cache: "no-store" }).then(function (r) { return r.json(); });
-        Promise.all([first, ensureLibs()]).then(function (v) {
+        within(Promise.all([first, ensureLibs()]), 15000).then(function (v) {
             var j = v[0];
             if (j && j.txn) started[key] = { j: j, at: (kept && kept.j === j) ? kept.at : Date.now() };
-            if (!paying) return;
+            if (!paying || me !== run) return;
             if (j && !j.txn && typeof j.error === "string") { if (st) { st.textContent = j.error; st.hidden = false; } return; }   // a refusal (e.g. country): say why
-            if (!j || !j.txn || !window.DuoVoxCheckout || !window.DuoVoxCheckout.open(j.txn, j.c, "dvx-pay")) return fallback();
+            if (!j || !j.txn || !isDvx() || !window.DuoVoxCheckout.open(j.txn, j.c, "dvx-pay")) return fallback();
             setTimeout(function () { if (st && fr.childNodes.length) st.hidden = true; }, 2500);
         }).catch(fallback);
     }
@@ -114,9 +132,10 @@
         window.addEventListener("duovox-checkout", function (e) {
             var d = e.detail || {}, st = payBox.querySelector("[data-qb-status]");
             if (d.name === "checkout.loaded" && st) st.hidden = true;
-            // the real total (with tax, in the buyer's currency) once Paddle knows it
+            if (d.name === "checkout.completed") started = {};   // paid: that transaction is never offered again
+            // the real total (with tax, in the buyer's currency) once Paddle knows it - Latin digits, like the rest of the page
             try { var t = d.data && d.data.totals, c = d.data && d.data.currency_code;
-                if (t && typeof t.total === "number" && c) setPay("price", new Intl.NumberFormat(document.documentElement.lang || "en", { style: "currency", currency: c }).format(t.total));
+                if (t && typeof t.total === "number" && c) setPay("price", new Intl.NumberFormat((document.documentElement.lang || "en") + "-u-nu-latn", { style: "currency", currency: c }).format(t.total));
             } catch (x) { /* keep the page's price */ }
         });
     }

@@ -115,3 +115,10 @@
         .qb-two .tier .bestfor { min-height: 0; }
     }
 }
+
+/* phones: 100vh includes the hidden address bar, so the bottom of the pop-up could sit off-screen - use the visible height */
+@supports (height: 100dvh) {
+    .qb { max-height: calc(100dvh - 48px); }
+    .qb.qb-wide { max-height: calc(100dvh - 16px); }
+}
+@media (min-width: 820px) { @supports (height: 100dvh) { .qb.qb-wide { max-height: calc(100dvh - 8px); } } }

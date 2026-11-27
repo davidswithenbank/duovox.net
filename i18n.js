@@ -161,7 +161,7 @@
     var p = altPath(code);
     if (!p) return false;
     saveLang(code);
-    location.href = p + location.hash;
+    location.href = p + location.search + location.hash;
     return true;
   }
 
@@ -256,7 +256,7 @@
     });
     if (lang !== 'en') {
       var p = altPath(lang);
-      if (p) { location.replace(p + location.hash); return; }
+      if (p) { location.replace(p + location.search + location.hash); return; }
       setLang(lang);
     }
     else applyCurr(getCurrCode('en'));

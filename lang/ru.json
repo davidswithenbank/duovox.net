@@ -976,7 +976,7 @@
   "buy.jump.plans": "Планы",
   "buy.jump.hours": "Часы Pay-As-You-Go",
   "buy.step1.t": "1. Выберите и оплатите",
-  "buy.step1.d": "Выберите ниже план или часы и оплатите картой или через PayPal.",
+  "buy.step1.d": "Выберите план или количество часов и оплатите картой или через PayPal.",
   "buy.step2.t": "2. Установите DuoVox",
   "buy.step2.d": "Скачайте DuoVox бесплатно в <a href=\"https://apps.microsoft.com/detail/9MSN7866TJQH?cid=duovoxbuy\">Microsoft Store</a>.",
   "buy.step3.t": "3. Активируйте",
