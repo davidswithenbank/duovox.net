@@ -90,7 +90,7 @@
     }
     // SWITCH: false = only a page opened with ?qbpay=1 uses the in-page checkout (to prove it on the live site first);
     // true = every buyer. Everyone else follows the link to the Worker's checkout page, as before.
-    var PAY_FOR_ALL = false;
+    var PAY_FOR_ALL = true;
     var TRY = /[?&]qbpay=1/.test(location.search);
     if (payBox && window.fetch && window.Promise && ((location.origin === "https://duovox.net" && (PAY_FOR_ALL || TRY)) || DEMO)) {
         document.addEventListener("click", function (e) {

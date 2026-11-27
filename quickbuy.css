@@ -63,3 +63,4 @@
 .qb { box-sizing: border-box; overflow-x: hidden; overflow-y: auto; color-scheme: dark; }
 .qb-brand { margin-right: 3rem; }
 @media (max-width: 480px) { .qb-brand { flex-wrap: wrap; } .qb-brand strong { flex: 1 1 60%; } .qb-secure { margin-left: 0; } }
+.qb { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.25) transparent; }
