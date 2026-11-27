@@ -1,4 +1,4 @@
-/* Special offers on duovox.net (22 Nov 2026). The admin sets the offers; the server (api.duovox.net/offers?set=web) picks the
+/* Special offers on duovox.net (22 Nov 2026) - and, since 27 Nov 2026, CCTV Converter's on davidarthur.app/cctvconverter/. The admin sets the offers; the server (api.duovox.net/offers?set=web) picks the
    ones live now for this visitor (dates, country, language, A/B style). The card itself is the Worker's own renderer
    (/offers/cards.js + .css), so the site shows exactly what the admin previewed. No offer = nothing is shown, the page is unchanged.
    On buy.html, ?offer=<id>&v=<a|b> is carried on to the checkout links (attribution only: the price is always Paddle's). */
@@ -31,6 +31,9 @@
     var host = document.getElementById("site-offer");
     if (!host || !window.fetch) return;
     var lang = (document.documentElement.lang || "en").toLowerCase();
+    // 27 Nov 2026 (David: "Yes, make it show the offers"): davidarthur.app/cctvconverter/ shows CCTV Converter's website offers -
+    // its #site-offer carries data-offer-product="cctv". Every other page is DuoVox's. The server never mixes the two products.
+    var CCTV = host.getAttribute("data-offer-product") === "cctv";
 
     function send(id, variant, kind) {
         try {
@@ -147,7 +150,70 @@
         if (Array.isArray(o.packs)) r.packs = o.packs.map(function (p) { return Object.assign({}, p, { label: counted("offer.ui.hours", Number(p.hours) || 0) }); });
         return r;
     }
+    // ---- CCTV Converter cards (27 Nov 2026): plans, not hours ----
+    // A COPY of CCTV_TEXT in the Worker's renderer (proxy/src/offerAssets.ts): the words that replace a type's DuoVox ones on a
+    // CCTV Converter card. Keep them identical: _claude_tools/website_offers/cctv_sell/cctv_offer_i18n.py checks this copy against
+    // the live renderer and puts the translatable lines on the page (offer.cctv.*).
+    var CCTV_TEXT = {
+        "flash":          { subhead: "{prod} for less, for a few hours only." },
+        "black-friday":   { headline: "Black Friday deal", subhead: "Save {save}% on {prod} this weekend." },
+        "cyber-monday":   { subhead: "One day only: {prod} for less." },
+        "christmas":      { headline: "A Christmas *gift*", subhead: "{prod} for less this Christmas." },
+        "new-year":       { headline: "New year, *new plan*", subhead: "Start the year with {prod} for less." },
+        "lunar-new-year": { subhead: "Celebrate with {prod} for less." },
+        "ramadan-eid":    { headline: "Eid offer", subhead: "{prod} for less this Eid." },
+        "diwali":         { subhead: "Save {save}% on {prod}." },
+        "summer":         { headline: "Summer sale", subhead: "Save {save}% on {prod}." },
+        "spring":         { headline: "Spring sale", subhead: "Save {save}% on {prod} this spring." },
+        "singles-day":    { subhead: "One day only: save {save}% on {prod}." },
+        "best-value":     { eyebrow: "{prod}", headline: "Our *best value*", subhead: "{prod} for less." },
+        "code":           { subhead: "Use it at checkout to save {save}% on {prod}." }
+    };
+    var PLAN_KEY = { Monthly: "monthly", Yearly: "yearly", Lifetime: "lifetime" };
+    function planLabel(l) { return T("offer.cctv.plan." + (PLAN_KEY[l] || "-")) || l; }
+    function localiseCctv(o) {
+        var r = Object.assign({}, o), save = o.mechanic === "range" ? rangeSave(o) : pct(o.price, o.was_price);
+        var val = { prod: o.plan_name || "CCTV Converter Pro", save: save ? String(save) : "" };
+        if (o.type && o.type !== "custom") {
+            ["eyebrow", "headline", "subhead", "badge", "cta"].forEach(function (f) {
+                var cc = CCTV_TEXT[o.type] || {}, own = Object.prototype.hasOwnProperty.call(cc, f);
+                var en0 = own ? cc[f] : (((window.OFFER_TYPES || {})[o.type] || {})[f] || "");
+                if (!en0 || /\{(hours|tier|pack|bonus)\}/.test(en0)) return;   // a DuoVox-only line: the card's own words stay
+                var fitted = fitWords(en0, o, save, f), changed = fitted !== en0;
+                var s = changed ? FIT(fitted) : T((own ? "offer.cctv." : "offer.t.") + o.type + "." + f), ok = true;
+                if (!s) return;   // no translation yet: the card's own (fitted) English
+                s = s.replace(/\{(prod|save)\}/g, function (_, k) { var x = val[k] || ""; if (!x) ok = false; return x; });
+                if (ok && changed) s = s.charAt(0).toUpperCase() + s.slice(1);
+                if (ok) r[f] = s;
+            });
+        }
+        if (!r.headline) r.headline = T("offer.ui.special") || "";
+        if (!r.cta) r.cta = T("offer.ui.buy") || "";
+        var m = /^(.*) · (.+)$/.exec(o.pack || "");
+        if (m) r.pack = m[1] + " · " + planLabel(m[2]);
+        if (Array.isArray(o.packs)) r.packs = o.packs.map(function (p) { return Object.assign({}, p, { label: planLabel(p.label) }); });
+        return r;
+    }
+    // "Your first month, then £2.49 a month" (.oc-per) and "(first month)" beside a plan (.oc-range small)
+    function cctvFirst(what, n) { return what === "months" ? counted("offer.cctv.first.months", n) : T("offer.cctv.first." + what); }
+    function localiseCctvCard(card) {
+        var per = card.querySelector(".oc-per");
+        if (per && !per.hidden) {
+            var m = /^Your first (month|year|(\d+) months), then (.+) a (month|year)$/.exec(per.textContent || "");
+            if (m) {
+                var n = Number(m[2]) || 0, base = n ? "offer.cctv.then.months" : "offer.cctv.then." + m[1];
+                var s = n ? (T(base + "." + plural(n)) || T(base + ".other")) : T(base);
+                if (s) per.textContent = fill(s, { n: n, p: m[3], d: "" });
+            }
+        }
+        [].forEach.call(card.querySelectorAll(".oc-range small"), function (s) {
+            var m = /^\(first (month|year|(\d+) months)\)$/.exec(s.textContent || "");
+            var t = m && (m[2] ? cctvFirst("months", Number(m[2])) : cctvFirst(m[1]));
+            if (t) s.textContent = "(" + t + ")";
+        });
+    }
     function localiseCard(card, o) {
+        if (CCTV) localiseCctvCard(card);
         var mech = /^(bonus|range|code)$/.test(o.mechanic) ? o.mechanic : "discount", bonus = Number(o.bonus_hours) || 0;
         var save = card.querySelector(".oc-save");
         if (save && !save.hidden) {
@@ -203,10 +269,12 @@
     // ---- spots (23 Nov 2026, David's redesigned editor: the page has four spots, every one can hold an offer or two) ----
     // The page's own #site-offer is the "pricing" spot; the others get their own box before their anchor.
     function spotKey(where) {
-        var page = /buy\.html$/.test(location.pathname) ? "buy" : "home";
+        var page = CCTV ? "cctv" : /buy\.html$/.test(location.pathname) ? "buy" : "home";
         var ANCHOR = {
             home: { top: "#demo", "after-pricing": "#faq", bottom: ".disclaimer-section" },
-            buy: { "after-pricing": "footer.footer", bottom: "footer.footer" }
+            buy: { "after-pricing": "footer.footer", bottom: "footer.footer" },
+            // davidarthur.app/cctvconverter/: under the opening section, after the prices, above the download box
+            cctv: { top: "#features", "after-pricing": "#privacy-callout", bottom: "#download" }
         };
         var sel = (ANCHOR[page] || {})[where];
         return sel && document.querySelector(sel) ? sel : "";   // "" = where the page put #site-offer
@@ -238,10 +306,34 @@
         var variant = o.variant === "b" ? "b" : "a";
         // "Translate into every app and site language" unticked in the admin: show it exactly as David typed it
         var en = lang.indexOf("en") === 0 || o.auto_translate === false;
-        var shown = Object.assign({}, en ? o : localise(o), lay.landscape ? { set: "app", dismissible: false } : {});
+        var shown = Object.assign({}, en ? o : CCTV ? localiseCctv(o) : localise(o), lay.landscape ? { set: "app", dismissible: false } : {});
         var card = window.renderOfferCard(shown);
         card.style.zoom = String(lay.zoom);
+        // A CCTV Converter sale on every plan: each plan row is its own buy link and the card has no main button. The wide shape is
+        // drawn as the app's card, which keeps the button (with no link): make the rows the links there too.
+        if (CCTV && o.mechanic === "range" && !card.querySelector("a.oc-plan") && Array.isArray(o.packs)) {
+            var lis = card.querySelectorAll(".oc-range li"), linked = 0;
+            if (lis.length === o.packs.length) o.packs.forEach(function (p, i) {
+                var sp = lis[i].querySelector("span");
+                if (!sp || !/^https:\/\/api\.duovox\.net\/cctv\/buy\/[a-z0-9_]+\?/.test(p.cta_url || "")) return;
+                var a = document.createElement("a");
+                a.className = "oc-plan"; a.href = p.cta_url;
+                while (sp.firstChild) a.appendChild(sp.firstChild);
+                sp.appendChild(a); linked++;
+            });
+            if (linked === o.packs.length) { var c0 = card.querySelector(".oc-cta"); if (c0) c0.remove(); }
+        }
         if (!en) localiseCard(card, o);
+        // CCTV Converter: each plan row's link (a sale on every plan) - the offer's A/B side and the page language go along, as on
+        // the main button
+        [].forEach.call(card.querySelectorAll("a.oc-plan"), function (a) {
+            if (preview) { a.removeAttribute("href"); a.addEventListener("click", function (e) { e.preventDefault(); }); return; }
+            try {
+                var u = new URL(a.getAttribute("href"), location.href);
+                if (u.searchParams.get("offer")) { u.searchParams.set("v", variant); u.searchParams.set("lang", lang); a.href = u.toString(); }
+            } catch (e) { /* keep the server's link */ }
+            a.addEventListener("click", function () { send(o.id, variant, "click"); });
+        });
         var cta = card.querySelector(".oc-cta");
         if (cta && preview) {
             cta.removeAttribute("href");
@@ -251,6 +343,7 @@
                 var u = new URL(cta.getAttribute("href"), location.href);
                 if (u.searchParams.get("offer")) {
                     u.searchParams.set("v", variant);
+                    if (CCTV) u.searchParams.set("lang", lang);   // /cctv/buy/<plan>?offer=: an offer limited to some languages
                     // 26 Nov 2026 (David: "Get the deal" opened the buy page, which showed the same card with no way to pay): ON the
                     // buy page the button is the card / PayPal checkout itself - the offer's pack, or for a sale on every pack the
                     // hours list below. Website offers always sell by card (the server refuses a Store-only sale on the web).
@@ -381,7 +474,7 @@
     var liveN = 0;
     function loadLive() {
         var n = ++liveN;
-        fetch(API + "/offers?set=web&lang=" + encodeURIComponent(lang), { mode: "cors", credentials: "omit" })
+        fetch(API + "/offers?set=web" + (CCTV ? "&product=cctv" : "") + "&lang=" + encodeURIComponent(lang), { mode: "cors", credentials: "omit" })
             .then(function (r) { return r.ok ? r.json() : null; })
             .then(function (d) {
                 if (n !== liveN) return;   // the language changed again meanwhile
