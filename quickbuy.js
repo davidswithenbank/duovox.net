@@ -63,7 +63,7 @@
     }
     function startPay(a) {
         var opt = a.closest(".opt"), tier = a.closest(".tier"), card = a.closest(".oc");
-        var name = card ? text(card.querySelector(".oc-headline")) : [text(tier && tier.querySelector("h3")), text(opt && opt.querySelector(".opt-name > span:first-child, .opt-name"))].filter(Boolean).join(" · ");
+        var name = card ? text(card.querySelector(".oc-headline")) : [text(tier && tier.querySelector("h3")), text(opt && (opt.querySelector(".opt-name > span:first-child") || opt.querySelector(".opt-name")))].filter(Boolean).join(" · ");
         var price = card ? text(card.querySelector(".oc-now")) : text(opt && opt.querySelector(".price-amount"));
         var sub = card ? text(card.querySelector(".oc-pack")) : text(opt && opt.querySelector(".opt-sub"));
         // David, 27 Nov: the order line names the product - "DuoVox Standard · Monthly", never just "Standard · Monthly"
