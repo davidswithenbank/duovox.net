@@ -105,3 +105,13 @@
     .qb .opt .btn { width: auto; }
 }
 @media (min-width: 640px) { .qb-two .tier .bestfor { min-height: 2.6em; } }   /* the two columns' rows line up */
+/* David, 27 Nov: the two columns' boxes LEVEL whatever the wording wraps to - both columns share the same rows (subgrid:
+   title, description, then the three packs), so a two-line description on one side makes that row taller on both. */
+@media (min-width: 640px) {
+    .qb-two .tier .bestfor { line-height: 1.4; min-height: 2.8em; margin-bottom: 0.5rem; }   /* older browsers: room for two lines */
+    @supports (grid-template-rows: subgrid) {
+        .qb-two .tiers { grid-template-rows: repeat(5, auto); }
+        .qb-two .tier { display: grid; grid-template-rows: subgrid; grid-row: span 5; }
+        .qb-two .tier .bestfor { min-height: 0; }
+    }
+}
