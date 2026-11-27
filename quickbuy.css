@@ -64,3 +64,18 @@
 .qb-brand { margin-right: 3rem; }
 @media (max-width: 480px) { .qb-brand { flex-wrap: wrap; } .qb-brand strong { flex: 1 1 60%; } .qb-secure { margin-left: 0; } }
 .qb { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.25) transparent; }
+/* David, 27 Nov: the checkout wider, with the logo and order beside Paddle's form so nobody has to scroll */
+.qb.qb-wide { width: min(960px, calc(100vw - 24px)); max-height: calc(100vh - 16px); padding: 1.1rem 1.2rem 0.9rem; }
+@media (min-width: 820px) {
+    .qb-wide [data-qb-group="pay"]:not([hidden]) { display: grid; grid-template-columns: 290px minmax(0, 1fr); column-gap: 1.5rem; align-items: start; }
+    .qb-wide [data-qb-group="pay"] > * { grid-column: 1; }
+    .qb-wide [data-qb-group="pay"] > .dvx-pay { grid-column: 2; grid-row: 1 / span 12; }
+    .qb-wide [data-qb-group="pay"] > .qb-status { grid-column: 2; grid-row: 1; align-self: center; }
+    .qb-wide .qb-brand { flex-wrap: wrap; margin: 0.2rem 0 1rem; font-size: 1.35rem; }
+    .qb-wide .qb-secure { margin-left: 0; flex-basis: auto; }
+    .qb-wide .qb-brand strong { flex: 1 1 50%; }
+    .qb-wide .qb-order { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    .qb-wide .qb-tax { text-align: left; margin-bottom: 1rem; }
+    .qb-wide .qb-after { text-align: left; margin-top: 0.4rem; }
+    .qb-wide .dvx-pay { margin-right: 2.6rem; }   /* clear of the close button */
+}
