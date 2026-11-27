@@ -11,15 +11,19 @@
     var URL_ = 'https://api.duovox.net/prices';
     var SYM = { '$': 'usd', '£': 'gbp', '€': 'eur' };
     var CUR = { usd: '$', gbp: '£', eur: '€' };
-    var MONEY = /([$£€])(\d[\d,]*(?:\.\d+)?)/g;
+    // an amount is "£2.49" / "US$2.49" (symbol first) or "2,49 £" / "2,49 US$" (symbol after, as some translations
+    // write it); the new figure keeps the old one's layout and decimal comma
+    var MONEY = /([$£€])(\d[\d,]*(?:\.\d+)?)|(\d+(?:[.,]\d+)?)([\s  ]?)(US\$|[$£€])/g;
     function ok(v) { return typeof v === 'number' && isFinite(v) && v > 0 && v < 100000; }
     // the n-th amount in s -> the n-th product's price in that amount's own currency (cur forces one currency)
     function swap(s, prods, cur) {
         var n = 0;
-        return s.replace(MONEY, function (all, sym) {
-            var p = prods[n++], c = cur || SYM[sym];
+        return s.replace(MONEY, function (all, sym, num, num2, gap, sym2) {
+            var p = prods[n++], c = cur || SYM[sym || sym2.slice(-1)];
             if (!p || !c || !ok(p[c])) return all;
-            return CUR[c] + Number(p[c]).toFixed(2);
+            var v = Number(p[c]).toFixed(2);
+            if (sym) return CUR[c] + v;
+            return (/,\d+$/.test(num2) ? v.replace('.', ',') : v) + gap + sym2;
         });
     }
     function apply(list) {
@@ -45,11 +49,15 @@
             }
         }
     }
+    // davidarthur.app translates in the browser: a language switch puts the translation's own (old) figures back, so the
+    // list is applied again after every translation pass
+    var last = null;
+    document.addEventListener('i18n-applied', function () { if (last) apply(last); });
     try {
         if (!window.fetch) return;
         fetch(URL_, { credentials: 'omit', cache: 'no-cache' })
             .then(function (r) { return r.ok ? r.json() : null; })
-            .then(apply)
+            .then(function (j) { last = j; apply(j); })
             .catch(function () { /* fallback: the prices already in the page */ });
     } catch (e) { /* fallback */ }
 })();
