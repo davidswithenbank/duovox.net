@@ -523,8 +523,8 @@
         <!-- Standard tier -->
         <div class="price-card">
             <h3 data-i18n="home.pricing.standard.name">Standard</h3>
-            <div class="price-amount" data-price-usd="$22.99" data-price-gbp="&pound;22.99" data-price-eur="&euro;22.99">$22.99</div>
-            <div class="price-period">per month <span class="price-annual"
+            <div class="price-amount" data-product="duovox_standard_monthly" data-price-usd="$22.99" data-price-gbp="&pound;22.99" data-price-eur="&euro;22.99">$22.99</div>
+            <div class="price-period">per month <span class="price-annual" data-product="duovox_standard_annual"
                  data-annual-usd="or $249.99/yr &mdash; 1 month free"
                  data-annual-gbp="or &pound;249.99/yr &mdash; 1 month free"
                  data-annual-eur="or &euro;249.99/yr &mdash; 1 month free">or $249.99/yr &mdash; 1 month free</span></div>
@@ -550,8 +550,8 @@
         <div class="price-card featured">
             <div class="price-badge" data-i18n="home.pricing.professional.badge">Best for professionals</div>
             <h3 data-i18n="home.pricing.professional.name">Professional</h3>
-            <div class="price-amount" data-price-usd="$159.99" data-price-gbp="&pound;159.99" data-price-eur="&euro;159.99">$159.99</div>
-            <div class="price-period">per month <span class="price-annual"
+            <div class="price-amount" data-product="duovox_professional_monthly" data-price-usd="$159.99" data-price-gbp="&pound;159.99" data-price-eur="&euro;159.99">$159.99</div>
+            <div class="price-period">per month <span class="price-annual" data-product="duovox_professional_6month"
                  data-annual-usd="or $899.99/6mo"
                  data-annual-gbp="or &pound;839.99/6mo"
                  data-annual-eur="or &euro;899.99/6mo">or $899.99/6mo</span></div>
@@ -578,15 +578,15 @@
         <!-- Pay-As-You-Go -->
         <div class="price-card">
             <h3 data-i18n="home.pricing.payg.name">Pay-As-You-Go</h3>
-            <div class="price-amount" data-price-usd="from $2.99" data-price-gbp="from &pound;2.99" data-price-eur="from &euro;2.99">from $2.99</div>
+            <div class="price-amount" data-product="duovox_standard_payg_1" data-price-usd="from $2.99" data-price-gbp="from &pound;2.99" data-price-eur="from &euro;2.99">from $2.99</div>
             <div class="price-period" data-i18n="home.pricing.payg.period">per hour</div>
             <p class="best-for" data-i18n="home.pricing.payg.bestfor">Best for: trial, occasional use or top-up</p>
             <ul class="price-features">
-                <li class="payg-rate"
+                <li class="payg-rate" data-product="duovox_standard_payg_1"
                     data-payg-usd="Standard quality: $2.99/hour"
                     data-payg-gbp="Standard quality: &pound;2.99/hour"
                     data-payg-eur="Standard quality: &euro;2.99/hour">Standard quality: $2.99/hour</li>
-                <li class="payg-rate"
+                <li class="payg-rate" data-product="duovox_professional_payg_1"
                     data-payg-usd="Professional quality: $6.99/hour"
                     data-payg-gbp="Professional quality: &pound;6.99/hour"
                     data-payg-eur="Professional quality: &euro;6.99/hour">Professional quality: $6.99/hour</li>
@@ -1077,7 +1077,7 @@
 </footer>
 
 <script src="i18n.js"></script>
-<script src="prices.js"></script>
+<script src="prices.js?v=2"></script>
 <script src="offers.js" defer></script>
 <script src="quickbuy.js?v=8" defer></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6da9362d8d7f49fc913578849ffbc7bb"}'></script><!-- End Cloudflare Web Analytics -->

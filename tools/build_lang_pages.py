@@ -86,7 +86,7 @@ def localise_prices(s, lang, cur):
     t = lambda k: lang.get(k) if k in lang else None  # noqa: E731
     out = []
     pos = 0
-    rx = re.compile(r'<div class="(?:price-amount|price-highlight-amount)" data-price-usd="([^"]*)" data-price-gbp="([^"]*)" data-price-eur="([^"]*)">[^<]*</div>')
+    rx = re.compile(r'<div class="(?:price-amount|price-highlight-amount)"(?: data-product="[^"]*")? data-price-usd="([^"]*)" data-price-gbp="([^"]*)" data-price-eur="([^"]*)">[^<]*</div>')
     for m in rx.finditer(s):
         attrs = {"usd": m.group(1), "gbp": m.group(2), "eur": m.group(3)}
         val = html.unescape(attrs[cur])
