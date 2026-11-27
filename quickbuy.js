@@ -94,7 +94,10 @@
     // true = every buyer. Everyone else follows the link to the Worker's checkout page, as before.
     var PAY_FOR_ALL = true;
     var TRY = /[?&]qbpay=1/.test(location.search);
-    if (payBox && window.fetch && window.Promise && ((location.origin === "https://duovox.net" && (PAY_FOR_ALL || TRY)) || DEMO)) {
+    // davidarthur.app/duovox/ loads this same file (27 Nov 2026); the Worker must allow its origin on /buy/<token>?json=1 -
+    // until it does, the request fails there and the link is followed as before.
+    var HOME = location.origin === "https://duovox.net" || location.origin === "https://davidarthur.app";
+    if (payBox && window.fetch && window.Promise && ((HOME && (PAY_FOR_ALL || TRY)) || DEMO)) {
         document.addEventListener("click", function (e) {
             var a = e.target.closest ? e.target.closest('a[href^="' + API + '/buy/"]') : null;
             if (!a || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
