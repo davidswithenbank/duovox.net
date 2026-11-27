@@ -66,7 +66,11 @@
         var name = card ? text(card.querySelector(".oc-headline")) : [text(tier && tier.querySelector("h3")), text(opt && opt.querySelector(".opt-name > span:first-child, .opt-name"))].filter(Boolean).join(" · ");
         var price = card ? text(card.querySelector(".oc-now")) : text(opt && opt.querySelector(".price-amount"));
         var sub = card ? text(card.querySelector(".oc-pack")) : text(opt && opt.querySelector(".opt-sub"));
-        setPay("item", name || "DuoVox"); setPay("price", price); setPay("sub", sub);
+        // David, 27 Nov: the order line names the product - "DuoVox Standard · Monthly", never just "Standard · Monthly"
+        var brand = /\/cctv\/buy\//.test(a.href) ? "CCTV Converter" : "DuoVox";
+        if (!name) name = brand;
+        else if (name.toLowerCase().indexOf(brand.toLowerCase()) < 0) name = brand + " " + name;
+        setPay("item", name); setPay("price", price); setPay("sub", sub);
         var st = payBox.querySelector("[data-qb-status]"), fr = payBox.querySelector(".dvx-pay");
         if (st) st.hidden = false;
         fr.replaceChildren();
