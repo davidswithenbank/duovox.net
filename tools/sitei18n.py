@@ -23,7 +23,11 @@ PAGES = ["index.html", "calls.html", "languages.html", "security.html", "contact
          "live-captions-translation.html", "teams-translation.html", "zoom-translation.html",   # search pages, 14 Oct 2026
          "meet-translation.html", "youtube-translation.html", "whatsapp-translation.html", "discord-translation.html",
          "medical-interpreting.html", "legal-interpreting.html",
-         "buy.html"]   # 21 Nov 2026: card/PayPal sales page   # 2 Nov 2026   # 16 Oct 2026
+         "buy.html",   # 21 Nov 2026: card/PayPal sales page   # 2 Nov 2026   # 16 Oct 2026
+         "checkout-done.html"]   # 27 Nov 2026: the thank-you page after a card/PayPal payment (noindex)
+# Pages built per language but kept OUT of the sitemap (not for search). They still get hreflang alternates:
+# i18n.js uses those to find a page's language copy.
+NOT_IN_SITEMAP = {"checkout-done.html"}
 SITE = "https://duovox.net"
 
 # Translatable wording around prices. The NUMBERS are never translated: they are read at build time from the

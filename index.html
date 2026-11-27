@@ -950,7 +950,7 @@
 
 <!-- Quick buy pop-up (quickbuy.js / quickbuy.css) -->
 <dialog id="qb" class="qb" aria-label="DuoVox">
-<button class="qb-x" type="button" data-qb-close aria-label="Close">&times;</button>
+<button class="qb-x" type="button" data-qb-close aria-labelledby="qb-x-label">&times;</button><span id="qb-x-label" hidden data-i18n="qb.close">Close</span>
 <div data-qb-group="std-plans" hidden>
 <div class="tier">
             <h3 data-i18n="home.pricing.standard.name">Standard</h3>

@@ -167,6 +167,31 @@
 <script src="i18n.js"></script>
 <script>
 (function () {
+    // 27 Nov 2026: Paddle always returns the buyer to this ENGLISH page (/checkout/done/ -> here). Send them on to their
+    // language's copy (the build adds one per language, listed in the hreflang links): the language they chose on this
+    // site, else their browser's first language when it is not English (same rule as i18n.js). A redirect is fine here,
+    // unlike the search pages: this page is noindex, and the language menu on it still switches back.
+    if (!document.documentElement.getAttribute('data-static-lang')) {
+        var L = null;
+        try { L = localStorage.getItem('duovox-lang'); } catch (e) {}
+        if (!L) {
+            var bl = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+            for (var i = 0; i < bl.length; i++) {
+                var b = String(bl[i] || '').toLowerCase();
+                if (!b) continue;
+                if (b.indexOf('en') === 0) break;
+                L = b.indexOf('zh') === 0 ? (/^zh-(tw|hk|mo|hant)/.test(b) ? 'zh-TW' : 'zh-CN') : b.split('-')[0];
+                if (document.querySelector('link[rel="alternate"][hreflang="' + L.replace(/[^a-zA-Z-]/g, '') + '"]')) break;
+                L = null;
+            }
+        }
+        if (L && L !== 'en' && /^[a-zA-Z-]{2,5}$/.test(L)) {
+            var alt = document.querySelector('link[rel="alternate"][hreflang="' + L + '"]');
+            if (alt) {
+                try { location.replace(new URL(alt.getAttribute('href'), location.href).pathname + location.search); return; } catch (e) {}
+            }
+        }
+    }
     var H = document.getElementById('h'), P = document.getElementById('p'), n = 0, T = document.getElementById('done-i18n');
     function t(k) { var e = T && T.content ? T.content.querySelector('[data-i18n="' + k + '"]') : null; return e ? e.textContent : ''; }
     function say(k) { H.textContent = t(k + '.t'); P.textContent = t(k + '.d'); H.removeAttribute('data-i18n'); P.removeAttribute('data-i18n'); }

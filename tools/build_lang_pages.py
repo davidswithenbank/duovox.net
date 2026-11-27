@@ -69,7 +69,8 @@ def rewrite_links(s):
 
     def fix(m):
         attr, val = m.group(1), m.group(2)
-        if re.match(r"(https?:|mailto:|tel:|//|#|/|data:|javascript:)", val):
+        # any URL scheme (27 Nov 2026: ms-windows-store: on checkout-done.html was becoming '../ms-windows-store:...')
+        if re.match(r"([a-zA-Z][a-zA-Z0-9+.-]*:|//|#|/)", val):
             return m.group(0)
         path = re.split(r"[?#]", val, maxsplit=1)[0]
         if path in pages:
@@ -208,6 +209,8 @@ def sitemap(out, langs):
         if code == "en":
             continue
         for page in S.PAGES:
+            if page in S.NOT_IN_SITEMAP:
+                continue
             extra.append("  <url>\n    <loc>%s</loc>\n%s    <priority>0.6</priority>\n  </url>\n"
                          % (url_for(code, page), ("    <lastmod>%s</lastmod>\n" % lastmod) if lastmod else ""))
     write(os.path.join(out, "sitemap.xml"), s.replace("</urlset>", "".join(extra) + "</urlset>"))
