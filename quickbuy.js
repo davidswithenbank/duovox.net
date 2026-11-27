@@ -44,7 +44,7 @@
     // browser, Paddle not loading - follows the link as before (the Worker's own checkout page).
     var API = "https://api.duovox.net", payBox = dlg.querySelector('[data-qb-group="pay"]');
     var DEMO = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && /[?&]qbdemo=1/.test(location.search);
-    var libs = null, paying = false;
+    var libs = null, paying = false, started = {};
     function loadScript(src) {
         return new Promise(function (ok, fail) { var s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = fail; document.head.appendChild(s); });
     }
@@ -79,11 +79,14 @@
         function fallback() { if (gone || !paying) return; gone = true; location.href = a.href; }
         var u;
         try { u = new URL(a.href); u.searchParams.set("json", "1"); } catch (e) { return fallback(); }
-        Promise.all([
-            fetch(u.toString(), { mode: "cors", credentials: "omit", cache: "no-store" }).then(function (r) { return r.json(); }),
-            ensureLibs()
-        ]).then(function (v) {
+        // One checkout per choice per visit: opening the same choice again reuses its transaction (the Worker allows only
+        // 10 new checkouts an hour per network - a buyer comparing options must not use them up; David hit it, 27 Nov).
+        var key = u.toString(), kept = started[key];
+        var first = kept && Date.now() - kept.at < 30 * 60000 ? Promise.resolve(kept.j)
+            : fetch(key, { mode: "cors", credentials: "omit", cache: "no-store" }).then(function (r) { return r.json(); });
+        Promise.all([first, ensureLibs()]).then(function (v) {
             var j = v[0];
+            if (j && j.txn) started[key] = { j: j, at: (kept && kept.j === j) ? kept.at : Date.now() };
             if (!paying) return;
             if (j && !j.txn && typeof j.error === "string") { if (st) { st.textContent = j.error; st.hidden = false; } return; }   // a refusal (e.g. country): say why
             if (!j || !j.txn || !window.DuoVoxCheckout || !window.DuoVoxCheckout.open(j.txn, j.c, "dvx-pay")) return fallback();
